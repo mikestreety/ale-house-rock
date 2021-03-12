@@ -1,0 +1,16 @@
+---js
+{
+	layout: "beerlist.njk",
+	pagination: {
+		data: "beers",
+		size: 40,
+		before: function(data) {
+			return data
+				.filter(a => a.rating)
+				.sort((a, b) => (parseInt(a.rating) > parseInt(b.rating)) ? 1 : -1)
+				.reverse();
+		}
+	}
+}
+---
+

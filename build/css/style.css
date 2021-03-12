@@ -115,7 +115,8 @@ aside select:focus {
 	outline: none;
 }
 
-aside button {
+aside button,
+aside a {
 	padding: 0.6em 0.3em 0.75em 1.3em;
 	border: 0;
 	background: var(--primary);
@@ -126,11 +127,14 @@ aside button {
 	display: inline-block;
 	margin: 0.2em;
 	font-size: 0.9rem;
+	text-decoration: none;
 }
-aside button:hover {
+aside button:hover,
+aside a:hover {
 	background: var(--primaryDark);
 }
-aside button::after {
+aside button::after,
+aside a::after {
 	content: '';
 	display: inline-block;
 	border: 0.35em solid transparent;
@@ -138,7 +142,8 @@ aside button::after {
 	transform: translateY(-0.2em);
 }
 aside button.asc,
-aside button.desc {
+aside button.desc,
+aside .active {
 	background: var(--secondary);
 	padding-left: 0.9em;
 	padding-right: 0.7em;
@@ -147,7 +152,8 @@ aside button.asc::after {
 	border-bottom-color: currentColor;
 	border-top-width: 0;
 }
-aside button.desc::after {
+aside button.desc::after,
+aside .active::after {
 	border-top-color: currentColor;
 	border-bottom-width: 0;
 }
