@@ -1,0 +1,36 @@
+---
+permalink: rss
+sitemapIgnore: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>{{ meta.site.title }}</title>
+		<link>{{ meta.site.url }}</link>
+		<description>{{ meta.site.description }}</description>
+		<language>en-us</language>
+		<pubDate>{{ page.date.toUTCString() }}</pubDate>
+		<lastBuildDate>{{ page.date.toUTCString() }}</lastBuildDate>
+		<atom:link href="{{ meta.site.url }}/{{ permalink }}" rel="alternate" type="application/xml" />
+		<image>
+			<url>{{ meta.site.url }}assets/img/favicon-512.png</url>
+			<title>{{ meta.site.name }}</title>
+			<link>{{ meta.site.url }}</link>
+			<width>144</width>
+			<height>144</height>
+			<description>{{ description }}</description>
+		</image>
+		{% for entry in collections.blog %}
+		<item>
+			<title>{{ entry.data.title }}</title>
+			<link>{{ meta.site.url }}{{ entry.url }}</link>
+			<pubDate>{{ entry.date | isoDate }}</pubDate>
+			<guid>{{ meta.site.url }}{{ entry.url }}</guid>
+			<description><![CDATA[
+				{{ entry.templateContent }}
+			]]></description>
+		</item>
+		{% endfor %}
+
+	</channel>
+</rss>

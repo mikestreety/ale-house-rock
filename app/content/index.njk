@@ -1,0 +1,29 @@
+---
+layout: default.njk
+intro: Reviewing beers and ales as they get opened and drunk
+
+pagination:
+  data: beers
+  size: 40
+---
+<main id="beers">
+	<ul class="list">
+		{% for beer in pagination.items %}
+			<li>
+				<a href="beer/{{ beer.slug | slugify }}" title="">
+					<img src="{{ meta.img }}{{ beer.id }}/small.webp" width="150" height="150" loading="lazy" alt="{{ beer.brewery }} - {{ beer.title }}">
+				</a>
+				<div class="content">
+					<a href="brewery/{{ beer.brewery_slug | slugify }}"  class="brewery">{{ beer.brewery }}</a>
+					<a href="beer/{{ beer.slug | slugify }}" class="title">{{ beer.title }}</a>
+					<div class="rating">{{ beer.rating }}</div>
+
+					<div class="meta">
+						<div class="number">{{ beer.number }}</div>
+						<div class="link"><a target="_blank" href="https://www.instagram.com/p/{{ beer.code }}">View on Instagram</a></div>
+					</div>
+				</div>
+			</li>
+		{% endfor %}
+	</ul>
+</main>

@@ -1,0 +1,13 @@
+{
+	"author": "Ale House Rock",
+	"themeColour": "#4A90BE",
+	"img": "https://res.cloudinary.com/mikestreety/image/upload/c_scale,q_auto:best,w_200/v1/ale_house_rock/",
+	"site": {
+		"title": "Ale House Rock",
+		"url": "https://www.mikestreety.co.uk",
+		"description": "Beer reviews"
+	},
+	"social": {
+		"twitter": "mikestreety"
+	}
+}

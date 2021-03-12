@@ -1,0 +1,20 @@
+{
+  "name": "ale_house_rock",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prod:11ty": "npx @11ty/eleventy",
+    "watch:11ty": "set DEBUG=Eleventy* && npx @11ty/eleventy  --serve",
+    "watch": "npm run watch:11ty",
+    "dev": "npm run watch",
+    "prod": "npm run prod:11ty"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-cache-assets": "^2.1.0",
+    "@11ty/eleventy-navigation": "^0.1.6"
+  }
+}

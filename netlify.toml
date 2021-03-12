@@ -1,0 +1,14 @@
+[build]
+	publish = "html/"
+	command = "npm run prod"
+
+[[headers]]
+	for = "/*"
+
+	[headers.values]
+		X-Content-Type-Options = "nosniff"
+		Content-Security-Policy = "frame-ancestors 'none';"
+		X-Frame-Options = "DENY"
+		X-XSS-Protection = "1; mode=block"
+		Referrer-Policy = "strict-origin-when-cross-origin"
+
