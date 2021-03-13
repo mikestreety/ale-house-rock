@@ -84,7 +84,6 @@
 	<meta name="monetization" content="$ilp.uphold.com/R6wFMN3kXQbL">
 
 	<link rel="preload" href="/assets/css/style.css" as="style">
-	<link rel="preload" href="/assets/js/app.js" as="script">
 	<link rel="preload" href="/assets/fonts/poppins-v8-latin-700.woff2" as="font" type="font/woff2" crossorigin>
 
 	<link rel="stylesheet" href="/assets/css/style.css">
@@ -128,7 +127,13 @@
 		</footer>
 	</div>
 
-	<script src="/assets/js/app.js"></script>
+	<script>
+	function jumpto(item) {
+		if (item.value) {
+			document.location.href = item.value;
+		}
+	}
+	</script>
 
 	<script data-schema="Organization" type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Organization","name":"Ale House Rock","url":"https://beer.mikestreety.co.uk/","logo":"https://beer.mikestreety.co.uk/assets/images/logo.png"}</script>
 	<script data-schema="WebSite" type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","name":"Ale House Rock","url":"https://beer.mikestreety.co.uk/"}</script>

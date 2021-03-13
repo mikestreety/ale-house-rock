@@ -2,18 +2,31 @@
 layout: default.njk
 ---
 <aside class="filters">
+
+	<label for="brewery">Select Brewery</label>
+	<select class="brewerySearch" id="brewery" onchange="jumpto(this)">
+		<option value="">Select Brewery</option>
+		{% for brewery in breweries %}
+		{% if brewery.beers.length > 1 %}
+		<option value="/brewery/{{ brewery.slug | slugify }}">
+			{{ brewery.title }} ({{ brewery.beers.length }})
+		</option>
+		{% endif %}
+		{% endfor %}
+	</select>
+
 	<a href="/ordered/rating" class="sort {{ "active" if page.url == '/ordered/rating/' else ''}}">Sort by Rating</a>
 </aside>
 <main id="beers">
 	<ul class="list">
 		{% for beer in pagination.items %}
 			<li>
-				<a href="beer/{{ beer.slug | slugify }}" title="">
+				<a href="/beer/{{ beer.slug | slugify }}" title="">
 					<img src="{{ meta.img }}{{ beer.id }}/small.webp" width="150" height="150" loading="lazy" alt="{{ beer.brewery }} - {{ beer.title }}">
 				</a>
 				<div class="content">
-					<a href="brewery/{{ beer.brewery_slug | slugify }}" 	class="brewery">{{ beer.brewery }}</a>
-					<a href="beer/{{ beer.slug | slugify }}" class="title">{{ beer.title }}</a>
+					<a href="/brewery/{{ beer.brewery_slug | slugify }}" 	class="brewery">{{ beer.brewery }}</a>
+					<a href="/beer/{{ beer.slug | slugify }}" class="title">{{ beer.title }}</a>
 					<div class="rating">{{ beer.rating }}</div>
 
 					<div class="meta">
@@ -24,4 +37,18 @@ layout: default.njk
 			</li>
 		{% endfor %}
 	</ul>
+
+	<nav class="pagination">
+		{% if pagination.href.next %}
+		<a class="button button-small historical" rel="prev" href="{{ pagination.href.next }}">
+			&lsaquo; Older
+		</a>
+		{% endif %}
+		{% if pagination.href.previous %}
+		<a class="button button-small" rel="next" href="{{ pagination.href.previous }}">
+			Newer &rsaquo;
+		</a>
+		{% endif %}
+	</nav>
+
 </main>
