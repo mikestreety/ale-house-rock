@@ -5,6 +5,7 @@ module.exports = function (config) {
 
 	config.addFilter('isoDate', require('./app/filters/isoDate.js'));
 	config.addFilter('readableDate', require('./app/filters/readableDate.js'));
+	config.addFilter('squashandweed', require('./app/filters/squashandweed.js'));
 	config.addFilter('slugify', require('./app/filters/slugify.js'));
 
 	config.addPassthroughCopy({'build': 'assets'});

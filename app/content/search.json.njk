@@ -1,0 +1,15 @@
+---
+permalink: search.json
+---
+[
+	{% for beer in beers %}
+	{% if not loop.first %},{%- endif -%}
+	{
+		"id": "{{ beer.id }}",
+		"title": "{{ beer.title }}",
+		"brewery": "{{ beer.brewery }}",
+		"rating": "{{ beer.rating }}",
+		"number": "{{ beer.number }}"
+	}
+	{% endfor%}
+]
