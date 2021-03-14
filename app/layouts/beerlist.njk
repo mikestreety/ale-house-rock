@@ -15,7 +15,9 @@ layout: default.njk
 					<a href="{{ beer.brewery_slug }}" class="brewery">{{ beer.brewery }}</a>
 					<a href="{{ beer.slug }}" class="title">{{ beer.title }}</a>
 					<div class="rating">{{ beer.rating }}</div>
-
+					<div class="meta">
+						<div>{{ beer.date | readableDate }}</div>
+					</div>
 					<div class="meta">
 						<div class="number">{{ beer.number }}</div>
 					</div>

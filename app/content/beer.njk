@@ -21,10 +21,15 @@ eleventyComputed:
 			<div class="title">{{ beer.title }}</div>
 			<div class="rating">{{ beer.rating }}</div>
 			<div class="meta">
+				<div>{{ beer.date | readableDate }}</div>
+			</div>
+			<div class="meta">
 				<div class="number">{{ beer.number }}</div>
 				<div class="link"><a target="_blank" href="https://www.instagram.com/p/{{ beer.code }}">View on Instagram</a></div>
 			</div>
 		</div>
 	</div>
 	<p>{{ beer.description }}</p>
+	<hr>
+	<p>Likes: {{ beer.like_count }} / Comments: {{ beer.comment_count }}</p>
 </main>
