@@ -2,35 +2,18 @@
 layout: default.njk
 ---
 <aside class="filters">
-	<form action="/search/" method="get">
-		<input type="search" name="q" placeholder="Search for a beer" class="input" id="searchbox">
-		<input type="submit" value="Search" class="button">
-	</form>
-
-	<label for="brewery">Select Brewery</label>
-	<select class="brewerySearch" id="brewery" onchange="jumpto(this)">
-		<option value="">Select Brewery</option>
-		{% for brewery in breweries %}
-		{% if brewery.beers.length > 1 %}
-		<option value="/brewery/{{ brewery.slug | slugify }}">
-			{{ brewery.title }} ({{ brewery.beers.length }})
-		</option>
-		{% endif %}
-		{% endfor %}
-	</select>
-
 	<a href="/ordered/rating" class="sort {{ "active" if page.url == '/ordered/rating/' else ''}}">Sort by Rating</a>
 </aside>
 <main id="beers">
 	<ul class="list">
 		{% for beer in pagination.items %}
 			<li>
-				<a href="/beer/{{ beer.slug | slugify }}" title="">
+				<a href="{{ beer.slug }}" title="">
 					<img src="{{ meta.img }}{{ beer.id }}/small.webp" width="150" height="150" loading="lazy" alt="{{ beer.brewery }} - {{ beer.title }}">
 				</a>
 				<div class="content">
-					<a href="/brewery/{{ beer.brewery_slug | slugify }}" class="brewery">{{ beer.brewery }}</a>
-					<a href="/beer/{{ beer.slug | slugify }}" class="title">{{ beer.title }}</a>
+					<a href="{{ beer.brewery_slug }}" class="brewery">{{ beer.brewery }}</a>
+					<a href="{{ beer.slug }}" class="title">{{ beer.title }}</a>
 					<div class="rating">{{ beer.rating }}</div>
 
 					<div class="meta">

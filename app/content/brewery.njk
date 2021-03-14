@@ -4,7 +4,7 @@ pagination:
   data: breweries
   size: 1
   alias: brewery
-permalink: "/brewery/{{ brewery.slug | slugify }}/"
+permalink: "{{ brewery.slug }}/"
 ---
 
 <main id="beers">
@@ -13,12 +13,12 @@ permalink: "/brewery/{{ brewery.slug | slugify }}/"
 	<ul class="list">
 		{% for beer in brewery.beers %}
 			<li>
-				<a href="/beer/{{ beer.slug | slugify }}" title="{{ beer.title }}">
+				<a href="{{ beer.slug }}" title="{{ beer.title }}">
 					<img src="{{ meta.img }}{{ beer.id }}/small.webp" width="150" height="150" loading="lazy" alt="{{ beer.brewery }} - {{ beer.title }}">
 				</a>
 				<div class="content">
 					<div class="brewery">{{ beer.brewery }}</div>
-					<a href="/beer/{{ beer.slug | slugify }}" class="title">{{ beer.title }}</a>
+					<a href="{{ beer.slug }}" class="title">{{ beer.title }}</a>
 					<div class="rating">{{ beer.rating }}</div>
 
 					<div class="meta">

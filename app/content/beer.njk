@@ -4,17 +4,20 @@ pagination:
   data: beers
   size: 1
   alias: beer
-permalink: "/beer/{{ beer.slug | slugify }}/"
+permalink: "{{ beer.slug }}/"
 eleventyComputed:
   title: "{{ beer.title }}: {{ beer.brewery }}"
   intro: "{{ beer.title }} from {{ beer.brewery }} scoring {{ beer.rating }}/10"
+  socialMediaPhoto: "{{ meta.imgLarge }}{{ beer.id }}/large.jpg"
 ---
 
 <main class="singlebeer">
 	<div class="wrapper">
-		<img src="{{ meta.img }}{{ beer.id }}/small.webp" width="150" height="150" loading="lazy" alt="{{ beer.brewery }} - {{ beer.title }}">
+		<a href="{{ meta.imgLarge }}{{ beer.id }}/large.webp">
+			<img src="{{ meta.img }}{{ beer.id }}/small.webp" width="150" height="150" loading="lazy" alt="{{ beer.brewery }} - {{ beer.title }}">
+		</a>
 		<div class="content">
-			<a href="/brewery/{{ beer.brewery_slug | slugify }}" 	class="brewery">{{ beer.brewery }}</a>
+			<a href="{{ beer.brewery_slug }}" class="brewery">{{ beer.brewery }}</a>
 			<div class="title">{{ beer.title }}</div>
 			<div class="rating">{{ beer.rating }}</div>
 			<div class="meta">

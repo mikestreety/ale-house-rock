@@ -4,22 +4,11 @@ layout: default.njk
 
 # Search
 
-<aside class="filters">
-	<form action="/search/" method="get">
-		<input type="search" name="q" placeholder="Search for a beer" class="input" id="searchbox">
-		<input type="submit" value="Search" class="button">
-	</form>
-</aside>
-
 <div id="results" class="list"></div>
 
 <script>
 const queryString = new URLSearchParams(window.location.search),
 		search = queryString.get('q').trim().toLowerCase();
-
-if(!search.length) {
-		// do soething
-}
 
 let searchData = fetch('/search.json').then(data => data.json())
 	.then(data => {
@@ -63,8 +52,8 @@ searchData.then(data => {
 					<img src="${ baseImageUrl }${ beer.id }/small.webp" width="150" height="150" loading="lazy" alt="${ beer.brewery } - ${ beer.title }">
 				</a>
 				<div class="content">
-					<a href="/brewery/${ beer.brewery_slug }" class="brewery">${ beer.brewery }</a>
-					<a href="/beer/${ beer.slug }" class="title">${ beer.title }</a>
+					<a href="${ beer.brewery_slug }" class="brewery">${ beer.brewery }</a>
+					<a href="${ beer.slug }" class="title">${ beer.title }</a>
 					<div class="rating">${ beer.rating }</div>
 
 					<div class="meta">
@@ -74,9 +63,11 @@ searchData.then(data => {
 			`;
 			list.appendChild(childElement)
 		}
+
+		results.appendChild(list);
 	}
 
-	results.appendChild(list);
-	document.getElementById('searchbox').value = search;
-})
+});
+
+document.getElementById('searchbox').value = search;
 </script>

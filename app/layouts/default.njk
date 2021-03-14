@@ -32,9 +32,6 @@
 	<meta name="description" content="{{ intro if intro else description }}"/>
 	<meta name="author" content="{{ meta.author }}">
 
-	<link rel="webmention" href="https://webmention.io/www.mikestreety.co.uk/webmention" />
-	<link rel="pingback" href="https://webmention.io/www.mikestreety.co.uk/xmlrpc" />
-
 	<meta property="twitter:card" content="summary">
 	<meta property="twitter:site" content="@{{ meta.social.twitter }}">
 	<meta property="twitter:creator" content="@{{ meta.social.twitter }}">
@@ -45,40 +42,40 @@
 	<meta property="og:site_name" content="{{ meta.site.title }}">
 	<meta property="og:title" content="{{ title }}">
 	{% if socialMediaPhoto is defined  %}
-	<meta property="og:image" property="twitter:image" name="image" content="{{ meta.site.url }}{{ socialMediaPhoto  }}">
-	<meta property="og:image:width" content="1300">
-	<meta property="og:image:height" content="650">
+	<meta property="og:image" property="twitter:image" name="image" content="{{ socialMediaPhoto  }}">
+	<meta property="og:image:width" content="1000">
+	<meta property="og:image:height" content="1000">
 	{% else %}
-	<meta property="og:image" property="twitter:image" name="image" content="{{ meta.site.url }}/assets/img/mike.jpg">
+	<meta property="og:image" property="twitter:image" name="image" content="{{ meta.site.url }}/assets/img/logo.png">
 	{% endif %}
 	<meta property="og:description" property="twitter:description" content="{{ intro if intro else description }}">
 
 	{% set count = 1 %}
 
-	{% if tags %}
-	{% set comma = joiner() %}
-	<meta property="twitter:label{{ count }}" value="Tags">
-	<meta property="twitter:data{{ count }}" value="{% for tag in tags -%}{{ comma() }} {{ tag }}{%- endfor %}">
+	{% if beer.rating %}
+	<meta property="twitter:label{{ count }}" value="Rating">
+	<meta property="twitter:data{{ count }}" value="{{ beer.rating }}/10">
 	{% set count = count + 1 %}
 	{% endif %}
 
-	{% if tags %}
-	<meta property="twitter:label{{ count }}" value="Reading time">
-	<meta property="twitter:data{{ count }}" value="{{ content | readingTime }}">
+	{% if beer.brewery %}
+	<meta property="twitter:label{{ count }}" value="Brewery">
+	<meta property="twitter:data{{ count }}" value="{{ beer.brewery }}">
+	{% set count = count + 1 %}
+	{% endif %}
+	{% if beer.number %}
+	<meta property="twitter:label{{ count }}" value="Number">
+	<meta property="twitter:data{{ count }}" value="{{ beer.number }}">
 	{% set count = count + 1 %}
 	{% endif %}
 
-	{% if publication %}
-	<meta property="twitter:label{{ count }}" value="Written for">
-	<meta property="twitter:data{{ count }}" value="{{ publication }}">
+	{% if beer.created_at %}
+	<meta property="twitter:label{{ count }}" value="Posted">
+	<meta property="twitter:data{{ count }}" value="{{ beer.created_at | readableDate }}">
 	{% set count = count + 1 %}
 	{% endif %}
 
-	{% if canonical %}
-	<meta property="twitter:label{{ count }}" value="Original link">
-	<meta property="twitter:data{{ count }}" value="{{ canonical }}">
-	{% set count = count + 1 %}
-	{% endif %}
+
 
 	<!-- Coil -->
 	<meta name="monetization" content="$ilp.uphold.com/R6wFMN3kXQbL">
@@ -116,13 +113,32 @@
 		</header>
 
 		<main class="content">
+			<aside class="filters">
+				<form action="/search/" method="get">
+					<input type="search" name="q" placeholder="Search for a beer" class="input" id="searchbox">
+					<input type="submit" value="Search" class="button">
+				</form>
+
+				<label for="brewery">Select Brewery</label>
+				<select class="brewerySearch" id="brewery" onchange="jumpto(this)">
+					<option value="">Select Brewery</option>
+					{% for brewery in breweries %}
+					{% if brewery.beers.length > 1 %}
+					<option value="{{ brewery.slug }}">
+						{{ brewery.title }} ({{ brewery.beers.length }})
+					</option>
+					{% endif %}
+					{% endfor %}
+				</select>
+			</aside>
 			{{ content | safe }}
 		</main>
 
 		<footer class="footer">
 			<div class="container">
 
-				<p><a class="h-card" rel="me" href="https://www.mikestreety.co.uk/">{{ meta.site.title }}</a>. <a href="/rss">RSS Feed</a>. </p>
+				<p><a href="/breweries">View all breweries</a></p>
+				<p><a class="h-card" rel="me" href="{{ meta.site.url }}">{{ meta.site.title }}</a>. <a href="/rss">RSS Feed</a>. Made & reviewed by <a class="h-card" rel="me" href="https://www.mikestreety.co.uk">Mike Street</a></p>
 			</div>
 		</footer>
 	</div>
@@ -135,8 +151,8 @@
 	}
 	</script>
 
-	<script data-schema="Organization" type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Organization","name":"Ale House Rock","url":"https://beer.mikestreety.co.uk/","logo":"https://beer.mikestreety.co.uk/assets/images/logo.png"}</script>
-	<script data-schema="WebSite" type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","name":"Ale House Rock","url":"https://beer.mikestreety.co.uk/"}</script>
+	<script data-schema="Organization" type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Organization","name":"Ale House Rock","url":"{{ meta.site.url }}","logo":"{{ meta.site.url }}assets/images/logo.png"}</script>
+	<script data-schema="WebSite" type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","name":"Ale House Rock","url":"{{ meta.site.url }}"}</script>
 
 </body>
 </html>

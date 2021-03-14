@@ -4,14 +4,20 @@ sitemapIgnore: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-{%- for item in collections.all %}
-{%- if item.data.sitemapIgnore !== true %}
+{%- for item in beers %}
 	<url>
-		<loc>{{ meta.site.url }}{{ item.url }}</loc>
+		<loc>{{ meta.site.url }}{{ item.slug }}</loc>
 		<lastmod>{{ item.date }}</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
-{%- endif %}
+{%- endfor %}
+{%- for item in breweries %}
+	<url>
+		<loc>{{ meta.site.url }}{{ item.slug }}</loc>
+		<lastmod>{{ item.date }}</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
 {%- endfor %}
 </urlset>

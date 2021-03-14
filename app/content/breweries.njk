@@ -1,0 +1,12 @@
+---
+layout: default.njk
+intro: A list of breweries whose beer has been reviewed
+---
+
+<h1>Breweries</h1>
+
+<ul>
+	{% for brewery in breweries %}
+	<li><a href="{{ brewery.slug }}">{{ brewery.title }}</a> ({{ brewery.beers.length }} beers)</li>
+	{% endfor %}
+</ul>

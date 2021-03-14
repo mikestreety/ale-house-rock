@@ -1,4 +1,5 @@
 const Cache = require('@11ty/eleventy-cache-assets');
+const slugify = require('./../filters/slugify');
 
 module.exports = async function() {
 	let url = "https://beer.mikestreety.co.uk/api/breweries.json";
@@ -10,13 +11,9 @@ module.exports = async function() {
 	});
 
 	let data = response.map((brewery) => {
-		brewery.slug = `${brewery.title}`;
+		brewery.slug = `/brewery/` + slugify(`${brewery.title}`);
 
 		let ratings = brewery.beers
-			.map(beer => {
-				beer.slug = `${beer.title} ${beer.brewery} ${beer.number}`;
-				return beer;
-			})
 			.map(a => Number(a.rating));
 
 		let average = ratings.reduce((a, b) => a + b, 0);
@@ -27,8 +24,12 @@ module.exports = async function() {
 			average
 		};
 
-		brewery.beers
-			// .sort((a, b) => a.number.localeCompare(b.number))
+		brewery.beers = brewery.beers
+			.map(beer => {
+				beer.slug = `/beer/` + slugify(`${beer.title} ${beer.brewery} ${beer.number}`);
+				return beer;
+			})
+			.sort((a, b) => parseInt(a.number) + parseInt(b.number))
 			.reverse();
 
 		return brewery;

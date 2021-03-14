@@ -20,14 +20,17 @@ sitemapIgnore: true
 			<height>144</height>
 			<description>{{ description }}</description>
 		</image>
-		{% for entry in collections.blog %}
+		{% for beer in beers %}
 		<item>
-			<title>{{ entry.data.title }}</title>
-			<link>{{ meta.site.url }}{{ entry.url }}</link>
-			<pubDate>{{ entry.date | isoDate }}</pubDate>
-			<guid>{{ meta.site.url }}{{ entry.url }}</guid>
+			<title>{{ beer.title | safe }} ({{ beer.brewery | safe }})</title>
+			<link>{{ meta.site.url }}{{ beer.slug }}</link>
+			<pubDate>{{ beer.created_at | isoDate }}</pubDate>
+			<guid>{{ meta.site.url }}{{ beer.slug }}</guid>
 			<description><![CDATA[
-				{{ entry.templateContent }}
+				<h1>{{ beer.title }}</h1>
+				<h2>{{ beer.brewery }}</h2>
+				<h2>{{ beer.rating }}/10</h2>
+				<p>{{ beer.description | safe }}</p>
 			]]></description>
 		</item>
 		{% endfor %}
