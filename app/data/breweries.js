@@ -1,5 +1,6 @@
 const Cache = require('@11ty/eleventy-cache-assets');
 const slugify = require('./../filters/slugify');
+const meanMedianMode = require('./../filters/meanMedianMode');
 
 module.exports = async function() {
 	let url = "https://beer.mikestreety.co.uk/api/breweries.json";
@@ -16,13 +17,7 @@ module.exports = async function() {
 		let ratings = brewery.beers
 			.map(a => Number(a.rating));
 
-		let average = ratings.reduce((a, b) => a + b, 0);
-		average = average / brewery.beers.length;
-		average = Math.round(average * 100) / 100;
-
-		brewery.meta = {
-			average
-		};
+		brewery.meta = meanMedianMode(ratings);
 
 		brewery.beers = brewery.beers
 			.map(beer => {

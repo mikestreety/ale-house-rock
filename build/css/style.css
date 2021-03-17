@@ -207,6 +207,19 @@ footer {
 	font-size: 0.8em;
 }
 
+table {
+	border-collapse: collapse;
+}
+table th {
+	text-align: left;
+	background: var(--primaryLighter);
+}
+table th,
+table td {
+	padding: 0.5rem;
+	border: thin solid var(--neutralLight);
+}
+
 .list,
 .list ol {
 	margin: 0;
