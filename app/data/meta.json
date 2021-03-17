@@ -6,9 +6,10 @@
 	"site": {
 		"title": "Ale House Rock",
 		"url": "https://alehouse.rocks",
-		"description": "Beer reviews"
+		"description": "Honest beer reviews"
 	},
 	"social": {
-		"twitter": "mikestreety"
+		"twitter": "mikestreety",
+		"instagram": "ale_house_rock"
 	}
 }

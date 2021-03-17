@@ -44,9 +44,22 @@
 b,
 optgroup,
 strong {
-    font-weight: 800;
+	font-weight: 800;
 }
 
+a {
+	text-decoration: none;
+	color: var(--color, var(--primary));
+	transition: .3s ease;
+	transition-property: color, box-shadow, opacity;
+	box-shadow: inset 0 -0.05em 0 0 var(--boxshadowcolor, currentColor);
+	display: inline;
+	font-weight: bold;
+}
+a:hover {
+	box-shadow: inset 0 -.9em 0 0 var(--tertiaryLight);
+	color: var(--base);
+}
 
 body {
 	font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
@@ -63,6 +76,9 @@ header {
 	align-items: center;
 	justify-content: flex-start;
 	padding: 0 0 var(--gutter);
+}
+header a {
+	box-shadow: none;
 }
 
 aside {
@@ -143,6 +159,7 @@ aside form .button:hover,
 aside button:hover,
 aside a:hover {
 	background: var(--primaryDark);
+	box-shadow: none;
 }
 aside button::after,
 aside a::after {
@@ -234,6 +251,11 @@ table td {
 	align-items: stretch;
 	justify-content: flex-start;
 }
+.list li > a,
+.singlebeer .wrapper > a {
+	box-shadow: none;
+}
+
 .list li + li {
 	border-top: 0.125rem solid var(--neutralLight);
 	padding-top: var(--gutter);
@@ -247,6 +269,7 @@ table td {
 	margin-top: -0.2em;
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 }
 
 .meta {
@@ -275,12 +298,13 @@ table td {
 .title {
 	font-size: 1.5rem;
 	font-family: 'AleHouseRock', sans-serif;
-	padding: 0 0 0.5rem;
+	margin-bottom: 0.5rem;
 	font-weight: 700;
 }
 a.title {
 	color: inherit;
 	text-decoration: none;
+	box-shadow: none;
 }
 a.title:hover {
 	color: var(--primary);
@@ -297,6 +321,8 @@ a.title:hover {
 }
 .brewery {
 	color: var(--neutralDark);
+	margin-bottom: 0.5rem;
+	box-shadow: none;
 }
 
 .link a {
@@ -328,12 +354,11 @@ a.title:hover {
 		font-size: 0.7rem;
 	}
 	.list img {
-		width: 5rem;
-		height: 5rem;
+		width: 7rem;
+		height: 7rem;
 	}
 	.title {
-		padding: 0 0 0.2rem;
-		font-size: 1.25rem;
+		font-size: 1.2rem;
 	}
 	.meta > div {
 		font-size: 0.8rem;

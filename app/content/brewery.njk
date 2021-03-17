@@ -5,6 +5,9 @@ pagination:
   size: 1
   alias: brewery
 permalink: "{{ brewery.slug }}/"
+eleventyComputed:
+  title: "{{ brewery.title }} beers"
+  description: "{{ brewery.beers.length }} beers reviewed from {{ brewery.title }} with an average score of {{ brewery.meta.mean }}/10"
 ---
 
 <main id="beers">
@@ -24,10 +27,8 @@ permalink: "{{ brewery.slug }}/"
 					<div class="brewery">{{ beer.brewery }}</div>
 					<a href="{{ beer.slug }}" class="title">{{ beer.title }}</a>
 					<div class="rating">{{ beer.rating }}</div>
-
 					<div class="meta">
-						<div class="number">{{ beer.number }}</div>
-						<div class="link"><a target="_blank" href="https://www.instagram.com/p/{{ beer.code }}">View on Instagram</a></div>
+						<div class="number">{{ beer.number }} - {{ beer.date | readableDate }}</div>
 					</div>
 				</div>
 			</li>

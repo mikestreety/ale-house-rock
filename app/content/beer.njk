@@ -6,8 +6,8 @@ pagination:
   alias: beer
 permalink: "{{ beer.slug }}/"
 eleventyComputed:
-  title: "{{ beer.title }}: {{ beer.brewery }}"
-  intro: "{{ beer.title }} from {{ beer.brewery }} scoring {{ beer.rating }}/10"
+  title: "{{ beer.title }} by {{ beer.brewery }}"
+  intro: "{{ beer.description }}"
   socialMediaPhoto: "{{ meta.imgLarge }}{{ beer.id }}/large.jpg"
 ---
 
