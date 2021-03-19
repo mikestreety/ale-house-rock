@@ -1,6 +1,8 @@
 ---
 layout: beerlist.njk
-intro: Reviewing beers and ales as they get opened and drunk
+eleventyComputed:
+  title: "{% if pagination.pageNumber %}Page {{ (pagination.pageNumber + 1) }} of Beer reviews{% endif %}"
+  description: "{% if pagination.pageNumber %}Page {{ (pagination.pageNumber + 1) }} of {% endif %}Beer reviews. Honest reviews of beers from Mike Street"
 
 pagination:
   data: beers
