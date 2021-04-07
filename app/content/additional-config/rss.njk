@@ -2,7 +2,7 @@
 permalink: rss
 sitemapIgnore: true
 ---
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>{{ meta.site.title }}</title>
@@ -11,26 +11,26 @@ sitemapIgnore: true
 		<language>en-us</language>
 		<pubDate>{{ page.date.toUTCString() }}</pubDate>
 		<lastBuildDate>{{ page.date.toUTCString() }}</lastBuildDate>
-		<atom:link href="{{ meta.site.url }}/{{ permalink }}" rel="alternate" type="application/xml" />
+		<atom:link href="{{ meta.site.url }}/{{ permalink }}" rel="self" type="application/xml" />
 		<image>
 			<url>{{ meta.site.url }}assets/img/favicon-512.png</url>
-			<title>{{ meta.site.name }}</title>
+			<title>{{ meta.site.title }}</title>
 			<link>{{ meta.site.url }}</link>
 			<width>144</width>
 			<height>144</height>
-			<description>{{ description }}</description>
+			<description>{{ meta.site.description }}</description>
 		</image>
-		{% for beer in beers %}
+		{% for beer in beers | limit(10) %}
 		<item>
-			<title>{{ beer.title | safe }} ({{ beer.brewery | safe }})</title>
+			<title>{{ beer.title | escape | safe }} ({{ beer.brewery | escape | safe }})</title>
 			<link>{{ meta.site.url }}{{ beer.slug }}</link>
-			<pubDate>{{ beer.created_at | isoDate }}</pubDate>
+			<pubDate>{{ beer.created_at | utcDate }}</pubDate>
 			<guid>{{ meta.site.url }}{{ beer.slug }}</guid>
 			<description><![CDATA[
 				<h1>{{ beer.title }}</h1>
 				<h2>{{ beer.brewery }}</h2>
 				<h2>{{ beer.rating }}/10</h2>
-				<p>{{ beer.description | safe }}</p>
+				<p>{{ beer.description | escape | safe }}</p>
 			]]></description>
 		</item>
 		{% endfor %}
