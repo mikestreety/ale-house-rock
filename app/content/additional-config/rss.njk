@@ -27,10 +27,11 @@ sitemapIgnore: true
 			<pubDate>{{ beer.created_at | utcDate }}</pubDate>
 			<guid>{{ meta.site.url }}{{ beer.slug }}</guid>
 			<description><![CDATA[
-				<h1>{{ beer.title }}</h1>
-				<h2>{{ beer.brewery }}</h2>
-				<h2>{{ beer.rating }}/10</h2>
-				<p>{{ beer.description | escape | safe }}</p>
+<img src="{{ meta.img }}{{ beer.id }}/small.jpg" width="150" height="150"  alt="{{ beer.brewery }} - {{ beer.title }}">
+<h1>{{ beer.title }}</h1>
+<h2>{{ beer.brewery }}</h2>
+<h2>{{ beer.rating }}/10</h2>
+<p>{{ beer.description | escape | safe }}</p>
 			]]></description>
 		</item>
 		{% endfor %}
