@@ -48,7 +48,7 @@ searchData.then(data => {
 		for (let beer of data) {
 			let childElement = document.createElement('li');
 			childElement.innerHTML = `
-				<a href="/beer/${ beer.slug }" title="">
+				<a href="${ beer.slug }" title="">
 					<img src="${ baseImageUrl }${ beer.id }/small.webp" width="150" height="150" loading="lazy" alt="${ beer.brewery } - ${ beer.title }">
 				</a>
 				<div class="content">

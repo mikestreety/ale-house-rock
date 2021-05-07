@@ -7,19 +7,7 @@ layout: default.njk
 <main id="beers">
 	<ul class="list">
 		{% for beer in pagination.items %}
-			<li>
-				<a href="{{ beer.slug }}" title="">
-					<img src="{{ meta.img }}{{ beer.id }}/small.webp" width="150" height="150" loading="lazy" alt="{{ beer.brewery }} - {{ beer.title }}">
-				</a>
-				<div class="content">
-					<a href="{{ beer.brewery_slug }}" class="brewery">{{ beer.brewery }}</a>
-					<a href="{{ beer.slug }}" class="title">{{ beer.title }}</a>
-					<div class="rating">{{ beer.rating }}</div>
-					<div class="meta">
-						<div class="number">{{ beer.number }} - {{ beer.date | readableDate }}</div>
-					</div>
-				</div>
-			</li>
+			{% include 'beer.njk' %}
 		{% endfor %}
 	</ul>
 

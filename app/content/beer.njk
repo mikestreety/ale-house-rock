@@ -30,6 +30,17 @@ eleventyComputed:
 		</div>
 	</div>
 	<p>{{ beer.description }}</p>
-	<hr>
-	<p>Likes: {{ beer.like_count }} / Comments: {{ beer.comment_count }}</p>
 </main>
+<nav>
+	<h2>View other beers</h2>
+	<ul class="list">
+		{% set beer = pagination.page.previous %}
+		{% if beer %}
+			{% include 'beer.njk' %}
+		{% endif %}
+		{% set beer = pagination.page.next %}
+		{% if beer %}
+			{% include 'beer.njk' %}
+		{% endif %}
+	</ul>
+</nav>
