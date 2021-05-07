@@ -27,6 +27,8 @@ module.exports = async function() {
 			.sort((a, b) => parseInt(a.number) + parseInt(b.number))
 			.reverse();
 
+			brewery.date = brewery.beers[0].date;
+
 		return brewery;
 	});
 
