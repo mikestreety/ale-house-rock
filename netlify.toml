@@ -1,5 +1,6 @@
 [build]
 	publish = "html/"
+	functions = "functions/"
 	command = "npm run prod"
 
 [[headers]]

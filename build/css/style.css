@@ -272,6 +272,24 @@ table td {
 	align-items: flex-start;
 }
 
+.listSmall {
+	font-size: 0.85rem;
+}
+.listSmall .title {
+	font-size: 1rem;
+}
+.listSmall .rating {
+	font-size: 0.85rem;
+}
+.list.listSmall img {
+	width: 5rem;
+	height: 5rem;
+}
+.listSmall .brewery,
+.listSmall .title {
+	margin-bottom: 0.2rem;
+}
+
 .meta {
 	margin-top: auto;
 }

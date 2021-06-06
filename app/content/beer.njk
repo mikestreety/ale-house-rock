@@ -13,8 +13,8 @@ eleventyComputed:
 
 <main class="singlebeer">
 	<div class="wrapper">
-		<a href="{{ meta.imgLarge }}{{ beer.id }}/large.webp">
-			<img src="{{ meta.img }}{{ beer.id }}/small.webp" width="150" height="150" loading="lazy" alt="{{ beer.brewery }} - {{ beer.title }}">
+		<a href="{{ meta.imgLarge }}{{ beer.image }}">
+			<img src="{{ meta.img }}{{ beer.image }}" width="150" height="150" loading="lazy" alt="{{ beer.brewery }} - {{ beer.title }}">
 		</a>
 		<div class="content">
 			<a href="{{ beer.brewery_slug }}" class="brewery">{{ beer.brewery }}</a>
@@ -33,7 +33,7 @@ eleventyComputed:
 </main>
 <nav>
 	<h2>View other beers</h2>
-	<ul class="list">
+	<ul class="list listSmall">
 		{% set beer = pagination.page.previous %}
 		{% if beer %}
 			{% include 'beer.njk' %}

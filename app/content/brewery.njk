@@ -21,7 +21,7 @@ eleventyComputed:
 		{% for beer in brewery.beers %}
 			<li>
 				<a href="{{ beer.slug }}" title="{{ beer.title }}">
-					<img src="{{ meta.img }}{{ beer.id }}/small.webp" width="150" height="150" loading="lazy" alt="{{ beer.brewery }} - {{ beer.title }}">
+					<img src="{{ meta.img }}{{ beer.image }}" width="150" height="150" loading="lazy" alt="{{ beer.brewery }} - {{ beer.title }}">
 				</a>
 				<div class="content">
 					<div class="brewery">{{ beer.brewery }}</div>
