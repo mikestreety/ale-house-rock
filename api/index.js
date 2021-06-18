@@ -29,7 +29,7 @@ module.exports = async function (event) {
 			output = await processBeersAndBreweries(paths);
 			break;
 		case 4:
-			// output = await buildSite();
+			output = await buildSite();
 			output.step = 1;
 			break;
 	}

@@ -12,7 +12,7 @@ module.exports = function(step) {
 		// Use specified step
 		step :
 		// If not see if we have one
-		(progress?.step ?
+		(progress && progress.step ?
 			// Increase if we do
 			++progress.step :
 			// Otherwise use 1
