@@ -4,13 +4,13 @@ layout: default.njk
 
 # Search
 
-<div id="results" class="list"></div>
+<div id="results" class="list"><h3>Searching...</h3></div>
 
 <script>
 const queryString = new URLSearchParams(window.location.search),
 		search = queryString.get('q').trim().toLowerCase();
 
-let searchData = fetch('/search.json').then(data => data.json())
+let searchData = fetch('/api/beers.json').then(data => data.json())
 	.then(data => {
 		let results = [];
 		for(let item of data) {
@@ -41,15 +41,17 @@ searchData.then(data => {
 	let results = document.getElementById('results'),
 		baseImageUrl = "{{ meta.img }}";
 
-	results.innerHTML = '';
+	results.innerHTML = '<h3>No results</h3>';
 
 	if(data.length) {
+		results.innerHTML = `<h3>${data.length} result${data.length === 1 ? '' : 's'} found</h3>`;
+
 		list = document.createElement('ol');
 		for (let beer of data) {
 			let childElement = document.createElement('li');
 			childElement.innerHTML = `
 				<a href="${ beer.slug }" title="">
-					<img src="${ baseImageUrl }${ beer.id }/small.webp" width="150" height="150" loading="lazy" alt="${ beer.brewery } - ${ beer.title }">
+					<img src="${ baseImageUrl }${ beer.image }" width="150" height="150" loading="lazy" alt="${ beer.brewery } - ${ beer.title }">
 				</a>
 				<div class="content">
 					<a href="${ beer.brewery_slug }" class="brewery">${ beer.brewery }</a>

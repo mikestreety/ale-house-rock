@@ -1,0 +1,7 @@
+{
+	"progress": "./api/data/progress.json",
+	"raw": "./api/data/raw.json",
+	"images": "./api/data/images.json",
+	"beers": "./api/data/beers.json",
+	"breweries": "./api/data/breweries.json"
+}

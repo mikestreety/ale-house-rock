@@ -160,6 +160,7 @@ aside button:hover,
 aside a:hover {
 	background: var(--primaryDark);
 	box-shadow: none;
+	color: var(--neutralLightest);
 }
 aside button::after,
 aside a::after {

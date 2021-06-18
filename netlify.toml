@@ -17,3 +17,13 @@
 	for = "/rss"
 	[headers.values]
 		Content-Type = "text/xml"
+
+[[headers]]
+	for = "/api/beers.json"
+	[headers.values]
+		Content-Type = "application/json"
+
+[[headers]]
+	for = "/api/breweries.json"
+	[headers.values]
+		Content-Type = "application/json"
