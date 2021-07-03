@@ -12,7 +12,7 @@ intro: A list of breweries whose beer has been reviewed
 		<th>Average score</th>
 		<th>Median score</th>
 	</tr>
-	{% for brewery in breweries %}
+	{% for brewery in data.breweries %}
 	<tr>
 		<td><a href="{{ brewery.slug }}">{{ brewery.title }}</a></td>
 		<td>{{ brewery.beers.length }}</td>

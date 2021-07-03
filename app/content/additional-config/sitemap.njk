@@ -4,7 +4,7 @@ sitemapIgnore: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-{%- for item in beers %}
+{%- for item in data.beers %}
 	<url>
 		<loc>{{ meta.site.url }}{{ item.slug }}</loc>
 		<lastmod>{{ item.date }}</lastmod>
@@ -12,7 +12,7 @@ sitemapIgnore: true
 		<priority>0.5</priority>
 	</url>
 {%- endfor %}
-{%- for item in breweries %}
+{%- for item in data.breweries %}
 	<url>
 		<loc>{{ meta.site.url }}{{ item.slug }}</loc>
 		<lastmod>{{ item.date }}</lastmod>

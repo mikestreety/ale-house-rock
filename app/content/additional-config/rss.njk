@@ -20,7 +20,7 @@ sitemapIgnore: true
 			<height>144</height>
 			<description>{{ meta.site.description }}</description>
 		</image>
-		{% for beer in beers | limit(10) %}
+		{% for beer in data.beers | limit(10) %}
 		<item>
 			<title>{{ beer.title | escape | safe }} ({{ beer.brewery | escape | safe }})</title>
 			<link>{{ meta.site.url }}{{ beer.slug }}</link>
