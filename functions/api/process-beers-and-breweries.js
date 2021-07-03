@@ -1,8 +1,4 @@
-const fage = require('./file-age');
-const fload = require('./file-load');
-const fsave = require('./file-save');
-
-const cloudinary = require('../cloudinary');
+const cloudinary = require('./cloudinary');
 
 const slugify = require('./../../app/filters/slugify');
 const meanMedianMode = require('./../../app/filters/meanMedianMode');
@@ -15,44 +11,19 @@ const regex = [
 	['hashtags', /\n(#.*?)$/],
 ];
 
-module.exports = async function(paths) {
-	let fetchData = fage(paths.beers),
-		output = {
-			status: false,
-			message: 'Beers file less than an hour old, skipping'
-		},
-		rawData = fload(paths.raw),
-		images = fload(paths.images);
+module.exports = async function(csv, images) {
+	let beers = processBeers(csv, images),
+		breweries = processBreweries(beers);
 
-	if(!rawData.length) {
-		output.step = 1;
-		output.message = 'No raw file found';
-		return output;
-	}
-
-	if(fetchData) {
-		output.message = 'Beers and breweries updating';
-
-		let beers = processBeers(rawData, images),
-			breweries = processBreweries(beers);
-
-		if(beers.length && breweries.length) {
-			fsave(paths.beers, beers);
-			fsave(paths.breweries, breweries);
-
-			output = {
-				status: true,
-				message: 'Beers and breweries updated'
-			}
-		}
-	}
-
-	return output;
+	return {
+		beers,
+		breweries
+	};
 }
 
 function processBeers(raw, images) {
 	let number = 1;
-	let beers = raw.map(item => {
+	let beers = raw.data.map(item => {
 
 		let [date, desc, link, image] = item,
 			result = '';
@@ -77,6 +48,7 @@ function processBeers(raw, images) {
 		let image_path = `alehouserock/${attrs.code}/image.jpg`;
 
 		if(!images.includes(image_path)) {
+			console.log(image_path);
 			cloudinary.uploader.upload(
 				image,
 				{
