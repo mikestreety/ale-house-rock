@@ -2,10 +2,10 @@ const Cache = require("@11ty/eleventy-cache-assets");
 
 module.exports = async function() {
 
-	return {
-		beers: [],
-		breweries: []
-	};
+	// return {
+	// 	beers: [],
+	// 	breweries: []
+	// };
 
 	let url = "https://alehouse.rocks/.netlify/functions/api";
 
