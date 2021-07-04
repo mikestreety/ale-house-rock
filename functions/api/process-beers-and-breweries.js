@@ -1,6 +1,6 @@
 const cloudinary = require('./cloudinary');
 
-const slugify = require('./../../app/filters/slugify');
+const slugify = require('@mikestreety/11ty-utils/filters/slugify');
 const meanMedianMode = require('./../../app/filters/meanMedianMode');
 
 const regex = [

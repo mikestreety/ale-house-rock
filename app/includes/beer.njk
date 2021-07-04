@@ -7,7 +7,7 @@
 		<a href="{{ beer.slug }}" class="title">{{ beer.title }}</a>
 		<div class="rating">{{ beer.rating }}</div>
 		<div class="meta">
-			<div class="number">{{ beer.number }} - {{ beer.date | readableDate }}</div>
+			<div class="number">{{ beer.number }} - {{ beer.date | dateLong }}</div>
 		</div>
 	</div>
 </li>

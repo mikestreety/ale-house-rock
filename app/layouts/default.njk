@@ -70,7 +70,7 @@
 
 	{% if beer.created_at %}
 	<meta property="twitter:label{{ count }}" value="Posted">
-	<meta property="twitter:data{{ count }}" value="{{ beer.created_at | readableDate }}">
+	<meta property="twitter:data{{ count }}" value="{{ beer.created_at | dateLong }}">
 	{% set count = count + 1 %}
 	{% endif %}
 
@@ -121,7 +121,7 @@
 				<label for="brewery">Select Brewery</label>
 				<select class="brewerySearch" id="brewery" onchange="jumpto(this)">
 					<option value="">Select Brewery</option>
-					{% for brewery in breweries %}
+					{% for brewery in data.breweries %}
 					{% if brewery.beers.length > 1 %}
 					<option value="{{ brewery.slug }}">
 						{{ brewery.title }} ({{ brewery.beers.length }})

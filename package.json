@@ -19,6 +19,7 @@
     "netlify-plugin-minify-html": "^0.3.1"
   },
   "dependencies": {
+    "@mikestreety/11ty-utils": "^1.2.0",
     "cloudinary": "^1.25.1",
     "dotenv": "^10.0.0",
     "fs": "*",

@@ -24,7 +24,7 @@ sitemapIgnore: true
 		<item>
 			<title>{{ beer.title | escape | safe }} ({{ beer.brewery | escape | safe }})</title>
 			<link>{{ meta.site.url }}{{ beer.slug }}</link>
-			<pubDate>{{ beer.created_at | utcDate }}</pubDate>
+			<pubDate>{{ beer.date | dateUTC }}</pubDate>
 			<guid>{{ meta.site.url }}{{ beer.slug }}</guid>
 			<description><![CDATA[
 <img src="{{ meta.img }}{{ beer.id }}/small.jpg" width="150" height="150"  alt="{{ beer.brewery }} - {{ beer.title }}">
