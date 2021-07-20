@@ -7,7 +7,7 @@ sitemapIgnore: true
 {%- for item in data.beers %}
 	<url>
 		<loc>{{ meta.site.url }}{{ item.slug }}</loc>
-		<lastmod>{{ item.date }}</lastmod>
+		<lastmod>{{ item.date | dateUTC }}</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -15,7 +15,7 @@ sitemapIgnore: true
 {%- for item in data.breweries %}
 	<url>
 		<loc>{{ meta.site.url }}{{ item.slug }}</loc>
-		<lastmod>{{ item.date }}</lastmod>
+		<lastmod>{{ item.date | dateUTC }}</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
