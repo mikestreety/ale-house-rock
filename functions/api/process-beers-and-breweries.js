@@ -39,6 +39,10 @@ function processBeers(raw, images) {
 
 		d = /(.*) ([0-9]?.?[0-9]), ([0-9]{4}) at ([0-9]{2}):([0-9]{2})(..)/.exec(date);
 		attrs.date = `${d[2]} ${d[1]} ${d[3]} ${parseInt(d[4]) + (d[6] == 'pm' ? 12 : 0)}:${d[5]}:00 GMT`;
+		
+		console.log(item)
+		console.log(attrs);
+		console.log(link);
 
 		attrs.code = /\.am\/p\/(.*?)\//.exec(link)[1];
 		attrs.slug = `/beer/` + slugify(`${attrs.title} ${attrs.brewery} ${attrs.number}`);
