@@ -1,0 +1,46 @@
+---
+layout: default.njk
+intro: A list of all the beers
+---
+
+<h1>Beers</h1>
+
+<table>
+	<tr>
+		<th></th>
+		<th>Image</th>
+		<th>Beer</th>
+		<th>Breweries</th>
+		<th>Score</th>
+	</tr>
+	{% for beer in data.beers %}
+	<tr>
+		<td>{{ beer.number }}</td>
+		<td><a href="{{ beer.slug }}" title=""><img src="{{ meta.img }}{{ beer.image }}" width="50" height="50" loading="lazy" alt="{{ beer.brewery }} - {{ beer.title }}">
+		</a></td>
+		<td><strong>{{ beer.title }}</strong><br><small><a href="https://www.instagram.com/p/{{ beer.code }}">Instagram</a></small></td>
+		<td>
+		{% for brewery in beer.breweries %}
+			<a href="{{ brewery.slug }}" class="brewery">{{ brewery.title }}</a>{{ ", " if not loop.last else "" }}
+			{% endfor %}
+		</td>
+		<td>{{ beer.rating }}</td>
+	</tr>
+	{% endfor %}
+</table>
+
+<script>
+const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+	v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+	)(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+// do the work...
+document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+	const table = th.closest('table');
+	Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+		.sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+		.forEach(tr => table.appendChild(tr) );
+})));
+</script>
