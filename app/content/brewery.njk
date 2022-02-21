@@ -25,7 +25,9 @@ eleventyComputed:
 				</a>
 				<div class="content">
 					<div>
-					{% for brewery in beer.breweries %}<a href="{{ brewery.slug }}" class="brewery">{{ brewery.title }}</a>{% endfor %}
+					{% for brewery in beer.breweries %}
+					<a href="{{ brewery.slug }}" class="brewery">{{ brewery.title }}</a>{{ ", " if not loop.last else "" }}
+					{% endfor %}
 					</div>
 					<a href="{{ beer.slug }}" class="title">{{ beer.title }}</a>
 					<div class="rating">{{ beer.rating }}</div>
