@@ -37,12 +37,20 @@ function processBeers(raw, images) {
 			attrs[attr[0]] = result && result.length > 1 ? result[1].trim() : '';
 		}
 
+		attrs.breweries = attrs.brewery.split(',').map(item => {
+			let title = item.trim();
+
+			return {
+				title,
+				slug: `/brewery/` + slugify(title)
+			}
+		});
+
 		d = /(.*) ([0-9]?.?[0-9]), ([0-9]{4}) at ([0-9]{2}):([0-9]{2})(..)/.exec(date);
 		attrs.date = `${d[2]} ${d[1]} ${d[3]} ${parseInt(d[4]) + (d[6] == 'pm' ? 12 : 0)}:${d[5]}:00 GMT`;
 
 		attrs.code = /(?:\.am|\.com)\/p\/(.*?)\//.exec(link)[1];
 		attrs.slug = `/beer/` + slugify(`${attrs.title} ${attrs.brewery} ${attrs.number}`);
-		attrs.brewery_slug = `/brewery/` + slugify(`${attrs.brewery}`);
 		attrs.image = `${attrs.code}/image.jpg.webp`;
 
 		let image_path = `alehouserock/${attrs.code}/image.jpg`;
@@ -70,18 +78,18 @@ function processBreweries(beers) {
 	let breweries = {};
 
 	for(let beer of beers) {
-		if(!breweries[beer.brewery_slug]) {
-			breweries[beer.brewery_slug] = {
-				title: beer.brewery,
-				slug: beer.brewery_slug,
-				beers: []
+		for(let brewery of beer.breweries) {
+			let b = JSON.parse(JSON.stringify(brewery));
+			if(!breweries[b.slug]) {
+				b.beers = [];
+				breweries[b.slug] = b;
 			}
-		}
 
-		breweries[beer.brewery_slug].beers.push(beer)
+			breweries[b.slug].beers.push(beer)
+		}
 	}
 
-	breweries =  Object.values(breweries);
+	breweries = Object.values(breweries);
 
 	for (let brewery of breweries) {
 		let ratings = brewery.beers

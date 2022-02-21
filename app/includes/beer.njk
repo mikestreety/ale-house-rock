@@ -3,7 +3,11 @@
 		<img src="{{ meta.img }}{{ beer.image }}" width="150" height="150" loading="lazy" alt="{{ beer.brewery }} - {{ beer.title }}">
 	</a>
 	<div class="content">
-		<a href="{{ beer.brewery_slug }}" class="brewery">{{ beer.brewery }}</a>
+		<div>
+		{% for brewery in beer.breweries %}
+			<a href="{{ brewery.slug }}" class="brewery">{{ brewery.title }}</a>{{ ", " if not loop.last else "" }}
+		{% endfor %}
+		</div>
 		<a href="{{ beer.slug }}" class="title">{{ beer.title }}</a>
 		<div class="rating">{{ beer.rating }}</div>
 		<div class="meta">
