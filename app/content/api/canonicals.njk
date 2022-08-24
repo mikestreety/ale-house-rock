@@ -1,0 +1,9 @@
+---
+permalink: api/canonicals.json
+sitemapIgnore: true
+---
+{
+	{% for beer in collections.beer %}
+		"{{ beer.data.canonical }}": "{{ beer.url }}"{% if not loop.last %},{% endif %}
+	{% endfor %}
+}

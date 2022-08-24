@@ -39,7 +39,7 @@ function getMode(array) {
 	});
 
 	var maxFreq = 0;
-	var mode = [];
+	var modes = [];
 
 	for(var num in modeObj) {
 		if(modeObj[num] > maxFreq) {
@@ -49,7 +49,8 @@ function getMode(array) {
 		else if(modeObj[num] === maxFreq) modes.push(num);
 	}
 
-	if(modes.length === Object.keys(modeObj).length) modes = [];
+	if(modes.length === Object.keys(modeObj).length)
+		modes = [];
 
 	return modes;
 }

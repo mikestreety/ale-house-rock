@@ -1,0 +1,5 @@
+{
+	"parent": "brewery",
+	"layout": "brewery.njk",
+	"tags": ["brewery"]
+}

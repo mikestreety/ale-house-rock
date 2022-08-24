@@ -13,18 +13,18 @@ intro: A list of all the beers
 		<th>Breweries</th>
 		<th>Score</th>
 	</tr>
-	{% for beer in data.beers %}
+	{% for beer in collections.beer %}
 	<tr>
-		<td>{{ beer.number }}</td>
-		<td><a href="{{ beer.slug }}" title=""><img src="{{ meta.img }}{{ beer.image }}" width="50" height="50" loading="lazy" alt="{{ beer.brewery }} - {{ beer.title }}">
+		<td>{{ beer.data.number }}</td>
+		<td><a href="{{ beer.url }}" title=""><img src="{{ meta.img }}{{ beer.image }}" width="50" height="50" loading="lazy" alt="{{ beer.data.brewedBy }} - {{ beer.data.title }}">
 		</a></td>
-		<td><strong>{{ beer.title }}</strong><br><small><a href="https://www.instagram.com/p/{{ beer.code }}">Instagram</a></small></td>
+		<td><strong>{{ beer.data.title }}</strong></td>
 		<td>
-		{% for brewery in beer.breweries %}
-			<a href="{{ brewery.slug }}" class="brewery">{{ brewery.title }}</a>{{ ", " if not loop.last else "" }}
-			{% endfor %}
+		{% for brewery in beer.data.breweries %}
+			<a href="{{ brewery.url }}" class="brewery">{{ brewery.data.title }}</a>{{ ", " if not loop.last else "" }}
+		{% endfor %}
 		</td>
-		<td>{{ beer.rating }}</td>
+		<td>{{ beer.data.rating }}</td>
 	</tr>
 	{% endfor %}
 </table>

@@ -4,6 +4,7 @@ module.exports = function (config) {
 
 	config.addFilter('limit', require('./app/filters/limit.js'));
 	config.addFilter('squashandweed', require('./app/filters/squashandweed.js'));
+	config.addFilter('findBySlug', require('./app/filters/findBySlug.js'));
 
 	config.addPlugin(require('@mikestreety/11ty-utils'));
 

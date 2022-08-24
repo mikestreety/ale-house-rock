@@ -4,17 +4,17 @@ sitemapIgnore: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-{%- for item in data.beers %}
+{%- for item in collections.beer %}
 	<url>
-		<loc>{{ meta.site.url }}{{ item.slug }}</loc>
+		<loc>{{ meta.site.url }}{{ item.url }}</loc>
 		<lastmod>{{ item.date | dateUTC }}</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 {%- endfor %}
-{%- for item in data.breweries %}
+{%- for item in collections.brewery %}
 	<url>
-		<loc>{{ meta.site.url }}{{ item.slug }}</loc>
+		<loc>{{ meta.site.url }}{{ item.url }}</loc>
 		<lastmod>{{ item.date | dateUTC }}</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>

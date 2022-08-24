@@ -2,28 +2,28 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>{{ title }}{{ " - " if title }}{{ meta.site.title }} - {{ meta.site.description }}</title>
+	<title>{{ seoTitle }}{{ " - " if seoTitle }}{{ meta.site.title }} - {{ meta.site.description }}</title>
 	<link rel="home" href="{{ meta.site.url }}/" />
 
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
 
 	<link rel="manifest" href="/site.webmanifest">
 
-	<link rel="apple-touch-icon" sizes="57x57" href="/assets/images/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/apple-touch-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/apple-touch-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon-180x180.png">
-	<link rel="icon" type="image/png" href="/assets/images/favicon_192.png" sizes="192x192">
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/img/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/assets/img/favicon_192.png" sizes="192x192">
 
-	<meta name="msapplication-square70x70logo" content="/assets/images/smalltile.png" />
-	<meta name="msapplication-square150x150logo" content="/assets/images/mediumtile.png" />
-	<meta name="msapplication-wide310x150logo" content="/assets/images/widetile.png" />
-	<meta name="msapplication-square310x310logo" content="/assets/images/largetile.png" />
+	<meta name="msapplication-square70x70logo" content="/assets/img/smalltile.png" />
+	<meta name="msapplication-square150x150logo" content="/assets/img/mediumtile.png" />
+	<meta name="msapplication-wide310x150logo" content="/assets/img/widetile.png" />
+	<meta name="msapplication-square310x310logo" content="/assets/img/largetile.png" />
 
 	<meta name="msapplication-TileColor" content="{{ meta.themeColour }}">
 	<meta name="msapplication-config" content="/browserconfig.xml">
@@ -37,7 +37,7 @@
 	<meta property="twitter:creator" content="@{{ meta.social.twitter }}">
 
 	<meta property="og:type" content="website">
-	<meta property="og:title" property="twitter:title" content="{{ title }}{{ " - " if title }}{{ meta.site.title }} - {{ meta.site.description }}">
+	<meta property="og:title" property="twitter:title" content="{{ seoTitle }}{{ " - " if seoTitle }}{{ meta.site.title }} - {{ meta.site.description }}">
 	<meta property="og:description" property="twitter:description" content="{{ intro if intro else description }}">
 	<meta property="og:url" content="{{ meta.site.url }}{{ page.url }}">
 	<meta property="og:site_name" content="{{ meta.site.title }}">
@@ -46,31 +46,31 @@
 	<meta property="og:image:width" content="1000">
 	<meta property="og:image:height" content="1000">
 	{% else %}
-	<meta property="og:image" property="twitter:image" name="image" content="{{ meta.site.url }}/assets/images/logo.png">
+	<meta property="og:image" property="twitter:image" name="image" content="{{ meta.site.url }}/assets/img/logo.png">
 	{% endif %}
 
 	{% set count = 1 %}
 
-	{% if beer.rating %}
+	{% if rating %}
 	<meta property="twitter:label{{ count }}" value="Rating">
-	<meta property="twitter:data{{ count }}" value="{{ beer.rating }}/10">
+	<meta property="twitter:data{{ count }}" value="{{ rating }}/10">
 	{% set count = count + 1 %}
 	{% endif %}
 
-	{% if beer.brewery %}
+	{% if brewedBy %}
 	<meta property="twitter:label{{ count }}" value="Brewery">
-	<meta property="twitter:data{{ count }}" value="{{ beer.brewery }}">
+	<meta property="twitter:data{{ count }}" value="{{ brewedBy }}">
 	{% set count = count + 1 %}
 	{% endif %}
-	{% if beer.number %}
+	{% if number %}
 	<meta property="twitter:label{{ count }}" value="Number">
-	<meta property="twitter:data{{ count }}" value="{{ beer.number }}">
+	<meta property="twitter:data{{ count }}" value="{{ number }}">
 	{% set count = count + 1 %}
 	{% endif %}
 
-	{% if beer.created_at %}
+	{% if date %}
 	<meta property="twitter:label{{ count }}" value="Posted">
-	<meta property="twitter:data{{ count }}" value="{{ beer.created_at | dateLong }}">
+	<meta property="twitter:data{{ count }}" value="{{ date | dateLong }}">
 	{% set count = count + 1 %}
 	{% endif %}
 
@@ -110,10 +110,10 @@
 				<label for="brewery">Select Brewery</label>
 				<select class="brewerySearch" id="brewery" onchange="jumpto(this)">
 					<option value="">Select Brewery</option>
-					{% for brewery in data.breweries %}
-					{% if brewery.beers.length > 1 %}
-					<option value="{{ brewery.slug }}">
-						{{ brewery.title }} ({{ brewery.beers.length }})
+					{% for brewery in collections.brewery %}
+					{% if brewery.data.beers.length > 1 %}
+					<option value="{{ brewery.url }}">
+						{{ brewery.data.title }} ({{ brewery.data.beers.length }})
 					</option>
 					{% endif %}
 					{% endfor %}
@@ -139,7 +139,7 @@
 	}
 	</script>
 
-	<script data-schema="Organization" type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Organization","name":"Ale House Rock","url":"{{ meta.site.url }}","logo":"{{ meta.site.url }}/assets/images/logo.png"}</script>
+	<script data-schema="Organization" type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Organization","name":"Ale House Rock","url":"{{ meta.site.url }}","logo":"{{ meta.site.url }}/assets/img/logo.png"}</script>
 	<script data-schema="WebSite" type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","name":"Ale House Rock","url":"{{ meta.site.url }}"}</script>
 
 </body>

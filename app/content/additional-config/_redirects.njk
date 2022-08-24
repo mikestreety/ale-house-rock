@@ -3,7 +3,7 @@ permalink: _redirects
 sitemapIgnore: true
 ---
 
-{%- for item in beers %}
+{%- for item in collections.beer %}
 /{{ item.number }}	{{ item.slug }}
 {%- endfor %}
 

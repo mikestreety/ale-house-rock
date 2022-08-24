@@ -1,0 +1,18 @@
+---
+number: 197
+title: KingGoblin
+rating: 8
+breweries:
+  - brewery/wychwood-brewery/
+date: '2019-01-15'
+permalink: beer/kinggoblin-wychwood-brewery-197/
+canonical: https://www.instagram.com/p/Bsql3QRAICW/
+tags:
+  - ale
+  - beer
+  - '@hobgoblin_beer'
+  - hobgoblin
+  - kinggoblin
+---
+
+You can taste the 6.6% of this monster. Full of flavour but it’s an evening sipper

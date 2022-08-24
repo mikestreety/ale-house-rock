@@ -1,0 +1,20 @@
+---
+number: 202
+title: Old Man
+rating: 7
+breweries:
+  - brewery/long-man-brewery/
+date: '2019-01-24'
+permalink: beer/old-man-long-man-brewery-202/
+canonical: https://www.instagram.com/p/BtBqrTWAcSb/
+tags:
+  - ale
+  - stout
+  - beer
+  - beerreview
+  - oldman
+  - longman
+  - '@longmanbrewery'
+---
+
+This is how this beer makes you feel, like an old man. It makes you yearn for a log fire and a cardigan. Full of flavour but not overpowering like some stouts. A long drink, one to be had over an evening and a conversation about what is wrong with the world

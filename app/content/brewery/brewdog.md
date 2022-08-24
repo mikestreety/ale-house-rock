@@ -1,0 +1,43 @@
+---
+title: Brewdog
+permalink: brewery/brewdog/
+beers:
+  - beer/corgi-juice-brewdog-670/
+  - beer/hello-my-name-is-gale-brewdog-665/
+  - beer/elvis-af-brewdog-660/
+  - beer/hazy-af-brewdog-614/
+  - beer/hazy-jane-guava-brewdog-606/
+  - beer/tonys-hopolonely-brewdog-525/
+  - beer/mr-president-brewdog-498/
+  - beer/jet-stream-brewdog-479/
+  - beer/jagged-edge-brewdog-478/
+  - beer/the-vermont-sessions-brewdog-northern-monk-474/
+  - beer/lock-down-brewdog-471/
+  - beer/light-speed-brewdog-468/
+  - beer/barnard-castle-eye-test-brewdog-464/
+  - beer/lock-down-brewdog-463/
+  - beer/juice-shack-brewdog-462/
+  - beer/jack-hammer-brewdog-461/
+  - beer/double-hazy-brewdog-460/
+  - beer/duo-polis-brewdog-458/
+  - beer/mallow-laser-quest-brewdog-457/
+  - beer/layer-cake-brewdog-454/
+  - beer/model-citizen-brewdog-salt-beer-factory-453/
+  - beer/fake-empire-brewdog-452/
+  - beer/lock-down-brewdog-451/
+  - beer/lost-brewdog-449/
+  - beer/triple-hazy-brewdog-426/
+  - beer/hazy-jane-brewdog-395/
+  - beer/double-punk-brewdog-394/
+  - beer/ald-ipa-brewdog-378/
+  - beer/new-england-ipa-brewdog-cloudwater-372/
+  - beer/future-proof-brewdog-modern-times-beer-343/
+  - beer/pale-ale-brewdog-308/
+  - beer/nanny-state-brewdog-241/
+  - beer/punk-af-brewdog-239/
+  - beer/clockwork-tangerine-brewdog-230/
+  - beer/5am-saint-brewdog-196/
+  - beer/dead-pony-club-brewdog-195/
+  - beer/punk-ipa-brewdog-194/
+  - beer/elvis-juice-brewdog-155/
+---

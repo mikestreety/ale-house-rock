@@ -1,17 +1,17 @@
 <li>
-	<a href="{{ beer.slug }}" title="">
-		<img src="{{ meta.img }}{{ beer.image }}" width="150" height="150" loading="lazy" alt="{{ beer.brewery }} - {{ beer.title }}">
+	<a href="{{ beer.url }}" title="{{ beer.data.title }}">
+		<img src="{{ beer.data.thumbnailPath }}" width="150" height="150" loading="lazy" alt="{{ beer.data.brewedBy }} - {{ beer.data.title }}">
 	</a>
 	<div class="content">
 		<div>
-		{% for brewery in beer.breweries %}
-			<a href="{{ brewery.slug }}" class="brewery">{{ brewery.title }}</a>{{ ", " if not loop.last else "" }}
+		{% for brewery in beer.data.breweries %}
+		<a href="{{ brewery.url }}" class="brewery">{{ brewery.data.title }}</a>{{ ", " if not loop.last else "" }}
 		{% endfor %}
 		</div>
-		<a href="{{ beer.slug }}" class="title">{{ beer.title }}</a>
-		<div class="rating">{{ beer.rating }}</div>
+		<a href="{{ beer.url }}" class="title">{{ beer.data.title }}</a>
+		<div class="rating">{{ beer.data.rating }}</div>
 		<div class="meta">
-			<div class="number">{{ beer.number }} - {{ beer.date | dateLong }}</div>
+			<div class="number">{{ beer.data.number }} - {{ beer.data.date | dateLong }}</div>
 		</div>
 	</div>
 </li>
