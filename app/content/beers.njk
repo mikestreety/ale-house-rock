@@ -16,7 +16,7 @@ intro: A list of all the beers
 	{% for beer in collections.beer %}
 	<tr>
 		<td>{{ beer.data.number }}</td>
-		<td><a href="{{ beer.url }}" title=""><img src="{{ meta.img }}{{ beer.image }}" width="50" height="50" loading="lazy" alt="{{ beer.data.brewedBy }} - {{ beer.data.title }}">
+		<td><a href="{{ beer.url }}" title=""><img src="{{ beer.data.thumbnailPath }}" width="50" height="50" loading="lazy" alt="{{ beer.data.brewedBy }} - {{ beer.data.title }}">
 		</a></td>
 		<td><strong>{{ beer.data.title }}</strong></td>
 		<td>
