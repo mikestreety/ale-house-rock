@@ -1,6 +1,5 @@
 [build]
 	publish = "html/"
-	functions = "functions/"
 	command = "npm run prod"
 
 [[headers]]
@@ -25,5 +24,10 @@
 
 [[headers]]
 	for = "/api/breweries.json"
+	[headers.values]
+		Content-Type = "application/json"
+
+[[headers]]
+	for = "/api/canonicals.json"
 	[headers.values]
 		Content-Type = "application/json"
