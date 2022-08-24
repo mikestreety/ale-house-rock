@@ -4,7 +4,7 @@ sitemapIgnore: true
 ---
 
 {%- for item in collections.beer %}
-/{{ item.number }}	{{ item.slug }}
+/{{ item.data.number }}	{{ item.url }}
 {%- endfor %}
 
 /beer/ranger-gipsy-hill-491	/beer/ranger-gipsy-hill-490
