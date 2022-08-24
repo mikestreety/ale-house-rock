@@ -1,0 +1,125 @@
+---
+layout: default.njk
+---
+<div class="statsPage">
+	<div class="statWrap">
+		<div class="statbox">
+			<div class="stat">{{ collections.beer | length }}</div>
+			<div class="subtitle">beers</div>
+		</div>
+		<div class="statbox">
+			<div class="stat">{{ collections.brewery | length }}</div>
+			<div class="subtitle">breweries</div>
+		</div>
+	</div>
+
+	<h2>Number of beers per rating</h2>
+	<p>Half points are rounded down</p>
+	<div class="chart">
+		<div id="ratingCount"></div>
+	</div>
+
+	<h2>Number of beers per month</h2>
+	<div class="chart">
+		<div id="monthCount"></div>
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script>
+	let beers = [];
+	{%- for beer in collections.beer %}
+		beers.push({
+			number: "{{ beer.data.number }}",
+			rating: "{{ beer.data.rating }}",
+			date: "{{ beer.data.date }}"
+		})
+	{%- endfor %}
+
+	var chartOptions = {
+		chart: {
+			height: 250,
+			type: 'area',
+			toolbar: {
+				show: false
+			},
+			zoom: {
+				enabled: false,
+			}
+		},
+		stroke: {
+			curve: 'smooth'
+		},
+		dataLabels: {
+			enabled: false
+		},
+		fill: {
+			type: "gradient",
+			gradient: {
+				shadeIntensity: 1,
+				inverseColors: false,
+				opacityFrom: 0.45,
+				opacityTo: 0.05,
+				stops: [20, 100]
+			}
+		}
+	}
+
+	let ratingCount = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+	for(let b of beers) {
+		if(parseInt(b.rating)) {
+			ratingCount[parseInt(b.rating) - 1]++;
+		}
+	}
+	new ApexCharts(document.querySelector("#ratingCount"), {
+		...chartOptions,
+		series: [{
+			name: 'Number of beers',
+			data: ratingCount
+		}],
+		xaxis: {
+			categories: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+		},
+		colors: ['#35eb93']
+	}).render();
+
+	/**
+	* Beers by Month
+	**/
+	let beersByMonth = {};
+	for(let b of beers) {
+		let d = b.date.split('-');
+
+		if(beersByMonth[`${d[1]}-${d[0]}`]) {
+			beersByMonth[`${d[1]}-${d[0]}`]++;
+		} else {
+			beersByMonth[`${d[1]}-${d[0]}`] = 1;
+		}
+	}
+
+	let xaxis = ['12-2016'];
+	let yaxis = [beersByMonth['12-2016']];
+	for (let y = 2017; y <= new Date().getFullYear(); y += 1) {
+		for (let m = 1; m <= 12; m += 1) {
+			let d = `${(m < 10 ? '0' : '') + m}-${y}`;
+			xaxis.push(d);
+			yaxis.push(beersByMonth[d] ?? 0);
+		}
+	}
+
+	new ApexCharts(document.querySelector("#monthCount"), {
+		...chartOptions,
+		series: [{
+			name: 'Number of beers',
+			data: yaxis
+		}],
+		xaxis: {
+			tickAmount: 15,
+			categories: xaxis
+		},
+		colors: ['#dd2c41']
+	}).render();
+
+
+	</script>
+</div>
