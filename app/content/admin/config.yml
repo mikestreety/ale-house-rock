@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/assets/images"
+public_folder: "/assets/images"
+site_url: https://alehouse.rocks/
+display_url: https://alehouse.rocks/
+collections:
+  - name: "beer"
+    label: "Beer"
+    folder: "app/content/beer"
+    create: false
+    slug: "{{number}}-{{title}}"
+    summary: "{{title}} ({{number}}) - {{date}} [{{filename}}.md]"
+    preview_path: "{{permalink}}"
+    fields:
+      - { label: "title", name: "title", widget: "string" }
+      - { label: "number", name: "number", widget: "string" }
+      - { label: "rating", name: "rating", widget: "string" }
+      - { label: "date", name: "date", widget: "date", format: 'YYYY-MM-DD' }
+      - { label: "canonical", name: "canonical", widget: "string", required: false }
+      - { label: "permalink", name: "permalink", widget: "string" }
+      - { label: "breweries", name: "breweries", widget: "relation", collection: "brewery", value_field: 'permalink', search_fields: ['title'], multiple: true }
+      - { label: "tags", name: "tags", widget: "list" }
+      - { label: "body", name: "body", widget: "markdown" }
+  - name: "brewery"
+    label: "Brewery"
+    folder: "app/content/brewery"
+    create: false
+    slug: "{{title}}"
+    preview_path: "{{permalink}}"
+    fields:
+      - { label: "title", name: "title", widget: "string" }
+      - { label: "permalink", name: "permalink", widget: "string" }
+      - { label: "beers", name: "beers", widget: "relation", collection: "beer", value_field: 'permalink', search_fields: ['title'], multiple: true }
