@@ -20,18 +20,18 @@ sitemapIgnore: true
 			<height>144</height>
 			<description>{{ meta.site.description }}</description>
 		</image>
-		{% for beer in data.beers | limit(10) %}
+		{% for beer in collections.beer | reverse | limit(10) %}
 		<item>
-			<title>{{ beer.title | escape | safe }} ({{ beer.brewery | escape | safe }})</title>
-			<link>{{ meta.site.url }}{{ beer.slug }}</link>
+			<title>{{ beer.data.title | escape | safe }} ({{ beer.data.brewedBy | escape | safe }})</title>
+			<link>{{ meta.site.url }}{{ beer.url }}</link>
 			<pubDate>{{ beer.date | dateUTC }}</pubDate>
-			<guid>{{ meta.site.url }}{{ beer.slug }}</guid>
+			<guid>{{ meta.site.url }}{{ beer.url }}</guid>
 			<description><![CDATA[
-<img src="{{ meta.img }}{{ beer.id }}/small.jpg" width="150" height="150"  alt="{{ beer.brewery }} - {{ beer.title }}">
-<h1>{{ beer.title }}</h1>
-<h2>{{ beer.brewery }}</h2>
-<h2>{{ beer.rating }}/10</h2>
-<p>{{ beer.description | escape | safe }}</p>
+<img src="{{ meta.img }}{{ beer.id }}/small.jpg" width="150" height="150"  alt="{{ beer.data.brewedBy | safe }} - {{ beer.data.title | safe }}">
+<h1>{{ beer.data.title | safe }}</h1>
+<h2>{{ beer.data.brewedBy | safe }}</h2>
+<h2>{{ beer.data.rating }}/10</h2>
+{{ entry.templateContent | safe }}
 			]]></description>
 		</item>
 		{% endfor %}

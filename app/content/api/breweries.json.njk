@@ -2,4 +2,23 @@
 permalink: api/breweries.json
 sitemapIgnore: true
 ---
-{{ data.breweries | dump | safe }}
+[
+	{% for brewery in collections.brewery %}
+	{
+		"title": "{{ brewery.data.title }}",
+		"beers": [
+			{% for beer in brewery.data.beers %}
+			{
+				"title": "{{ beer.data.title }}",
+				"rating": "{{ beer.data.rating }}",
+				"date": "{{ beer.data.date | dateLong }}",
+				"slug": "{{ beer.url }}"
+			}{% if not loop.last %},{% endif %}
+			{% endfor %}
+		],
+		"mean": "{{ brewery.data.meta.mean }}",
+		"median": "{{ brewery.data.meta.median }}",
+		"slug": "{{ brewery.url }}"
+	}{% if not loop.last %},{% endif %}
+	{% endfor %}
+]

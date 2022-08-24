@@ -1,0 +1,43 @@
+---
+layout: default.njk
+---
+<main class="singlebeer">
+	<div class="wrapper">
+		<a href="{{ imagePath }}">
+			<img src="{{ thumbnailPath }}" width="200" height="200" loading="lazy" alt="{{ brewedBy }} - {{ title }}">
+		</a>
+		<div class="content">
+			<div>
+				{% for brewery in breweries %}
+				<a href="{{ brewery.url }}" class="brewery">{{ brewery.data.title }}</a>{{ ", " if not loop.last else "" }}
+				{% endfor %}
+			</div>
+			<div class="title">{{ title }}</div>
+			<div class="rating">{{ rating }}</div>
+			<div class="meta">
+				<div>{{ date | dateLong }}</div>
+			</div>
+			<div class="meta">
+				<div class="number">{{ number }}</div>
+			</div>
+		</div>
+	</div>
+	{{ content | safe }}
+
+	<p><small><a href="{{ canonical }}">View original post</a></small></p>
+</main>
+<nav>
+	<h2>View other beers</h2>
+	<ul class="list listSmall">
+		{% set previousPost = collections.beer | getPreviousCollectionItem(page) %}
+		{% if previousPost %}
+			{% set beer = previousPost %}
+			{% include 'beer.njk' %}
+		{% endif %}
+		{% set nextPost = collections.beer | getNextCollectionItem(page) %}
+		{% if nextPost %}
+			{% set beer = nextPost %}
+			{% include 'beer.njk' %}
+		{% endif %}
+	</ul>
+</nav>

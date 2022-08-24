@@ -2,4 +2,25 @@
 permalink: api/beers.json
 sitemapIgnore: true
 ---
-{{ data.beers | dump | safe }}
+[
+	{% for beer in collections.beer %}
+	{
+		"number": "{{ beer.data.number }}",
+		"title": "{{ beer.data.title | safe }}",
+		"image": "{{ beer.data.imagePath }}",
+		"thumbnail": "{{ beer.data.thumbnailPath }}",
+		"brewery": "{{ beer.data.brewedBy }}",
+		"rating": "{{ beer.data.rating }}",
+		"date": "{{ beer.data.date | dateLong }}",
+		"breweries": [
+			{% for brewery in beer.data.breweries %}
+			{
+				"title": "{{ brewery.data.title }}",
+				"slug": "{{ brewery.url }}"
+			}{% if not loop.last %},{% endif %}
+			{% endfor %}
+		],
+		"slug": "{{ beer.url }}"
+	}{% if not loop.last %},{% endif %}
+	{% endfor %}
+]

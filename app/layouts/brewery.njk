@@ -1,0 +1,17 @@
+---
+layout: default.njk
+---
+
+<main id="beers">
+	<h1>{{ title }}</h1>
+	<p>
+		Beer count: <strong>{{ beers.length }}</strong><br>
+		Average score: <strong>{{ meta.mean }}</strong> / 10 <br>
+		Median score: <strong>{{ meta.median }}</strong> / 10
+	</p>
+	<ul class="list">
+		{% for beer in beers | reverse %}
+			{% include 'beer.njk' %}
+		{% endfor %}
+	</ul>
+</main>

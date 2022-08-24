@@ -1,5 +1,6 @@
 ---
 layout: default.njk
+seoTitle: Search
 ---
 
 # Search
@@ -33,13 +34,12 @@ let searchData = fetch('/api/beers.json').then(data => data.json())
 				results.push(item);
 			}
 		}
-
+		results = results.reverse();
 		return results;
 	});
 
 searchData.then(data => {
-	let results = document.getElementById('results'),
-		baseImageUrl = "{{ meta.img }}";
+	let results = document.getElementById('results')
 
 	results.innerHTML = '<h3>No results</h3>';
 
@@ -50,8 +50,8 @@ searchData.then(data => {
 		for (let beer of data) {
 			let childElement = document.createElement('li');
 			childElement.innerHTML = `
-				<a href="${ beer.slug }" title="">
-					<img src="${ baseImageUrl }${ beer.image }" width="150" height="150" loading="lazy" alt="${ beer.brewery } - ${ beer.title }">
+				<a href="${ beer.slug }" title="${ beer.title }">
+					<img src="${ beer.thumbnail }" width="150" height="150" loading="lazy" alt="${ beer.brewery } - ${ beer.title }">
 				</a>
 				<div class="content">
 					<a href="${ beer.brewery_slug }" class="brewery">${ beer.brewery }</a>
@@ -59,7 +59,7 @@ searchData.then(data => {
 					<div class="rating">${ beer.rating }</div>
 
 					<div class="meta">
-						<div class="number">${ beer.number }</div>
+						<div class="number">${ beer.number } - ${ beer.date }</div>
 					</div>
 				</div>
 			`;

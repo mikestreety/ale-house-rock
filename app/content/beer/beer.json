@@ -1,0 +1,7 @@
+{
+	"layout": "beer.njk",
+	"parent": "beer",
+	"tags": [
+		"beer"
+	]
+}

@@ -1,0 +1,12 @@
+---
+number: 506
+title: Big Baller
+rating: 5
+breweries:
+  - brewery/gipsy-hill/
+date: '2021-06-08'
+permalink: beer/big-baller-gipsy-hill-506/
+canonical: https://www.instagram.com/p/CP3_-AgFKgx/
+---
+
+Popped into the @craftbeercabin at the weekend to grab a park beer and this caught my eye as a take-home-and-try kind of beer. It was only when I got outside did I realise this TIPA from @gipsyhillbrew is 11.3%! Was a bit disappointed in how it poured - it was very sediment-y and this photo was taken after a while of letting it settle and pouring into a couple of glasses to try and reduce. This beer, for me, was very much a "try it" beer. The flavours were there (along with a very strong punch) but I won't be buying one again - no doubt marred by the pour

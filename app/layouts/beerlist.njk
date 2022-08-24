@@ -1,9 +1,6 @@
 ---
 layout: default.njk
 ---
-<aside class="filters">
-	<a href="/ordered/rating" class="sort {{ "active" if page.url == '/ordered/rating/' else ''}}">Sort by Rating</a>
-</aside>
 <main id="beers">
 	<ul class="list">
 		{% for beer in pagination.items %}

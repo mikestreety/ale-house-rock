@@ -1,0 +1,21 @@
+---
+number: 80
+title: Cornish Knocker
+rating: 6
+breweries:
+  - brewery/skinners-brewery/
+date: '2017-11-04'
+permalink: beer/cornish-knocker-skinners-brewery-80/
+canonical: https://www.instagram.com/p/BbFnazNFPlO/
+tags:
+  - ale
+  - cornish
+  - hops
+  - beer
+  - beerporn
+  - beerweekend
+  - beerwithfriends
+  - fireworks
+---
+
+Comical story on the back with an average beer to boot

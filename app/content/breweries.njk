@@ -12,12 +12,12 @@ intro: A list of breweries whose beer has been reviewed
 		<th>Average score</th>
 		<th>Median score</th>
 	</tr>
-	{% for brewery in data.breweries %}
+	{% for brewery in collections.brewery %}
 	<tr>
-		<td><a href="{{ brewery.slug }}">{{ brewery.title }}</a></td>
-		<td>{{ brewery.beers.length }}</td>
-		<td>{{ brewery.meta.mean }}</td>
-		<td>{{ brewery.meta.median }}</td>
+		<td><a href="{{ brewery.url }}">{{ brewery.data.title }}</a></td>
+		<td>{{ brewery.data.beers.length }}</td>
+		<td>{{ brewery.data.meta.mean }}</td>
+		<td>{{ brewery.data.meta.median }}</td>
 	</tr>
 	{% endfor %}
 </table>

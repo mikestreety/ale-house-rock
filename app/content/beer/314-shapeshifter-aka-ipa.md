@@ -1,0 +1,25 @@
+---
+number: 314
+title: Shapeshifter (A.K.A. IPA)
+rating: 9
+breweries:
+  - brewery/fourpure-brewing-company/
+date: '2020-04-27'
+permalink: beer/shapeshifter-aka-ipa-fourpure-brewing-company-314/
+canonical: https://www.instagram.com/p/B_f9xYupyuM/
+tags:
+  - drinking
+  - beerporn
+  - review
+  - cannedbeer
+  - bottle
+  - beersofinstagram
+  - beerthoughts
+  - aleporn
+  - ipa
+  - sundayfunday
+  - latergram
+  - beerfortheweekend
+---
+
+I seem to be on a string of IPAs at the moment, but when they are this good I am absolutely fine with that.  This one was an amazing way to end the weekend and was perfect served fridge cold. The taste was sensational and was well worth the wait. @fourpure have smashed it out the park with this one and I will be ordering more of these come payday 😚👌
