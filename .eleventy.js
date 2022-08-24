@@ -9,6 +9,7 @@ module.exports = function (config) {
 	config.addPlugin(require('@mikestreety/11ty-utils'));
 
 	config.addPassthroughCopy({'build': 'assets'});
+	config.addPassthroughCopy('./app/content/admin');
 
 	config.addPlugin(eleventyNavigationPlugin);
 	config.setDataDeepMerge(true);
