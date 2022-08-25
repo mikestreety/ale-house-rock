@@ -3,10 +3,16 @@ permalink: _redirects
 sitemapIgnore: true
 ---
 
+# Shortcut for each beer number
 {%- for item in collections.beer %}
 /{{ item.data.number }}	{{ item.url }}
 {%- endfor %}
 
+# Typo in brewery name
+/beer/solar-flare-beaverton-677/	/beer/solar-flare-beavertown-677/
+/brewery/beaverton/	/brewery/beavertown/
+
+# When i posted a duplicate beer
 /beer/ranger-gipsy-hill-491	/beer/ranger-gipsy-hill-490
 /beer/written-in-the-dust-deya-brewing-company-490	/beer/written-in-the-dust-deya-brewing-company-489
 /beer/parade-beak-brewery-489	/beer/parade-beak-brewery-488
