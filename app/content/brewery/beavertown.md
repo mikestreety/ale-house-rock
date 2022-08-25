@@ -6,4 +6,5 @@ beers:
   - beer/lupuoid-beavertown-481/
   - beer/neck-oil-beavertown-411/
   - beer/gamma-ray-beavertown-322/
+  - beer/solar-flare-beavertown-677/
 ---
