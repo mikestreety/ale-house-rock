@@ -8,4 +8,5 @@ beers:
   - beer/waggle-dance-eagle-brewery-85/
   - beer/bombardier-eagle-brewery-44/
   - beer/bombardier-burning-gold-eagle-brewery-36/
+  - beer/courage-directors-eagle-brewery-20/
 ---
