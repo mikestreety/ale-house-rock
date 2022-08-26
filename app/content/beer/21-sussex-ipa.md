@@ -8,13 +8,7 @@ date: '2016-12-20'
 permalink: beer/sussex-ipa-arundel-brewery-21/
 canonical: https://www.instagram.com/p/BOOv-7GgSnQ/
 tags:
-  - decembeer
-  - aleadventures
-  - jinglebeer
-  - hoppy
-  - lowestscoreyet
-  - uninspiring
-  - beerisbeer
+  - ipa
 ---
 
 A hoppy number. Not really my cup of tea. Didn't finish it, but probably could have.

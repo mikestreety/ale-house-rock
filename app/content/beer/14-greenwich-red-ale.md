@@ -8,14 +8,7 @@ date: '2016-12-12'
 permalink: beer/greenwich-red-ale-meantime-brewing-company-14/
 canonical: https://www.instagram.com/p/BN7mbqwA9Mz/
 tags:
-  - decembeer
-  - jinglebeer
-  - englishbeer
-  - greenwich
-  - beer
-  - malty
-  - darkbeer
-  - moreplease
+  - redale
 ---
 
 A good beer. Would have again. Malty and perfect for a night in with rain hammering the windows.
