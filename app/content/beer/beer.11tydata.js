@@ -25,7 +25,7 @@ module.exports = {
 		},
 		imagePath: data => {
 			if(data.page) {
-				return `https://alehouserockcdn.netlify.app/${data.page.fileSlug}/image.webp`
+				return `https://alehouserockcdn.netlify.app/${data.number}/image.webp`
 			}
 		},
 		thumbnailPath: data => {
