@@ -9,4 +9,7 @@ beers:
   - beer/bombardier-eagle-brewery-44/
   - beer/bombardier-burning-gold-eagle-brewery-36/
   - beer/courage-directors-eagle-brewery-20/
+  - beer/triple-hopped-ipa-eagle-brewery-29/
 ---
+
+Formally Charlie Wells/Charles Wells/Wells
