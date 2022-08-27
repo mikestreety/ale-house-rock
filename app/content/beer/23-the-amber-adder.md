@@ -8,15 +8,7 @@ date: '2016-12-21'
 permalink: beer/the-amber-adder-hatherwood-craft-beer-company-23/
 canonical: https://www.instagram.com/p/BOShVfqgMGK/
 tags:
-  - jinglebeer
-  - decembeer
-  - badbeer
-  - avoid
-  - terriblepint
-  - byebyebeer
-  - ale
-  - hops
-  - foultaste
+  - ambereale
 ---
 
 Oh my god. That is terrible. I've had to pour it away as I can't finish it.

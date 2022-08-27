@@ -8,15 +8,7 @@ date: '2016-12-23'
 permalink: beer/whistable-bay-the-faversham-steam-brewery-25/
 canonical: https://www.instagram.com/p/BOXeyq_A-OT/
 tags:
-  - beer
-  - ale
-  - pint
-  - tasty
-  - neartheend
-  - decembeer
-  - jinglebeer
-  - alebehomeforchristmas
-  - aleporn
+  - paleale
 ---
 
 A sweet, golden ale with flavour and character. Drinkable. Very drinkable.
