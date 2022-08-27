@@ -8,13 +8,13 @@ date: '2018-01-11'
 permalink: beer/bitter-and-twisted-harviestoun-brewery-94/
 canonical: https://www.instagram.com/p/Bd02_djl8la/
 tags:
-  - citrus
-  - beer
-  - ale
-  - alereview
-  - drinking
+
+
+
+
+
   - bitter
-  - twisted
+
 ---
 
 A light crisp beer, nice citrus notes. Would have again

@@ -10,14 +10,14 @@ canonical: https://www.instagram.com/p/CPy7bq5FPcU/
 tags:
   - neipa
   - ipa
-  - beer
-  - londonbeer
-  - sunday
-  - sundaybeer
-  - coldbeer
-  - coldbeers
-  - beerstagram
-  - beersofinstagram
+
+
+
+
+
+
+
+
 ---
 
 I didn't realise I was such a fan of New England IPAs until @marclittlemore asked for some recommendations and all the NEIPAs I had recently drunk scored highly. I grabbed this one when I saw it on the Tesco shelves and was not disappointed. It was smooth easy drinking with plenty of flavour and definitely one I will buy again. @londonbeerfactory

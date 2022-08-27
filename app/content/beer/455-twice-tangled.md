@@ -8,8 +8,8 @@ date: '2021-03-21'
 permalink: beer/twice-tangled-badger-455/
 canonical: https://www.instagram.com/p/CMsqrempWzE/
 tags:
-  - beer
-  - ale
+
+
   - dipa
 ---
 

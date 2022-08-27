@@ -8,16 +8,16 @@ date: '2020-03-13'
 permalink: beer/copperwheat-harveys-brewery-290/
 canonical: https://www.instagram.com/p/B9sKk24J2Xy/
 tags:
-  - drinking
-  - aleporn
-  - bottledbeer
-  - alereview
-  - pint
-  - beergasm
-  - beerweekend
-  - thirstythursday
-  - review
-  - craftbeer
+
+
+
+
+
+
+
+
+
+
 ---
 
 Yes, yet another Harvey's beer. They draw you in as they recycle the bottles, so you have to keep going back. Not that impressed with this one, had a weird tang and was too bitter for me. I've definitely had better wheat beers.

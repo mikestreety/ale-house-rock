@@ -8,13 +8,13 @@ date: '2019-04-18'
 permalink: beer/lyme-gold-lyme-regis-brewery-219/
 canonical: https://www.instagram.com/p/BwaDRcWl_34/
 tags:
-  - beerreview
-  - beerporn
-  - beerthoughts
-  - aleporn
-  - lymeregis
-  - palebeer
-  - goldbeer
+
+
+
+
+
+
+
 ---
 
 This beer had a crisp tang on first sip which immidiately put me off but the proceeding sips managed to clamber back some sort of respect. Still not enough to have me bowled over but better than some beers I've had

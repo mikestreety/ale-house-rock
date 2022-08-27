@@ -1,0 +1,22 @@
+---
+layout: default.njk
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /category/{{ tag }}/
+---
+
+<div class="container blog-container">
+	<h1>{{ tag }}</h1>
+
+
+	<ul class="list">
+		{% if tag %}
+			{% set categoryList = collections[ tag ] %}
+			{% for beer in categoryList | reverse %}
+				{% include 'beer.njk' %}
+			{% endfor %}
+		{% endif %}
+	</ul>
+</div>

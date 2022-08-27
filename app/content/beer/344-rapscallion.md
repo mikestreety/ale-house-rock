@@ -8,16 +8,16 @@ date: '2020-06-12'
 permalink: beer/rapscallion-northern-monk-344/
 canonical: https://www.instagram.com/p/CBWZrFKJcHr/
 tags:
-  - cannedbeer
-  - beer
-  - aleporn
-  - hailtotheale
-  - review
-  - beergasm
-  - craftale
-  - beerfluencer
-  - beersofinstagram
-  - beerstagram
+
+
+
+
+
+
+
+
+
+
   - ipa
 ---
 

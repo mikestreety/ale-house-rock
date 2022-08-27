@@ -8,12 +8,12 @@ date: '2017-12-02'
 permalink: beer/southwold-adnams-84/
 canonical: https://www.instagram.com/p/BcNm0oSFRJ4/
 tags:
-  - hops
-  - adnams
-  - beer
-  - ale
-  - alereview
-  - drinking
+
+
+
+
+
+
 ---
 
 In the pub, this Adnams beer had an odd aftertaste. Turns out it’s “distinctively hoppy”

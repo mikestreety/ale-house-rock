@@ -8,10 +8,10 @@ date: '2018-07-15'
 permalink: beer/cocker-hoop-jennings-129/
 canonical: https://www.instagram.com/p/BlRAn0IF1QH/
 tags:
-  - ale
-  - beer
-  - beerreview
-  - cockerhoop
+
+
+
+
 ---
 
 A crisp, clean, refreshing beer

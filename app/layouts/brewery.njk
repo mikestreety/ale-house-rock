@@ -9,6 +9,9 @@ layout: default.njk
 		Average score: <strong>{{ stats.mean }}</strong> / 10 <br>
 		Median score: <strong>{{ stats.median }}</strong> / 10
 	</p>
+
+	{{ content | safe }}
+
 	<ul class="list">
 		{% for beer in beers | reverse %}
 			{% include 'beer.njk' %}

@@ -8,15 +8,15 @@ date: '2020-04-03'
 permalink: beer/stateside-ipa-the-buckhorn-brewery-298/
 canonical: https://www.instagram.com/p/B-iPC5xJz6X/
 tags:
-  - ale
-  - beerreview
-  - craftale
-  - drinking
-  - beerthoughts
-  - cannedbeer
-  - review
-  - halfpint
-  - beer
+
+
+
+
+
+
+
+
+
   - ipa
 ---
 

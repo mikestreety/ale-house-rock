@@ -9,7 +9,7 @@ permalink: beer/premium-best-bitter-slaters-handcrafted-ales-120/
 canonical: https://www.instagram.com/p/Bkapsh6lLYm/
 tags:
   - bitter
-  - premiumbeer
+
 ---
 
 Lovely standard beer. Does the job

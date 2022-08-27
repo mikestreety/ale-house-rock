@@ -8,9 +8,9 @@ date: '2018-07-03'
 permalink: beer/the-governor-marco-pierre-white-125/
 canonical: https://www.instagram.com/p/BkyRBvFFyOq/
 tags:
-  - ale
-  - beer
-  - review
+
+
+
 ---
 
 A bit watery and tasteless

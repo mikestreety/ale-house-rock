@@ -8,16 +8,16 @@ date: '2020-04-12'
 permalink: beer/ecstasy-stout-loud-shirt-brewing-company-303/
 canonical: https://www.instagram.com/p/B-5KMQxpzyJ/
 tags:
-  - craftale
-  - beerporn
-  - beerreview
-  - craftbeer
-  - bottle
-  - beergasm
-  - ale
-  - aleporn
-  - beersofinstagram
-  - beerthoughts
+
+
+
+
+
+
+
+
+
+
 ---
 
 Nice sunny Easter Sunday in the garden followed by a roast dinner called for a stout (more of a winter beer but it needed drinking!). 6.6% and you can taste it. Strong coffee/chocolate flavours as expected from a stout but lovely taste

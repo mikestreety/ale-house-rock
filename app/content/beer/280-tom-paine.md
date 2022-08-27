@@ -8,9 +8,9 @@ date: '2020-02-13'
 permalink: beer/tom-paine-harveys-brewery-280/
 canonical: https://www.instagram.com/p/B8f6pnHp-vo/
 tags:
-  - beer
-  - ale
-  - pint
+
+
+
   - bitter
 ---
 

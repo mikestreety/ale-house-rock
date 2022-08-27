@@ -8,13 +8,13 @@ date: '2017-10-20'
 permalink: beer/cambridgeshire-golden-ale-oakham-ales-75/
 canonical: https://www.instagram.com/p/BafCZp5lHYT/
 tags:
-  - ale
-  - beer
-  - hops
-  - golden
+
+
+
+
   - goldenale
-  - pint
-  - friday
+
+
 ---
 
 This beer got better as I drunk it. Starting at a 4. It’s light and crisp and finished on a

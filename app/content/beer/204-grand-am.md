@@ -8,12 +8,12 @@ date: '2019-01-28'
 permalink: beer/grand-am-bear-republic-204/
 canonical: https://www.instagram.com/p/BtMIdAzlGW_/
 tags:
-  - beer
-  - review
-  - ale
-  - alereview
+
+
+
+
   - goldenale
-  - americanpaleale
+
 ---
 
 unexpectedly bottle conditioned for an APA. A strong taste, sipped this over an evening despite being small

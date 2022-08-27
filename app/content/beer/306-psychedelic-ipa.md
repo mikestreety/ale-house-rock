@@ -8,16 +8,16 @@ date: '2020-04-17'
 permalink: beer/psychedelic-ipa-loud-shirt-brewing-company-306/
 canonical: https://www.instagram.com/p/B_FicJdpZjB/
 tags:
-  - beer
-  - review
-  - beerweekend
-  - ale
-  - bottledbeer
-  - beerporn
-  - beersofinstagram
+
+
+
+
+
+
+
   - bitter
-  - hailtotheale
-  - beergasm
+
+
 ---
 
 What a wonderful and light beer. It might have been the sunshine and sitting in the garden that tainted the taste of this bad boy, but thoroughly enjoyed this pint - even when I came inside! One of my favourite of all the @loudshirtbeer beers I've had to date

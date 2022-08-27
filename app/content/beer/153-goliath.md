@@ -8,11 +8,11 @@ date: '2018-09-06'
 permalink: beer/goliath-wychwood-brewery-153/
 canonical: https://www.instagram.com/p/BnZY9A-FePQ/
 tags:
-  - ale
-  - beer
-  - hobgoblin
-  - wychwood
-  - beerreview
+
+
+
+
+
 ---
 
 what a nicely balanced crisp beer. Very drinkable

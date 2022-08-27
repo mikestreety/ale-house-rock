@@ -8,8 +8,8 @@ date: '2018-07-18'
 permalink: beer/pilsner-open-gate-brewery-130/
 canonical: https://www.instagram.com/p/BlXMAWuFsqZ/
 tags:
-  - beer
-  - beerreview
+
+
   - pilsner
 ---
 

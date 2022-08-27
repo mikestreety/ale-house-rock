@@ -8,9 +8,9 @@ date: '2018-07-20'
 permalink: beer/beyond-the-pale-london-beer-factory-131/
 canonical: https://www.instagram.com/p/BleB_Jal_Tj/
 tags:
-  - beer
-  - beerreview
-  - beercan
+
+
+
 ---
 
 what a disappointing beer. Shared with a friend, this hipster craft beer was nothing but meh. Glad I only had half a can

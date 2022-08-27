@@ -8,13 +8,13 @@ date: '2019-04-14'
 permalink: beer/dorset-knob-dorset-brewing-company-218/
 canonical: https://www.instagram.com/p/BwPouFmlQFU/
 tags:
-  - knob
-  - beer
-  - dorset
-  - dorsetbeer
-  - ale
-  - pint
-  - beerreview
+
+
+
+
+
+
+
 ---
 
 Underwhelming as a beer. Drinkable, with a good(ish) taste but could have been so much better

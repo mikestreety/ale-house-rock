@@ -9,11 +9,11 @@ permalink: beer/check-ignition-lost-and-grounded-209/
 canonical: https://www.instagram.com/p/BvFYzcvlS5d/
 tags:
   - stout
-  - beer
-  - ale
+
+
   - porter
-  - darkbeer
-  - beerreview
+
+
 ---
 
 A Porter which apparently has raspberry notes - although they were lacking. Finished the pint but was underwhelmed

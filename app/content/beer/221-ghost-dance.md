@@ -9,9 +9,9 @@ permalink: beer/ghost-dance-redwell-brewing-company-221/
 canonical: https://www.instagram.com/p/Bwxc16Xl6E7/
 tags:
   - paleale
-  - beerreview
-  - beer
-  - saturdaynight
+
+
+
 ---
 
 went down without incident. Nothing to report really. Not horrible, not staggeringly tasty

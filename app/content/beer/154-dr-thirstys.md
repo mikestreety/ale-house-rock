@@ -8,8 +8,8 @@ date: '2018-09-08'
 permalink: beer/dr-thirstys-wychwood-brewery-154/
 canonical: https://www.instagram.com/p/BnesJqaFhPN/
 tags:
-  - beer
-  - ale
+
+
   - goldenale
 ---
 

@@ -9,8 +9,8 @@ permalink: beer/budding-pale-ale-stroud-brewery-189/
 canonical: https://www.instagram.com/p/Br0NQARgsBH/
 tags:
   - bitter
-  - beer
-  - christmas
+
+
 ---
 
 Not as nice as the first one but still pleasant

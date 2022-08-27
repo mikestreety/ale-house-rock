@@ -8,11 +8,11 @@ date: '2019-01-15'
 permalink: beer/homebrew-street-brewing-company-198/
 canonical: https://www.instagram.com/p/BsqqtHBAunj/
 tags:
-  - homebrew
-  - beerreview
-  - beer
-  - review
-  - alereview
+
+
+
+
+
   - goldenale
 ---
 

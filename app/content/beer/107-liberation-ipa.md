@@ -8,11 +8,11 @@ date: '2018-04-10'
 permalink: beer/liberation-ipa-liberation-brewery-107/
 canonical: https://www.instagram.com/p/BhZuLCtl10M/
 tags:
-  - ale
-  - liberation
+
+
   - ipa
-  - beer
-  - pint
+
+
   - bitter
 ---
 

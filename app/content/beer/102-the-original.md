@@ -8,10 +8,10 @@ date: '2018-03-24'
 permalink: beer/the-original-innis-gunn-102/
 canonical: https://www.instagram.com/p/BguAeVwlHt8/
 tags:
-  - ale
-  - beer
-  - innisandgunn
-  - halfpint
+
+
+
+
 ---
 
 Picked this up in Lidl, haven’t had one for years. These are beautifully, oaky, scotchy and easily drinkable. Brewed in barrels of spirits and dangerously high in alcohol. Went down far too quickly

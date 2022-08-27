@@ -9,7 +9,7 @@ permalink: beer/american-pale-fourpure-brewing-company-167/
 canonical: https://www.instagram.com/p/BpVFnbQFrK2/
 tags:
   - paleale
-  - ale
+
 ---
 
 quite a nice hipster beer. Could have a few of these although it’s missing some depth.

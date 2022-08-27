@@ -8,13 +8,13 @@ date: '2020-06-21'
 permalink: beer/east-coast-pale-ale-bear-island-347/
 canonical: https://www.instagram.com/p/CBsVIGmpaSQ/
 tags:
-  - alereviewer
-  - bottledbeer
-  - hailtotheale
-  - beerthoughts
-  - bottle
-  - alereview
-  - beerreview
+
+
+
+
+
+
+
   - bitter
 ---
 

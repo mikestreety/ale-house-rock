@@ -8,18 +8,18 @@ date: '2021-07-17'
 permalink: beer/shake-some-action-burning-sky-534/
 canonical: https://www.instagram.com/p/CRcXzBjJuqV/
 tags:
-  - beer
+
   - ipa
-  - beerreview
-  - beersnob
-  - beeroclock
-  - beersofinstagram
-  - beerstagram
-  - beerporn
-  - saturdaybeer
-  - burningsky
-  - beerforthepeople
-  - beerfortheweekend
+
+
+
+
+
+
+
+
+
+
 ---
 
 Well this was a surprise. A lovely smooth hazy IPA (was expecting a clear, hoppy one). Tasty flavours from start to finish and one I would certainly have again from @burningskybeer. Bought from @palate.bottleshop, this beer was perfect fridge-cold after a hot day. My only regret is I only bought one!

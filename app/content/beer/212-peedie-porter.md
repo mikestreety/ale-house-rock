@@ -10,8 +10,8 @@ canonical: https://www.instagram.com/p/BvmnlZulQoT/
 tags:
   - porter
   - stout
-  - beerreview
-  - latergram
+
+
 ---
 
 A classic sipping Porter to while the evening away

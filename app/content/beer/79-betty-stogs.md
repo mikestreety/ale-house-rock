@@ -8,13 +8,13 @@ date: '2017-11-04'
 permalink: beer/betty-stogs-skinners-brewery-79/
 canonical: https://www.instagram.com/p/BbFTEXHFazr/
 tags:
-  - malty
-  - beer
-  - beerporn
-  - alereview
-  - pint
-  - ale
-  - drinking
+
+
+
+
+
+
+
 ---
 
 A malty beer which has slowed my drinking pace but still tasty

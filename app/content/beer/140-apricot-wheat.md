@@ -8,12 +8,12 @@ date: '2018-08-05'
 permalink: beer/apricot-wheat-wiens-brewing-140/
 canonical: https://www.instagram.com/p/BmHKvBsFSSw/
 tags:
-  - wheatbeer
-  - beer
-  - beerreview
-  - beerporn
-  - aleorgy
-  - beergasm
+
+
+
+
+
+
 ---
 
 Yet another beer from the same place as the last couple. They seem to be getting better. Can’t taste the apricot, so just a sweet wheat beer.

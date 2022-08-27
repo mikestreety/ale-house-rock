@@ -8,11 +8,11 @@ date: '2017-12-31'
 permalink: beer/bitter-asda-smart-price-89/
 canonical: https://www.instagram.com/p/BdYGd0fF06b/
 tags:
-  - asda
-  - ale
-  - beerreview
-  - badbeer
-  - horribale
+
+
+
+
+
 ---
 
 Always wanted to try one of these @asda beers. 4 for 90p. Didn’t have high hopes and it was exactly as I expected. Soapy, watery nothingness. Had to pour it away.

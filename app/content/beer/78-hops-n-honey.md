@@ -8,13 +8,13 @@ date: '2017-11-04'
 permalink: beer/hops-n-honey-skinners-brewery-78/
 canonical: https://www.instagram.com/p/BbFQCaclzX8/
 tags:
-  - ale
-  - honey
-  - beer
-  - beerporn
-  - alereview
-  - hops
-  - hoppy
+
+
+
+
+
+
+
 ---
 
 A light, easy drinkin’ ale

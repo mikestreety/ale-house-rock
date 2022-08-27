@@ -8,10 +8,10 @@ date: '2018-12-25'
 permalink: beer/black-ipa-greene-king-188/
 canonical: https://www.instagram.com/p/Br0MU-sAhIf/
 tags:
-  - beer
-  - review
-  - beerreview
-  - alereview
+
+
+
+
   - blackipa
 ---
 

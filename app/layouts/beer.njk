@@ -24,6 +24,8 @@ layout: default.njk
 	</div>
 	{{ content | safe }}
 
+	{% for tag in tags %}{% include 'tag.njk' %}{% endfor %}
+
 	<p><small><a href="{{ canonical }}">View original post</a></small></p>
 </main>
 <nav>

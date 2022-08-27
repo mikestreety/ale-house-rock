@@ -9,12 +9,10 @@ permalink: beer/take-up-space-the-queer-brewing-project-337/
 canonical: https://www.instagram.com/p/CA3T-VWJL9m/
 tags:
   - stout
-  - beer
-  - '@queerbrewingproject'
-  - '@beer52hq'
-  - beerreview
-  - beerfluencer
-  - beerstagram
+
+
+
+
 ---
 
 The sound of this raspberry and vanilla stout drew me into this, however I was disappointed in the lack of those flavours. I'm sure a more sophisticated palate would have discovered them, but for my simple tastes I found it lacking. Such a shame. Smooth stout otherwise

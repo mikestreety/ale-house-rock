@@ -8,11 +8,11 @@ date: '2017-08-22'
 permalink: beer/two-hoots-joseph-holt-60/
 canonical: https://www.instagram.com/p/BYGAvxFF4pj/
 tags:
-  - beer
+
   - bitter
-  - ale
-  - hoppy
-  - light.
+
+
+
 ---
 
 A light beer for the beautiful weather, going down far too quickly. After the Hall and Woodhouse brewery tour today it's only fitting to have a beer. Although the badger ones were not cold enough to drink

@@ -8,9 +8,9 @@ date: '2018-09-14'
 permalink: beer/sticky-toffee-pudding-ale-eagle-brewery-157/
 canonical: https://www.instagram.com/p/BnuVOkjllyi/
 tags:
-  - beer
-  - toffee
-  - toffeebeer
+
+
+
 ---
 
 (Brewery previously was Wells) Certainly a post-dinner beer this one. Heavy, sweet and slow drinking, but full of taste. A one-off

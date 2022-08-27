@@ -371,6 +371,20 @@ a.title:hover {
 	padding-top: var(--gutter);
 }
 
+.p-category {
+	padding: 0.3rem 0.5rem;
+	border-radius: 0.7rem;
+	background-color: var(--neutralLight);
+	box-shadow: none;
+	transition: background-color 0.35s ease;
+	font-weight: normal;
+	color: var(--base);
+}
+.p-category:hover {
+	box-shadow: none;
+	background-color: var(--tertiaryLight);
+}
+
 .statsPage h2 + p {
 	margin-top: -0.75rem;
 }

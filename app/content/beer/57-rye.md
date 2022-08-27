@@ -8,12 +8,12 @@ date: '2017-08-09'
 permalink: beer/rye-shipyard-57/
 canonical: https://www.instagram.com/p/BXlPyoflVSX/
 tags:
-  - alereview
+
   - bitter
-  - ale
-  - pint
-  - rye
-  - shipyard
+
+
+
+
   - paleale
 ---
 

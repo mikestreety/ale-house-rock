@@ -8,15 +8,15 @@ date: '2020-06-06'
 permalink: beer/origin-northern-monk-341/
 canonical: https://www.instagram.com/p/CBGyGKeJhN8/
 tags:
-  - beerweekend
-  - beerporn
-  - cannedbeer
-  - beerstagram
-  - beer
-  - drinking
-  - beerreview
-  - review
-  - aleporn
+
+
+
+
+
+
+
+
+
 ---
 
 Have seen a few @northernmonk beers cropping up on my timeline so thought I would give them a go. I have had a cheeky couple already and I can tell you they are spot on. This gluten free beer is wonderful. Crisp, light and, surprisingly, remenicent of a wheat beer. Northern Monk are definitely on my list of "breweries to buy from again"

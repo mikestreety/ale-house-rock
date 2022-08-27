@@ -8,13 +8,13 @@ date: '2019-04-01'
 permalink: beer/drift-wood-red-rock-brewery-213/
 canonical: https://www.instagram.com/p/Bvuay9sF9n4/
 tags:
-  - beer
-  - ale
-  - alereview
-  - beerreview
-  - pint
-  - localbeer
-  - holiday
+
+
+
+
+
+
+
 ---
 
 A completely average beer. Not disappointing, nor exciting. Would not recommend nor dissuade someone from drinking this beer
