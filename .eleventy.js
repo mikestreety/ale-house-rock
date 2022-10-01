@@ -10,6 +10,7 @@ module.exports = function (config) {
 
 	config.addPassthroughCopy({'build': 'assets'});
 	config.addPassthroughCopy('./app/content/admin');
+	config.addPassthroughCopy('./app/content/images');
 
 	config.addPlugin(eleventyNavigationPlugin);
 	config.setDataDeepMerge(true);
