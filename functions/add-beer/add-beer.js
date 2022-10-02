@@ -1,7 +1,3 @@
-/**
-* http://localhost:8888/.netlify/functions/add-beer?url=https://untappd-scaper.mikestreety.workers.dev/user/mikestreety/checkin/1192455594&token=123
-*/
-
 const fetch = require('node-fetch');
 const matter = require('gray-matter');
 const sharp = require('sharp');
@@ -9,8 +5,8 @@ const { Gitlab } = require('@gitbeaker/node');
 
 require('dotenv').config();
 
-// const repoId = 25096202; // real repo
-const repoId = 38315485; // test repo
+const repoId = 25096202; // real repo
+// const repoId = 38315485; // test repo
 const repoBranch = 'main';
 
 const slugify = str => {
@@ -100,64 +96,11 @@ exports.handler = async (event, context) => {
 	* Data processing
 	*/
 	let body = review.body;
+	let breweries = review.breweries;
 	review.number = parseFloat(Object.keys(canonicals).length + 1);
 	review.permalink = `beer/${slugify(
 		`${review.title} ${review.breweries.join(' ')} ${review.number}`
 	)}/`;
-
-	/**
-	* Breweries
-	*/
-	let brewerySlugs = [];
-	for (const brewery of review.breweries) {
-
-		let slug = slugify(brewery),
-		b = {
-			title: brewery,
-			permalink: `brewery/${slug}/`,
-			beers: [
-				review.permalink
-			]
-		};
-		brewerySlugs.push(b.permalink);
-
-		let fileExists = false,
-		path = 'app/content/' + slug + '.md';
-
-		try {
-			let file = await api.RepositoryFiles.showRaw(repoId, path, {ref: repoBranch});
-			let contents = matter(file);
-			if(!contents.data.beers.includes(review.permalink)) {
-				contents.data.beers.push(review.permalink);
-				contents = matter.stringify(contents.content, contents.data)
-				file = await api.RepositoryFiles.edit(
-					repoId,
-					path,
-					repoBranch,
-					contents,
-					'API: Edit ' + b.title
-				);
-			}
-			fileExists = true;
-		} catch(e) {
-			console.log('Brewery exists');
-		}
-
-		if(!fileExists) {
-			let c = await api.Commits.create(
-				repoId,
-				repoBranch,
-				'API: Add ' + b.title,
-				[
-					{
-						action: 'create',
-						filePath: path,
-						content: matter.stringify("\n", b)
-					},
-				]
-			);
-		}
-	}
 
 	/**
 	 * Image
@@ -219,6 +162,60 @@ exports.handler = async (event, context) => {
 				status: 'error',
 				message: 'File already exists'
 			})
+		}
+	}
+
+	/**
+	* Breweries
+	*/
+	let brewerySlugs = [];
+	for (const brewery of review.breweries) {
+
+		let slug = slugify(brewery),
+		b = {
+			title: brewery,
+			permalink: `brewery/${slug}/`,
+			beers: [
+				review.permalink
+			]
+		};
+		brewerySlugs.push(b.permalink);
+
+		let fileExists = false,
+		path = 'app/content/brewery/' + slug + '.md';
+
+		try {
+			let file = await api.RepositoryFiles.showRaw(repoId, path, {ref: repoBranch});
+			let contents = matter(file);
+			if(!contents.data.beers.includes(review.permalink)) {
+				contents.data.beers.push(review.permalink);
+				contents = matter.stringify(contents.content, contents.data)
+				file = await api.RepositoryFiles.edit(
+					repoId,
+					path,
+					repoBranch,
+					contents,
+					'API: Edit ' + b.title
+				);
+			}
+			fileExists = true;
+		} catch(e) {
+			console.log('Brewery exists');
+		}
+
+		if(!fileExists) {
+			let c = await api.Commits.create(
+				repoId,
+				repoBranch,
+				'API: Add ' + b.title,
+				[
+					{
+						action: 'create',
+						filePath: path,
+						content: matter.stringify("\n", b)
+					},
+				]
+			);
 		}
 	}
 
