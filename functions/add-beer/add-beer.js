@@ -4,6 +4,7 @@
 
 const fetch = require('node-fetch');
 const matter = require('gray-matter');
+const sharp = require('sharp');
 const { Gitlab } = require('@gitbeaker/node');
 
 require('dotenv').config();
@@ -158,6 +159,22 @@ exports.handler = async (event, context) => {
 		}
 	}
 
+	/**
+	 * Image
+	 */
+
+	let image = await fetch(review.image);
+	let imageBuffer = await image.buffer()
+
+	let imageLarge = await sharp(imageBuffer)
+		.resize(1000, 1000)
+		.webp({ lossless: true })
+		.toBuffer();
+
+	let imageSmall = await sharp(imageBuffer)
+		.resize(200, 200)
+		.webp({ lossless: true })
+		.toBuffer();
 
 	/**
 	* Data cleanup
@@ -181,11 +198,23 @@ exports.handler = async (event, context) => {
 					filePath: `app/content/beer/${slugify(`${review.number} ${review.title}`)}.md`,
 					content: matter.stringify("\n" + body, review)
 				},
+				{
+					action: 'create',
+					filePath: `app/content/images/${review.number}/image.webp`,
+					content: imageLarge.toString('base64'),
+					encoding: 'base64'
+				},
+				{
+					action: 'create',
+					filePath: `app/content/images/${review.number}/thumbnail.webp`,
+					content: imageSmall.toString('base64'),
+					encoding: 'base64'
+				},
 			]
 		);
 	} catch(e) {
 		return {
-			statusCode: 200,
+			statusCode: 400,
 			body: JSON.stringify({
 				status: 'error',
 				message: 'File already exists'
