@@ -3,31 +3,14 @@ const matter = require('gray-matter');
 const sharp = require('sharp');
 const { Gitlab } = require('@gitbeaker/node');
 
+const slugify = require('./slugify');
+
 require('dotenv').config();
 
-const repoId = 25096202; // real repo
-// const repoId = 38315485; // test repo
+// const repoId = 25096202; // real repo
+const repoId = 38315485; // test repo
 const repoBranch = 'main';
 
-const slugify = str => {
-	if(str) {
-		str = str.replace(/^\s+|\s+$/g, ''); // trim
-		str = str.toLowerCase();
-
-		// remove accents, swap ñ for n, etc
-		var from = "àáäâèéëêìíïîòóöôùúüûñç·/_,:;";
-		var to   = "aaaaeeeeiiiioooouuuunc------";
-		for (var i = 0, l = from.length ; i<l ; i++) {
-			str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
-		}
-
-		str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
-		.replace(/\s+/g, '-') // collapse whitespace and replace by -
-		.replace(/-+/g, '-'); // collapse dashes
-	}
-
-	return str;
-}
 
 // const repo = 25096202 // real repo
 const repo = 38315485 // test repo
@@ -41,6 +24,7 @@ exports.handler = async (event, context) => {
 	*/
 	if (
 		!data.hasOwnProperty('url') ||
+		!data.hasOwnProperty('token') ||
 		data.token !== process.env.ACCESS_TOKEN
 	) {
 		return {
@@ -52,9 +36,11 @@ exports.handler = async (event, context) => {
 		}
 	}
 
+	// Get the review from the URL
 	const review = await fetch(data.url)
 		.then(data => data.json());
 
+	// Make sure the review has all the right data
 	if (
 		!review.hasOwnProperty('title') ||
 		!review.hasOwnProperty('rating') ||
@@ -73,8 +59,10 @@ exports.handler = async (event, context) => {
 		}
 	}
 
+	// Sort the breweries
 	review.breweries.sort();
 
+	// Get existing posts and make sure we've not done this before
 	let canonicals = await fetch('https://alehouse.rocks/api/canonicals.json')
 		.then(data => data.json());
 
@@ -88,6 +76,7 @@ exports.handler = async (event, context) => {
 		}
 	}
 
+	// Start new Gitlab instance
 	const api = new Gitlab({
 		token: process.env.GITLAB_TOKEN,
 	});
@@ -96,11 +85,62 @@ exports.handler = async (event, context) => {
 	* Data processing
 	*/
 	let body = review.body;
-	let breweries = review.breweries;
+	let commitFiles = [];
+
 	review.number = parseFloat(Object.keys(canonicals).length + 1);
+	review.number = 720;
 	review.permalink = `beer/${slugify(
 		`${review.title} ${review.breweries.join(' ')} ${review.number}`
 	)}/`;
+
+	/**
+	* Breweries
+	*/
+	let brewerySlugs = [];
+	for (const breweryName of review.breweries) {
+
+		let slug = slugify(breweryName),
+		brewery = {
+			title: breweryName,
+			permalink: `brewery/${slug}/`,
+			beers: [
+				review.permalink
+			]
+		};
+		brewerySlugs.push(brewery.permalink);
+
+		let fileExists = false,
+			filePath = 'app/content/brewery/' + slug + '.md';
+
+		try {
+			// Try getting the original file
+			let file = await api.RepositoryFiles.showRaw(repoId, path, {ref: repoBranch});
+			// Try decoding the original file
+			let content = matter(file);
+			if(!content.data.beers.includes(review.permalink)) {
+				content.data.beers.push(review.permalink);
+				content = matter.stringify(content.content, content.data)
+
+				commitFiles.push({
+					action: 'update',
+					filePath,
+					content,
+				});
+			}
+
+			fileExists = true;
+		} catch(e) {
+			console.log('Brewery exists');
+		}
+
+		if(!fileExists) {
+			commitFiles.push({
+				action: 'create',
+				filePath,
+				content: matter.stringify("\n", brewery),
+			});
+		}
+	}
 
 	/**
 	 * Image
@@ -113,11 +153,23 @@ exports.handler = async (event, context) => {
 		.resize(1000, 1000)
 		.webp({ lossless: true })
 		.toBuffer();
+	commitFiles.push({
+		action: 'create',
+		filePath: `app/content/images/${review.number}/image.webp`,
+		content: imageLarge.toString('base64'),
+		encoding: 'base64'
+	});
 
 	let imageSmall = await sharp(imageBuffer)
 		.resize(200, 200)
 		.webp({ lossless: true })
 		.toBuffer();
+	commitFiles.push({
+		action: 'create',
+		filePath: `app/content/images/${review.number}/thumbnail.webp`,
+		content: imageSmall.toString('base64'),
+		encoding: 'base64'
+	});
 
 	/**
 	* Data cleanup
@@ -130,30 +182,18 @@ exports.handler = async (event, context) => {
 	delete review.status;
 	delete review.image;
 
+	commitFiles.push({
+		action: 'create',
+		filePath: `app/content/beer/${slugify(`${review.number} ${review.title}`)}.md`,
+		content: matter.stringify("\n" + body, review)
+	});
+
 	try {
 		let c = await api.Commits.create(
 			repoId,
 			repoBranch,
 			'API: Add ' + review.title,
-			[
-				{
-					action: 'create',
-					filePath: `app/content/beer/${slugify(`${review.number} ${review.title}`)}.md`,
-					content: matter.stringify("\n" + body, review)
-				},
-				{
-					action: 'create',
-					filePath: `app/content/images/${review.number}/image.webp`,
-					content: imageLarge.toString('base64'),
-					encoding: 'base64'
-				},
-				{
-					action: 'create',
-					filePath: `app/content/images/${review.number}/thumbnail.webp`,
-					content: imageSmall.toString('base64'),
-					encoding: 'base64'
-				},
-			]
+			commitFiles
 		);
 	} catch(e) {
 		return {
@@ -162,60 +202,6 @@ exports.handler = async (event, context) => {
 				status: 'error',
 				message: 'File already exists'
 			})
-		}
-	}
-
-	/**
-	* Breweries
-	*/
-	let brewerySlugs = [];
-	for (const brewery of review.breweries) {
-
-		let slug = slugify(brewery),
-		b = {
-			title: brewery,
-			permalink: `brewery/${slug}/`,
-			beers: [
-				review.permalink
-			]
-		};
-		brewerySlugs.push(b.permalink);
-
-		let fileExists = false,
-		path = 'app/content/brewery/' + slug + '.md';
-
-		try {
-			let file = await api.RepositoryFiles.showRaw(repoId, path, {ref: repoBranch});
-			let contents = matter(file);
-			if(!contents.data.beers.includes(review.permalink)) {
-				contents.data.beers.push(review.permalink);
-				contents = matter.stringify(contents.content, contents.data)
-				file = await api.RepositoryFiles.edit(
-					repoId,
-					path,
-					repoBranch,
-					contents,
-					'API: Edit ' + b.title
-				);
-			}
-			fileExists = true;
-		} catch(e) {
-			console.log('Brewery exists');
-		}
-
-		if(!fileExists) {
-			let c = await api.Commits.create(
-				repoId,
-				repoBranch,
-				'API: Add ' + b.title,
-				[
-					{
-						action: 'create',
-						filePath: path,
-						content: matter.stringify("\n", b)
-					},
-				]
-			);
 		}
 	}
 
