@@ -7,13 +7,9 @@ const slugify = require('./slugify');
 
 require('dotenv').config();
 
-// const repoId = 25096202; // real repo
-const repoId = 38315485; // test repo
+const repoId = 25096202; // real repo
+// const repoId = 38315485; // test repo
 const repoBranch = 'main';
-
-
-// const repo = 25096202 // real repo
-const repo = 38315485 // test repo
 
 exports.handler = async (event, context) => {
 
@@ -76,6 +72,10 @@ exports.handler = async (event, context) => {
 		}
 	}
 
+	// Get existing posts and make sure we've not done this before
+	let aliases = await fetch('https://alehouse.rocks/api/aliases.json')
+		.then(data => data.json());
+
 	// Start new Gitlab instance
 	const api = new Gitlab({
 		token: process.env.GITLAB_TOKEN,
@@ -87,34 +87,51 @@ exports.handler = async (event, context) => {
 	let body = review.body;
 	let commitFiles = [];
 
-	review.number = parseFloat(Object.keys(canonicals).length + 1);
-	review.number = 720;
-	review.permalink = `beer/${slugify(
-		`${review.title} ${review.breweries.join(' ')} ${review.number}`
-	)}/`;
-
 	/**
 	* Breweries
 	*/
-	let brewerySlugs = [];
+	let breweries = [],
+		breweryPaths = [],
+		brewerySlugs = [];
+
 	for (const breweryName of review.breweries) {
 
-		let slug = slugify(breweryName),
-		brewery = {
+		let slug = slugify(breweryName);
+
+		// If we know this brewery by another name
+		if(aliases[slug]) {
+			slug = aliases[slug];
+		}
+
+		let brewery = {
 			title: breweryName,
 			permalink: `brewery/${slug}/`,
-			beers: [
-				review.permalink
-			]
+			slug,
+			beers: []
 		};
-		brewerySlugs.push(brewery.permalink);
 
+		breweries.push(brewery);
+		brewerySlugs.push(slug);
+		breweryPaths.push(brewery.permalink);
+	}
+
+	review.number = parseFloat(Object.keys(canonicals).length + 1);
+	review.breweries = breweryPaths;
+	review.permalink = `beer/${slugify(
+		`${review.title} ${brewerySlugs.join(' ')} ${review.number}`
+	)}/`;
+
+
+	for (const brewery of breweries) {
 		let fileExists = false,
-			filePath = 'app/content/brewery/' + slug + '.md';
+			filePath = 'app/content/brewery/' + brewery.slug + '.md';
+
+		delete brewery.slug;
+		brewery.beers.push(review.permalink);
 
 		try {
 			// Try getting the original file
-			let file = await api.RepositoryFiles.showRaw(repoId, path, {ref: repoBranch});
+			let file = await api.RepositoryFiles.showRaw(repoId, filePath, {ref: repoBranch});
 			// Try decoding the original file
 			let content = matter(file);
 			if(!content.data.beers.includes(review.permalink)) {
@@ -174,7 +191,7 @@ exports.handler = async (event, context) => {
 	/**
 	* Data cleanup
 	*/
-	review.breweries = brewerySlugs;
+
 	review.rating = parseFloat(review.rating);
 
 	delete review.body;
@@ -192,7 +209,7 @@ exports.handler = async (event, context) => {
 		let c = await api.Commits.create(
 			repoId,
 			repoBranch,
-			'API: Add ' + review.title,
+			`API: Add ${review.number} - ${review.title}`,
 			commitFiles
 		);
 	} catch(e) {
