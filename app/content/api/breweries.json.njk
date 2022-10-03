@@ -16,8 +16,8 @@ sitemapIgnore: true
 			}{% if not loop.last %},{% endif %}
 			{% endfor %}
 		],
-		"mean": "{{ brewery.data.meta.mean }}",
-		"median": "{{ brewery.data.meta.median }}",
+		"mean": "{{ brewery.data.stats.mean }}",
+		"median": "{{ brewery.data.stats.median }}",
 		"slug": "{{ brewery.url }}"
 	}{% if not loop.last %},{% endif %}
 	{% endfor %}
