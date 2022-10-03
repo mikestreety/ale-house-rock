@@ -6,7 +6,7 @@ sitemapIgnore: true
 	{% for brewery in collections.brewery %}
 		{% if brewery.data.aliases %}
 		{% for alias in brewery.data.aliases %}
-		"{{ alias }}": "{{ brewery.url }}"{% if not loop.last %},{% endif %}
+		"{{ alias }}": "{{ brewery.fileSlug }}"{% if not loop.last %},{% endif %}
 		{% endfor %}
 		{% endif %}
 	{% endfor %}
