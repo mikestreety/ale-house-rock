@@ -10,4 +10,6 @@ beers:
   - beer/spitfire-shepherd-neame-109/
   - beer/1698-shepherd-neame-19/
   - beer/master-brew-shepherd-neame-16/
+  - beer/summer-ale-2021-sainsburys-shepherd-neame-summer-ale-716/
 ---
+
