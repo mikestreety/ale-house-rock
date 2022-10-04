@@ -1,6 +1,8 @@
 ---
 title: Burning Sky
 permalink: brewery/burning-sky/
+aliases:
+  - burning-sky-brewery
 beers:
   - beer/saison-de-peche-burning-sky-655/
   - beer/rustic-table-beer-burning-sky-612/
