@@ -8,11 +8,10 @@ date: '2022-09-12'
 breweries:
   - brewery/sainsburys/
   - brewery/shepherd-neame/
-  - brewery/summer-ale/
 tags:
   - goldenale
 number: 716
-permalink: beer/summer-ale-2021-sainsburys-shepherd-neame-summer-ale-716/
+permalink: beer/summer-ale-2021-sainsburys-shepherd-neame-716/
 ---
 
 A tasty crisp classic bitter. Lovely and moreish, this was a great Sunday evening tipple.
