@@ -27,7 +27,7 @@ exports.handler = async (event, context) => {
 			statusCode: 400,
 			body: JSON.stringify({
 				status: 'error',
-				message: 'Missing data'
+				message: 'Missing GET params'
 			})
 		}
 	}
@@ -42,7 +42,7 @@ exports.handler = async (event, context) => {
 		!review.hasOwnProperty('rating') ||
 		!review.hasOwnProperty('date') ||
 		!review.hasOwnProperty('canonical') ||
-		!review.hasOwnProperty('tags') ||
+		// !review.hasOwnProperty('tags') ||
 		!review.hasOwnProperty('body') ||
 		!review.hasOwnProperty('breweries')
 	) {
@@ -50,7 +50,7 @@ exports.handler = async (event, context) => {
 			statusCode: 400,
 			body: JSON.stringify({
 				status: 'error',
-				message: 'Missing data'
+				message: 'Missing data from returned JSON'
 			})
 		}
 	}
@@ -223,7 +223,9 @@ exports.handler = async (event, context) => {
 	}
 
 	return {
-		statusCode: 200,
-		body: JSON.stringify(review)
+		statusCode: 301,
+		headers: {
+			'Location': '/add-beer/',
+		},
 	};
 };

@@ -141,6 +141,7 @@ aside form .input {
 }
 
 aside form .button,
+.form .button,
 aside button,
 aside a {
 	padding: 0.6em 0.3em 0.75em 1.3em;
@@ -156,6 +157,7 @@ aside a {
 	text-decoration: none;
 }
 aside form .button:hover,
+.form .button:hover,
 aside button:hover,
 aside a:hover {
 	background: var(--primaryDark);
@@ -163,6 +165,7 @@ aside a:hover {
 	color: var(--neutralLightest);
 }
 aside button::after,
+.form .button::after,
 aside a::after {
 	content: '';
 	display: inline-block;
@@ -413,6 +416,21 @@ a.title:hover {
 }
 .statbox .subtitle {
 	color: var(--neutralDark);
+}
+
+.form {
+	margin-bottom: var(--gutter)
+}
+.field {
+	margin-bottom: var(--gutter)
+}
+.field label {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+.field input {
+	width: 100%;
+	padding: 0.5rem;
 }
 
 
