@@ -21,4 +21,6 @@ beers:
   - beer/new-world-northern-monk-346/
   - beer/rapscallion-northern-monk-344/
   - beer/origin-northern-monk-341/
+  - beer/heathen-hazy-ipa-northern-monk-717/
 ---
+
