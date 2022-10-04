@@ -40,4 +40,6 @@ beers:
   - beer/dead-pony-club-brewdog-195/
   - beer/punk-ipa-brewdog-194/
   - beer/elvis-juice-brewdog-155/
+  - beer/brewdog-vs-mikkeller-urban-fog-brewdog-mikkeller-714/
 ---
+
