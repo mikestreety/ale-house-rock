@@ -28,4 +28,6 @@ beers:
   - beer/bumpy-road-thornbridge-beak-brewery-472/
   - beer/wool-beak-brewery-northern-monk-469/
   - beer/locals-beak-brewery-439/
+  - beer/locals-v6-beak-brewery-711/
 ---
+
