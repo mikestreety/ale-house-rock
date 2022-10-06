@@ -32,6 +32,11 @@ module.exports = {
 			if(data.imagePath) {
 				return data.imagePath.replace('image.webp', 'thumbnail.webp');
 			}
+		},
+		socialMediaPhoto: data => {
+			if(data.imagePath) {
+				return data.meta.site.url + data.imagePath;
+			}
 		}
 	}
 };
