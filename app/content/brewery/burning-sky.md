@@ -10,4 +10,6 @@ beers:
   - beer/big-easy-burning-sky-565/
   - beer/shake-some-action-burning-sky-534/
   - beer/arise-burning-sky-445/
+  - beer/out-of-vogue-burning-sky-719/
 ---
+
