@@ -24,16 +24,29 @@ layout: default.njk
 		<div id="monthCount"></div>
 	</div>
 
+	<h2>Average scores by serving type</h2>
+	<div id="servingScore"></div>
+
+	<h2>Average scores by purchased location</h2>
+	<div id="purchasedScore"></div>
 
 	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 	<script>
-	let beers = [];
+	let beers = [],
+		beer = {};
 	{%- for beer in collections.beer %}
-		beers.push({
+		beer = {
 			number: "{{ beer.data.number }}",
 			rating: "{{ beer.data.rating }}",
 			date: "{{ beer.data.date }}"
-		})
+		}
+		{% if beer.data.serving %}
+		beer.serving = "{{ beer.data.serving }}";
+		{% endif %}
+		{% if beer.data.purchased %}
+		beer.purchased = "{{ beer.data.purchased }}";
+		{% endif %}
+		beers.push(beer)
 	{%- endfor %}
 
 	var chartOptions = {
@@ -118,6 +131,95 @@ layout: default.njk
 			categories: xaxis
 		},
 		colors: ['#dd2c41']
+	}).render();
+
+	/**
+	 * Rating by serving & purchased
+	 */
+	let servings = {},
+		purchaseds = [];
+	for(let b of beers) {
+		if(b.serving) {
+			if(servings[b.serving]) {
+				servings[b.serving].count++;
+				servings[b.serving].rating += parseFloat(b.rating);
+			} else {
+				servings[b.serving] = {
+					title: b.serving,
+					count: 1,
+					rating: parseFloat(b.rating),
+				}
+			}
+		}
+		if(b.purchased) {
+			if(purchaseds[b.purchased]) {
+				purchaseds[b.purchased].count++;
+				purchaseds[b.purchased].rating += parseFloat(b.rating);
+			} else {
+				purchaseds[b.purchased] = {
+					title: b.purchased,
+					count: 1,
+					rating: parseFloat(b.rating),
+				}
+			}
+		}
+	}
+
+	let servingScore = [];
+	for(let serving in servings) {
+		serving = servings[serving];
+		servingScore.push({
+			x: serving.title,
+			y: (Math.round((serving.rating / serving.count) * 10) / 10)
+		})
+	}
+
+	new ApexCharts(document.querySelector("#servingScore"), {
+		...chartOptions,
+		chart: {
+			type: 'bar'
+		},
+		plotOptions: {
+			bar: {
+				horizontal: true
+			}
+		},
+		fill: {
+			type: "solid"
+		},
+		series: [{
+			data: servingScore
+		}]
+	}).render();
+
+	let purchasedScore = [];
+	for(let purchased in purchaseds) {
+		purchased = purchaseds[purchased];
+
+		purchasedScore.push({
+			x: purchased.title,
+			y: (Math.round((purchased.rating / purchased.count) * 10) / 10)
+		})
+	}
+
+	console.log(purchasedScore);
+
+	new ApexCharts(document.querySelector("#purchasedScore"), {
+		...chartOptions,
+		chart: {
+			type: 'bar'
+		},
+		plotOptions: {
+			bar: {
+				horizontal: true
+			}
+		},
+		fill: {
+			type: "solid"
+		},
+		series: [{
+			data: purchasedScore
+		}]
 	}).render();
 
 
