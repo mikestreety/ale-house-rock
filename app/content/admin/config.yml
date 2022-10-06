@@ -17,6 +17,8 @@ collections:
       - { label: "title", name: "title", widget: "string" }
       - { label: "number", name: "number", widget: "string" }
       - { label: "rating", name: "rating", widget: "string" }
+      - { label: "serving", name: "serving", widget: "string" }
+      - { label: "purchased", name: "purchased", widget: "string" }
       - { label: "date", name: "date", widget: "date", format: 'YYYY-MM-DD' }
       - { label: "canonical", name: "canonical", widget: "string", required: false }
       - { label: "permalink", name: "permalink", widget: "string" }
@@ -32,4 +34,5 @@ collections:
     fields:
       - { label: "title", name: "title", widget: "string" }
       - { label: "permalink", name: "permalink", widget: "string" }
+      - { label: "aliases", name: "aliases", widget: "list" }
       - { label: "beers", name: "beers", widget: "relation", collection: "beer", value_field: 'permalink', search_fields: ['title'], multiple: true }
