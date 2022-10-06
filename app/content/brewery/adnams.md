@@ -21,4 +21,6 @@ beers:
   - beer/southwold-adnams-84/
   - beer/southwold-winter-ipa-adnams-71/
   - beer/ghost-ship-adnams-50/
+  - beer/sea-fog-adnams-721/
 ---
+
