@@ -1,13 +1,27 @@
----
-permalink: api/aliases.json
-sitemapIgnore: true
+---js
+{
+	permalink: "api/aliases.json",
+	sitemapIgnore: true,
+	aliases: function() {
+		let breweries = this.ctx.collections.brewery.filter(a => a.data.aliases),
+			output = [];
+
+		// Loop through each of the entries
+		for(let item of breweries) {
+			for(let alias of item.data.aliases) {
+				output.push({
+					alias,
+					fileSlug: item.fileSlug
+				})
+			}
+		}
+
+		return output;
+	}
+}
 ---
 {
-	{% for brewery in collections.brewery %}
-		{% if brewery.data.aliases %}
-		{% for alias in brewery.data.aliases %}
-		"{{ alias }}": "{{ brewery.fileSlug }}"{% if not loop.last %},{% endif %}
-		{% endfor %}
-		{% endif %}
+	{% for alias in aliases() %}
+		"{{ alias.alias }}": "{{ alias.fileSlug }}"{% if not loop.last %},{% endif %}
 	{% endfor %}
 }
