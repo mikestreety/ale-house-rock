@@ -11,4 +11,6 @@ beers:
   - beer/1698-shepherd-neame-19/
   - beer/master-brew-shepherd-neame-16/
   - beer/summer-ale-2021-sainsburys-shepherd-neame-716/
+  - beer/taste-the-difference-english-pale-ale-sainsburys-shepherd-neame-723/
 ---
+
