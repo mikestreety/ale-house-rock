@@ -3,10 +3,10 @@ number: 686
 title: Hazy Pale Ale
 rating: 6
 breweries:
-  - brewery/marks-spencer/
+  - brewery/marks-and-spencer/
   - brewery/vocation-brewery/
 date: '2022-07-20'
-permalink: beer/hazy-pale-ale-marks-spencer-vocation-brewery-686/
+permalink: beer/hazy-pale-ale-marks-and-spencer-vocation-brewery-686/
 canonical: https://www.instagram.com/p/CgPut2uq9PN/
 ---
 

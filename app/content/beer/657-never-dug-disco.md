@@ -3,9 +3,9 @@ number: 657
 title: Never Dug Disco
 rating: 4
 breweries:
-  - brewery/cloak-dagger/
+  - brewery/cloak-and-dagger/
 date: '2022-05-19'
-permalink: beer/never-dug-disco-cloak-dagger-657/
+permalink: beer/never-dug-disco-cloak-and-dagger-657/
 canonical: https://www.instagram.com/p/CdwUnHWKdwR/
 ---
 

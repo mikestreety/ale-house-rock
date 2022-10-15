@@ -3,9 +3,9 @@ number: 651
 title: Key Lime Lager
 rating: 6
 breweries:
-  - brewery/tiny-rebel/
+  - brewery/tiny-rebel-brewing-co/
 date: '2022-05-08'
-permalink: beer/key-lime-lager-tiny-rebel-651/
+permalink: beer/key-lime-lager-tiny-rebel-brewing-co-651/
 canonical: https://www.instagram.com/p/CdT_CQSq1as/
 ---
 
