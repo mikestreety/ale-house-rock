@@ -22,5 +22,6 @@ beers:
   - beer/southwold-winter-ipa-adnams-71/
   - beer/ghost-ship-adnams-50/
   - beer/sea-fog-adnams-721/
+  - beer/jack-brand-india-pale-lager-adnams-726/
 ---
 
