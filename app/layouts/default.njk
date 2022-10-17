@@ -110,14 +110,8 @@
 
 				<label for="brewery">Select Brewery</label>
 				<select class="brewerySearch" id="brewery" onchange="jumpto(this)">
-					<option value="">Select Brewery</option>
-					{% for brewery in collections.brewery %}
-					{% if brewery.data.beers.length > 1 %}
-					<option value="{{ brewery.url }}">
-						{{ brewery.data.title }} ({{ brewery.data.beers.length }})
-					</option>
-					{% endif %}
-					{% endfor %}
+					<option value="">Select Brewery</option>{% for brewery in collections.brewery %}{% if brewery.data.beers.length > 1 %}
+					<option value="{{ brewery.url }}">{{ brewery.data.title }} ({{ brewery.data.beers.length }})</option>{% endif %}{% endfor %}
 				</select>
 			</aside>
 			{{ content | safe }}

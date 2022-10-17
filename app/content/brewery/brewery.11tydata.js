@@ -9,12 +9,19 @@ module.exports = {
 			.sort((a, b) => parseInt(a.data.number) + parseInt(b.data.number)),
 
 		stats: data => {
-			let ratings = data.beers
-				.map(a => Number(a.data.rating))
-				.filter(b => b);
+			if(data.beers) {
+				let ratings = data.beers
+					.map(a => Number(a.data.rating))
+					.filter(b => b);
 
-			if(ratings.length) {
-				return meanMedianMode(ratings);
+
+				if(ratings.length) {
+					return {
+						ratings,
+						numbers: data.beers.map(a => `${a.data.number}`),
+						...meanMedianMode(ratings)
+					}
+				}
 			}
 
 		}

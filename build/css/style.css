@@ -400,6 +400,7 @@ a.title:hover {
 	display: flex;
 	align-items: stretch;
 	justify-content: space-between;
+	gap: var(--gutter);
 }
 .statbox {
 	border: 0.125rem solid var(--neutralLight);
@@ -408,11 +409,16 @@ a.title:hover {
 	text-align: center;
 	padding: var(--gutter);
 }
+
 .statbox .stat {
 	font-family: 'AleHouseRock', sans-serif;
 	font-size: 2.5rem;
 	line-height: 1.1;
 	font-weight: 700;
+}
+.statbox small {
+	opacity: 0.75;
+	font-size: 1.2rem;
 }
 .statbox .subtitle {
 	color: var(--neutralDark);

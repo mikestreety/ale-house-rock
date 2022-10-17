@@ -4,17 +4,84 @@ layout: default.njk
 
 <main id="beers">
 	<h1>{{ title }}</h1>
-	<p>
-		Beer count: <strong>{{ beers.length }}</strong><br>
-		Average score: <strong>{{ stats.mean }}</strong> / 10 <br>
-		Median score: <strong>{{ stats.median }}</strong> / 10
-	</p>
+	<div class="statWrap">
+		<div class="statbox">
+			<div class="stat">{{ beers.length }}</div>
+			<div class="subtitle">beers</div>
+		</div>
+		<div class="statbox">
+			<div class="stat">{{ stats.mean }}<small>/10</small></div>
+			<div class="subtitle">Average score</div>
+		</div>
+		<div class="statbox">
+			<div class="stat">{{ stats.median }}<small>/10</small></div>
+			<div class="subtitle">Median score</div>
+		</div>
+	</div>
+
+	{% if beers.length > 1 %}
+	<h3>Rating over time</h3>
+	<div class="chart">
+		<div id="ratingCount"></div>
+	</div>
+	{% endif %}
 
 	{{ content | safe }}
 
+	<h2>Beers</h2>
+
 	<ul class="list">
-		{% for beer in beers | reverse %}
-			{% include 'beer.njk' %}
-		{% endfor %}
+		{% for beer in beers | reverse %}{% include 'beer.njk' %}{% endfor %}
 	</ul>
+
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script>
+		new ApexCharts(document.querySelector("#ratingCount"), {
+		chart: {
+			height: 130,
+			type: 'area',
+			toolbar: {
+				show: false
+			},
+			zoom: {
+				enabled: false,
+			}
+		},
+		grid: {
+			show: false
+		},
+		stroke: {
+			curve: 'smooth'
+		},
+		dataLabels: {
+			enabled: false
+		},
+		fill: {
+			type: "gradient",
+			gradient: {
+				shadeIntensity: 1,
+				inverseColors: false,
+				opacityFrom: 0.45,
+				opacityTo: 0.05,
+				stops: [20, 100]
+			}
+		},
+		series: [{
+			name: 'Rating',
+			data: [{{ stats.ratings }}]
+		}],
+		yaxis: {
+			show: false,
+			min: 0,
+			max: 10
+		},
+		xaxis: {
+			labels: {
+				show: false
+			},
+			categories: [{{ stats.numbers | join(",") }}]
+		},
+		colors: ['#35eb93']
+	}).render();
+	</script>
 </main>

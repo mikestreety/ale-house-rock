@@ -6,7 +6,8 @@ module.exports = function (array) {
 	}
 }
 
-function getMean(array) {
+function getMean(input) {
+	let array = [...input];
 	var sum = 0;
 	array.forEach( num => {
 		sum += num;
@@ -15,7 +16,8 @@ function getMean(array) {
 	return Math.round(mean * 100) / 100;
 }
 
-function getMedian(array) {
+function getMedian(input) {
+	let array = [...input];
 	array.sort(function (a, b) {
 		return a - b;
 	});
@@ -31,7 +33,8 @@ function getMedian(array) {
 	return median;
 }
 
-function getMode(array) {
+function getMode(input) {
+	let array = [...input];
 	var modeObj = {};
 	array.forEach( num => {
 		if(!modeObj[num]) modeObj[num] = 0;
