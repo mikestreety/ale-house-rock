@@ -7,7 +7,8 @@
     "watch:11ty": "set DEBUG=Eleventy* && npx @11ty/eleventy  --serve",
     "watch": "npm run watch:11ty",
     "dev": "npm run watch",
-    "prod": "npm run prod:11ty"
+    "prod": "npm run prod:11ty",
+    "build": "npm run prod:11ty"
   },
   "keywords": [],
   "author": "",
