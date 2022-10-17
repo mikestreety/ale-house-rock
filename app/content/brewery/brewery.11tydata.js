@@ -6,8 +6,9 @@ module.exports = {
 		seoTitle: data => {
 			return `${data.title}`
 		},
-		beers: data => findBySlug(data.beers, data.collections.all)
+		beers: (data) =>  data.collections.beer.filter(a => a.data.breweries.includes(data.permalink))
 			.sort((a, b) => parseInt(a.data.number) + parseInt(b.data.number)),
+
 		stats: data => {
 			let ratings = data.beers
 				.map(a => Number(a.data.rating))
