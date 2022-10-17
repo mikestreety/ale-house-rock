@@ -34,6 +34,7 @@ layout: default.njk
 		{% for beer in beers | reverse %}{% include 'beer.njk' %}{% endfor %}
 	</ul>
 
+	{% if stats.numbers.length > 1 %}
 	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 	<script>
 		new ApexCharts(document.querySelector("#ratingCount"), {
@@ -84,4 +85,5 @@ layout: default.njk
 		colors: ['#35eb93']
 	}).render();
 	</script>
+	{% endif %}
 </main>
