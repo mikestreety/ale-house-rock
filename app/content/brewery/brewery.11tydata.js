@@ -1,4 +1,3 @@
-const findBySlug = require('../../filters/findBySlug');
 const meanMedianMode = require('../../filters/meanMedianMode');
 
 module.exports = {

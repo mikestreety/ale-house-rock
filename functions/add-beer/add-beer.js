@@ -106,8 +106,7 @@ exports.handler = async (event, context) => {
 		let brewery = {
 			title: breweryName,
 			permalink: `brewery/${slug}/`,
-			slug,
-			beers: []
+			slug
 		};
 
 		breweries.push(brewery);
@@ -127,24 +126,10 @@ exports.handler = async (event, context) => {
 			filePath = 'app/content/brewery/' + brewery.slug + '.md';
 
 		delete brewery.slug;
-		brewery.beers.push(review.permalink);
 
 		try {
 			// Try getting the original file
-			let file = await api.RepositoryFiles.showRaw(repoId, filePath, {ref: repoBranch});
-			// Try decoding the original file
-			let content = matter(file);
-			if(!content.data.beers.includes(review.permalink)) {
-				content.data.beers.push(review.permalink);
-				content = matter.stringify(content.content, content.data)
-
-				commitFiles.push({
-					action: 'update',
-					filePath,
-					content,
-				});
-			}
-
+			await api.RepositoryFiles.showRaw(repoId, filePath, {ref: repoBranch});
 			fileExists = true;
 		} catch(e) {
 			console.log('Brewery exists');
