@@ -19,6 +19,21 @@
 		Content-Type = "text/xml"
 
 [[headers]]
+	for = "/sitemap.xml"
+	[headers.values]
+		Content-Type = "text/xml"
+
+[[headers]]
+	for = "/sitemap-beers.xml"
+	[headers.values]
+		Content-Type = "text/xml"
+
+[[headers]]
+	for = "/sitemap-breweries.xml"
+	[headers.values]
+		Content-Type = "text/xml"
+
+[[headers]]
 	for = "/api/beers.json"
 	[headers.values]
 		Content-Type = "application/json"
