@@ -341,6 +341,9 @@ a.title:hover {
 	font-weight: normal;
 	color: var(--neutralDark);
 }
+.chart svg:not(:root) {
+	overflow: visible;
+}
 .brewery {
 	color: var(--neutralDark);
 	margin-bottom: 0.5rem;

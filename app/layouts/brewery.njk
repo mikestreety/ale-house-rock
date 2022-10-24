@@ -49,7 +49,7 @@ layout: default.njk
 			}
 		},
 		grid: {
-			show: false
+			show: true
 		},
 		stroke: {
 			curve: 'smooth'
@@ -72,9 +72,11 @@ layout: default.njk
 			data: [{{ stats.ratings }}]
 		}],
 		yaxis: {
-			show: false,
+			show: true,
 			min: 0,
-			max: 10
+			max: 10,
+			tickAmount: 4,
+			floating: true
 		},
 		xaxis: {
 			labels: {

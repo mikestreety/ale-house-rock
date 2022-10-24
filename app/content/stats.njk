@@ -177,7 +177,8 @@ layout: default.njk
 	new ApexCharts(document.querySelector("#servingScore"), {
 		...chartOptions,
 		chart: {
-			type: 'bar'
+			type: 'bar',
+			height: 175
 		},
 		plotOptions: {
 			bar: {
@@ -185,8 +186,17 @@ layout: default.njk
 			}
 		},
 		fill: {
-			type: "solid"
+			type: 'gradient',
+			opacity: 0.5,
+			gradient: {
+				shade: 'light'
+			}
 		},
+		stroke: {
+			show: true,
+			width: 2
+		},
+		colors: ['#35eb93'],
 		series: [{
 			data: servingScore
 		}]
@@ -201,8 +211,6 @@ layout: default.njk
 			y: (Math.round((purchased.rating / purchased.count) * 10) / 10)
 		})
 	}
-
-	console.log(purchasedScore);
 
 	new ApexCharts(document.querySelector("#purchasedScore"), {
 		...chartOptions,
