@@ -2,6 +2,7 @@
 number: 28
 title: Schwaben Bräu WeihnachtsBier
 rating: 7
+serving: Bottle
 breweries:
   - brewery/schwaben-bauu/
 date: '2016-12-30'

@@ -2,6 +2,7 @@
 number: 29
 title: Triple Hopped IPA
 rating: 8
+serving: Bottle
 breweries:
   - brewery/eagle-brewery/
 date: '2017-01-06'

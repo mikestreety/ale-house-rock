@@ -2,6 +2,7 @@
 number: 31
 title: Stone Faced
 rating: 6
+serving: Bottle
 breweries:
   - brewery/lymestone-brewery/
 date: '2017-02-09'

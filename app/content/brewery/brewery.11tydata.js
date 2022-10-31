@@ -17,7 +17,7 @@ module.exports = {
 				if(ratings.length) {
 					return {
 						ratings,
-						numbers: data.beers.map(a => `${a.data.number}`),
+						titles: data.beers.map(a => `${a.data.number} - ${a.data.title}`),
 						...meanMedianMode(ratings),
 						max: Math.max(...ratings),
 						min: Math.min(...ratings)
