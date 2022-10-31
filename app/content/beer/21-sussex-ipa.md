@@ -7,6 +7,7 @@ breweries:
 date: '2016-12-20'
 permalink: beer/sussex-ipa-arundel-brewery-21/
 canonical: https://www.instagram.com/p/BOOv-7GgSnQ/
+serving: Bottle
 tags:
   - ipa
 ---

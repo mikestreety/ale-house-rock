@@ -2,6 +2,8 @@
 number: 12
 title: Amber Bitter
 rating: 7
+serving: Bottle
+purchased: Aldi
 breweries:
   - brewery/bankss/
 date: '2016-12-10'

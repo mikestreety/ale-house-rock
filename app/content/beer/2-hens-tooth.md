@@ -2,6 +2,7 @@
 number: 2
 title: Hen's Tooth
 rating: 8
+serving: Bottle
 breweries:
   - brewery/morland/
 date: '2016-12-02'

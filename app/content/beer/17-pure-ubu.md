@@ -2,6 +2,7 @@
 number: 17
 title: Pure UBU.
 rating: 8
+serving: Bottle
 breweries:
   - brewery/purity-brewing-company/
 date: '2016-12-15'

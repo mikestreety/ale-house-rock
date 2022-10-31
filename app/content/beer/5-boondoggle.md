@@ -2,6 +2,7 @@
 number: 5
 title: Boondoggle
 rating: 9
+serving: Bottle
 breweries:
   - brewery/ringwood-brewery/
 date: '2016-12-04'

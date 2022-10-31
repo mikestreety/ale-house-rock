@@ -1,7 +1,8 @@
 ---
 number: 25
 title: Whistable Bay
-rating: 8
+rating:
+serving: Bottle
 breweries:
   - brewery/the-faversham-steam-brewery/
 date: '2016-12-23'

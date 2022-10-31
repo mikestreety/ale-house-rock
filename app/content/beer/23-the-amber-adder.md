@@ -2,6 +2,8 @@
 number: 23
 title: The Amber Adder
 rating: 1
+serving: Bottle
+purchased: Lidl
 breweries:
   - brewery/hatherwood-craft-beer-company/
 date: '2016-12-21'

@@ -9,6 +9,7 @@ permalink: beer/courage-directors-eagle-brewery-20/
 aliases:
   - courage-directors-20
 canonical: https://www.instagram.com/p/BONfj9oA_1V/
+serving: Bottle
 tags:
   - bitter
 ---

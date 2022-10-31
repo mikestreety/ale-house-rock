@@ -2,6 +2,7 @@
 number: 27
 title: Abdominal Stoneman
 rating: 8
+serving: Bottle
 breweries:
   - brewery/lymestone-brewery/
 date: '2016-12-28'

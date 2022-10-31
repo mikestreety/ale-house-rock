@@ -2,6 +2,7 @@
 number: 1
 title: Mad Goose
 rating: 7
+serving: Bottle
 breweries:
   - brewery/purity-brewing-company/
 date: '2016-12-01'

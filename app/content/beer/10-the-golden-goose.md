@@ -2,6 +2,8 @@
 number: 10
 title: The Golden Goose
 rating: 6
+serving: Bottle
+purchased: Lidl
 breweries:
   - brewery/hatherwood-craft-beer-company/
 date: '2016-12-09'

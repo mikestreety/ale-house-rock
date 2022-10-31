@@ -2,6 +2,8 @@
 number: 4
 title: Wild Bills IPA
 rating: 7
+serving: Bottle
+purchased: Aldi
 breweries:
   - brewery/harpers-brewing-company/
 date: '2016-12-03'
