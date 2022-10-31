@@ -7,6 +7,8 @@ breweries:
   - brewery/arbor/
 date: '2022-07-27'
 permalink: beer/raspberry-royale-pale-ale-marks-and-spencer-arbor-690/
+alaises:
+  - raspberry-royale-pale-ale-marks-spencer-arbor-690
 canonical: https://www.instagram.com/p/Cgh9Dl8K7YE/
 ---
 

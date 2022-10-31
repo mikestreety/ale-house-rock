@@ -6,6 +6,8 @@ breweries:
   - brewery/hepworth-co-brewers/
 date: '2016-12-16'
 permalink: beer/goodwood-sussex-ale-hepworth-co-brewers-18/
+aliases:
+  - golden-ale-goodwood-18
 canonical: https://www.instagram.com/p/BOF02VTA9I4/
 tags:
   - goldenale

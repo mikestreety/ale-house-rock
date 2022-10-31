@@ -6,6 +6,8 @@ breweries:
   - brewery/directors/
 date: '2016-12-19'
 permalink: beer/courage-directors-eagle-brewery-20/
+aliases:
+  - courage-directors-20
 canonical: https://www.instagram.com/p/BONfj9oA_1V/
 tags:
   - bitter

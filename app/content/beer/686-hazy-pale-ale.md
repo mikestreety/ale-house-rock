@@ -7,6 +7,8 @@ breweries:
   - brewery/vocation-brewery/
 date: '2022-07-20'
 permalink: beer/hazy-pale-ale-marks-and-spencer-vocation-brewery-686/
+aliases:
+  - hazy-pale-ale-marks-and-spencer-vocation-brewery-686
 canonical: https://www.instagram.com/p/CgPut2uq9PN/
 ---
 

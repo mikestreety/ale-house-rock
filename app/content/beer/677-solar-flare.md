@@ -6,6 +6,8 @@ breweries:
   - brewery/beavertown/
 date: '2022-06-18'
 permalink: beer/solar-flare-beavertown-677/
+aliases:
+  - solar-flare-beaverton-677
 canonical: https://www.instagram.com/p/Ce9JpeTqfbg/
 ---
 

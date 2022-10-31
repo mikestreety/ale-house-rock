@@ -7,6 +7,8 @@ breweries:
   - brewery/seven-bro7hers-brewery/
 date: '2020-07-04'
 permalink: beer/pilsner-seven-bro7hers-brewery-354/
+aliases:
+  - pilsner-seven-brothers-354
 canonical: https://www.instagram.com/p/CCPLUMmpY7W/
 tags:
   - pilsner
