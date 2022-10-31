@@ -267,6 +267,12 @@ table td {
 .singlebeer img,
 .list img {
 	margin-right: var(--gutter);
+	width: 100%;
+	height: auto;
+}
+.singlebeer > .wrapper > a {
+	max-width: 50%;
+	margin-right: 1rem;
 }
 .singlebeer .content,
 .list .content {

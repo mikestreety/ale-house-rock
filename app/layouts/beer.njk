@@ -16,13 +16,15 @@ layout: default.njk
 			<div class="rating">{{ rating }}</div>
 			<div class="meta">
 				<div>{{ date | dateLong }}</div>
-			</div>
-			<div class="meta">
 				<div class="number">{{ number }}</div>
 			</div>
 		</div>
 	</div>
 	{{ content | safe }}
+
+	{% if purchased %}
+	<p><strong>Purchased:</strong> {{ purchased }} </p>
+	{% endif %}
 
 	{% for tag in tags %}{% include 'tag.njk' %}{% endfor %}
 
