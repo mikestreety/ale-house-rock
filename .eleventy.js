@@ -1,6 +1,9 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+const {aliases} = require('./app/filters/breweries');
 
 module.exports = function (config) {
+
+	config.addCollection('breweryAliases', aliases);
 
 	config.addFilter('limit', require('./app/filters/limit.js'));
 	config.addFilter('squashandweed', require('./app/filters/squashandweed.js'));

@@ -14,12 +14,13 @@ module.exports = {
 					.map(a => Number(a.data.rating))
 					.filter(b => b);
 
-
 				if(ratings.length) {
 					return {
 						ratings,
 						numbers: data.beers.map(a => `${a.data.number}`),
-						...meanMedianMode(ratings)
+						...meanMedianMode(ratings),
+						max: Math.max(...ratings),
+						min: Math.min(...ratings)
 					}
 				}
 			}

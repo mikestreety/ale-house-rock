@@ -411,6 +411,7 @@ a.title:hover {
 	width: calc(50% - var(--gutter));
 	text-align: center;
 	padding: var(--gutter);
+	flex-grow: 1;
 }
 
 .statbox .stat {

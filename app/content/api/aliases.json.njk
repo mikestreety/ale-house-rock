@@ -3,11 +3,10 @@
 	permalink: "api/aliases.json",
 	sitemapIgnore: true,
 	aliases: function() {
-		let breweries = this.ctx.collections.brewery.filter(a => a.data.aliases),
-			output = [];
+		let output = [];
 
 		// Loop through each of the entries
-		for(let item of breweries) {
+		for(let item of this.ctx.collections.breweryAliases) {
 			for(let alias of item.data.aliases) {
 				output.push({
 					alias,

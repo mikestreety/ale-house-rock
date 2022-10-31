@@ -8,16 +8,12 @@ sitemapIgnore: true
 /{{ item.data.number }}	{{ item.url }}
 {%- endfor %}
 
-# Brewery Update
-/brewery/beaverton/	/brewery/beavertown/
-/brewery/cloak-dagger/	/brewery/cloak-and-dagger/
-/brewery/directors/	/brewery/eagle-brewery/
-/brewery/goodwood/	/brewery/hepworth-co-brewers/
-/brewery/lost-pier/	/brewery/lost-pier-brewing/
-/brewery/marks-spencer/	/brewery/marks-and-spencer/
-/brewery/tiny-rebel/	/brewery/tiny-rebel-brewing-co/
-/brewery/vocation/	/brewery/vocation-brewery/
-/brewery/seven-brothers/	/brewery/seven-bro7hers-brewery/
+# Brewery Aliases
+{%- for brewery in collections.breweryAliases %}
+{%- for alias in brewery.data.aliases %}
+/brewery/{{ alias }}	/{{ brewery.data.permalink }}
+{%- endfor %}
+{%- endfor %}
 
 # Beer Update
 /beer/boon-doggle-ringwood-brewery-5/	/beer/boondoggle-ringwood-brewery-5/

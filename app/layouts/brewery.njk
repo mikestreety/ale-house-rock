@@ -18,6 +18,18 @@ layout: default.njk
 			<div class="subtitle">Median score</div>
 		</div>
 	</div>
+	{% if beers.length > 1 %}
+	<div class="statWrap">
+		<div class="statbox">
+			<div class="stat">{{ stats.max }}<small>/10</small></div>
+			<div class="subtitle">Highest score</div>
+		</div>
+		<div class="statbox">
+			<div class="stat">{{ stats.min }}<small>/10</small></div>
+			<div class="subtitle">Lowest score</div>
+		</div>
+	</div>
+	{% endif %}
 
 	{% if beers.length > 1 %}
 	<h3>Rating over time</h3>
