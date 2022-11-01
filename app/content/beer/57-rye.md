@@ -1,19 +1,15 @@
 ---
 number: 57
-title: Rye
+title: Shipyard Rye Pale Ale
 rating: 7
 breweries:
-  - brewery/shipyard/
+  - brewery/marstons/
 date: '2017-08-09'
-permalink: beer/rye-shipyard-57/
+permalink: beer/shipyard-rye-pale-ale-marstons-57/
+aliases:
+  - beer/rye-shipyard-57/
 canonical: https://www.instagram.com/p/BXlPyoflVSX/
 tags:
-
-  - bitter
-
-
-
-
   - paleale
 ---
 

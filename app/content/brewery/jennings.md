@@ -1,4 +1,6 @@
 ---
-title: Jennings
-permalink: brewery/jennings/
+title: Jennings Brewery
+permalink: brewery/jennings-brewery/
+aliases:
+  - jennings
 ---
