@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1204430508'
 title: The Great British Brewing Co. Session IPA
 serving: Can
 rating: 1
-purchased: Aldi
+purchased: shop/aldi/
 date: '2022-09-23'
 breweries:
   - brewery/aldi/

@@ -2,7 +2,7 @@
 number: 9
 title: Yorkshire Gold
 rating: 7
-purchased: Marks & Spencer
+purchased: shop/marks-and-spencer/
 serving: Bottle
 breweries:
   - brewery/black-sheep-brewery/

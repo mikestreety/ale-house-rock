@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1215980682'
 title: You May Say I’m A Dreamer
 serving: Can
 rating: 6
-purchased: Beer No Evil
+purchased: shop/beer-no-evil/
 date: '2022-10-29'
 breweries:
   - brewery/arbor-ales/

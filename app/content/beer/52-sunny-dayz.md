@@ -3,7 +3,7 @@ number: 52
 title: Sunny Dayz
 rating: 7
 serving: Bottle
-purchased: Aldi
+purchased: shop/aldi/
 breweries:
   - brewery/aldi/
   - brewery/hogs-back-brewery/

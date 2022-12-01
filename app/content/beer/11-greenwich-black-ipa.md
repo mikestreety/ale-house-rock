@@ -2,7 +2,7 @@
 number: 11
 title: Greenwich Black IPA
 rating: 6
-purchased: Marks & Spencer
+purchased: shop/marks-and-spencer/
 serving: Bottle
 breweries:
   - brewery/meantime-brewing-company/

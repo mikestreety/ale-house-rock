@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1214431113'
 title: Passion Fruit Pale
 serving: Can
 rating: 7
-purchased: Asda
+purchased: shop/asda/
 date: '2022-10-23'
 breweries:
   - brewery/seven-bro7hers-brewery/

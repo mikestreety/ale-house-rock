@@ -8,7 +8,7 @@ date: '2017-02-09'
 permalink: beer/weissbier-rheinbacher-32/
 canonical: https://www.instagram.com/p/BQTTr-RAj4V/
 serving: Bottle
-purchased: Aldi
+purchased: shop/aldi/
 tags:
   - wheatbeer
 ---

@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1194295414'
 title: Rising Slowly
 serving: Can
 rating: 5
-purchased: Beer No Evil
+purchased: shop/beer-no-evil/
 date: '2022-08-22'
 breweries:
   - brewery/saint-mars-of-the-desert/

@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1198774827'
 title: Locals V6
 serving: Can
 rating: 7
-purchased: Palate Bottle Shop
+purchased: shop/palate-bottle-shop/
 date: '2022-09-04'
 breweries:
   - brewery/beak-brewery/

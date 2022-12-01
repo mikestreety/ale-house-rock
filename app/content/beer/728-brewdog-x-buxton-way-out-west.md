@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1212990714'
 title: 'BrewDog X Buxton: Way Out West'
 serving: Can
 rating: 5
-purchased: Asda
+purchased: shop/asda/
 date: '2022-10-20'
 breweries:
   - brewery/brewdog/

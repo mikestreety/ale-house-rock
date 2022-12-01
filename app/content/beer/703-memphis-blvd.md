@@ -2,7 +2,7 @@
 canonical: 'https://untappd.com/user/mikestreety/checkin/1193148933'
 title: Memphis Blvd
 rating: 6
-purchased: Aldi
+purchased: shop/aldi/
 date: '2022-08-19'
 breweries:
   - brewery/aldi/

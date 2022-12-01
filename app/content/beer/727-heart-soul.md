@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1211823516'
 title: Heart & Soul
 serving: Can
 rating: 5
-purchased: Asda
+purchased: shop/asda/
 date: '2022-10-15'
 breweries:
   - brewery/vocation-brewery/

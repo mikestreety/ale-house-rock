@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1224970791'
 title: Soft Focus
 serving: Can
 rating: 8
-purchased: Beer No Evil
+purchased: shop/beer-no-evil/
 date: '2022-11-27'
 breweries:
   - brewery/baron-brewing/

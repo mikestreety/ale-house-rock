@@ -3,7 +3,7 @@ number: 7
 title: Ruby Rooster
 rating: 7
 serving: Bottle
-purchased: Lidl
+purchased: shop/lidl/
 breweries:
   - brewery/hatherwood-craft-beer-company/
 date: '2016-12-07'

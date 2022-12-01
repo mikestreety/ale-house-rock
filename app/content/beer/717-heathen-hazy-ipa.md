@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1202973454'
 title: HEATHEN // HAZY IPA
 serving: Can
 rating: 7
-purchased: Sainsbury's
+purchased: shop/sainsburys/
 date: '2022-09-17'
 breweries:
   - brewery/northern-monk/

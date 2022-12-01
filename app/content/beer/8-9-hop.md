@@ -13,7 +13,7 @@ canonical: https://www.instagram.com/p/BNuik5XgaTr/
 tags:
   - paleale
 serving: Bottle
-purchased: Marks & Spencer
+purchased: shop/marks-and-spencer/
 ---
 
 Hmm, 9 Hop is not as good as the 31 Hop from the other day. Although more hoppy (so not as tasty). I can manage it. Wouldn't have I again.

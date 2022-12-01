@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1218625973'
 title: Heavy Gravity
 serving: Can
 rating: 7.5
-purchased: Sainsbury's
+purchased: shop/sainsburys/
 date: '2022-11-06'
 breweries:
   - brewery/beavertown/

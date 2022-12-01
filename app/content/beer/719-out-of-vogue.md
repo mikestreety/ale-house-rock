@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1203710389'
 title: Out of Vogue
 serving: Can
 rating: 6.5
-purchased: Beer No Evil
+purchased: shop/beer-no-evil/
 date: '2022-09-20'
 breweries:
   - brewery/burning-sky/

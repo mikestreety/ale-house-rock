@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1193991830'
 title: Lobo
 serving: Can
 rating: 9
-purchased: Beer No Evil
+purchased: shop/beer-no-evil/
 date: '2022-08-21'
 breweries:
   - brewery/cloak-and-dagger/

@@ -59,10 +59,10 @@ exports.handler = async (event, context) => {
 	review.breweries.sort();
 
 	// Get existing posts and make sure we've not done this before
-	let canonicals = await fetch('https://alehouse.rocks/api/canonicals.json')
+	let beerCanonicals = await fetch('https://alehouse.rocks/api/beers/canonicals.json')
 		.then(data => data.json());
 
-	if(canonicals[review.canonical]) {
+	if(beerCanonicals[review.canonical]) {
 		return {
 			statusCode: 400,
 			body: JSON.stringify({
@@ -73,7 +73,10 @@ exports.handler = async (event, context) => {
 	}
 
 	// Get existing posts and make sure we've not done this before
-	let aliases = await fetch('https://alehouse.rocks/api/aliases.json')
+	let breweryAliases = await fetch('https://alehouse.rocks/api/breweries/aliases.json')
+		.then(data => data.json());
+
+	let shopAliases = await fetch('https://alehouse.rocks/api/shops/aliases.json')
 		.then(data => data.json());
 
 	// Start new Gitlab instance
@@ -99,8 +102,8 @@ exports.handler = async (event, context) => {
 		let slug = slugify(breweryName);
 
 		// If we know this brewery by another name
-		if(aliases[slug]) {
-			slug = aliases[slug];
+		if(breweryAliases[slug]) {
+			slug = breweryAliases[slug];
 		}
 
 		let brewery = {
@@ -114,7 +117,18 @@ exports.handler = async (event, context) => {
 		breweryPaths.push(brewery.permalink);
 	}
 
-	review.number = parseFloat(Object.keys(canonicals).length + 1);
+	let purchasedSlug = slugify(review.purchased);
+	if(shopAliases[purchasedSlug]) {
+		purchasedSlug = shopAliases[purchasedSlug];
+	}
+	let purchased = {
+		title: review.purchased,
+		permalink: `shop/${purchasedSlug}/`,
+		slug: purchasedSlug
+	}
+	review.purchased = purchased.permalink;
+
+	review.number = parseFloat(Object.keys(beerCanonicals).length + 1);
 	review.breweries = breweryPaths;
 	review.permalink = `beer/${slugify(
 		`${review.title} ${brewerySlugs.join(' ')} ${review.number}`
@@ -142,6 +156,27 @@ exports.handler = async (event, context) => {
 				content: matter.stringify("\n", brewery),
 			});
 		}
+	}
+
+
+	let purchasedFileExists = false,
+		purchasedFilePath = 'app/content/shop/' + purchased.slug + '.md';
+
+	delete purchased.slug;
+
+	try {
+		// Try getting the original file
+		await api.RepositoryFiles.showRaw(repoId, purchasedFilePath, {ref: repoBranch});
+		purchasedFileExists = true;
+	} catch(e) {
+		console.log('Shop exists');
+	}
+	if(!purchasedFileExists) {
+		commitFiles.push({
+			action: 'create',
+			purchasedFilePath,
+			content: matter.stringify("\n", purchased),
+		});
 	}
 
 	/**

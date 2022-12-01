@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1198812544'
 title: Fruit Machine NEIPA
 serving: Can
 rating: 7
-purchased: Palate Bottle Shop
+purchased: shop/palate-bottle-shop/
 date: '2022-09-04'
 breweries:
   - brewery/lost-pier-brewing/

@@ -3,7 +3,7 @@ number: 46
 title: Ace Edge
 rating: 5
 serving: Bottle
-purchased: Seven Cellars
+purchased: shop/seven-cellars/
 breweries:
   - brewery/buxton-brewery/
 date: '2017-05-16'

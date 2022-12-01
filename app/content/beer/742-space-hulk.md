@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1224427152'
 title: Space Hulk
 serving: Can
 rating: 7
-purchased: Tesco Extra
+purchased: shop/tesco/
 date: '2022-11-26'
 breweries:
   - brewery/beavertown/

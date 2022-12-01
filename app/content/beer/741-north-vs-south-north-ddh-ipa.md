@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1224131363'
 title: NORTH VS SOUTH // NORTH DDH IPA
 serving: Can
 rating: 7
-purchased: Tesco Extra
+purchased: shop/tesco/
 date: '2022-11-25'
 breweries:
   - brewery/neon-raptor-brewing-co/

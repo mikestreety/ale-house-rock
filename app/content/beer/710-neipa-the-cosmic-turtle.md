@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1198674446'
 title: NEIPA the Cosmic Turtle
 serving: Can
 rating: 5
-purchased: Palate Bottle Shop
+purchased: shop/palate-bottle-shop/
 date: '2022-09-04'
 breweries:
   - brewery/lowtide-brewing-co/

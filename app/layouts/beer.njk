@@ -23,7 +23,9 @@ layout: default.njk
 	{{ content | safe }}
 
 	{% if purchased %}
-	<p><strong>Purchased:</strong> {{ purchased }} </p>
+	<p><strong>Purchased:</strong>
+		{% for shop in purchased_from %}<a href="{{ shop.url }}" class="shop">{{ shop.data.title }}</a>{% endfor %}
+	</p>
 	{% endif %}
 
 	{% for tag in tags %}{% include 'tag.njk' %}{% endfor %}

@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1208797943'
 title: Taste the Difference English Pale Ale
 serving: Bottle
 rating: 5
-purchased: Sainsbury's
+purchased: shop/sainsburys/
 date: '2022-10-07'
 breweries:
   - brewery/sainsburys/

@@ -1,7 +1,7 @@
 ---
 number: 47
 title: Cheeky
-purchased: Seven Cellars
+purchased: shop/seven-cellars/
 serving: Bottle
 rating: 6
 breweries:

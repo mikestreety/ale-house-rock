@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1218889482'
 title: Toadlicker
 serving: Can
 rating: 10
-purchased: Palate Bottle Shop
+purchased: shop/palate-bottle-shop/
 date: '2022-11-07'
 breweries:
   - brewery/hand-brew-co/

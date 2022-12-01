@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1211820907'
 title: Jack Brand India Pale Lager
 serving: Can
 rating: 5
-purchased: Adnams Cellar & Kitchen Store
+purchased: shop/adnams-cellar-and-kitchen-store/
 date: '2022-10-15'
 breweries:
   - brewery/adnams/

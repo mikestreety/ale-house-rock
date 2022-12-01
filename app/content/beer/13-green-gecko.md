@@ -2,7 +2,7 @@
 number: 13
 title: Green Gecko
 rating: 6
-purchased: Lidl
+purchased: shop/lidl/
 serving: Bottle
 breweries:
   - brewery/hatherwood-craft-beer-company/

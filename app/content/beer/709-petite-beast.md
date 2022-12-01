@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1197379177'
 title: Petite Beast
 serving: Can
 rating: 5.5
-purchased: Palate Bottle Shop
+purchased: shop/palate-bottle-shop/
 date: '2022-09-01'
 breweries:
   - brewery/cloak-and-dagger/

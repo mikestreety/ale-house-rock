@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1195990700'
 title: Moondust
 serving: Can
 rating: 9.5
-purchased: Beer No Evil
+purchased: shop/beer-no-evil/
 date: '2022-08-27'
 breweries:
   - brewery/baron-brewing/

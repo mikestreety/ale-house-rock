@@ -20,6 +20,7 @@ module.exports = {
 				}
 			}
 		},
+		purchased_from: data => findBySlug(data.purchased, data.collections.all),
 		seoTitle: data => {
 			return `${data.title} by ${data.brewedBy}`
 		},

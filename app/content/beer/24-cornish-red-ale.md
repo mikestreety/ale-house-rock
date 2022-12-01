@@ -3,7 +3,7 @@ number: 24
 title: Cornish Red Ale
 rating: 7
 serving: Bottle
-purchased: Marks & Spencer
+purchased: shop/marks-and-spencer/
 breweries:
   - brewery/st-austell-brewery/
   - brewery/marks-and-spencer

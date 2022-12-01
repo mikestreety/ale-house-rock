@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1210888492'
 title: Clwb Tropica
 serving: Can
 rating: 7
-purchased: Sainsbury's
+purchased: shop/sainsburys/
 date: '2022-10-13'
 breweries:
   - brewery/tiny-rebel-brewing-co/

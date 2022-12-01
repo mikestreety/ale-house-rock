@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1211509718'
 title: One Eye
 serving: Can
 rating: 5
-purchased: Sainsbury's
+purchased: shop/sainsburys/
 date: '2022-10-15'
 breweries:
   - brewery/tooth-claw-brewing/

@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1207795606'
 title: Sea Fog
 serving: Can
 rating: 6
-purchased: Adnams Cellar & Kitchen Store
+purchased: shop/adnams-cellar-and-kitchen-store/
 date: '2022-10-02'
 breweries:
   - brewery/adnams/

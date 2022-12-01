@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1195061252'
 title: Snark
 serving: Bottle
 rating: 5
-purchased: Boojum & Snark
+purchased: shop/boojum-and-snark/
 date: '2022-08-25'
 breweries:
   - brewery/boojum-and-snark/

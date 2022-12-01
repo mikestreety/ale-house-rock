@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1222453205'
 title: NORTH VS SOUTH // SOUTH DDH IPA
 serving: Can
 rating: 9
-purchased: Tesco Extra
+purchased: shop/tesco/
 date: '2022-11-19'
 breweries:
   - brewery/brew-by-numbers/

@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1201066231'
 title: Roadkill
 serving: Can
 rating: 7
-purchased: Sainsbury's
+purchased: shop/sainsburys/
 date: '2022-09-11'
 breweries:
   - brewery/mad-squirrel-brewery/

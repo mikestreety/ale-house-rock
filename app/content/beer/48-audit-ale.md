@@ -6,7 +6,7 @@ breweries:
   - brewery/westerham/
 date: '2017-05-20'
 serving: Bottle
-purchased: Seven Cellars
+purchased: shop/seven-cellars/
 permalink: beer/audit-ale-westerham-48/
 canonical: https://www.instagram.com/p/BUUM0kulBxv/
 tags:

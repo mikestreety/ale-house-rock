@@ -3,7 +3,7 @@ number: 3
 title: The Purple Panther Porter
 rating: 4
 serving: Bottle
-purchased: Lidl
+purchased: shop/lidl/
 breweries:
   - brewery/hatherwood-craft-beer-company/
 date: '2016-12-03'

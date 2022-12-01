@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1214640518'
 title: Taste the Difference Golden Ale
 serving: Bottle
 rating: 6
-purchased: Sainsbury's
+purchased: shop/sainsburys/
 date: '2022-10-24'
 breweries:
   - brewery/badger/

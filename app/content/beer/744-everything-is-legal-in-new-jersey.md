@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1225149677'
 title: Everything Is Legal In New Jersey
 serving: Can
 rating: 9
-purchased: Beer No Evil
+purchased: shop/beer-no-evil/
 date: '2022-11-28'
 breweries:
   - brewery/sureshot-brewing/

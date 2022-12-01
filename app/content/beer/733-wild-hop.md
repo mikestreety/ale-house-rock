@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1217228827'
 title: Wild Hop
 serving: Can
 rating: 8
-purchased: Adnams Cellar & Kitchen Store
+purchased: shop/adnams-cellar-and-kitchen-store/
 date: '2022-11-02'
 breweries:
   - brewery/adnams/

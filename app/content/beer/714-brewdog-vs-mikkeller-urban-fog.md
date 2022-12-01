@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1199771956'
 title: 'BrewDog VS Mikkeller: Urban Fog'
 serving: Can
 rating: 8
-purchased: Sainsbury's
+purchased: shop/sainsburys/
 date: '2022-09-08'
 breweries:
   - brewery/brewdog/

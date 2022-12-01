@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1218627394'
 title: Also
 serving: Can
 rating: 9
-purchased: Palate Bottle Shop
+purchased: shop/palate-bottle-shop/
 date: '2022-11-06'
 breweries:
   - brewery/beak-brewery/

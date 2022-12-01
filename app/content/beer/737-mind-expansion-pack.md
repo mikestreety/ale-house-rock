@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1219203327'
 title: Mind Expansion Pack
 serving: Can
 rating: 9
-purchased: Palate Bottle Shop
+purchased: shop/palate-bottle-shop/
 date: '2022-11-09'
 breweries:
   - brewery/deya-brewing-company/

@@ -3,7 +3,7 @@ canonical: 'https://untappd.com/user/mikestreety/checkin/1192455594'
 title: Find the Rainbow
 serving: Can
 rating: 9.5
-purchased: Palate Bottle Shop
+purchased: shop/palate-bottle-shop/
 date: '2022-08-17'
 breweries:
   - brewery/alpha-delta-brewing/
