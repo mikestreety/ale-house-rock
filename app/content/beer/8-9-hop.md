@@ -3,7 +3,7 @@ number: 8
 title: 9 Hop
 rating: 5
 breweries:
-  - brewery/westerham/
+  - brewery/westerham-brewery/
   - brewery/marks-and-spencer/
 date: '2016-12-07'
 permalink: beer/9-hop-westerham-marks-and-spencer-8/

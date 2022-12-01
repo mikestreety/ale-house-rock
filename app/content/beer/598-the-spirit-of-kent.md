@@ -1,11 +1,13 @@
 ---
 number: 598
-title: The Spirit of Kent
+title: Spirit of Kent
 rating: 5
 breweries:
   - brewery/westerham-brewery/
 date: '2021-12-30'
-permalink: beer/the-spirit-of-kent-westerham-brewery-598/
+permalink: beer/spirit-of-kent-westerham-brewery-598/
+aliases:
+  - the-spirit-of-kent-westerham-brewery-598
 canonical: https://www.instagram.com/p/CYGiq0qKena/
 ---
 

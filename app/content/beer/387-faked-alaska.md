@@ -3,7 +3,7 @@ number: 387
 title: Faked Alaska
 rating: 7
 breweries:
-  - brewery/arbor/
+  - brewery/arbor-ales/
 date: '2020-11-15'
 permalink: beer/faked-alaska-arbor-387/
 canonical: https://www.instagram.com/p/CHnG-xbFZeY/

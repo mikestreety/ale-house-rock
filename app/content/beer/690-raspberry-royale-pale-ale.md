@@ -4,7 +4,7 @@ title: Raspberry Royale Pale Ale
 rating: 7
 breweries:
   - brewery/marks-and-spencer/
-  - brewery/arbor/
+  - brewery/arbor-ales/
 date: '2022-07-27'
 permalink: beer/raspberry-royale-pale-ale-marks-and-spencer-arbor-690/
 alaises:

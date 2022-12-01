@@ -3,10 +3,12 @@ number: 407
 title: Brighton Tea Party
 rating: 6
 breweries:
-  - brewery/gin-brewery/
+  - brewery/gun-brewery/
   - brewery/north-laine/
 date: '2021-01-08'
-permalink: beer/brighton-tea-party-gin-brewery-north-laine-407/
+permalink: beer/brighton-tea-party-gun-brewery-north-laine-407/
+aliases:
+  - brighton-tea-party-gin-brewery-north-laine-407
 canonical: https://www.instagram.com/p/CJy2LBPlQfK/
 ---
 

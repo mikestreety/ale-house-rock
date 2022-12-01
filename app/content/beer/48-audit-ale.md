@@ -3,7 +3,7 @@ number: 48
 title: Audit Ale
 rating: 7
 breweries:
-  - brewery/westerham/
+  - brewery/westerham-brewery/
 date: '2017-05-20'
 serving: Bottle
 purchased: shop/seven-cellars/
