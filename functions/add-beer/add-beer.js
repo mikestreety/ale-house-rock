@@ -160,7 +160,7 @@ exports.handler = async (event, context) => {
 		}
 	}
 
-	if(purchased) {
+	if(review.purchased) {
 		let purchasedFileExists = false,
 			purchasedFilePath = 'app/content/shop/' + purchased.slug + '.md';
 
