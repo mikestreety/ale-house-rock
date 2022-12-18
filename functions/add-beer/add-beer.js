@@ -117,16 +117,18 @@ exports.handler = async (event, context) => {
 		breweryPaths.push(brewery.permalink);
 	}
 
-	let purchasedSlug = slugify(review.purchased);
-	if(shopAliases[purchasedSlug]) {
-		purchasedSlug = shopAliases[purchasedSlug];
+	if(review.purchased) {
+		let purchasedSlug = slugify(review.purchased);
+		if(shopAliases[purchasedSlug]) {
+			purchasedSlug = shopAliases[purchasedSlug];
+		}
+		let purchased = {
+			title: review.purchased,
+			permalink: `shop/${purchasedSlug}/`,
+			slug: purchasedSlug
+		}
+		review.purchased = purchased.permalink;
 	}
-	let purchased = {
-		title: review.purchased,
-		permalink: `shop/${purchasedSlug}/`,
-		slug: purchasedSlug
-	}
-	review.purchased = purchased.permalink;
 
 	review.number = parseFloat(Object.keys(beerCanonicals).length + 1);
 	review.breweries = breweryPaths;
@@ -158,27 +160,27 @@ exports.handler = async (event, context) => {
 		}
 	}
 
+	if(purchased) {
+		let purchasedFileExists = false,
+			purchasedFilePath = 'app/content/shop/' + purchased.slug + '.md';
 
-	let purchasedFileExists = false,
-		purchasedFilePath = 'app/content/shop/' + purchased.slug + '.md';
+		delete purchased.slug;
 
-	delete purchased.slug;
-
-	try {
-		// Try getting the original file
-		await api.RepositoryFiles.showRaw(repoId, purchasedFilePath, {ref: repoBranch});
-		purchasedFileExists = true;
-	} catch(e) {
-		console.log('Shop exists');
+		try {
+			// Try getting the original file
+			await api.RepositoryFiles.showRaw(repoId, purchasedFilePath, {ref: repoBranch});
+			purchasedFileExists = true;
+		} catch(e) {
+			console.log('Shop exists');
+		}
+		if(!purchasedFileExists) {
+			commitFiles.push({
+				action: 'create',
+				purchasedFilePath,
+				content: matter.stringify("\n", purchased),
+			});
+		}
 	}
-	if(!purchasedFileExists) {
-		commitFiles.push({
-			action: 'create',
-			purchasedFilePath,
-			content: matter.stringify("\n", purchased),
-		});
-	}
-
 	/**
 	 * Image
 	 */
