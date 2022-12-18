@@ -4,7 +4,7 @@ title: Brighton Tea Party
 rating: 6
 breweries:
   - brewery/gun-brewery/
-  - brewery/north-laine/
+  - brewery/laine-brew-co/
 date: '2021-01-08'
 permalink: beer/brighton-tea-party-gun-brewery-north-laine-407/
 aliases:
