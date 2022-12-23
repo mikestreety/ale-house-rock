@@ -8,6 +8,8 @@ breweries:
   - brewery/laine-brew-co/
 number: 751
 permalink: beer/word-laine-brew-co-751/
+tags:
+  - lager
 ---
 
 A nice crisp lager with a good hoppy taste. An enjoyable beer
