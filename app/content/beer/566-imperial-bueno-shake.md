@@ -3,7 +3,7 @@ number: 566
 title: Imperial Bueno Shake
 rating: 5
 breweries:
-  - brewery/unbarred/
+  - brewery/unbarred-brewery/
 date: '2021-09-11'
 permalink: beer/imperial-bueno-shake-unbarred-566/
 canonical: https://www.instagram.com/p/CTsfaC4KPcT/

@@ -3,7 +3,7 @@ number: 444
 title: Joosy
 rating: 7
 breweries:
-  - brewery/unbarred/
+  - brewery/unbarred-brewery/
 date: '2021-03-05'
 permalink: beer/joosy-unbarred-444/
 canonical: https://www.instagram.com/p/CMDbRLEl_tv/

@@ -3,7 +3,7 @@ number: 663
 title: NEIPA
 rating: 9
 breweries:
-  - brewery/unbarred/
+  - brewery/unbarred-brewery/
 date: '2022-05-29'
 permalink: beer/neipa-unbarred-663/
 canonical: https://www.instagram.com/p/CeJ1WOsqUN3/

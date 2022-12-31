@@ -3,7 +3,7 @@ number: 442
 title: Salted Caramel Chocolate Donut
 rating: 7
 breweries:
-  - brewery/unbarred/
+  - brewery/unbarred-brewery/
 date: '2021-02-28'
 permalink: beer/salted-caramel-chocolate-donut-unbarred-442/
 canonical: https://www.instagram.com/p/CL1RtP-FLZq/

@@ -3,7 +3,7 @@ number: 623
 title: Liner Notes
 rating: 9
 breweries:
-  - brewery/unbarred/
+  - brewery/unbarred-brewery/
 date: '2022-02-24'
 permalink: beer/liner-notes-unbarred-623/
 canonical: https://www.instagram.com/p/CaYIiHYq8xC/

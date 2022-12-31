@@ -3,7 +3,7 @@ number: 485
 title: DIPA
 rating: 4
 breweries:
-  - brewery/unbarred/
+  - brewery/unbarred-brewery/
 date: '2021-05-07'
 permalink: beer/dipa-unbarred-485/
 canonical: https://www.instagram.com/p/COlXvg2p7H5/

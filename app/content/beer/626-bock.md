@@ -3,7 +3,7 @@ number: 626
 title: Bock
 rating: 6
 breweries:
-  - brewery/unbarred/
+  - brewery/unbarred-brewery/
 date: '2022-03-03'
 permalink: beer/bock-unbarred-626/
 canonical: https://www.instagram.com/p/Capxa34q6Kw/

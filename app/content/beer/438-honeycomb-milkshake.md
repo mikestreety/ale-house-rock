@@ -3,7 +3,7 @@ number: 438
 title: Honeycomb Milkshake
 rating: 8
 breweries:
-  - brewery/unbarred/
+  - brewery/unbarred-brewery/
   - brewery/bison-beer/
 date: '2021-02-21'
 permalink: beer/honeycomb-milkshake-unbarred-bison-beer-438/
