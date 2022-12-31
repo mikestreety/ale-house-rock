@@ -117,16 +117,17 @@ exports.handler = async (event, context) => {
 		breweryPaths.push(brewery.permalink);
 	}
 
+	let purchased = {};
 	if(review.purchased) {
 		let purchasedSlug = slugify(review.purchased);
 		if(shopAliases[purchasedSlug]) {
 			purchasedSlug = shopAliases[purchasedSlug];
 		}
-		let purchased = {
-			title: review.purchased,
-			permalink: `shop/${purchasedSlug}/`,
-			slug: purchasedSlug
-		}
+
+		purchased.title = review.purchased,
+		purchased.permalink =`shop/${purchasedSlug}/`,
+		purchased.slug = purchasedSlug
+
 		review.purchased = purchased.permalink;
 	}
 
