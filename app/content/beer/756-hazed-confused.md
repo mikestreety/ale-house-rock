@@ -5,7 +5,7 @@ serving: Can
 rating: 5
 date: '2023-01-02'
 breweries:
-  - brewery/loud-shirt-brewing-co/
+  - brewery/loud-shirt-brewing-company/
 number: 756
 permalink: beer/hazed-confused-loud-shirt-brewing-co-756/
 ---
