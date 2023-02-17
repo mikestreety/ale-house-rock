@@ -2,7 +2,6 @@
   "name": "ale_house_rock",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "scripts": {
     "prod:11ty": "npx @11ty/eleventy",
     "watch:11ty": "set DEBUG=Eleventy* && npx @11ty/eleventy  --serve",
