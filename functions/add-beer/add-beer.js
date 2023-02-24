@@ -50,7 +50,8 @@ exports.handler = async (event, context) => {
 			statusCode: 400,
 			body: JSON.stringify({
 				status: 'error',
-				message: 'Missing data from returned JSON'
+				message: 'Missing data from returned JSON',
+				review
 			})
 		}
 	}
@@ -67,7 +68,8 @@ exports.handler = async (event, context) => {
 			statusCode: 400,
 			body: JSON.stringify({
 				status: 'error',
-				message: 'Beer already exists'
+				message: 'Beer already exists',
+				canonical: review.canonical
 			})
 		}
 	}
@@ -240,7 +242,8 @@ exports.handler = async (event, context) => {
 			statusCode: 400,
 			body: JSON.stringify({
 				status: 'error',
-				message: 'File already exists'
+				message: 'File already exists',
+				commitFiles
 			})
 		}
 	}
