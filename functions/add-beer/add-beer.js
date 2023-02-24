@@ -151,7 +151,7 @@ exports.handler = async (event, context) => {
 			await api.RepositoryFiles.showRaw(repoId, filePath, {ref: repoBranch});
 			fileExists = true;
 		} catch(e) {
-			console.log('Brewery exists');
+			console.log('Brewery does not exists');
 		}
 
 		if(!fileExists) {
@@ -174,12 +174,13 @@ exports.handler = async (event, context) => {
 			await api.RepositoryFiles.showRaw(repoId, purchasedFilePath, {ref: repoBranch});
 			purchasedFileExists = true;
 		} catch(e) {
-			console.log('Shop exists');
+			console.log('Shop does not exist');
 		}
+
 		if(!purchasedFileExists) {
 			commitFiles.push({
 				action: 'create',
-				purchasedFilePath,
+				filePath: purchasedFilePath,
 				content: matter.stringify("\n", purchased),
 			});
 		}
@@ -243,7 +244,12 @@ exports.handler = async (event, context) => {
 			body: JSON.stringify({
 				status: 'error',
 				message: 'File already exists',
-				commitFiles
+				commitFiles: commitFiles.map(item => {
+					return {
+						action: item.action,
+						filePath: item.filePath,
+					}
+				})
 			})
 		}
 	}
