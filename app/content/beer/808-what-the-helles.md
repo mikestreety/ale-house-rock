@@ -8,8 +8,8 @@ breweries:
   - brewery/big-hug-brewing/
 tags:
   - helles
-number: 807
-permalink: beer/what-the-helles-big-hug-brewing-807/
+number: 808
+permalink: beer/what-the-helles-big-hug-brewing-808/
 ---
 
 This was surprisingly smooth for a Helles lager and went down wonderfully as an afternoon toppled. It was enjoyed while I was cooking dinner on a warm and sunny May bank holiday

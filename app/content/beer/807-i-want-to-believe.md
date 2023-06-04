@@ -9,8 +9,8 @@ breweries:
   - brewery/arundel-brewery/
 tags:
   - neipa
-number: 806
-permalink: beer/i-want-to-believe-arundel-brewery-806/
+number: 807
+permalink: beer/i-want-to-believe-arundel-brewery-807/
 ---
 
 What an absolute banging NEIPA. It's so good, I've bought another one. Fruity, smooth and full of flavour. Top notch.

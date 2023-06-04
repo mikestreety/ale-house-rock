@@ -9,8 +9,8 @@ breweries:
   - brewery/westerham-brewery-company-ltd/
 tags:
   - pale
-number: 805
-permalink: beer/national-trust-kentish-pale-ale-westerham-brewery-company-ltd-805/
+number: 806
+permalink: beer/national-trust-kentish-pale-ale-westerham-brewery-company-ltd-806/
 ---
 
 Exactly what you would expect from a National Trust Pale Ale. A bit disappointing and bland. I finished it, but I won't be back for another

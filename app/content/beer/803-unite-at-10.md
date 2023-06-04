@@ -9,8 +9,8 @@ breweries:
   - brewery/glasshouse-beer-co/
 tags:
   - paleale
-number: 809
-permalink: beer/unite-at-10-glasshouse-beer-co-809/
+number: 803
+permalink: beer/unite-at-10-glasshouse-beer-co-803/
 ---
 
 I didn't care much for this beer. It was drinkable, but nothing about it wanted me to drink it again. It was "ok".
