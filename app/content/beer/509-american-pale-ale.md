@@ -3,7 +3,7 @@ number: 509
 title: American Pale Ale
 rating: 7
 breweries:
-  - brewery/toast/
+  - brewery/toast-ale/
 date: '2021-06-12'
 permalink: beer/american-pale-ale-toast-509/
 canonical: https://www.instagram.com/p/CQCUX6KFYsi/

@@ -5,7 +5,7 @@ serving: Can
 rating: 8
 date: '2023-02-05'
 breweries:
-  - brewery/360-brewing-company/
+  - brewery/360-degree-brewing-company/
 number: 767
 permalink: beer/sussex-haze-360-brewing-company-767/
 ---

@@ -3,7 +3,7 @@ number: 502
 title: Pale Ale
 rating: 5
 breweries:
-  - brewery/toast/
+  - brewery/toast-ale/
 date: '2021-06-03'
 permalink: beer/pale-ale-toast-502/
 canonical: https://www.instagram.com/p/CPrBamCpfJU/

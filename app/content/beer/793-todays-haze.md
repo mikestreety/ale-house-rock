@@ -6,7 +6,7 @@ rating: 5.5
 purchased: shop/co-op-food/
 date: '2023-04-30'
 breweries:
-  - brewery/goose-island-beer-co/
+  - brewery/goose-island/
 tags:
   - ipa
 number: 793

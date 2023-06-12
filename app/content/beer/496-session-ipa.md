@@ -3,7 +3,7 @@ number: 496
 title: Session IPA
 rating: 9
 breweries:
-  - brewery/toast/
+  - brewery/toast-ale/
 date: '2021-05-24'
 permalink: beer/session-ipa-toast-496/
 canonical: https://www.instagram.com/p/CPQesgOFEEx/

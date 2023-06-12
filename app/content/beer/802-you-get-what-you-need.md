@@ -6,7 +6,7 @@ rating: 7.5
 purchased: shop/palate-bottle-shop/
 date: '2023-05-13'
 breweries:
-  - brewery/360-brewing-company/
+  - brewery/360-degree-brewing-company/
 tags:
   - dipa
 number: 802

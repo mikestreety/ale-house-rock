@@ -3,7 +3,7 @@ number: 367
 title: Said & Done
 rating: 9
 breweries:
-  - brewery/track/
+  - brewery/track-brewing-company/
 date: '2020-08-20'
 permalink: beer/said-done-track-367/
 canonical: https://www.instagram.com/p/CEH61rTJQS4/

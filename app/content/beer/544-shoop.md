@@ -4,7 +4,7 @@ title: Shoop
 rating: 5
 breweries:
   - brewery/salt-beer-factory/
-  - brewery/pomonda-island/
+  - brewery/pomona-island-brew-co/
 date: '2021-07-29'
 permalink: beer/shoop-salt-beer-factory-pomonda-island-544/
 canonical: https://www.instagram.com/p/CR7Te67JMC6/

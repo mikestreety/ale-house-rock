@@ -7,7 +7,7 @@ purchased: shop/palate-bottle-shop/
 date: '2023-05-25'
 breweries:
   - brewery/beak-brewery/
-  - brewery/verdant-brewing-co/
+  - brewery/verdant-brewing-company/
 tags:
   - dipa
 number: 805
