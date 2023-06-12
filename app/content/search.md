@@ -49,12 +49,17 @@ searchData.then(data => {
 		list = document.createElement('ol');
 		for (let beer of data) {
 			let childElement = document.createElement('li');
+
+			let breweries = '';
+			for(let brewery of beer.breweries) {
+				breweries += `<a href="${ brewery.slug }" class="brewery">${ brewery.title }</a>, `
+			}
 			childElement.innerHTML = `
 				<a href="${ beer.slug }" title="${ beer.title }">
 					<img src="${ beer.thumbnail }" width="150" height="150" loading="lazy" alt="${ beer.brewery } - ${ beer.title }">
 				</a>
 				<div class="content">
-					<a href="${ beer.brewery_slug }" class="brewery">${ beer.brewery }</a>
+					<div>${ breweries.trim().slice(0, -1) }</div>
 					<a href="${ beer.slug }" class="title">${ beer.title }</a>
 					<div class="rating">${ beer.rating }</div>
 
