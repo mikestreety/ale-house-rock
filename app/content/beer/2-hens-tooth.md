@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/morland/
 date: '2016-12-02'
-permalink: beer/hens-tooth-morland-2/
+permalink: beer/hens-tooth-morland/
 canonical: https://www.instagram.com/p/BNhnjOygBSY/
 tags:
   - strongale

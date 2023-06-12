@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/wychwood-brewery/
 date: '2018-07-03'
-permalink: beer/ripsaw-wychwood-brewery-124/
+permalink: beer/ripsaw-wychwood-brewery/
 canonical: https://www.instagram.com/p/Bkx8wT_FtGj/
 tags:
 

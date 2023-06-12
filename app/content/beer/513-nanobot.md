@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/beavertown/
 date: '2021-06-17'
-permalink: beer/nanobot-beavertown-513/
+permalink: beer/nanobot-beavertown/
 canonical: https://www.instagram.com/p/CQOzcF_pgPy/
 ---
 

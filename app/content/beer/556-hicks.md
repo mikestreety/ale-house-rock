@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/st-austell-brewery/
 date: '2021-08-18'
-permalink: beer/hicks-st-austell-brewery-556/
+permalink: beer/hicks-st-austell-brewery/
 canonical: https://www.instagram.com/p/CSucgCvKXHG/
 ---
 

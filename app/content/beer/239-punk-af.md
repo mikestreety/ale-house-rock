@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/brewdog/
 date: '2019-09-25'
-permalink: beer/punk-af-brewdog-239/
+permalink: beer/punk-af-brewdog/
 canonical: https://www.instagram.com/p/B22VQHMlJqW/
 tags:
 

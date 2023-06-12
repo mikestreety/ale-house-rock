@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/brakspear/
 date: '2017-04-29'
-permalink: beer/oxford-gold-brakspear-45/
+permalink: beer/oxford-gold-brakspear/
 canonical: https://www.instagram.com/p/BTep4N2l2eX/
 tags:
   - goldenale

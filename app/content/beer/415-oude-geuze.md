@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/boon/
 date: '2021-01-15'
-permalink: beer/oude-geuze-boon-415/
+permalink: beer/oude-geuze-boon/
 canonical: https://www.instagram.com/p/CKFIHSylELO/
 ---
 

@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/fourpure-brewing-company/
 date: '2020-05-15'
-permalink: beer/star-city-fourpure-brewing-company-328/
+permalink: beer/star-city-fourpure-brewing-company/
 canonical: https://www.instagram.com/p/CAOUcCWpNLM/
 tags:
 

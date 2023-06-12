@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/wychwood-brewery/
 date: '2018-09-08'
-permalink: beer/dr-thirstys-wychwood-brewery-154/
+permalink: beer/dr-thirstys-wychwood-brewery/
 canonical: https://www.instagram.com/p/BnesJqaFhPN/
 tags:
 

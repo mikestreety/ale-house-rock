@@ -6,7 +6,7 @@ breweries:
   - brewery/brewdog/
   - brewery/cloudwater/
 date: '2020-10-03'
-permalink: beer/new-england-ipa-brewdog-cloudwater-372/
+permalink: beer/new-england-ipa-brewdog-cloudwater/
 canonical: https://www.instagram.com/p/CF4k6QWluCx/
 ---
 

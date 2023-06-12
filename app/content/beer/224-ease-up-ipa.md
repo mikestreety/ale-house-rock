@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/adnams/
 date: '2019-05-27'
-permalink: beer/ease-up-ipa-adnams-224/
+permalink: beer/ease-up-ipa-adnams/
 canonical: https://www.instagram.com/p/Bx-0ZK5FrIv/
 tags:
 

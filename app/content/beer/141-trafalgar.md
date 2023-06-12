@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/nelson-brewery/
 date: '2018-08-11'
-permalink: beer/trafalgar-nelson-brewery-141/
+permalink: beer/trafalgar-nelson-brewery/
 canonical: https://www.instagram.com/p/BmWflgqFQcH/
 tags:
 

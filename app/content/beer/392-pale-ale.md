@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/wolfox/
 date: '2020-12-05'
-permalink: beer/pale-ale-wolfox-392/
+permalink: beer/pale-ale-wolfox/
 canonical: https://www.instagram.com/p/CIbvCyZp0jR/
 ---
 

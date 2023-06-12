@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/adnams/
 date: '2021-01-02'
-permalink: beer/laid-back-ipa-adnams-405/
+permalink: beer/laid-back-ipa-adnams/
 canonical: https://www.instagram.com/p/CJj2h5dlkU_/
 ---
 

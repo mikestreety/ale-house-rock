@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/maltus-faber/
 date: '2019-06-15'
-permalink: beer/brune-maltus-faber-226/
+permalink: beer/brune-maltus-faber/
 canonical: https://www.instagram.com/p/ByvHjknFvDd/
 tags:
 

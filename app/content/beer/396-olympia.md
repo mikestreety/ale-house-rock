@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/harveys-brewery/
 date: '2020-12-21'
-permalink: beer/olympia-harveys-brewery-396/
+permalink: beer/olympia-harveys-brewery/
 canonical: https://www.instagram.com/p/CJExcaJlLI0/
 ---
 

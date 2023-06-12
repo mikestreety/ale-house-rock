@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/fourpure-brewing-company/
 date: '2020-04-18'
-permalink: beer/juicebox-aka-citrus-ipa-fourpure-brewing-company-307/
+permalink: beer/juicebox-aka-citrus-ipa-fourpure-brewing-company/
 canonical: https://www.instagram.com/p/B_HcIUPJ-Tc/
 ---
 

@@ -7,7 +7,7 @@ rating: 6
 breweries:
   - brewery/pressure-drop/
 date: '2017-05-18'
-permalink: beer/cheeky-pressure-drop-47/
+permalink: beer/cheeky-pressure-drop/
 canonical: https://www.instagram.com/p/BUPi8YCFmRH/
 tags:
   - ipa

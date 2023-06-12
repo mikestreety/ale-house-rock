@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/adnams/
 date: '2017-05-28'
-permalink: beer/ghost-ship-adnams-50/
+permalink: beer/ghost-ship-adnams/
 canonical: https://www.instagram.com/p/BUpVBfHl-VX/
 serving: Bottle
 tags:

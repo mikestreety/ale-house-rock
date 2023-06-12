@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/loud-shirt-brewing-company/
 date: '2018-12-13'
-permalink: beer/hallucination-brune-loud-shirt-brewing-company-184/
+permalink: beer/hallucination-brune-loud-shirt-brewing-company/
 canonical: https://www.instagram.com/p/BrWHyYeASMy/
 tags:
 

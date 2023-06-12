@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/black-sheep-brewery/
 date: '2018-12-29'
-permalink: beer/milk-stout-black-sheep-brewery-190/
+permalink: beer/milk-stout-black-sheep-brewery/
 canonical: https://www.instagram.com/p/Br99h-HAUvq/
 tags:
 

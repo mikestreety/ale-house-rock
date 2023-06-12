@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/lyme-regis-brewery/
 date: '2019-04-18'
-permalink: beer/lyme-gold-lyme-regis-brewery-219/
+permalink: beer/lyme-gold-lyme-regis-brewery/
 canonical: https://www.instagram.com/p/BwaDRcWl_34/
 tags:
 

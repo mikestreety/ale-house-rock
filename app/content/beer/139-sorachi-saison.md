@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/gir-bryggeri/
 date: '2018-08-04'
-permalink: beer/sorachi-saison-gir-bryggeri-139/
+permalink: beer/sorachi-saison-gir-bryggeri/
 canonical: https://www.instagram.com/p/BmEjn_uFZGR/
 tags:
 

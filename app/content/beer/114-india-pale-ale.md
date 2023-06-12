@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/shepherd-neame/
 date: '2018-06-15'
-permalink: beer/india-pale-ale-shepherd-neame-114/
+permalink: beer/india-pale-ale-shepherd-neame/
 canonical: https://www.instagram.com/p/BkDu_mIlR4h/
 tags:
 

@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/salt-beer-factory/
 date: '2021-05-21'
-permalink: beer/ikat-salt-beer-factory-492/
+permalink: beer/ikat-salt-beer-factory/
 canonical: https://www.instagram.com/p/CPJNSWHlxV7/
 ---
 

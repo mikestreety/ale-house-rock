@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/collective-arts/
 date: '2021-01-21'
-permalink: beer/life-in-the-clouds-collective-arts-421/
+permalink: beer/life-in-the-clouds-collective-arts/
 canonical: https://www.instagram.com/p/CKUv9oYlZK0/
 tags:
 

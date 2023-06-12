@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/flavourly/
 date: '2018-09-27'
-permalink: beer/flamingo-juice-flavourly-161/
+permalink: beer/flamingo-juice-flavourly/
 canonical: https://www.instagram.com/p/BoPacTLFARV/
 tags:
 

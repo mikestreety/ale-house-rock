@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/liberation-brewery/
 date: '2018-04-10'
-permalink: beer/herm-island-gold-liberation-brewery-106/
+permalink: beer/herm-island-gold-liberation-brewery/
 canonical: https://www.instagram.com/p/BhZkFaYld_D/
 tags:
 

@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/buxton-brewery/
 date: '2020-09-25'
-permalink: beer/king-slayer-buxton-brewery-370/
+permalink: beer/king-slayer-buxton-brewery/
 canonical: https://www.instagram.com/p/CFjTQY8FsJS/
 tags:
 

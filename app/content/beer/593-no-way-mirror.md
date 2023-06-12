@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/deya-brewing-company/
 date: '2021-12-27'
-permalink: beer/no-way-mirror-deya-brewing-company-593/
+permalink: beer/no-way-mirror-deya-brewing-company/
 canonical: https://www.instagram.com/p/CX-7XyKKQMx/
 ---
 

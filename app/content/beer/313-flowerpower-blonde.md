@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/loud-shirt-brewing-company/
 date: '2020-04-26'
-permalink: beer/flowerpower-blonde-loud-shirt-brewing-company-313/
+permalink: beer/flowerpower-blonde-loud-shirt-brewing-company/
 canonical: https://www.instagram.com/p/B_c3OBWJa-U/
 tags:
 

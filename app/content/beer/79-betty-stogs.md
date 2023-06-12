@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/skinners-brewery/
 date: '2017-11-04'
-permalink: beer/betty-stogs-skinners-brewery-79/
+permalink: beer/betty-stogs-skinners-brewery/
 canonical: https://www.instagram.com/p/BbFTEXHFazr/
 tags:
 

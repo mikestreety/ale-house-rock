@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/gipsy-hill/
 date: '2021-05-02'
-permalink: beer/huddle-gipsy-hill-482/
+permalink: beer/huddle-gipsy-hill/
 canonical: https://www.instagram.com/p/COXHSRpFoXM/
 ---
 

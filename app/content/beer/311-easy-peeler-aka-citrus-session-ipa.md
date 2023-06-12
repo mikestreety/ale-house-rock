@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/fourpure-brewing-company/
 date: '2020-04-24'
-permalink: beer/easy-peeler-aka-citrus-session-ipa-fourpure-brewing-company-311/
+permalink: beer/easy-peeler-aka-citrus-session-ipa-fourpure-brewing-company/
 canonical: https://www.instagram.com/p/B_XydjApEaH/
 ---
 

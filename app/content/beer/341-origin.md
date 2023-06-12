@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/northern-monk/
 date: '2020-06-06'
-permalink: beer/origin-northern-monk-341/
+permalink: beer/origin-northern-monk/
 canonical: https://www.instagram.com/p/CBGyGKeJhN8/
 tags:
 

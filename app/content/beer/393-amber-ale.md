@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/harpers-brewing-company/
 date: '2020-12-10'
-permalink: beer/amber-ale-harpers-brewing-company-393/
+permalink: beer/amber-ale-harpers-brewing-company/
 canonical: https://www.instagram.com/p/CIoXlpAFjHb/
 ---
 

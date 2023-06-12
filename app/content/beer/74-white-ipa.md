@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/marks-and-spencer/
 date: '2017-10-19'
-permalink: beer/white-ipa-marks-and-spencer-74/
+permalink: beer/white-ipa-marks-and-spencer/
 canonical: https://www.instagram.com/p/BacXc2FFhnR/
 tags:
   - ipa

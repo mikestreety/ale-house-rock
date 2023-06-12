@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/kronleins-bryggeri/
 date: '2019-09-20'
-permalink: beer/ol-mork-lager-kronleins-bryggeri-236/
+permalink: beer/ol-mork-lager-kronleins-bryggeri/
 canonical: https://www.instagram.com/p/B2pT7g-l3dZ/
 tags:
 

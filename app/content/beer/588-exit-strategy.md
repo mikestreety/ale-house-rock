@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/silver-rocket-brewing/
 date: '2021-11-28'
-permalink: beer/exit-strategy-silver-rocket-brewing-588/
+permalink: beer/exit-strategy-silver-rocket-brewing/
 canonical: https://www.instagram.com/p/CW1RdXIq1kC/
 ---
 

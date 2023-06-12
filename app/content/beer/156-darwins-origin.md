@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/sopian-brewery/
 date: '2018-09-14'
-permalink: beer/darwins-origin-sopian-brewery-156/
+permalink: beer/darwins-origin-sopian-brewery/
 canonical: https://www.instagram.com/p/Bnt_7AKFRYD/
 tags:
 

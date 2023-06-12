@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/innis-gunn/
 date: '2019-09-02'
-permalink: beer/blood-red-sky-innis-gunn-234/
+permalink: beer/blood-red-sky-innis-gunn/
 canonical: https://www.instagram.com/p/B16wpCFFEg8/
 ---
 

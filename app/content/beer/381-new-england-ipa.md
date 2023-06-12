@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/adnams/
 date: '2020-11-07'
-permalink: beer/new-england-ipa-adnams-381/
+permalink: beer/new-england-ipa-adnams/
 canonical: https://www.instagram.com/p/CHTGMOxlZtr/
 ---
 

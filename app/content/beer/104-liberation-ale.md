@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/liberation-brewery/
 date: '2018-04-09'
-permalink: beer/liberation-ale-liberation-brewery-104/
+permalink: beer/liberation-ale-liberation-brewery/
 canonical: https://www.instagram.com/p/BhW_paxl2Ek/
 tags:
 

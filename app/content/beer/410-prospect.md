@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/hepworth-co-brewers/
 date: '2021-01-09'
-permalink: beer/prospect-hepworth-co-brewers-410/
+permalink: beer/prospect-hepworth-co-brewers/
 canonical: https://www.instagram.com/p/CJ1vza-FZE4/
 ---
 

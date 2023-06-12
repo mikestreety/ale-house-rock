@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/fourpure-brewing-company/
 date: '2020-04-15'
-permalink: beer/hemisphere-aka-session-ipa-fourpure-brewing-company-304/
+permalink: beer/hemisphere-aka-session-ipa-fourpure-brewing-company/
 canonical: https://www.instagram.com/p/B_A4J2UpdSc/
 tags:
   - sessionipa

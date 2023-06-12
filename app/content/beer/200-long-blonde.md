@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/long-man-brewery/
 date: '2019-01-18'
-permalink: beer/long-blonde-long-man-brewery-200/
+permalink: beer/long-blonde-long-man-brewery/
 canonical: https://www.instagram.com/p/BsyU0mMgiDD/
 tags:
 

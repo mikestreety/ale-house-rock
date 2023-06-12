@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/shepherd-neame/
 date: '2021-04-22'
-permalink: beer/whitstable-bay-ruby-ale-shepherd-neame-473/
+permalink: beer/whitstable-bay-ruby-ale-shepherd-neame/
 canonical: https://www.instagram.com/p/CN9fxSxl8Pi/
 ---
 

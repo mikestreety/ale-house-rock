@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/greene-king/
 date: '2019-01-01'
-permalink: beer/heritage-vintage-fine-ale-greene-king-192/
+permalink: beer/heritage-vintage-fine-ale-greene-king/
 canonical: https://www.instagram.com/p/BsG4DDZABC4/
 tags:
 

@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/badger/
 date: '2019-09-02'
-permalink: beer/tanglefoot-badger-233/
+permalink: beer/tanglefoot-badger/
 canonical: https://www.instagram.com/p/B16wUsXl4fd/
 tags:
 

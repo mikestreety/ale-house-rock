@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/northern-monk/
 date: '2021-04-30'
-permalink: beer/divine-faith-northern-monk-480/
+permalink: beer/divine-faith-northern-monk/
 canonical: https://www.instagram.com/p/COSDRHHFBPd/
 ---
 

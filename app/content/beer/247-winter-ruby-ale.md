@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/co-op/
 date: '2019-10-26'
-permalink: beer/winter-ruby-ale-co-op-247/
+permalink: beer/winter-ruby-ale-co-op/
 canonical: https://www.instagram.com/p/B4GJKIlF7DM/
 ---
 

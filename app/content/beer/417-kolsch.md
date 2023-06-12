@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/fruh/
 date: '2021-01-15'
-permalink: beer/kolsch-fruh-417/
+permalink: beer/kolsch-fruh/
 canonical: https://www.instagram.com/p/CKFVwxQFtqM/
 ---
 

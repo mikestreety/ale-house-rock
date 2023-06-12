@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/cloudwater/
 date: '2021-06-25'
-permalink: beer/ddh-pale-cloudwater-521/
+permalink: beer/ddh-pale-cloudwater/
 canonical: https://www.instagram.com/p/CQih197pKFS/
 ---
 

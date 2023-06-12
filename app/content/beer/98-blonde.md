@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/leffe/
 date: '2018-02-14'
-permalink: beer/blonde-leffe-98/
+permalink: beer/blonde-leffe/
 canonical: https://www.instagram.com/p/BfMIoJCl69G/
 tags:
 

@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/brussels-beer-project/
 date: '2020-05-02'
-permalink: beer/delta-ipa-brussels-beer-project-318/
+permalink: beer/delta-ipa-brussels-beer-project/
 canonical: https://www.instagram.com/p/B_spYFzJHJ0/
 ---
 

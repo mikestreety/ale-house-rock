@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/buxton-brewery/
 date: '2020-04-28'
-permalink: beer/lupulus-x-simcoe-ipa-buxton-brewery-315/
+permalink: beer/lupulus-x-simcoe-ipa-buxton-brewery/
 canonical: https://www.instagram.com/p/B_icTAgJfR9/
 tags:
 

@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/unbarred-brewery/
 date: '2021-04-25'
-permalink: beer/casual-pale-unbarred-476/
+permalink: beer/casual-pale-unbarred/
 canonical: https://www.instagram.com/p/COGrN5olQm0/
 tags:
 

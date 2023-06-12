@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/aldi/
 date: '2021-06-18'
-permalink: beer/half-pipe-aldi-514/
+permalink: beer/half-pipe-aldi/
 canonical: https://www.instagram.com/p/CQRe2p5JmDh/
 ---
 

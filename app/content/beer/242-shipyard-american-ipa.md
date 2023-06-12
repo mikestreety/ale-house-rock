@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/marstons/
 date: '2019-09-30'
-permalink: beer/shipyard-american-ipa-marstons-242/
+permalink: beer/shipyard-american-ipa-marstons/
 canonical: https://www.instagram.com/p/B3C0qVqluTQ/
 ---
 

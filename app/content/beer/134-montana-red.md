@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/fullers/
 date: '2018-07-29'
-permalink: beer/montana-red-fullers-134/
+permalink: beer/montana-red-fullers/
 canonical: https://www.instagram.com/p/Bl0r1HKF_c1/
 tags:
 

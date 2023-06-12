@@ -6,7 +6,7 @@ rating: 10
 breweries:
   - brewery/badger/
 date: '2017-08-26'
-permalink: beer/fursty-ferret-badger-62/
+permalink: beer/fursty-ferret-badger/
 canonical: https://www.instagram.com/p/BYRMaP7lGig/
 tags:
   - bottle

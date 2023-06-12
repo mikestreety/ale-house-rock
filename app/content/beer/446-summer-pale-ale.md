@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/co-op/
 date: '2021-03-07'
-permalink: beer/summer-pale-ale-co-op-446/
+permalink: beer/summer-pale-ale-co-op/
 canonical: https://www.instagram.com/p/CMIigHaF_Fp/
 ---
 

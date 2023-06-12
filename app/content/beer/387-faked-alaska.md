@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/arbor-ales/
 date: '2020-11-15'
-permalink: beer/faked-alaska-arbor-387/
+permalink: beer/faked-alaska-arbor/
 canonical: https://www.instagram.com/p/CHnG-xbFZeY/
 ---
 

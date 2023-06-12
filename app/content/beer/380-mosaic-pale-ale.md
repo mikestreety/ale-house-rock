@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/adnams/
 date: '2020-11-06'
-permalink: beer/mosaic-pale-ale-adnams-380/
+permalink: beer/mosaic-pale-ale-adnams/
 canonical: https://www.instagram.com/p/CHQ_xVxJ0xu/
 ---
 

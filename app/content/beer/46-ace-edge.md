@@ -7,7 +7,7 @@ purchased: shop/seven-cellars/
 breweries:
   - brewery/buxton-brewery/
 date: '2017-05-16'
-permalink: beer/ace-edge-buxton-brewery-46/
+permalink: beer/ace-edge-buxton-brewery/
 canonical: https://www.instagram.com/p/BUKwgL-FGcH/
 tags:
   - ipa

@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/marks-and-spencer/
 date: '2017-10-19'
-permalink: beer/belgian-wheat-beer-marks-and-spencer-73/
+permalink: beer/belgian-wheat-beer-marks-and-spencer/
 canonical: https://www.instagram.com/p/BacHrQ8Fg-l/
 tags:
 

@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/freak-aleworks/
 date: '2020-03-27'
-permalink: beer/phantom-pale-ale-freak-aleworks-294/
+permalink: beer/phantom-pale-ale-freak-aleworks/
 canonical: https://www.instagram.com/p/B-PuzM-pbvz/
 tags:
 

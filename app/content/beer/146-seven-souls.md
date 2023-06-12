@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/sharps/
 date: '2018-08-19'
-permalink: beer/seven-souls-sharps-146/
+permalink: beer/seven-souls-sharps/
 canonical: https://www.instagram.com/p/BmraEGTl6ZO/
 tags:
 

@@ -6,7 +6,7 @@ rating: 9
 breweries:
   - brewery/sharps/
 date: '2017-04-07'
-permalink: beer/doombar-sharps-39/
+permalink: beer/doombar-sharps/
 canonical: https://www.instagram.com/p/BSmHwh1l1nK/
 tags:
   - bitter

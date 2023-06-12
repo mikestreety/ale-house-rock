@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/the-wild-beer-company/
 date: '2020-05-13'
-permalink: beer/sleeping-lemons-export-the-wild-beer-company-325/
+permalink: beer/sleeping-lemons-export-the-wild-beer-company/
 canonical: https://www.instagram.com/p/CAJPOSWJbow/
 tags:
 

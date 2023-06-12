@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/adnams/
 date: '2017-12-23'
-permalink: beer/broadside-adnams-86/
+permalink: beer/broadside-adnams/
 canonical: https://www.instagram.com/p/BdDapegFs0d/
 tags:
 

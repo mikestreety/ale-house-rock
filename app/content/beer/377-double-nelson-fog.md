@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/burnt-mill-brewery/
 date: '2020-10-31'
-permalink: beer/double-nelson-fog-burnt-mill-brewery-377/
+permalink: beer/double-nelson-fog-burnt-mill-brewery/
 canonical: https://www.instagram.com/p/CHApFIfFtwX/
 ---
 

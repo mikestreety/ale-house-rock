@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/sierra-nevada/
 date: '2021-07-21'
-permalink: beer/pale-ale-sierra-nevada-537/
+permalink: beer/pale-ale-sierra-nevada/
 canonical: https://www.instagram.com/p/CRlEOT6l8lK/
 ---
 

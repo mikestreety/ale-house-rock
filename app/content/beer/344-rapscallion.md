@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/northern-monk/
 date: '2020-06-12'
-permalink: beer/rapscallion-northern-monk-344/
+permalink: beer/rapscallion-northern-monk/
 canonical: https://www.instagram.com/p/CBWZrFKJcHr/
 tags:
 

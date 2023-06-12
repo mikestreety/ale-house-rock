@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/firebird-brewing-company/
 date: '2021-06-19'
-permalink: beer/parody-firebird-brewing-company-516/
+permalink: beer/parody-firebird-brewing-company/
 canonical: https://www.instagram.com/p/CQToFpcJuq-/
 ---
 

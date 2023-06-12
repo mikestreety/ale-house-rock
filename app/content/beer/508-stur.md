@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/beak-brewery/
 date: '2021-06-11'
-permalink: beer/stur-beak-brewery-508/
+permalink: beer/stur-beak-brewery/
 canonical: https://www.instagram.com/p/CP_xKODp1mS/
 tags:
   - dipa

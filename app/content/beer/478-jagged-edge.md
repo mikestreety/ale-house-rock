@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/brewdog/
 date: '2021-04-28'
-permalink: beer/jagged-edge-brewdog-478/
+permalink: beer/jagged-edge-brewdog/
 canonical: https://www.instagram.com/p/COOFyy9lCdG/
 ---
 

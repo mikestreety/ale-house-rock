@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/people-like-us/
 date: '2020-06-15'
-permalink: beer/oats-of-disobedience-people-like-us-345/
+permalink: beer/oats-of-disobedience-people-like-us/
 canonical: https://www.instagram.com/p/CBdPc7gpAPz/
 ---
 

@@ -6,7 +6,7 @@ breweries:
   - brewery/verdant-brewing-company/
   - brewery/beak-brewery/
 date: '2021-07-19'
-permalink: beer/more-wheat-verdant-brewing-company-beak-brewery-536/
+permalink: beer/more-wheat-verdant-brewing-company-beak-brewery/
 canonical: https://www.instagram.com/p/CRgUYmtFe_R/
 ---
 

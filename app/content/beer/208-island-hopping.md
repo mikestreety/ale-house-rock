@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/swannay-brewery/
 date: '2019-03-14'
-permalink: beer/island-hopping-swannay-brewery-208/
+permalink: beer/island-hopping-swannay-brewery/
 canonical: https://www.instagram.com/p/BvAMVqYlrNs/
 tags:
 

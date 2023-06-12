@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/brewdog/
 date: '2019-01-03'
-permalink: beer/punk-ipa-brewdog-194/
+permalink: beer/punk-ipa-brewdog/
 canonical: https://www.instagram.com/p/BsLrt_rAUhu/
 tags:
 

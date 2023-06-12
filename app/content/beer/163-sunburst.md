@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/dark-star/
 date: '2018-10-05'
-permalink: beer/sunburst-dark-star-163/
+permalink: beer/sunburst-dark-star/
 canonical: https://www.instagram.com/p/Boj87SilfAC/
 tags:
 

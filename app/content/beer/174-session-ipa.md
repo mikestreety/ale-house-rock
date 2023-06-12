@@ -5,7 +5,7 @@ rating: 2
 breweries:
   - brewery/the-white-hag/
 date: '2018-11-12'
-permalink: beer/session-ipa-the-white-hag-174/
+permalink: beer/session-ipa-the-white-hag/
 canonical: https://www.instagram.com/p/BqGJZyrgnRI/
 tags:
   - ipa

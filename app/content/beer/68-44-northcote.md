@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/gourmet-burger-kitchen/
 date: '2017-10-06'
-permalink: beer/44-northcote-gourmet-burger-kitchen-68/
+permalink: beer/44-northcote-gourmet-burger-kitchen/
 canonical: https://www.instagram.com/p/BZ6luDvlJFL/
 tags:
 

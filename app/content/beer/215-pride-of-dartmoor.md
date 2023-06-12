@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/black-tor/
 date: '2019-04-03'
-permalink: beer/pride-of-dartmoor-black-tor-215/
+permalink: beer/pride-of-dartmoor-black-tor/
 canonical: https://www.instagram.com/p/BvzTDqlFhJp/
 tags:
 

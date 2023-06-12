@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/the-hop-foundry/
 date: '2021-07-03'
-permalink: beer/twice-as-nice-the-hop-foundry-524/
+permalink: beer/twice-as-nice-the-hop-foundry/
 canonical: https://www.instagram.com/p/CQ3IalLlH-N/
 ---
 

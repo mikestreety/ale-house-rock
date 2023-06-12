@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/brew-by-numbers/
 date: '2021-05-30'
-permalink: beer/42ddh-pale-ale-brew-by-numbers-499/
+permalink: beer/42ddh-pale-ale-brew-by-numbers/
 canonical: https://www.instagram.com/p/CPgasomlc7Q/
 tags:
 

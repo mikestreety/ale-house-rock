@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/harbour/
 date: '2021-03-27'
-permalink: beer/beach-break-harbour-459/
+permalink: beer/beach-break-harbour/
 canonical: https://www.instagram.com/p/CM8MCcHpLUF/
 ---
 

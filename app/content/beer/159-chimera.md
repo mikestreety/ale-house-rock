@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/drygate-brewing-company/
 date: '2018-09-23'
-permalink: beer/chimera-drygate-brewing-company-159/
+permalink: beer/chimera-drygate-brewing-company/
 canonical: https://www.instagram.com/p/BoE2S5LFz1p/
 ---
 

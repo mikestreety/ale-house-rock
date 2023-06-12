@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/adnams/
 date: '2018-10-31'
-permalink: beer/jester-ipa-adnams-168/
+permalink: beer/jester-ipa-adnams/
 canonical: https://www.instagram.com/p/BploSqrAxpj/
 tags:
 

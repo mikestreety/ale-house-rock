@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/the-rev-james/
 date: '2018-07-10'
-permalink: beer/pale-the-rev-james-127/
+permalink: beer/pale-the-rev-james/
 canonical: https://www.instagram.com/p/BlD40FGFKuu/
 tags:
 

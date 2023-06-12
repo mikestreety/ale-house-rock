@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/street-brewing-company/
 date: '2019-01-15'
-permalink: beer/homebrew-street-brewing-company-198/
+permalink: beer/homebrew-street-brewing-company/
 canonical: https://www.instagram.com/p/BsqqtHBAunj/
 tags:
 

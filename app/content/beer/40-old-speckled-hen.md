@@ -6,7 +6,7 @@ rating: 8
 breweries:
   - brewery/greene-king/
 date: '2017-04-07'
-permalink: beer/morland-old-speckled-hen-greene-king-40/
+permalink: beer/morland-old-speckled-hen-greene-king/
 aliases:
   - old-speckled-hen-morland-40
 canonical: https://www.instagram.com/p/BSmMfxLFTBE/

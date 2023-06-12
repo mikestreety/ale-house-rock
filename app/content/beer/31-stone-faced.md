@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/lymestone-brewery/
 date: '2017-02-09'
-permalink: beer/stone-faced-lymestone-brewery-31/
+permalink: beer/stone-faced-lymestone-brewery/
 canonical: https://www.instagram.com/p/BQTSnYbAUTx/
 tags:
   - bitter

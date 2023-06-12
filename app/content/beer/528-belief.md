@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/beak-brewery/
 date: '2021-07-07'
-permalink: beer/belief-beak-brewery-528/
+permalink: beer/belief-beak-brewery/
 canonical: https://www.instagram.com/p/CRCrB-ZF4Gq/
 ---
 

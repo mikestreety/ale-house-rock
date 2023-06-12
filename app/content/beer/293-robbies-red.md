@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/adur-brewery/
 date: '2020-03-21'
-permalink: beer/robbies-red-adur-brewery-293/
+permalink: beer/robbies-red-adur-brewery/
 canonical: https://www.instagram.com/p/B-AMnEEpron/
 tags:
 

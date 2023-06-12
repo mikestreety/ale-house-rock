@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/dartmoor-brewery/
 date: '2021-10-09'
-permalink: beer/dartmoor-ipa-dartmoor-brewery-583/
+permalink: beer/dartmoor-ipa-dartmoor-brewery/
 canonical: https://www.instagram.com/p/CU0bdYCK2uh/
 ---
 

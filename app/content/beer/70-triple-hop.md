@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/co-op/
 date: '2017-10-12'
-permalink: beer/triple-hop-co-op-70/
+permalink: beer/triple-hop-co-op/
 canonical: https://www.instagram.com/p/BaKQMvDFX7x/
 tags:
 

@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/verdant-brewing-company/
 date: '2021-08-28'
-permalink: beer/transient-comfort-object-verdant-brewing-company-561/
+permalink: beer/transient-comfort-object-verdant-brewing-company/
 canonical: https://www.instagram.com/p/CTH_Lk7q5kw/
 ---
 

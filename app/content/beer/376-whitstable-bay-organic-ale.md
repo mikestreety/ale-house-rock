@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/shepherd-neame/
 date: '2020-10-30'
-permalink: beer/whitstable-bay-organic-ale-shepherd-neame-376/
+permalink: beer/whitstable-bay-organic-ale-shepherd-neame/
 canonical: https://www.instagram.com/p/CG-nCQMJs4w/
 ---
 

@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/meantime-brewing-company/
 date: '2018-11-08'
-permalink: beer/boadicea-meantime-brewing-company-171/
+permalink: beer/boadicea-meantime-brewing-company/
 canonical: https://www.instagram.com/p/Bp7tvqUAcBU/
 ---
 

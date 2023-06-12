@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/hatherwood-craft-beer-company/
 date: '2020-02-09'
-permalink: beer/plunged-orange-pale-ale-hatherwood-craft-beer-company-278/
+permalink: beer/plunged-orange-pale-ale-hatherwood-craft-beer-company/
 canonical: https://www.instagram.com/p/B8W3d47J4bO/
 tags:
 

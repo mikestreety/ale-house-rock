@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/10-4-brewing/
 date: '2021-04-27'
-permalink: beer/new-england-ipa-10-4-brewing-477/
+permalink: beer/new-england-ipa-10-4-brewing/
 canonical: https://www.instagram.com/p/COKqjb4FIV4/
 ---
 

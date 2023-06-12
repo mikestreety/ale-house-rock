@@ -6,7 +6,7 @@ breweries:
   - brewery/meantime-brewing-company/
   - brewery/marks-and-spencer/
 date: '2016-12-12'
-permalink: beer/greenwich-red-ale-meantime-brewing-company-marks-and-spencer-14/
+permalink: beer/greenwich-red-ale-meantime-brewing-company-marks-and-spencer/
 aliases:
   - greenwich-red-ale-meantime-brewing-company-14
 canonical: https://www.instagram.com/p/BN7mbqwA9Mz/

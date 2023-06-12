@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/brygget-med-stolthed-re/
 date: '2017-04-15'
-permalink: beer/willemoes-brygget-med-stolthed-re-41/
+permalink: beer/willemoes-brygget-med-stolthed-re/
 canonical: https://www.instagram.com/p/BS6vWWoF3RZ/
 tags:
   - stout

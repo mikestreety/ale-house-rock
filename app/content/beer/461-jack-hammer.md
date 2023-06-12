@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/brewdog/
 date: '2021-04-01'
-permalink: beer/jack-hammer-brewdog-461/
+permalink: beer/jack-hammer-brewdog/
 canonical: https://www.instagram.com/p/CNI67U1p7Mo/
 ---
 

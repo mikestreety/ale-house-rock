@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/lymestone-brewery/
 date: '2017-02-16'
-permalink: beer/foundation-stone-lymestone-brewery-35/
+permalink: beer/foundation-stone-lymestone-brewery/
 canonical: https://www.instagram.com/p/BQlf1ZLlH7Y/
 seving: Bottle
 tags:

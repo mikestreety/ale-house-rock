@@ -6,7 +6,7 @@ serving: Can
 breweries:
   - brewery/eagle-brewery/
 date: '2017-04-23'
-permalink: beer/bombardier-eagle-brewery-44/
+permalink: beer/bombardier-eagle-brewery/
 canonical: https://www.instagram.com/p/BTPFjiDlev3/
 tags:
   - bitter

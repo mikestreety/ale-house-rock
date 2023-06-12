@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/gun-brewery/
 date: '2020-12-31'
-permalink: beer/numb-angel-gun-brewery-403/
+permalink: beer/numb-angel-gun-brewery/
 canonical: https://www.instagram.com/p/CJeuyZOFQYG/
 ---
 

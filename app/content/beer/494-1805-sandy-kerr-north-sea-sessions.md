@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/northern-monk/
 date: '2021-05-22'
-permalink: beer/1805-sandy-kerr-north-sea-sessions-northern-monk-494/
+permalink: beer/1805-sandy-kerr-north-sea-sessions-northern-monk/
 canonical: https://www.instagram.com/p/CPMJGO4Jli2/
 ---
 

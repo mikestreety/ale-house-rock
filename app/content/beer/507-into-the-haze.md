@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/deya-brewing-company/
 date: '2021-06-09'
-permalink: beer/into-the-haze-deya-brewing-company-507/
+permalink: beer/into-the-haze-deya-brewing-company/
 canonical: https://www.instagram.com/p/CP6mnToJjUw/
 tags:
 

@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/the-wild-beer-company/
 date: '2020-06-01'
-permalink: beer/bibble-the-wild-beer-company-338/
+permalink: beer/bibble-the-wild-beer-company/
 canonical: https://www.instagram.com/p/CA5QTP-J8YL/
 ---
 

@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/beak-brewery/
 date: '2021-05-14'
-permalink: beer/parade-beak-brewery-488/
+permalink: beer/parade-beak-brewery/
 canonical: https://www.instagram.com/p/CO3qB9UF5Gs/
 ---
 

@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/wimbledon-brewery/
 date: '2019-11-15'
-permalink: beer/wimbledon-ale-wimbledon-brewery-253/
+permalink: beer/wimbledon-ale-wimbledon-brewery/
 canonical: https://www.instagram.com/p/B45ShzqFe2G/
 ---
 

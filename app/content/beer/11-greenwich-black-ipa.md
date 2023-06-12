@@ -8,7 +8,7 @@ breweries:
   - brewery/meantime-brewing-company/
   - brewery/marks-and-spencer/
 date: '2016-12-10'
-permalink: beer/greenwich-black-ipa-meantime-brewing-company-marks-and-spencer-11/
+permalink: beer/greenwich-black-ipa-meantime-brewing-company-marks-and-spencer/
 aliases:
   - greenwich-black-ipa-meantime-brewing-company-11
 canonical: https://www.instagram.com/p/BN2V3v4g6q2/

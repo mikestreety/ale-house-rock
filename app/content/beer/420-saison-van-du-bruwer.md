@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/de-la-senne/
 date: '2021-01-17'
-permalink: beer/saison-van-du-bruwer-de-la-senne-420/
+permalink: beer/saison-van-du-bruwer-de-la-senne/
 canonical: https://www.instagram.com/p/CKKLn4RF2Ko/
 tags:
 

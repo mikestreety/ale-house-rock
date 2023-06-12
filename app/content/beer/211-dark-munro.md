@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/swannay-brewery/
 date: '2019-03-24'
-permalink: beer/dark-munro-swannay-brewery-211/
+permalink: beer/dark-munro-swannay-brewery/
 canonical: https://www.instagram.com/p/BvZ7UTmlc0R/
 tags:
   - mild

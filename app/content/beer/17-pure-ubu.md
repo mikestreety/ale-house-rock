@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/purity-brewing-company/
 date: '2016-12-15'
-permalink: beer/pure-ubu-purity-brewing-company-17/
+permalink: beer/pure-ubu-purity-brewing-company/
 canonical: https://www.instagram.com/p/BODVDblA6_l/
 tags:
   - bitter

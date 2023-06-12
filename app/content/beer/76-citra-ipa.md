@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/oakham-ales/
 date: '2017-10-25'
-permalink: beer/citra-ipa-oakham-ales-76/
+permalink: beer/citra-ipa-oakham-ales/
 canonical: https://www.instagram.com/p/Bar-8EcFvlq/
 tags:
 

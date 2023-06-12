@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/maltus-faber/
 date: '2019-06-21'
-permalink: beer/triple-hop-maltus-faber-228/
+permalink: beer/triple-hop-maltus-faber/
 canonical: https://www.instagram.com/p/By-3IHplWrj/
 tags:
 

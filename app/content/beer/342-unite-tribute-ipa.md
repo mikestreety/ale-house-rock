@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/wild-card-brewery/
 date: '2020-06-08'
-permalink: beer/unite-tribute-ipa-wild-card-brewery-342/
+permalink: beer/unite-tribute-ipa-wild-card-brewery/
 canonical: https://www.instagram.com/p/CBL2YPpJMI-/
 ---
 

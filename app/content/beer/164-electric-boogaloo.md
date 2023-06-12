@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/flavourly/
 date: '2018-10-05'
-permalink: beer/electric-boogaloo-flavourly-164/
+permalink: beer/electric-boogaloo-flavourly/
 canonical: https://www.instagram.com/p/BokRKO7l8ya/
 tags:
   - lager

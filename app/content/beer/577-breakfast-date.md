@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/buxton-brewery/
 date: '2021-09-26'
-permalink: beer/breakfast-date-buxton-brewery-577/
+permalink: beer/breakfast-date-buxton-brewery/
 canonical: https://www.instagram.com/p/CUS_N4MqxfN/
 ---
 

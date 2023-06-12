@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/greene-king/
 date: '2020-02-22'
-permalink: beer/abbot-reserve-greene-king-285/
+permalink: beer/abbot-reserve-greene-king/
 canonical: https://www.instagram.com/p/B84uLyzppjt/
 ---
 

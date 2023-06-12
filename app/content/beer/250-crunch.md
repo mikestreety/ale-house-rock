@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/hammerton/
 date: '2019-11-01'
-permalink: beer/crunch-hammerton-250/
+permalink: beer/crunch-hammerton/
 canonical: https://www.instagram.com/p/B4V1AI4FxnZ/
 tags:
   - stout

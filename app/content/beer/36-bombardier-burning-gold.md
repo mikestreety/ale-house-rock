@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/eagle-brewery/
 date: '2017-03-02'
-permalink: beer/bombardier-burning-gold-eagle-brewery-36/
+permalink: beer/bombardier-burning-gold-eagle-brewery/
 canonical: https://www.instagram.com/p/BRJhI5wljDC/
 tags:
   - goldenale

@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/fullers/
 date: '2021-02-04'
-permalink: beer/london-pride-fullers-428/
+permalink: beer/london-pride-fullers/
 canonical: https://www.instagram.com/p/CK4hTVKl_9X/
 tags:
 

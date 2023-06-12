@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/adnams/
 date: '2020-11-06'
-permalink: beer/strange-seas-adnams-379/
+permalink: beer/strange-seas-adnams/
 canonical: https://www.instagram.com/p/CHQnnTtpKpw/
 ---
 

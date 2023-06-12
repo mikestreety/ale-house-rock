@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/deya-brewing-company/
 date: '2021-08-22'
-permalink: beer/momentary-bliss-deya-brewing-company-559/
+permalink: beer/momentary-bliss-deya-brewing-company/
 canonical: https://www.instagram.com/p/CS5Ky1mqet9/
 ---
 

@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/purity-brewing-company/
 date: '2016-12-01'
-permalink: beer/mad-goose-purity-brewing-company-1/
+permalink: beer/mad-goose-purity-brewing-company/
 canonical: https://www.instagram.com/p/BNfL4U0gInO/
 tags:
   - paleale

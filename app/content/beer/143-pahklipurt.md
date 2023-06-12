@@ -5,7 +5,7 @@ rating: 2
 breweries:
   - brewery/llenaut/
 date: '2018-08-16'
-permalink: beer/pahklipurt-llenaut-143/
+permalink: beer/pahklipurt-llenaut/
 canonical: https://www.instagram.com/p/BmjdMw7FKQY/
 tags:
 

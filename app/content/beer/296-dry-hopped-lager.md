@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/adnams/
 date: '2020-04-03'
-permalink: beer/dry-hopped-lager-adnams-296/
+permalink: beer/dry-hopped-lager-adnams/
 canonical: https://www.instagram.com/p/B-heGh4JWoj/
 ---
 

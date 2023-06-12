@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/innis-gunn/
 date: '2017-09-15'
-permalink: beer/innis-none-innis-gunn-67/
+permalink: beer/innis-none-innis-gunn/
 canonical: https://www.instagram.com/p/BZE8vk1lElZ/
 ---
 

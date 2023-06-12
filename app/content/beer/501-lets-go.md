@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/only-with-love/
 date: '2021-06-01'
-permalink: beer/lets-go-only-with-love-501/
+permalink: beer/lets-go-only-with-love/
 canonical: https://www.instagram.com/p/CPl_RwOl3Yi/
 ---
 

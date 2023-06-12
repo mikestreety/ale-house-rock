@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/brewdog/
 date: '2020-04-18'
-permalink: beer/pale-ale-brewdog-308/
+permalink: beer/pale-ale-brewdog/
 canonical: https://www.instagram.com/p/B_Irbe9pVzQ/
 tags:
 

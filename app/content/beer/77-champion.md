@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/mcewans/
 date: '2017-11-03'
-permalink: beer/champion-mcewans-77/
+permalink: beer/champion-mcewans/
 canonical: https://www.instagram.com/p/BbDDDXmFDpm/
 tags:
   - bitter

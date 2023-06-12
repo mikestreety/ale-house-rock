@@ -6,7 +6,7 @@ breweries:
   - brewery/brewdog/
   - brewery/salt-beer-factory/
 date: '2021-03-19'
-permalink: beer/model-citizen-brewdog-salt-beer-factory-453/
+permalink: beer/model-citizen-brewdog-salt-beer-factory/
 canonical: https://www.instagram.com/p/CMncPdaptD1/
 ---
 

@@ -7,7 +7,7 @@ breweries:
 date: '2017-05-20'
 serving: Bottle
 purchased: shop/seven-cellars/
-permalink: beer/audit-ale-westerham-48/
+permalink: beer/audit-ale-westerham/
 canonical: https://www.instagram.com/p/BUUM0kulBxv/
 tags:
   - strongale

@@ -6,7 +6,7 @@ rating: 7
 breweries:
   - brewery/joseph-holt/
 date: '2017-08-22'
-permalink: beer/two-hoots-joseph-holt-60/
+permalink: beer/two-hoots-joseph-holt/
 canonical: https://www.instagram.com/p/BYGAvxFF4pj/
 tags:
   - goldenale

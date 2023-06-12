@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/garage-beer-company/
 date: '2020-05-08'
-permalink: beer/ocata-garage-beer-company-320/
+permalink: beer/ocata-garage-beer-company/
 canonical: https://www.instagram.com/p/B_7APwTJsk4/
 ---
 

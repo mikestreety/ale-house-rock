@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/pollys/
 date: '2020-08-18'
-permalink: beer/slow-burn-pollys-366/
+permalink: beer/slow-burn-pollys/
 canonical: https://www.instagram.com/p/CEC6FjmpBeR/
 ---
 

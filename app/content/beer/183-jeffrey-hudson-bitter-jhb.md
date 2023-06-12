@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/oakham-ales/
 date: '2018-12-13'
-permalink: beer/jeffrey-hudson-bitter-jhb-oakham-ales-183/
+permalink: beer/jeffrey-hudson-bitter-jhb-oakham-ales/
 canonical: https://www.instagram.com/p/BrVs4MHg8Tn/
 ---
 

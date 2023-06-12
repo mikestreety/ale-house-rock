@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/arundel-brewery/
 date: '2021-07-16'
-permalink: beer/uptown-arundel-brewery-533/
+permalink: beer/uptown-arundel-brewery/
 canonical: https://www.instagram.com/p/CRZ69AvJkuW/
 ---
 

@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/harveys-brewery/
 date: '2017-12-30'
-permalink: beer/christmas-ale-harveys-brewery-88/
+permalink: beer/christmas-ale-harveys-brewery/
 canonical: https://www.instagram.com/p/BdV2kXGl6JG/
 tags:
 

@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/marstons/
 date: '2017-09-09'
-permalink: beer/epa-marstons-66/
+permalink: beer/epa-marstons/
 canonical: https://www.instagram.com/p/BY1MDuDF6zr/
 tags:
 

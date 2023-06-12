@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/brewdog/
 date: '2021-03-28'
-permalink: beer/double-hazy-brewdog-460/
+permalink: beer/double-hazy-brewdog/
 canonical: https://www.instagram.com/p/CM-nYIpJDNZ/
 tags:
 

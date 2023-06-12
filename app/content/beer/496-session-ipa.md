@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/toast-ale/
 date: '2021-05-24'
-permalink: beer/session-ipa-toast-496/
+permalink: beer/session-ipa-toast/
 canonical: https://www.instagram.com/p/CPQesgOFEEx/
 ---
 

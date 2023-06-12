@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/yeastie-boys/
 date: '2020-06-05'
-permalink: beer/dream-sequence-yeastie-boys-339/
+permalink: beer/dream-sequence-yeastie-boys/
 canonical: https://www.instagram.com/p/CBDCbY8pZIu/
 tags:
 

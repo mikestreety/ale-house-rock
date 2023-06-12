@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/briarbank-brewery/
 date: '2020-11-13'
-permalink: beer/briar-pilsner-briarbank-brewery-384/
+permalink: beer/briar-pilsner-briarbank-brewery/
 canonical: https://www.instagram.com/p/CHiheinljFb/
 ---
 

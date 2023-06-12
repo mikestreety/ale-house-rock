@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/williams-brothers-brewing-company/
 date: '2020-02-22'
-permalink: beer/klute-west-coast-ipa-williams-brothers-brewing-company-284/
+permalink: beer/klute-west-coast-ipa-williams-brothers-brewing-company/
 canonical: https://www.instagram.com/p/B84qXa_pyc1/
 ---
 

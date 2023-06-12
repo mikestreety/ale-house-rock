@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/harveys-brewery/
 date: '2020-01-05'
-permalink: beer/bonfire-boy-harveys-brewery-271/
+permalink: beer/bonfire-boy-harveys-brewery/
 canonical: https://www.instagram.com/p/B69GmKzJZqz/
 ---
 

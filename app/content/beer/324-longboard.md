@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/kona-brewing-company/
 date: '2020-05-10'
-permalink: beer/longboard-kona-brewing-company-324/
+permalink: beer/longboard-kona-brewing-company/
 canonical: https://www.instagram.com/p/CABfy2ppDZk/
 tags:
 

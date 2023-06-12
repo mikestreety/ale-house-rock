@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/track-brewing-company/
 date: '2020-08-20'
-permalink: beer/said-done-track-367/
+permalink: beer/said-done-track/
 canonical: https://www.instagram.com/p/CEH61rTJQS4/
 tags:
 

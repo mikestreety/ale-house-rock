@@ -6,7 +6,7 @@ breweries:
   - brewery/wychwood-brewery/
 date: '2017-02-11'
 serving: Bottle
-permalink: beer/bah-humbug-wychwood-brewery-34/
+permalink: beer/bah-humbug-wychwood-brewery/
 canonical: https://www.instagram.com/p/BQYfWZKglPR/
 tags:
   - winterale

@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/castle-rock-brewery/
 date: '2017-10-15'
-permalink: beer/cascade-castle-rock-brewery-72/
+permalink: beer/cascade-castle-rock-brewery/
 canonical: https://www.instagram.com/p/BaRzbKblWNQ/
 tags:
 

@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/northern-monk/
 date: '2020-08-31'
-permalink: beer/striding-edge-northern-monk-369/
+permalink: beer/striding-edge-northern-monk/
 canonical: https://www.instagram.com/p/CEkaLGcJWir/
 ---
 

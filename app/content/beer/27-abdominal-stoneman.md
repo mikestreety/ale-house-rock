@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/lymestone-brewery/
 date: '2016-12-28'
-permalink: beer/abdominal-stoneman-lymestone-brewery-27/
+permalink: beer/abdominal-stoneman-lymestone-brewery/
 canonical: https://www.instagram.com/p/BOkjBXXgBf5/
 tags:
   - ipa

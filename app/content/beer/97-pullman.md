@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/hepworth-co-brewers/
 date: '2018-01-18'
-permalink: beer/pullman-hepworth-co-brewers-97/
+permalink: beer/pullman-hepworth-co-brewers/
 canonical: https://www.instagram.com/p/BeGwKc-lNgT/
 tags:
 

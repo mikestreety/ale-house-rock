@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/amundsen-brewery/
 date: '2021-07-04'
-permalink: beer/lorita-amundsen-brewery-526/
+permalink: beer/lorita-amundsen-brewery/
 canonical: https://www.instagram.com/p/CQ6-JvqJh4H/
 ---
 

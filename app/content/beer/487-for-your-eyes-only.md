@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/northern-monk/
 date: '2021-05-10'
-permalink: beer/for-your-eyes-only-northern-monk-487/
+permalink: beer/for-your-eyes-only-northern-monk/
 canonical: https://www.instagram.com/p/COsvxmzlwnL/
 ---
 

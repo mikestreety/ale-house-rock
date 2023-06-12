@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/gipsy-hill/
 date: '2020-12-25'
-permalink: beer/filungar-gipsy-hill-398/
+permalink: beer/filungar-gipsy-hill/
 canonical: https://www.instagram.com/p/CJOWtxPFnOx/
 ---
 

@@ -5,7 +5,7 @@ rating: 10
 breweries:
   - brewery/harveys-brewery/
 date: '2020-01-28'
-permalink: beer/armada-ale-harveys-brewery-275/
+permalink: beer/armada-ale-harveys-brewery/
 canonical: https://www.instagram.com/p/B72u0j2JWr3/
 tags:
 

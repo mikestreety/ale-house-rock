@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/eagle-brewery/
 date: '2018-02-15'
-permalink: beer/banana-bread-beer-eagle-brewery-99/
+permalink: beer/banana-bread-beer-eagle-brewery/
 canonical: https://www.instagram.com/p/BfO8R5YF9Gj/
 tags:
 

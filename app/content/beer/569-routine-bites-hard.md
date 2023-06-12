@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/deya-brewing-company/
 date: '2021-09-17'
-permalink: beer/routine-bites-hard-deya-brewing-company-569/
+permalink: beer/routine-bites-hard-deya-brewing-company/
 canonical: https://www.instagram.com/p/CT8KRnvqRsR/
 tags:
 

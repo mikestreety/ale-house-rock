@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/skinners-brewery/
 date: '2017-11-04'
-permalink: beer/cornish-knocker-skinners-brewery-80/
+permalink: beer/cornish-knocker-skinners-brewery/
 canonical: https://www.instagram.com/p/BbFnazNFPlO/
 tags:
 

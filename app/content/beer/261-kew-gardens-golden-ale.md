@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/twickenham-fine-ales/
 date: '2019-12-07'
-permalink: beer/kew-gardens-golden-ale-twickenham-fine-ales-261/
+permalink: beer/kew-gardens-golden-ale-twickenham-fine-ales/
 canonical: https://www.instagram.com/p/B5yfiSwpI9m/
 ---
 

@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/llenaut/
 date: '2018-08-03'
-permalink: beer/simko-eil-llenaut-138/
+permalink: beer/simko-eil-llenaut/
 canonical: https://www.instagram.com/p/BmB1lMMFuk1/
 tags:
 

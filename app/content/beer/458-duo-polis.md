@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/brewdog/
 date: '2021-03-26'
-permalink: beer/duo-polis-brewdog-458/
+permalink: beer/duo-polis-brewdog/
 canonical: https://www.instagram.com/p/CM5kxd1JOKb/
 ---
 

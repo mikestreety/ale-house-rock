@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/st-feuillien/
 date: '2021-06-29'
-permalink: beer/brune-st-feuillien-522/
+permalink: beer/brune-st-feuillien/
 canonical: https://www.instagram.com/p/CQtuhepJANf/
 ---
 

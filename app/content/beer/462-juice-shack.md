@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/brewdog/
 date: '2021-04-03'
-permalink: beer/juice-shack-brewdog-462/
+permalink: beer/juice-shack-brewdog/
 canonical: https://www.instagram.com/p/CNNlObIJkQ0/
 ---
 

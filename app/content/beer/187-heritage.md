@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/firebird-brewing-company/
 date: '2018-12-25'
-permalink: beer/heritage-firebird-brewing-company-187/
+permalink: beer/heritage-firebird-brewing-company/
 canonical: https://www.instagram.com/p/Br0BCFEgYkP/
 tags:
 

@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/wychwood-brewery/
 date: '2017-04-16'
-permalink: beer/hobgoblin-wychwood-brewery-42/
+permalink: beer/hobgoblin-wychwood-brewery/
 canonical: https://www.instagram.com/p/BS9X-unl7bz/
 tags:
   - brownale

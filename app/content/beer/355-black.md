@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/boss-brewing/
 date: '2020-07-05'
-permalink: beer/black-boss-brewing-355/
+permalink: beer/black-boss-brewing/
 canonical: https://www.instagram.com/p/CCRpH1apbdd/
 ---
 

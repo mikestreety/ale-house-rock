@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/ringwood-brewery/
 date: '2018-09-23'
-permalink: beer/circadian-ringwood-brewery-160/
+permalink: beer/circadian-ringwood-brewery/
 canonical: https://www.instagram.com/p/BoFPlIjFHM9/
 tags:
 

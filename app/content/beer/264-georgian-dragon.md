@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/harveys-brewery/
 date: '2019-12-27'
-permalink: beer/georgian-dragon-harveys-brewery-264/
+permalink: beer/georgian-dragon-harveys-brewery/
 canonical: https://www.instagram.com/p/B6llG8XJWIZ/
 tags:
 

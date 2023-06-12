@@ -5,7 +5,7 @@ rating: 10
 breweries:
   - brewery/dynamite-valley-brewing-company/
 date: '2019-04-04'
-permalink: beer/brian-dynamite-valley-brewing-company-216/
+permalink: beer/brian-dynamite-valley-brewing-company/
 canonical: https://www.instagram.com/p/Bv11zQVlwOg/
 ---
 

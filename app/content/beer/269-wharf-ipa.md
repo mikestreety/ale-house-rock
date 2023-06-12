@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/harveys-brewery/
 date: '2020-01-03'
-permalink: beer/wharf-ipa-harveys-brewery-269/
+permalink: beer/wharf-ipa-harveys-brewery/
 canonical: https://www.instagram.com/p/B635G18lIWM/
 ---
 

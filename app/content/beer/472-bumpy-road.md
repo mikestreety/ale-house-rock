@@ -6,7 +6,7 @@ breweries:
   - brewery/thornbridge/
   - brewery/beak-brewery/
 date: '2021-04-19'
-permalink: beer/bumpy-road-thornbridge-beak-brewery-472/
+permalink: beer/bumpy-road-thornbridge-beak-brewery/
 canonical: https://www.instagram.com/p/CN2hu7yFePc/
 tags:
   - dipa

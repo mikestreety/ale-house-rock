@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/harveys-brewery/
 date: '2018-06-04'
-permalink: beer/prince-of-denmark-harveys-brewery-112/
+permalink: beer/prince-of-denmark-harveys-brewery/
 canonical: https://www.instagram.com/p/BjnV4zdlugN/
 tags:
 

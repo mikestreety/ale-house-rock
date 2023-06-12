@@ -7,7 +7,7 @@ purchased: shop/aldi/
 breweries:
   - brewery/harpers-brewing-company/
 date: '2016-12-03'
-permalink: beer/wild-bills-ipa-harpers-brewing-company-4/
+permalink: beer/wild-bills-ipa-harpers-brewing-company/
 canonical: https://www.instagram.com/p/BNkhOxJgeEd/
 tags:
   - ipa

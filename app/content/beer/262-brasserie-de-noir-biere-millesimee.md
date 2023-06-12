@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/brasserie-goudale-les-brasseurs-de-gayant/
 date: '2019-12-15'
-permalink: beer/brasserie-de-noir-biere-millesimee-brasserie-goudale-les-brasseurs-de-gayant-262/
+permalink: beer/brasserie-de-noir-biere-millesimee-brasserie-goudale-les-brasseurs-de-gayant/
 canonical: https://www.instagram.com/p/B6HDXwJlc28/
 ---
 

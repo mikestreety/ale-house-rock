@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/riverside-brewery/
 date: '2021-02-27'
-permalink: beer/tubbers-tipple-riverside-brewery-440/
+permalink: beer/tubbers-tipple-riverside-brewery/
 canonical: https://www.instagram.com/p/CLye22_F-Ws/
 ---
 

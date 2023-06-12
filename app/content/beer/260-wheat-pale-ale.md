@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/the-kernel/
 date: '2019-12-07'
-permalink: beer/wheat-pale-ale-the-kernel-260/
+permalink: beer/wheat-pale-ale-the-kernel/
 canonical: https://www.instagram.com/p/B5x7jrYpIEH/
 tags:
 

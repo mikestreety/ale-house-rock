@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/fourpure-brewing-company/
 date: '2020-05-15'
-permalink: beer/rift-valley-fourpure-brewing-company-327/
+permalink: beer/rift-valley-fourpure-brewing-company/
 canonical: https://www.instagram.com/p/CAN1GxmJQm6/
 ---
 

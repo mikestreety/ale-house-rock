@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/gun-brewery/
 date: '2021-01-08'
-permalink: beer/red-ipa-gun-brewery-408/
+permalink: beer/red-ipa-gun-brewery/
 canonical: https://www.instagram.com/p/CJy2a1DF3ll/
 ---
 

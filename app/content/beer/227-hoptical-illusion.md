@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/sadlers-ales/
 date: '2019-06-15'
-permalink: beer/hoptical-illusion-sadlers-ales-227/
+permalink: beer/hoptical-illusion-sadlers-ales/
 canonical: https://www.instagram.com/p/ByvdU3llYVC/
 tags:
 

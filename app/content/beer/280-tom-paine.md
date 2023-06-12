@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/harveys-brewery/
 date: '2020-02-13'
-permalink: beer/tom-paine-harveys-brewery-280/
+permalink: beer/tom-paine-harveys-brewery/
 canonical: https://www.instagram.com/p/B8f6pnHp-vo/
 tags:
 

@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/maltus-faber/
 date: '2019-01-17'
-permalink: beer/birra-de-natalie-maltus-faber-199/
+permalink: beer/birra-de-natalie-maltus-faber/
 canonical: https://www.instagram.com/p/Bsv3cqZgC3r/
 tags:
 

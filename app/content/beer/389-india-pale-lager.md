@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/10-4-brewing/
 date: '2020-11-29'
-permalink: beer/india-pale-lager-10-4-brewing-389/
+permalink: beer/india-pale-lager-10-4-brewing/
 canonical: https://www.instagram.com/p/CIL-q64Jfyc/
 ---
 

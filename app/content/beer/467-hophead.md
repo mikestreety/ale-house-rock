@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/dark-star/
 date: '2021-04-09'
-permalink: beer/hophead-dark-star-467/
+permalink: beer/hophead-dark-star/
 canonical: https://www.instagram.com/p/CNdYnw3JMXw/
 ---
 

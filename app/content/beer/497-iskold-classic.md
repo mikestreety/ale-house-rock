@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/mikkeller/
 date: '2021-05-26'
-permalink: beer/iskold-classic-mikkeller-497/
+permalink: beer/iskold-classic-mikkeller/
 canonical: https://www.instagram.com/p/CPVMgQXltnM/
 ---
 

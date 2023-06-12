@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/harveys-brewery/
 date: '2020-03-13'
-permalink: beer/copperwheat-harveys-brewery-290/
+permalink: beer/copperwheat-harveys-brewery/
 canonical: https://www.instagram.com/p/B9sKk24J2Xy/
 tags:
 

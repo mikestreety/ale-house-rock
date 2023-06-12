@@ -6,7 +6,7 @@ breweries:
   - brewery/unbarred-brewery/
   - brewery/bison-beer/
 date: '2021-02-21'
-permalink: beer/honeycomb-milkshake-unbarred-bison-beer-438/
+permalink: beer/honeycomb-milkshake-unbarred-bison-beer/
 canonical: https://www.instagram.com/p/CLkjU3hlfa6/
 tags:
 

@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/st-austell-brewery/
 date: '2019-10-05'
-permalink: beer/sayzon-st-austell-brewery-243/
+permalink: beer/sayzon-st-austell-brewery/
 canonical: https://www.instagram.com/p/B3PzupBlWSj/
 tags:
   - saizon

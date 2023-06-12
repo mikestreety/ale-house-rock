@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/eagle-brewery/
 date: '2017-12-09'
-permalink: beer/waggle-dance-eagle-brewery-85/
+permalink: beer/waggle-dance-eagle-brewery/
 canonical: https://www.instagram.com/p/BcfqY9sF8FL/
 tags:
 

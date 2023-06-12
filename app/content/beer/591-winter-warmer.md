@@ -5,6 +5,6 @@ rating: 7
 breweries:
   - brewery/eagle-brewery/
 date: '2021-12-24'
-permalink: beer/winter-warmer-eagle-brewery-591/
+permalink: beer/winter-warmer-eagle-brewery/
 canonical: https://www.instagram.com/p/CX4XhOoKGwB/
 ---

@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/gun-brewery/
 date: '2021-01-14'
-permalink: beer/project-babylon-gun-brewery-414/
+permalink: beer/project-babylon-gun-brewery/
 canonical: https://www.instagram.com/p/CKC1G7ZlyvL/
 ---
 

@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/my-generation/
 date: '2018-12-29'
-permalink: beer/pale-ale-my-generation-191/
+permalink: beer/pale-ale-my-generation/
 canonical: https://www.instagram.com/p/Br-6QKwAdws/
 tags:
 

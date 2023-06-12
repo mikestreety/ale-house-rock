@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/camden-town-brewery/
 date: '2021-05-19'
-permalink: beer/camden-pale-camden-town-brewery-491/
+permalink: beer/camden-pale-camden-town-brewery/
 canonical: https://www.instagram.com/p/CPEQZVHp3-_/
 ---
 

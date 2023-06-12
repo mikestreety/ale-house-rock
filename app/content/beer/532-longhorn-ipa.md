@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/purity-brewing-company/
 date: '2021-07-11'
-permalink: beer/longhorn-ipa-purity-brewing-company-532/
+permalink: beer/longhorn-ipa-purity-brewing-company/
 canonical: https://www.instagram.com/p/CRMz2f5FSSW/
 ---
 

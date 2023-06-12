@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/meantime-brewing-company/
 date: '2017-11-10'
-permalink: beer/london-pale-ale-meantime-brewing-company-83/
+permalink: beer/london-pale-ale-meantime-brewing-company/
 canonical: https://www.instagram.com/p/BbVTtC8Foq5/
 tags:
 

@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/small-beer/
 date: '2021-12-28'
-permalink: beer/session-pale-small-beer-595/
+permalink: beer/session-pale-small-beer/
 canonical: https://www.instagram.com/p/CYCsesWBQ42/
 ---
 

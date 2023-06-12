@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/black-tor/
 date: '2021-10-05'
-permalink: beer/devonshire-pale-ale-black-tor-579/
+permalink: beer/devonshire-pale-ale-black-tor/
 canonical: https://www.instagram.com/p/CUow_TMK-_d/
 ---
 

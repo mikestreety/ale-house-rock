@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/gipsy-hill/
 date: '2019-10-21'
-permalink: beer/beatnik-gipsy-hill-246/
+permalink: beer/beatnik-gipsy-hill/
 canonical: https://www.instagram.com/p/B35CAVtpVGZ/
 ---
 

@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/northern-monk/
 date: '2021-04-05'
-permalink: beer/northern-star-northern-monk-465/
+permalink: beer/northern-star-northern-monk/
 canonical: https://www.instagram.com/p/CNTMSwxpKNA/
 ---
 

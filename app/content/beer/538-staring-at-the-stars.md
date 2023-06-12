@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/lost-pier-brewing/
 date: '2021-07-23'
-permalink: beer/staring-at-the-stars-lost-pier-brewing-538/
+permalink: beer/staring-at-the-stars-lost-pier-brewing/
 aliases:
   - staring-at-the-stars-lost-pier-538
 canonical: https://www.instagram.com/p/CRqV198lDCt/

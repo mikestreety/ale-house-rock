@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/singlecut/
 date: '2021-01-15'
-permalink: beer/softly-spoken-magic-spells-singlecut-416/
+permalink: beer/softly-spoken-magic-spells-singlecut/
 canonical: https://www.instagram.com/p/CKFOfPaFrhQ/
 ---
 

@@ -6,7 +6,7 @@ breweries:
   - brewery/vocation-brewery/
   - brewery/manchester-marble-brewery/
 date: '2021-07-25'
-permalink: beer/hop-skip-juice-vocation-brewery-manchester-marble-brewery-542/
+permalink: beer/hop-skip-juice-vocation-brewery-manchester-marble-brewery/
 canonical: https://www.instagram.com/p/CRw2ZEupBIq/
 ---
 

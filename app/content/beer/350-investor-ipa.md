@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/sori-brewing/
 date: '2020-07-01'
-permalink: beer/investor-ipa-sori-brewing-350/
+permalink: beer/investor-ipa-sori-brewing/
 canonical: https://www.instagram.com/p/CCHGcHaJrSo/
 ---
 

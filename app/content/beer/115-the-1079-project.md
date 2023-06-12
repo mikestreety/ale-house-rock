@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/marstons/
 date: '2018-06-16'
-permalink: beer/the-1079-project-marstons-115/
+permalink: beer/the-1079-project-marstons/
 canonical: https://www.instagram.com/p/BkGQMRWlgrt/
 tags:
   - pilsner

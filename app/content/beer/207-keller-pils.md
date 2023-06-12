@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/lost-and-grounded/
 date: '2019-03-10'
-permalink: beer/keller-pils-lost-and-grounded-207/
+permalink: beer/keller-pils-lost-and-grounded/
 canonical: https://www.instagram.com/p/Bu1MbfYFAiL/
 tags:
 

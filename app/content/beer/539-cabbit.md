@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/beak-brewery/
 date: '2021-07-24'
-permalink: beer/cabbit-beak-brewery-539/
+permalink: beer/cabbit-beak-brewery/
 canonical: https://www.instagram.com/p/CRt7dIUpsnV/
 ---
 

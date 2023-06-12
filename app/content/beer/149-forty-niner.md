@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/ringwood-brewery/
 date: '2018-08-24'
-permalink: beer/forty-niner-ringwood-brewery-149/
+permalink: beer/forty-niner-ringwood-brewery/
 canonical: https://www.instagram.com/p/Bm4V676F6nr/
 tags:
 

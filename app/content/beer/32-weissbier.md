@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/rheinbacher/
 date: '2017-02-09'
-permalink: beer/weissbier-rheinbacher-32/
+permalink: beer/weissbier-rheinbacher/
 canonical: https://www.instagram.com/p/BQTTr-RAj4V/
 serving: Bottle
 purchased: shop/aldi/

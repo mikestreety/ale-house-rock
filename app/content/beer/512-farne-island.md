@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/hadrian-border-brewery/
 date: '2021-06-15'
-permalink: beer/farne-island-hadrian-border-brewery-512/
+permalink: beer/farne-island-hadrian-border-brewery/
 canonical: https://www.instagram.com/p/CQJ9btYJj6e/
 ---
 

@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/beak-brewery/
 date: '2021-12-05'
-permalink: beer/trees-beak-brewery-589/
+permalink: beer/trees-beak-brewery/
 canonical: https://www.instagram.com/p/CXHTGkLKq_f/
 ---
 

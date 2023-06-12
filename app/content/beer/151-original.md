@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/butcombe-brewing-company/
 date: '2018-08-31'
-permalink: beer/original-butcombe-brewing-company-151/
+permalink: beer/original-butcombe-brewing-company/
 canonical: https://www.instagram.com/p/BnKEBT2lLJM/
 tags:
 

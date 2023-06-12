@@ -5,7 +5,7 @@ rating: 2
 breweries:
   - brewery/to-l/
 date: '2020-11-13'
-permalink: beer/gose-to-hollywood-to-l-385/
+permalink: beer/gose-to-hollywood-to-l/
 canonical: https://www.instagram.com/p/CHi-8YelUzt/
 ---
 

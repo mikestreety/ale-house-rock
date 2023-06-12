@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/deya-brewing-company/
 date: '2021-08-28'
-permalink: beer/magazine-cover-deya-brewing-company-562/
+permalink: beer/magazine-cover-deya-brewing-company/
 canonical: https://www.instagram.com/p/CTIgTWCKHJD/
 ---
 

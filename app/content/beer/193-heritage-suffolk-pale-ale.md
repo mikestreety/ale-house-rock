@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/greene-king/
 date: '2019-01-01'
-permalink: beer/heritage-suffolk-pale-ale-greene-king-193/
+permalink: beer/heritage-suffolk-pale-ale-greene-king/
 canonical: https://www.instagram.com/p/BsG4pYyAGDZ/
 tags:
   - paleale

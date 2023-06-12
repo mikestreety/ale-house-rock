@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/fourpure-brewing-company/
 date: '2020-04-27'
-permalink: beer/shapeshifter-aka-ipa-fourpure-brewing-company-314/
+permalink: beer/shapeshifter-aka-ipa-fourpure-brewing-company/
 canonical: https://www.instagram.com/p/B_f9xYupyuM/
 tags:
 

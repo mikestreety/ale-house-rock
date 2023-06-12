@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/williams-brothers-brewing-company/
 date: '2019-09-28'
-permalink: beer/iconic-williams-brothers-brewing-company-240/
+permalink: beer/iconic-williams-brothers-brewing-company/
 canonical: https://www.instagram.com/p/B29zcz9F2Cl/
 tags:
 

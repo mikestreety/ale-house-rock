@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/genesee-brewing-company/
 date: '2018-07-29'
-permalink: beer/folded-mountains-genesee-brewing-company-135/
+permalink: beer/folded-mountains-genesee-brewing-company/
 canonical: https://www.instagram.com/p/Bl0wBOmFefC/
 tags:
   - paleale

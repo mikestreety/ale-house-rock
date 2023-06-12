@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/boss-brewing/
 date: '2021-10-30'
-permalink: beer/kingpin-rising-boss-brewing-585/
+permalink: beer/kingpin-rising-boss-brewing/
 canonical: https://www.instagram.com/p/CVqPUFJq16h/
 ---
 

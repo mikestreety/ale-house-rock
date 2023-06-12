@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/moor-beer-company/
 date: '2021-08-12'
-permalink: beer/nano-cask-moor-beer-company-552/
+permalink: beer/nano-cask-moor-beer-company/
 canonical: https://www.instagram.com/p/CSfXQAuK5bd/
 ---
 

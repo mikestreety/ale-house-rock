@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/hatherwood-craft-beer-company/
 date: '2019-11-24'
-permalink: beer/red-rye-captain-pale-ale-hatherwood-craft-beer-company-255/
+permalink: beer/red-rye-captain-pale-ale-hatherwood-craft-beer-company/
 canonical: https://www.instagram.com/p/B5Qz7d5Fi7x/
 tags:
 

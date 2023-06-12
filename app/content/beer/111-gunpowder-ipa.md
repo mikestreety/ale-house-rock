@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/innis-gunn/
 date: '2018-05-26'
-permalink: beer/gunpowder-ipa-innis-gunn-111/
+permalink: beer/gunpowder-ipa-innis-gunn/
 canonical: https://www.instagram.com/p/BjQRX_rFH_0/
 tags:
 

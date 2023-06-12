@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/adnams/
 date: '2019-11-26'
-permalink: beer/explorer-adnams-257/
+permalink: beer/explorer-adnams/
 canonical: https://www.instagram.com/p/B5V_kYgFvtE/
 tags:
 

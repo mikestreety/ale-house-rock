@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/gun-brewery/
 date: '2021-01-01'
-permalink: beer/parabellum-gun-brewery-404/
+permalink: beer/parabellum-gun-brewery/
 canonical: https://www.instagram.com/p/CJgumz2lxeZ/
 ---
 

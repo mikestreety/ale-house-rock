@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/st-austell-brewery/
 date: '2021-08-13'
-permalink: beer/summit-47-st-austell-brewery-554/
+permalink: beer/summit-47-st-austell-brewery/
 canonical: https://www.instagram.com/p/CShweQYq_03/
 ---
 

@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/hairy-dog-brewery/
 date: '2021-01-09'
-permalink: beer/far-fetched-hairy-dog-brewery-409/
+permalink: beer/far-fetched-hairy-dog-brewery/
 canonical: https://www.instagram.com/p/CJ1jcXHlo-p/
 ---
 

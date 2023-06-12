@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/maltus-faber/
 date: '2018-12-15'
-permalink: beer/sweet-stout-maltus-faber-185/
+permalink: beer/sweet-stout-maltus-faber/
 canonical: https://www.instagram.com/p/Bra7qPNA254/
 tags:
 

@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/harveys-brewery/
 date: '2019-12-30'
-permalink: beer/tin-lizzie-harveys-brewery-267/
+permalink: beer/tin-lizzie-harveys-brewery/
 canonical: https://www.instagram.com/p/B6twl2dpI2Y/
 tags:
 

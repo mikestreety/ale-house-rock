@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/magic-rock-brewing/
 date: '2021-02-08'
-permalink: beer/saucery-magic-rock-brewing-429/
+permalink: beer/saucery-magic-rock-brewing/
 canonical: https://www.instagram.com/p/CLCGRArF5LX/
 ---
 

@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/thornbridge/
 date: '2020-05-08'
-permalink: beer/lukas-thornbridge-321/
+permalink: beer/lukas-thornbridge/
 canonical: https://www.instagram.com/p/B_8KSEsJXZy/
 tags:
 

@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/gipsy-hill/
 date: '2021-09-19'
-permalink: beer/moneybags-gipsy-hill-573/
+permalink: beer/moneybags-gipsy-hill/
 canonical: https://www.instagram.com/p/CUBLVHfqSWk/
 ---
 

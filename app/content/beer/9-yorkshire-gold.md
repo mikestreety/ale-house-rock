@@ -8,7 +8,7 @@ breweries:
   - brewery/black-sheep-brewery/
   - brewery/marks-and-spencer/
 date: '2016-12-08'
-permalink: beer/yorkshire-gold-black-sheep-brewery-marks-and-spencer-9/
+permalink: beer/yorkshire-gold-black-sheep-brewery-marks-and-spencer/
 aliases:
   - yorkshire-gold-black-sheep-brewery-9
 canonical: https://www.instagram.com/p/BNxQgUIA34t/

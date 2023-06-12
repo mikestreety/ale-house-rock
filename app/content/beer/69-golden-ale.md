@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/co-op/
 date: '2017-10-08'
-permalink: beer/golden-ale-co-op-69/
+permalink: beer/golden-ale-co-op/
 canonical: https://www.instagram.com/p/BZ_6G8FFYAp/
 tags:
 

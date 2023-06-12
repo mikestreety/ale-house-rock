@@ -5,7 +5,7 @@ rating: 1
 breweries:
   - brewery/asda-smart-price/
 date: '2017-12-31'
-permalink: beer/bitter-asda-smart-price-89/
+permalink: beer/bitter-asda-smart-price/
 canonical: https://www.instagram.com/p/BdYGd0fF06b/
 tags:
 

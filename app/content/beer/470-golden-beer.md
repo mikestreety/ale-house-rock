@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/bankss/
 date: '2021-04-16'
-permalink: beer/golden-beer-bankss-470/
+permalink: beer/golden-beer-bankss/
 canonical: https://www.instagram.com/p/CNvbeJjpDWp/
 ---
 

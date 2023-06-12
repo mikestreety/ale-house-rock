@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/butcombe-brewing-company/
 date: '2017-07-08'
-permalink: beer/gold-butcombe-brewing-company-53/
+permalink: beer/gold-butcombe-brewing-company/
 canonical: https://www.instagram.com/p/BWS77N5FUtT/
 tags:
   - goldenale

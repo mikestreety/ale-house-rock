@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/innis-gunn/
 date: '2018-03-24'
-permalink: beer/the-original-innis-gunn-102/
+permalink: beer/the-original-innis-gunn/
 canonical: https://www.instagram.com/p/BguAeVwlHt8/
 tags:
 

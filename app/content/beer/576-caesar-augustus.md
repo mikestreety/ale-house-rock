@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/williams-brothers-brewing-company/
 date: '2021-09-25'
-permalink: beer/caesar-augustus-williams-brothers-brewing-company-576/
+permalink: beer/caesar-augustus-williams-brothers-brewing-company/
 canonical: https://www.instagram.com/p/CUQf5FRqWFg/
 ---
 

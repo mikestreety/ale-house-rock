@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/burning-sky/
 date: '2021-12-10'
-permalink: beer/west-coast-blues-burning-sky-590/
+permalink: beer/west-coast-blues-burning-sky/
 canonical: https://www.instagram.com/p/CXUa1rhjfzn/
 ---
 

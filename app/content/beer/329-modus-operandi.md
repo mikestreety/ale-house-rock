@@ -5,7 +5,7 @@ rating: 2
 breweries:
   - brewery/the-wild-beer-company/
 date: '2020-05-17'
-permalink: beer/modus-operandi-the-wild-beer-company-329/
+permalink: beer/modus-operandi-the-wild-beer-company/
 canonical: https://www.instagram.com/p/CATcXI0pp5I/
 ---
 

@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/riverside-brewery/
 date: '2021-02-09'
-permalink: beer/dirty-arthur-riverside-brewery-431/
+permalink: beer/dirty-arthur-riverside-brewery/
 canonical: https://www.instagram.com/p/CLFpZWSlitg/
 ---
 

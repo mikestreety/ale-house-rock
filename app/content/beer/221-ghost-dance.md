@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/redwell-brewing-company/
 date: '2019-04-27'
-permalink: beer/ghost-dance-redwell-brewing-company-221/
+permalink: beer/ghost-dance-redwell-brewing-company/
 canonical: https://www.instagram.com/p/Bwxc16Xl6E7/
 tags:
   - paleale

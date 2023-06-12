@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/long-man-brewery/
 date: '2019-01-24'
-permalink: beer/old-man-long-man-brewery-202/
+permalink: beer/old-man-long-man-brewery/
 canonical: https://www.instagram.com/p/BtBqrTWAcSb/
 tags:
 

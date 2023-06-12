@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/adnams/
 date: '2019-11-29'
-permalink: beer/lighthouse-adnams-258/
+permalink: beer/lighthouse-adnams/
 canonical: https://www.instagram.com/p/B5dT0Wwlw02/
 tags:
 

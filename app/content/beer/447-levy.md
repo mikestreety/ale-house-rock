@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/mcewans/
 date: '2021-03-10'
-permalink: beer/levy-mcewans-447/
+permalink: beer/levy-mcewans/
 canonical: https://www.instagram.com/p/CMPFll0lEWp/
 ---
 

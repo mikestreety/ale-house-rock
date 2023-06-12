@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/harviestoun-brewery/
 date: '2020-05-06'
-permalink: beer/black-ale-harviestoun-brewery-319/
+permalink: beer/black-ale-harviestoun-brewery/
 canonical: https://www.instagram.com/p/B_1dIlOJQ1M/
 ---
 

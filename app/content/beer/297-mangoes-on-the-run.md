@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/innis-gunn/
 date: '2020-04-03'
-permalink: beer/mangoes-on-the-run-innis-gunn-297/
+permalink: beer/mangoes-on-the-run-innis-gunn/
 canonical: https://www.instagram.com/p/B-iBvgXpQIB/
 tags:
 

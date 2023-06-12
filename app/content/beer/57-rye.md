@@ -5,9 +5,9 @@ rating: 7
 breweries:
   - brewery/marstons/
 date: '2017-08-09'
-permalink: beer/shipyard-rye-pale-ale-marstons-57/
+permalink: beer/shipyard-rye-pale-ale-marstons/
 aliases:
-  - beer/rye-shipyard-57/
+  - beer/rye-shipyard/
 canonical: https://www.instagram.com/p/BXlPyoflVSX/
 tags:
   - paleale

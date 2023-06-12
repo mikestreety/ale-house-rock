@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/fourpure-brewing-company/
 date: '2020-07-09'
-permalink: beer/monument-valley-fourpure-brewing-company-356/
+permalink: beer/monument-valley-fourpure-brewing-company/
 canonical: https://www.instagram.com/p/CCbjIJspJGR/
 ---
 

@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/harveys-brewery/
 date: '2020-01-02'
-permalink: beer/southdown-harvest-harveys-brewery-268/
+permalink: beer/southdown-harvest-harveys-brewery/
 canonical: https://www.instagram.com/p/B6z98QHJJoM/
 ---
 

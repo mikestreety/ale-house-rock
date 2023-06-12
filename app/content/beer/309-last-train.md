@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/fourpure-brewing-company/
 date: '2020-04-19'
-permalink: beer/last-train-fourpure-brewing-company-309/
+permalink: beer/last-train-fourpure-brewing-company/
 canonical: https://www.instagram.com/p/B_KJlqzpdX-/
 ---
 

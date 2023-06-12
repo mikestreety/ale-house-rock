@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/beak-brewery/
 date: '2021-06-19'
-permalink: beer/pool-beak-brewery-517/
+permalink: beer/pool-beak-brewery/
 canonical: https://www.instagram.com/p/CQUBqw9pIUv/
 tags:
 

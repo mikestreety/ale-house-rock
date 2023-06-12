@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/hatherwood-craft-beer-company/
 date: '2019-12-01'
-permalink: beer/winter-special-hatherwood-craft-beer-company-259/
+permalink: beer/winter-special-hatherwood-craft-beer-company/
 canonical: https://www.instagram.com/p/B5jAxZTlzNm/
 tags:
 

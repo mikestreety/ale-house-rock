@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/lost-and-grounded/
 date: '2019-03-09'
-permalink: beer/no-rest-for-dancers-lost-and-grounded-206/
+permalink: beer/no-rest-for-dancers-lost-and-grounded/
 canonical: https://www.instagram.com/p/BuzRLMIFxnk/
 tags:
 

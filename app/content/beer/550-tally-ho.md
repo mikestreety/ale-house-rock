@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/palmers/
 date: '2021-08-07'
-permalink: beer/tally-ho-palmers-550/
+permalink: beer/tally-ho-palmers/
 canonical: https://www.instagram.com/p/CSSfcYSKeou/
 ---
 

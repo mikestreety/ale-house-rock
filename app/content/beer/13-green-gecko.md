@@ -7,7 +7,7 @@ serving: Bottle
 breweries:
   - brewery/hatherwood-craft-beer-company/
 date: '2016-12-11'
-permalink: beer/green-gecko-hatherwood-craft-beer-company-13/
+permalink: beer/green-gecko-hatherwood-craft-beer-company/
 canonical: https://www.instagram.com/p/BN5BaTVgPm5/
 tags:
   - ipa

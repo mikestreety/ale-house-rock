@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/dark-star/
 date: '2020-12-28'
-permalink: beer/creme-brulee-dark-star-401/
+permalink: beer/creme-brulee-dark-star/
 canonical: https://www.instagram.com/p/CJWEBovFEt6/
 ---
 

@@ -7,7 +7,7 @@ purchased: shop/aldi/
 breweries:
   - brewery/bankss/
 date: '2016-12-10'
-permalink: beer/amber-bitter-bankss-12/
+permalink: beer/amber-bitter-bankss/
 canonical: https://www.instagram.com/p/BN2eq-HgR9I/
 tags:
   - bitter

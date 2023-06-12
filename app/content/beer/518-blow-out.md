@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/mikkeller/
 date: '2021-06-20'
-permalink: beer/blow-out-mikkeller-518/
+permalink: beer/blow-out-mikkeller/
 canonical: https://www.instagram.com/p/CQWlFYTJWVe/
 ---
 

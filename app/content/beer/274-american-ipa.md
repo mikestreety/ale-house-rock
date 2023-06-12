@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/bad-co/
 date: '2020-01-28'
-permalink: beer/american-ipa-bad-co-274/
+permalink: beer/american-ipa-bad-co/
 canonical: https://www.instagram.com/p/B72uJV_pMDE/
 tags:
 

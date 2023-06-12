@@ -7,7 +7,7 @@ purchased: shop/lidl/
 breweries:
   - brewery/hatherwood-craft-beer-company/
 date: '2016-12-21'
-permalink: beer/the-amber-adder-hatherwood-craft-beer-company-23/
+permalink: beer/the-amber-adder-hatherwood-craft-beer-company/
 canonical: https://www.instagram.com/p/BOShVfqgMGK/
 tags:
   - ambereale

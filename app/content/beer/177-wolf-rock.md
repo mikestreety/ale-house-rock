@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/sharps/
 date: '2018-11-30'
-permalink: beer/wolf-rock-sharps-177/
+permalink: beer/wolf-rock-sharps/
 canonical: https://www.instagram.com/p/Bq0bYGQgHW1/
 tags:
 

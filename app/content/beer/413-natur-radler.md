@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/paulaner/
 date: '2021-01-11'
-permalink: beer/natur-radler-paulaner-413/
+permalink: beer/natur-radler-paulaner/
 canonical: https://www.instagram.com/p/CJ65eLylKwE/
 ---
 

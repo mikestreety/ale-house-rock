@@ -5,7 +5,7 @@ rating: 2
 breweries:
   - brewery/brewdog/
 date: '2021-03-18'
-permalink: beer/fake-empire-brewdog-452/
+permalink: beer/fake-empire-brewdog/
 canonical: https://www.instagram.com/p/CMk42P4pB-9/
 ---
 

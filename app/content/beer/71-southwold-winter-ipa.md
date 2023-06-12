@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/adnams/
 date: '2017-10-14'
-permalink: beer/southwold-winter-ipa-adnams-71/
+permalink: beer/southwold-winter-ipa-adnams/
 canonical: https://www.instagram.com/p/BaPXhYgloiS/
 tags:
 

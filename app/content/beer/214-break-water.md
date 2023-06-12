@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/red-rock-brewery/
 date: '2019-04-01'
-permalink: beer/break-water-red-rock-brewery-214/
+permalink: beer/break-water-red-rock-brewery/
 canonical: https://www.instagram.com/p/BvubvU5lr8L/
 tags:
 

@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/lost-and-grounded/
 date: '2019-03-16'
-permalink: beer/check-ignition-lost-and-grounded-209/
+permalink: beer/check-ignition-lost-and-grounded/
 canonical: https://www.instagram.com/p/BvFYzcvlS5d/
 tags:
   - stout

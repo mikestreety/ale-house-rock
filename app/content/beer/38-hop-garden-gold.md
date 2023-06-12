@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/hogs-back-brewery/
 date: '2017-03-24'
-permalink: beer/hop-garden-gold-hogs-back-brewery-38/
+permalink: beer/hop-garden-gold-hogs-back-brewery/
 canonical: https://www.instagram.com/p/BSCWo3KF7FW/
 tags:
   - goldenale

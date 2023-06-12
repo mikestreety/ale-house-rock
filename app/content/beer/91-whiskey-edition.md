@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/mcewans/
 date: '2018-01-01'
-permalink: beer/whiskey-edition-mcewans-91/
+permalink: beer/whiskey-edition-mcewans/
 canonical: https://www.instagram.com/p/BdYvwZMFY-3/
 tags:
 

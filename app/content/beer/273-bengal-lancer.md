@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/fullers/
 date: '2020-01-23'
-permalink: beer/bengal-lancer-fullers-273/
+permalink: beer/bengal-lancer-fullers/
 canonical: https://www.instagram.com/p/B7rastqpHHd/
 tags:
 

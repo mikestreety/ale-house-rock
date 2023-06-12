@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/riverside-brewery/
 date: '2021-02-19'
-permalink: beer/rambling-monarch-riverside-brewery-434/
+permalink: beer/rambling-monarch-riverside-brewery/
 canonical: https://www.instagram.com/p/CLfOfN3lFzH/
 ---
 

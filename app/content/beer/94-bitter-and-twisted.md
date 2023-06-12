@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/harviestoun-brewery/
 date: '2018-01-11'
-permalink: beer/bitter-and-twisted-harviestoun-brewery-94/
+permalink: beer/bitter-and-twisted-harviestoun-brewery/
 canonical: https://www.instagram.com/p/Bd02_djl8la/
 tags:
 

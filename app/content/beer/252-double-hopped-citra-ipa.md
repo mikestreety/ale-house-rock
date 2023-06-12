@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/oakham-ales/
 date: '2019-11-14'
-permalink: beer/double-hopped-citra-ipa-oakham-ales-252/
+permalink: beer/double-hopped-citra-ipa-oakham-ales/
 canonical: https://www.instagram.com/p/B41o_g8FSTX/
 ---
 

@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/wiper-and-true/
 date: '2021-12-29'
-permalink: beer/kaleidoscope-wiper-and-true-597/
+permalink: beer/kaleidoscope-wiper-and-true/
 canonical: https://www.instagram.com/p/CYFUCL5q0O7/
 ---
 

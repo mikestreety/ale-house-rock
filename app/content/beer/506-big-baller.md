@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/gipsy-hill/
 date: '2021-06-08'
-permalink: beer/big-baller-gipsy-hill-506/
+permalink: beer/big-baller-gipsy-hill/
 canonical: https://www.instagram.com/p/CP3_-AgFKgx/
 ---
 

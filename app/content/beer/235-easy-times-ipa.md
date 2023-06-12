@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/hop-hemp-brew-co/
 date: '2019-09-12'
-permalink: beer/easy-times-ipa-hop-hemp-brew-co-235/
+permalink: beer/easy-times-ipa-hop-hemp-brew-co/
 canonical: https://www.instagram.com/p/B2UzSRKFmDA/
 ---
 

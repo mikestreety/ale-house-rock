@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/dark-star/
 date: '2021-12-29'
-permalink: beer/sunquake-dark-star-596/
+permalink: beer/sunquake-dark-star/
 canonical: https://www.instagram.com/p/CYE0uFJqbWu/
 ---
 

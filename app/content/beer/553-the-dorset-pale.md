@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/palmers/
 date: '2021-08-13'
-permalink: beer/the-dorset-pale-palmers-553/
+permalink: beer/the-dorset-pale-palmers/
 canonical: https://www.instagram.com/p/CShv4fqqC2W/
 ---
 

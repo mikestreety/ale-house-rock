@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/london-beer-factory/
 date: '2021-05-03'
-permalink: beer/qed-session-pale-london-beer-factory-483/
+permalink: beer/qed-session-pale-london-beer-factory/
 canonical: https://www.instagram.com/p/COZ2D-5lZx2/
 ---
 

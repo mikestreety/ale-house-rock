@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/deya-brewing-company/
 date: '2021-05-15'
-permalink: beer/written-in-the-dust-deya-brewing-company-489/
+permalink: beer/written-in-the-dust-deya-brewing-company/
 canonical: https://www.instagram.com/p/CO6KX34lUEJ/
 ---
 

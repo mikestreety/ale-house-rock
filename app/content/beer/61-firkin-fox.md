@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/badger/
 date: '2017-08-23'
-permalink: beer/firkin-fox-badger-61/
+permalink: beer/firkin-fox-badger/
 canonical: https://www.instagram.com/p/BYIfr34FjuR/
 tags:
   - bitter

@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/open-gate-brewery/
 date: '2018-07-18'
-permalink: beer/pilsner-open-gate-brewery-130/
+permalink: beer/pilsner-open-gate-brewery/
 canonical: https://www.instagram.com/p/BlXMAWuFsqZ/
 tags:
 

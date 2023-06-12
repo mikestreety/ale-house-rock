@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/salt-beer-factory/
 date: '2021-12-27'
-permalink: beer/denim-salt-beer-factory-594/
+permalink: beer/denim-salt-beer-factory/
 canonical: https://www.instagram.com/p/CYALCyOKZOk/
 ---
 

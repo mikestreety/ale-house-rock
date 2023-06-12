@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/brewdog/
 date: '2020-10-31'
-permalink: beer/ald-ipa-brewdog-378/
+permalink: beer/ald-ipa-brewdog/
 canonical: https://www.instagram.com/p/CHBmS2SJcnO/
 ---
 

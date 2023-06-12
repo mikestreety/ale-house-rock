@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/marstons/
 date: '2018-04-06'
-permalink: beer/lancaster-bomber-marstons-103/
+permalink: beer/lancaster-bomber-marstons/
 canonical: https://www.instagram.com/p/BhPdwIKlao3/
 tags:
 

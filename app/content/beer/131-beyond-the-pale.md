@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/london-beer-factory/
 date: '2018-07-20'
-permalink: beer/beyond-the-pale-london-beer-factory-131/
+permalink: beer/beyond-the-pale-london-beer-factory/
 canonical: https://www.instagram.com/p/BleB_Jal_Tj/
 tags:
 

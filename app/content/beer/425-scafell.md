@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/northern-monk/
 date: '2021-01-28'
-permalink: beer/scafell-northern-monk-425/
+permalink: beer/scafell-northern-monk/
 canonical: https://www.instagram.com/p/CKmxkk8F8BC/
 tags:
 

@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/perlenbacher/
 date: '2018-05-19'
-permalink: beer/patronus-perlenbacher-110/
+permalink: beer/patronus-perlenbacher/
 canonical: https://www.instagram.com/p/Bi-IpBPlNxf/
 tags:
 

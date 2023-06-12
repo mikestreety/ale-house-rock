@@ -6,7 +6,7 @@ breweries:
   - brewery/exale-brewing/
   - brewery/drop-project/
 date: '2020-12-25'
-permalink: beer/lava-exale-brewing-drop-project-399/
+permalink: beer/lava-exale-brewing-drop-project/
 canonical: https://www.instagram.com/p/CJO1CqMFTzv/
 ---
 

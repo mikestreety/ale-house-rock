@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/pollys/
 date: '2021-09-05'
-permalink: beer/wave-mix-pollys-564/
+permalink: beer/wave-mix-pollys/
 canonical: https://www.instagram.com/p/CTcksLQKgH8/
 ---
 

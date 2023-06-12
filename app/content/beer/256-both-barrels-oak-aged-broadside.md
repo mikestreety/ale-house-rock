@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/adnams/
 date: '2019-11-26'
-permalink: beer/both-barrels-oak-aged-broadside-adnams-256/
+permalink: beer/both-barrels-oak-aged-broadside-adnams/
 canonical: https://www.instagram.com/p/B5V9DujFQj2/
 ---
 

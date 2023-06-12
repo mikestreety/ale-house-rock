@@ -7,7 +7,7 @@ purchased: shop/lidl/
 breweries:
   - brewery/hatherwood-craft-beer-company/
 date: '2016-12-09'
-permalink: beer/the-golden-goose-hatherwood-craft-beer-company-10/
+permalink: beer/the-golden-goose-hatherwood-craft-beer-company/
 canonical: https://www.instagram.com/p/BNz17CPAJVG/
 tags:
   - goldenale

@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/deya-brewing-company/
 date: '2021-08-18'
-permalink: beer/pale-ale-deya-brewing-company-557/
+permalink: beer/pale-ale-deya-brewing-company/
 canonical: https://www.instagram.com/p/CSuc_FKK2Lq/
 ---
 

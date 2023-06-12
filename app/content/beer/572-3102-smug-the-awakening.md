@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/northern-monk/
 date: '2021-09-19'
-permalink: beer/3102-smug-the-awakening-northern-monk-572/
+permalink: beer/3102-smug-the-awakening-northern-monk/
 canonical: https://www.instagram.com/p/CUBLF6tqyer/
 ---
 

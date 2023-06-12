@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/hogs-back-brewery/
 date: '2018-01-04'
-permalink: beer/tea-hogs-back-brewery-92/
+permalink: beer/tea-hogs-back-brewery/
 canonical: https://www.instagram.com/p/Bdiu1ZuFdBv/
 tags:
 

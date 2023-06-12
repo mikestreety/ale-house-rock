@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/the-wild-beer-company/
 date: '2020-05-23'
-permalink: beer/brettbrett-double-ipa-the-wild-beer-company-332/
+permalink: beer/brettbrett-double-ipa-the-wild-beer-company/
 canonical: https://www.instagram.com/p/CAi913iJDwl/
 ---
 

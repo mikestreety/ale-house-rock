@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/st-austell-brewery/
 date: '2021-08-30'
-permalink: beer/tribute-st-austell-brewery-563/
+permalink: beer/tribute-st-austell-brewery/
 canonical: https://www.instagram.com/p/CTLQ_FWqjTx/
 tags:
 

@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/innis-gunn/
 date: '2020-04-05'
-permalink: beer/tropic-like-its-hop-innis-gunn-300/
+permalink: beer/tropic-like-its-hop-innis-gunn/
 canonical: https://www.instagram.com/p/B-nK5zEJCyu/
 tags:
 

@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/gipsy-hill/
 date: '2019-10-21'
-permalink: beer/hepcat-gipsy-hill-245/
+permalink: beer/hepcat-gipsy-hill/
 canonical: https://www.instagram.com/p/B35BCgZpDyX/
 tags:
 

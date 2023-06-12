@@ -7,7 +7,7 @@ breweries:
   - brewery/greenwich-brewing-company/
   - brewery/marks-and-spencer/
 date: '2016-12-20'
-permalink: beer/amarillo-golden-ale-greenwich-brewing-company-marks-and-spencer-22/
+permalink: beer/amarillo-golden-ale-greenwich-brewing-company-marks-and-spencer/
 aliases:
   - amarillo-golden-ale-greenwich-brewing-company-22
 canonical: https://www.instagram.com/p/BOP7dgzAqyJ/

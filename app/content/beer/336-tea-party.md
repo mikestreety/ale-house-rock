@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/people-like-us/
 date: '2020-05-31'
-permalink: beer/tea-party-people-like-us-336/
+permalink: beer/tea-party-people-like-us/
 canonical: https://www.instagram.com/p/CA2e5Lxp6k7/
 ---
 

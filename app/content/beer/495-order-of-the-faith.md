@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/northern-monk/
 date: '2021-05-23'
-permalink: beer/order-of-the-faith-northern-monk-495/
+permalink: beer/order-of-the-faith-northern-monk/
 canonical: https://www.instagram.com/p/CPNa1zqFefu/
 ---
 

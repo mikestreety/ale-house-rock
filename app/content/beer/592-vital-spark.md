@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/fyne-ales/
 date: '2021-12-26'
-permalink: beer/vital-spark-fyne-ales-592/
+permalink: beer/vital-spark-fyne-ales/
 canonical: https://www.instagram.com/p/CX8j4uiK6Tp/
 ---
 

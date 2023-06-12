@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/williams-brothers-brewing-company/
 date: '2021-09-14'
-permalink: beer/joker-ipa-williams-brothers-brewing-company-568/
+permalink: beer/joker-ipa-williams-brothers-brewing-company/
 canonical: https://www.instagram.com/p/CT0Zd79K0v2/
 ---
 

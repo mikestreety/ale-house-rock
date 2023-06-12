@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/loud-shirt-brewing-company/
 date: '2020-04-08'
-permalink: beer/bohemian-gold-loud-shirt-brewing-company-301/
+permalink: beer/bohemian-gold-loud-shirt-brewing-company/
 canonical: https://www.instagram.com/p/B-vIv9vJZfk/
 tags:
 

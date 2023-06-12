@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/loud-shirt-brewing-company/
 date: '2020-04-10'
-permalink: beer/euphoria-red-loud-shirt-brewing-company-302/
+permalink: beer/euphoria-red-loud-shirt-brewing-company/
 canonical: https://www.instagram.com/p/B-0OPu8pPud/
 tags:
 

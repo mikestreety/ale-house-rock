@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/thornbridge/
 date: '2020-07-03'
-permalink: beer/kipling-thornbridge-351/
+permalink: beer/kipling-thornbridge/
 canonical: https://www.instagram.com/p/CCMF0BKpzGg/
 ---
 

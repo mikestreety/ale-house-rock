@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/nick-staffords-hambleton-ales/
 date: '2018-06-22'
-permalink: beer/session-pale-nick-staffords-hambleton-ales-118/
+permalink: beer/session-pale-nick-staffords-hambleton-ales/
 canonical: https://www.instagram.com/p/BkV0uR_FJZs/
 tags:
 

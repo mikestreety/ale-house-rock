@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/adnams/
 date: '2018-11-04'
-permalink: beer/southwold-pale-ale-adnams-170/
+permalink: beer/southwold-pale-ale-adnams/
 canonical: https://www.instagram.com/p/Bpxf_kDgkEV/
 tags:
 

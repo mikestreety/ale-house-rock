@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/ringwood-brewery/
 date: '2016-12-13'
-permalink: beer/old-thumper-ringwood-brewery-15/
+permalink: beer/old-thumper-ringwood-brewery/
 canonical: https://www.instagram.com/p/BN-IuW7gBsv/
 tags:
   - bitter

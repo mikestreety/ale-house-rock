@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/maltus-faber/
 date: '2019-06-15'
-permalink: beer/tippa-ipa-maltus-faber-225/
+permalink: beer/tippa-ipa-maltus-faber/
 canonical: https://www.instagram.com/p/ByvF1IIFJdE/
 tags:
 

@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/amundsen-brewery/
 date: '2020-11-11'
-permalink: beer/chuggernaut-amundsen-brewery-383/
+permalink: beer/chuggernaut-amundsen-brewery/
 canonical: https://www.instagram.com/p/CHdndspFR0c/
 ---
 

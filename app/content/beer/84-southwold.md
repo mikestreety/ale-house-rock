@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/adnams/
 date: '2017-12-02'
-permalink: beer/southwold-adnams-84/
+permalink: beer/southwold-adnams/
 canonical: https://www.instagram.com/p/BcNm0oSFRJ4/
 tags:
 

@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/brewdog/
 date: '2021-03-12'
-permalink: beer/lost-brewdog-449/
+permalink: beer/lost-brewdog/
 canonical: https://www.instagram.com/p/CMVih20Fgim/
 ---
 

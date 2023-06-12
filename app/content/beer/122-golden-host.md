@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/jennings/
 date: '2018-06-29'
-permalink: beer/golden-host-jennings-122/
+permalink: beer/golden-host-jennings/
 canonical: https://www.instagram.com/p/Bkn2UduFWxO/
 tags:
 

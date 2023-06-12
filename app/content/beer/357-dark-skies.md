@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/drygate-brewing-company/
 date: '2020-07-11'
-permalink: beer/dark-skies-drygate-brewing-company-357/
+permalink: beer/dark-skies-drygate-brewing-company/
 canonical: https://www.instagram.com/p/CChEYwtJv4z/
 ---
 

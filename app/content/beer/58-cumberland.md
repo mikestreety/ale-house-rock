@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/jennings-brewery/
 date: '2017-08-17'
-permalink: beer/cumberland-jennings-58/
+permalink: beer/cumberland-jennings/
 canonical: https://www.instagram.com/p/BX59MxWFQR1/
 tags:
   - goldenale

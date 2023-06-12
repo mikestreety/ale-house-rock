@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/the-hop-foundry/
 date: '2020-11-26'
-permalink: beer/the-hop-stepper-the-hop-foundry-388/
+permalink: beer/the-hop-stepper-the-hop-foundry/
 canonical: https://www.instagram.com/p/CIEX1WypXLk/
 ---
 

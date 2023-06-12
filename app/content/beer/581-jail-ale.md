@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/dartmoor-brewery/
 date: '2021-10-06'
-permalink: beer/jail-ale-dartmoor-brewery-581/
+permalink: beer/jail-ale-dartmoor-brewery/
 canonical: https://www.instagram.com/p/CUslwY0KTwI/
 ---
 

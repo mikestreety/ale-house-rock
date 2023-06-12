@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/skinners-brewery/
 date: '2017-11-04'
-permalink: beer/hops-n-honey-skinners-brewery-78/
+permalink: beer/hops-n-honey-skinners-brewery/
 canonical: https://www.instagram.com/p/BbFQCaclzX8/
 tags:
 

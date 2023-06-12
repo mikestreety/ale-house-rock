@@ -6,7 +6,7 @@ breweries:
   - brewery/beak-brewery/
   - brewery/northern-monk/
 date: '2021-04-13'
-permalink: beer/wool-beak-brewery-northern-monk-469/
+permalink: beer/wool-beak-brewery-northern-monk/
 canonical: https://www.instagram.com/p/CNn1Aw9FD17/
 tags:
 

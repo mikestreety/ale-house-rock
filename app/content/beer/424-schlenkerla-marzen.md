@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/heller/
 date: '2021-01-26'
-permalink: beer/schlenkerla-marzen-heller-424/
+permalink: beer/schlenkerla-marzen-heller/
 canonical: https://www.instagram.com/p/CKhq6q6FLEQ/
 ---
 

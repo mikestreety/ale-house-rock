@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/bad-co/
 date: '2020-08-07'
-permalink: beer/the-shy-retirer-bad-co-364/
+permalink: beer/the-shy-retirer-bad-co/
 canonical: https://www.instagram.com/p/CDmOf17pdZO/
 ---
 

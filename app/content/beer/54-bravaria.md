@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/swinkels-family-brewers/
 date: '2017-07-12'
-permalink: beer/bravaria-swinkels-family-brewers-54/
+permalink: beer/bravaria-swinkels-family-brewers/
 canonical: https://www.instagram.com/p/BWdkPWGFnil/
 tags:
   - wheatbeer

@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/hatherwood-craft-beer-company/
 date: '2018-07-11'
-permalink: beer/golden-goal-hatherwood-craft-beer-company-128/
+permalink: beer/golden-goal-hatherwood-craft-beer-company/
 canonical: https://www.instagram.com/p/BlGjHSZFdZQ/
 tags:
   - goldenale

@@ -5,7 +5,7 @@ rating: 2
 breweries:
   - brewery/brewdog/
 date: '2021-04-28'
-permalink: beer/jet-stream-brewdog-479/
+permalink: beer/jet-stream-brewdog/
 canonical: https://www.instagram.com/p/COOe6ARp0MQ/
 ---
 

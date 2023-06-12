@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/brewdog/
 date: '2021-07-04'
-permalink: beer/tonys-hopolonely-brewdog-525/
+permalink: beer/tonys-hopolonely-brewdog/
 canonical: https://www.instagram.com/p/CQ4g8GipmgC/
 ---
 

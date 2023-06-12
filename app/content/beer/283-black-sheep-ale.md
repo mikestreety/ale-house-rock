@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/black-sheep-brewery/
 date: '2020-02-22'
-permalink: beer/black-sheep-ale-black-sheep-brewery-283/
+permalink: beer/black-sheep-ale-black-sheep-brewery/
 canonical: https://www.instagram.com/p/B84jMEIpicC/
 ---
 

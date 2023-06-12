@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/the-alnwick-brewery-co-ltd/
 date: '2021-06-15'
-permalink: beer/alnwick-ipa-the-alnwick-brewery-co-ltd-511/
+permalink: beer/alnwick-ipa-the-alnwick-brewery-co-ltd/
 canonical: https://www.instagram.com/p/CQJk6dMJKHf/
 ---
 

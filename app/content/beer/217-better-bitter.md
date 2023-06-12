@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/lyme-regis-brewery/
 date: '2019-04-11'
-permalink: beer/better-bitter-lyme-regis-brewery-217/
+permalink: beer/better-bitter-lyme-regis-brewery/
 canonical: https://www.instagram.com/p/BwH4yG4FawX/
 tags:
 

@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/brewdog/
 date: '2021-03-26'
-permalink: beer/mallow-laser-quest-brewdog-457/
+permalink: beer/mallow-laser-quest-brewdog/
 canonical: https://www.instagram.com/p/CM5WDqVpzr6/
 ---
 

@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/west-berkshire-brewery/
 date: '2018-08-25'
-permalink: beer/good-old-boy-west-berkshire-brewery-150/
+permalink: beer/good-old-boy-west-berkshire-brewery/
 canonical: https://www.instagram.com/p/Bm6slYulyt8/
 tags:
 

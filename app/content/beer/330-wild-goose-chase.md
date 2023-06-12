@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/the-wild-beer-company/
 date: '2020-05-21'
-permalink: beer/wild-goose-chase-the-wild-beer-company-330/
+permalink: beer/wild-goose-chase-the-wild-beer-company/
 canonical: https://www.instagram.com/p/CAdpcSfJF-j/
 ---
 

@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/sharps/
 date: '2019-06-28'
-permalink: beer/offshore-sharps-229/
+permalink: beer/offshore-sharps/
 canonical: https://www.instagram.com/p/BzQ-_CQFZ6F/
 ---
 

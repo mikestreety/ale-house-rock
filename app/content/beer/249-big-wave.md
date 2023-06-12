@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/kona-brewing-company/
 date: '2019-10-28'
-permalink: beer/big-wave-kona-brewing-company-249/
+permalink: beer/big-wave-kona-brewing-company/
 canonical: https://www.instagram.com/p/B4JtuGelMC1/
 tags:
   - goldenale

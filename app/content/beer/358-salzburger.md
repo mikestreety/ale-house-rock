@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/steigl/
 date: '2020-07-16'
-permalink: beer/salzburger-steigl-358/
+permalink: beer/salzburger-steigl/
 canonical: https://www.instagram.com/p/CCttgjRpjS1/
 ---
 

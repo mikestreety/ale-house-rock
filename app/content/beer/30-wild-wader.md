@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/badger/
 date: '2017-01-28'
-permalink: beer/wild-wader-badger-30/
+permalink: beer/wild-wader-badger/
 canonical: https://www.instagram.com/p/BP0ktzQAOue/
 tags:
   - goldenale

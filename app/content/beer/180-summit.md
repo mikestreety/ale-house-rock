@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/allendale-brewery/
 date: '2018-12-07'
-permalink: beer/summit-allendale-brewery-180/
+permalink: beer/summit-allendale-brewery/
 canonical: https://www.instagram.com/p/BrFIT3wA1QW/
 ---
 

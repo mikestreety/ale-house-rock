@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/brewdog/
 date: '2021-05-28'
-permalink: beer/mr-president-brewdog-498/
+permalink: beer/mr-president-brewdog/
 canonical: https://www.instagram.com/p/CPbYO1TJ1DG/
 ---
 

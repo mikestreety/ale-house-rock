@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/brewdog/
 date: '2018-09-09'
-permalink: beer/elvis-juice-brewdog-155/
+permalink: beer/elvis-juice-brewdog/
 canonical: https://www.instagram.com/p/BnhRzu8APhc/
 tags:
 

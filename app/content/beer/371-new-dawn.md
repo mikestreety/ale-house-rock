@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/shepherd-neame/
 date: '2020-10-02'
-permalink: beer/new-dawn-shepherd-neame-371/
+permalink: beer/new-dawn-shepherd-neame/
 canonical: https://www.instagram.com/p/CF2PfLQlLIU/
 ---
 

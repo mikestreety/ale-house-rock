@@ -6,7 +6,7 @@ breweries:
   - brewery/brewdog/
   - brewery/modern-times-beer/
 date: '2020-06-11'
-permalink: beer/future-proof-brewdog-modern-times-beer-343/
+permalink: beer/future-proof-brewdog-modern-times-beer/
 canonical: https://www.instagram.com/p/CBT2TPDJhqe/
 tags:
 

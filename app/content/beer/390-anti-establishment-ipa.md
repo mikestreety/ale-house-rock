@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/aldi/
 date: '2020-11-30'
-permalink: beer/anti-establishment-ipa-aldi-390/
+permalink: beer/anti-establishment-ipa-aldi/
 canonical: https://www.instagram.com/p/CIOSaXMJTsh/
 ---
 

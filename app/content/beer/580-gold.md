@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/exmoor-ales/
 date: '2021-10-05'
-permalink: beer/gold-exmoor-ales-580/
+permalink: beer/gold-exmoor-ales/
 canonical: https://www.instagram.com/p/CUoxXlaKs6U/
 ---
 

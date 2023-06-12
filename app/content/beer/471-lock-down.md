@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/brewdog/
 date: '2021-04-17'
-permalink: beer/lock-down-brewdog-471/
+permalink: beer/lock-down-3-brewdog/
 canonical: https://www.instagram.com/p/CNxpghnl6MW/
 ---
 

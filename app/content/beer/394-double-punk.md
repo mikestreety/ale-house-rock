@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/brewdog/
 date: '2020-12-12'
-permalink: beer/double-punk-brewdog-394/
+permalink: beer/double-punk-brewdog/
 canonical: https://www.instagram.com/p/CItnAA9lrmV/
 ---
 

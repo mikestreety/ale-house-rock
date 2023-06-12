@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/the-queer-brewing-project/
 date: '2020-05-31'
-permalink: beer/take-up-space-the-queer-brewing-project-337/
+permalink: beer/take-up-space-the-queer-brewing-project/
 canonical: https://www.instagram.com/p/CA3T-VWJL9m/
 tags:
   - stout

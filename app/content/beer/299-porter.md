@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/harveys-brewery/
 date: '2020-04-03'
-permalink: beer/porter-harveys-brewery-299/
+permalink: beer/porter-harveys-brewery/
 canonical: https://www.instagram.com/p/B-iQKxHJD8M/
 ---
 

@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/brewdog/
 date: '2019-08-10'
-permalink: beer/clockwork-tangerine-brewdog-230/
+permalink: beer/clockwork-tangerine-brewdog/
 canonical: https://www.instagram.com/p/B0_q9A5F6Sm/
 tags:
 

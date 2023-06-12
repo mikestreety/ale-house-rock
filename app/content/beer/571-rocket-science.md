@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/magnify-brewing/
 date: '2021-09-18'
-permalink: beer/rocket-science-magnify-brewing-571/
+permalink: beer/rocket-science-magnify-brewing/
 canonical: https://www.instagram.com/p/CT-MQlUKcj_/
 ---
 

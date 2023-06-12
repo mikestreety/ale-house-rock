@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/riverside-brewery/
 date: '2021-02-20'
-permalink: beer/tangmere-tower-riverside-brewery-436/
+permalink: beer/tangmere-tower-riverside-brewery/
 canonical: https://www.instagram.com/p/CLhvWBXlwJO/
 ---
 

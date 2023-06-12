@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/wychwood-brewery/
 date: '2021-05-07'
-permalink: beer/diceman-wychwood-brewery-486/
+permalink: beer/diceman-wychwood-brewery/
 canonical: https://www.instagram.com/p/COlkW2OFAmd/
 ---
 

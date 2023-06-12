@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/surry-hills-brewery/
 date: '2019-08-11'
-permalink: beer/shere-drop-surry-hills-brewery-231/
+permalink: beer/shere-drop-surry-hills-brewery/
 canonical: https://www.instagram.com/p/B1CLJXXFQF1/
 tags:
 

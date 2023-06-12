@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/gun-brewery/
 date: '2020-12-24'
-permalink: beer/spin-drift-gun-brewery-397/
+permalink: beer/spin-drift-gun-brewery/
 canonical: https://www.instagram.com/p/CJMoO1blT_k/
 tags:
 

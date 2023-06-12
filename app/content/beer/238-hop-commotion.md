@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/jennings/
 date: '2019-09-25'
-permalink: beer/hop-commotion-jennings-238/
+permalink: beer/hop-commotion-jennings/
 canonical: https://www.instagram.com/p/B22BOFiFO8E/
 tags:
 

@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/briarbank-brewery/
 date: '2020-10-27'
-permalink: beer/perpendicular-briarbank-brewery-375/
+permalink: beer/perpendicular-briarbank-brewery/
 canonical: https://www.instagram.com/p/CG3RQrZJshJ/
 ---
 

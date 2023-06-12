@@ -6,7 +6,7 @@ breweries:
   - brewery/wychwood-brewery/
 date: '2017-02-10'
 serving: Bottle
-permalink: beer/hobgoblin-gold-wychwood-brewery-33/
+permalink: beer/hobgoblin-gold-wychwood-brewery/
 canonical: https://www.instagram.com/p/BQV7wmNAE4z/
 tags:
   - goldenale

@@ -5,7 +5,7 @@ rating: 2
 breweries:
   - brewery/thornbridge/
 date: '2018-09-04'
-permalink: beer/tart-thornbridge-152/
+permalink: beer/tart-thornbridge/
 canonical: https://www.instagram.com/p/BnUFAgNlD8_/
 tags:
 

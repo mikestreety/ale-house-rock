@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/360-degree-brewing-company/
 date: '2021-06-05'
-permalink: beer/bluebell-360-degree-brewing-company-503/
+permalink: beer/bluebell-360-degree-brewing-company/
 canonical: https://www.instagram.com/p/CPwW_5AFIXp/
 ---
 

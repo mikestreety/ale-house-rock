@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/shepherd-neame/
 date: '2016-12-14'
-permalink: beer/master-brew-shepherd-neame-16/
+permalink: beer/master-brew-shepherd-neame/
 canonical: https://www.instagram.com/p/BOAlSRGgybs/
 tags:
   - bitter

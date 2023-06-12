@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/northern-monk/
 date: '2020-06-19'
-permalink: beer/new-world-northern-monk-346/
+permalink: beer/new-world-northern-monk/
 canonical: https://www.instagram.com/p/CBmJlFcJ7Qk/
 ---
 

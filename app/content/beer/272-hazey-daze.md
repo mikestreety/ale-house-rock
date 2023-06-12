@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/london-beer-factory/
 date: '2020-01-14'
-permalink: beer/hazey-daze-london-beer-factory-272/
+permalink: beer/hazey-daze-london-beer-factory/
 canonical: https://www.instagram.com/p/B7T0EHCpnla/
 ---
 

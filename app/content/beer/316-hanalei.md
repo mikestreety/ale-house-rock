@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/kona-brewing-company/
 date: '2020-05-01'
-permalink: beer/hanalei-kona-brewing-company-316/
+permalink: beer/hanalei-kona-brewing-company/
 canonical: https://www.instagram.com/p/B_pW22YJUll/
 tags:
   - bitter

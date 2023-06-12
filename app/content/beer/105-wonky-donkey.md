@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/white-rock-brewery/
 date: '2018-04-09'
-permalink: beer/wonky-donkey-white-rock-brewery-105/
+permalink: beer/wonky-donkey-white-rock-brewery/
 canonical: https://www.instagram.com/p/BhXFgbQlvsI/
 tags:
 

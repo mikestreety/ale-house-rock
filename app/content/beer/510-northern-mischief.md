@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/wooha/
 date: '2021-06-13'
-permalink: beer/northern-mischief-wooha-510/
+permalink: beer/northern-mischief-wooha/
 canonical: https://www.instagram.com/p/CQERsptlRHp/
 ---
 

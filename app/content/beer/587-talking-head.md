@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/williams-brothers-brewing-company/
 date: '2021-10-30'
-permalink: beer/talking-head-williams-brothers-brewing-company-587/
+permalink: beer/talking-head-williams-brothers-brewing-company/
 canonical: https://www.instagram.com/p/CVqk7BWKK-0/
 ---
 

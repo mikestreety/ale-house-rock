@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/glen-affric-brewery/
 date: '2020-07-03'
-permalink: beer/bevvie-across-the-mersey-glen-affric-brewery-352/
+permalink: beer/bevvie-across-the-mersey-glen-affric-brewery/
 canonical: https://www.instagram.com/p/CCMaay9pG_t/
 ---
 

@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/burning-sky/
 date: '2021-09-11'
-permalink: beer/big-easy-burning-sky-565/
+permalink: beer/big-easy-burning-sky/
 canonical: https://www.instagram.com/p/CTrWEylqpH4/
 tags:
   - dipa

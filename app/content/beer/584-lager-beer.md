@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/innis-gunn/
 date: '2021-10-30'
-permalink: beer/lager-beer-innis-gunn-584/
+permalink: beer/lager-beer-innis-gunn/
 canonical: https://www.instagram.com/p/CVp_-rdqPL2/
 ---
 

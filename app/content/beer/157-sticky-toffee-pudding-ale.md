@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/eagle-brewery/
 date: '2018-09-14'
-permalink: beer/sticky-toffee-pudding-ale-eagle-brewery-157/
+permalink: beer/sticky-toffee-pudding-ale-eagle-brewery/
 canonical: https://www.instagram.com/p/BnuVOkjllyi/
 tags:
 

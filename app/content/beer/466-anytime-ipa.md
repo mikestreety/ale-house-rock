@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/meantime-brewing-company/
 date: '2021-04-08'
-permalink: beer/anytime-ipa-meantime-brewing-company-466/
+permalink: beer/anytime-ipa-meantime-brewing-company/
 canonical: https://www.instagram.com/p/CNbE2qWlolJ/
 ---
 

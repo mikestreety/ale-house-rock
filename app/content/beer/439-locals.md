@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/beak-brewery/
 date: '2021-02-26'
-permalink: beer/locals-beak-brewery-439/
+permalink: beer/locals-beak-brewery/
 canonical: https://www.instagram.com/p/CLwJAdAFibe/
 tags:
 

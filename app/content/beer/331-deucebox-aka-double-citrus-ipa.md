@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/fourpure-brewing-company/
 date: '2020-05-23'
-permalink: beer/deucebox-aka-double-citrus-ipa-fourpure-brewing-company-331/
+permalink: beer/deucebox-aka-double-citrus-ipa-fourpure-brewing-company/
 canonical: https://www.instagram.com/p/CAhd83Jp1qm/
 tags:
 

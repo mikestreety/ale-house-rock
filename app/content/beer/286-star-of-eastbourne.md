@@ -5,7 +5,7 @@ rating: 10
 breweries:
   - brewery/harveys-brewery/
 date: '2020-02-24'
-permalink: beer/star-of-eastbourne-harveys-brewery-286/
+permalink: beer/star-of-eastbourne-harveys-brewery/
 canonical: https://www.instagram.com/p/B89U_MeJqSJ/
 ---
 

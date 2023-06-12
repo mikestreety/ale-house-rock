@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/hepworth-co-brewers/
 date: '2021-09-18'
-permalink: beer/crazy-horse-hepworth-co-brewers-570/
+permalink: beer/crazy-horse-hepworth-co-brewers/
 canonical: https://www.instagram.com/p/CT-LMLvKWQh/
 ---
 

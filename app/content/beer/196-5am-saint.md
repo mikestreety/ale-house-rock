@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/brewdog/
 date: '2019-01-11'
-permalink: beer/5am-saint-brewdog-196/
+permalink: beer/5am-saint-brewdog/
 canonical: https://www.instagram.com/p/BsgXM_tgtMr/
 tags:
 

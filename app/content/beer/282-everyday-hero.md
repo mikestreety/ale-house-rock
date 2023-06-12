@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/amundsen-brewery/
 date: '2020-02-18'
-permalink: beer/everyday-hero-amundsen-brewery-282/
+permalink: beer/everyday-hero-amundsen-brewery/
 canonical: https://www.instagram.com/p/B8uZ6RHp5OB/
 tags:
 

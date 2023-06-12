@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/williams-brothers-brewing-company/
 date: '2021-09-25'
-permalink: beer/midnight-sun-williams-brothers-brewing-company-575/
+permalink: beer/midnight-sun-williams-brothers-brewing-company/
 canonical: https://www.instagram.com/p/CUQfY_Lq3TU/
 ---
 

@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/saltdean-brewery/
 date: '2018-03-07'
-permalink: beer/drunk-monk-saltdean-brewery-101/
+permalink: beer/drunk-monk-saltdean-brewery/
 canonical: https://www.instagram.com/p/BgCX2LbHqvI/
 tags:
 

@@ -5,7 +5,7 @@ rating: 10
 breweries:
   - brewery/saltdean-brewery/
 date: '2018-07-10'
-permalink: beer/golden-ale-saltdean-brewery-126/
+permalink: beer/golden-ale-saltdean-brewery/
 canonical: https://www.instagram.com/p/BlD17EtFiQG/
 tags:
 

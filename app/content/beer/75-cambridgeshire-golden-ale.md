@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/oakham-ales/
 date: '2017-10-20'
-permalink: beer/cambridgeshire-golden-ale-oakham-ales-75/
+permalink: beer/cambridgeshire-golden-ale-oakham-ales/
 canonical: https://www.instagram.com/p/BafCZp5lHYT/
 tags:
 

@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/st-peters/
 date: '2021-07-11'
-permalink: beer/suffolk-blonde-st-peters-531/
+permalink: beer/suffolk-blonde-st-peters/
 canonical: https://www.instagram.com/p/CRMfKyNpqp9/
 ---
 

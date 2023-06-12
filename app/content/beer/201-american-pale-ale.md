@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/long-man-brewery/
 date: '2019-01-23'
-permalink: beer/american-pale-ale-long-man-brewery-201/
+permalink: beer/american-pale-ale-long-man-brewery/
 canonical: https://www.instagram.com/p/Bs_UgcbAeZx/
 tags:
 

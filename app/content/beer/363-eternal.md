@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/northern-monk/
 date: '2020-07-27'
-permalink: beer/eternal-northern-monk-363/
+permalink: beer/eternal-northern-monk/
 canonical: https://www.instagram.com/p/CDKRE3CpnRq/
 ---
 

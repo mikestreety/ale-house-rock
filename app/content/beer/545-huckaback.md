@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/salt-beer-factory/
 date: '2021-08-01'
-permalink: beer/huckaback-salt-beer-factory-545/
+permalink: beer/huckaback-salt-beer-factory/
 canonical: https://www.instagram.com/p/CSAp2J0KaD-/
 ---
 

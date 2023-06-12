@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/devils-backbone-brewing-company/
 date: '2018-08-18'
-permalink: beer/devils-backbone-devils-backbone-brewing-company-144/
+permalink: beer/devils-backbone-devils-backbone-brewing-company/
 canonical: https://www.instagram.com/p/BmozhGUlYNY/
 tags:
 

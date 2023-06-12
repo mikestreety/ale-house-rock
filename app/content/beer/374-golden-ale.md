@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/harpers-brewing-company/
 date: '2020-10-15'
-permalink: beer/golden-ale-harpers-brewing-company-374/
+permalink: beer/golden-ale-harpers-brewing-company/
 canonical: https://www.instagram.com/p/CGYMnm-lESE/
 ---
 

@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/shepherd-neame/
 date: '2018-05-11'
-permalink: beer/spitfire-shepherd-neame-109/
+permalink: beer/spitfire-shepherd-neame/
 canonical: https://www.instagram.com/p/BipZRBEFmUU/
 ---
 

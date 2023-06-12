@@ -6,6 +6,8 @@ sitemapIgnore: true
 # Shortcut for each beer number
 {%- for item in collections.beer %}
 /b/{{ item.data.number }}/	{{ item.url }}
+{{ item.url | replace( r/\/$/ , "" ) }}-{{ item.data.number }}/	{{ item.url }}
+
 	{%- if item.data.aliases -%}
 		{%- for alias in item.data.aliases %}
 /beer/{{ alias }}/	/{{ item.data.permalink }}

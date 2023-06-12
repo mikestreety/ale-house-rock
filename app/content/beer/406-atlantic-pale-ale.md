@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/sharps/
 date: '2021-01-05'
-permalink: beer/atlantic-pale-ale-sharps-406/
+permalink: beer/atlantic-pale-ale-sharps/
 canonical: https://www.instagram.com/p/CJp9j2RFthH/
 ---
 

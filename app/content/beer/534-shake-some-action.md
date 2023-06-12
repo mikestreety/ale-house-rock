@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/burning-sky/
 date: '2021-07-17'
-permalink: beer/shake-some-action-burning-sky-534/
+permalink: beer/shake-some-action-burning-sky/
 canonical: https://www.instagram.com/p/CRcXzBjJuqV/
 tags:
 

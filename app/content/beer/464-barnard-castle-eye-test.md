@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/brewdog/
 date: '2021-04-04'
-permalink: beer/barnard-castle-eye-test-brewdog-464/
+permalink: beer/barnard-castle-eye-test-brewdog/
 canonical: https://www.instagram.com/p/CNQlkFaprBA/
 tags:
 

@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/open-gate-brewery/
 date: '2017-12-29'
-permalink: beer/guinness-golden-ale-open-gate-brewery-87/
+permalink: beer/guinness-golden-ale-open-gate-brewery/
 canonical: https://www.instagram.com/p/BdTFToGFVwP/
 tags:
 

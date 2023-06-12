@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/beavertown/
 date: '2021-04-30'
-permalink: beer/lupuoid-beavertown-481/
+permalink: beer/lupuoid-beavertown/
 canonical: https://www.instagram.com/p/COTgYLiFcaY/
 ---
 

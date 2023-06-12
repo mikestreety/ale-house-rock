@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/harveys-brewery/
 date: '2020-03-20'
-permalink: beer/sweet-sussex-harveys-brewery-292/
+permalink: beer/sweet-sussex-harveys-brewery/
 canonical: https://www.instagram.com/p/B99v8PUJdhg/
 tags:
 

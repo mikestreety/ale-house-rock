@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/joseph-holt/
 date: '2018-06-23'
-permalink: beer/humdinger-joseph-holt-119/
+permalink: beer/humdinger-joseph-holt/
 canonical: https://www.instagram.com/p/BkX9Gh8F1_N/
 tags:
 

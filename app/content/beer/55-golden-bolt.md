@@ -6,7 +6,7 @@ rating: 7
 breweries:
   - brewery/steam-box-brewery/
 date: '2017-07-14'
-permalink: beer/golden-bolt-steam-box-brewery-55/
+permalink: beer/golden-bolt-steam-box-brewery/
 canonical: https://www.instagram.com/p/BWiGRT5FcHJ/
 tags:
   - goldenale

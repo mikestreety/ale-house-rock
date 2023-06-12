@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/wiens-brewing/
 date: '2018-08-05'
-permalink: beer/apricot-wheat-wiens-brewing-140/
+permalink: beer/apricot-wheat-wiens-brewing/
 canonical: https://www.instagram.com/p/BmHKvBsFSSw/
 tags:
 

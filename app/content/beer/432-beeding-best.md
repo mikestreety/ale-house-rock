@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/riverside-brewery/
 date: '2021-02-11'
-permalink: beer/beeding-best-riverside-brewery-432/
+permalink: beer/beeding-best-riverside-brewery/
 canonical: https://www.instagram.com/p/CLKyyogF9ZA/
 ---
 

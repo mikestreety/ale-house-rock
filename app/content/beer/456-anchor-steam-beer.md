@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/anchor-brewing/
 date: '2021-03-25'
-permalink: beer/anchor-steam-beer-anchor-brewing-456/
+permalink: beer/anchor-steam-beer-anchor-brewing/
 canonical: https://www.instagram.com/p/CM29QSLpBlT/
 tags:
 

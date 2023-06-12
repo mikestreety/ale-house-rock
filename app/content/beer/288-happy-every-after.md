@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/adur-brewery/
 date: '2020-03-01'
-permalink: beer/happy-every-after-adur-brewery-288/
+permalink: beer/happy-every-after-adur-brewery/
 canonical: https://www.instagram.com/p/B9MOOggJcFO/
 tags:
 

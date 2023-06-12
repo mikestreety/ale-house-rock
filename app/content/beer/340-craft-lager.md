@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/octopus-energy/
 date: '2020-06-05'
-permalink: beer/craft-lager-octopus-energy-340/
+permalink: beer/craft-lager-octopus-energy/
 canonical: https://www.instagram.com/p/CBECfSFJV_c/
 ---
 

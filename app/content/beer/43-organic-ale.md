@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/st-peters/
 date: '2017-04-17'
-permalink: beer/organic-ale-st-peters-43/
+permalink: beer/organic-ale-st-peters/
 canonical: https://www.instagram.com/p/BS_uTGMlT2l/
 tags:
   - paleale

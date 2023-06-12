@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/wolfox/
 date: '2021-01-22'
-permalink: beer/whitbier-wolfox-422/
+permalink: beer/whitbier-wolfox/
 canonical: https://www.instagram.com/p/CKXW7Q-Fgde/
 ---
 

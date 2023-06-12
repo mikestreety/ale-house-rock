@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/riverside-brewery/
 date: '2021-03-03'
-permalink: beer/steyning-stinker-riverside-brewery-443/
+permalink: beer/steyning-stinker-riverside-brewery/
 canonical: https://www.instagram.com/p/CL-LZjhlF2T/
 ---
 

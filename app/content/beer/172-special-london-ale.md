@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/youngs/
 date: '2018-11-09'
-permalink: beer/special-london-ale-youngs-172/
+permalink: beer/special-london-ale-youngs/
 canonical: https://www.instagram.com/p/Bp-o8dLAw0l/
 tags:
 

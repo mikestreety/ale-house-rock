@@ -7,7 +7,7 @@ purchased: shop/lidl/
 breweries:
   - brewery/hatherwood-craft-beer-company/
 date: '2016-12-03'
-permalink: beer/the-purple-panther-porter-hatherwood-craft-beer-company-3/
+permalink: beer/the-purple-panther-porter-hatherwood-craft-beer-company/
 canonical: https://www.instagram.com/p/BNkTIEvA4zw/
 tags:
   - porter

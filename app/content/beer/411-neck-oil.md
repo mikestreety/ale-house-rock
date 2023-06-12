@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/beavertown/
 date: '2021-01-11'
-permalink: beer/neck-oil-beavertown-411/
+permalink: beer/neck-oil-beavertown/
 canonical: https://www.instagram.com/p/CJ56ztFlIUC/
 ---
 

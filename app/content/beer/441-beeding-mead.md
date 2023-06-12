@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/riverside-brewery/
 date: '2021-02-27'
-permalink: beer/beeding-mead-riverside-brewery-441/
+permalink: beer/beeding-mead-riverside-brewery/
 canonical: https://www.instagram.com/p/CL0G0lTFJ4k/
 ---
 

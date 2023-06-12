@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/st-austell-brewery/
 date: '2021-08-05'
-permalink: beer/endeavour-st-austell-brewery-548/
+permalink: beer/endeavour-st-austell-brewery/
 canonical: https://www.instagram.com/p/CSNaay3qGU6/
 ---
 

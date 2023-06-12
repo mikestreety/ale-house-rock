@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/toast-ale/
 date: '2021-06-03'
-permalink: beer/pale-ale-toast-502/
+permalink: beer/pale-ale-toast/
 canonical: https://www.instagram.com/p/CPrBamCpfJU/
 ---
 

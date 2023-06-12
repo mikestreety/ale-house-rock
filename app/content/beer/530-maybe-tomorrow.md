@@ -6,7 +6,7 @@ breweries:
   - brewery/good-things-brewing-company/
   - brewery/northern-monk/
 date: '2021-07-11'
-permalink: beer/maybe-tomorrow-good-things-brewing-company-northern-monk-530/
+permalink: beer/maybe-tomorrow-good-things-brewing-company-northern-monk/
 canonical: https://www.instagram.com/p/CRMfJWJphcN/
 ---
 

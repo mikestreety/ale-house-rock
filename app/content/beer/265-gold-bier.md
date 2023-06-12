@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/harveys-brewery/
 date: '2019-12-29'
-permalink: beer/gold-bier-harveys-brewery-265/
+permalink: beer/gold-bier-harveys-brewery/
 canonical: https://www.instagram.com/p/B6rHBgAJdTc/
 ---
 

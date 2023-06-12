@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/timothy-taylor/
 date: '2019-02-10'
-permalink: beer/landlord-timothy-taylor-205/
+permalink: beer/landlord-timothy-taylor/
 canonical: https://www.instagram.com/p/BttezCalmAJ/
 tags:
 

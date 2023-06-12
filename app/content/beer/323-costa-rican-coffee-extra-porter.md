@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/buxton-brewery/
 date: '2020-05-10'
-permalink: beer/costa-rican-coffee-extra-porter-buxton-brewery-323/
+permalink: beer/costa-rican-coffee-extra-porter-buxton-brewery/
 canonical: https://www.instagram.com/p/CABetL-pgr7/
 tags:
   - porter

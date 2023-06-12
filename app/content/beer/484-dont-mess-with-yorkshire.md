@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/northern-monk/
 date: '2021-05-04'
-permalink: beer/dont-mess-with-yorkshire-northern-monk-484/
+permalink: beer/dont-mess-with-yorkshire-northern-monk/
 canonical: https://www.instagram.com/p/COd6B4pJdxn/
 ---
 

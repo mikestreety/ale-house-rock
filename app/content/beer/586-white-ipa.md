@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/big-hug-brewing/
 date: '2021-10-30'
-permalink: beer/white-ipa-big-hug-brewing-586/
+permalink: beer/white-ipa-big-hug-brewing/
 canonical: https://www.instagram.com/p/CVqkA4KKICj/
 ---
 

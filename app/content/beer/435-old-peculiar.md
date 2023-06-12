@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/theakston/
 date: '2021-02-20'
-permalink: beer/old-peculiar-theakston-435/
+permalink: beer/old-peculiar-theakston/
 canonical: https://www.instagram.com/p/CLgo-sOFnGX/
 ---
 

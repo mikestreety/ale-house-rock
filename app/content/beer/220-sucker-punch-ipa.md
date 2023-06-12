@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/octopus-energy/
 date: '2019-04-27'
-permalink: beer/sucker-punch-ipa-octopus-energy-220/
+permalink: beer/sucker-punch-ipa-octopus-energy/
 canonical: https://www.instagram.com/p/BwxDkVjFj5n/
 tags:
 

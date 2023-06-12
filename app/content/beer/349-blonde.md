@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/saltaire/
 date: '2020-07-01'
-permalink: beer/blonde-saltaire-349/
+permalink: beer/blonde-saltaire/
 canonical: https://www.instagram.com/p/CCG1yy5JeP4/
 ---
 

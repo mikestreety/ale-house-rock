@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/gun-brewery/
 date: '2020-12-26'
-permalink: beer/scaramanga-gun-brewery-400/
+permalink: beer/scaramanga-gun-brewery/
 canonical: https://www.instagram.com/p/CJRaBE9Fdhy/
 ---
 

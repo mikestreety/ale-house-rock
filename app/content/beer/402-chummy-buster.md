@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/gun-brewery/
 date: '2020-12-28'
-permalink: beer/chummy-buster-gun-brewery-402/
+permalink: beer/chummy-buster-gun-brewery/
 canonical: https://www.instagram.com/p/CJW9WJol_OB/
 ---
 

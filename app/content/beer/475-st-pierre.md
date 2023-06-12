@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/st-pieters-abbey/
 date: '2021-04-25'
-permalink: beer/st-pierre-st-pieters-abbey-475/
+permalink: beer/st-pierre-st-pieters-abbey/
 canonical: https://www.instagram.com/p/COGQwlHlFSg/
 ---
 

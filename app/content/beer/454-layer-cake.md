@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/brewdog/
 date: '2021-03-20'
-permalink: beer/layer-cake-brewdog-454/
+permalink: beer/layer-cake-brewdog/
 canonical: https://www.instagram.com/p/CMqKGX7pU3-/
 ---
 

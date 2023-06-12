@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/greene-king/
 date: '2018-10-31'
-permalink: beer/ruddles-best-greene-king-169/
+permalink: beer/ruddles-best-greene-king/
 canonical: https://www.instagram.com/p/BplotbBgICY/
 tags:
 

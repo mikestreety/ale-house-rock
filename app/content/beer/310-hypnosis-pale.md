@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/loud-shirt-brewing-company/
 date: '2020-04-19'
-permalink: beer/hypnosis-pale-loud-shirt-brewing-company-310/
+permalink: beer/hypnosis-pale-loud-shirt-brewing-company/
 canonical: https://www.instagram.com/p/B_LXG-mJR0I/
 tags:
 

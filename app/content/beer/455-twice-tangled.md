@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/badger/
 date: '2021-03-21'
-permalink: beer/twice-tangled-badger-455/
+permalink: beer/twice-tangled-badger/
 canonical: https://www.instagram.com/p/CMsqrempWzE/
 tags:
 

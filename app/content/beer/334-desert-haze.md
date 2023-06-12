@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/gipsy-hill/
 date: '2020-05-28'
-permalink: beer/desert-haze-gipsy-hill-334/
+permalink: beer/desert-haze-gipsy-hill/
 canonical: https://www.instagram.com/p/CAv2EQqp-Wg/
 tags:
 

@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/badger/
 date: '2017-05-30'
-permalink: beer/golden-champion-badger-51/
+permalink: beer/golden-champion-badger/
 canonical: https://www.instagram.com/p/BUub4Ehlb_8/
 tags:
   - goldenale

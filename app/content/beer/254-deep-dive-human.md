@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/cloudwater/
 date: '2019-11-16'
-permalink: beer/deep-dive-human-cloudwater-254/
+permalink: beer/deep-dive-human-cloudwater/
 canonical: https://www.instagram.com/p/B48QpkWlcRx/
 ---
 

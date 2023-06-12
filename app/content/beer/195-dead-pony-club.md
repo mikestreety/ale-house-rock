@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/brewdog/
 date: '2019-01-06'
-permalink: beer/dead-pony-club-brewdog-195/
+permalink: beer/dead-pony-club-brewdog/
 canonical: https://www.instagram.com/p/BsTgqplg0AH/
 tags:
 

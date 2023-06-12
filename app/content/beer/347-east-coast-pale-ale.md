@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/bear-island/
 date: '2020-06-21'
-permalink: beer/east-coast-pale-ale-bear-island-347/
+permalink: beer/east-coast-pale-ale-bear-island/
 canonical: https://www.instagram.com/p/CBsVIGmpaSQ/
 tags:
 

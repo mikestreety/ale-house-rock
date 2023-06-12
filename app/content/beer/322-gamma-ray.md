@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/beavertown/
 date: '2020-05-09'
-permalink: beer/gamma-ray-beavertown-322/
+permalink: beer/gamma-ray-beavertown/
 canonical: https://www.instagram.com/p/B_-zQlrp1Lm/
 ---
 

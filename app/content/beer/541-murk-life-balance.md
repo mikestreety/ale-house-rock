@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/magic-rock-brewing/
 date: '2021-07-25'
-permalink: beer/murk-life-balance-magic-rock-brewing-541/
+permalink: beer/murk-life-balance-magic-rock-brewing/
 canonical: https://www.instagram.com/p/CRw1skGJ4R-/
 ---
 

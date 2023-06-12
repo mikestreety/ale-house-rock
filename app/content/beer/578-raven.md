@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/black-tor/
 date: '2021-10-03'
-permalink: beer/raven-black-tor-578/
+permalink: beer/raven-black-tor/
 canonical: https://www.instagram.com/p/CUlOQ5_Koc9/
 ---
 

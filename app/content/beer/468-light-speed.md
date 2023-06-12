@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/brewdog/
 date: '2021-04-11'
-permalink: beer/light-speed-brewdog-468/
+permalink: beer/light-speed-brewdog/
 canonical: https://www.instagram.com/p/CNiqAftp2LF/
 ---
 

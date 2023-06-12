@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/deya-brewing-company/
 date: '2019-11-11'
-permalink: beer/steady-rolling-man-deya-brewing-company-251/
+permalink: beer/steady-rolling-man-deya-brewing-company/
 canonical: https://www.instagram.com/p/B4t6vMmF8lA/
 tags:
 

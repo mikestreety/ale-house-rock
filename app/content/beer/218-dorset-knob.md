@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/dorset-brewing-company/
 date: '2019-04-14'
-permalink: beer/dorset-knob-dorset-brewing-company-218/
+permalink: beer/dorset-knob-dorset-brewing-company/
 canonical: https://www.instagram.com/p/BwPouFmlQFU/
 tags:
 

@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/open-gate-brewery/
 date: '2018-06-20'
-permalink: beer/hop-house-lager-open-gate-brewery-116/
+permalink: beer/hop-house-lager-open-gate-brewery/
 canonical: https://www.instagram.com/p/BkQwxjnFkP0/
 tags:
   - lager

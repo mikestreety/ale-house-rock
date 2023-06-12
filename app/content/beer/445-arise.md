@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/burning-sky/
 date: '2021-03-06'
-permalink: beer/arise-burning-sky-445/
+permalink: beer/arise-burning-sky/
 canonical: https://www.instagram.com/p/CMFqdsWlp7M/
 ---
 

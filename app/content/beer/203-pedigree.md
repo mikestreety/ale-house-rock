@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/marstons/
 date: '2019-01-25'
-permalink: beer/pedigree-marstons-203/
+permalink: beer/pedigree-marstons/
 canonical: https://www.instagram.com/p/BtDK3qRAQh7/
 tags:
 

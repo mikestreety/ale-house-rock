@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/maltus-faber/
 date: '2018-12-08'
-permalink: beer/amber-ale-maltus-faber-181/
+permalink: beer/amber-ale-maltus-faber/
 canonical: https://www.instagram.com/p/BrIpfKxAf3R/
 tags:
 

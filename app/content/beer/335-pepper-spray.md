@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/people-like-us/
 date: '2020-05-29'
-permalink: beer/pepper-spray-people-like-us-335/
+permalink: beer/pepper-spray-people-like-us/
 canonical: https://www.instagram.com/p/CAyau6rJgs0/
 tags:
 

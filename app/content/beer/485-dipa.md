@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/unbarred-brewery/
 date: '2021-05-07'
-permalink: beer/dipa-unbarred-485/
+permalink: beer/dipa-unbarred/
 canonical: https://www.instagram.com/p/COlXvg2p7H5/
 ---
 

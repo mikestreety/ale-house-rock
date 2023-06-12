@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/goose-island/
 date: '2021-07-10'
-permalink: beer/midway-goose-island-529/
+permalink: beer/midway-goose-island/
 canonical: https://www.instagram.com/p/CRI-j3QKA_P/
 ---
 

@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/palmers/
 date: '2017-09-03'
-permalink: beer/dorset-gold-palmers-64/
+permalink: beer/dorset-gold-palmers/
 canonical: https://www.instagram.com/p/BYloIQEF5CA/
 ---
 

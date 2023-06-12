@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/riverside-brewery/
 date: '2021-02-13'
-permalink: beer/sneaky-steamer-riverside-brewery-433/
+permalink: beer/sneaky-steamer-riverside-brewery/
 canonical: https://www.instagram.com/p/CLPbJtDlLk-/
 ---
 

@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/adnams/
 date: '2020-03-07'
-permalink: beer/ghost-ship-05-adnams-289/
+permalink: beer/ghost-ship-05-adnams/
 canonical: https://www.instagram.com/p/B9bU-dvpFJC/
 tags:
 

@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/shepherd-neame/
 date: '2021-03-11'
-permalink: beer/bishops-finger-shepherd-neame-448/
+permalink: beer/bishops-finger-shepherd-neame/
 canonical: https://www.instagram.com/p/CMS4Ie9Fh1c/
 tags:
 

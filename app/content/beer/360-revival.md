@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/moor-beer-company/
 date: '2020-07-19'
-permalink: beer/revival-moor-beer-company-360/
+permalink: beer/revival-moor-beer-company/
 canonical: https://www.instagram.com/p/CC1h9XPpChj/
 ---
 

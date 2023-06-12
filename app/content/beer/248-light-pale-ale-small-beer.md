@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/wiper-and-true/
 date: '2019-10-26'
-permalink: beer/light-pale-ale-small-beer-wiper-and-true-248/
+permalink: beer/light-pale-ale-small-beer-wiper-and-true/
 canonical: https://www.instagram.com/p/B4GQiS8lV5o/
 tags:
 

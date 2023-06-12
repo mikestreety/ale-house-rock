@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/first-chop-brewing-arm/
 date: '2020-07-16'
-permalink: beer/new-zealand-ultra-pale-first-chop-brewing-arm-359/
+permalink: beer/new-zealand-ultra-pale-first-chop-brewing-arm/
 canonical: https://www.instagram.com/p/CCtt1xSJwPM/
 ---
 

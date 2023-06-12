@@ -5,7 +5,7 @@ rating: 5
 breweries:
   - brewery/badger/
 date: '2020-05-26'
-permalink: beer/the-cranborne-poacher-badger-333/
+permalink: beer/the-cranborne-poacher-badger/
 canonical: https://www.instagram.com/p/CApe_f4JGJ5/
 tags:
 

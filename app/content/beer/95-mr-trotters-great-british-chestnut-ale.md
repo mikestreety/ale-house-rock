@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/lancaster-brewing-company/
 date: '2018-01-12'
-permalink: beer/mr-trotters-great-british-chestnut-ale-lancaster-brewing-company-95/
+permalink: beer/mr-trotters-great-british-chestnut-ale-lancaster-brewing-company/
 canonical: https://www.instagram.com/p/Bd3Lr6lFH3T/
 tags:
 

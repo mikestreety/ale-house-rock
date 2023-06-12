@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/jacks-abbey/
 date: '2021-01-23'
-permalink: beer/shipping-out-of-boston-jacks-abbey-423/
+permalink: beer/shipping-out-of-boston-jacks-abbey/
 canonical: https://www.instagram.com/p/CKZ7b0NFW5i/
 tags:
   - lager

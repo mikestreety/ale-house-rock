@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/mikkeller/
 date: '2020-03-15'
-permalink: beer/heated-seats-mikkeller-291/
+permalink: beer/heated-seats-mikkeller/
 canonical: https://www.instagram.com/p/B9w6A4PJbUo/
 ---
 

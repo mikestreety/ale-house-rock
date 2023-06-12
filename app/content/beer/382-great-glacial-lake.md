@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/burnt-mill-brewery/
 date: '2020-11-08'
-permalink: beer/great-glacial-lake-burnt-mill-brewery-382/
+permalink: beer/great-glacial-lake-burnt-mill-brewery/
 canonical: https://www.instagram.com/p/CHWPM2fln_L/
 ---
 

@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/bear-republic/
 date: '2019-01-28'
-permalink: beer/grand-am-bear-republic-204/
+permalink: beer/grand-am-bear-republic/
 canonical: https://www.instagram.com/p/BtMIdAzlGW_/
 tags:
 

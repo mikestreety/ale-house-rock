@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/aldi/
 date: '2021-06-23'
-permalink: beer/lunar-lager-aldi-520/
+permalink: beer/lunar-lager-aldi/
 canonical: https://www.instagram.com/p/CQepqsTpJyL/
 ---
 

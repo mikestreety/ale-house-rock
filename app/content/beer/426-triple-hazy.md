@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/brewdog/
 date: '2021-01-30'
-permalink: beer/triple-hazy-brewdog-426/
+permalink: beer/triple-hazy-brewdog/
 canonical: https://www.instagram.com/p/CKqS4ytl8yZ/
 ---
 

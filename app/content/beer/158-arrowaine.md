@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/wychwood-brewery/
 date: '2018-09-20'
-permalink: beer/arrowaine-wychwood-brewery-158/
+permalink: beer/arrowaine-wychwood-brewery/
 canonical: https://www.instagram.com/p/Bn9UyCuhVK3/
 tags:
 

@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/marstons/
 date: '2018-07-22'
-permalink: beer/wainwright-the-golden-ale-marstons-132/
+permalink: beer/wainwright-the-golden-ale-marstons/
 canonical: https://www.instagram.com/p/Bli5WGaFsBJ/
 tags:
 

@@ -6,7 +6,7 @@ breweries:
   - brewery/vocation-brewery/
   - brewery/sureshot-brewing/
 date: '2021-07-29'
-permalink: beer/15-mile-round-trip-vocation-brewery-sureshot-brewing-543/
+permalink: beer/15-mile-round-trip-vocation-brewery-sureshot-brewing/
 canonical: https://www.instagram.com/p/CR7TOj3phRV/
 ---
 

@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/wychwood-brewery/
 date: '2018-08-19'
-permalink: beer/fire-catcher-wychwood-brewery-145/
+permalink: beer/fire-catcher-wychwood-brewery/
 canonical: https://www.instagram.com/p/BmrAzyolWy1/
 tags:
 

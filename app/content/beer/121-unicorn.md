@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/robinsons-brewery/
 date: '2018-06-28'
-permalink: beer/unicorn-robinsons-brewery-121/
+permalink: beer/unicorn-robinsons-brewery/
 canonical: https://www.instagram.com/p/BklSEYHlSfQ/
 tags:
 

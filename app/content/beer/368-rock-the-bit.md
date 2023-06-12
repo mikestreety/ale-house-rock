@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/pollys/
 date: '2020-08-23'
-permalink: beer/rock-the-bit-pollys-368/
+permalink: beer/rock-the-bit-pollys/
 canonical: https://www.instagram.com/p/CEPMocsJJsi/
 ---
 

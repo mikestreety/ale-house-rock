@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/buxton-brewery/
 date: '2020-05-01'
-permalink: beer/shelterstone-buxton-brewery-317/
+permalink: beer/shelterstone-buxton-brewery/
 canonical: https://www.instagram.com/p/B_p6aSTpSzy/
 tags:
 

@@ -6,7 +6,7 @@ breweries:
   - brewery/cellar-head/
   - brewery/only-with-love/
 date: '2021-02-20'
-permalink: beer/love-bug-cellar-head-only-with-love-437/
+permalink: beer/love-bug-cellar-head-only-with-love/
 canonical: https://www.instagram.com/p/CLiEqMzlZft/
 ---
 

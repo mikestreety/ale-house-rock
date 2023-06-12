@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/bath-ales/
 date: '2019-09-20'
-permalink: beer/lansdown-bath-ales-237/
+permalink: beer/lansdown-bath-ales/
 canonical: https://www.instagram.com/p/B2pVClgFNFD/
 ---
 

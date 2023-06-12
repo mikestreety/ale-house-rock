@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/the-wild-beer-company/
 date: '2020-05-14'
-permalink: beer/madness-ipa-the-wild-beer-company-326/
+permalink: beer/madness-ipa-the-wild-beer-company/
 canonical: https://www.instagram.com/p/CALvkaLJvtZ/
 tags:
 

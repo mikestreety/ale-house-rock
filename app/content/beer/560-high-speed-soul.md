@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/pollys/
 date: '2021-08-22'
-permalink: beer/high-speed-soul-pollys-560/
+permalink: beer/high-speed-soul-pollys/
 canonical: https://www.instagram.com/p/CS5LH8oqKs_/
 ---
 

@@ -6,7 +6,7 @@ breweries:
   - brewery/gun-brewery/
   - brewery/laine-brew-co/
 date: '2021-01-08'
-permalink: beer/brighton-tea-party-gun-brewery-north-laine-407/
+permalink: beer/brighton-tea-party-gun-brewery-north-laine/
 aliases:
   - brighton-tea-party-gin-brewery-north-laine-407
 canonical: https://www.instagram.com/p/CJy2LBPlQfK/

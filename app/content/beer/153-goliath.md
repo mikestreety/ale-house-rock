@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/wychwood-brewery/
 date: '2018-09-06'
-permalink: beer/goliath-wychwood-brewery-153/
+permalink: beer/goliath-wychwood-brewery/
 canonical: https://www.instagram.com/p/BnZY9A-FePQ/
 tags:
 

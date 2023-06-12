@@ -6,7 +6,7 @@ breweries:
   - brewery/westerham-brewery/
   - brewery/marks-and-spencer/
 date: '2016-12-07'
-permalink: beer/9-hop-westerham-marks-and-spencer-8/
+permalink: beer/9-hop-westerham-marks-and-spencer/
 aliases:
   - 9-hop-westerham-8
 canonical: https://www.instagram.com/p/BNuik5XgaTr/

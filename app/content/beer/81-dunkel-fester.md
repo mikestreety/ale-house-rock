@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/wychwood-brewery/
 date: '2017-11-04'
-permalink: beer/dunkel-fester-wychwood-brewery-81/
+permalink: beer/dunkel-fester-wychwood-brewery/
 canonical: https://www.instagram.com/p/BbFn4lnlVfT/
 tags:
 

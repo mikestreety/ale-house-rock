@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/saltdean-brewery/
 date: '2019-10-14'
-permalink: beer/burton-ale-saltdean-brewery-244/
+permalink: beer/burton-ale-saltdean-brewery/
 canonical: https://www.instagram.com/p/B3nFX0VlgLp/
 tags:
 

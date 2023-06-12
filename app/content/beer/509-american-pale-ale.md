@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/toast-ale/
 date: '2021-06-12'
-permalink: beer/american-pale-ale-toast-509/
+permalink: beer/american-pale-ale-toast/
 canonical: https://www.instagram.com/p/CQCUX6KFYsi/
 ---
 

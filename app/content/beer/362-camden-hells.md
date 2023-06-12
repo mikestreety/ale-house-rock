@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/camden-town-brewery/
 date: '2020-07-23'
-permalink: beer/camden-hells-camden-town-brewery-362/
+permalink: beer/camden-hells-camden-town-brewery/
 canonical: https://www.instagram.com/p/CDAA_wVJbsO/
 tags:
 

@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/arundel-brewery/
 date: '2020-02-15'
-permalink: beer/sussex-gold-arundel-brewery-281/
+permalink: beer/sussex-gold-arundel-brewery/
 canonical: https://www.instagram.com/p/B8mx00-pRVr/
 ---
 

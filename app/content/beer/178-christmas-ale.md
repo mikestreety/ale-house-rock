@@ -5,7 +5,7 @@ rating: 7
 breweries:
   - brewery/adnams/
 date: '2018-12-02'
-permalink: beer/christmas-ale-adnams-178/
+permalink: beer/christmas-ale-adnams/
 canonical: https://www.instagram.com/p/Bq4r334gG4f/
 tags:
 

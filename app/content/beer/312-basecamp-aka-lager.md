@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/fourpure-brewing-company/
 date: '2020-04-25'
-permalink: beer/basecamp-aka-lager-fourpure-brewing-company-312/
+permalink: beer/basecamp-aka-lager-fourpure-brewing-company/
 canonical: https://www.instagram.com/p/B_Z7niMpbFa/
 tags:
 

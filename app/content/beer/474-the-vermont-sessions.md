@@ -6,7 +6,7 @@ breweries:
   - brewery/brewdog/
   - brewery/northern-monk/
 date: '2021-04-22'
-permalink: beer/the-vermont-sessions-brewdog-northern-monk-474/
+permalink: beer/the-vermont-sessions-brewdog-northern-monk/
 canonical: https://www.instagram.com/p/CN-0nmSlGT3/
 ---
 

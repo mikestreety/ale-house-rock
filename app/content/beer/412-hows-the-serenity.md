@@ -5,7 +5,7 @@ rating: 9
 breweries:
   - brewery/gun-brewery/
 date: '2021-01-11'
-permalink: beer/hows-the-serenity-gun-brewery-412/
+permalink: beer/hows-the-serenity-gun-brewery/
 canonical: https://www.instagram.com/p/CJ6Z_iIladI/
 ---
 

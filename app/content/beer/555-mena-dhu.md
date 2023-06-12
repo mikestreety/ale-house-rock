@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/st-austell-brewery/
 date: '2021-08-14'
-permalink: beer/mena-dhu-st-austell-brewery-555/
+permalink: beer/mena-dhu-st-austell-brewery/
 canonical: https://www.instagram.com/p/CSkZW96KgDR/
 ---
 

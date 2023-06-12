@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/northern-monk/
 date: '2021-03-14'
-permalink: beer/stars-and-stripes-northern-monk-450/
+permalink: beer/stars-and-stripes-northern-monk/
 canonical: https://www.instagram.com/p/CMZcnTjFmit/
 tags:
 

@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/st-austell-brewery/
 date: '2021-02-08'
-permalink: beer/proper-job-st-austell-brewery-430/
+permalink: beer/proper-job-st-austell-brewery/
 canonical: https://www.instagram.com/p/CLCrmKSlX3o/
 ---
 

@@ -5,7 +5,7 @@ rating: 10
 breweries:
   - brewery/northern-monk/
 date: '2020-06-21'
-permalink: beer/faith-northern-monk-348/
+permalink: beer/faith-northern-monk/
 canonical: https://www.instagram.com/p/CBtd9fpJVka/
 tags:
 

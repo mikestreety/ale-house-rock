@@ -6,7 +6,7 @@ serving: Bottle
 breweries:
   - brewery/firebird-brewing-company/
 date: '2017-07-14'
-permalink: beer/old-ale-firebird-brewing-company-56/
+permalink: beer/old-ale-firebird-brewing-company/
 canonical: https://www.instagram.com/p/BWi11C8lub6/
 tags:
   - oldale

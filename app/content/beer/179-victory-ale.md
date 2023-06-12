@@ -5,7 +5,7 @@ rating: 3
 breweries:
   - brewery/batemans/
 date: '2018-12-04'
-permalink: beer/victory-ale-batemans-179/
+permalink: beer/victory-ale-batemans/
 canonical: https://www.instagram.com/p/Bq-I5lKAdvg/
 tags:
 

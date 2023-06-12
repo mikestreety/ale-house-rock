@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/loud-shirt-brewing-company/
 date: '2020-04-17'
-permalink: beer/psychedelic-ipa-loud-shirt-brewing-company-306/
+permalink: beer/psychedelic-ipa-loud-shirt-brewing-company/
 canonical: https://www.instagram.com/p/B_FicJdpZjB/
 tags:
 

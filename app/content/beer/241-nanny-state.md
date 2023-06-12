@@ -5,7 +5,7 @@ rating: 6
 breweries:
   - brewery/brewdog/
 date: '2019-09-29'
-permalink: beer/nanny-state-brewdog-241/
+permalink: beer/nanny-state-brewdog/
 canonical: https://www.instagram.com/p/B3AH3oAltmK/
 ---
 

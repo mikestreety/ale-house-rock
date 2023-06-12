@@ -5,7 +5,7 @@ rating: 8
 breweries:
   - brewery/thornbridge/
 date: '2020-07-04'
-permalink: beer/market-porter-thornbridge-353/
+permalink: beer/market-porter-thornbridge/
 canonical: https://www.instagram.com/p/CCOluH3pwV1/
 tags:
   - porter

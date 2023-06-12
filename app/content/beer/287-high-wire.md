@@ -5,7 +5,7 @@ rating: 4
 breweries:
   - brewery/magic-rock-brewing/
 date: '2020-02-29'
-permalink: beer/high-wire-magic-rock-brewing-287/
+permalink: beer/high-wire-magic-rock-brewing/
 canonical: https://www.instagram.com/p/B9KjMcxpWJs/
 tags:
 
