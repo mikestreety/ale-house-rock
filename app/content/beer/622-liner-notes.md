@@ -1,0 +1,12 @@
+---
+number: 622
+title: Liner Notes
+rating: 9
+breweries:
+  - brewery/unbarred-brewery/
+date: '2022-02-24'
+permalink: beer/liner-notes-unbarred/
+canonical: https://www.instagram.com/p/CaYIiHYq8xC/
+---
+
+Hot on the heals of the perfect DIPA, this cracking "tropical pale" went down a storm. Smooth and fruity and I could easily smash a few of these.
