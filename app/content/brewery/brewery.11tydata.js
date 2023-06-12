@@ -3,7 +3,7 @@ const meanMedianMode = require('../../filters/meanMedianMode');
 module.exports = {
 	eleventyComputed: {
 		seoTitle: data => {
-			return `${data.title}`
+			return `${data.title} - Beers from the brewery`
 		},
 		beers: (data) =>  data.collections.beer.filter(a => a.data.breweries.includes(data.permalink))
 			.sort((a, b) => parseInt(a.data.number) + parseInt(b.data.number)),

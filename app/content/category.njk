@@ -5,6 +5,8 @@ pagination:
   size: 1
   alias: tag
 permalink: /category/{{ tag }}/
+eleventyComputed:
+  seoTitle: "{{ tag }}"
 ---
 
 <div class="container blog-container">
