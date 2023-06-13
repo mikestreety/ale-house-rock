@@ -4,6 +4,12 @@ layout: default.njk
 
 <main id="beers">
 	<h1>{{ title }}</h1>
+	<p>
+		{% if location %}{{ location }}, {% endif %}
+		{% if website %}<a href="{{ website }}">{{ website }}</a>, {% endif %}
+		{% if instagram %}<a href="https://www.instagram.com/{{ instagram }}">Instagram</a>, {% endif %}
+		{% if untappd %}<a href="https://www.untappd.com/{{ untappd }}">Untappd</a>, {% endif %}
+	</p>
 	<div class="statWrap">
 		<div class="statbox">
 			<div class="stat">{{ beers.length }}</div>
