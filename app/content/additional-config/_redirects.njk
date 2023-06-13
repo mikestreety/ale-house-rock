@@ -7,6 +7,10 @@ sitemapIgnore: true
 {%- for item in collections.beer %}
 /b/{{ item.data.number }}/	{{ item.url }}
 {{ item.url | replace( r/\/$/ , "" ) }}-{{ item.data.number }}/	{{ item.url }}
+{{ '' }}
+{%- if item.data.number > 598 and item.data.number < 813 -%}
+{{ item.url | replace( r/\/$/ , "" ) }}-{{ item.data.number + 1 }}/	{{ item.url }}
+{%- endif -%}
 
 	{%- if item.data.aliases -%}
 		{%- for alias in item.data.aliases %}
