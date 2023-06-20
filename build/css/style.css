@@ -249,7 +249,8 @@ table td {
 }
 
 .list li,
-.singlebeer .wrapper {
+.singlebeer .wrapper,
+.singlebrewery .intro {
 	margin-bottom: var(--gutter);
 	display: flex;
 	align-items: stretch;
@@ -265,6 +266,7 @@ table td {
 	padding-top: var(--gutter);
 }
 .singlebeer img,
+.singlebrewery .intro img,
 .list img {
 	margin-right: var(--gutter);
 
@@ -452,7 +454,19 @@ a.title:hover {
 	padding: 0.5rem;
 }
 
-
+.singlebrewery h1 {
+	margin-top: 0;
+}
+.singlebrewery h1 + p {
+	font-weight: normal;
+	font-size: 1.1rem;
+	margin-top: -1rem;
+	font-weight: bold;
+	color: var(--neutralDark);
+}
+.singlebrewery .intro ul {
+	padding-left: 0.9em;
+}
 @media screen and (max-width: 35em) {
 	aside button {
 		font-size: 0.7rem;

@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 const meanMedianMode = require('../../filters/meanMedianMode');
 
 module.exports = {
@@ -7,7 +9,14 @@ module.exports = {
 		},
 		beers: (data) =>  data.collections.beer.filter(a => a.data.breweries.includes(data.permalink))
 			.sort((a, b) => parseInt(a.data.number) + parseInt(b.data.number)),
-
+		imagePath: data => {
+			let path = `/images/${data.permalink}image.webp`;
+			if (fs.existsSync(process.cwd() + '/app/content' + path)) {
+				return path;
+			} else {
+				return false;
+			}
+		},
 		stats: data => {
 			if(data.beers) {
 				let ratings = data.beers
