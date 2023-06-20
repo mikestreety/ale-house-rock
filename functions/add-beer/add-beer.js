@@ -158,7 +158,7 @@ exports.handler = async (event, context) => {
 					.toBuffer();
 				commitFiles.push({
 					action: 'create',
-					filePath: `app/content/images/breweries/${brewery.slug}/image.webp`,
+					filePath: `app/content/images/brewery/${brewery.slug}/image.webp`,
 					content: imageLarge.toString('base64'),
 					encoding: 'base64'
 				});
