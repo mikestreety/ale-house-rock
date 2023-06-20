@@ -99,20 +99,16 @@ exports.handler = async (event, context) => {
 		breweryPaths = [],
 		brewerySlugs = [];
 
-	for (const breweryName of review.breweries) {
-
-		let slug = slugify(breweryName);
+	for (const brewery of review.brewery_details) {
+		let slug = slugify(breweryDetails.title);
 
 		// If we know this brewery by another name
-		if(breweryAliases[slug]) {
+		if (breweryAliases[slug]) {
 			slug = breweryAliases[slug];
 		}
 
-		let brewery = {
-			title: breweryName,
-			permalink: `brewery/${slug}/`,
-			slug
-		};
+		brewery.permalink = `brewery/${slug}/`;
+		brewery.slug = slug;
 
 		breweries.push(brewery);
 		brewerySlugs.push(slug);
@@ -144,8 +140,6 @@ exports.handler = async (event, context) => {
 		let fileExists = false,
 			filePath = 'app/content/brewery/' + brewery.slug + '.md';
 
-		delete brewery.slug;
-
 		try {
 			// Try getting the original file
 			await api.RepositoryFiles.showRaw(repoId, filePath, {ref: repoBranch});
@@ -155,6 +149,27 @@ exports.handler = async (event, context) => {
 		}
 
 		if(!fileExists) {
+			if (brewery.image) {
+				let image = await fetch(brewery.image);
+				let imageBuffer = await image.buffer()
+
+				let imageLarge = await sharp(imageBuffer)
+					.resize(300, 300, {
+						fit: 'contain', 'background': { r: 255, g: 255, b: 255, alpha: 1 }
+					})
+					.webp({ lossless: true })
+					.toBuffer();
+				commitFiles.push({
+					action: 'create',
+					filePath: `app/content/images/breweries/${brewery.slug}/image.webp`,
+					content: imageLarge.toString('base64'),
+					encoding: 'base64'
+				});
+
+			}
+
+			delete brewery.slug;
+
 			commitFiles.push({
 				action: 'create',
 				filePath,
