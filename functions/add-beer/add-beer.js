@@ -136,7 +136,7 @@ exports.handler = async (event, context) => {
 	review.number = parseFloat(Object.keys(beerCanonicals).length + 1);
 	review.breweries = breweryPaths;
 	review.permalink = `beer/${slugify(
-		`${review.title} ${brewerySlugs.join(' ')} ${review.number}`
+		`${review.title} ${brewerySlugs.join(' ')}`
 	)}/`;
 
 
