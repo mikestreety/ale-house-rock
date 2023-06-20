@@ -56,9 +56,6 @@ exports.handler = async (event, context) => {
 		}
 	}
 
-	// Sort the breweries
-	review.breweries.sort();
-
 	// Get existing posts and make sure we've not done this before
 	let beerCanonicals = await fetch('https://alehouse.rocks/api/beers/canonicals.json')
 		.then(data => data.json());
@@ -99,7 +96,7 @@ exports.handler = async (event, context) => {
 		breweryPaths = [],
 		brewerySlugs = [];
 
-	for (const brewery of review.brewery_details) {
+	for (const brewery of review.breweries) {
 		let slug = slugify(brewery.title);
 
 		// If we know this brewery by another name
@@ -145,7 +142,7 @@ exports.handler = async (event, context) => {
 			await api.RepositoryFiles.showRaw(repoId, filePath, {ref: repoBranch});
 			fileExists = true;
 		} catch(e) {
-			console.log('Brewery does not exists');
+			console.log('Brewery does not exist');
 		}
 
 		if(!fileExists) {
@@ -176,7 +173,7 @@ exports.handler = async (event, context) => {
 			commitFiles.push({
 				action: 'create',
 				filePath,
-				content: matter.stringify("\n", brewery, description),
+				content: matter.stringify("\n" + description, brewery),
 			});
 		}
 	}
@@ -242,8 +239,6 @@ exports.handler = async (event, context) => {
 	delete review.token;
 	delete review.status;
 	delete review.image;
-	delete review.brewery_links;
-	delete review.brewery_details;
 
 	commitFiles.push({
 		action: 'create',
