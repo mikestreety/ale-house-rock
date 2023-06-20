@@ -100,7 +100,7 @@ exports.handler = async (event, context) => {
 		brewerySlugs = [];
 
 	for (const brewery of review.brewery_details) {
-		let slug = slugify(breweryDetails.title);
+		let slug = slugify(brewery.title);
 
 		// If we know this brewery by another name
 		if (breweryAliases[slug]) {
@@ -168,12 +168,15 @@ exports.handler = async (event, context) => {
 
 			}
 
+			let description = brewery.description;
+			delete brewery.image;
 			delete brewery.slug;
+			delete brewery.description;
 
 			commitFiles.push({
 				action: 'create',
 				filePath,
-				content: matter.stringify("\n", brewery),
+				content: matter.stringify("\n", brewery, description),
 			});
 		}
 	}
@@ -239,6 +242,8 @@ exports.handler = async (event, context) => {
 	delete review.token;
 	delete review.status;
 	delete review.image;
+	delete review.brewery_links;
+	delete review.brewery_details;
 
 	commitFiles.push({
 		action: 'create',
