@@ -1,6 +1,6 @@
 ---
 title: JW Lees and Co
-parmalink: brewery/jw-lees-and-co/
+permalink: brewery/jw-lees-and-co/
 aliases:
   - marco-pierre-white
 location: 'Middleton, Greater Manchester England'

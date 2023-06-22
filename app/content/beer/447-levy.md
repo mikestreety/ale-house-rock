@@ -3,7 +3,7 @@ number: 447
 title: McEwan's Levy
 rating: 4
 breweries:
-  - brewery/jw-lees-and-co/
+  - brewery/eagle-brewery/
 date: '2021-03-10'
 permalink: beer/levy-mcewans/
 canonical: https://www.instagram.com/p/CMPFll0lEWp/

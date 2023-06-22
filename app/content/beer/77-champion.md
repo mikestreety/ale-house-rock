@@ -3,7 +3,7 @@ number: 77
 title: McEwan's Champion
 rating: 7
 breweries:
-  - brewery/jw-lees-and-co/
+  - brewery/eagle-brewery/
 date: '2017-11-03'
 permalink: beer/champion-mcewans/
 canonical: https://www.instagram.com/p/BbDDDXmFDpm/
