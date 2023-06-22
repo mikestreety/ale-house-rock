@@ -1,9 +1,9 @@
 ---
 number: 127
-title: Pale
+title: The Rev. James Pale
 rating: 6
 breweries:
-  - brewery/the-rev-james/
+  - brewery/brains/
 date: '2018-07-10'
 permalink: beer/pale-the-rev-james/
 canonical: https://www.instagram.com/p/BlD40FGFKuu/

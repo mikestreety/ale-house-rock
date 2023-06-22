@@ -1,6 +1,8 @@
 ---
 title: Sainsbury's
 permalink: brewery/sainsburys/
+aliases:
+  - hyde-wilde
 location: England
 style: Bar / Restaurant / Store
 website: 'http://www.sainsburys.co.uk'

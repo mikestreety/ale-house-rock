@@ -5,7 +5,7 @@ rating: 6
 serving: Bottle
 purchased: shop/lidl/
 breweries:
-  - brewery/hatherwood-craft-beer-company/
+  - brewery/lidl/
 date: '2016-12-09'
 permalink: beer/the-golden-goose-hatherwood-craft-beer-company/
 canonical: https://www.instagram.com/p/BNz17CPAJVG/

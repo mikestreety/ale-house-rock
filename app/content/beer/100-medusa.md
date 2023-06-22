@@ -3,7 +3,7 @@ number: 100
 title: Medusa
 rating: 7
 breweries:
-  - brewery/harpers-brewing-company/
+  - brewery/aldi/
 date: '2018-03-03'
 permalink: beer/medusa-harpers-brewing-company/
 canonical: https://www.instagram.com/p/Bf31vvslasu/

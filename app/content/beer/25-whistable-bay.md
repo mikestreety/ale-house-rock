@@ -4,7 +4,7 @@ title: Whitstable Bay
 rating: 8
 serving: Bottle
 breweries:
-  - brewery/the-faversham-steam-brewery/
+  - brewery/shepherd-neame/
 date: '2016-12-23'
 permalink: beer/whitstable-bay-the-faversham-steam-brewery/
 aliases:

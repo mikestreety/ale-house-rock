@@ -3,7 +3,7 @@ number: 665
 title: No Worries - Grapefruit
 rating: 1
 breweries:
-  - brewery/lervig/
+  - brewery/lervig-aktiebryggeri/
 date: '2022-06-02'
 permalink: beer/no-worries-grapefruit-lervig/
 canonical: https://www.instagram.com/p/CeTCj1XKivr/

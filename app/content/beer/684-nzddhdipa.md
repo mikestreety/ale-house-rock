@@ -3,7 +3,7 @@ number: 684
 title: NZDDHDIPA
 rating: 6
 breweries:
-  - brewery/lervig/
+  - brewery/lervig-aktiebryggeri/
 date: '2022-07-16'
 permalink: beer/nzddhdipa-lervig/
 canonical: https://www.instagram.com/p/CgFRttNq3b6/

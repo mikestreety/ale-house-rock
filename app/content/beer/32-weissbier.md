@@ -1,9 +1,9 @@
 ---
 number: 32
-title: Weissbier
+title: Rheinbacher Weissbier
 rating: 7
 breweries:
-  - brewery/rheinbacher/
+  - brewery/aldi/
 date: '2017-02-09'
 permalink: beer/weissbier-rheinbacher/
 canonical: https://www.instagram.com/p/BQTTr-RAj4V/

@@ -1,22 +1,13 @@
 ---
 number: 298
-title: Stateside IPA
+title: The Buckhorn Brewery Stateside IPA
 rating: 3
 breweries:
-  - brewery/the-buckhorn-brewery/
+  - brewery/aldi/
 date: '2020-04-03'
 permalink: beer/stateside-ipa-the-buckhorn-brewery/
 canonical: https://www.instagram.com/p/B-iPC5xJz6X/
 tags:
-
-
-
-
-
-
-
-
-
   - ipa
 ---
 

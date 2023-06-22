@@ -3,7 +3,7 @@ number: 388
 title: The Hop Stepper
 rating: 8
 breweries:
-  - brewery/the-hop-foundry/
+  - brewery/aldi/
 date: '2020-11-26'
 permalink: beer/the-hop-stepper-the-hop-foundry/
 canonical: https://www.instagram.com/p/CIEX1WypXLk/

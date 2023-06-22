@@ -1,9 +1,9 @@
 ---
 number: 96
-title: Rye
+title: The Rev. James Rye
 rating: 8
 breweries:
-  - brewery/the-rev-james/
+  - brewery/brains/
 date: '2018-01-14'
 permalink: beer/rye-the-rev-james/
 canonical: https://www.instagram.com/p/Bd8fo7KFUOy/

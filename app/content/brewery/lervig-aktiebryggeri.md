@@ -1,6 +1,8 @@
 ---
 title: LERVIG
 permalink: brewery/lervig-aktiebryggeri/
+aliases:
+  - lervig
 location: 'Stavanger, Rogaland Norway'
 style: Regional Brewery
 website: 'https://lervig.no'

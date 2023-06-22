@@ -3,7 +3,7 @@ number: 277
 title: Hop Hunter Session IPA
 rating: 7
 breweries:
-  - brewery/hatherwood-craft-beer-company/
+  - brewery/lidl/
 date: '2020-02-02'
 permalink: beer/hop-hunter-session-ipa-hatherwood-craft-beer-company/
 canonical: https://www.instagram.com/p/B8FSmgMJ3tM/

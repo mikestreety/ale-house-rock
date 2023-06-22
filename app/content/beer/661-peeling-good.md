@@ -3,7 +3,7 @@ number: 661
 title: Peeling Good
 rating: 4
 breweries:
-  - brewery/the-hop-foundry/
+  - brewery/aldi/
 date: '2022-05-28'
 permalink: beer/peeling-good-the-hop-foundry/
 canonical: https://www.instagram.com/p/CeHNdntKfEr/

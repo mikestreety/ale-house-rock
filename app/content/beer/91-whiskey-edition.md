@@ -1,9 +1,9 @@
 ---
 number: 91
-title: Whiskey Edition
+title: McEwan's Whiskey Edition
 rating: 7
 breweries:
-  - brewery/mcewans/
+  - brewery/jw-lees-and-co/
 date: '2018-01-01'
 permalink: beer/whiskey-edition-mcewans/
 canonical: https://www.instagram.com/p/BdYvwZMFY-3/

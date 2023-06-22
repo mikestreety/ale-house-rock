@@ -3,7 +3,7 @@ number: 519
 title: Stout About It
 rating: 5
 breweries:
-  - brewery/the-hop-foundry/
+  - brewery/aldi/
 date: '2021-06-23'
 permalink: beer/stout-about-it-the-hop-foundry/
 canonical: https://www.instagram.com/p/CQeoUPGpxj_/

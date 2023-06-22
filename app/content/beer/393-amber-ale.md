@@ -3,7 +3,7 @@ number: 393
 title: Amber Ale
 rating: 6
 breweries:
-  - brewery/harpers-brewing-company/
+  - brewery/aldi/
 date: '2020-12-10'
 permalink: beer/amber-ale-harpers-brewing-company/
 canonical: https://www.instagram.com/p/CIoXlpAFjHb/

@@ -3,7 +3,7 @@ number: 640
 title: Easy
 rating: 4
 breweries:
-  - brewery/lervig/
+  - brewery/lervig-aktiebryggeri/
 date: '2022-04-14'
 permalink: beer/easy-lervig/
 canonical: https://www.instagram.com/p/CcWB-dGKQJY/

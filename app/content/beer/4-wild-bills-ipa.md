@@ -5,7 +5,7 @@ rating: 7
 serving: Bottle
 purchased: shop/aldi/
 breweries:
-  - brewery/harpers-brewing-company/
+  - brewery/aldi/
 date: '2016-12-03'
 permalink: beer/wild-bills-ipa-harpers-brewing-company/
 canonical: https://www.instagram.com/p/BNkhOxJgeEd/

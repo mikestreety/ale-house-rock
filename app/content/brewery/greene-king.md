@@ -1,6 +1,8 @@
 ---
 title: Greene King
 permalink: brewery/greene-king/
+aliases:
+  - morland
 location: 'Bury St Edmunds, Suffolk England'
 style: Macro Brewery
 website: 'http://www.greeneking.co.uk/'

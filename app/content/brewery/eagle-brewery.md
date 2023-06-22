@@ -1,6 +1,9 @@
 ---
 title: Eagle Brewery (formerly Charles Wells)
 permalink: brewery/eagle-brewery/
+aliases:
+  - mcewans
+  - youngs
 location: 'Bedford, England'
 style: Macro Brewery
 website: 'http://eaglebrewery.co.uk'

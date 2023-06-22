@@ -3,7 +3,7 @@ number: 110
 title: Patronus
 rating: 7
 breweries:
-  - brewery/perlenbacher/
+  - brewery/lidl/
 date: '2018-05-19'
 permalink: beer/patronus-perlenbacher/
 canonical: https://www.instagram.com/p/Bi-IpBPlNxf/

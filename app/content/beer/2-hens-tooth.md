@@ -4,7 +4,7 @@ title: Hen's Tooth
 rating: 8
 serving: Bottle
 breweries:
-  - brewery/morland/
+  - brewery/greene-king/
 date: '2016-12-02'
 permalink: beer/hens-tooth-morland/
 canonical: https://www.instagram.com/p/BNhnjOygBSY/

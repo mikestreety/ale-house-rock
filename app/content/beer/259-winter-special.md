@@ -3,7 +3,7 @@ number: 259
 title: Winter Special
 rating: 8
 breweries:
-  - brewery/hatherwood-craft-beer-company/
+  - brewery/lidl/
 date: '2019-12-01'
 permalink: beer/winter-special-hatherwood-craft-beer-company/
 canonical: https://www.instagram.com/p/B5jAxZTlzNm/

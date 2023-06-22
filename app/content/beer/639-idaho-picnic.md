@@ -3,7 +3,7 @@ number: 639
 title: Idaho Picnic
 rating: 7
 breweries:
-  - brewery/lervig/
+  - brewery/lervig-aktiebryggeri/
 date: '2022-04-12'
 permalink: beer/idaho-picnic-lervig/
 canonical: https://www.instagram.com/p/CcQyg2hqjwT/

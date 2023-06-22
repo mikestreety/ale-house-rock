@@ -3,7 +3,7 @@ number: 524
 title: Twice as Nice
 rating: 6
 breweries:
-  - brewery/the-hop-foundry/
+  - brewery/aldi/
 date: '2021-07-03'
 permalink: beer/twice-as-nice-the-hop-foundry/
 canonical: https://www.instagram.com/p/CQ3IalLlH-N/

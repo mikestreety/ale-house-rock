@@ -3,7 +3,7 @@ number: 645
 title: Loudspeaker
 rating: 7
 breweries:
-  - brewery/lervig/
+  - brewery/lervig-aktiebryggeri/
 date: '2022-04-23'
 permalink: beer/loudspeaker-lervig/
 canonical: https://www.instagram.com/p/Ccsk575q6YB/

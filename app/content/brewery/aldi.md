@@ -5,6 +5,10 @@ aliases:
   - aldi-stores-uk
   - 10-4-brewing
   - freak-aleworks
+  - harpers-brewing-company
+  - rheinbacher
+  - the-buckhorn-brewery
+  - the-hop-foundry
 location: 'Atherstone, Warwickshire England'
 style: Bar / Restaurant / Store
 website: 'https://www.aldi.co.uk/'

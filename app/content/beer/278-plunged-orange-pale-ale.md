@@ -3,7 +3,7 @@ number: 278
 title: Plunged Orange Pale Ale
 rating: 4
 breweries:
-  - brewery/hatherwood-craft-beer-company/
+  - brewery/lidl/
 date: '2020-02-09'
 permalink: beer/plunged-orange-pale-ale-hatherwood-craft-beer-company/
 canonical: https://www.instagram.com/p/B8W3d47J4bO/

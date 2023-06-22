@@ -3,7 +3,7 @@ number: 697
 title: Tropicale
 rating: 4
 breweries:
-  - brewery/the-hop-foundry/
+  - brewery/aldi/
 date: '2022-08-14'
 permalink: beer/tropicale-the-hop-foundry/
 canonical: https://www.instagram.com/p/ChN85pOqENU/

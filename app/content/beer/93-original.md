@@ -1,9 +1,9 @@
 ---
 number: 93
-title: Original
+title: The Rev. James Original
 rating: 6
 breweries:
-  - brewery/the-rev-james/
+  - brewery/brains/
 date: '2018-01-11'
 permalink: beer/original-the-rev-james/
 canonical: https://www.instagram.com/p/Bd0tIi6FYuB/

@@ -5,7 +5,7 @@ rating: 6
 purchased: shop/lidl/
 serving: Bottle
 breweries:
-  - brewery/hatherwood-craft-beer-company/
+  - brewery/lidl/
 date: '2016-12-11'
 permalink: beer/green-gecko-hatherwood-craft-beer-company/
 canonical: https://www.instagram.com/p/BN5BaTVgPm5/

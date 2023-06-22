@@ -3,7 +3,7 @@ number: 374
 title: Golden Ale
 rating: 3
 breweries:
-  - brewery/harpers-brewing-company/
+  - brewery/aldi/
 date: '2020-10-15'
 permalink: beer/golden-ale-harpers-brewing-company/
 canonical: https://www.instagram.com/p/CGYMnm-lESE/
