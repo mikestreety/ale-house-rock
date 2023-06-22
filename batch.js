@@ -2,6 +2,7 @@ const fetch = require('node-fetch');
 const matter = require('gray-matter');
 const fs = require('fs');
 const sharp = require('sharp');
+const inquirer = require('inquirer');
 
 function slugify(str) {
 	if (str) {
@@ -25,6 +26,80 @@ function slugify(str) {
 
 
 async function process() {
+	let breweries = fs.readdirSync('./app/content/brewery/');
+
+	for(let brewery of breweries) {
+		let slug = brewery.replace('.md', '');
+		let imagePath = `app/content/images/brewery/${slug}/image.webp`;
+
+		if (slug === 'brewery.11tydata.js') {
+			continue;
+		}
+		if (slug === 'brewery.json') {
+			continue;
+		}
+
+		if (fs.existsSync(imagePath)) {
+			continue;
+		}
+
+		const data = fs.readFileSync(`./app/content/brewery/${slug}.md`, 'utf8');
+		let matterOutput = matter(data);
+
+		console.log(`> ${matterOutput.data.title}`);
+		console.log(`http://localhost:8080/${matterOutput.data.permalink}`);
+		console.log(`https://untappd.com/search?q=${encodeURIComponent(matterOutput.data.title)}&type=brewery&sort=`);
+		let questions = await inquirer.prompt([
+			{
+				type: 'input',
+				name: 'link',
+				message: 'What is the link to the brewery?',
+			},
+		]);
+
+		if (!questions.link) {
+			continue;
+		}
+
+		const breweryJson = await fetch(questions.link.replace('https://untappd.com', 'https://untappd.alehouse.rocks'))
+			.then(data => data.json());
+
+		let allBrewery = {
+			...matterOutput.data,
+			...breweryJson
+		}
+
+		if (allBrewery.image && !fs.existsSync(`app/content/images/brewery/${slug}/image.webp`)) {
+			let image = await fetch(allBrewery.image);
+			let imageBuffer = await image.buffer()
+
+			let imageLarge = await sharp(imageBuffer)
+				.resize(300, 300, {
+					fit: 'contain', 'background': { r: 255, g: 255, b: 255, alpha: 1 }
+				})
+				.webp({ lossless: true })
+				.toBuffer();
+
+			fs.mkdirSync(`app/content/images/brewery/${slug}/`)
+			fs.writeFileSync(`app/content/images/brewery/${slug}/image.webp`, imageLarge);
+		}
+
+
+		allBrewery.untappd = allBrewery.canonical;
+		let description = allBrewery.description;
+		delete allBrewery.canonical;
+		delete allBrewery.status;
+		delete allBrewery.description;
+		delete allBrewery.image;
+
+		fs.writeFileSync(`./app/content/brewery/${slug}.md`, matter.stringify("\n" + description, allBrewery));
+
+		console.log(allBrewery);
+
+	}
+
+}
+async function oldprocess() {
 	let beerCanonicals = await fetch('https://alehouse.rocks/api/beers/canonicals.json')
 		.then(data => data.json());
 

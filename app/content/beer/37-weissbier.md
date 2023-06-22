@@ -1,6 +1,6 @@
 ---
 number: 37
-title: Weissbier
+title: Franziskaner Premium Weissbier Naturtrüb
 rating: 4
 breweries:
   - brewery/franziskaner/

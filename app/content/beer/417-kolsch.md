@@ -1,6 +1,6 @@
 ---
 number: 417
-title: Kölsch
+title: Früh Kölsch
 rating: 6
 breweries:
   - brewery/fruh/
