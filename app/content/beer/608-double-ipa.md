@@ -1,9 +1,9 @@
 ---
 number: 608
-title: Double IPA
+title: 10 4 Brewing - Double IPA
 rating: 7
 breweries:
-  - brewery/10-4-brewing/
+  - brewery/aldi/
 date: '2022-01-31'
 permalink: beer/double-ipa-10-4-brewing/
 canonical: https://www.instagram.com/p/CZZIm8HqdNg/

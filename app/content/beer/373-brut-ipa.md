@@ -1,9 +1,9 @@
 ---
 number: 373
-title: Brut IPA
+title: 10 4 Brewing - Brut IPA
 rating: 7
 breweries:
-  - brewery/10-4-brewing/
+  - brewery/aldi/
 date: '2020-10-11'
 permalink: beer/brut-ipa-10-4-brewing/
 canonical: https://www.instagram.com/p/CGNk5GIlncQ/

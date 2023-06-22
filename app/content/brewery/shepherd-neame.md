@@ -1,6 +1,8 @@
 ---
 title: Shepherd Neame
 permalink: brewery/shepherd-neame/
+aliases:
+  - bear-island
 location: 'Faversham, Kent England'
 style: Regional Brewery
 website: 'https://www.shepherdneame.co.uk'

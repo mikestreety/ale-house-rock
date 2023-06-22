@@ -1,9 +1,9 @@
 ---
 number: 389
-title: India Pale Lager
+title: 10 4 Brewing - India Pale Lager
 rating: 3
 breweries:
-  - brewery/10-4-brewing/
+  - brewery/aldi/
 date: '2020-11-29'
 permalink: beer/india-pale-lager-10-4-brewing/
 canonical: https://www.instagram.com/p/CIL-q64Jfyc/

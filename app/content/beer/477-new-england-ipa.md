@@ -1,9 +1,9 @@
 ---
 number: 477
-title: New England IPA
+title: 10 4 Brewing - New England IPA
 rating: 8
 breweries:
-  - brewery/10-4-brewing/
+  - brewery/aldi/
 date: '2021-04-27'
 permalink: beer/new-england-ipa-10-4-brewing/
 canonical: https://www.instagram.com/p/COKqjb4FIV4/
