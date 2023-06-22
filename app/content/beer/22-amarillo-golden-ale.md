@@ -4,7 +4,7 @@ title: Amarillo Golden Ale
 rating: 5
 serving: Bottle
 breweries:
-  - brewery/greenwich-brewing-company/
+  - brewery/meantime-brewing-company/
   - brewery/marks-and-spencer/
 date: '2016-12-20'
 permalink: beer/amarillo-golden-ale-greenwich-brewing-company-marks-and-spencer/
