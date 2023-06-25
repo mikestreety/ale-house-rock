@@ -51,15 +51,12 @@
 	{% else %}
 	<meta property="og:image" property="twitter:image" name="image" content="{{ meta.site.url }}/assets/img/logo.png">
 	{% endif %}
-
 	{% set count = 1 %}
-
 	{% if rating %}
 	<meta property="twitter:label{{ count }}" value="Rating">
 	<meta property="twitter:data{{ count }}" value="{{ rating }}/10">
 	{% set count = count + 1 %}
 	{% endif %}
-
 	{% if brewedBy %}
 	<meta property="twitter:label{{ count }}" value="Brewery">
 	<meta property="twitter:data{{ count }}" value="{{ brewedBy }}">
@@ -70,15 +67,36 @@
 	<meta property="twitter:data{{ count }}" value="{{ number }}">
 	{% set count = count + 1 %}
 	{% endif %}
-
 	{% if date %}
 	<meta property="twitter:label{{ count }}" value="Posted">
 	<meta property="twitter:data{{ count }}" value="{{ date | dateLong }}">
 	{% set count = count + 1 %}
 	{% endif %}
-
-
-
+	{% if type %}
+	<meta property="twitter:label{{ count }}" value="Type">
+	<meta property="twitter:data{{ count }}" value="{{ type }}">
+	{% set count = count + 1 %}
+	{% endif %}
+	{% if abov %}
+	<meta property="twitter:label{{ count }}" value="ABV">
+	<meta property="twitter:data{{ count }}" value="{{ abv }}">
+	{% set count = count + 1 %}
+	{% endif %}
+	{% if beers.length %}
+	<meta property="twitter:label{{ count }}" value="Beers posted">
+	<meta property="twitter:data{{ count }}" value="{{ beers.length }}">
+	{% set count = count + 1 %}
+	{% endif %}
+	{% if stats.mean %}
+	<meta property="twitter:label{{ count }}" value="Average score">
+	<meta property="twitter:data{{ count }}" value="{{ stats.mean }}">
+	{% set count = count + 1 %}
+	{% endif %}
+	{% if stats.median %}
+	<meta property="twitter:label{{ count }}" value="Median score">
+	<meta property="twitter:data{{ count }}" value="{{ stats.median }}">
+	{% set count = count + 1 %}
+	{% endif %}
 	<!-- Coil -->
 	<meta name="monetization" content="$ilp.uphold.com/R6wFMN3kXQbL">
 

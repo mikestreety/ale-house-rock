@@ -17,6 +17,11 @@ module.exports = {
 				return false;
 			}
 		},
+		socialMediaPhoto: data => {
+			if (data.imagePath) {
+				return data.meta.site.url + data.imagePath;
+			}
+		},
 		stats: data => {
 			if(data.beers) {
 				let ratings = data.beers

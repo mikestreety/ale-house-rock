@@ -38,6 +38,6 @@ module.exports = {
 			if(data.imagePath) {
 				return data.meta.site.url + data.imagePath;
 			}
-		}
+		},
 	}
 };
