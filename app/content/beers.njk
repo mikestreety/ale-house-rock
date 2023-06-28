@@ -17,15 +17,15 @@ intro: A list of all the beers
 	{% for beer in collections.beer %}
 	<tr>
 		<td>{{ beer.data.number }}</td>
-		<td><a href="{{ beer.url }}" title=""><img src="{{ beer.data.thumbnailPath }}" width="50" height="50" loading="lazy" alt="{{ beer.data.brewedBy }} - {{ beer.data.title }}">
+		<td width="50"><a href="{{ beer.url }}" title="{{ beer.data.brewedBy }} - {{ beer.data.title }}" class="secret"><img src="{{ beer.data.thumbnailPath }}" width="50" height="50" loading="lazy" alt="{{ beer.data.brewedBy }} - {{ beer.data.title }}">
 		</a></td>
-		<td><strong>{{ beer.data.title }}</strong></td>
+		<td><a href="{{ beer.url }}" title=""><strong>{{ beer.data.title }}</strong></a></td>
 		<td>
 		{% for brewery in beer.data.breweries %}
 			<a href="{{ brewery.url }}" class="brewery">{{ brewery.data.title }}</a>{{ ", " if not loop.last else "" }}
 		{% endfor %}
 		</td>
-		<td>{{ beer.data.rating }}</td>
+		<td><span class="rating">{{ beer.data.rating }}</span></td>
 	</tr>
 	{% endfor %}
 </table>

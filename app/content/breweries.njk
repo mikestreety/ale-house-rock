@@ -17,8 +17,8 @@ intro: A list of breweries whose beer has been reviewed
 	<tr>
 		<td><a href="{{ brewery.url }}">{{ brewery.data.title }}</a></td>
 		<td>{{ brewery.data.beers.length }}</td>
-		<td>{{ brewery.data.stats.mean }}</td>
-		<td>{{ brewery.data.stats.median }}</td>
+		<td><span class="rating">{{ brewery.data.stats.mean }}</span></td>
+		<td><span class="rating">{{ brewery.data.stats.median }}</span></td>
 	</tr>
 	{% endfor %}
 </table>
