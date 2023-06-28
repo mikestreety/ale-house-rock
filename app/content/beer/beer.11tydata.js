@@ -1,6 +1,12 @@
 const findBySlug = require('./../../filters/findBySlug');
 
 module.exports = {
+	layout: 'beer.njk',
+	parent: 'beer',
+	tags: [
+		'beer'
+	],
+
 	eleventyComputed: {
 		breweries: data => findBySlug(data.breweries, data.collections.all),
 		brewedBy: data => {

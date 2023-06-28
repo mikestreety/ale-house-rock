@@ -3,6 +3,11 @@ const fs = require('fs');
 const meanMedianMode = require('../../filters/meanMedianMode');
 
 module.exports = {
+	parent: 'brewery',
+	layout: 'brewery.njk',
+	tags: [
+		'brewery'
+	],
 	eleventyComputed: {
 		seoTitle: data => {
 			return `${data.title} - Beers from the brewery`

@@ -1,5 +1,0 @@
-{
-	"parent": "shop",
-	"layout": "shop.njk",
-	"tags": ["shop"]
-}
