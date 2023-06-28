@@ -45,5 +45,8 @@ module.exports = {
 				return data.meta.site.url + data.imagePath;
 			}
 		},
+		intro: data => {
+			return (data.review.length > 150) ? data.review.slice(0, 140) + '...' : data.review;
+		},
 	}
 };
