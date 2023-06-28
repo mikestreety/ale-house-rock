@@ -1,0 +1,38 @@
+---
+permalink: api/frontmatter.json
+sitemapIgnore: true
+---
+[
+	{% for beer in collections.beer %}
+	{
+		"filename": "{{ beer.page.inputPath }}",
+		"title": "{{ beer.data.title | safe }}",
+		"number": "{{ beer.data.number }}",
+		"rating": "{{ beer.data.rating }}",
+		"canonical": "{{ beer.data.canonical }}",
+		{% if beer.data.serving %}
+		"serving": "{{ beer.data.serving }}",
+		{% endif %}
+		{% if beer.data.purchased %}
+		"purchased": "{{ beer.data.purchased }}",
+		{% endif %}
+		"date": "{{ beer.data.date }}",
+		"permalink": "{{ beer.data.permalink }}",
+		"breweries": [
+			{% for brewery in beer.data.breweries %}
+			"{{ brewery.data.permalink }}"
+			{% if not loop.last %},{% endif %}
+			{% endfor %}
+		],
+		"tags": [
+			{% for tag in beer.data.tags %}
+			{% if tag != 'beer' %}
+			"{{ tag }}"
+			{% if not loop.last %},{% endif %}
+			{% endif %}
+			{% endfor %}
+		],
+		"review": "{{ beer.template.frontMatter.content | trim }}"
+	}{% if not loop.last %},{% endif %}
+	{% endfor %}
+]
