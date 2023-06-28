@@ -1,17 +1,20 @@
+---json
+{
+    "title": "Tide",
+    "number": "757",
+    "rating": "4",
+    "canonical": "https://untappd.com/user/mikestreety/checkin/1237660298",
+    "serving": "Can",
+    "purchased": "shop/palate-bottle-shop/",
+    "date": "2023-01-06",
+    "permalink": "beer/tide-allkin-brewing-track-brewing-company/",
+    "breweries": [
+        "brewery/allkin-brewing/",
+        "brewery/track-brewing-company/"
+    ],
+    "tags": [
+        "tablebeer"
+    ],
+    "review": "I think it was the style of beer I wasn&#39;t a fan of, rather than the beer itself. Table beers tend to be lower on ABV and. Bit weaker tasting. I finished it, but won&#39;t be buying it again."
+}
 ---
-canonical: 'https://untappd.com/user/mikestreety/checkin/1237660298'
-title: Tide
-serving: Can
-rating: 4
-purchased: shop/palate-bottle-shop/
-date: '2023-01-06'
-breweries:
-  - brewery/allkin-brewing/
-  - brewery/track-brewing-company/
-tags:
-  - tablebeer
-number: 757
-permalink: beer/tide-allkin-brewing-track-brewing-company/
----
-
-I think it was the style of beer I wasn't a fan of, rather than the beer itself. Table beers tend to be lower on ABV and. Bit weaker tasting. I finished it, but won't be buying it again.

@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Sunquake",
+    "number": "596",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/CYE0uFJqbWu/",
+    "date": "2021-12-29",
+    "permalink": "beer/sunquake-dark-star/",
+    "breweries": [
+        "brewery/dark-star/"
+    ],
+    "tags": [],
+    "review": "A smooth and juicy IPA, which is the opposite to the usual hoppy and sharp numbers offered by @darkstarbrewco. This was very drinkable and I could easily sit and wink a few of these of an evening"
+}
 ---
-number: 596
-title: Sunquake
-rating: 8
-breweries:
-  - brewery/dark-star/
-date: '2021-12-29'
-permalink: beer/sunquake-dark-star/
-canonical: https://www.instagram.com/p/CYE0uFJqbWu/
----
-
-A smooth and juicy IPA, which is the opposite to the usual hoppy and sharp numbers offered by @darkstarbrewco. This was very drinkable and I could easily sit and wink a few of these of an evening

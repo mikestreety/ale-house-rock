@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Hop Hunter Session IPA",
+    "number": "277",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/B8FSmgMJ3tM/",
+    "date": "2020-02-02",
+    "permalink": "beer/hop-hunter-session-ipa-hatherwood-craft-beer-company/",
+    "breweries": [
+        "brewery/lidl/"
+    ],
+    "tags": [],
+    "review": "I was pleasantly surprised by this one. Not holding out much hope, this Lidl own brand beer was impressive. Much more suited to a summer&#39;s day by the BBQ, easy drinking and refreshing. If they are still around in a few months I&#39;ll be stocking my fridge with these."
+}
 ---
-number: 277
-title: Hop Hunter Session IPA
-rating: 7
-breweries:
-  - brewery/lidl/
-date: '2020-02-02'
-permalink: beer/hop-hunter-session-ipa-hatherwood-craft-beer-company/
-canonical: https://www.instagram.com/p/B8FSmgMJ3tM/
----
-
-I was pleasantly surprised by this one. Not holding out much hope, this Lidl own brand beer was impressive. Much more suited to a summer's day by the BBQ, easy drinking and refreshing. If they are still around in a few months I'll be stocking my fridge with these.

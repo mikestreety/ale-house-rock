@@ -1,17 +1,15 @@
+---json
+{
+    "title": "Simko Eil",
+    "number": "138",
+    "rating": "5",
+    "canonical": "https://www.instagram.com/p/BmB1lMMFuk1/",
+    "date": "2018-08-03",
+    "permalink": "beer/simko-eil-llenaut/",
+    "breweries": [
+        "brewery/llenaut/"
+    ],
+    "tags": [],
+    "review": "I got a craft beer box and this is the second one out. Much like the first (#137), tasteless and meh"
+}
 ---
-number: 138
-title: Simko Eil
-rating: 5
-breweries:
-  - brewery/llenaut/
-date: '2018-08-03'
-permalink: beer/simko-eil-llenaut/
-canonical: https://www.instagram.com/p/BmB1lMMFuk1/
-tags:
-
-
-
-
----
-
-I got a craft beer box and this is the second one out. Much like the first (#137), tasteless and meh

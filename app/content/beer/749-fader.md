@@ -1,15 +1,18 @@
+---json
+{
+    "title": "Fader",
+    "number": "749",
+    "rating": "9",
+    "canonical": "https://untappd.com/user/mikestreety/checkin/1230869288",
+    "serving": "Can",
+    "date": "2022-12-17",
+    "permalink": "beer/fader-laine-brew-co/",
+    "breweries": [
+        "brewery/laine-brew-co/"
+    ],
+    "tags": [
+        "ipa"
+    ],
+    "review": "Had this in the pub the other week and I can tell you that it&#39;s a lot nicer from a can. A lovely IPA that was smooth and refreshing"
+}
 ---
-canonical: 'https://untappd.com/user/mikestreety/checkin/1230869288'
-title: Fader
-serving: Can
-rating: 9
-date: '2022-12-17'
-breweries:
-  - brewery/laine-brew-co/
-tags:
-  - ipa
-number: 749
-permalink: beer/fader-laine-brew-co/
----
-
-Had this in the pub the other week and I can tell you that it's a lot nicer from a can. A lovely IPA that was smooth and refreshing

@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Sea of Knowledge",
+    "number": "626",
+    "rating": "5",
+    "canonical": "https://www.instagram.com/p/CasuQdLK0re/",
+    "date": "2022-03-04",
+    "permalink": "beer/sea-of-knowledge-north-brewing-co/",
+    "breweries": [
+        "brewery/north-brewing-co/"
+    ],
+    "tags": [],
+    "review": "We&#39;re having some work done at home so there will be a few &quot;ale House rock on tour&quot; photos. This was an underwhelming Session IPA that was a bit watery."
+}
 ---
-number: 626
-title: Sea of Knowledge
-rating: 5
-breweries:
-  - brewery/north-brewing-co/
-date: '2022-03-04'
-permalink: beer/sea-of-knowledge-north-brewing-co/
-canonical: https://www.instagram.com/p/CasuQdLK0re/
----
-
-We're having some work done at home so there will be a few "ale House rock on tour" photos. This was an underwhelming Session IPA that was a bit watery.

@@ -1,14 +1,17 @@
+---json
+{
+    "title": "Bear Island East Coast Pale Ale",
+    "number": "347",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/CBsVIGmpaSQ/",
+    "date": "2020-06-21",
+    "permalink": "beer/east-coast-pale-ale-bear-island/",
+    "breweries": [
+        "brewery/shepherd-neame/"
+    ],
+    "tags": [
+        "paleale"
+    ],
+    "review": "I had a hankering recently for some ale. Not craft beer in a can, but a bitter in a bottle and this beer from @bearislandbrews delivered. Sharp at first (maybe becuase I&#39;m not used to the flavour) but by the end of the near-pint, I enjoyed it. Crisp and tasty, could drink a good few of these."
+}
 ---
-number: 347
-title: Bear Island East Coast Pale Ale
-rating: 8
-breweries:
-  - brewery/shepherd-neame/
-date: '2020-06-21'
-permalink: beer/east-coast-pale-ale-bear-island/
-canonical: https://www.instagram.com/p/CBsVIGmpaSQ/
-tags:
-  - paleale
----
-
-I had a hankering recently for some ale. Not craft beer in a can, but a bitter in a bottle and this beer from @bearislandbrews delivered. Sharp at first (maybe becuase I'm not used to the flavour) but by the end of the near-pint, I enjoyed it. Crisp and tasty, could drink a good few of these.

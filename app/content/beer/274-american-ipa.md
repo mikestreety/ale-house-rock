@@ -1,17 +1,17 @@
+---json
+{
+    "title": "American IPA",
+    "number": "274",
+    "rating": "4",
+    "canonical": "https://www.instagram.com/p/B72uJV_pMDE/",
+    "date": "2020-01-28",
+    "permalink": "beer/american-ipa-bad-co/",
+    "breweries": [
+        "brewery/bad-co/"
+    ],
+    "tags": [
+        "ipa"
+    ],
+    "review": "Generic ASDA IPA in a can, not a scratch on the Fuller&#39;s and Harvey&#39;s from posts past. Hipster nothingness with fizzy disappointment. Eventually found some taste at the end of the drink, but won&#39;t be buying this again"
+}
 ---
-number: 274
-title: American IPA
-rating: 4
-breweries:
-  - brewery/bad-co/
-date: '2020-01-28'
-permalink: beer/american-ipa-bad-co/
-canonical: https://www.instagram.com/p/B72uJV_pMDE/
-tags:
-
-  - ipa
-
-
----
-
-Generic ASDA IPA in a can, not a scratch on the Fuller's and Harvey's from posts past. Hipster nothingness with fizzy disappointment. Eventually found some taste at the end of the drink, but won't be buying this again

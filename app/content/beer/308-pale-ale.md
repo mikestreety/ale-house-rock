@@ -1,22 +1,15 @@
+---json
+{
+    "title": "Pale Ale",
+    "number": "308",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/B_Irbe9pVzQ/",
+    "date": "2020-04-18",
+    "permalink": "beer/pale-ale-brewdog/",
+    "breweries": [
+        "brewery/brewdog/"
+    ],
+    "tags": [],
+    "review": "A beer donated by die-hard Ale House Rock fan @mblackburn21 (don&#39;t worry, all rules were observed). Brewdog is everywhere, but I&#39;ve not really been keen. This beer wasn&#39;t mind-blowing but is certainly one of their better ones. Every other sip revealed some beauty but it was always followed by something odd. Would definitely have this again over some of their other beers"
+}
 ---
-number: 308
-title: Pale Ale
-rating: 7
-breweries:
-  - brewery/brewdog/
-date: '2020-04-18'
-permalink: beer/pale-ale-brewdog/
-canonical: https://www.instagram.com/p/B_Irbe9pVzQ/
-tags:
-
-
-
-
-
-
-
-
-
----
-
-A beer donated by die-hard Ale House Rock fan @mblackburn21 (don't worry, all rules were observed). Brewdog is everywhere, but I've not really been keen. This beer wasn't mind-blowing but is certainly one of their better ones. Every other sip revealed some beauty but it was always followed by something odd. Would definitely have this again over some of their other beers

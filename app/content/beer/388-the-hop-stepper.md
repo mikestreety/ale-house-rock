@@ -1,12 +1,15 @@
+---json
+{
+    "title": "The Hop Stepper",
+    "number": "388",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/CIEX1WypXLk/",
+    "date": "2020-11-26",
+    "permalink": "beer/the-hop-stepper-the-hop-foundry/",
+    "breweries": [
+        "brewery/aldi/"
+    ],
+    "tags": [],
+    "review": "Finally, an Aldi beer I can get on board with. Darker than I was expecting, but a lovely refreshing beer not too hoppy at all. I&#39;ll be picking a few of these up next time I&#39;m in there."
+}
 ---
-number: 388
-title: The Hop Stepper
-rating: 8
-breweries:
-  - brewery/aldi/
-date: '2020-11-26'
-permalink: beer/the-hop-stepper-the-hop-foundry/
-canonical: https://www.instagram.com/p/CIEX1WypXLk/
----
-
-Finally, an Aldi beer I can get on board with. Darker than I was expecting, but a lovely refreshing beer not too hoppy at all. I'll be picking a few of these up next time I'm in there.

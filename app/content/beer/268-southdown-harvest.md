@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Southdown Harvest",
+    "number": "268",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/B6z98QHJJoM/",
+    "date": "2020-01-02",
+    "permalink": "beer/southdown-harvest-harveys-brewery/",
+    "breweries": [
+        "brewery/harveys-brewery/"
+    ],
+    "tags": [],
+    "review": "A lovely beer that I didn&#39;t even think about drinking more of. Great taste and balance, but not ground breaking"
+}
 ---
-number: 268
-title: Southdown Harvest
-rating: 7
-breweries:
-  - brewery/harveys-brewery/
-date: '2020-01-02'
-permalink: beer/southdown-harvest-harveys-brewery/
-canonical: https://www.instagram.com/p/B6z98QHJJoM/
----
-
-A lovely beer that I didn't even think about drinking more of. Great taste and balance, but not ground breaking

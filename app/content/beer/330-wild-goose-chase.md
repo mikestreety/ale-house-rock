@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Wild Goose Chase",
+    "number": "330",
+    "rating": "4",
+    "canonical": "https://www.instagram.com/p/CAdpcSfJF-j/",
+    "date": "2020-05-21",
+    "permalink": "beer/wild-goose-chase-the-wild-beer-company/",
+    "breweries": [
+        "brewery/the-wild-beer-company/"
+    ],
+    "tags": [],
+    "review": "I don&#39;t think @wildbeerco is for me. Another day, another beer I didn&#39;t really enjoy. This was better than the last, but not a scratch on their IPA.  Oddly, every sip I took transported me back to Brighton beach, when I was 18 drinking beer from the @fortuneofwar"
+}
 ---
-number: 330
-title: Wild Goose Chase
-rating: 4
-breweries:
-  - brewery/the-wild-beer-company/
-date: '2020-05-21'
-permalink: beer/wild-goose-chase-the-wild-beer-company/
-canonical: https://www.instagram.com/p/CAdpcSfJF-j/
----
-
-I don't think @wildbeerco is for me. Another day, another beer I didn't really enjoy. This was better than the last, but not a scratch on their IPA.  Oddly, every sip I took transported me back to Brighton beach, when I was 18 drinking beer from the @fortuneofwar

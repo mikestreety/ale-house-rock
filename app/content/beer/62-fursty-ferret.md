@@ -1,15 +1,18 @@
+---json
+{
+    "title": "The Fursty Ferret",
+    "number": "62",
+    "rating": "10",
+    "canonical": "https://www.instagram.com/p/BYRMaP7lGig/",
+    "serving": "Bottle",
+    "date": "2017-08-26",
+    "permalink": "beer/fursty-ferret-badger/",
+    "breweries": [
+        "brewery/badger/"
+    ],
+    "tags": [
+        "bottle"
+    ],
+    "review": "Pint perfection. The 10 I&#39;ve been chasing. This is what every bottled beer should strive to be. What better way to end my holiday in the West Country then with a beer hailing from the very place"
+}
 ---
-number: 62
-title: The Fursty Ferret
-serving: Bottle
-rating: 10
-breweries:
-  - brewery/badger/
-date: '2017-08-26'
-permalink: beer/fursty-ferret-badger/
-canonical: https://www.instagram.com/p/BYRMaP7lGig/
-tags:
-  - bottle
----
-
-Pint perfection. The 10 I've been chasing. This is what every bottled beer should strive to be. What better way to end my holiday in the West Country then with a beer hailing from the very place

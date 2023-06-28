@@ -1,16 +1,19 @@
+---json
+{
+    "title": "Garlands",
+    "number": "762",
+    "rating": "8",
+    "canonical": "https://untappd.com/user/mikestreety/checkin/1242663849",
+    "serving": "Can",
+    "purchased": "shop/palate-bottle-shop/",
+    "date": "2023-01-26",
+    "permalink": "beer/garlands-beak-brewery/",
+    "breweries": [
+        "brewery/beak-brewery/"
+    ],
+    "tags": [
+        "ipa"
+    ],
+    "review": "Another fantastic beer from Beak. Can&#39;t go wrong with this brewery."
+}
 ---
-canonical: 'https://untappd.com/user/mikestreety/checkin/1242663849'
-title: Garlands
-serving: Can
-rating: 8
-purchased: shop/palate-bottle-shop/
-date: '2023-01-26'
-breweries:
-  - brewery/beak-brewery/
-tags:
-  - ipa
-number: 762
-permalink: beer/garlands-beak-brewery/
----
-
-Another fantastic beer from Beak. Can't go wrong with this brewery.

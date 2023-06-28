@@ -1,20 +1,18 @@
+---json
+{
+    "title": "McEwan's Champion",
+    "number": "77",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/BbDDDXmFDpm/",
+    "date": "2017-11-03",
+    "permalink": "beer/champion-mcewans/",
+    "breweries": [
+        "brewery/eagle-brewery/"
+    ],
+    "tags": [
+        "bitter",
+        "stout"
+    ],
+    "review": "a dark caramel-y kind of beer. 7.3%! Lovely and light despite its colour"
+}
 ---
-number: 77
-title: McEwan's Champion
-rating: 7
-breweries:
-  - brewery/eagle-brewery/
-date: '2017-11-03'
-permalink: beer/champion-mcewans/
-canonical: https://www.instagram.com/p/BbDDDXmFDpm/
-tags:
-  - bitter
-
-
-
-  - stout
-
-
----
-
-a dark caramel-y kind of beer. 7.3%! Lovely and light despite its colour

@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Tropicale",
+    "number": "697",
+    "rating": "4",
+    "canonical": "https://www.instagram.com/p/ChN85pOqENU/",
+    "date": "2022-08-14",
+    "permalink": "beer/tropicale-the-hop-foundry/",
+    "breweries": [
+        "brewery/aldi/"
+    ],
+    "tags": [],
+    "review": "Buying own-brand beer from Aldi is a false economy, I think. It may be cheap to buy, but it&#39;s very rare to find a good beer. Most are mediocre at best or, in this case, disappointing. The artwork and description talk the talk but the beer can barely crawl. Drinkable, but not enjoyable"
+}
 ---
-number: 697
-title: Tropicale
-rating: 4
-breweries:
-  - brewery/aldi/
-date: '2022-08-14'
-permalink: beer/tropicale-the-hop-foundry/
-canonical: https://www.instagram.com/p/ChN85pOqENU/
----
-
-Buying own-brand beer from Aldi is a false economy, I think. It may be cheap to buy, but it's very rare to find a good beer. Most are mediocre at best or, in this case, disappointing. The artwork and description talk the talk but the beer can barely crawl. Drinkable, but not enjoyable

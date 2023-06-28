@@ -1,12 +1,15 @@
+---json
+{
+    "title": "This Might Get Loud",
+    "number": "630",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/Ca-wLxlKfsK/",
+    "date": "2022-03-11",
+    "permalink": "beer/this-might-get-loud-deya-brewing-company/",
+    "breweries": [
+        "brewery/deya-brewing-company/"
+    ],
+    "tags": [],
+    "review": "Lovely, easy-drinking smooth IPA. I wouldn&#39;t expect anything less from @deyabrewery"
+}
 ---
-number: 630
-title: This Might Get Loud
-rating: 8
-breweries:
-  - brewery/deya-brewing-company/
-date: '2022-03-11'
-permalink: beer/this-might-get-loud-deya-brewing-company/
-canonical: https://www.instagram.com/p/Ca-wLxlKfsK/
----
-
-Lovely, easy-drinking smooth IPA. I wouldn't expect anything less from @deyabrewery

@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Jukebox",
+    "number": "690",
+    "rating": "9",
+    "canonical": "https://www.instagram.com/p/CgnQyX3K1r0/",
+    "date": "2022-07-29",
+    "permalink": "beer/jukebox-hand-brew-co/",
+    "breweries": [
+        "brewery/hand-brew-co/"
+    ],
+    "tags": [],
+    "review": "Dang, this was tasty. Local brewery @handbrewco have produced this wonderfully full-bodied DDH IPA. Immediately drinkable, it was smooth, fruity and perfect at 6%"
+}
 ---
-number: 690
-title: Jukebox
-rating: 9
-breweries:
-  - brewery/hand-brew-co/
-date: '2022-07-29'
-permalink: beer/jukebox-hand-brew-co/
-canonical: https://www.instagram.com/p/CgnQyX3K1r0/
----
-
-Dang, this was tasty. Local brewery @handbrewco have produced this wonderfully full-bodied DDH IPA. Immediately drinkable, it was smooth, fruity and perfect at 6%

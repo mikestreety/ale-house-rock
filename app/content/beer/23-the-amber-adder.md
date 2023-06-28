@@ -1,16 +1,19 @@
+---json
+{
+    "title": "The Amber Adder",
+    "number": "23",
+    "rating": "1",
+    "canonical": "https://www.instagram.com/p/BOShVfqgMGK/",
+    "serving": "Bottle",
+    "purchased": "shop/lidl/",
+    "date": "2016-12-21",
+    "permalink": "beer/the-amber-adder-hatherwood-craft-beer-company/",
+    "breweries": [
+        "brewery/lidl/"
+    ],
+    "tags": [
+        "ambereale"
+    ],
+    "review": "Oh my god. That is terrible. I&#39;ve had to pour it away as I can&#39;t finish it."
+}
 ---
-number: 23
-title: The Amber Adder
-rating: 1
-serving: Bottle
-purchased: shop/lidl/
-breweries:
-  - brewery/lidl/
-date: '2016-12-21'
-permalink: beer/the-amber-adder-hatherwood-craft-beer-company/
-canonical: https://www.instagram.com/p/BOShVfqgMGK/
-tags:
-  - ambereale
----
-
-Oh my god. That is terrible. I've had to pour it away as I can't finish it.

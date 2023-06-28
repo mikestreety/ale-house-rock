@@ -1,16 +1,19 @@
+---json
+{
+    "title": "Aoraki",
+    "number": "778",
+    "rating": "8",
+    "canonical": "https://untappd.com/user/mikestreety/checkin/1258200871",
+    "serving": "Can",
+    "purchased": "shop/tesco/",
+    "date": "2023-03-23",
+    "permalink": "beer/aoraki-vocation-brewery/",
+    "breweries": [
+        "brewery/vocation-brewery/"
+    ],
+    "tags": [
+        "dipa"
+    ],
+    "review": "It had a sharp edge to it but was surprisingly drinkable. One of the better supermarket DIPAs - thirst quenching and went down a bit too quickly"
+}
 ---
-canonical: 'https://untappd.com/user/mikestreety/checkin/1258200871'
-title: Aoraki
-serving: Can
-rating: 8
-purchased: shop/tesco/
-date: '2023-03-23'
-breweries:
-  - brewery/vocation-brewery/
-tags:
-  - dipa
-number: 778
-permalink: beer/aoraki-vocation-brewery/
----
-
-It had a sharp edge to it but was surprisingly drinkable. One of the better supermarket DIPAs - thirst quenching and went down a bit too quickly

@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Jet Stream",
+    "number": "479",
+    "rating": "2",
+    "canonical": "https://www.instagram.com/p/COOe6ARp0MQ/",
+    "date": "2021-04-28",
+    "permalink": "beer/jet-stream-brewdog/",
+    "breweries": [
+        "brewery/brewdog/"
+    ],
+    "tags": [],
+    "review": "The final beer from my Brewdog Lockdown Survival Kit and what a disappointment to end on. A &quot;transatlantic pale ale&quot; which means it&#39;s gone around the world a d lost its flavour. It tasted like a poor, mass-produced lager."
+}
 ---
-number: 479
-title: Jet Stream
-rating: 2
-breweries:
-  - brewery/brewdog/
-date: '2021-04-28'
-permalink: beer/jet-stream-brewdog/
-canonical: https://www.instagram.com/p/COOe6ARp0MQ/
----
-
-The final beer from my Brewdog Lockdown Survival Kit and what a disappointment to end on. A "transatlantic pale ale" which means it's gone around the world a d lost its flavour. It tasted like a poor, mass-produced lager.

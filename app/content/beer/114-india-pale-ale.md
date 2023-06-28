@@ -1,20 +1,15 @@
+---json
+{
+    "title": "India Pale Ale",
+    "number": "114",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/BkDu_mIlR4h/",
+    "date": "2018-06-15",
+    "permalink": "beer/india-pale-ale-shepherd-neame/",
+    "breweries": [
+        "brewery/shepherd-neame/"
+    ],
+    "tags": [],
+    "review": "This lush beer from @shepherdneame was a great second pint. Good body but not too heavy."
+}
 ---
-number: 114
-title: India Pale Ale
-rating: 7
-breweries:
-  - brewery/shepherd-neame/
-date: '2018-06-15'
-permalink: beer/india-pale-ale-shepherd-neame/
-canonical: https://www.instagram.com/p/BkDu_mIlR4h/
-tags:
-
-
-
-
-
-
-
----
-
-This lush beer from @shepherdneame was a great second pint. Good body but not too heavy.

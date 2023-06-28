@@ -1,14 +1,15 @@
+---json
+{
+    "title": "Key Lime Lager",
+    "number": "650",
+    "rating": "6",
+    "canonical": "https://www.instagram.com/p/CdT_CQSq1as/",
+    "date": "2022-05-08",
+    "permalink": "beer/key-lime-lager-tiny-rebel-brewing-co/",
+    "breweries": [
+        "brewery/tiny-rebel-brewing-co/"
+    ],
+    "tags": [],
+    "review": "Before opening this can, I&#39;d completely forgotten that lager and lime was a thing that actually existed in the real world. It&#39;s a drink for people who like the &#39;idea&#39; of drinking a pint but who don&#39;t really like beer. This follows in the footsteps, as it makes an underlying plain lager paletable and I can imagine would invoke some memories for those who used to enjoy this tipple. I certainly wouldn&#39;t make a habit of drinking, let alone buying, this beer, but I won&#39;t be throwing away the second one I have in the fridge (it came as part of a @beermerchants lucky dip box)"
+}
 ---
-number: 650
-title: Key Lime Lager
-rating: 6
-breweries:
-  - brewery/tiny-rebel-brewing-co/
-date: '2022-05-08'
-permalink: beer/key-lime-lager-tiny-rebel-brewing-co/
-aliases:
-  - key-lime-lager-tiny-rebel-651
-canonical: https://www.instagram.com/p/CdT_CQSq1as/
----
-
-Before opening this can, I'd completely forgotten that lager and lime was a thing that actually existed in the real world. It's a drink for people who like the 'idea' of drinking a pint but who don't really like beer. This follows in the footsteps, as it makes an underlying plain lager paletable and I can imagine would invoke some memories for those who used to enjoy this tipple. I certainly wouldn't make a habit of drinking, let alone buying, this beer, but I won't be throwing away the second one I have in the fridge (it came as part of a @beermerchants lucky dip box)

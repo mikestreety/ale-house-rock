@@ -1,15 +1,18 @@
+---json
+{
+    "title": "Golden Bolt",
+    "number": "55",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/BWiGRT5FcHJ/",
+    "serving": "Bottle",
+    "date": "2017-07-14",
+    "permalink": "beer/golden-bolt-steam-box-brewery/",
+    "breweries": [
+        "brewery/steam-box-brewery/"
+    ],
+    "tags": [
+        "goldenale"
+    ],
+    "review": "A light golden crisp Ale. Nothing to shout about, not disappointing though!"
+}
 ---
-number: 55
-title: Golden Bolt
-serving: Bottle
-rating: 7
-breweries:
-  - brewery/steam-box-brewery/
-date: '2017-07-14'
-permalink: beer/golden-bolt-steam-box-brewery/
-canonical: https://www.instagram.com/p/BWiGRT5FcHJ/
-tags:
-  - goldenale
----
-
-A light golden crisp Ale. Nothing to shout about, not disappointing though!

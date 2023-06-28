@@ -1,12 +1,15 @@
+---json
+{
+    "title": "No Worries - Grapefruit",
+    "number": "665",
+    "rating": "1",
+    "canonical": "https://www.instagram.com/p/CeTCj1XKivr/",
+    "date": "2022-06-02",
+    "permalink": "beer/no-worries-grapefruit-lervig/",
+    "breweries": [
+        "brewery/lervig-aktiebryggeri/"
+    ],
+    "tags": [],
+    "review": "This is possibly the worst alcohol-free beer I&#39;ve had. I had to pour half of it away as I kept thinking it would get better but it didn&#39;t."
+}
 ---
-number: 665
-title: No Worries - Grapefruit
-rating: 1
-breweries:
-  - brewery/lervig-aktiebryggeri/
-date: '2022-06-02'
-permalink: beer/no-worries-grapefruit-lervig/
-canonical: https://www.instagram.com/p/CeTCj1XKivr/
----
-
-This is possibly the worst alcohol-free beer I've had. I had to pour half of it away as I kept thinking it would get better but it didn't.

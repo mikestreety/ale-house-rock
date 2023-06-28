@@ -1,19 +1,15 @@
+---json
+{
+    "title": "Shere Drop",
+    "number": "231",
+    "rating": "9",
+    "canonical": "https://www.instagram.com/p/B1CLJXXFQF1/",
+    "date": "2019-08-11",
+    "permalink": "beer/shere-drop-surry-hills-brewery/",
+    "breweries": [
+        "brewery/surry-hills-brewery/"
+    ],
+    "tags": [],
+    "review": "@camra_official&#39;s beer of the year and I can see why. Amazing taste, lovely colour, wonderfully light but full bodied. Such a shame when it ended. Highly recommended"
+}
 ---
-number: 231
-title: Shere Drop
-rating: 9
-breweries:
-  - brewery/surry-hills-brewery/
-date: '2019-08-11'
-permalink: beer/shere-drop-surry-hills-brewery/
-canonical: https://www.instagram.com/p/B1CLJXXFQF1/
-tags:
-
-
-
-
-
-
----
-
-@camra_official's beer of the year and I can see why. Amazing taste, lovely colour, wonderfully light but full bodied. Such a shame when it ended. Highly recommended

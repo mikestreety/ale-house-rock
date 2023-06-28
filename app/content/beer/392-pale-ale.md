@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Pale Ale",
+    "number": "392",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/CIbvCyZp0jR/",
+    "date": "2020-12-05",
+    "permalink": "beer/pale-ale-wolfox/",
+    "breweries": [
+        "brewery/wolfox/"
+    ],
+    "tags": [],
+    "review": "Picked up this at the train station on Friday after a week in the office. Wasn&#39;t expecting much from @wolfoxcoffee (being, what looks like, primarily coffee roasters) but this little gem was tasty. Crisp with a clean finish. Perfect as a train or desk beer I can imagine, but also pretty good with a pizza."
+}
 ---
-number: 392
-title: Pale Ale
-rating: 8
-breweries:
-  - brewery/wolfox/
-date: '2020-12-05'
-permalink: beer/pale-ale-wolfox/
-canonical: https://www.instagram.com/p/CIbvCyZp0jR/
----
-
-Picked up this at the train station on Friday after a week in the office. Wasn't expecting much from @wolfoxcoffee (being, what looks like, primarily coffee roasters) but this little gem was tasty. Crisp with a clean finish. Perfect as a train or desk beer I can imagine, but also pretty good with a pizza.

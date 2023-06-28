@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Fest",
+    "number": "629",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/Ca8JtsQK5uG/",
+    "date": "2022-03-10",
+    "permalink": "beer/fest-hand-brew-co/",
+    "breweries": [
+        "brewery/hand-brew-co/"
+    ],
+    "tags": [],
+    "review": "My first beer from very local brewery @handbrewco and what a great one to kick things off. Full bodied &amp; full of taste. Wouldn&#39;t want too many of these in an evening as it was quite rich, but the flavours were plentiful."
+}
 ---
-number: 629
-title: Fest
-rating: 8
-breweries:
-  - brewery/hand-brew-co/
-date: '2022-03-10'
-permalink: beer/fest-hand-brew-co/
-canonical: https://www.instagram.com/p/Ca8JtsQK5uG/
----
-
-My first beer from very local brewery @handbrewco and what a great one to kick things off. Full bodied & full of taste. Wouldn't want too many of these in an evening as it was quite rich, but the flavours were plentiful.

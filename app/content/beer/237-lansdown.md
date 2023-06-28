@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Lansdown",
+    "number": "237",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/B2pVClgFNFD/",
+    "date": "2019-09-20",
+    "permalink": "beer/lansdown-bath-ales/",
+    "breweries": [
+        "brewery/bath-ales/"
+    ],
+    "tags": [],
+    "review": "I&#39;ve been a fan of Bath Ales for a while and this one has &quot;fallen&quot; into my trolley a few times. Good taste &amp; wonderful session ale"
+}
 ---
-number: 237
-title: Lansdown
-rating: 7
-breweries:
-  - brewery/bath-ales/
-date: '2019-09-20'
-permalink: beer/lansdown-bath-ales/
-canonical: https://www.instagram.com/p/B2pVClgFNFD/
----
-
-I've been a fan of Bath Ales for a while and this one has "fallen" into my trolley a few times. Good taste & wonderful session ale

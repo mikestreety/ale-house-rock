@@ -1,12 +1,15 @@
+---json
+{
+    "title": "The Dorset Pale",
+    "number": "553",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/CShv4fqqC2W/",
+    "date": "2021-08-13",
+    "permalink": "beer/the-dorset-pale-palmers/",
+    "breweries": [
+        "brewery/palmers/"
+    ],
+    "tags": [],
+    "review": "Yet another absolute smasher from Palmers. Crisp, clean very drinkable. Could imagine a fridge full of this keeping me company on a summers afternoon."
+}
 ---
-number: 553
-title: The Dorset Pale
-rating: 8
-breweries:
-  - brewery/palmers/
-date: '2021-08-13'
-permalink: beer/the-dorset-pale-palmers/
-canonical: https://www.instagram.com/p/CShv4fqqC2W/
----
-
-Yet another absolute smasher from Palmers. Crisp, clean very drinkable. Could imagine a fridge full of this keeping me company on a summers afternoon.

@@ -1,16 +1,19 @@
+---json
+{
+    "title": "You Get What You Need",
+    "number": "801",
+    "rating": "7.5",
+    "canonical": "https://untappd.com/user/mikestreety/checkin/1274111692",
+    "serving": "Can",
+    "purchased": "shop/palate-bottle-shop/",
+    "date": "2023-05-13",
+    "permalink": "beer/you-get-what-you-need-360-brewing-company/",
+    "breweries": [
+        "brewery/360-degree-brewing-company/"
+    ],
+    "tags": [
+        "dipa"
+    ],
+    "review": "Picked this up on a whim, based purely on the can design and the fact the name reminds me of a corker of a New Radicals song. Tasty enough beer - took a while for me to get on board with but enjoyed it by the end."
+}
 ---
-canonical: 'https://untappd.com/user/mikestreety/checkin/1274111692'
-title: You Get What You Need
-serving: Can
-rating: 7.5
-purchased: shop/palate-bottle-shop/
-date: '2023-05-13'
-breweries:
-  - brewery/360-degree-brewing-company/
-tags:
-  - dipa
-number: 801
-permalink: beer/you-get-what-you-need-360-brewing-company/
----
-
-Picked this up on a whim, based purely on the can design and the fact the name reminds me of a corker of a New Radicals song. Tasty enough beer - took a while for me to get on board with but enjoyed it by the end.

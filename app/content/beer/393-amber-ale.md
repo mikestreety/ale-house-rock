@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Amber Ale",
+    "number": "393",
+    "rating": "6",
+    "canonical": "https://www.instagram.com/p/CIoXlpAFjHb/",
+    "date": "2020-12-10",
+    "permalink": "beer/amber-ale-harpers-brewing-company/",
+    "breweries": [
+        "brewery/aldi/"
+    ],
+    "tags": [],
+    "review": "An attempt at a classic beer from Harper&#39;s (Aldi&#39;s own brewery). It&#39;s got the body of a bitter, but the after taste of an Aldi beer."
+}
 ---
-number: 393
-title: Amber Ale
-rating: 6
-breweries:
-  - brewery/aldi/
-date: '2020-12-10'
-permalink: beer/amber-ale-harpers-brewing-company/
-canonical: https://www.instagram.com/p/CIoXlpAFjHb/
----
-
-An attempt at a classic beer from Harper's (Aldi's own brewery). It's got the body of a bitter, but the after taste of an Aldi beer.

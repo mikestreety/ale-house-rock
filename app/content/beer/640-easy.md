@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Easy",
+    "number": "640",
+    "rating": "4",
+    "canonical": "https://www.instagram.com/p/CcWB-dGKQJY/",
+    "date": "2022-04-14",
+    "permalink": "beer/easy-lervig/",
+    "breweries": [
+        "brewery/lervig-aktiebryggeri/"
+    ],
+    "tags": [],
+    "review": "A wannabe hazy Jane with non of the body and an odd aftertaste. Drinkable, but I wouldn&#39;t drink it again out of choice."
+}
 ---
-number: 640
-title: Easy
-rating: 4
-breweries:
-  - brewery/lervig-aktiebryggeri/
-date: '2022-04-14'
-permalink: beer/easy-lervig/
-canonical: https://www.instagram.com/p/CcWB-dGKQJY/
----
-
-A wannabe hazy Jane with non of the body and an odd aftertaste. Drinkable, but I wouldn't drink it again out of choice.

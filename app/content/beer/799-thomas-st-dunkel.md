@@ -1,15 +1,18 @@
+---json
+{
+    "title": "Thomas St Dunkel",
+    "number": "799",
+    "rating": "5",
+    "canonical": "https://untappd.com/user/mikestreety/checkin/1273170108",
+    "serving": "Can",
+    "date": "2023-05-11",
+    "permalink": "beer/thomas-st-dunkel-fierce-beer/",
+    "breweries": [
+        "brewery/fierce-beer/"
+    ],
+    "tags": [
+        "lager"
+    ],
+    "review": "This dark lager was exactly as it sounds. A bit plain, a bit lifeless. The only thing it had going for it was that it was smooth and masking some sad news"
+}
 ---
-canonical: 'https://untappd.com/user/mikestreety/checkin/1273170108'
-title: Thomas St Dunkel
-serving: Can
-rating: 5
-date: '2023-05-11'
-breweries:
-  - brewery/fierce-beer/
-tags:
-  - lager
-number: 799
-permalink: beer/thomas-st-dunkel-fierce-beer/
----
-
-This dark lager was exactly as it sounds. A bit plain, a bit lifeless. The only thing it had going for it was that it was smooth and masking some sad news

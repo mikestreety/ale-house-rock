@@ -1,20 +1,17 @@
+---json
+{
+    "title": "Cambridgeshire Golden Ale",
+    "number": "75",
+    "rating": "6",
+    "canonical": "https://www.instagram.com/p/BafCZp5lHYT/",
+    "date": "2017-10-20",
+    "permalink": "beer/cambridgeshire-golden-ale-oakham-ales/",
+    "breweries": [
+        "brewery/oakham-ales/"
+    ],
+    "tags": [
+        "goldenale"
+    ],
+    "review": "This beer got better as I drunk it. Starting at a 4. It’s light and crisp and finished on a"
+}
 ---
-number: 75
-title: Cambridgeshire Golden Ale
-rating: 6
-breweries:
-  - brewery/oakham-ales/
-date: '2017-10-20'
-permalink: beer/cambridgeshire-golden-ale-oakham-ales/
-canonical: https://www.instagram.com/p/BafCZp5lHYT/
-tags:
-
-
-
-
-  - goldenale
-
-
----
-
-This beer got better as I drunk it. Starting at a 4. It’s light and crisp and finished on a

@@ -1,17 +1,15 @@
+---json
+{
+    "title": "Punk IPA",
+    "number": "194",
+    "rating": "5",
+    "canonical": "https://www.instagram.com/p/BsLrt_rAUhu/",
+    "date": "2019-01-03",
+    "permalink": "beer/punk-ipa-brewdog/",
+    "breweries": [
+        "brewery/brewdog/"
+    ],
+    "tags": [],
+    "review": "A “post modern classic”. Brewdog came out of nowhere a couple of years ago. Hipster beer with not much flavour. Inoffensive but doesn’t make you go “wow”. There is a hoppy taste there somewhere but watered down. Would have again if it was the only beer on offer"
+}
 ---
-number: 194
-title: Punk IPA
-rating: 5
-breweries:
-  - brewery/brewdog/
-date: '2019-01-03'
-permalink: beer/punk-ipa-brewdog/
-canonical: https://www.instagram.com/p/BsLrt_rAUhu/
-tags:
-
-
-
-
----
-
-A “post modern classic”. Brewdog came out of nowhere a couple of years ago. Hipster beer with not much flavour. Inoffensive but doesn’t make you go “wow”. There is a hoppy taste there somewhere but watered down. Would have again if it was the only beer on offer

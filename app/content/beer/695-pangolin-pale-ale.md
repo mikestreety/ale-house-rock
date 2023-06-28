@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Pangolin Pale Ale",
+    "number": "695",
+    "rating": "5",
+    "canonical": "https://www.instagram.com/p/ChFwFHSKDfF/",
+    "date": "2022-08-10",
+    "permalink": "beer/pangolin-pale-ale-endangered-brewing/",
+    "breweries": [
+        "brewery/endangered-brewing/"
+    ],
+    "tags": [],
+    "review": "Picked this up from a little indoor market in Brighton. Cool art on the can but a little underwhelming as a beer. It just lacked any kind of depth and was a bit watery."
+}
 ---
-number: 695
-title: Pangolin Pale Ale
-rating: 5
-breweries:
-  - brewery/endangered-brewing/
-date: '2022-08-10'
-permalink: beer/pangolin-pale-ale-endangered-brewing/
-canonical: https://www.instagram.com/p/ChFwFHSKDfF/
----
-
-Picked this up from a little indoor market in Brighton. Cool art on the can but a little underwhelming as a beer. It just lacked any kind of depth and was a bit watery.

@@ -1,13 +1,16 @@
+---json
+{
+    "title": "Shoop",
+    "number": "544",
+    "rating": "5",
+    "canonical": "https://www.instagram.com/p/CR7Te67JMC6/",
+    "date": "2021-07-29",
+    "permalink": "beer/shoop-salt-beer-factory-pomonda-island/",
+    "breweries": [
+        "brewery/pomona-island-brew-co/",
+        "brewery/salt-beer-factory/"
+    ],
+    "tags": [],
+    "review": "Another Tesco purchase, although this NEIPA wasn&#39;t as good as I was expecting. It had the haze but lacked any distinct flavour. It was passable, but not one I would rush to have again."
+}
 ---
-number: 544
-title: Shoop
-rating: 5
-breweries:
-  - brewery/salt-beer-factory/
-  - brewery/pomona-island-brew-co/
-date: '2021-07-29'
-permalink: beer/shoop-salt-beer-factory-pomonda-island/
-canonical: https://www.instagram.com/p/CR7Te67JMC6/
----
-
-Another Tesco purchase, although this NEIPA wasn't as good as I was expecting. It had the haze but lacked any distinct flavour. It was passable, but not one I would rush to have again.

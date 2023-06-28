@@ -1,18 +1,15 @@
+---json
+{
+    "title": "Devils Backbone",
+    "number": "144",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/BmozhGUlYNY/",
+    "date": "2018-08-18",
+    "permalink": "beer/devils-backbone-devils-backbone-brewing-company/",
+    "breweries": [
+        "brewery/devils-backbone-brewing-company/"
+    ],
+    "tags": [],
+    "review": "This standard IPA is has got a cool name (although missing an apostrophe 🤔) but an average tase. Could easily drink several of an evening, but not an exceptional beer"
+}
 ---
-number: 144
-title: Devils Backbone
-rating: 7
-breweries:
-  - brewery/devils-backbone-brewing-company/
-date: '2018-08-18'
-permalink: beer/devils-backbone-devils-backbone-brewing-company/
-canonical: https://www.instagram.com/p/BmozhGUlYNY/
-tags:
-
-
-
-
-
----
-
-This standard IPA is has got a cool name (although missing an apostrophe 🤔) but an average tase. Could easily drink several of an evening, but not an exceptional beer

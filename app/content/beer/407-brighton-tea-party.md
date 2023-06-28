@@ -1,15 +1,16 @@
+---json
+{
+    "title": "Brighton Tea Party",
+    "number": "407",
+    "rating": "6",
+    "canonical": "https://www.instagram.com/p/CJy2LBPlQfK/",
+    "date": "2021-01-08",
+    "permalink": "beer/brighton-tea-party-gun-brewery-north-laine/",
+    "breweries": [
+        "brewery/gun-brewery/",
+        "brewery/laine-brew-co/"
+    ],
+    "tags": [],
+    "review": "A gentle API, which could be easily drunk pint after pint in a pub of an evening, but not really home drinking. Had a bit of an odd aftertaste pang and wasn&#39;t as full bodied as I would have liked"
+}
 ---
-number: 407
-title: Brighton Tea Party
-rating: 6
-breweries:
-  - brewery/gun-brewery/
-  - brewery/laine-brew-co/
-date: '2021-01-08'
-permalink: beer/brighton-tea-party-gun-brewery-north-laine/
-aliases:
-  - brighton-tea-party-gin-brewery-north-laine-407
-canonical: https://www.instagram.com/p/CJy2LBPlQfK/
----
-
-A gentle API, which could be easily drunk pint after pint in a pub of an evening, but not really home drinking. Had a bit of an odd aftertaste pang and wasn't as full bodied as I would have liked

@@ -1,18 +1,15 @@
+---json
+{
+    "title": "Fire Catcher",
+    "number": "145",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/BmrAzyolWy1/",
+    "date": "2018-08-19",
+    "permalink": "beer/fire-catcher-wychwood-brewery/",
+    "breweries": [
+        "brewery/wychwood-brewery/"
+    ],
+    "tags": [],
+    "review": "A tasty golden ale from a birthday box of beer, drunk out of a new jug just for the occasion"
+}
 ---
-number: 145
-title: Fire Catcher
-rating: 8
-breweries:
-  - brewery/wychwood-brewery/
-date: '2018-08-19'
-permalink: beer/fire-catcher-wychwood-brewery/
-canonical: https://www.instagram.com/p/BmrAzyolWy1/
-tags:
-
-
-
-
-
----
-
-A tasty golden ale from a birthday box of beer, drunk out of a new jug just for the occasion

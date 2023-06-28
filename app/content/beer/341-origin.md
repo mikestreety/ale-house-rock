@@ -1,22 +1,15 @@
+---json
+{
+    "title": "Origin",
+    "number": "341",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/CBGyGKeJhN8/",
+    "date": "2020-06-06",
+    "permalink": "beer/origin-northern-monk/",
+    "breweries": [
+        "brewery/northern-monk/"
+    ],
+    "tags": [],
+    "review": "Have seen a few @northernmonk beers cropping up on my timeline so thought I would give them a go. I have had a cheeky couple already and I can tell you they are spot on. This gluten free beer is wonderful. Crisp, light and, surprisingly, remenicent of a wheat beer. Northern Monk are definitely on my list of &quot;breweries to buy from again&quot;"
+}
 ---
-number: 341
-title: Origin
-rating: 8
-breweries:
-  - brewery/northern-monk/
-date: '2020-06-06'
-permalink: beer/origin-northern-monk/
-canonical: https://www.instagram.com/p/CBGyGKeJhN8/
-tags:
-
-
-
-
-
-
-
-
-
----
-
-Have seen a few @northernmonk beers cropping up on my timeline so thought I would give them a go. I have had a cheeky couple already and I can tell you they are spot on. This gluten free beer is wonderful. Crisp, light and, surprisingly, remenicent of a wheat beer. Northern Monk are definitely on my list of "breweries to buy from again"

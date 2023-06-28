@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Liner Notes",
+    "number": "622",
+    "rating": "9",
+    "canonical": "https://www.instagram.com/p/CaYIiHYq8xC/",
+    "date": "2022-02-24",
+    "permalink": "beer/liner-notes-unbarred/",
+    "breweries": [
+        "brewery/unbarred-brewery/"
+    ],
+    "tags": [],
+    "review": "Hot on the heals of the perfect DIPA, this cracking &quot;tropical pale&quot; went down a storm. Smooth and fruity and I could easily smash a few of these."
+}
 ---
-number: 622
-title: Liner Notes
-rating: 9
-breweries:
-  - brewery/unbarred-brewery/
-date: '2022-02-24'
-permalink: beer/liner-notes-unbarred/
-canonical: https://www.instagram.com/p/CaYIiHYq8xC/
----
-
-Hot on the heals of the perfect DIPA, this cracking "tropical pale" went down a storm. Smooth and fruity and I could easily smash a few of these.

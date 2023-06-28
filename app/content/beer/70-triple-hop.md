@@ -1,21 +1,17 @@
+---json
+{
+    "title": "Triple Hop",
+    "number": "70",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/BaKQMvDFX7x/",
+    "date": "2017-10-12",
+    "permalink": "beer/triple-hop-co-op/",
+    "breweries": [
+        "brewery/co-op/"
+    ],
+    "tags": [
+        "bitter"
+    ],
+    "review": "I find myself opting to buy beers I’ve never had before over beers I love just for this account. Another co-op one which was very quaffable and went down very quickly.(although pricey for what it was)"
+}
 ---
-number: 70
-title: Triple Hop
-rating: 8
-breweries:
-  - brewery/co-op/
-date: '2017-10-12'
-permalink: beer/triple-hop-co-op/
-canonical: https://www.instagram.com/p/BaKQMvDFX7x/
-tags:
-
-  - bitter
-
-
-
-
-
-
----
-
-I find myself opting to buy beers I’ve never had before over beers I love just for this account. Another co-op one which was very quaffable and went down very quickly.(although pricey for what it was)

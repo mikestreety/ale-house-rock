@@ -1,15 +1,18 @@
+---json
+{
+    "title": "Firkin Fox",
+    "number": "61",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/BYIfr34FjuR/",
+    "serving": "Bottle",
+    "date": "2017-08-23",
+    "permalink": "beer/firkin-fox-badger/",
+    "breweries": [
+        "brewery/badger/"
+    ],
+    "tags": [
+        "bitter"
+    ],
+    "review": "Another corker of a beer from @badgerbeers. They can do no wrong (except with the ginger one 😉). Very enjoyable and will be in my trolley if I see it again! This was obtained from the Hall and Woodhouse brewery shop"
+}
 ---
-number: 61
-title: Firkin Fox
-rating: 8
-serving: Bottle
-breweries:
-  - brewery/badger/
-date: '2017-08-23'
-permalink: beer/firkin-fox-badger/
-canonical: https://www.instagram.com/p/BYIfr34FjuR/
-tags:
-  - bitter
----
-
-Another corker of a beer from @badgerbeers. They can do no wrong (except with the ginger one 😉). Very enjoyable and will be in my trolley if I see it again! This was obtained from the Hall and Woodhouse brewery shop

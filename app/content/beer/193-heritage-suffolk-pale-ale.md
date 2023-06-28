@@ -1,16 +1,17 @@
+---json
+{
+    "title": "Heritage Suffolk Pale Ale",
+    "number": "193",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/BsG4pYyAGDZ/",
+    "date": "2019-01-01",
+    "permalink": "beer/heritage-suffolk-pale-ale-greene-king/",
+    "breweries": [
+        "brewery/greene-king/"
+    ],
+    "tags": [
+        "paleale"
+    ],
+    "review": "First beer of the year and a good one to boot. Second beer in the Heritage series and they are still onto a winner. Quite a lovely beer this one and went down well. Was a good colour and lovely flavour. Despite being light and hoppy it had a lovely taste"
+}
 ---
-number: 193
-title: Heritage Suffolk Pale Ale
-rating: 8
-breweries:
-  - brewery/greene-king/
-date: '2019-01-01'
-permalink: beer/heritage-suffolk-pale-ale-greene-king/
-canonical: https://www.instagram.com/p/BsG4pYyAGDZ/
-tags:
-  - paleale
-
-
----
-
-First beer of the year and a good one to boot. Second beer in the Heritage series and they are still onto a winner. Quite a lovely beer this one and went down well. Was a good colour and lovely flavour. Despite being light and hoppy it had a lovely taste

@@ -1,16 +1,15 @@
+---json
+{
+    "title": "Heritage",
+    "number": "187",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/Br0BCFEgYkP/",
+    "date": "2018-12-25",
+    "permalink": "beer/heritage-firebird-brewing-company/",
+    "breweries": [
+        "brewery/firebird-brewing-company/"
+    ],
+    "tags": [],
+    "review": "First Christmas beer and a good one to start with. Good body and nice flavour"
+}
 ---
-number: 187
-title: Heritage
-rating: 7
-breweries:
-  - brewery/firebird-brewing-company/
-date: '2018-12-25'
-permalink: beer/heritage-firebird-brewing-company/
-canonical: https://www.instagram.com/p/Br0BCFEgYkP/
-tags:
-
-
-
----
-
-First Christmas beer and a good one to start with. Good body and nice flavour

@@ -1,15 +1,18 @@
+---json
+{
+    "title": "Hop Garden Gold",
+    "number": "38",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/BSCWo3KF7FW/",
+    "serving": "Bottle",
+    "date": "2017-03-24",
+    "permalink": "beer/hop-garden-gold-hogs-back-brewery/",
+    "breweries": [
+        "brewery/hogs-back-brewery/"
+    ],
+    "tags": [
+        "goldenale"
+    ],
+    "review": "A light refreshing golden beer. Easy to drink, easy to please. Would not be disappointed if you bought me a pint of this"
+}
 ---
-number: 38
-title: Hop Garden Gold
-rating: 8
-serving: Bottle
-breweries:
-  - brewery/hogs-back-brewery/
-date: '2017-03-24'
-permalink: beer/hop-garden-gold-hogs-back-brewery/
-canonical: https://www.instagram.com/p/BSCWo3KF7FW/
-tags:
-  - goldenale
----
-
-A light refreshing golden beer. Easy to drink, easy to please. Would not be disappointed if you bought me a pint of this

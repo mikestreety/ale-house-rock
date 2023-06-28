@@ -1,16 +1,17 @@
+---json
+{
+    "title": "Dr. Thirsty’s",
+    "number": "154",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/BnesJqaFhPN/",
+    "date": "2018-09-08",
+    "permalink": "beer/dr-thirstys-wychwood-brewery/",
+    "breweries": [
+        "brewery/wychwood-brewery/"
+    ],
+    "tags": [
+        "goldenale"
+    ],
+    "review": "Next up from @wychwoodgoblins is this blonde beer. Was light, crisp and tasty. And went down a treat after riding 100 miles today"
+}
 ---
-number: 154
-title: Dr. Thirsty’s
-rating: 8
-breweries:
-  - brewery/wychwood-brewery/
-date: '2018-09-08'
-permalink: beer/dr-thirstys-wychwood-brewery/
-canonical: https://www.instagram.com/p/BnesJqaFhPN/
-tags:
-
-
-  - goldenale
----
-
-Next up from @wychwoodgoblins is this blonde beer. Was light, crisp and tasty. And went down a treat after riding 100 miles today

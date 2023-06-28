@@ -1,15 +1,18 @@
+---json
+{
+    "title": "Abdominal Stoneman",
+    "number": "27",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/BOkjBXXgBf5/",
+    "serving": "Bottle",
+    "date": "2016-12-28",
+    "permalink": "beer/abdominal-stoneman-lymestone-brewery/",
+    "breweries": [
+        "brewery/lymestone-brewery/"
+    ],
+    "tags": [
+        "ipa"
+    ],
+    "review": "The #aleadvent is over, but I&#39;m going to keep track of some of the beers I drink from time to time. This 7% (!) beer is a strong full bodied Ale. Small brewery from Staffordshire - a Christmas present! I&#39;m off to watch Trainspotting with it and relate to the &quot;hit&quot; they keep mentioning"
+}
 ---
-number: 27
-title: Abdominal Stoneman
-rating: 8
-serving: Bottle
-breweries:
-  - brewery/lymestone-brewery/
-date: '2016-12-28'
-permalink: beer/abdominal-stoneman-lymestone-brewery/
-canonical: https://www.instagram.com/p/BOkjBXXgBf5/
-tags:
-  - ipa
----
-
-The #aleadvent is over, but I'm going to keep track of some of the beers I drink from time to time. This 7% (!) beer is a strong full bodied Ale. Small brewery from Staffordshire - a Christmas present! I'm off to watch Trainspotting with it and relate to the "hit" they keep mentioning

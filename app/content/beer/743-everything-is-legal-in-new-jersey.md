@@ -1,16 +1,19 @@
+---json
+{
+    "title": "Everything Is Legal In New Jersey",
+    "number": "743",
+    "rating": "9",
+    "canonical": "https://untappd.com/user/mikestreety/checkin/1225149677",
+    "serving": "Can",
+    "purchased": "shop/beer-no-evil/",
+    "date": "2022-11-28",
+    "permalink": "beer/everything-is-legal-in-new-jersey-sureshot-brewing/",
+    "breweries": [
+        "brewery/sureshot-brewing/"
+    ],
+    "tags": [
+        "dipa"
+    ],
+    "review": "This was a tasty bombardment of fruit and flavours. A lovely thick DIPA which was much welcomed after a weekend of kids parties. A slow sipper, but every sip was delicious"
+}
 ---
-canonical: 'https://untappd.com/user/mikestreety/checkin/1225149677'
-title: Everything Is Legal In New Jersey
-serving: Can
-rating: 9
-purchased: shop/beer-no-evil/
-date: '2022-11-28'
-breweries:
-  - brewery/sureshot-brewing/
-tags:
-  - dipa
-number: 743
-permalink: beer/everything-is-legal-in-new-jersey-sureshot-brewing/
----
-
-This was a tasty bombardment of fruit and flavours. A lovely thick DIPA which was much welcomed after a weekend of kids parties. A slow sipper, but every sip was delicious

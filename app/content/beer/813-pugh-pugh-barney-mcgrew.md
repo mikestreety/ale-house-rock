@@ -1,16 +1,19 @@
+---json
+{
+    "title": "Pugh, Pugh, Barney McGrew",
+    "number": "813",
+    "rating": "7.5",
+    "canonical": "https://untappd.com/user/mikestreety/checkin/1284831023",
+    "serving": "Can",
+    "purchased": "shop/sureshot-brewing/",
+    "date": "2023-06-17",
+    "permalink": "beer/pugh-pugh-barney-mcgrew-sureshot-brewing/",
+    "breweries": [
+        "brewery/sureshot-brewing/"
+    ],
+    "tags": [
+        "paleale"
+    ],
+    "review": "A lovely Pale Ale with a fantastic can design. A good all-rounder which wasn&#39;t too strong either."
+}
 ---
-canonical: 'https://untappd.com/user/mikestreety/checkin/1284831023'
-title: 'Pugh, Pugh, Barney McGrew'
-serving: Can
-rating: 7.5
-purchased: shop/sureshot-brewing/
-date: '2023-06-17'
-breweries:
-  - brewery/sureshot-brewing/
-tags:
-  - paleale
-number: 813
-permalink: beer/pugh-pugh-barney-mcgrew-sureshot-brewing/
----
-
-A lovely Pale Ale with a fantastic can design. A good all-rounder which wasn't too strong either.

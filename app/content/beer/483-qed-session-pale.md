@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Q.E.D Session Pale",
+    "number": "483",
+    "rating": "4",
+    "canonical": "https://www.instagram.com/p/COZ2D-5lZx2/",
+    "date": "2021-05-03",
+    "permalink": "beer/qed-session-pale-london-beer-factory/",
+    "breweries": [
+        "brewery/london-beer-factory/"
+    ],
+    "tags": [],
+    "review": "I wasn&#39;t much of a fan of this one. Reminded me very much of a lager. I didn&#39;t think there was much taste there. It improved when my curry turned up as it complimented it well, but it was missing something."
+}
 ---
-number: 483
-title: Q.E.D Session Pale
-rating: 4
-breweries:
-  - brewery/london-beer-factory/
-date: '2021-05-03'
-permalink: beer/qed-session-pale-london-beer-factory/
-canonical: https://www.instagram.com/p/COZ2D-5lZx2/
----
-
-I wasn't much of a fan of this one. Reminded me very much of a lager. I didn't think there was much taste there. It improved when my curry turned up as it complimented it well, but it was missing something.

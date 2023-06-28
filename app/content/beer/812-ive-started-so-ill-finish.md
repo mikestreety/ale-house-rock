@@ -1,17 +1,20 @@
+---json
+{
+    "title": "I’ve Started So I’ll Finish",
+    "number": "812",
+    "rating": "8",
+    "canonical": "https://untappd.com/user/mikestreety/checkin/1283300325",
+    "serving": "Can",
+    "purchased": "shop/sureshot-brewing/",
+    "date": "2023-06-11",
+    "permalink": "beer/ive-started-so-ill-finish-sureshot-brewing-vocation-brewery/",
+    "breweries": [
+        "brewery/sureshot-brewing/",
+        "brewery/vocation-brewery/"
+    ],
+    "tags": [
+        "dipa"
+    ],
+    "review": "DIPAs are just great beers, aren&#39;t they? Not as thick and juicy as I would have liked, but still a very good beer."
+}
 ---
-canonical: 'https://untappd.com/user/mikestreety/checkin/1283300325'
-title: I’ve Started So I’ll Finish
-serving: Can
-rating: 8
-purchased: shop/sureshot-brewing/
-date: '2023-06-11'
-breweries:
-  - brewery/sureshot-brewing/
-  - brewery/vocation-brewery/
-tags:
-  - dipa
-number: 812
-permalink: beer/ive-started-so-ill-finish-sureshot-brewing-vocation-brewery/
----
-
-DIPAs are just great beers, aren't they? Not as thick and juicy as I would have liked, but still a very good beer.

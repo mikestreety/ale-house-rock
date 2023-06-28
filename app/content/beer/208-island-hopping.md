@@ -1,19 +1,15 @@
+---json
+{
+    "title": "Island Hopping",
+    "number": "208",
+    "rating": "6",
+    "canonical": "https://www.instagram.com/p/BvAMVqYlrNs/",
+    "date": "2019-03-14",
+    "permalink": "beer/island-hopping-swannay-brewery/",
+    "breweries": [
+        "brewery/swannay-brewery/"
+    ],
+    "tags": [],
+    "review": "Tasty session ale but would leave it there. A bit too hoppy for home sipping but would be wonderful and right at home in a small, independent drinking establishment"
+}
 ---
-number: 208
-title: Island Hopping
-rating: 6
-breweries:
-  - brewery/swannay-brewery/
-date: '2019-03-14'
-permalink: beer/island-hopping-swannay-brewery/
-canonical: https://www.instagram.com/p/BvAMVqYlrNs/
-tags:
-
-
-
-
-
-
----
-
-Tasty session ale but would leave it there. A bit too hoppy for home sipping but would be wonderful and right at home in a small, independent drinking establishment

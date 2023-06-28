@@ -1,16 +1,19 @@
+---json
+{
+    "title": "Swimming In Mosaic",
+    "number": "748",
+    "rating": "7.5",
+    "canonical": "https://untappd.com/user/mikestreety/checkin/1230866335",
+    "serving": "Can",
+    "purchased": "shop/palate-bottle-shop/",
+    "date": "2022-12-17",
+    "permalink": "beer/swimming-in-mosaic-merakai-brewing-co/",
+    "breweries": [
+        "brewery/merakai-brewing-co/"
+    ],
+    "tags": [
+        "hazy"
+    ],
+    "review": "A cheeky hazy pale from what I now know as a local brewery. Was enjoyable enough and has encouraged me to explore this Brewery further"
+}
 ---
-canonical: 'https://untappd.com/user/mikestreety/checkin/1230866335'
-title: Swimming In Mosaic
-serving: Can
-rating: 7.5
-purchased: shop/palate-bottle-shop/
-date: '2022-12-17'
-breweries:
-  - brewery/merakai-brewing-co/
-tags:
-  - hazy
-number: 748
-permalink: beer/swimming-in-mosaic-merakai-brewing-co/
----
-
-A cheeky hazy pale from what I now know as a local brewery. Was enjoyable enough and has encouraged me to explore this Brewery further

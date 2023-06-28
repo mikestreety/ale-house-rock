@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Light Speed",
+    "number": "468",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/CNiqAftp2LF/",
+    "date": "2021-04-11",
+    "permalink": "beer/light-speed-brewdog/",
+    "breweries": [
+        "brewery/brewdog/"
+    ],
+    "tags": [],
+    "review": "The citrus in this beer is very prominent, both in smell and taste. It went wonderfully with the Chilli, cheese and nachos this evening - complimenting the Mexican food perfectly. I do fear, however, that this tainted my view of the beer. The remaining sips after dinner revealed a drink that was a bit too lemony for my taste and, despite being smooth to drink and a refreshing change, I wouldn&#39;t buy it again. Not bad though."
+}
 ---
-number: 468
-title: Light Speed
-rating: 7
-breweries:
-  - brewery/brewdog/
-date: '2021-04-11'
-permalink: beer/light-speed-brewdog/
-canonical: https://www.instagram.com/p/CNiqAftp2LF/
----
-
-The citrus in this beer is very prominent, both in smell and taste. It went wonderfully with the Chilli, cheese and nachos this evening - complimenting the Mexican food perfectly. I do fear, however, that this tainted my view of the beer. The remaining sips after dinner revealed a drink that was a bit too lemony for my taste and, despite being smooth to drink and a refreshing change, I wouldn't buy it again. Not bad though.

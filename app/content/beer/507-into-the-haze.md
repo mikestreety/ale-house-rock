@@ -1,24 +1,17 @@
+---json
+{
+    "title": "Into the Haze",
+    "number": "507",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/CP6mnToJjUw/",
+    "date": "2021-06-09",
+    "permalink": "beer/into-the-haze-deya-brewing-company/",
+    "breweries": [
+        "brewery/deya-brewing-company/"
+    ],
+    "tags": [
+        "ipa"
+    ],
+    "review": "Another corker from @deyabrewery, fruity, refreshing and very easy drinking. Reminded me of cloudy apple juice in colour and texture but a light beer in taste. Could drink a few of these and fully appreciate the 500ml. Picked this IPA up from @palate.bottleshop a couple of weeks ago. Best served cold"
+}
 ---
-number: 507
-title: Into the Haze
-rating: 8
-breweries:
-  - brewery/deya-brewing-company/
-date: '2021-06-09'
-permalink: beer/into-the-haze-deya-brewing-company/
-canonical: https://www.instagram.com/p/CP6mnToJjUw/
-tags:
-
-  - ipa
-
-
-
-
-
-
-
-
-
----
-
-Another corker from @deyabrewery, fruity, refreshing and very easy drinking. Reminded me of cloudy apple juice in colour and texture but a light beer in taste. Could drink a few of these and fully appreciate the 500ml. Picked this IPA up from @palate.bottleshop a couple of weeks ago. Best served cold

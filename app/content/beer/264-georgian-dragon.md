@@ -1,16 +1,15 @@
+---json
+{
+    "title": "Georgian Dragon",
+    "number": "264",
+    "rating": "9",
+    "canonical": "https://www.instagram.com/p/B6llG8XJWIZ/",
+    "date": "2019-12-27",
+    "permalink": "beer/georgian-dragon-harveys-brewery/",
+    "breweries": [
+        "brewery/harveys-brewery/"
+    ],
+    "tags": [],
+    "review": "At the in-laws for Christmas dinner and this beer accompanied it perfectly. The right amount of bitter (although couldn&#39;t taste the fruitcake) and a lovely ruby beer taste. This might be the Christmas cheer &amp; food talking but was an excellent beer"
+}
 ---
-number: 264
-title: Georgian Dragon
-rating: 9
-breweries:
-  - brewery/harveys-brewery/
-date: '2019-12-27'
-permalink: beer/georgian-dragon-harveys-brewery/
-canonical: https://www.instagram.com/p/B6llG8XJWIZ/
-tags:
-
-
-
----
-
-At the in-laws for Christmas dinner and this beer accompanied it perfectly. The right amount of bitter (although couldn't taste the fruitcake) and a lovely ruby beer taste. This might be the Christmas cheer & food talking but was an excellent beer

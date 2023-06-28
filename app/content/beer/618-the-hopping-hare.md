@@ -1,12 +1,15 @@
+---json
+{
+    "title": "The Hopping Hare",
+    "number": "618",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/CaDJzB5lFPD/",
+    "date": "2022-02-16",
+    "permalink": "beer/the-hopping-hare-badger/",
+    "breweries": [
+        "brewery/badger/"
+    ],
+    "tags": [],
+    "review": "I was surprised I had reviewed this before, but then remembered that it&#39;s not often you get The Hopping Hare as a bottle. Light, crisp and a classic Badger ale. Not their best but still good 👍"
+}
 ---
-number: 618
-title: The Hopping Hare
-rating: 7
-breweries:
-  - brewery/badger/
-date: '2022-02-16'
-permalink: beer/the-hopping-hare-badger/
-canonical: https://www.instagram.com/p/CaDJzB5lFPD/
----
-
-I was surprised I had reviewed this before, but then remembered that it's not often you get The Hopping Hare as a bottle. Light, crisp and a classic Badger ale. Not their best but still good 👍

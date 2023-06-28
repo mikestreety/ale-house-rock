@@ -1,15 +1,18 @@
+---json
+{
+    "title": "BrewDog X Buxton: Way Out West",
+    "number": "727",
+    "rating": "5",
+    "canonical": "https://untappd.com/user/mikestreety/checkin/1212990714",
+    "serving": "Can",
+    "purchased": "shop/asda/",
+    "date": "2022-10-20",
+    "permalink": "beer/brewdog-x-buxton-way-out-west-brewdog-buxton-brewery/",
+    "breweries": [
+        "brewery/brewdog/",
+        "brewery/buxton-brewery/"
+    ],
+    "tags": [],
+    "review": "I was expecting a bit more from this beer as Buxton were involved, but alas it was just another bland Brewdog IPA"
+}
 ---
-canonical: 'https://untappd.com/user/mikestreety/checkin/1212990714'
-title: 'BrewDog X Buxton: Way Out West'
-serving: Can
-rating: 5
-purchased: shop/asda/
-date: '2022-10-20'
-breweries:
-  - brewery/brewdog/
-  - brewery/buxton-brewery/
-number: 727
-permalink: beer/brewdog-x-buxton-way-out-west-brewdog-buxton-brewery/
----
-
-I was expecting a bit more from this beer as Buxton were involved, but alas it was just another bland Brewdog IPA

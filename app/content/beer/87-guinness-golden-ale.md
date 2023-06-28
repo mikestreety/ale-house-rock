@@ -1,21 +1,18 @@
+---json
+{
+    "title": "Guinness Golden Ale",
+    "number": "87",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/BdTFToGFVwP/",
+    "date": "2017-12-29",
+    "permalink": "beer/guinness-golden-ale-open-gate-brewery/",
+    "breweries": [
+        "brewery/open-gate-brewery/"
+    ],
+    "tags": [
+        "goldenale",
+        "bitter"
+    ],
+    "review": "I’m not really a fan of original Guinness but this not-so-golden ale is tasty"
+}
 ---
-number: 87
-title: Guinness Golden Ale
-rating: 7
-breweries:
-  - brewery/open-gate-brewery/
-date: '2017-12-29'
-permalink: beer/guinness-golden-ale-open-gate-brewery/
-canonical: https://www.instagram.com/p/BdTFToGFVwP/
-tags:
-
-
-  - goldenale
-
-
-
-  - bitter
-
----
-
-I’m not really a fan of original Guinness but this not-so-golden ale is tasty

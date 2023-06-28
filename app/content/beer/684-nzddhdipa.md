@@ -1,12 +1,15 @@
+---json
+{
+    "title": "NZDDHDIPA",
+    "number": "684",
+    "rating": "6",
+    "canonical": "https://www.instagram.com/p/CgFRttNq3b6/",
+    "date": "2022-07-16",
+    "permalink": "beer/nzddhdipa-lervig/",
+    "breweries": [
+        "brewery/lervig-aktiebryggeri/"
+    ],
+    "tags": [],
+    "review": "Another Lervig beer from a @beermerchants mystery box. Quite a bitter DIPA in which you can taste every bit of the 6.9% ABV. Not my favourite but wouldn&#39;t turn it down if I was offet it at a friend&#39;s house"
+}
 ---
-number: 684
-title: NZDDHDIPA
-rating: 6
-breweries:
-  - brewery/lervig-aktiebryggeri/
-date: '2022-07-16'
-permalink: beer/nzddhdipa-lervig/
-canonical: https://www.instagram.com/p/CgFRttNq3b6/
----
-
-Another Lervig beer from a @beermerchants mystery box. Quite a bitter DIPA in which you can taste every bit of the 6.9% ABV. Not my favourite but wouldn't turn it down if I was offet it at a friend's house

@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Market Brew Pale Ale",
+    "number": "547",
+    "rating": "3",
+    "canonical": "https://www.instagram.com/p/CSIJ0JyqWVo/",
+    "date": "2021-08-03",
+    "permalink": "beer/market-brew-pale-ale-down-south-brewing/",
+    "breweries": [
+        "brewery/lidl/"
+    ],
+    "tags": [],
+    "review": "A classic Lidl beer. Not much flavour or depth. Not sure I&#39;ll be having one of these again."
+}
 ---
-number: 547
-title: Market Brew Pale Ale
-rating: 3
-breweries:
-  - brewery/lidl/
-date: '2021-08-03'
-permalink: beer/market-brew-pale-ale-down-south-brewing/
-canonical: https://www.instagram.com/p/CSIJ0JyqWVo/
----
-
-A classic Lidl beer. Not much flavour or depth. Not sure I'll be having one of these again.

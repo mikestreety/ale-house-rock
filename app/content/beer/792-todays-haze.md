@@ -1,16 +1,19 @@
+---json
+{
+    "title": "Today's Haze",
+    "number": "792",
+    "rating": "5.5",
+    "canonical": "https://untappd.com/user/mikestreety/checkin/1269912451",
+    "serving": "Can",
+    "purchased": "shop/co-op-food/",
+    "date": "2023-04-30",
+    "permalink": "beer/todays-haze-goose-island-beer-co/",
+    "breweries": [
+        "brewery/goose-island/"
+    ],
+    "tags": [
+        "ipa"
+    ],
+    "review": "Another generic, inoffensive hazy IPA. I picked up a 4 pack but doubt I will again. Didn&#39;t dislike enough to decline though."
+}
 ---
-canonical: 'https://untappd.com/user/mikestreety/checkin/1269912451'
-title: Today's Haze
-serving: Can
-rating: 5.5
-purchased: shop/co-op-food/
-date: '2023-04-30'
-breweries:
-  - brewery/goose-island/
-tags:
-  - ipa
-number: 792
-permalink: beer/todays-haze-goose-island-beer-co/
----
-
-Another generic, inoffensive hazy IPA. I picked up a 4 pack but doubt I will again. Didn't dislike enough to decline though.

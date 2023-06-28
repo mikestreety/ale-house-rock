@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Locals V3",
+    "number": "646",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/Cc6C9nVKV_k/",
+    "date": "2022-04-28",
+    "permalink": "beer/locals-v3-beak-brewery/",
+    "breweries": [
+        "brewery/beak-brewery/"
+    ],
+    "tags": [],
+    "review": "As ever, a fantastic beer from @thebeakbrewery. Version 3 of their locals beer is smooth, fruity and so very good. Looking back (link in bio), it seems not quite as good as their previous incarnations, but still a quality beer 🍺"
+}
 ---
-number: 646
-title: Locals V3
-rating: 8
-breweries:
-  - brewery/beak-brewery/
-date: '2022-04-28'
-permalink: beer/locals-v3-beak-brewery/
-canonical: https://www.instagram.com/p/Cc6C9nVKV_k/
----
-
-As ever, a fantastic beer from @thebeakbrewery. Version 3 of their locals beer is smooth, fruity and so very good. Looking back (link in bio), it seems not quite as good as their previous incarnations, but still a quality beer 🍺

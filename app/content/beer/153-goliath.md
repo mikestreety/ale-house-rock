@@ -1,18 +1,15 @@
+---json
+{
+    "title": "Goliath",
+    "number": "153",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/BnZY9A-FePQ/",
+    "date": "2018-09-06",
+    "permalink": "beer/goliath-wychwood-brewery/",
+    "breweries": [
+        "brewery/wychwood-brewery/"
+    ],
+    "tags": [],
+    "review": "what a nicely balanced crisp beer. Very drinkable"
+}
 ---
-number: 153
-title: Goliath
-rating: 8
-breweries:
-  - brewery/wychwood-brewery/
-date: '2018-09-06'
-permalink: beer/goliath-wychwood-brewery/
-canonical: https://www.instagram.com/p/BnZY9A-FePQ/
-tags:
-
-
-
-
-
----
-
-what a nicely balanced crisp beer. Very drinkable

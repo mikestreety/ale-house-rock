@@ -1,15 +1,15 @@
+---json
+{
+    "title": "Tanglefoot",
+    "number": "233",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/B16wUsXl4fd/",
+    "date": "2019-09-02",
+    "permalink": "beer/tanglefoot-badger/",
+    "breweries": [
+        "brewery/badger/"
+    ],
+    "tags": [],
+    "review": "Not much to say on this. Light, crisp, satisfactory. Hits the spot when it aims to be a &quot;good beer after a hard day&quot;. Would never crave one but would be tempted to buy more"
+}
 ---
-number: 233
-title: Tanglefoot
-rating: 7
-breweries:
-  - brewery/badger/
-date: '2019-09-02'
-permalink: beer/tanglefoot-badger/
-canonical: https://www.instagram.com/p/B16wUsXl4fd/
-tags:
-
-
----
-
-Not much to say on this. Light, crisp, satisfactory. Hits the spot when it aims to be a "good beer after a hard day". Would never crave one but would be tempted to buy more

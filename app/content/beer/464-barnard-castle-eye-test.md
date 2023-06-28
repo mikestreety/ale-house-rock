@@ -1,27 +1,17 @@
+---json
+{
+    "title": "Barnard Castle Eye Test",
+    "number": "464",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/CNQlkFaprBA/",
+    "date": "2021-04-04",
+    "permalink": "beer/barnard-castle-eye-test-brewdog/",
+    "breweries": [
+        "brewery/brewdog/"
+    ],
+    "tags": [
+        "ipa"
+    ],
+    "review": "Now this is what @brewdogofficial are good at. Smooth and tasty hazy IPAs with no gimmicks. No weird flavours or curveball antics this beer had a lovely taste that was wonderfully morish."
+}
 ---
-number: 464
-title: Barnard Castle Eye Test
-rating: 8
-breweries:
-  - brewery/brewdog/
-date: '2021-04-04'
-permalink: beer/barnard-castle-eye-test-brewdog/
-canonical: https://www.instagram.com/p/CNQlkFaprBA/
-tags:
-
-
-  - ipa
-
-
-
-
-
-
-
-
-
-
-
----
-
-Now this is what @brewdogofficial are good at. Smooth and tasty hazy IPAs with no gimmicks. No weird flavours or curveball antics this beer had a lovely taste that was wonderfully morish.

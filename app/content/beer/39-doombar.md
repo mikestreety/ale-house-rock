@@ -1,15 +1,18 @@
+---json
+{
+    "title": "Doom Bar",
+    "number": "39",
+    "rating": "9",
+    "canonical": "https://www.instagram.com/p/BSmHwh1l1nK/",
+    "serving": "Bottle",
+    "date": "2017-04-07",
+    "permalink": "beer/doombar-sharps/",
+    "breweries": [
+        "brewery/sharps/"
+    ],
+    "tags": [
+        "bitter"
+    ],
+    "review": "One of my favourite beers on tap (although recently it seems to have lost its way). A standard bitter, a good malt"
+}
 ---
-number: 39
-title: Doom Bar
-serving: Bottle
-rating: 9
-breweries:
-  - brewery/sharps/
-date: '2017-04-07'
-permalink: beer/doombar-sharps/
-canonical: https://www.instagram.com/p/BSmHwh1l1nK/
-tags:
-  - bitter
----
-
-One of my favourite beers on tap (although recently it seems to have lost its way). A standard bitter, a good malt

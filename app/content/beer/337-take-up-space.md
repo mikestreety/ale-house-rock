@@ -1,18 +1,17 @@
+---json
+{
+    "title": "Take Up Space",
+    "number": "337",
+    "rating": "5",
+    "canonical": "https://www.instagram.com/p/CA3T-VWJL9m/",
+    "date": "2020-05-31",
+    "permalink": "beer/take-up-space-the-queer-brewing-project/",
+    "breweries": [
+        "brewery/the-queer-brewing-project/"
+    ],
+    "tags": [
+        "stout"
+    ],
+    "review": "The sound of this raspberry and vanilla stout drew me into this, however I was disappointed in the lack of those flavours. I&#39;m sure a more sophisticated palate would have discovered them, but for my simple tastes I found it lacking. Such a shame. Smooth stout otherwise"
+}
 ---
-number: 337
-title: Take Up Space
-rating: 5
-breweries:
-  - brewery/the-queer-brewing-project/
-date: '2020-05-31'
-permalink: beer/take-up-space-the-queer-brewing-project/
-canonical: https://www.instagram.com/p/CA3T-VWJL9m/
-tags:
-  - stout
-
-
-
-
----
-
-The sound of this raspberry and vanilla stout drew me into this, however I was disappointed in the lack of those flavours. I'm sure a more sophisticated palate would have discovered them, but for my simple tastes I found it lacking. Such a shame. Smooth stout otherwise

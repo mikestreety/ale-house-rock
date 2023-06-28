@@ -1,18 +1,17 @@
+---json
+{
+    "title": "Dark Munro",
+    "number": "211",
+    "rating": "6",
+    "canonical": "https://www.instagram.com/p/BvZ7UTmlc0R/",
+    "date": "2019-03-24",
+    "permalink": "beer/dark-munro-swannay-brewery/",
+    "breweries": [
+        "brewery/swannay-brewery/"
+    ],
+    "tags": [
+        "mild"
+    ],
+    "review": "This mild had the taste of a stout with the consistency of a black IPA. Went down without incident really. Coffee/cocoa tones but not a stunner"
+}
 ---
-number: 211
-title: Dark Munro
-rating: 6
-breweries:
-  - brewery/swannay-brewery/
-date: '2019-03-24'
-permalink: beer/dark-munro-swannay-brewery/
-canonical: https://www.instagram.com/p/BvZ7UTmlc0R/
-tags:
-  - mild
-
-
-
-
----
-
-This mild had the taste of a stout with the consistency of a black IPA. Went down without incident really. Coffee/cocoa tones but not a stunner

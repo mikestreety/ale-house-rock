@@ -1,17 +1,15 @@
+---json
+{
+    "title": "The Original",
+    "number": "102",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/BguAeVwlHt8/",
+    "date": "2018-03-24",
+    "permalink": "beer/the-original-innis-gunn/",
+    "breweries": [
+        "brewery/innis-gunn/"
+    ],
+    "tags": [],
+    "review": "Picked this up in Lidl, haven’t had one for years. These are beautifully, oaky, scotchy and easily drinkable. Brewed in barrels of spirits and dangerously high in alcohol. Went down far too quickly"
+}
 ---
-number: 102
-title: The Original
-rating: 8
-breweries:
-  - brewery/innis-gunn/
-date: '2018-03-24'
-permalink: beer/the-original-innis-gunn/
-canonical: https://www.instagram.com/p/BguAeVwlHt8/
-tags:
-
-
-
-
----
-
-Picked this up in Lidl, haven’t had one for years. These are beautifully, oaky, scotchy and easily drinkable. Brewed in barrels of spirits and dangerously high in alcohol. Went down far too quickly

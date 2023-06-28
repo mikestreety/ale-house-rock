@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Precious Falling",
+    "number": "616",
+    "rating": "5",
+    "canonical": "https://www.instagram.com/p/CZ5JrzUq6Rm/",
+    "date": "2022-02-12",
+    "permalink": "beer/precious-falling-north-brewing-co/",
+    "breweries": [
+        "brewery/north-brewing-co/"
+    ],
+    "tags": [],
+    "review": "A &quot;Fruited Sour + Honeyberry + Hibiscus + Lemon&quot; beer. I&#39;m not normally a sour fan so I went in expecting the worst. It wasn&#39;t anywhere nearly as bad as I was expecting. It tasted like a blood orange San Pellegrino. It was drinkable, but does taste anything like beer."
+}
 ---
-number: 616
-title: Precious Falling
-rating: 5
-breweries:
-  - brewery/north-brewing-co/
-date: '2022-02-12'
-permalink: beer/precious-falling-north-brewing-co/
-canonical: https://www.instagram.com/p/CZ5JrzUq6Rm/
----
-
-A "Fruited Sour + Honeyberry + Hibiscus + Lemon" beer. I'm not normally a sour fan so I went in expecting the worst. It wasn't anywhere nearly as bad as I was expecting. It tasted like a blood orange San Pellegrino. It was drinkable, but does taste anything like beer.

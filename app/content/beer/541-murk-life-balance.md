@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Murk Life Balance",
+    "number": "541",
+    "rating": "5",
+    "canonical": "https://www.instagram.com/p/CRw1skGJ4R-/",
+    "date": "2021-07-25",
+    "permalink": "beer/murk-life-balance-magic-rock-brewing/",
+    "breweries": [
+        "brewery/magic-rock-brewing/"
+    ],
+    "tags": [],
+    "review": "A hazy pale ale which didn&#39;t really deliver. Mellow flavours and a drinkable beer, but I certainly wouldn&#39;t pick this over other hazy ales out there."
+}
 ---
-number: 541
-title: Murk Life Balance
-rating: 5
-breweries:
-  - brewery/magic-rock-brewing/
-date: '2021-07-25'
-permalink: beer/murk-life-balance-magic-rock-brewing/
-canonical: https://www.instagram.com/p/CRw1skGJ4R-/
----
-
-A hazy pale ale which didn't really deliver. Mellow flavours and a drinkable beer, but I certainly wouldn't pick this over other hazy ales out there.

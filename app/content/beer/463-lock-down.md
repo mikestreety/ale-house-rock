@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Lock Down",
+    "number": "463",
+    "rating": "3",
+    "canonical": "https://www.instagram.com/p/CNOD99uJMZm/",
+    "date": "2021-04-03",
+    "permalink": "beer/lock-down-2-brewdog/",
+    "breweries": [
+        "brewery/brewdog/"
+    ],
+    "tags": [],
+    "review": "I&#39;ve come to the conclusion that Brewdog should stick to brewing &quot;normal beers&quot;. Their fruity and alternative beers are novel at best and just plain old disappointing most of the time. Once again, this was a light sweet beer I wouldn&#39;t buy again. This was one of the few that I wasn&#39;t glad I tried &quot;for the experience&quot;, but I did finish it."
+}
 ---
-number: 463
-title: Lock Down
-rating: 3
-breweries:
-  - brewery/brewdog/
-date: '2021-04-03'
-permalink: beer/lock-down-2-brewdog/
-canonical: https://www.instagram.com/p/CNOD99uJMZm/
----
-
-I've come to the conclusion that Brewdog should stick to brewing "normal beers". Their fruity and alternative beers are novel at best and just plain old disappointing most of the time. Once again, this was a light sweet beer I wouldn't buy again. This was one of the few that I wasn't glad I tried "for the experience", but I did finish it.

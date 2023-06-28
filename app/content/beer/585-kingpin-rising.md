@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Kingpin Rising",
+    "number": "585",
+    "rating": "3",
+    "canonical": "https://www.instagram.com/p/CVqPUFJq16h/",
+    "date": "2021-10-30",
+    "permalink": "beer/kingpin-rising-boss-brewing/",
+    "breweries": [
+        "brewery/boss-brewing/"
+    ],
+    "tags": [],
+    "review": "A generic, Lidl &quot;Session IPA&quot;. Bland and disappointing"
+}
 ---
-number: 585
-title: Kingpin Rising
-rating: 3
-breweries:
-  - brewery/boss-brewing/
-date: '2021-10-30'
-permalink: beer/kingpin-rising-boss-brewing/
-canonical: https://www.instagram.com/p/CVqPUFJq16h/
----
-
-A generic, Lidl "Session IPA". Bland and disappointing

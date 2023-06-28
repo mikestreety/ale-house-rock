@@ -1,15 +1,18 @@
+---json
+{
+    "title": "Hopadelic",
+    "number": "791",
+    "rating": "5",
+    "canonical": "https://untappd.com/user/mikestreety/checkin/1269543137",
+    "serving": "Can",
+    "date": "2023-04-29",
+    "permalink": "beer/hopadelic-by-the-horns-brewing-co/",
+    "breweries": [
+        "brewery/by-the-horns-brewing-co/"
+    ],
+    "tags": [
+        "ipa"
+    ],
+    "review": "This beer went down without incident. Nothing grabbed me and it was a bit too happy for me. I drank it, but that was it"
+}
 ---
-canonical: 'https://untappd.com/user/mikestreety/checkin/1269543137'
-title: Hopadelic
-serving: Can
-rating: 5
-date: '2023-04-29'
-breweries:
-  - brewery/by-the-horns-brewing-co/
-tags:
-  - ipa
-number: 791
-permalink: beer/hopadelic-by-the-horns-brewing-co/
----
-
-This beer went down without incident. Nothing grabbed me and it was a bit too happy for me. I drank it, but that was it

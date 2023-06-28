@@ -1,16 +1,15 @@
+---json
+{
+    "title": "Beyond the Pale",
+    "number": "131",
+    "rating": "3",
+    "canonical": "https://www.instagram.com/p/BleB_Jal_Tj/",
+    "date": "2018-07-20",
+    "permalink": "beer/beyond-the-pale-london-beer-factory/",
+    "breweries": [
+        "brewery/london-beer-factory/"
+    ],
+    "tags": [],
+    "review": "what a disappointing beer. Shared with a friend, this hipster craft beer was nothing but meh. Glad I only had half a can"
+}
 ---
-number: 131
-title: Beyond the Pale
-rating: 3
-breweries:
-  - brewery/london-beer-factory/
-date: '2018-07-20'
-permalink: beer/beyond-the-pale-london-beer-factory/
-canonical: https://www.instagram.com/p/BleB_Jal_Tj/
-tags:
-
-
-
----
-
-what a disappointing beer. Shared with a friend, this hipster craft beer was nothing but meh. Glad I only had half a can

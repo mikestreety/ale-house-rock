@@ -1,20 +1,17 @@
+---json
+{
+    "title": "Mr Trotter’s Great British Chestnut Ale",
+    "number": "95",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/Bd3Lr6lFH3T/",
+    "date": "2018-01-12",
+    "permalink": "beer/mr-trotters-great-british-chestnut-ale-lancaster-brewing-company/",
+    "breweries": [
+        "brewery/lancaster-brewing-company/"
+    ],
+    "tags": [
+        "bitter"
+    ],
+    "review": "This is an odd one, plenty of flavour with a watery aftertaste. However, the more I drank it, the nicer it got"
+}
 ---
-number: 95
-title: Mr Trotter’s Great British Chestnut Ale
-rating: 7
-breweries:
-  - brewery/lancaster-brewing-company/
-date: '2018-01-12'
-permalink: beer/mr-trotters-great-british-chestnut-ale-lancaster-brewing-company/
-canonical: https://www.instagram.com/p/Bd3Lr6lFH3T/
-tags:
-
-
-
-  - bitter
-
-
-
----
-
-This is an odd one, plenty of flavour with a watery aftertaste. However, the more I drank it, the nicer it got

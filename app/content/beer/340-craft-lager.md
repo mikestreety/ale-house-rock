@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Craft Lager",
+    "number": "340",
+    "rating": "5",
+    "canonical": "https://www.instagram.com/p/CBECfSFJV_c/",
+    "date": "2020-06-05",
+    "permalink": "beer/craft-lager-octopus-energy/",
+    "breweries": [
+        "brewery/octopus-energy/"
+    ],
+    "tags": [],
+    "review": "I won a crate of this beer in an @octopus_energy pub quiz. I&#39;ve had a few Octopus Energy beers before, IPAs, and this is disappointing in comparison. Hardly any taste and fizzy. It&#39;s a good beer for when you fancy a drink but don&#39;t want to use up your good stuff"
+}
 ---
-number: 340
-title: Craft Lager
-rating: 5
-breweries:
-  - brewery/octopus-energy/
-date: '2020-06-05'
-permalink: beer/craft-lager-octopus-energy/
-canonical: https://www.instagram.com/p/CBECfSFJV_c/
----
-
-I won a crate of this beer in an @octopus_energy pub quiz. I've had a few Octopus Energy beers before, IPAs, and this is disappointing in comparison. Hardly any taste and fizzy. It's a good beer for when you fancy a drink but don't want to use up your good stuff

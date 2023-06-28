@@ -1,20 +1,17 @@
+---json
+{
+    "title": "Keller Pils",
+    "number": "207",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/Bu1MbfYFAiL/",
+    "date": "2019-03-10",
+    "permalink": "beer/keller-pils-lost-and-grounded/",
+    "breweries": [
+        "brewery/lost-and-grounded/"
+    ],
+    "tags": [
+        "lager"
+    ],
+    "review": "It&#39;s not often a lager appears on this feed, so when it does - take note. This one from @lostandgroundedbrewers is a wonderful lager drink. More like a happy ale, I could happily drink pints and pints of this of an evening in a bar - not really suited for watching a film"
+}
 ---
-number: 207
-title: Keller Pils
-rating: 7
-breweries:
-  - brewery/lost-and-grounded/
-date: '2019-03-10'
-permalink: beer/keller-pils-lost-and-grounded/
-canonical: https://www.instagram.com/p/Bu1MbfYFAiL/
-tags:
-
-  - lager
-
-
-
-
-
----
-
-It's not often a lager appears on this feed, so when it does - take note. This one from @lostandgroundedbrewers is a wonderful lager drink. More like a happy ale, I could happily drink pints and pints of this of an evening in a bar - not really suited for watching a film

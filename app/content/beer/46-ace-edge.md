@@ -1,16 +1,19 @@
+---json
+{
+    "title": "Ace Edge",
+    "number": "46",
+    "rating": "5",
+    "canonical": "https://www.instagram.com/p/BUKwgL-FGcH/",
+    "serving": "Bottle",
+    "purchased": "shop/seven-cellars/",
+    "date": "2017-05-16",
+    "permalink": "beer/ace-edge-buxton-brewery/",
+    "breweries": [
+        "brewery/buxton-brewery/"
+    ],
+    "tags": [
+        "ipa"
+    ],
+    "review": "A cheeky tipple on a Tuesday with this craft beer. It tastes like I should have been sitting in brewdog which is not something I particularly enjoy. Still, it was ok"
+}
 ---
-number: 46
-title: Ace Edge
-rating: 5
-serving: Bottle
-purchased: shop/seven-cellars/
-breweries:
-  - brewery/buxton-brewery/
-date: '2017-05-16'
-permalink: beer/ace-edge-buxton-brewery/
-canonical: https://www.instagram.com/p/BUKwgL-FGcH/
-tags:
-  - ipa
----
-
-A cheeky tipple on a Tuesday with this craft beer. It tastes like I should have been sitting in brewdog which is not something I particularly enjoy. Still, it was ok

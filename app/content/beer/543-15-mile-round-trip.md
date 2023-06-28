@@ -1,13 +1,16 @@
+---json
+{
+    "title": "15 Mile Round Trip",
+    "number": "543",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/CR7TOj3phRV/",
+    "date": "2021-07-29",
+    "permalink": "beer/15-mile-round-trip-vocation-brewery-sureshot-brewing/",
+    "breweries": [
+        "brewery/sureshot-brewing/",
+        "brewery/vocation-brewery/"
+    ],
+    "tags": [],
+    "review": "I had this a few days ago and forgot to post. Brewed by @vocationbrewery in collaboration with @sureshotbrew. From what I can remember it is a pretty decent tasting IPA for a supermarket purchase. Didn&#39;t realise it packed the 8% punch until I went to stand up after a zoom call with a mate. Plenty of good flavour and an enjoyable drink."
+}
 ---
-number: 543
-title: 15 Mile Round Trip
-rating: 8
-breweries:
-  - brewery/vocation-brewery/
-  - brewery/sureshot-brewing/
-date: '2021-07-29'
-permalink: beer/15-mile-round-trip-vocation-brewery-sureshot-brewing/
-canonical: https://www.instagram.com/p/CR7TOj3phRV/
----
-
-I had this a few days ago and forgot to post. Brewed by @vocationbrewery in collaboration with @sureshotbrew. From what I can remember it is a pretty decent tasting IPA for a supermarket purchase. Didn't realise it packed the 8% punch until I went to stand up after a zoom call with a mate. Plenty of good flavour and an enjoyable drink.

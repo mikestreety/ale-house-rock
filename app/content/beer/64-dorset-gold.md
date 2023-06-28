@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Dorset Gold",
+    "number": "64",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/BYloIQEF5CA/",
+    "date": "2017-09-03",
+    "permalink": "beer/dorset-gold-palmers/",
+    "breweries": [
+        "brewery/palmers/"
+    ],
+    "tags": [],
+    "review": "Forgot to post this from Thursday. Very tasty, easy drinking beer. Could easily have sipped it all night, pint after pint but unfortunately I only had one, which went down very easy."
+}
 ---
-number: 64
-title: Dorset Gold
-rating: 8
-breweries:
-  - brewery/palmers/
-date: '2017-09-03'
-permalink: beer/dorset-gold-palmers/
-canonical: https://www.instagram.com/p/BYloIQEF5CA/
----
-
-Forgot to post this from Thursday. Very tasty, easy drinking beer. Could easily have sipped it all night, pint after pint but unfortunately I only had one, which went down very easy.

@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Lulla",
+    "number": "620",
+    "rating": "6",
+    "canonical": "https://www.instagram.com/p/CaIw0qmK3hY/",
+    "date": "2022-02-18",
+    "permalink": "beer/lulla-beak-brewery/",
+    "breweries": [
+        "brewery/beak-brewery/"
+    ],
+    "tags": [],
+    "review": "Not my favourite Beak beer I&#39;ve had but still tasty enough. Reminiscent of a classic supermarket IPA. Hard to review as it is neither terrible nor excellent."
+}
 ---
-number: 620
-title: Lulla
-rating: 6
-breweries:
-  - brewery/beak-brewery/
-date: '2022-02-18'
-permalink: beer/lulla-beak-brewery/
-canonical: https://www.instagram.com/p/CaIw0qmK3hY/
----
-
-Not my favourite Beak beer I've had but still tasty enough. Reminiscent of a classic supermarket IPA. Hard to review as it is neither terrible nor excellent.

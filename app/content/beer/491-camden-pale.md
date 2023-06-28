@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Camden Pale",
+    "number": "491",
+    "rating": "5",
+    "canonical": "https://www.instagram.com/p/CPEQZVHp3-_/",
+    "date": "2021-05-19",
+    "permalink": "beer/camden-pale-camden-town-brewery/",
+    "breweries": [
+        "brewery/camden-town-brewery/"
+    ],
+    "tags": [],
+    "review": "A fairly plain, non-descript pale"
+}
 ---
-number: 491
-title: Camden Pale
-rating: 5
-breweries:
-  - brewery/camden-town-brewery/
-date: '2021-05-19'
-permalink: beer/camden-pale-camden-town-brewery/
-canonical: https://www.instagram.com/p/CPEQZVHp3-_/
----
-
-A fairly plain, non-descript pale

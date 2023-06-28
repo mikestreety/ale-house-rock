@@ -1,21 +1,15 @@
+---json
+{
+    "title": "Cornish Knocker",
+    "number": "80",
+    "rating": "6",
+    "canonical": "https://www.instagram.com/p/BbFnazNFPlO/",
+    "date": "2017-11-04",
+    "permalink": "beer/cornish-knocker-skinners-brewery/",
+    "breweries": [
+        "brewery/skinners-brewery/"
+    ],
+    "tags": [],
+    "review": "Comical story on the back with an average beer to boot"
+}
 ---
-number: 80
-title: Cornish Knocker
-rating: 6
-breweries:
-  - brewery/skinners-brewery/
-date: '2017-11-04'
-permalink: beer/cornish-knocker-skinners-brewery/
-canonical: https://www.instagram.com/p/BbFnazNFPlO/
-tags:
-
-
-
-
-
-
-
-
----
-
-Comical story on the back with an average beer to boot

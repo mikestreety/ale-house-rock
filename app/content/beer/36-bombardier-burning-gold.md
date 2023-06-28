@@ -1,15 +1,18 @@
+---json
+{
+    "title": "Bombardier Burning Gold",
+    "number": "36",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/BRJhI5wljDC/",
+    "serving": "Bottle",
+    "date": "2017-03-02",
+    "permalink": "beer/bombardier-burning-gold-eagle-brewery/",
+    "breweries": [
+        "brewery/eagle-brewery/"
+    ],
+    "tags": [
+        "goldenale"
+    ],
+    "review": "(Brewery previously was Wells) a great crisp beer from Bombardier. Better than their original one in my opinion!"
+}
 ---
-number: 36
-title: Bombardier Burning Gold
-rating: 7
-serving: Bottle
-breweries:
-  - brewery/eagle-brewery/
-date: '2017-03-02'
-permalink: beer/bombardier-burning-gold-eagle-brewery/
-canonical: https://www.instagram.com/p/BRJhI5wljDC/
-tags:
-  - goldenale
----
-
-(Brewery previously was Wells) a great crisp beer from Bombardier. Better than their original one in my opinion!

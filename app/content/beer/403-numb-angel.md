@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Numb Angel",
+    "number": "403",
+    "rating": "4",
+    "canonical": "https://www.instagram.com/p/CJeuyZOFQYG/",
+    "date": "2020-12-31",
+    "permalink": "beer/numb-angel-gun-brewery/",
+    "breweries": [
+        "brewery/gun-brewery/"
+    ],
+    "tags": [],
+    "review": "A lager from @gunbrewery and, in my opinion, their first &quot;failure&quot;. Lacking taste and character. Was refreshing with a Pad Thai last night but that was it. Won&#39;t be having this again."
+}
 ---
-number: 403
-title: Numb Angel
-rating: 4
-breweries:
-  - brewery/gun-brewery/
-date: '2020-12-31'
-permalink: beer/numb-angel-gun-brewery/
-canonical: https://www.instagram.com/p/CJeuyZOFQYG/
----
-
-A lager from @gunbrewery and, in my opinion, their first "failure". Lacking taste and character. Was refreshing with a Pad Thai last night but that was it. Won't be having this again.

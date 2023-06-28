@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Bohemia",
+    "number": "602",
+    "rating": "3",
+    "canonical": "https://www.instagram.com/p/CYfBIeqqGeb/",
+    "date": "2022-01-08",
+    "permalink": "beer/bohemia-firebird-brewing-company/",
+    "breweries": [
+        "brewery/firebird-brewing-company/"
+    ],
+    "tags": [],
+    "review": "After riding high with the previous &quot;lager from a real ale brewery&quot;, I had strong hopes for this, but was sorely disappointed. The taste of this reminded me of a classic lager - fizzy with not much taste. Managed to drink it but won&#39;t be having it again."
+}
 ---
-number: 602
-title: Bohemia
-rating: 3
-breweries:
-  - brewery/firebird-brewing-company/
-date: '2022-01-08'
-permalink: beer/bohemia-firebird-brewing-company/
-canonical: https://www.instagram.com/p/CYfBIeqqGeb/
----
-
-After riding high with the previous "lager from a real ale brewery", I had strong hopes for this, but was sorely disappointed. The taste of this reminded me of a classic lager - fizzy with not much taste. Managed to drink it but won't be having it again.

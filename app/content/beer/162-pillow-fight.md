@@ -1,19 +1,17 @@
+---json
+{
+    "title": "Pillow fight",
+    "number": "162",
+    "rating": "6",
+    "canonical": "https://www.instagram.com/p/BoZndAFlA4a/",
+    "date": "2018-10-01",
+    "permalink": "beer/pillow-fight-flavourly/",
+    "breweries": [
+        "brewery/flavourly/"
+    ],
+    "tags": [
+        "stout"
+    ],
+    "review": "A chocolate marshmallow stout from @flavourlyhq. It’s...ok. There hints of chocolate (not enough), hints of marshmallow (when you really try) and many hints of a bit bland. A slow sipper"
+}
 ---
-number: 162
-title: Pillow fight
-rating: 6
-breweries:
-  - brewery/flavourly/
-date: '2018-10-01'
-permalink: beer/pillow-fight-flavourly/
-canonical: https://www.instagram.com/p/BoZndAFlA4a/
-tags:
-
-  - stout
-
-
-
-
----
-
-A chocolate marshmallow stout from @flavourlyhq. It’s...ok. There hints of chocolate (not enough), hints of marshmallow (when you really try) and many hints of a bit bland. A slow sipper

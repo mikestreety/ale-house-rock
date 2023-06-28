@@ -1,15 +1,18 @@
+---json
+{
+    "title": "Franziskaner Premium Weissbier Naturtrüb",
+    "number": "37",
+    "rating": "4",
+    "canonical": "https://www.instagram.com/p/BRtf0x8F7j2/",
+    "serving": "Bottle",
+    "date": "2017-03-16",
+    "permalink": "beer/weissbier-franziskaner/",
+    "breweries": [
+        "brewery/franziskaner/"
+    ],
+    "tags": [
+        "wheatbeer"
+    ],
+    "review": "A German wheat beer that seems to be everywhere these days. It&#39;s ok. Weirdly perfumed and wouldn&#39;t have one again"
+}
 ---
-number: 37
-title: Franziskaner Premium Weissbier Naturtrüb
-rating: 4
-breweries:
-  - brewery/franziskaner/
-date: '2017-03-16'
-serving: Bottle
-permalink: beer/weissbier-franziskaner/
-canonical: https://www.instagram.com/p/BRtf0x8F7j2/
-tags:
-  - wheatbeer
----
-
-A German wheat beer that seems to be everywhere these days. It's ok. Weirdly perfumed and wouldn't have one again

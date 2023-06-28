@@ -1,16 +1,19 @@
+---json
+{
+    "title": "BIG Joosy",
+    "number": "793",
+    "rating": "7",
+    "canonical": "https://untappd.com/user/mikestreety/checkin/1270176015",
+    "serving": "Can",
+    "purchased": "shop/beer-no-evil/",
+    "date": "2023-04-30",
+    "permalink": "beer/big-joosy-unbarred-brewery/",
+    "breweries": [
+        "brewery/unbarred-brewery/"
+    ],
+    "tags": [
+        "ipa"
+    ],
+    "review": "The big brother of the classic Unbarred staple beer. Although this was good, it missed the smooth charm of the original Joosy and had the harsh pang of the 8% at the end. Would pick the standard Joosy over this one"
+}
 ---
-canonical: 'https://untappd.com/user/mikestreety/checkin/1270176015'
-title: BIG Joosy
-serving: Can
-rating: 7
-purchased: shop/beer-no-evil/
-date: '2023-04-30'
-breweries:
-  - brewery/unbarred-brewery/
-tags:
-  - ipa
-number: 793
-permalink: beer/big-joosy-unbarred-brewery/
----
-
-The big brother of the classic Unbarred staple beer. Although this was good, it missed the smooth charm of the original Joosy and had the harsh pang of the 8% at the end. Would pick the standard Joosy over this one

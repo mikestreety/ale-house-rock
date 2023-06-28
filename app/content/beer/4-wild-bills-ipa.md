@@ -1,16 +1,19 @@
+---json
+{
+    "title": "Wild Bills IPA",
+    "number": "4",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/BNkhOxJgeEd/",
+    "serving": "Bottle",
+    "purchased": "shop/aldi/",
+    "date": "2016-12-03",
+    "permalink": "beer/wild-bills-ipa-harpers-brewing-company/",
+    "breweries": [
+        "brewery/aldi/"
+    ],
+    "tags": [
+        "ipa"
+    ],
+    "review": "Not part of the #aleadvent but a very good beer. Good session Ale I could sit and drink for hours. A tickle of hops."
+}
 ---
-number: 4
-title: Wild Bills IPA
-rating: 7
-serving: Bottle
-purchased: shop/aldi/
-breweries:
-  - brewery/aldi/
-date: '2016-12-03'
-permalink: beer/wild-bills-ipa-harpers-brewing-company/
-canonical: https://www.instagram.com/p/BNkhOxJgeEd/
-tags:
-  - ipa
----
-
-Not part of the #aleadvent but a very good beer. Good session Ale I could sit and drink for hours. A tickle of hops.

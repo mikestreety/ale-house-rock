@@ -1,19 +1,15 @@
+---json
+{
+    "title": "Waggle Dance",
+    "number": "85",
+    "rating": "6",
+    "canonical": "https://www.instagram.com/p/BcfqY9sF8FL/",
+    "date": "2017-12-09",
+    "permalink": "beer/waggle-dance-eagle-brewery/",
+    "breweries": [
+        "brewery/eagle-brewery/"
+    ],
+    "tags": [],
+    "review": "(Brewery previously was Wells) A light refreshing, slightly flavourless Ale. Alright with some food I suppose?"
+}
 ---
-number: 85
-title: Waggle Dance
-rating: 6
-breweries:
-  - brewery/eagle-brewery/
-date: '2017-12-09'
-permalink: beer/waggle-dance-eagle-brewery/
-canonical: https://www.instagram.com/p/BcfqY9sF8FL/
-tags:
-
-
-
-
-
-
----
-
-(Brewery previously was Wells) A light refreshing, slightly flavourless Ale. Alright with some food I suppose?

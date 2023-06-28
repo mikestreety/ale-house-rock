@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Jagged Edge",
+    "number": "478",
+    "rating": "3",
+    "canonical": "https://www.instagram.com/p/COOFyy9lCdG/",
+    "date": "2021-04-28",
+    "permalink": "beer/jagged-edge-brewdog/",
+    "breweries": [
+        "brewery/brewdog/"
+    ],
+    "tags": [],
+    "review": "I didn&#39;t really enjoy this beer at all. I was hoping for more of a jackhammer feel, but it ended up more dry and harsh. Will definitely be avoiding this one in the future (although I did finish it)"
+}
 ---
-number: 478
-title: Jagged Edge
-rating: 3
-breweries:
-  - brewery/brewdog/
-date: '2021-04-28'
-permalink: beer/jagged-edge-brewdog/
-canonical: https://www.instagram.com/p/COOFyy9lCdG/
----
-
-I didn't really enjoy this beer at all. I was hoping for more of a jackhammer feel, but it ended up more dry and harsh. Will definitely be avoiding this one in the future (although I did finish it)

@@ -1,13 +1,16 @@
+---json
+{
+    "title": "The Road Don't Go Forever",
+    "number": "699",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/ChQW99gK-jT/",
+    "date": "2022-08-14",
+    "permalink": "beer/the-road-dont-go-forever-duration-brewing-whiplash/",
+    "breweries": [
+        "brewery/duration-brewing/",
+        "brewery/whiplash/"
+    ],
+    "tags": [],
+    "review": "Finally, a good DIPA, and a good one for beer number 700. After my recent mix of mediocre and sub-par beers, it&#39;s good to finally have a good beer. Picked this up from @beernoeviluk after a recommendation. It&#39;s a brutal DIPA that skips all the fluffy fruity flavours that I&#39;ve come to love. It is good, don&#39;t get me wrong, but you can taste the 8% of this one."
+}
 ---
-number: 699
-title: The Road Don't Go Forever
-rating: 8
-breweries:
-  - brewery/duration-brewing/
-  - brewery/whiplash/
-date: '2022-08-14'
-permalink: beer/the-road-dont-go-forever-duration-brewing-whiplash/
-canonical: https://www.instagram.com/p/ChQW99gK-jT/
----
-
-Finally, a good DIPA, and a good one for beer number 700. After my recent mix of mediocre and sub-par beers, it's good to finally have a good beer. Picked this up from @beernoeviluk after a recommendation. It's a brutal DIPA that skips all the fluffy fruity flavours that I've come to love. It is good, don't get me wrong, but you can taste the 8% of this one.

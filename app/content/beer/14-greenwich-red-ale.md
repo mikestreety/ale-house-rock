@@ -1,17 +1,18 @@
+---json
+{
+    "title": "Greenwich Red Ale",
+    "number": "14",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/BN7mbqwA9Mz/",
+    "date": "2016-12-12",
+    "permalink": "beer/greenwich-red-ale-meantime-brewing-company-marks-and-spencer/",
+    "breweries": [
+        "brewery/marks-and-spencer/",
+        "brewery/meantime-brewing-company/"
+    ],
+    "tags": [
+        "redale"
+    ],
+    "review": "A good beer. Would have again. Malty and perfect for a night in with rain hammering the windows."
+}
 ---
-number: 14
-title: Greenwich Red Ale
-rating: 7
-breweries:
-  - brewery/meantime-brewing-company/
-  - brewery/marks-and-spencer/
-date: '2016-12-12'
-permalink: beer/greenwich-red-ale-meantime-brewing-company-marks-and-spencer/
-aliases:
-  - greenwich-red-ale-meantime-brewing-company-14
-canonical: https://www.instagram.com/p/BN7mbqwA9Mz/
-tags:
-  - redale
----
-
-A good beer. Would have again. Malty and perfect for a night in with rain hammering the windows.

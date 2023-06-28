@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Fables",
+    "number": "627",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/CavWVThKklA/",
+    "date": "2022-03-05",
+    "permalink": "beer/fables-beak-brewery/",
+    "breweries": [
+        "brewery/beak-brewery/"
+    ],
+    "tags": [],
+    "review": "A standard pale ale. Not really up to Beak standards but still tasty."
+}
 ---
-number: 627
-title: Fables
-rating: 7
-breweries:
-  - brewery/beak-brewery/
-date: '2022-03-05'
-permalink: beer/fables-beak-brewery/
-canonical: https://www.instagram.com/p/CavWVThKklA/
----
-
-A standard pale ale. Not really up to Beak standards but still tasty.

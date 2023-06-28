@@ -1,20 +1,15 @@
+---json
+{
+    "title": "Pullman",
+    "number": "97",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/BeGwKc-lNgT/",
+    "date": "2018-01-18",
+    "permalink": "beer/pullman-hepworth-co-brewers/",
+    "breweries": [
+        "brewery/hepworth-co-brewers/"
+    ],
+    "tags": [],
+    "review": "A light hoppy fizzy beer. Going down very well, great with a heavy dinner!"
+}
 ---
-number: 97
-title: Pullman
-rating: 7
-breweries:
-  - brewery/hepworth-co-brewers/
-date: '2018-01-18'
-permalink: beer/pullman-hepworth-co-brewers/
-canonical: https://www.instagram.com/p/BeGwKc-lNgT/
-tags:
-
-
-
-
-
-
-
----
-
-A light hoppy fizzy beer. Going down very well, great with a heavy dinner!

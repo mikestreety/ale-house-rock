@@ -1,27 +1,18 @@
+---json
+{
+    "title": "Hanalei",
+    "number": "316",
+    "rating": "5",
+    "canonical": "https://www.instagram.com/p/B_pW22YJUll/",
+    "date": "2020-05-01",
+    "permalink": "beer/hanalei-kona-brewing-company/",
+    "breweries": [
+        "brewery/kona-brewing-company/"
+    ],
+    "tags": [
+        "bitter",
+        "ipa"
+    ],
+    "review": "I had high hopes for this Island IPA after Big Wave (the golden ale from the same company scoring so highly) but, alas, it seemed to fall into the &quot;generic fizzy hipster IPA&quot; category. Not offensive enough for me to not drink the second bottle I have, but I won&#39;t be ordering anymore of these. My string of good beers had to end somewhere!"
+}
 ---
-number: 316
-title: Hanalei
-rating: 5
-breweries:
-  - brewery/kona-brewing-company/
-date: '2020-05-01'
-permalink: beer/hanalei-kona-brewing-company/
-canonical: https://www.instagram.com/p/B_pW22YJUll/
-tags:
-  - bitter
-
-
-
-
-
-
-
-
-
-  - ipa
-
-
-
----
-
-I had high hopes for this Island IPA after Big Wave (the golden ale from the same company scoring so highly) but, alas, it seemed to fall into the "generic fizzy hipster IPA" category. Not offensive enough for me to not drink the second bottle I have, but I won't be ordering anymore of these. My string of good beers had to end somewhere!

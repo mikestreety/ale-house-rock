@@ -1,14 +1,15 @@
+---json
+{
+    "title": "Life & Death",
+    "number": "540",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/CRuO0ESpl0T/",
+    "date": "2021-07-24",
+    "permalink": "beer/life-death-vocation-brewery/",
+    "breweries": [
+        "brewery/vocation-brewery/"
+    ],
+    "tags": [],
+    "review": "A clean, crisp, easy-drinking IPA"
+}
 ---
-number: 540
-title: Life & Death
-rating: 7
-breweries:
-  - brewery/vocation-brewery/
-date: '2021-07-24'
-permalink: beer/life-death-vocation-brewery/
-aliases:
-  - life-death-vocation-540
-canonical: https://www.instagram.com/p/CRuO0ESpl0T/
----
-
-A clean, crisp, easy-drinking IPA

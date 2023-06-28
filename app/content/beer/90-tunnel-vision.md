@@ -1,17 +1,15 @@
+---json
+{
+    "title": "Tunnel Vision",
+    "number": "90",
+    "rating": "6",
+    "canonical": "https://www.instagram.com/p/BdYhC8GFr3C/",
+    "date": "2017-12-31",
+    "permalink": "beer/tunnel-vision-steam-box-brewery/",
+    "breweries": [
+        "brewery/steam-box-brewery/"
+    ],
+    "tags": [],
+    "review": "A simple, slightly watery ale, but alright."
+}
 ---
-number: 90
-title: Tunnel Vision
-rating: 6
-breweries:
-  - brewery/steam-box-brewery/
-date: '2017-12-31'
-permalink: beer/tunnel-vision-steam-box-brewery/
-canonical: https://www.instagram.com/p/BdYhC8GFr3C/
-tags:
-
-
-
-
----
-
-A simple, slightly watery ale, but alright.

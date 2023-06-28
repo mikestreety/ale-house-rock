@@ -1,16 +1,17 @@
+---json
+{
+    "title": "Original",
+    "number": "151",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/BnKEBT2lLJM/",
+    "date": "2018-08-31",
+    "permalink": "beer/original-butcombe-brewing-company/",
+    "breweries": [
+        "brewery/butcombe-brewing-company/"
+    ],
+    "tags": [
+        "bitter"
+    ],
+    "review": "A classic bitter. Small glass for the groom to be tomorrow"
+}
 ---
-number: 151
-title: Original
-rating: 7
-breweries:
-  - brewery/butcombe-brewing-company/
-date: '2018-08-31'
-permalink: beer/original-butcombe-brewing-company/
-canonical: https://www.instagram.com/p/BnKEBT2lLJM/
-tags:
-
-  - bitter
-
----
-
-A classic bitter. Small glass for the groom to be tomorrow

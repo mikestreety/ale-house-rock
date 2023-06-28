@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Unite Tribute IPA",
+    "number": "342",
+    "rating": "6",
+    "canonical": "https://www.instagram.com/p/CBL2YPpJMI-/",
+    "date": "2020-06-08",
+    "permalink": "beer/unite-tribute-ipa-wild-card-brewery/",
+    "breweries": [
+        "brewery/wild-card-brewery/"
+    ],
+    "tags": [],
+    "review": "I drank this IPA without incident. Was ok, went down well and was a little bit disappointed when it finished. I wouldn&#39;t reach for it again but wouldn&#39;t turn it down if I was offered one"
+}
 ---
-number: 342
-title: Unite Tribute IPA
-rating: 6
-breweries:
-  - brewery/wild-card-brewery/
-date: '2020-06-08'
-permalink: beer/unite-tribute-ipa-wild-card-brewery/
-canonical: https://www.instagram.com/p/CBL2YPpJMI-/
----
-
-I drank this IPA without incident. Was ok, went down well and was a little bit disappointed when it finished. I wouldn't reach for it again but wouldn't turn it down if I was offered one

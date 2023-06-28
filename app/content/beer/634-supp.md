@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Supp",
+    "number": "634",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/Cbk4gAKKudg/",
+    "date": "2022-03-26",
+    "permalink": "beer/supp-beak-brewery/",
+    "breweries": [
+        "brewery/beak-brewery/"
+    ],
+    "tags": [],
+    "review": "Not much to say about this except it was a classic @thebeakbrewery IPA. Tasty, enjoyable and full of flavour"
+}
 ---
-number: 634
-title: Supp
-rating: 8
-breweries:
-  - brewery/beak-brewery/
-date: '2022-03-26'
-permalink: beer/supp-beak-brewery/
-canonical: https://www.instagram.com/p/Cbk4gAKKudg/
----
-
-Not much to say about this except it was a classic @thebeakbrewery IPA. Tasty, enjoyable and full of flavour

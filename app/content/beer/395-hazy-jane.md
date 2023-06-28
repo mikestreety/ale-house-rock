@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Hazy Jane",
+    "number": "395",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/CI8QMwDlV2Z/",
+    "date": "2020-12-18",
+    "permalink": "beer/hazy-jane-brewdog/",
+    "breweries": [
+        "brewery/brewdog/"
+    ],
+    "tags": [],
+    "review": "I had started to give up on @brewdogofficial as anything more than an &quot;ok&quot; brewery, but these last two beers are starting to make me come round to them. Maybe it&#39;s just their mainstream &quot;available everywhere&quot; beers are their most average. This was a corker and I could drink this for many hours."
+}
 ---
-number: 395
-title: Hazy Jane
-rating: 8
-breweries:
-  - brewery/brewdog/
-date: '2020-12-18'
-permalink: beer/hazy-jane-brewdog/
-canonical: https://www.instagram.com/p/CI8QMwDlV2Z/
----
-
-I had started to give up on @brewdogofficial as anything more than an "ok" brewery, but these last two beers are starting to make me come round to them. Maybe it's just their mainstream "available everywhere" beers are their most average. This was a corker and I could drink this for many hours.

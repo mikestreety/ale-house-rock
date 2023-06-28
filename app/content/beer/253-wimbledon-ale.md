@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Wimbledon Ale",
+    "number": "253",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/B45ShzqFe2G/",
+    "date": "2019-11-15",
+    "permalink": "beer/wimbledon-ale-wimbledon-brewery/",
+    "breweries": [
+        "brewery/wimbledon-brewery/"
+    ],
+    "tags": [],
+    "review": "Another M&amp;S beer and what a delight. Definitely be reaching for one of these if in buying beer from Marks and Sparks anytime soon. Lovely taste, went down well"
+}
 ---
-number: 253
-title: Wimbledon Ale
-rating: 8
-breweries:
-  - brewery/wimbledon-brewery/
-date: '2019-11-15'
-permalink: beer/wimbledon-ale-wimbledon-brewery/
-canonical: https://www.instagram.com/p/B45ShzqFe2G/
----
-
-Another M&S beer and what a delight. Definitely be reaching for one of these if in buying beer from Marks and Sparks anytime soon. Lovely taste, went down well

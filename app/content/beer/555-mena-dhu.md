@@ -1,12 +1,15 @@
+---json
+{
+    "title": "MENA DHU",
+    "number": "555",
+    "rating": "8",
+    "canonical": "https://www.instagram.com/p/CSkZW96KgDR/",
+    "date": "2021-08-14",
+    "permalink": "beer/mena-dhu-st-austell-brewery/",
+    "breweries": [
+        "brewery/st-austell-brewery/"
+    ],
+    "tags": [],
+    "review": "A unique, smooth Stout. Unusually, this stout didn&#39;t taste of coffee or chocolate. It did, however, have a lovely flavour which I would happily drink again"
+}
 ---
-number: 555
-title: MENA DHU
-rating: 8
-breweries:
-  - brewery/st-austell-brewery/
-date: '2021-08-14'
-permalink: beer/mena-dhu-st-austell-brewery/
-canonical: https://www.instagram.com/p/CSkZW96KgDR/
----
-
-A unique, smooth Stout. Unusually, this stout didn't taste of coffee or chocolate. It did, however, have a lovely flavour which I would happily drink again

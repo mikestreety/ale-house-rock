@@ -1,19 +1,17 @@
+---json
+{
+    "title": "Deuchars",
+    "number": "82",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/BbVTXm-FIG1/",
+    "date": "2017-11-10",
+    "permalink": "beer/deuchars-caledonian-brewery/",
+    "breweries": [
+        "brewery/caledonian-brewery/"
+    ],
+    "tags": [
+        "ipa"
+    ],
+    "review": "a fruity, full-bodied malty beer. Tastes darker than it appears"
+}
 ---
-number: 82
-title: Deuchars
-rating: 7
-breweries:
-  - brewery/caledonian-brewery/
-date: '2017-11-10'
-permalink: beer/deuchars-caledonian-brewery/
-canonical: https://www.instagram.com/p/BbVTXm-FIG1/
-tags:
-
-
-
-
-  - ipa
-
----
-
-a fruity, full-bodied malty beer. Tastes darker than it appears

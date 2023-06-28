@@ -1,15 +1,18 @@
+---json
+{
+    "title": "Mad Goose",
+    "number": "1",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/BNfL4U0gInO/",
+    "serving": "Bottle",
+    "date": "2016-12-01",
+    "permalink": "beer/mad-goose-purity-brewing-company/",
+    "breweries": [
+        "brewery/purity-brewing-company/"
+    ],
+    "tags": [
+        "paleale"
+    ],
+    "review": "A light, hoppy beer. Could easily sit in a pub and drink several pints - not really the kind of beer you&#39;d sip while watching tv at home though."
+}
 ---
-number: 1
-title: Mad Goose
-rating: 7
-serving: Bottle
-breweries:
-  - brewery/purity-brewing-company/
-date: '2016-12-01'
-permalink: beer/mad-goose-purity-brewing-company/
-canonical: https://www.instagram.com/p/BNfL4U0gInO/
-tags:
-  - paleale
----
-
-A light, hoppy beer. Could easily sit in a pub and drink several pints - not really the kind of beer you'd sip while watching tv at home though.

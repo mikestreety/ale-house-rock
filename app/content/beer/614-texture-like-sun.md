@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Texture Like Sun",
+    "number": "614",
+    "rating": "6",
+    "canonical": "https://www.instagram.com/p/CZ3xzVqqr1X/",
+    "date": "2022-02-12",
+    "permalink": "beer/texture-like-sun-deya-brewing-company/",
+    "breweries": [
+        "brewery/deya-brewing-company/"
+    ],
+    "tags": [],
+    "review": "This was a very easy-to-drink but didn&#39;t pack much flavour. It was ok, but there are plenty of better Deya beers to choose from"
+}
 ---
-number: 614
-title: Texture Like Sun
-rating: 6
-breweries:
-  - brewery/deya-brewing-company/
-date: '2022-02-12'
-permalink: beer/texture-like-sun-deya-brewing-company/
-canonical: https://www.instagram.com/p/CZ3xzVqqr1X/
----
-
-This was a very easy-to-drink but didn't pack much flavour. It was ok, but there are plenty of better Deya beers to choose from

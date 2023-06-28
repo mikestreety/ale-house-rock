@@ -1,19 +1,17 @@
+---json
+{
+    "title": "Stars and Stripes",
+    "number": "450",
+    "rating": "4",
+    "canonical": "https://www.instagram.com/p/CMZcnTjFmit/",
+    "date": "2021-03-14",
+    "permalink": "beer/stars-and-stripes-northern-monk/",
+    "breweries": [
+        "brewery/northern-monk/"
+    ],
+    "tags": [
+        "stout"
+    ],
+    "review": "I think this is the first sub-par Northern Monk beer I&#39;ve tried. It&#39;s part of their &quot;twist&quot; series, so I won&#39;t hold it against them. A PB&amp;J porter, the only taste I got was a slight jammy sweetness in the aftertaste. Wasn&#39;t too heavy or sickly though"
+}
 ---
-number: 450
-title: Stars and Stripes
-rating: 4
-breweries:
-  - brewery/northern-monk/
-date: '2021-03-14'
-permalink: beer/stars-and-stripes-northern-monk/
-canonical: https://www.instagram.com/p/CMZcnTjFmit/
-tags:
-
-  - stout
-
-
-
-
----
-
-I think this is the first sub-par Northern Monk beer I've tried. It's part of their "twist" series, so I won't hold it against them. A PB&J porter, the only taste I got was a slight jammy sweetness in the aftertaste. Wasn't too heavy or sickly though

@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Saucery",
+    "number": "429",
+    "rating": "6",
+    "canonical": "https://www.instagram.com/p/CLCGRArF5LX/",
+    "date": "2021-02-08",
+    "permalink": "beer/saucery-magic-rock-brewing/",
+    "breweries": [
+        "brewery/magic-rock-brewing/"
+    ],
+    "tags": [],
+    "review": "This beer was an IPA and just that. It was drinkable (it didn&#39;t make me turn my nose up). I wouldn&#39;t rush out and buy it again, but if I was round someone&#39;s house (ha, I wish) I would not turn one down."
+}
 ---
-number: 429
-title: Saucery
-rating: 6
-breweries:
-  - brewery/magic-rock-brewing/
-date: '2021-02-08'
-permalink: beer/saucery-magic-rock-brewing/
-canonical: https://www.instagram.com/p/CLCGRArF5LX/
----
-
-This beer was an IPA and just that. It was drinkable (it didn't make me turn my nose up). I wouldn't rush out and buy it again, but if I was round someone's house (ha, I wish) I would not turn one down.

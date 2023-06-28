@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Tubbers' Tipple",
+    "number": "440",
+    "rating": "7",
+    "canonical": "https://www.instagram.com/p/CLye22_F-Ws/",
+    "date": "2021-02-27",
+    "permalink": "beer/tubbers-tipple-riverside-brewery/",
+    "breweries": [
+        "brewery/riverside-brewery/"
+    ],
+    "tags": [],
+    "review": "Another good beer from @riverside_brewery. Lovely tasting ale, only slightly let down by the slight after taste of liquorice, which is not to my personal liking (to which it loses a half point). Looking forward to the second bottle of this I&#39;ve still got in the fridge"
+}
 ---
-number: 440
-title: Tubbers' Tipple
-rating: 7
-breweries:
-  - brewery/riverside-brewery/
-date: '2021-02-27'
-permalink: beer/tubbers-tipple-riverside-brewery/
-canonical: https://www.instagram.com/p/CLye22_F-Ws/
----
-
-Another good beer from @riverside_brewery. Lovely tasting ale, only slightly let down by the slight after taste of liquorice, which is not to my personal liking (to which it loses a half point). Looking forward to the second bottle of this I've still got in the fridge

@@ -1,12 +1,15 @@
+---json
+{
+    "title": "Star of Eastbourne",
+    "number": "286",
+    "rating": "10",
+    "canonical": "https://www.instagram.com/p/B89U_MeJqSJ/",
+    "date": "2020-02-24",
+    "permalink": "beer/star-of-eastbourne-harveys-brewery/",
+    "breweries": [
+        "brewery/harveys-brewery/"
+    ],
+    "tags": [],
+    "review": "What an incredible IPA. Full of flavour and a wonderful taste. It doesn&#39;t actually state it&#39;s an IPA but an East India Ale - can&#39;t say I could tell you the difference 🤷‍♀️. Lovely beer and a stonking 6.5%. With these recent ales, @harveysbrewery has gone from &quot;yeah, alright&quot; to a brewery I would actively seek out to buy 👏👏"
+}
 ---
-number: 286
-title: Star of Eastbourne
-rating: 10
-breweries:
-  - brewery/harveys-brewery/
-date: '2020-02-24'
-permalink: beer/star-of-eastbourne-harveys-brewery/
-canonical: https://www.instagram.com/p/B89U_MeJqSJ/
----
-
-What an incredible IPA. Full of flavour and a wonderful taste. It doesn't actually state it's an IPA but an East India Ale - can't say I could tell you the difference 🤷‍♀️. Lovely beer and a stonking 6.5%. With these recent ales, @harveysbrewery has gone from "yeah, alright" to a brewery I would actively seek out to buy 👏👏
