@@ -3,7 +3,7 @@ number: 238
 title: Hop Commotion
 rating: 6
 breweries:
-  - brewery/jennings/
+  - brewery/jennings-brewery/
 date: '2019-09-25'
 permalink: beer/hop-commotion-jennings/
 canonical: https://www.instagram.com/p/B22BOFiFO8E/

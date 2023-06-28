@@ -6,7 +6,7 @@ rating: 4
 purchased: shop/nymans-national-trust-house-gardens-and-woodland/
 date: '2023-05-27'
 breweries:
-  - brewery/westerham-brewery-company/
+  - brewery/westerham-brewery/
 tags:
   - pale
 number: 805

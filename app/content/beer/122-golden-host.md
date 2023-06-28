@@ -3,16 +3,10 @@ number: 122
 title: Golden Host
 rating: 6
 breweries:
-  - brewery/jennings/
+  - brewery/jennings-brewery/
 date: '2018-06-29'
 permalink: beer/golden-host-jennings/
 canonical: https://www.instagram.com/p/Bkn2UduFWxO/
-tags:
-
-
-
-
-
 
 ---
 

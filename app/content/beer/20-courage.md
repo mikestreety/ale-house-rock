@@ -3,7 +3,7 @@ number: 20
 title: Courage Directors
 rating: 8
 breweries:
-  - brewery/directors/
+  - brewery/eagle-brewery/
 date: '2016-12-19'
 permalink: beer/courage-directors-eagle-brewery/
 aliases:
