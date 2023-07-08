@@ -1,0 +1,20 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1292011403",
+  "title": "The Separate Self",
+  "serving": "Can",
+  "rating": 8,
+  "purchased": "shop/palate-bottle-shop/",
+  "date": "2023-07-08",
+  "style": "IPA - Imperial / Double New England / Hazy",
+  "abv": "8%",
+  "breweries": [
+    "brewery/verdant-brewing-company/",
+    "brewery/basqueland-brewing/"
+  ],
+  "number": 820,
+  "permalink": "beer/the-separate-self-verdant-brewing-company-basqueland-brewing/",
+  "review": "This was thick. It was packed full of flavour and was like a smoothie or a milkshake! It was a little too sweet, but it was still an excellent pour."
+}
+---
+
