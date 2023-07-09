@@ -1,0 +1,18 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1292355179",
+  "title": "Jake’s Lager",
+  "serving": "Can",
+  "rating": 5,
+  "date": "2023-07-09",
+  "style": "Lager - Helles",
+  "abv": "4.5%",
+  "breweries": [
+    "brewery/jakes-drinks-at-balfour-winery/"
+  ],
+  "number": 821,
+  "permalink": "beer/jakes-lager-jakes-drinks-at-balfour-winery/",
+  "review": "With the first few sips of this, I was convinced it was a 10. It was muggy & hot, the kids were being pickles and I'd just sat down to eat dinner. It was cool, crisp and refreshing. As it went on, it began to taste like a lager - not for me, really"
+}
+---
+
