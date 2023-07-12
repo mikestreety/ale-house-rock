@@ -10,6 +10,9 @@
         "brewery/brewdog/"
     ],
     "tags": [],
+    "aliases": [
+        "5am-saint-brewdog-197"
+    ],
     "review": "At last! A @brewdogofficial beer with some good taste. Enjoyed this one and would consider picking it up for a “party beer”. Not one I would have at home again though."
 }
 ---

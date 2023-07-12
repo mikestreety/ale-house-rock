@@ -4,6 +4,9 @@ permalink: brewery/beak-brewery/
 untappd: 'https://untappd.com/TheBeakBrewery'
 location: 'Lewes, East Sussex England'
 style: Micro Brewery
+aliases:
+  - beak-brewery-x-northern-monk
+  - verdant-brewing-company-x-beak-brewery
 website: 'https://beakbrewery.com'
 instagram: 'http://instagram.com/TheBeakBrewery'
 twitter: 'https://twitter.com/TheBeakBrewery'

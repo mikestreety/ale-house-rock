@@ -3,6 +3,8 @@ title: Loch Lomond Brewery
 permalink: brewery/loch-lomond-brewery/
 location: 'Alexandria, West Dunbartonshire Scotland'
 style: Micro Brewery
+aliases:
+  - loch-loman-brewery
 website: 'http://www.lochlomondbrewery.com'
 instagram: 'http://instagram.com/Lochlomondbrewery'
 twitter: 'https://twitter.com/LochLomondBrew'

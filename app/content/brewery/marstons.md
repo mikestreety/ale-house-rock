@@ -3,6 +3,8 @@ title: Marston's Brewery
 permalink: brewery/marstons/
 location: 'Burton-on-Trent, Staffordshire England'
 style: Macro Brewery
+aliases:
+  - shipyard
 website: 'https://www.marstonspubs.co.uk'
 instagram: 'http://instagram.com/marstonsbrewery'
 facebook: 'https://www.facebook.com/marstonsbrewery'

@@ -6,7 +6,6 @@ sitemapIgnore: true
 # Shortcut for each beer number
 {%- for item in collections.beer %}
 {{ item.url | replace( r/\/$/ , "" ) }}-{{ item.data.number }}/	{{ item.url }}
-{{ '' }}
 {%- if item.data.number > 598 and item.data.number < 813 -%}
 {{ item.url | replace( r/\/$/ , "" ) }}-{{ item.data.number + 1 }}/	{{ item.url }}
 {%- endif -%}
@@ -24,3 +23,193 @@ sitemapIgnore: true
 /brewery/{{ alias }}/	/{{ brewery.data.permalink }}
 	{%- endfor %}
 {%- endfor %}
+
+# Redirects from Google
+/images/117/image.webp	/images/beers/117/image.webp
+/images/297/image.webp	/images/beers/297/image.webp
+/images/310/image.webp	/images/beers/310/image.webp
+/images/343/image.webp	/images/beers/343/image.webp
+/images/393/image.webp	/images/beers/393/image.webp
+/images/407/image.webp	/images/beers/407/image.webp
+/images/466/image.webp	/images/beers/466/image.webp
+/images/469/image.webp	/images/beers/469/image.webp
+/images/527/image.webp	/images/beers/527/image.webp
+/images/545/image.webp	/images/beers/545/image.webp
+/images/561/image.webp	/images/beers/561/image.webp
+/images/633/image.webp	/images/beers/633/image.webp
+/images/644/image.webp	/images/beers/644/image.webp
+/images/741/image.webp	/images/beers/741/image.webp
+/images/802/image.webp	/images/beers/802/image.webp
+
+/ordered/rating/	/
+/ordered/rating/*/	/
+{#
+/beer/abbot-reserve-greene-king-286
+/beer/albion-ale-harveys-brewery-267
+/beer/amble-beak-brewery-637/
+/beer/american-ipa-bad-co-275
+/beer/anchor-steam-beer-anchor-brewing-457
+/beer/anti-establishment-hazy-ipa-aldi-778/
+/beer/arise-burning-sky-446
+/beer/armada-ale-harveys-brewery-276
+/beer/basecamp-aka-lager-fourpure-brewing-company-313
+/beer/big-easy-burning-sky-564
+/beer/big-wave-kona-brewing-company-250
+/beer/bishops-finger-shepherd-neame-449/
+/beer/blood-red-sky-innis-gunn-235
+/beer/bonnie-and-blonde-loch-loman-brewery-598/
+/beer/bonnie-and-blonde-loch-loman-brewery-599/
+/beer/breakfast-date-buxton-brewery-576/
+/beer/brel-williams-brothers-brewing-company-280
+/beer/brewdog-vs-mikkeller-urban-fog-brewdog-mikkeller-714/
+/beer/brewdog-x-buxton-way-out-west-brewdog-buxton-brewery-728/
+/beer/brighton-tea-party-gin-brewery-x-north-laine-407/
+/beer/bumpy-road-thornbridge-collaboration-472
+/beer/burton-ale-saltdean-brewery-245
+/beer/caesar-augustus-williams-brothers-brewing-company-574
+/beer/caesar-augustus-williams-brothers-brewing-company-574/
+/beer/caesar-augustus-williams-brothers-brewing-company-575/
+/beer/camden-hells-camden-town-brewery-363
+/beer/caribbean-quad-unbarred-brewery-754/
+/beer/casual-pale-unbarred-477
+/beer/clockwork-tangerine-brewdog-231
+/beer/corgi-juice-brewdog-670/
+/beer/crazy-horse-hepworth-co-brewers-569/
+/beer/dance-every-day-pale-ale-only-with-love-762/
+/beer/dartmoor-ipa-dartmoor-brewery-582/
+/beer/debauched-orgy-cloak-and-dagger-772/
+/beer/denim-salt-beer-factory-592/
+/beer/devonshire-pale-ale-black-tor-578/
+/beer/diceman-wychwood-brewery-487
+/beer/dirty-arthur-riverside-brewery-432/
+/beer/dorset-knob-dorset-brewing-company-219
+/beer/double-punk-brewdog-395
+/beer/east-coast-pale-ale-bear-island-348
+/beer/easter-ale-harveys-brewery-654
+/beer/eight-phantom-brewing-co-781/
+/beer/far-fetched-hairy-dog-brewery-410
+/beer/ghost-ship-05-adnams-290
+/beer/gold-exmoor-ales-578
+/beer/hazey-daze-london-beer-factory-273
+/beer/hazy-af-brewdog-614/
+/beer/hazy-jane-guava-brewdog-606
+/beer/hazy-jane-guava-brewdog-606/
+/beer/hazy-pale-ale-marks-spencer-vocation-brewery-686
+/beer/hazy-pale-ale-marks-spencer-vocation-brewery-686/
+/beer/heart-soul-vocation-brewery-727/
+/beer/heritage-suffolk-pale-ale-greene-king-194
+/beer/high-speed-soul-pollys-558/
+/beer/honeycomb-milkshake-unbarred-x-bison-beer-438/
+/beer/hop-commotion-jennings-239
+/beer/hop-hooker-amber-ale-powder-monkey-brewing-co-782/
+/beer/hop-skip-juice-vocation-x-540/
+/beer/huckaback-salt-beer-factory-544/
+/beer/imperial-bueno-shake-unbarred-564/
+/beer/imperial-bueno-shake-unbarred-565/
+/beer/india-pale-lager-10-4-brewing-390
+/beer/ipa-palmers-549/
+/beer/joker-ipa-williams-brothers-brewing-company-566
+/beer/joker-ipa-williams-brothers-brewing-company-566/
+/beer/joker-ipa-williams-brothers-brewing-company-567/
+/beer/kaleidoscope-wiper-and-true-595/
+/beer/key-lime-lager-tiny-rebel-651
+/beer/key-lime-lager-tiny-rebel-651/
+/beer/key-lime-lager-tiny-rebel-brewing-co-651/
+/beer/laces-beak-brewery-791/
+/beer/lager-beer-innis-gunn-582/
+/beer/lager-beer-innis-gunn-583/
+/beer/last-train-fourpure-brewing-company-310
+/beer/lava-exale-brewing-x-drop-project-399
+/beer/left-on-read-deya-brewing-company-645/
+/beer/levy-mcewans-448/
+/beer/lock-down-brewdog-463/
+/beer/lost-brewdog-450
+/beer/lucha-lucha-little-monster-brewing-company-556/
+/beer/lucky-jack-lervig-aktiebryggeri-420
+/beer/magazine-cover-deya-brewing-company-561/
+/beer/mangoes-on-the-run-innis-gunn-298
+/beer/market-porter-thornbridge-354
+/beer/maybe-tomorrow-good-things-brewing-company-530
+/beer/maybe-tomorrow-good-things-brewing-company-530/
+/beer/midnight-sun-williams-brothers-brewing-company-573/
+/beer/milk-stout-black-sheep-brewery-191
+/beer/mind-expansion-pack-deya-brewing-company-737/
+/beer/momentary-bliss-deya-brewing-company-558/
+/beer/moneybags-gipsy-hill-571/
+/beer/moneybags-gipsy-hill-572/
+/beer/moondust-baron-brewing-707/
+/beer/more-oats-verdant-brewing-company-x-beak-brewery-535/
+/beer/more-wheat-verdant-brewing-company-x-beak-brewery-536/
+/beer/new-england-ipa-adnams-382
+/beer/new-england-ipa-brewdog-vs-372/
+/beer/no-way-mirror-deya-brewing-company-591/
+/beer/no-way-mirror-deya-brewing-company-592/
+/beer/no-worries-grapefruit-lervig-666/
+/beer/numb-angel-gun-brewery-404
+/beer/old-man-long-man-brewery-203
+/beer/one-eye-tooth-claw-brewing-725/
+/beer/one-in-all-in-siren-craft-brew-lines-brew-company-the-white-hag-fyne-ales-697/
+/beer/origin-northern-monk-342
+/beer/pale-ale-brewdog-309
+/beer/pale-ale-deya-brewing-company-556/
+/beer/pangolin-pale-ale-endangered-brewing-696
+/beer/passion-fruit-pale-seven-bro7hers-brewery-729/
+/beer/pedigree-marstons-204
+/beer/petite-beast-cloak-and-dagger-709/
+/beer/phaedra-pomona-island-brew-co-718/
+/beer/phoenix-buxton-brewery-745/
+/beer/pig-beak-brewery-748/
+/beer/poems-beak-brewery-verdant-brewing-co-805/
+/beer/qed-session-pale-london-beer-factory-484
+/beer/raspberry-royale-pale-ale-marks-spencer-arbor-690/
+/beer/raven-black-tor-576/
+/beer/red-ipa-gun-brewery-409
+/beer/roadkill-mad-squirrel-brewery-715/
+/beer/rocket-science-magnify-brewing-569/
+/beer/routine-bites-hard-deya-brewing-company-568/
+/beer/rustic-table-beer-burning-sky-612
+/beer/rustic-table-beer-burning-sky-612/
+/beer/saison-de-peche-burning-sky-655
+/beer/saison-de-peche-burning-sky-655/
+/beer/saison-van-du-bruwer-de-la-senne-421
+/beer/saison-van-du-bruwer-de-la-senne-421/
+/beer/saucery-magic-rock-brewing-430
+/beer/sea-of-knowledge-north-brewing-co-627
+/beer/sea-of-knowledge-north-brewing-co-627/
+/beer/sneaky-steamer-riverside-brewery-434/
+/beer/space-hulk-beavertown-742/
+/beer/star-of-eastbourne-harveys-brewery-287
+/beer/steady-rolling-man-deya-brewing-company-252
+/beer/summit-47-st-austell-brewery-552
+/beer/summit-47-st-austell-brewery-552/
+/beer/tally-ho-palmers-549/
+/beer/tannen-zapfle-rothaus-684/
+/beer/taste-the-difference-golden-ale-badger-beers-hall-woodhouse-sainsburys-730/
+/beer/tea-party-people-like-us-337
+/beer/the-fropical-ferret-badger-565
+/beer/the-fropical-ferret-badger-565/
+/beer/the-great-british-brewing-co-session-ipa-aldi-720/
+/beer/the-spirit-of-kent-westerham-brewery-597/
+/beer/the-vermont-sessions-brewdog-vs-474
+/beer/the-wicked-wyvern-badger-661/
+/beer/tippa-ipa-maltus-faber-226
+/beer/transient-comfort-object-verdant-brewing-company-559/
+/beer/trees-beak-brewery-587/
+/beer/tribute-xxtra-st-austell-brewery-547
+/beer/tribute-xxtra-st-austell-brewery-548/
+/beer/urgent-philosophy-deya-brewing-company-675
+/beer/urgent-philosophy-deya-brewing-company-675/
+/beer/wave-mix-pollys-562/
+/beer/we-all-float-cloak-and-dagger-765/
+/beer/west-coast-blues-burning-sky-589/
+/beer/wheat-pale-ale-the-kernel-598/
+/beer/wheat-pale-ale-the-kernel-599/
+/beer/whistable-bay-the-faversham-steam-brewery-25
+/beer/white-ipa-big-hug-brewing-584/
+/beer/willo-beak-brewery-632/
+/beer/winter-special-hatherwood-craft-beer-company-260
+/beer/winter-warmer-eagle-brewery-589/
+/beer/wool-beak-brewery-x-northern-monk-469
+/beer/wool-beak-brewery-x-northern-monk-469/
+/beer/word-laine-brew-co-751/
+ #}

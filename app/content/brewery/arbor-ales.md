@@ -3,6 +3,8 @@ title: Arbor Ales
 permalink: brewery/arbor-ales/
 location: 'Bristol, City of Bristol England'
 style: Micro Brewery
+aliases:
+  - arbor
 website: 'https://arborales.co.uk'
 instagram: 'http://instagram.com/arbor.ales'
 twitter: 'https://twitter.com/ArborAles'

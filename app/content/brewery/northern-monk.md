@@ -3,6 +3,8 @@ title: Northern Monk
 permalink: brewery/northern-monk/
 location: 'Leeds, West Yorkshire England'
 style: Regional Brewery
+aliases:
+  - norther-monk
 website: 'https://northernmonk.com'
 instagram: 'http://instagram.com/northernmonk'
 twitter: 'https://twitter.com/NMBCo'

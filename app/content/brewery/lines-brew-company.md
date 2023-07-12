@@ -3,6 +3,8 @@ title: Lines Brew Co.
 permalink: brewery/lines-brew-co/
 location: 'Usk, Monmouthshire Wales'
 style: Micro Brewery
+aliases:
+  - lines-brew-company
 website: 'http://www.linesbrewco.com/'
 instagram: 'http://instagram.com/linesbrewing'
 twitter: 'https://twitter.com/linesbrewing'

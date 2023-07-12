@@ -3,6 +3,7 @@ title: Vocation Brewery
 permalink: brewery/vocation-brewery/
 aliases:
   - vocation
+  - vocation-x
 location: 'Hebden Bridge, West Yorkshire England'
 style: Micro Brewery
 website: 'http://www.vocationbrewery.com'

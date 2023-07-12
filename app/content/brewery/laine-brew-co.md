@@ -3,6 +3,7 @@ title: Laine Brew Co
 permalink: brewery/laine-brew-co/
 aliases:
   - north-laine
+  - gin-brewery-x-north-laine
 location: 'Brighton, Brighton and Hove England'
 style: Micro Brewery
 website: 'https://laine.shop'

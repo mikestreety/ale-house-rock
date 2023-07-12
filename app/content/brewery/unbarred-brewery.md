@@ -3,6 +3,7 @@ title: UnBarred Brewery
 permalink: brewery/unbarred-brewery/
 aliases:
   - unbarred
+  - unbarred-x-bison-beer
 location: 'Brighton, Brighton and Hove England'
 style: Micro Brewery
 website: 'http://www.unbarredbrewery.com'

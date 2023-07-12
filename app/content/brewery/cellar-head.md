@@ -4,6 +4,8 @@ permalink: brewery/cellar-head/
 image: 'https://assets.untappd.com/site/brewery_logos_hd/brewery-344944_7532b_hd.jpeg'
 location: 'Flimwell, East Sussex England'
 style: Micro Brewery
+aliases:
+  - cellar-head-only-with-love
 website: 'http://www.cellarheadbrewing.com/'
 instagram: 'http://instagram.com/cellarheadbrew'
 twitter: 'https://twitter.com/cellarheadbrew'

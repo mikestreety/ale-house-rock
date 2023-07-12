@@ -3,6 +3,8 @@ title: Thornbridge Brewery
 permalink: brewery/thornbridge/
 location: 'Bakewell, Derbyshire England'
 style: Regional Brewery
+aliases:
+  - thornbridge-collaboration
 website: 'https://thornbridgebrewery.co.uk'
 instagram: 'http://instagram.com/thornbridge'
 twitter: 'https://twitter.com/thornbridge'

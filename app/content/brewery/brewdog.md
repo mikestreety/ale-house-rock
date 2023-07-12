@@ -3,6 +3,8 @@ title: BrewDog
 permalink: brewery/brewdog/
 location: 'Ellon, Aberdeenshire Scotland'
 style: Regional Brewery
+aliases:
+  - brewdog-vs
 website: 'http://www.brewdog.com'
 instagram: 'http://instagram.com/brewdogofficial'
 twitter: 'https://twitter.com/BrewDog'

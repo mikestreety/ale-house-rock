@@ -4,6 +4,8 @@ permalink: brewery/eagle-brewery/
 aliases:
   - mcewans
   - youngs
+  - charlie-wells
+  - directors
 location: 'Bedford, England'
 style: Macro Brewery
 website: 'http://eaglebrewery.co.uk'

@@ -3,6 +3,8 @@ title: Beavertown
 permalink: brewery/beavertown/
 location: 'Tottenham Hale, London England'
 style: Macro Brewery
+aliases:
+  - beaverton
 website: 'https://beavertownbrewery.co.uk'
 instagram: 'http://instagram.com/beavertownbeer'
 twitter: 'https://twitter.com/BeavertownBeer'

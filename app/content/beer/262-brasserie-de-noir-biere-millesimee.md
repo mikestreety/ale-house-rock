@@ -10,6 +10,9 @@
         "brewery/brasserie-goudale-les-brasseurs-de-gayant/"
     ],
     "tags": [],
+    "aliases": [
+        "262-brasserie-de-noir-biere-millesimee"
+    ],
     "review": "The bottle of this one was 100% the reason I picked it up. An Aldi special, the cork drew me in and the sound that accompanied it would not disappoint. Nice beer, unusual to get a 750ml bottle but was a nice novelty. Perfect for the situation or fancying a bit more but not wanting another full pint. Easy enough to drink &amp; reasonably priced too"
 }
 ---

@@ -10,6 +10,9 @@
         "brewery/sureshot-brewing/",
         "brewery/vocation-brewery/"
     ],
+    "aliases": [
+        "15-mile-round-trip-vocation-x-541"
+    ],
     "tags": [],
     "review": "I had this a few days ago and forgot to post. Brewed by @vocationbrewery in collaboration with @sureshotbrew. From what I can remember it is a pretty decent tasting IPA for a supermarket purchase. Didn&#39;t realise it packed the 8% punch until I went to stand up after a zoom call with a mate. Plenty of good flavour and an enjoyable drink."
 }

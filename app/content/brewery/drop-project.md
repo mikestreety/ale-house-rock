@@ -3,6 +3,8 @@ title: Drop Project
 permalink: brewery/drop-project/
 location: 'The Willow Centre, London England'
 style: Micro Brewery
+aliases:
+  - exale-brewing-x-drop-project
 website: 'https://www.drop-project.co.uk'
 instagram: 'http://instagram.com/dropprojectbrew'
 twitter: 'https://twitter.com/dropprojectbrew'
