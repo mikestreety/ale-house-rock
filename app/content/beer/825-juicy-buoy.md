@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/lost-pier-brewing/"
   ],
-  "number": 824,
+  "number": 825,
   "permalink": "beer/juicy-buoy-lost-pier-brewing/",
   "review": "A tasty little number from Lost Pier. Very easy to drink and had plenty of flavours to keep me interested."
 }
 ---
-

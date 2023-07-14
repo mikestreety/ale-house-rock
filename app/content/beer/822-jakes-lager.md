@@ -10,9 +10,8 @@
   "breweries": [
     "brewery/jakes-drinks-at-balfour-winery/"
   ],
-  "number": 821,
+  "number": 822,
   "permalink": "beer/jakes-lager-jakes-drinks-at-balfour-winery/",
   "review": "With the first few sips of this, I was convinced it was a 10. It was muggy & hot, the kids were being pickles and I'd just sat down to eat dinner. It was cool, crisp and refreshing. As it went on, it began to taste like a lager - not for me, really"
 }
 ---
-

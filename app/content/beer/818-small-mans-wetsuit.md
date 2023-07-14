@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/sureshot-brewing/"
   ],
-  "number": 817,
+  "number": 818,
   "permalink": "beer/small-mans-wetsuit-sureshot-brewing/",
   "review": "Sureshot need to stop making absolute bangers, otherwise I'll run out of points to give. This was another absolutely superb Pale Ale and went very well with a curry (and was perfectly good on its own, too)."
 }
 ---
-

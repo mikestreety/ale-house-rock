@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/mikkeller/"
   ],
-  "number": 819,
+  "number": 820,
   "permalink": "beer/stedsegrn-evergreen-mikkeller/",
   "review": "A passable, drinkable, run-of-the-mill Hazy from a big supermarket. Has this a couple of times and doesn't disappoint. It fills the criteria of \"give me a cheap half-decent beer\""
 }
 ---
-

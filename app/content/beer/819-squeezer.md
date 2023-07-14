@@ -10,9 +10,8 @@
   "breweries": [
     "brewery/by-the-horns-brewing-co/"
   ],
-  "number": 818,
+  "number": 819,
   "permalink": "beer/squeezer-by-the-horns-brewing-co/",
   "review": "What a very mediocre beer this is. Tasted better once it had warmed up slightly. It was a light IPA, but was missing complexity, depth and a confident flavour. A middle of the road, average beer."
 }
 ---
-

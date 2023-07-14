@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/cloak-and-dagger/"
   ],
-  "number": 823,
+  "number": 824,
   "permalink": "beer/big-ipa-series-1-nzipa-cloak-and-dagger/",
   "review": "This was a dry, sharp IPA. It was no surprise the notes on the side mentioned gooseberry. It was refreshing, and a change to have a dry IP it was certainly one I would have again and happily sit in a micropub drink many of these"
 }
 ---
-

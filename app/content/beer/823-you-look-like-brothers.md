@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/bestens-brewery/"
   ],
-  "number": 822,
+  "number": 823,
   "permalink": "beer/you-look-like-brothers-bestens-brewery/",
   "review": "A fairly standard NEIPA, tasty enough. This would sit very nicely in a micropub, chatting and putting the world to rights."
 }
 ---
-

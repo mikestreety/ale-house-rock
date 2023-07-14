@@ -12,9 +12,8 @@
     "brewery/verdant-brewing-company/",
     "brewery/basqueland-brewing/"
   ],
-  "number": 820,
+  "number": 821,
   "permalink": "beer/the-separate-self-verdant-brewing-company-basqueland-brewing/",
   "review": "This was thick. It was packed full of flavour and was like a smoothie or a milkshake! It was a little too sweet, but it was still an excellent pour."
 }
 ---
-
