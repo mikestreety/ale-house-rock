@@ -4,6 +4,7 @@ permalink: brewery/salt-beer-factory/
 location: 'Saltaire, England'
 style: Micro Brewery
 aliases:
+  - salt
   - salt-beer-factory-n-pomonda-island
 website: 'https://www.saltbeerfactory.co.uk'
 instagram: 'http://instagram.com/saltbeerfactory'

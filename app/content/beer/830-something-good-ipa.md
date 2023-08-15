@@ -9,8 +9,8 @@
   "style": "IPA - American",
   "abv": "5.4%",
   "breweries": [
-    "brewery/fourpure-brewing-co/",
-    "brewery/lidl-gb/"
+    "brewery/fourpure-brewing-company/",
+    "brewery/lidl/"
   ],
   "number": 830,
   "permalink": "beer/something-good-ipa-fourpure-brewing-co-lidl-gb/",

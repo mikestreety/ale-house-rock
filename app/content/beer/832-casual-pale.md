@@ -9,7 +9,7 @@
   "style": "Pale Ale - Other",
   "abv": "4%",
   "breweries": [
-    "brewery/salt/"
+    "brewery/salt-beer-factory/"
   ],
   "number": 832,
   "permalink": "beer/casual-pale-salt/",

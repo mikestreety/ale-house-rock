@@ -9,7 +9,7 @@
   "style": "IPA - New England / Hazy",
   "abv": "5.1%",
   "breweries": [
-    "brewery/fourpure-brewing-co/"
+    "brewery/fourpure-brewing-company/"
   ],
   "number": 827,
   "permalink": "beer/inner-city-green-fourpure-brewing-co/",

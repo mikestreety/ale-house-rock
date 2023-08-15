@@ -5,6 +5,7 @@ aliases:
   - down-south-brewing
   - hatherwood-craft-beer-company
   - perlenbacher
+  - lidl-gb
 location: 'Wimbledon, London England'
 style: Bar / Restaurant / Store
 website: 'https://www.lidl.co.uk'

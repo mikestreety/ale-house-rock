@@ -1,5 +1,7 @@
 ---
 title: Fourpure Brewing Co
+aliases:
+  - fourpure-brewing-co
 permalink: brewery/fourpure-brewing-company/
 location: 'Bermondsey, London England'
 style: Regional Brewery
