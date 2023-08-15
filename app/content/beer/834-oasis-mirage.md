@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1304265257",
+  "title": "Oasis Mirage",
+  "serving": "Can",
+  "rating": 9,
+  "purchased": "shop/the-craft-beer-cabin/",
+  "date": "2023-08-13",
+  "style": "IPA - New England / Hazy",
+  "abv": "6.5%",
+  "breweries": [
+    "brewery/floc/"
+  ],
+  "number": 834,
+  "permalink": "beer/oasis-mirage-floc/",
+  "review": "This IPA was lush. Didn't feel like I'd had a full 440ml when I got the end - it was so moreish I hammered through it. A nice weight to it, not too thick but not watery either. Wonderful stuff. 6.5% is a nice middleweight too"
+}
+---
+
