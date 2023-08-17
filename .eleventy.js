@@ -7,6 +7,13 @@ module.exports = function (config) {
 	config.addCollection('breweryAliases', breweryAliases);
 	config.addCollection('shopAliases', shopAliases);
 
+	config.addCollection('sortedBreweries', function (collections) {
+		console.log(collections.getFilteredByTag('brewery'));
+		return collections.getFilteredByTag('brewery').sort(function (a, b) {
+			return a.data.title.localeCompare(b.data.title);
+		});
+	});
+
 	config.addFilter('limit', require('./app/filters/limit.js'));
 	config.addFilter('squashandweed', require('./app/filters/squashandweed.js'));
 	config.addFilter('findBySlug', require('./app/filters/findBySlug.js'));
