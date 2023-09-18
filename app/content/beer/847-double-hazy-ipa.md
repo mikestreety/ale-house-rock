@@ -1,0 +1,18 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1314110168",
+  "title": "Double Hazy IPA",
+  "serving": "Can",
+  "rating": 8,
+  "date": "2023-09-15",
+  "style": "IPA - Imperial / Double New England / Hazy",
+  "abv": "9.2%",
+  "breweries": [
+    "brewery/ska-brewing/"
+  ],
+  "number": 847,
+  "permalink": "beer/double-hazy-ipa-ska-brewing/",
+  "review": "This was an amazingly brutal hit in the face. This 9.2% beer wasn't dressed up at all - it was an unapologetic sharp double hazy IPA with all the hallmarks of a bitter. I enjoyed the change of pace, but this isn't a beer you would want too many of."
+}
+---
+
