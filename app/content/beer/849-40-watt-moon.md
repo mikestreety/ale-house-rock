@@ -1,0 +1,18 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1315205505",
+  "title": "40 Watt Moon",
+  "serving": "Can",
+  "rating": 8,
+  "date": "2023-09-18",
+  "style": "IPA - Imperial / Double New England / Hazy",
+  "abv": "8%",
+  "breweries": [
+    "brewery/verdant-brewing-company/"
+  ],
+  "number": 849,
+  "permalink": "beer/40-watt-moon-verdant-brewing-company/",
+  "review": "This was a heavy hitting, easy drinking 8%. I opened it while waiting for the curry to turn up and had finished it by the time the doorbell rang. It was very tasty and a classic Cerdant."
+}
+---
+
