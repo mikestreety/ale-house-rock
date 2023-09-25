@@ -10,7 +10,7 @@
   "breweries": [
     "brewery/verdant-brewing-company/"
   ],
-  "number": 849,
+  "number": 848,
   "permalink": "beer/40-watt-moon-verdant-brewing-company/",
   "review": "This was a heavy hitting, easy drinking 8%. I opened it while waiting for the curry to turn up and had finished it by the time the doorbell rang. It was very tasty and a classic Cerdant."
 }

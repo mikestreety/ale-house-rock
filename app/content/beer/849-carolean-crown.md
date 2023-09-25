@@ -10,7 +10,7 @@
   "breweries": [
     "brewery/harveys-brewery/"
   ],
-  "number": 848,
+  "number": 849,
   "permalink": "beer/carolean-crown-harveys-brewery/",
   "review": "Not the standard I've come to expect from Harvey's, this Pale Ale fell a little bit flat. I was excited to revisit my roots of an Ale reviewer, but this beer felt like a run-of-the-mill ale from a supermarket"
 }
