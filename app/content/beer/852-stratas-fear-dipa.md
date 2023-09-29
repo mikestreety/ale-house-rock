@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1318169989",
+  "title": "Stratas Fear DIPA",
+  "serving": "Can",
+  "rating": 5,
+  "purchased": "shop/overtone-brewing-co/",
+  "date": "2023-09-29",
+  "style": "IPA - Imperial / Double New England / Hazy",
+  "abv": "8%",
+  "breweries": [
+    "brewery/overtone-brewing-co/"
+  ],
+  "number": 852,
+  "permalink": "beer/stratas-fear-dipa-overtone-brewing-co/",
+  "review": "Drinking this felt like the beer was a vessel for the alcohol. I didn't feel like there was much in the taste except for the 8% abv. Was nice enough, but certainly wouldn't buy again."
+}
+---
+
