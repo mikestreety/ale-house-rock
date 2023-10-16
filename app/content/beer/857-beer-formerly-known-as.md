@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1321640997",
+  "title": "Beer Formerly Known as....",
+  "serving": "Can",
+  "rating": 7,
+  "purchased": "shop/overtone-brewing-co/",
+  "date": "2023-10-11",
+  "style": "IPA - New England / Hazy",
+  "abv": "7%",
+  "breweries": [
+    "brewery/overtone-brewing-co/"
+  ],
+  "number": 857,
+  "permalink": "beer/beer-formerly-known-as-overtone-brewing-co/",
+  "review": "Pretty good and straightforward DDH IPA"
+}
+---
+
