@@ -1,0 +1,18 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1322579904",
+  "title": "Dopealicious",
+  "serving": "Can",
+  "rating": 8,
+  "date": "2023-10-14",
+  "style": "IPA - New England / Hazy",
+  "abv": "7.2%",
+  "breweries": [
+    "brewery/3-sons-brewing-co/"
+  ],
+  "number": 858,
+  "permalink": "beer/dopealicious-3-sons-brewing-co/",
+  "review": "This was pretty darn good. Had a pang of a sharp IPA about it, but I liked it. It was smooth with a sharp end, but went down very easily and would more than happily have it again."
+}
+---
+
