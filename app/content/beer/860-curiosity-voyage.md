@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1323842787",
+  "title": "Curiosity Voyage",
+  "serving": "Can",
+  "rating": 9,
+  "purchased": "shop/beer-no-evil/",
+  "date": "2023-10-19",
+  "style": "IPA - New England / Hazy",
+  "abv": "6.5%",
+  "breweries": [
+    "brewery/sureshot-brewing/"
+  ],
+  "number": 860,
+  "permalink": "beer/curiosity-voyage-sureshot-brewing/",
+  "review": "A quintessential Sureshot NEIPA. Packed full of flavour and depth and still managing to stay light and very drinkable. It tasted a lot stronger than its 6.5% label."
+}
+---
+
