@@ -1,0 +1,20 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1327080538",
+  "title": "Skwish",
+  "serving": "Can",
+  "rating": 9,
+  "purchased": "shop/palate-bottle-shop/",
+  "date": "2023-10-29",
+  "style": "IPA - New England / Hazy",
+  "abv": "6.5%",
+  "breweries": [
+    "brewery/beak/",
+    "brewery/gamma-brewing-company/"
+  ],
+  "number": 865,
+  "permalink": "beer/skwish-beak-gamma-brewing-company/",
+  "review": "An absolute classic Beak IPA. Flavoursome, punchy and strong. Banging."
+}
+---
+
