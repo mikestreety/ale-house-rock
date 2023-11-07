@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1329297464",
+  "title": "Brewgooder Northern Monk Hazy Ale",
+  "serving": "Can",
+  "rating": 8,
+  "purchased": "shop/co-op-food/",
+  "date": "2023-11-07",
+  "style": "IPA - New England / Hazy",
+  "abv": "4.1%",
+  "breweries": [
+    "brewery/brewgooder/"
+  ],
+  "number": 868,
+  "permalink": "beer/brewgooder-northern-monk-hazy-ale-brewgooder/",
+  "review": "Grabbed this on a whim when in the co-op the other day and I think I might go back for more. Light and hazy, a great little tipple with some flavour without being anything too heavy and full on."
+}
+---
+
