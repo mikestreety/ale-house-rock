@@ -32,7 +32,7 @@ module.exports = {
 		},
 		imagePath: data => {
 			if(data.page) {
-				return `/images/beers/${data.number}/image.webp`
+				return `/images/${data.permalink}image.webp`
 			}
 		},
 		thumbnailPath: data => {

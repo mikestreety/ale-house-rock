@@ -8,7 +8,6 @@ module.exports = function (config) {
 	config.addCollection('shopAliases', shopAliases);
 
 	config.addCollection('sortedBreweries', function (collections) {
-		console.log(collections.getFilteredByTag('brewery'));
 		return collections.getFilteredByTag('brewery').sort(function (a, b) {
 			return a.data.title.localeCompare(b.data.title);
 		});

@@ -213,7 +213,7 @@ exports.handler = async (event, context) => {
 		.toBuffer();
 	commitFiles.push({
 		action: 'create',
-		filePath: `app/content/images/beers/${review.number}/image.webp`,
+		filePath: `app/content/images/${review.permalink}/image.webp`,
 		content: imageLarge.toString('base64'),
 		encoding: 'base64'
 	});
@@ -224,7 +224,7 @@ exports.handler = async (event, context) => {
 		.toBuffer();
 	commitFiles.push({
 		action: 'create',
-		filePath: `app/content/images/beers/${review.number}/thumbnail.webp`,
+		filePath: `app/content/images/${review.permalink}/thumbnail.webp`,
 		content: imageSmall.toString('base64'),
 		encoding: 'base64'
 	});

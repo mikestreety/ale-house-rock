@@ -143,9 +143,7 @@ seoTitle: Statistics
 		if(b.serving) {
 			if(servings[b.serving]) {
 				servings[b.serving].count++;
-				console.log(b.number);
 				servings[b.serving].rating += parseFloat(b.rating);
-				console.log(servings[b.serving].rating);
 			} else {
 				servings[b.serving] = {
 					title: b.serving,
