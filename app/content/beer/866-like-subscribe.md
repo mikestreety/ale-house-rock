@@ -10,9 +10,8 @@
   "breweries": [
     "brewery/unbarred-brewery/"
   ],
-  "number": 867,
+  "number": 866,
   "permalink": "beer/like-subscribe-unbarred-brewery/",
   "review": "Described as a \"juice bomb\" on the can, the description was apt. Thick and juicy and full of flavour, it was a highly enjoyable experience."
 }
 ---
-
