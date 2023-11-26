@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1332173377",
+  "title": "Luminous Nights",
+  "serving": "Can",
+  "rating": 8,
+  "purchased": "shop/lidl/",
+  "date": "2023-11-18",
+  "style": "IPA - Imperial / Double New England / Hazy",
+  "abv": "7.4%",
+  "breweries": [
+    "brewery/71-brewing/"
+  ],
+  "number": 872,
+  "permalink": "beer/luminous-nights-71-brewing/",
+  "review": "This is actually pretty darn-good, especially for a beer found in a Lidl. I've had a few of these and I am surprisingly pleased every time. Juicy and full of flavour, all without breaking the bank!"
+}
+---
+
