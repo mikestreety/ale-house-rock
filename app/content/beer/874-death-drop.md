@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1334608188",
+  "title": "Death Drop",
+  "serving": "Can",
+  "rating": 8,
+  "purchased": "shop/beer-no-evil/",
+  "date": "2023-11-26",
+  "style": "Pale Ale - American",
+  "abv": "5.5%",
+  "breweries": [
+    "brewery/queer-brewing/"
+  ],
+  "number": 874,
+  "permalink": "beer/death-drop-queer-brewing/",
+  "review": "A pretty nice Pale Ale. It had quite a lot of depth and flavour to it and tasted stronger than the 5.5% label. I'd certainly have it again and looking forward to trying more Queer Brewing beers!"
+}
+---
+
