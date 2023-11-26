@@ -5,9 +5,9 @@
     "rating": "4",
     "canonical": "https://www.instagram.com/p/CS5LH8oqKs_/",
     "date": "2021-08-22",
-    "permalink": "beer/high-speed-soul-pollys/",
+    "permalink": "beer/high-speed-soul-pollys-brew-co/",
     "breweries": [
-        "brewery/pollys/"
+        "brewery/pollys-brew-co/"
     ],
     "tags": [],
     "review": "Unusually, this beer got less enjoyable as I drank it. The taste of alcohol was too prominent for me. I&#39;ve had other 8% beers which are barely noticeable but can imagine some people enjoying the sting. Felt like a strong DIPA for strong DIPA sake, rather than making a good beer. This one started at a 6 or 7, but ended much lower."

@@ -5,9 +5,9 @@
     "rating": "8",
     "canonical": "https://www.instagram.com/p/CEPMocsJJsi/",
     "date": "2020-08-23",
-    "permalink": "beer/rock-the-bit-pollys/",
+    "permalink": "beer/rock-the-bit-pollys-brew-co/",
     "breweries": [
-        "brewery/pollys/"
+        "brewery/pollys-brew-co/"
     ],
     "tags": [],
     "review": "This is the beer I was hoping the other one would be. Smooth, full of flavour and easy drinking. Could sink a few of these of an evening. Went down well with a game of Catan"

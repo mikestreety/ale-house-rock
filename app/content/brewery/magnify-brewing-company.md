@@ -8,5 +8,6 @@ twitter: 'https://twitter.com/MagnifyBrewing'
 facebook: 'https://www.facebook.com/magnifybrewing'
 untappd: 'https://untappd.com/MagnifyBrewingCompany'
 permalink: brewery/magnify-brewing-company/
+aliases:
+  - 'magnify-brewing'
 ---
-

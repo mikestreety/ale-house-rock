@@ -5,9 +5,9 @@
     "rating": "7",
     "canonical": "https://www.instagram.com/p/Cery1dyKGNN/",
     "date": "2022-06-12",
-    "permalink": "beer/yearn-and-fall-pollys/",
+    "permalink": "beer/yearn-and-fall-pollys-brew-co/",
     "breweries": [
-        "brewery/pollys/"
+        "brewery/pollys-brew-co/"
     ],
     "tags": [],
     "review": "This was a nice pale ale. Nothing extraordinary, but good enough to be enjoyable."
