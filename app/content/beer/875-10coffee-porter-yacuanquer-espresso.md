@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1335252473",
+  "title": "10|Coffee Porter – Yacuanquer Espresso",
+  "serving": "Can",
+  "rating": 9,
+  "purchased": "shop/sainsburys/",
+  "date": "2023-11-30",
+  "style": "Porter - Imperial / Double Coffee",
+  "abv": "9%",
+  "breweries": [
+    "brewery/brew-by-numbers/"
+  ],
+  "number": 875,
+  "permalink": "beer/10coffee-porter-yacuanquer-espresso-brew-by-numbers/",
+  "review": "Picked this up on a whim and by golly it was good. Smooth and tasty without being too thick or too thin. This is what I want in a porter! I don't want to feel sick or get sticky fingers on the can. I want a good clean pour which can end the evening calmly"
+}
+---
+
