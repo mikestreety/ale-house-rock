@@ -213,7 +213,7 @@ exports.handler = async (event, context) => {
 		.toBuffer();
 	commitFiles.push({
 		action: 'create',
-		filePath: `app/content/images/${review.permalink}/image.webp`,
+		filePath: `app/content/images/${review.permalink}image.webp`,
 		content: imageLarge.toString('base64'),
 		encoding: 'base64'
 	});
@@ -224,7 +224,7 @@ exports.handler = async (event, context) => {
 		.toBuffer();
 	commitFiles.push({
 		action: 'create',
-		filePath: `app/content/images/${review.permalink}/thumbnail.webp`,
+		filePath: `app/content/images/${review.permalink}thumbnail.webp`,
 		content: imageSmall.toString('base64'),
 		encoding: 'base64'
 	});
@@ -255,11 +255,12 @@ exports.handler = async (event, context) => {
 			commitFiles
 		);
 	} catch(e) {
+		console.log(e);
 		return {
-			statusCode: 400,
+			statusCode: 500,
 			body: JSON.stringify({
 				status: 'error',
-				message: 'File already exists',
+				message: e.description,
 				commitFiles: commitFiles.map(item => {
 					return {
 						action: item.action,
