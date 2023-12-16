@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1339889153",
+  "title": "Père Noël",
+  "serving": "Bottle",
+  "rating": 7,
+  "purchased": "shop/beer-no-evil/",
+  "date": "2023-12-16",
+  "style": "Winter Ale",
+  "abv": "7%",
+  "breweries": [
+    "brewery/brouwerij-de-ranke/"
+  ],
+  "number": 879,
+  "permalink": "beer/pere-noel-brouwerij-de-ranke/",
+  "review": "Picked this up on a whim, but was slightly disappointed it wasn't more fragrant & festive. A nice-enough beer, but nothing outstanding, especially for the price."
+}
+---
+
