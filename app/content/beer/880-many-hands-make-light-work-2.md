@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1341841119",
+  "title": "Many Hands Make Light Work 2",
+  "serving": "Can",
+  "rating": 7.5,
+  "purchased": "shop/beer-no-evil/",
+  "date": "2023-12-23",
+  "style": "IPA - New England / Hazy",
+  "abv": "6%",
+  "breweries": [
+    "brewery/farm-yard-brew-co/"
+  ],
+  "number": 880,
+  "permalink": "beer/many-hands-make-light-work-2-farm-yard-brew-co/",
+  "review": "I saw this was a beer which involved Sureshot and picked it up without reading further, however, I was a bit disappointed. It was good, but not incredible and tasted like a slightly above average IPA. I'd drink it again, but not seek it out"
+}
+---
+
