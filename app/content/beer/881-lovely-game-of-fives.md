@@ -1,0 +1,18 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1344102694",
+  "title": "Lovely Game of Fives",
+  "serving": "Can",
+  "rating": 4,
+  "date": "2023-12-28",
+  "style": "IPA - New England / Hazy",
+  "abv": "5.8%",
+  "breweries": [
+    "brewery/double-barrelled-brewery/"
+  ],
+  "number": 881,
+  "permalink": "beer/lovely-game-of-fives-double-barrelled-brewery/",
+  "review": "A bit of a disappointing DDH IPA. It tasted watery - the flavours were there but not the depth or thickness I would expect from this kind of beer."
+}
+---
+
