@@ -10,9 +10,8 @@
   "breweries": [
     "brewery/double-barrelled-brewery/"
   ],
-  "number": 881,
+  "number": 883,
   "permalink": "beer/lovely-game-of-fives-double-barrelled-brewery/",
   "review": "A bit of a disappointing DDH IPA. It tasted watery - the flavours were there but not the depth or thickness I would expect from this kind of beer."
 }
 ---
-

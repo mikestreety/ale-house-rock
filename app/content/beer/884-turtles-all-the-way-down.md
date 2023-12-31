@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/duration-brewing/"
   ],
-  "number": 883,
+  "number": 884,
   "permalink": "beer/turtles-all-the-way-down-duration-brewing/",
   "review": "This was a nice, smooth IPA. It was tasty and light and was a nice accompaniment to a lasagne."
 }
 ---
-

@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/northern-monk/"
   ],
-  "number": 884,
+  "number": 881,
   "permalink": "beer/aunt-bessies-apple-crumble-custard-pale-ale-2023-northern-monk/",
   "review": "This was... Interesting. It had some sweetness, but you could also taste the artificial-ness of it all. Definitely wouldn't buy one of these again, but wouldn't throw it away if I was given one."
 }
 ---
-
