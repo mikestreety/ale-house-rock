@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1345191064",
+  "title": "Turtles All the Way Down",
+  "serving": "Can",
+  "rating": 7.5,
+  "purchased": "shop/beer-no-evil/",
+  "date": "2023-12-31",
+  "style": "IPA - American",
+  "abv": "5.5%",
+  "breweries": [
+    "brewery/duration-brewing/"
+  ],
+  "number": 883,
+  "permalink": "beer/turtles-all-the-way-down-duration-brewing/",
+  "review": "This was a nice, smooth IPA. It was tasty and light and was a nice accompaniment to a lasagne."
+}
+---
+
