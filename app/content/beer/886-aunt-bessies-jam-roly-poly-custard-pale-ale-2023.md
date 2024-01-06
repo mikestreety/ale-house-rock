@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1346990828",
+  "title": "AUNT BESSIE'S // JAM ROLY POLY & CUSTARD PALE ALE (2023)",
+  "serving": "Can",
+  "rating": 3,
+  "purchased": "shop/asda/",
+  "date": "2024-01-06",
+  "style": "Pale Ale - Other",
+  "abv": "4.5%",
+  "breweries": [
+    "brewery/northern-monk/"
+  ],
+  "number": 886,
+  "permalink": "beer/aunt-bessies-jam-roly-poly-custard-pale-ale-2023-northern-monk/",
+  "review": "Another disappointing collaboration between the pudding maker and brewery. This one talked the talk with the smell, sweet and jammy, but when it came to the taste it was all fake. The wife was ok with this one, and I did manage to finish it at least"
+}
+---
+
