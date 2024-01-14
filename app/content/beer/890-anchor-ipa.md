@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1348793502",
+  "title": "Anchor IPA",
+  "serving": "Can",
+  "rating": 8,
+  "purchased": "shop/palate-bottle-shop/",
+  "date": "2024-01-14",
+  "style": "California Common",
+  "abv": "4.9%",
+  "breweries": [
+    "brewery/unbarred-brewery/"
+  ],
+  "number": 890,
+  "permalink": "beer/anchor-ipa-unbarred-brewery/",
+  "review": "This was a really crisp, sharp IPA - and I liked it. Nice and refreshing with plenty of flavour to keep you interested. Unbarred have smashed this one"
+}
+---
+
