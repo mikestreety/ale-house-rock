@@ -1,0 +1,18 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1350374105",
+  "title": "Puffin Ale",
+  "serving": "Bottle",
+  "rating": 8,
+  "date": "2024-01-21",
+  "style": "Bitter - Best",
+  "abv": "4.5%",
+  "breweries": [
+    "brewery/orkney-brewery/"
+  ],
+  "number": 892,
+  "permalink": "beer/puffin-ale-orkney-brewery/",
+  "review": "This was a lovely, smooth, tasty bitter. Exactly what you want from an ale of this type. It went down far too well and reminded me that I do still enjoy a traditional ale."
+}
+---
+
