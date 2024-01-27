@@ -1,0 +1,18 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1351586574",
+  "title": "Long Strides",
+  "serving": "Bottle",
+  "rating": 4,
+  "date": "2024-01-27",
+  "style": "Pale Ale - Other",
+  "abv": "4.4%",
+  "breweries": [
+    "brewery/orkney-brewery/"
+  ],
+  "number": 895,
+  "permalink": "beer/long-strides-orkney-brewery/",
+  "review": "A little disappointed with this one, to be honest, especially after the last couple from the brewery. It didn't have much flavour - reminded me of an ale from a cheaper supermarket."
+}
+---
+
