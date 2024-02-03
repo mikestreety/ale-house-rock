@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1353376643",
+  "title": "La Chouffe Blond",
+  "serving": "Bottle",
+  "rating": 9,
+  "purchased": "shop/morrisons/",
+  "date": "2024-02-03",
+  "style": "Belgian Strong Golden Ale",
+  "abv": "8%",
+  "breweries": [
+    "brewery/brasserie-dachouffe/"
+  ],
+  "number": 898,
+  "permalink": "beer/la-chouffe-blond-brasserie-dachouffe/",
+  "review": "This was such a smooth, tasty beer that was far too easy to drink. At 8%, this would be a dangerous drink to have a few of, but I definitely could"
+}
+---
+
