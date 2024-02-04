@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1353712920",
+  "title": "TRANSIENT // HAZY DDH IPA",
+  "serving": "Can",
+  "rating": 8,
+  "purchased": "shop/morrisons/",
+  "date": "2024-02-04",
+  "style": "IPA - New England / Hazy",
+  "abv": "7%",
+  "breweries": [
+    "brewery/northern-monk/"
+  ],
+  "number": 899,
+  "permalink": "beer/transient-hazy-ddh-ipa-northern-monk/",
+  "review": "This is what Northern Monk beers should be. Light, easy-drinking, accessible, smooth beers. This DIPA ticked all the \"craft beer from a supermarket\" box and was great for a Saturday night tipple."
+}
+---
+
