@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1354848336",
+  "title": "Illu",
+  "serving": "Can",
+  "rating": 4,
+  "purchased": "shop/beer-no-evil/",
+  "date": "2024-02-10",
+  "style": "IPA - New England / Hazy",
+  "abv": "6.5%",
+  "breweries": [
+    "brewery/beak/"
+  ],
+  "number": 901,
+  "permalink": "beer/illu-beak/",
+  "review": "Quite disappointed with this Beak beer - I didn't feel like it was up to their usual standard. It was more bitter than their usual stuff. It got a bit better with time, but still one of my least favourites"
+}
+---
+
