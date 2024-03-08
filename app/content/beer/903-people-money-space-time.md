@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1361502878",
+  "title": "People, Money, Space, Time",
+  "serving": "Can",
+  "rating": 8,
+  "purchased": "shop/palate-bottle-shop/",
+  "date": "2024-03-07",
+  "style": "Pale Ale - New England / Hazy",
+  "abv": "3.4%",
+  "breweries": [
+    "brewery/verdant-brewing-company/"
+  ],
+  "number": 903,
+  "permalink": "beer/people-money-space-time-verdant-brewing-company/",
+  "review": "For a cheeky 3.4%, this was pretty darn tasty. I could drink a good few of these and I think I'd feel alright the next day. Light, easy-drinking and plenty of flavour"
+}
+---
+
