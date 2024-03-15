@@ -11,7 +11,7 @@
   "breweries": [
     "brewery/verdant-brewing-company/"
   ],
-  "number": 903,
+  "number": 904,
   "permalink": "beer/people-money-space-time-verdant-brewing-company/",
   "review": "For a cheeky 3.4%, this was pretty darn tasty. I could drink a good few of these and I think I'd feel alright the next day. Light, easy-drinking and plenty of flavour"
 }

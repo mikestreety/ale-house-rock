@@ -11,7 +11,7 @@
   "breweries": [
     "brewery/deya-brewing-company/"
   ],
-  "number": 904,
+  "number": 905,
   "permalink": "beer/standard-dipa-salts-deya-brewing-company/",
   "review": "Deya have done it again. An incredible DIPA which was soft and fluffy and thick and tasty. It was very enjoyable but I wouldn't go out to hunt one down (hence not getting a 10). Still worth picking up if you see one though!"
 }

@@ -11,7 +11,7 @@
   "breweries": [
     "brewery/sureshot-brewing/"
   ],
-  "number": 902,
+  "number": 903,
   "permalink": "beer/2nd-birthday-dipa-sureshot-brewing/",
   "review": "I did not realise Sureshot were only 2 years old - their beers are absolutely banging. This was a classic DIPA, it was pretty tasty - although it was missing a little bit of a punch."
 }
