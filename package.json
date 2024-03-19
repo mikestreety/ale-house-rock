@@ -17,6 +17,9 @@
     "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-cache-assets": "^2.3.0",
     "@11ty/eleventy-navigation": "^0.3.5",
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.30",
+    "ajv": "^8.12.0",
     "netlify-plugin-minify-html": "^0.3.1"
   },
   "dependencies": {

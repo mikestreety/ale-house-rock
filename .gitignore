@@ -5,3 +5,7 @@ html/
 # Local Netlify folder
 .netlify
 .env
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
