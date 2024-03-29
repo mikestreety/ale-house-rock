@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1367669209",
+  "title": "Shore Leave",
+  "serving": "Bottle",
+  "rating": 5,
+  "purchased": "shop/tesco/",
+  "date": "2024-03-29",
+  "style": "Red Ale - American Amber / Red",
+  "abv": "4.3%",
+  "breweries": [
+    "brewery/brewdog/"
+  ],
+  "number": 911,
+  "permalink": "beer/shore-leave-brewdog/",
+  "review": "I couldn't walk past this ale from the prolific beer makers without giving it a taste. However, it was as average as I find the rest of their beers."
+}
+---
+
