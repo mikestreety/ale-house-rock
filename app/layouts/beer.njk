@@ -22,6 +22,12 @@ layout: default.njk
 	</div>
 	<p>{{ review | safe }}</p>
 
+	{% if abv %}
+	<p><strong>ABV:</strong>
+		{{ abv }}
+	</p>
+	{% endif %}
+
 	{% if purchased %}
 	<p><strong>Purchased:</strong>
 		{% for shop in purchased_from %}<a href="{{ shop.url }}" class="shop">{{ shop.data.title }}</a>{% endfor %}
