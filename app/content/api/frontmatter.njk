@@ -16,6 +16,9 @@ sitemapIgnore: true
 		{% if beer.data.purchased %}
 		"purchased": "{{ beer.data.purchased }}",
 		{% endif %}
+		{% if beer.data.abv %}
+		"abv": "{{ beer.data.abv }}",
+		{% endif %}
 		"date": "{{ beer.data.date }}",
 		"permalink": "{{ beer.data.permalink }}",
 		"breweries": [

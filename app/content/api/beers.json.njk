@@ -11,6 +11,9 @@ sitemapIgnore: true
 		"thumbnail": "{{ beer.data.thumbnailPath }}",
 		"brewery": "{{ beer.data.brewedBy }}",
 		"rating": "{{ beer.data.rating }}",
+		{% if beer.data.abv %}
+		"abv": "{{ beer.data.abv }}",
+		{% endif %}
 		"date": "{{ beer.data.date | dateLong }}",
 		"breweries": [
 			{% for brewery in beer.data.breweries %}
