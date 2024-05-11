@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1380086007",
+  "title": "My Lovely Horse",
+  "serving": "Can",
+  "rating": 8,
+  "purchased": "shop/beer-no-evil/",
+  "date": "2024-05-11",
+  "style": "IPA - New England / Hazy",
+  "abv": "6.5%",
+  "breweries": [
+    "brewery/sureshot-brewing/"
+  ],
+  "number": 924,
+  "permalink": "beer/my-lovely-horse-sureshot-brewing/",
+  "review": "After visiting my local beer shop for a Sureshot tap takeover, it would have been rude to not to come home with some. A classic DDH IPA, tasting spot on at 6%"
+}
+---
+
