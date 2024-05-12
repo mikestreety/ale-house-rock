@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1380543844",
+  "title": "Piñata",
+  "serving": "Can",
+  "rating": 7,
+  "purchased": "shop/sainsburys/",
+  "date": "2024-05-12",
+  "style": "Pale Ale - Fruited",
+  "abv": "4.5%",
+  "breweries": [
+    "brewery/north/"
+  ],
+  "number": 925,
+  "permalink": "beer/pinata-north/",
+  "review": "A hint of fruit, a subtle beer which went well after a long afternoon in the garden. Nothing too heavy and enjoyable, but wouldn't rush to buy again."
+}
+---
+
