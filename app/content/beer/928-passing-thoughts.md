@@ -12,9 +12,8 @@
     "brewery/verdant-brewing-company/",
     "brewery/beak/"
   ],
-  "number": 927,
+  "number": 928,
   "permalink": "beer/passing-thoughts-verdant-brewing-company-beak/",
   "review": "It seems when Beak collaborates with anyone, it makes an outstanding beer. Verdant are powerhouses and, with beak, made this incredible IPA. Packed full of flavour and spot on at 6.5%. I was definitely disappointed when I finished this one"
 }
 ---
-

@@ -4,8 +4,7 @@
   "title": "Nimble Like A Treefrog",
   "serving": "Can",
   "rating": 4,
-  "purchased": "shop/the-fussclub/",
-  "date": "2024-05-182000-01-01",
+  "date": "2024-05-18",
   "style": "IPA - Cold",
   "abv": "6.2%",
   "breweries": [
@@ -17,4 +16,3 @@
   "review": "I don't quite know what this \"cold IPA\" style is, but I don't think I like it. This beer was a bit flavourless. Almost like a Helles or other lager."
 }
 ---
-
