@@ -11,7 +11,7 @@
   "breweries": [
     "brewery/brewdog/"
   ],
-  "number": 930,
+  "number": 928,
   "permalink": "beer/wingman-brewdog/",
   "review": "A run-of-the-mill mass-produced session IPA. Nothing groundbreaking but not offensive"
 }

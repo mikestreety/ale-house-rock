@@ -11,7 +11,7 @@
     "brewery/full-circle-brew-co/",
     "brewery/sheep-in-wolfs-clothing/"
   ],
-  "number": 929,
+  "number": 930,
   "permalink": "beer/table-looper-full-circle-brew-co-sheep-in-wolfs-clothing/",
   "review": "A nice IPA"
 }
