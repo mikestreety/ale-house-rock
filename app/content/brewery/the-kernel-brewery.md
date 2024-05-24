@@ -2,6 +2,8 @@
 title: The Kernel Brewery
 location: 'London Borough of Southwark, London England'
 style: Micro Brewery
+aliases:
+  - the-kernel
 website: 'https://www.thekernelbrewery.com'
 instagram: 'http://instagram.com/thekernelbrewery'
 twitter: 'https://twitter.com/kernelbrewery'

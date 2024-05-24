@@ -9,11 +9,10 @@
   "style": "Pale Ale - Fruited",
   "abv": "4.5%",
   "breweries": [
-    "brewery/north/"
+    "brewery/north-brewing-co/"
   ],
   "number": 925,
   "permalink": "beer/pinata-north/",
   "review": "A hint of fruit, a subtle beer which went well after a long afternoon in the garden. Nothing too heavy and enjoyable, but wouldn't rush to buy again."
 }
 ---
-

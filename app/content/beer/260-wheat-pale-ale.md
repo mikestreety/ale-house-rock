@@ -7,7 +7,7 @@
     "date": "2019-12-07",
     "permalink": "beer/wheat-pale-ale-the-kernel/",
     "breweries": [
-        "brewery/the-kernel/"
+        "brewery/the-kernel-brewery/"
     ],
     "tags": [],
     "review": "This reminded me very much of a lager with taste. Not remarkable but happy to drink. It&#39;s a hipster pint from @thekernelbrewery, so was pricey. Yeast in the bottle prevented pouring the full pint"

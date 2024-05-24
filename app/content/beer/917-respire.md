@@ -9,11 +9,10 @@
   "style": "IPA - Session",
   "abv": "4%",
   "breweries": [
-    "brewery/black-sheep/"
+    "brewery/black-sheep-brewery/"
   ],
   "number": 917,
   "permalink": "beer/respire-black-sheep/",
   "review": "A lovely light, fruity bitter. Reminiscent of a Golden Glory from old Badger days."
 }
 ---
-
