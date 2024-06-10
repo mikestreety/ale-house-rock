@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1388836150",
+  "title": "PRIMATE SINGLE HOP NELSON SAUVIN",
+  "serving": "Can",
+  "rating": 8,
+  "purchased": "shop/brewser-online-store/",
+  "date": "2024-06-10",
+  "style": "IPA - New England / Hazy",
+  "abv": "6%",
+  "breweries": [
+    "brewery/missing-link-brewing/"
+  ],
+  "number": 937,
+  "permalink": "beer/primate-single-hop-nelson-sauvin-missing-link-brewing/",
+  "review": "This was lovely. A good body without being too thick and a spot on ABV. This would do very well in a micro-pub and I would quite happily drink a few of these."
+}
+---
+
