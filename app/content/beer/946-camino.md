@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1398438735",
+  "title": "Camino",
+  "serving": "Can",
+  "rating": 6,
+  "purchased": "shop/beak-brewery-taproom/",
+  "date": "2024-07-13",
+  "style": "IPA - Imperial / Double",
+  "abv": "8%",
+  "breweries": [
+    "brewery/beak/"
+  ],
+  "number": 946,
+  "permalink": "beer/camino-beak/",
+  "review": "I'm not sure if I had higher expectations for this DIPA (because of its pedigree) but, for me, it didn't quite deliver. The 8% was very prominent and it was lacking the depth I have come to expect from many beak beers."
+}
+---
+
