@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1402174572",
+  "title": "Fragrant and Refreshing Pilsner (Good Enough to Take Home to Yer Ma)",
+  "serving": "Can",
+  "rating": 8.5,
+  "purchased": "shop/brewser-online-store/",
+  "date": "2024-07-25",
+  "style": "Pilsner - Czech / Bohemian",
+  "abv": "5%",
+  "breweries": [
+    "brewery/modest-beer/"
+  ],
+  "number": 952,
+  "permalink": "beer/fragrant-and-refreshing-pilsner-good-enough-to-take-home-to-yer-ma-modest-beer/",
+  "review": "A nice and flavourful pilsner with plenty of little bubbles having a party in your mouth. Well suited to being paired with a burger and went down very well."
+}
+---
+
