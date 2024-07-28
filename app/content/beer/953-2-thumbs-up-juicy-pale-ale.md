@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1403373830",
+  "title": "2 Thumbs Up Juicy Pale Ale",
+  "serving": "Can",
+  "rating": 8,
+  "purchased": "shop/brewser-online-store/",
+  "date": "2024-07-28",
+  "style": "Pale Ale - New England / Hazy",
+  "abv": "4.4%",
+  "breweries": [
+    "brewery/modest-beer/"
+  ],
+  "number": 953,
+  "permalink": "beer/2-thumbs-up-juicy-pale-ale-modest-beer/",
+  "review": "This was a lovely little number which was punching well above its 4.4% ABV label. Plenty of depth and flavour and an enjoyable drink. The only thing that let it down was the unexpected last mouthful of gritty yeast."
+}
+---
+
