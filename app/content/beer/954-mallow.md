@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1406654167",
+  "title": "Mallow",
+  "serving": "Can",
+  "rating": 6.5,
+  "purchased": "shop/beak-brewery-taproom/",
+  "date": "2024-08-08",
+  "style": "IPA - Imperial / Double New England / Hazy",
+  "abv": "8%",
+  "breweries": [
+    "brewery/beak/"
+  ],
+  "number": 954,
+  "permalink": "beer/mallow-beak/",
+  "review": "Very much tastes like an 8%. Strong and chunky. A bit too much alcohol and not enough other flavours going on, for me. But enjoyable nonetheless."
+}
+---
+
