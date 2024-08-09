@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1407043033",
+  "title": "Sweet As #3 NZ Brown Ale",
+  "serving": "Can",
+  "rating": 8,
+  "purchased": "shop/brewser-online-store/",
+  "date": "2024-08-09",
+  "style": "Brown Ale - American",
+  "abv": "4.8%",
+  "breweries": [
+    "brewery/modest-beer/"
+  ],
+  "number": 955,
+  "permalink": "beer/sweet-as-3-nz-brown-ale-modest-beer/",
+  "review": "With it being a brown ale, I was expecting a harsh, bitter drink. Instead, I was greeted with a smooth, deep long lasting flavour which I enjoyed throughout the evening. It's certainly an acquired taste."
+}
+---
+
