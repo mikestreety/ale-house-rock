@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1407242806",
+  "title": "Mango Sorbet Pale Ale",
+  "serving": "Can",
+  "rating": 4,
+  "purchased": "shop/brewser-online-store/",
+  "date": "2024-08-10",
+  "style": "Pale Ale - Milkshake",
+  "abv": "5.6%",
+  "breweries": [
+    "brewery/modest-beer/"
+  ],
+  "number": 956,
+  "permalink": "beer/mango-sorbet-pale-ale-modest-beer/",
+  "review": "Well this was an experience. A \"mango sorbet\" pale ale. I would have been disappointed if I'd bought this as a pale ale, as it was very much like fizzy squash. There wasn't enough \"beer\" in this for me to really enjoy it, but it was ok."
+}
+---
+
