@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1411398943",
+  "title": "Big T*sco",
+  "serving": "Can",
+  "rating": 8,
+  "purchased": "shop/brewser-online-store/",
+  "date": "2024-08-24",
+  "style": "IPA - Imperial / Double",
+  "abv": "8%",
+  "breweries": [
+    "brewery/pretty-decent-beer-co/"
+  ],
+  "number": 958,
+  "permalink": "beer/big-tsco-pretty-decent-beer-co/",
+  "review": "A pretty tasty DIPA. Not too fruity that you forget it's a beer."
+}
+---
+
