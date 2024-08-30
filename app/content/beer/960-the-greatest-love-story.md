@@ -13,7 +13,7 @@
   ],
   "number": 960,
   "permalink": "beer/the-greatest-love-story-pretty-decent-beer-co/",
-  "review": "I always feel gluten-free beers have something.issing (obviously, it's gluten). It often leaves a \"dry\" aftertaste. Saying that, this was one of the better ones, but I wouldn't buy it out of choice."
+  "review": "I always feel gluten-free beers have something missing (obviously, it's gluten). It often leaves a \"dry\" aftertaste. Saying that, this was one of the better ones, but I wouldn't buy it out of choice."
 }
 ---
 
