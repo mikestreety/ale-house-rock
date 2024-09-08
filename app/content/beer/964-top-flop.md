@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1415894520",
+  "title": "Top Flop",
+  "serving": "Can",
+  "rating": 8,
+  "purchased": "shop/brewser-online-store/",
+  "date": "2024-09-08",
+  "style": "Pale Ale - New England / Hazy",
+  "abv": "4.6%",
+  "breweries": [
+    "brewery/pretty-decent-beer-co/"
+  ],
+  "number": 964,
+  "permalink": "beer/top-flop-pretty-decent-beer-co/",
+  "review": "A very drinkable pale ale from Pretty Decent. Not too thick or heavy and it was spot on with the flavours. I could have easily sessioned this all evening."
+}
+---
+
