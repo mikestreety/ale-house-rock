@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1415893938",
+  "title": "Padstow Windjammer",
+  "serving": "Bottle",
+  "rating": 6,
+  "purchased": "shop/padstow-tasting-rooms/",
+  "date": "2024-09-08",
+  "style": "Bitter - Session / Ordinary",
+  "abv": "4.3%",
+  "breweries": [
+    "brewery/padstow-brewing-company/"
+  ],
+  "number": 963,
+  "permalink": "beer/padstow-windjammer-padstow-brewing-company/",
+  "review": "A little bit thinner than. I was hoping for, the taste was there but there wasn't the body you'd expect from a copper ale"
+}
+---
+
