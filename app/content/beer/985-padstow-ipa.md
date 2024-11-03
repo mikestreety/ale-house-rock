@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1431041749",
+  "title": "Padstow IPA",
+  "serving": "Bottle",
+  "rating": 8,
+  "purchased": "shop/padstow-tasting-rooms/",
+  "date": "2024-11-03",
+  "style": "IPA - English",
+  "abv": "4.8%",
+  "breweries": [
+    "brewery/padstow-brewing-company/"
+  ],
+  "number": 985,
+  "permalink": "beer/padstow-ipa-padstow-brewing-company/",
+  "review": "A good, classic IPA bitter which went exceptionally well with a roast. Slightly carbonated but a good balanced body to round it out."
+}
+---
+
