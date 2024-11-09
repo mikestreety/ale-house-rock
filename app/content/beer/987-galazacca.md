@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1432316202",
+  "title": "GalAzacca",
+  "serving": "Can",
+  "rating": 9,
+  "purchased": "shop/beer-no-evil/",
+  "date": "2024-11-09",
+  "style": "IPA - New England / Hazy",
+  "abv": "6.2%",
+  "breweries": [
+    "brewery/arbor-ales/"
+  ],
+  "number": 987,
+  "permalink": "beer/galazacca-arbor-ales/",
+  "review": "I love Arbor as it is one of the few breweries that offer pint cans. That, coupled with this beer being a NEIPA made it a very enjoyable beer indeed. Tasty,"
+}
+---
+
