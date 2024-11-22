@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1435408686",
+  "title": "Society Rewind",
+  "serving": "Can",
+  "rating": 6,
+  "purchased": "shop/beer-no-evil/",
+  "date": "2024-11-22",
+  "style": "IPA - New England / Hazy",
+  "abv": "6%",
+  "breweries": [
+    "brewery/pollys-brew-co/"
+  ],
+  "number": 989,
+  "permalink": "beer/society-rewind-pollys-brew-co/",
+  "review": "A very \"middle of the road\" IPA. It was nice, but not outstanding. It had all the hallmarks of an IPA but lacked some depth and came across a bit simple."
+}
+---
+
