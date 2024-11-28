@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/padstow-brewing-company/"
   ],
-  "number": 981,
+  "number": 983,
   "permalink": "beer/drifting-dunes-padstow-brewing-company/",
   "review": "This was excellent. I picked one up on a whim when I popped in while on holiday, but had to go back to buy 2 more - one to drink that evening and one to review. Nicely balanced, not too heavy but still plenty of flavour."
 }
 ---
-

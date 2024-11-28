@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/quantock-brewery/"
   ],
-  "number": 993,
+  "number": 974,
   "permalink": "beer/plastered-pheasant-quantock-brewery/",
   "review": "I'm a big fan of these \"low\" percentile porters. Not overly sickly, sticky or thick, this was a nice little end of a long evening"
 }
 ---
-

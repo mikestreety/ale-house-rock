@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/utopian-brewing-ltd/"
   ],
-  "number": 986,
+  "number": 988,
   "permalink": "beer/festbier-2024-utopian-brewing-ltd/",
   "review": "A light, crisp, helles. It has a bit more taste which you don't expect from this style."
 }
 ---
-

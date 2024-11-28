@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/vibrant-forest-brewery/"
   ],
-  "number": 979,
+  "number": 980,
   "permalink": "beer/summerlands-vibrant-forest-brewery/",
   "review": "I appreciate this was a session ale which, by nature, are more muted, but this felt like it was lacking something. I don't think I would session this."
 }
 ---
-

@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/vibrant-forest-brewery/"
   ],
-  "number": 983,
+  "number": 985,
   "permalink": "beer/faithful-steed-vibrant-forest-brewery/",
   "review": "For a pilsner this was dang tasty. Crisp and clean and beautifully morish. Was light too, could easily knock a few of these back."
 }
 ---
-

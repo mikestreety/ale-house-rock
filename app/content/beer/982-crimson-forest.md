@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/vibrant-forest-brewery/"
   ],
-  "number": 980,
+  "number": 982,
   "permalink": "beer/crimson-forest-vibrant-forest-brewery/",
   "review": "I was slightly disappointed with this porter. It was smooth and inoffensive but didn't really have much flavour. No chocolate or coffee notes.or anything distinctive."
 }
 ---
-

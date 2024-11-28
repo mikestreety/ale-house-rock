@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/vibrant-forest-brewery/"
   ],
-  "number": 978,
+  "number": 979,
   "permalink": "beer/pupa-vibrant-forest-brewery/",
   "review": "A fairly average pale ale. Nice enough, but could have done with a bit more flavour for me."
 }
 ---
-

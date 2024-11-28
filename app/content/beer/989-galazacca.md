@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/arbor-ales/"
   ],
-  "number": 987,
+  "number": 989,
   "permalink": "beer/galazacca-arbor-ales/",
   "review": "I love Arbor as it is one of the few breweries that offer pint cans. That, coupled with this beer being a NEIPA made it a very enjoyable beer indeed. Tasty,"
 }
 ---
-

@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/vibrant-forest-brewery/"
   ],
-  "number": 992,
+  "number": 981,
   "permalink": "beer/does-it-make-a-sound-vibrant-forest-brewery/",
   "review": "A simple IPA which was drinkable, at least. Nothing outstanding but enjoyable."
 }
 ---
-

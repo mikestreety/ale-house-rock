@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/padstow-brewing-company/"
   ],
-  "number": 982,
+  "number": 984,
   "permalink": "beer/yeah-you-padstow-brewing-company/",
   "review": "A fairly basic hazy IPA and it was lacking a fair bit of flavour for my taste. A little bit of a shame as I've had sick good ones from them recently"
 }
 ---
-

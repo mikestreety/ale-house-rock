@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/padstow-brewing-company/"
   ],
-  "number": 985,
+  "number": 986,
   "permalink": "beer/padstow-ipa-padstow-brewing-company/",
   "review": "A good, classic IPA bitter which went exceptionally well with a roast. Slightly carbonated but a good balanced body to round it out."
 }
 ---
-

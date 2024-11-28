@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/360-degree-brewing-company/"
   ],
-  "number": 977,
+  "number": 978,
   "permalink": "beer/parachute-club-360-degree-brewing-company/",
   "review": "This was a perfect NEIPA with its only fault being that it was so damn drinkable. Soft and fruity, an absolute spot-on banger."
 }
 ---
-

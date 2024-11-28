@@ -10,9 +10,8 @@
   "breweries": [
     "brewery/timothy-taylors-brewery/"
   ],
-  "number": 991,
+  "number": 993,
   "permalink": "beer/landlord-dark-timothy-taylors-brewery/",
   "review": "A nice take on the classic landlord. Dark and smooth, it was tasty enough without being overly complex. Went down very well while preparing the Sunday roast."
 }
 ---
-

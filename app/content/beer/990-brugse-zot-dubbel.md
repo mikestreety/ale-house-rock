@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/brouwerij-de-halve-maan/"
   ],
-  "number": 988,
+  "number": 990,
   "permalink": "beer/brugse-zot-dubbel-brouwerij-de-halve-maan/",
   "review": "I've not had many Belgian beers, so it's hard to know where this falls on the scale. It was smooth and tasty with a bit of a kick and I'd definitely have it again."
 }
 ---
-

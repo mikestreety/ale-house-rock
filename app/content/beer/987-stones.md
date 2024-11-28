@@ -12,9 +12,8 @@
     "brewery/beak/",
     "brewery/the-seed-a-living-beer-project/"
   ],
-  "number": 984,
+  "number": 987,
   "permalink": "beer/stones-beak-the-seed-a-living-beer-project/",
   "review": "This. Was. Incredible. Everything you could ask for from an IPA, it was flavourful, light, balanced but juicy. I had to stop myself from drinking it all in one go. It was so moreish I was disappointed I'd only bought one!"
 }
 ---
-

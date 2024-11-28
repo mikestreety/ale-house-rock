@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/pollys-brew-co/"
   ],
-  "number": 989,
+  "number": 991,
   "permalink": "beer/society-rewind-pollys-brew-co/",
   "review": "A very \"middle of the road\" IPA. It was nice, but not outstanding. It had all the hallmarks of an IPA but lacked some depth and came across a bit simple."
 }
 ---
-

@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/quantock-brewery/"
   ],
-  "number": 976,
+  "number": 977,
   "permalink": "beer/get-on-astro-quantock-brewery/",
   "review": "A nice enough NEIPA, but I wasn't blown away by it. It was lacking both the punch of fruit and the thickness I would expect from the style."
 }
 ---
-
