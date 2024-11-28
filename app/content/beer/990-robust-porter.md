@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1436895785",
+  "title": "Robust Porter",
+  "serving": "Can",
+  "rating": 7,
+  "purchased": "shop/beer-no-evil/",
+  "date": "2024-11-28",
+  "style": "Porter - English",
+  "abv": "5.8%",
+  "breweries": [
+    "brewery/burning-sky/"
+  ],
+  "number": 990,
+  "permalink": "beer/robust-porter-burning-sky/",
+  "review": "This was a ronseal and did exactly what it says on the tin. Smacked in the face with coffee after the first sip, it took a little while to get used to. Had a nice finish but I'm not sure I'd have another one. A little bit aggressive for me."
+}
+---
+
