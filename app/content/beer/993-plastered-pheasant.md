@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1419148228",
+  "title": "Plastered Pheasant",
+  "serving": "Can",
+  "rating": 8,
+  "purchased": "shop/brewser-online-store/",
+  "date": "2024-09-21",
+  "style": "Dark Ale",
+  "abv": "4.8%",
+  "breweries": [
+    "brewery/quantock-brewery/"
+  ],
+  "number": 993,
+  "permalink": "beer/plastered-pheasant-quantock-brewery/",
+  "review": "I'm a big fan of these \"low\" percentile porters. Not overly sickly, sticky or thick, this was a nice little end of a long evening"
+}
+---
+
