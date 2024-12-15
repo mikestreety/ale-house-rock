@@ -1,0 +1,20 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1441677998",
+  "title": "Girl From Mars",
+  "serving": "Can",
+  "rating": 7,
+  "purchased": "shop/tesco/",
+  "date": "2024-12-15",
+  "style": "IPA - New England / Hazy",
+  "abv": "4.8%",
+  "breweries": [
+    "brewery/buxton-brewery/",
+    "brewery/brithop-brew-co/"
+  ],
+  "number": 998,
+  "permalink": "beer/girl-from-mars-buxton-brewery-brithop-brew-co/",
+  "review": "For a NEIPA, this was a bit \"boring\", however, I noticed after that this was a \"session NEIPA\" and for that it is pretty much spot on. Enough flavour to have some taste, but nothing that will punch you in the face and at 4.8% its low enough to have a few."
+}
+---
+
