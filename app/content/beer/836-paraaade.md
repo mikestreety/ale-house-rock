@@ -9,11 +9,10 @@
   "style": "IPA - Triple New England / Hazy",
   "abv": "10%",
   "breweries": [
-    "brewery/beak/"
+    "brewery/beak-brewery/"
   ],
   "number": 836,
   "permalink": "beer/paraaade-beak/",
   "review": "I ended up getting one of the first cans of this TIPA out of the brewery. Straight away the 10% hits you in the face, but by the last sip you're mellow enough to not notice it. I think a DIPA of this would be spot on. It's a long evening sipper for sure."
 }
 ---
-

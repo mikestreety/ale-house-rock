@@ -7,6 +7,7 @@ style: Micro Brewery
 aliases:
   - beak-brewery-x-northern-monk
   - verdant-brewing-company-x-beak-brewery
+  - beak
 website: 'https://beakbrewery.com'
 instagram: 'http://instagram.com/TheBeakBrewery'
 twitter: 'https://twitter.com/TheBeakBrewery'

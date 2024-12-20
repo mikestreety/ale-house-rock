@@ -9,11 +9,10 @@
   "style": "IPA - Imperial / Double New England / Hazy",
   "abv": "8%",
   "breweries": [
-    "brewery/beak/"
+    "brewery/beak-brewery/"
   ],
   "number": 954,
   "permalink": "beer/mallow-beak/",
   "review": "Very much tastes like an 8%. Strong and chunky. A bit too much alcohol and not enough other flavours going on, for me. But enjoyable nonetheless."
 }
 ---
-

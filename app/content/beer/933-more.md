@@ -9,11 +9,10 @@
   "style": "IPA - Imperial / Double",
   "abv": "8%",
   "breweries": [
-    "brewery/beak/"
+    "brewery/beak-brewery/"
   ],
   "number": 933,
   "permalink": "beer/more-beak/",
   "review": "Wow this has a punch. You can't drive past the Beak brewery on Lewes and not stop to pick up a couple of cans. This DIPA was raw and fresh - you could taste every inch of the 8% and it was good. It was a nice clean break from the polished DIPAs of late"
 }
 ---
-

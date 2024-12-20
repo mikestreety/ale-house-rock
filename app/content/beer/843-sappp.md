@@ -9,11 +9,10 @@
   "style": "IPA - Imperial / Double New England / Hazy",
   "abv": "8%",
   "breweries": [
-    "brewery/beak/"
+    "brewery/beak-brewery/"
   ],
   "number": 843,
   "permalink": "beer/sappp-beak/",
   "review": "A nice thick DIPA, that went well with watching a film. It took a few sips to get used to as the alcohol taste was a bit of a pang in the first mouthful. It was perfect when it was fresh out of the fridge."
 }
 ---
-

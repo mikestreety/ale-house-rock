@@ -9,7 +9,7 @@
   "style": "IPA - New England / Hazy",
   "abv": "6.5%",
   "breweries": [
-    "brewery/beak/",
+    "brewery/beak-brewery/",
     "brewery/the-seed-a-living-beer-project/"
   ],
   "number": 987,

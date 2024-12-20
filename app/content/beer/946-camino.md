@@ -9,11 +9,10 @@
   "style": "IPA - Imperial / Double",
   "abv": "8%",
   "breweries": [
-    "brewery/beak/"
+    "brewery/beak-brewery/"
   ],
   "number": 946,
   "permalink": "beer/camino-beak/",
   "review": "I'm not sure if I had higher expectations for this DIPA (because of its pedigree) but, for me, it didn't quite deliver. The 8% was very prominent and it was lacking the depth I have come to expect from many beak beers."
 }
 ---
-

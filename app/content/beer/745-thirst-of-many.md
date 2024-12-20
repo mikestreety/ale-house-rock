@@ -9,7 +9,7 @@
     "date": "2022-12-11",
     "permalink": "beer/thirst-of-many-allkin-brewing/",
     "breweries": [
-        "brewery/allkin-brewing/"
+        "brewery/allkin-brewing-brewery/"
     ],
     "tags": [
         "paleale"

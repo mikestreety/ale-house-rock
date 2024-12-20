@@ -9,7 +9,7 @@
   "style": "IPA - New England / Hazy",
   "abv": "6.5%",
   "breweries": [
-    "brewery/beak/",
+    "brewery/beak-brewery/",
     "brewery/gamma-brewing-company/"
   ],
   "number": 865,
@@ -17,4 +17,3 @@
   "review": "An absolute classic Beak IPA. Flavoursome, punchy and strong. Banging."
 }
 ---
-

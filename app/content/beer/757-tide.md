@@ -9,7 +9,7 @@
     "date": "2023-01-06",
     "permalink": "beer/tide-allkin-brewing-track-brewing-company/",
     "breweries": [
-        "brewery/allkin-brewing/",
+        "brewery/allkin-brewing-brewery/",
         "brewery/track-brewing-company/"
     ],
     "tags": [

@@ -10,7 +10,7 @@
   "abv": "6.5%",
   "breweries": [
     "brewery/verdant-brewing-company/",
-    "brewery/beak/"
+    "brewery/beak-brewery/"
   ],
   "number": 929,
   "permalink": "beer/passing-thoughts-verdant-brewing-company-beak/",

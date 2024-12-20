@@ -9,7 +9,7 @@
   "style": "IPA - New England / Hazy",
   "abv": "6.5%",
   "breweries": [
-    "brewery/beak/",
+    "brewery/beak-brewery/",
     "brewery/floc/"
   ],
   "number": 908,
@@ -17,4 +17,3 @@
   "review": "FLOC has been a recent fave of mine, so to hear they made a beer with Beak made it a must-have. Unfortunately, they had sold out of Threads 1, which is designed to be mixed with this - but this was still a fantastic standalone beer. Soft and juicy"
 }
 ---
-

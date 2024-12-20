@@ -7,7 +7,7 @@
     "date": "2022-04-16",
     "permalink": "beer/vienna-keller-lager-utopia-brewing/",
     "breweries": [
-        "brewery/utopia-brewing/"
+        "brewery/utopian-brewing-ltd/"
     ],
     "tags": [],
     "review": "After the enjoyment of the previous Utopia Brewing lager, I had high hopes for this - but ended up disappointed. It was a classic lager - bubbly and lacking in flavour. This went down quickly to get it over and done with."
