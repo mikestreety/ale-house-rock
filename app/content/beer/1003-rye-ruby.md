@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1447016505",
+  "title": "Rye Ruby",
+  "serving": "Bottle",
+  "rating": 6,
+  "date": "2024-12-31",
+  "style": "Rye Beer",
+  "abv": "5%",
+  "breweries": [
+    "brewery/crumbs-brewing/",
+    "brewery/goddards-brewery/"
+  ],
+  "number": 1003,
+  "permalink": "beer/rye-ruby-crumbs-brewing-goddards-brewery/",
+  "review": "Full bodied ruby ale to end the year. A little bit of a thin aftertaste, but, on the whole, not a bad bitter"
+}
+---
+
