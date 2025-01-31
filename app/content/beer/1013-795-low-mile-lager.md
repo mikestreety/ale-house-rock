@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1453404840",
+  "title": "795 Low Mile Lager",
+  "serving": "Can",
+  "rating": 7,
+  "purchased": "shop/hand-brew-co-brewery-tap-room/",
+  "date": "2025-01-31",
+  "style": "Pilsner - German",
+  "abv": "4.2%",
+  "breweries": [
+    "brewery/hand-brew-co/"
+  ],
+  "number": 1013,
+  "permalink": "beer/795-low-mile-lager-hand-brew-co/",
+  "review": "This lager is clean crisp and refreshing. I wouldn't drink this all the time, but the right time & place and this would smash it."
+}
+---
+
