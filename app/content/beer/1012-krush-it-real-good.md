@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1453391452",
+  "title": "Krush It Real Good",
+  "serving": "Can",
+  "rating": 7,
+  "purchased": "shop/beer-no-evil/",
+  "date": "2025-01-31",
+  "style": "Pale Ale - American",
+  "abv": "5%",
+  "breweries": [
+    "brewery/abyss-brewing/"
+  ],
+  "number": 1012,
+  "permalink": "beer/krush-it-real-good-abyss-brewing/",
+  "review": "I always struggle to write about these pale ales that are pretty good, but not groundbreaking."
+}
+---
+
