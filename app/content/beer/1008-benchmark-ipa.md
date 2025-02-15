@@ -4,7 +4,7 @@
   "title": "Benchmark IPA",
   "serving": "Can",
   "rating": 9,
-  "purchased": "shop/hand-brew-co-brewery-tap-room/",
+  "purchased": "shop/beer-no-evil/",
   "date": "2025-01-19",
   "style": "IPA - English",
   "abv": "4.7%",
