@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1456831658",
+  "title": "Pizza",
+  "serving": "Can",
+  "rating": 9,
+  "date": "2025-02-15",
+  "style": "IPA - New England / Hazy",
+  "abv": "6.5%",
+  "breweries": [
+    "brewery/beak-brewery/",
+    "brewery/fast-fashion/"
+  ],
+  "number": 1017,
+  "permalink": "beer/pizza-beak-brewery-fast-fashion/",
+  "review": "This was a great beer and had all the qualities of an excellent IPA. Beak have done it again."
+}
+---
+
