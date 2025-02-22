@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1458586055",
+  "title": "Shaka",
+  "serving": "Can",
+  "rating": 9,
+  "purchased": "shop/hand-brew-co-brewery-tap-room/",
+  "date": "2025-02-22",
+  "style": "Pale Ale - American",
+  "abv": "4%",
+  "breweries": [
+    "brewery/hand-brew-co/"
+  ],
+  "number": 1018,
+  "permalink": "beer/shaka-hand-brew-co/",
+  "review": "I've had this beer a lot and always thought I'd reviewed it before. It's an enjoyable crisp pale ale which I could drink again and again"
+}
+---
+
