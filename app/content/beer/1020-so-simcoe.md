@@ -1,0 +1,18 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1460588564",
+  "title": "SO... Simcoe",
+  "serving": "Can",
+  "rating": 9,
+  "date": "2025-03-02",
+  "style": "IPA - New England / Hazy",
+  "abv": "6.5%",
+  "breweries": [
+    "brewery/beak-brewery/"
+  ],
+  "number": 1020,
+  "permalink": "beer/so-simcoe-beak-brewery/",
+  "review": "An incredible IPA. Fluffy and fruity with the punch of the 6% coming through."
+}
+---
+
