@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1476292818",
+  "title": "Fields #3",
+  "serving": "Can",
+  "rating": 7,
+  "purchased": "shop/palate-bottle-shop/",
+  "date": "2025-05-03",
+  "style": "IPA - Imperial / Double",
+  "abv": "8%",
+  "breweries": [
+    "brewery/beak-brewery/"
+  ],
+  "number": 1033,
+  "permalink": "beer/fields-3-beak-brewery/",
+  "review": "This beer was a smack in the face. A quite raw DIPA - not too much fluffiness or makeup, it tasted every bit of the 8% written on the label. It's a shame I've not had the previous ones to compare to. Not your usual beak, but still enjoyable at least."
+}
+---
+
