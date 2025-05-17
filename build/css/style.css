@@ -516,6 +516,61 @@ a.title:hover {
 .singlebrewery .intro ul {
 	padding-left: 0.9em;
 }
+
+.diary {
+	font-size: 0.9rem;
+}
+
+.diary ol,
+.diary li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.diaryEntries {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.diary>li {
+	margin-bottom: 1rem;
+	align-items: stretch;
+	display: flex;
+}
+
+.diary>li>div {
+	border-right: thin solid var(--neutralLight);
+	margin-right: 1rem;
+}
+
+.diary h2 {
+	font-size: 1.1rem;
+	margin-right: var(--gutter);
+	position: sticky;
+	top: 0;
+	margin-top: 1rem;
+	width: 3rem;
+	text-align: right;
+}
+
+.diary h2 small {
+	opacity: 0.7;
+}
+
+.diary h3 {
+	font-size: 1.1rem;
+	line-height: 1.25;
+	margin-bottom: 0.5rem;
+	color: var(--neutralDark);
+	margin-top: 1rem;
+}
+
+.diary .diaryEntries li {
+	margin-top: 0.3rem;
+}
+
+
 @media screen and (max-width: 35em) {
 	table {
 		font-size: 0.9rem;

@@ -1,0 +1,29 @@
+---
+title: Diary
+description: All of my posts in one place, by year and month
+layout: default.njk
+---
+
+<h1>Diary</h1>
+<p>All {{ collections.beers.length }} of my blog posts, chronologically ordered from now back in time.
+<div class="post-listing">
+	<ol class="diary">
+	{% for year in diary() %}
+		<li>
+			<div><h2 id="{{ year.title }}">{{ year.title }} <small>({{ year.count }})</small></h2></div>
+
+			<ol>
+			{% for month in year.months %}
+				<div><h3>{{ month.title }}</h3></div>
+
+				<ol class="diaryEntries">
+				{% for entry in month.entries %}
+					<li class="{{ entry.type }}">{{ entry.date }} <a href="{{ entry.url }}">{{ entry.title }}</a> {% if entry.publication %} for {{ entry.publication }}{% endif %}</li>
+				{% endfor %}
+				</ol>
+			{% endfor %}
+			</ol>
+		</li>
+	{% endfor %}
+	</ol>
+</div>
