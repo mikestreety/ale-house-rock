@@ -11,10 +11,12 @@ sitemapIgnore: true
 		"thumbnail": "{{ beer.data.thumbnailPath }}",
 		"brewery": "{{ beer.data.brewedBy }}",
 		"rating": "{{ beer.data.rating }}",
+		"filename": "{{ beer.page.inputPath }}",
+		"canonical": "{{ beer.data.canonical }}",
 		{% if beer.data.abv %}
 		"abv": "{{ beer.data.abv }}",
 		{% endif %}
-		"date": "{{ beer.data.date | dateLong }}",
+		"date": "{{ beer.data.date }}",
 		"breweries": [
 			{% for brewery in beer.data.breweries %}
 			{
