@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/left-handed-giant/"
   ],
-  "number": 1038,
+  "number": 1040,
   "permalink": "beer/streets-ahead-left-handed-giant/",
   "review": "Bought this purely based on the name (and that it was a Left Handed Giant beer). A lovely hazy, soft beer which went down a treat"
 }
 ---
-

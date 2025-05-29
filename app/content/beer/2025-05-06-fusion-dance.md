@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/merakai-brewing-co/"
   ],
-  "number": 1037,
+  "number": 1036,
   "permalink": "beer/fusion-dance-merakai-brewing-co/",
   "review": "You could really taste the oats in this NEIPA. It gave it a creamy texture which wasn't unpleasant. Not my favourite New-england IPA, but certainly not the worst."
 }
 ---
-

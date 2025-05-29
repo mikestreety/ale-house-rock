@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/verdant-brewing-company/"
   ],
-  "number": 1025,
+  "number": 1027,
   "permalink": "beer/de-bleaker-verdant-brewing-company/",
   "review": "A pleasant enough IPA with plenty of fruity notes to see you through. My outlook on life was a bit merrier after this one."
 }
 ---
-

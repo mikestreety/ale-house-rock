@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/sureshot-brewing/"
   ],
-  "number": 1022,
+  "number": 1024,
   "permalink": "beer/3rd-birthday-dipa-sureshot-brewing/",
   "review": "This. Was. Incredible. 8% of pure bliss and everything you could ask for from a DIPA. It didn't taste as strong as a label implied and I could sit and drink this for days."
 }
 ---
-

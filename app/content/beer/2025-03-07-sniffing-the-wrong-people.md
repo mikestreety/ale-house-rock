@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/verdant-brewing-company/"
   ],
-  "number": 1040,
+  "number": 1022,
   "permalink": "beer/sniffing-the-wrong-people-verdant-brewing-company/",
   "review": "I 100% picked this can out the fridge purely based on the artwork. This was a big fluffy IPA with a 6% kick that went down very nicely. Lured you in with the soft fruits and then quickly reminded you it was a beer"
 }
 ---
-

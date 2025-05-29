@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/sureshot-brewing/"
   ],
-  "number": 1026,
+  "number": 1028,
   "permalink": "beer/3rd-birthday-pale-sureshot-brewing/",
   "review": "Sureshot really know how to make a craft beer. Each one they make hits the nail on the head for its style and this is no exception. An incredible pale ale at only 3%. Top drawer."
 }
 ---
-

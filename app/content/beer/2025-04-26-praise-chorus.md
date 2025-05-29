@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/pollys-brew-co/"
   ],
-  "number": 1029,
+  "number": 1031,
   "permalink": "beer/praise-chorus-pollys-brew-co/",
   "review": "I've not really vibed with Polly's in the past, but this IPA was pretty good. Fluffy without being too thick, plenty of flavour without being too in your face."
 }
 ---
-

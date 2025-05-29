@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/verdant-brewing-company/"
   ],
-  "number": 1023,
+  "number": 1025,
   "permalink": "beer/lightbulb-verdant-brewing-company/",
   "review": "An average pale ale. Drinkable and thirst quenching with all the traits of a pale ale, but nothing to get too excited by."
 }
 ---
-

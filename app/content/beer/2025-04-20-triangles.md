@@ -13,9 +13,8 @@
     "brewery/track-brewing-company/",
     "brewery/rivington-brewing-co/"
   ],
-  "number": 1028,
+  "number": 1030,
   "permalink": "beer/triangles-beak-brewery-track-brewing-company-rivington-brewing-co/",
   "review": "Another wonderful DIPA from Beak."
 }
 ---
-

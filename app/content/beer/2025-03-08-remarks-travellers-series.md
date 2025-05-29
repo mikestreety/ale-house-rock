@@ -11,9 +11,8 @@
     "brewery/verdant-brewing-company/",
     "brewery/altitude-brewing/"
   ],
-  "number": 1039,
+  "number": 1023,
   "permalink": "beer/remarks-travellers-series-verdant-brewing-company-altitude-brewing/",
   "review": "An underwhelming beer, really. It looked, smelt and talked like an IPA, but when it tried to walk the walk it couldn't quite deliver. Nice enough and wouldn't turn one down, but missed the mark in being a well-rounded beer."
 }
 ---
-

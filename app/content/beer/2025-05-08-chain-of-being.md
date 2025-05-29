@@ -12,9 +12,8 @@
     "brewery/abyss-brewing/",
     "brewery/missing-link-brewing/"
   ],
-  "number": 1034,
+  "number": 1037,
   "permalink": "beer/chain-of-being-abyss-brewing-missing-link-brewing/",
   "review": "This was an absolute banger. Couldn't stop drinking this so it disappeared far too quickly. It was hazy but wasn't thick at all. Tasty AF"
 }
 ---
-

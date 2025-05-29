@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/abyss-brewing/"
   ],
-  "number": 1032,
+  "number": 1034,
   "permalink": "beer/superfuzz-abyss-brewing/",
   "review": "What an absolute banger and spot on for what a Hazy IPA should be. Not too strong with a middling 5% but packed full of flavour and a slightly bitter aftertaste. Could session this easily and will be keeping an eye out to pick up any more."
 }
 ---
-

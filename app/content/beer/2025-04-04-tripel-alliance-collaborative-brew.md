@@ -13,9 +13,8 @@
     "brewery/brasserie-de-la-senne/",
     "brewery/burning-sky/"
   ],
-  "number": 1024,
+  "number": 1026,
   "permalink": "beer/tripel-alliance-collaborative-brew-harveys-brewery-brasserie-de-la-senne-burning-sky/",
   "review": "This has all the flavours of a Belgian beer without the knockout ABV. Light, hippy and very drinkable. Picked up a couple of these and I'm glad I did."
 }
 ---
-

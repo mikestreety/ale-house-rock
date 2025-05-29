@@ -11,9 +11,8 @@
   "breweries": [
     "brewery/floc/"
   ],
-  "number": 1036,
+  "number": 1039,
   "permalink": "beer/palm-trees-floc/",
   "review": "As a West coast IPA this was fantastic. Crisp and hoppy and a refreshing break from the soft IPAs usually made by Floc"
 }
 ---
-
