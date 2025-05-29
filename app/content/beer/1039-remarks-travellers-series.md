@@ -1,0 +1,19 @@
+---
+{
+  "canonical": "https://untappd.com/user/mikestreety/checkin/1461855895",
+  "title": "Remarks (Travellers Series)",
+  "rating": 6,
+  "purchased": "shop/brewser-online-store/",
+  "date": "2025-03-08",
+  "style": "IPA - New England / Hazy",
+  "abv": "6.5%",
+  "breweries": [
+    "brewery/verdant-brewing-company/",
+    "brewery/altitude-brewing/"
+  ],
+  "number": 1039,
+  "permalink": "beer/remarks-travellers-series-verdant-brewing-company-altitude-brewing/",
+  "review": "An underwhelming beer, really. It looked, smelt and talked like an IPA, but when it tried to walk the walk it couldn't quite deliver. Nice enough and wouldn't turn one down, but missed the mark in being a well-rounded beer."
+}
+---
+
