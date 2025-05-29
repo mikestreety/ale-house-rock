@@ -13,6 +13,6 @@
   ],
   "number": 975,
   "permalink": "beer/pockarillo-padstow-brewing-company/",
-  "review": "This was a quintessential West Coast IPA. Clean and crisp.wotb plenty of hops."
+  "review": "This was a quintessential West Coast IPA. Clean and crisp with plenty of hops."
 }
 ---
