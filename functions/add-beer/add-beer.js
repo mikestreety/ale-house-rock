@@ -243,7 +243,7 @@ exports.handler = async (event, context) => {
 
 	commitFiles.push({
 		action: 'create',
-		filePath: `app/content/beer/${slugify(`${review.number} ${review.title}`)}.md`,
+		filePath: `app/content/beer/${slugify(`${review.date} ${review.title}`)}.md`,
 		content: matter.stringify('', review, { language: 'json', spaces: 4 })
 	});
 
