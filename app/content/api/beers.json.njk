@@ -13,9 +13,9 @@ sitemapIgnore: true
 		"rating": "{{ beer.data.rating }}",
 		"filename": "{{ beer.page.inputPath }}",
 		"canonical": "{{ beer.data.canonical }}",
-		{% if beer.data.abv %}
-		"abv": "{{ beer.data.abv }}",
-		{% endif %}
+		{% if beer.data.abv %}"abv": "{{ beer.data.abv }}",{% endif %}
+		{% if beer.data.style %}"style": "{{ beer.data.style }}",{% endif %}
+		{% if beer.data.serving %}"serving": "{{ beer.data.serving }}",{% endif %}
 		"date": "{{ beer.data.date | dateISOShort }}",
 		"breweries": [
 			{% for brewery in beer.data.breweries %}
