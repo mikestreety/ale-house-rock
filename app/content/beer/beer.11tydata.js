@@ -26,6 +26,10 @@ module.exports = {
 				}
 			}
 		},
+		number: data => {
+			let slugs = data.collections.beer.map(b => b.data.permalink);
+			return slugs.indexOf(data.permalink) + 1;
+		},
 		purchased_from: data => findBySlug(data.purchased, data.collections.all),
 		seoTitle: data => {
 			return `${data.title} by ${data.brewedBy}`
