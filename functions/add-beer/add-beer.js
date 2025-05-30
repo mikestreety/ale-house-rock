@@ -126,7 +126,6 @@ exports.handler = async (event, context) => {
 		review.purchased = purchased.permalink;
 	}
 
-	review.number = parseFloat(Object.keys(beerCanonicals).length + 1);
 	review.breweries = breweryPaths;
 	review.permalink = `beer/${slugify(
 		`${review.title} ${brewerySlugs.join(' ')}`
@@ -251,7 +250,7 @@ exports.handler = async (event, context) => {
 		let c = await api.Commits.create(
 			repoId,
 			repoBranch,
-			`API: Add ${review.number} - ${review.title}`,
+			`API: Add ${review.title}`,
 			commitFiles
 		);
 	} catch(e) {
