@@ -16,7 +16,7 @@ sitemapIgnore: true
 		{% if beer.data.abv %}
 		"abv": "{{ beer.data.abv }}",
 		{% endif %}
-		"date": "{{ beer.data.date }}",
+		"date": "{{ beer.data.date | dateISOShort }}",
 		"breweries": [
 			{% for brewery in beer.data.breweries %}
 			{

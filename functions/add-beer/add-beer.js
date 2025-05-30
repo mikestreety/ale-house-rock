@@ -231,6 +231,7 @@ exports.handler = async (event, context) => {
 	/**
 	* Data cleanup
 	*/
+	let date = review.date;
 
 	review.rating = parseFloat(review.rating);
 	review.review = review.body;
@@ -239,10 +240,11 @@ exports.handler = async (event, context) => {
 	delete review.token;
 	delete review.status;
 	delete review.image;
+	delete review.date;
 
 	commitFiles.push({
 		action: 'create',
-		filePath: `app/content/beer/${slugify(`${review.date} ${review.title}`)}.md`,
+		filePath: `app/content/beer/${slugify(`${date} ${review.title}`)}.md`,
 		content: matter.stringify('', review, { language: 'json', spaces: 4 })
 	});
 
