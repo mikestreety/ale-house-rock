@@ -3,7 +3,7 @@
 		<img src="{{ beer.data.thumbnailPath }}" width="150" height="150" loading="lazy" alt="{{ beer.data.brewedBy }} - {{ beer.data.title }}">
 	</a>
 	<div class="content">
-		<div>
+		<div class="breweries">
 		{% for brewery in beer.data.breweries %}
 		<a href="{{ brewery.url }}" class="brewery">{{ brewery.data.title }}</a>{{ ", " if not loop.last else "" }}
 		{% endfor %}

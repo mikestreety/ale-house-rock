@@ -6,7 +6,6 @@ sitemapIgnore: true
 	{% for beer in collections.beer %}
 	{
 		"number": "{{ beer.data.number }}",
-		"index": "{{ loop.index }}{% if beer.data.number != loop.index %} MISMATCH{% endif %}",
 		"title": "{{ beer.data.title | safe }}",
 		"image": "{{ beer.data.imagePath }}",
 		"thumbnail": "{{ beer.data.thumbnailPath }}",

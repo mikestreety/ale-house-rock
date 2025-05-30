@@ -253,7 +253,8 @@ table .rating {
 .list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--gutter)
+	gap: var(--gutter);
+	margin-bottom: var(--gutter);
 }
 
 
@@ -267,19 +268,27 @@ table .rating {
 	padding-bottom: var(--gutter);
 	border-bottom: 0.125rem solid var(--neutralLight);
 }
+.singlebrewery .intro {
+	border-bottom: 0;
+}
 
 [data-display="grid"] .list li {
 	width: calc(33.33% - var(--gutter));
 	flex-direction: column;
 	font-size: 0.75rem;
+	padding-bottom: calc(var(--gutter) * 0.75);
 }
-[data-display="grid"] .list li .brewery,
+[data-display="grid"] .list li .breweries,
 [data-display="grid"] .list li .meta {
 	display: none;
 }
 [data-display="grid"] .list li img {
 	width: 100%;
 	height: auto;
+	margin-bottom: 0.5rem;
+}
+[data-display="grid"] .list .title {
+	font-size: 1.1rem;
 }
 
 .list li > a,
@@ -420,7 +429,6 @@ a.title:hover {
 .pagination {
 	display: flex;
 	justify-content: space-between;
-	margin-top: var(--gutter);
 	margin-bottom: var(--gutter);
 }
 .pagination [rel="next"] {
