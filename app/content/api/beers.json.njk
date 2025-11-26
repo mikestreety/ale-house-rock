@@ -6,7 +6,7 @@ sitemapIgnore: true
 	{% for beer in collections.beer %}
 	{
 		"number": "{{ beer.data.number }}",
-		"title": "{{ beer.data.title | safe }}",
+		"title": "{{ beer.data.title }}",
 		"image": "{{ beer.data.imagePath }}",
 		"thumbnail": "{{ beer.data.thumbnailPath }}",
 		"brewery": "{{ beer.data.brewedBy }}",

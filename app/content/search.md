@@ -5,7 +5,7 @@ seoTitle: Search
 
 # Search
 
-<div id="results" class="list"><h3>Searching...</h3></div>
+<div id="results"><h3>Searching...</h3></div>
 
 <script>
 const queryString = new URLSearchParams(window.location.search),
@@ -46,7 +46,7 @@ searchData.then(data => {
 	if(data.length) {
 		results.innerHTML = `<h3>${data.length} result${data.length === 1 ? '' : 's'} found</h3>`;
 
-		list = document.createElement('ol');
+		list = document.createElement('ul');
 		for (let beer of data) {
 			let childElement = document.createElement('li');
 
@@ -71,6 +71,7 @@ searchData.then(data => {
 			list.appendChild(childElement)
 		}
 
+		list.className = 'list';
 		results.appendChild(list);
 	}
 

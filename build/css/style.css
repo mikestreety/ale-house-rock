@@ -278,7 +278,6 @@ table .rating {
 	font-size: 0.75rem;
 	padding-bottom: calc(var(--gutter) * 0.75);
 }
-[data-display="grid"] .list li .breweries,
 [data-display="grid"] .list li .meta {
 	display: none;
 }
@@ -289,6 +288,7 @@ table .rating {
 }
 [data-display="grid"] .list .title {
 	font-size: 1.1rem;
+	order: -1;
 }
 
 .list li > a,
