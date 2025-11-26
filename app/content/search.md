@@ -11,6 +11,12 @@ seoTitle: Search
 const queryString = new URLSearchParams(window.location.search),
 		search = queryString.get('q').trim().toLowerCase();
 
+function highlightMatches(sourceText, searchWord) {
+  const escapedSearch = searchWord.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const regex = new RegExp(`(${escapedSearch})`, 'gi');
+  return sourceText.replace(regex, '<mark>$1</mark>');
+}
+
 let searchData = fetch('/api/beers.json').then(data => data.json())
 	.then(data => {
 		let results = [];
@@ -52,15 +58,15 @@ searchData.then(data => {
 
 			let breweries = '';
 			for(let brewery of beer.breweries) {
-				breweries += `<a href="${ brewery.slug }" class="brewery">${ brewery.title }</a>, `
+				breweries += `<a href="${ brewery.slug }" class="brewery">${ highlightMatches(brewery.title, search) }</a>, `
 			}
 			childElement.innerHTML = `
 				<a href="${ beer.slug }" title="${ beer.title }">
 					<img src="${ beer.thumbnail }" width="150" height="150" loading="lazy" alt="${ beer.brewery } - ${ beer.title }">
 				</a>
 				<div class="content">
-					<div>${ breweries.trim().slice(0, -1) }</div>
-					<a href="${ beer.slug }" class="title">${ beer.title }</a>
+					<div class="breweries">${ breweries.trim().slice(0, -1) }</div>
+					<a href="${ beer.slug }" class="title">${ highlightMatches(beer.title, search) }</a>
 					<div class="rating">${ beer.rating }</div>
 
 					<div class="meta">
