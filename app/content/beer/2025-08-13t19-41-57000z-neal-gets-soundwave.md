@@ -1,7 +1,7 @@
 ---
 {
   "canonical": "https://untappd.com/user/mikestreety/checkin/1505054053",
-  "untappd_link": "https://untappd.com/b/neal-gets-soundwave-siren-craft-brew/6350797",
+    "untappd_link": "https://untappd.com/b/neal-gets-soundwave-siren-craft-brew/6350797",
   "title": "Neal Gets Soundwave",
   "serving": "Can",
   "rating": 8,
@@ -16,4 +16,3 @@
   "review": "You can taste more of the verdant than the siren in this one. A smooth start with an underlying ping of the west coast to finish. A pretty decent beer, though best drink quickly as it tastes better fridge cold."
 }
 ---
-

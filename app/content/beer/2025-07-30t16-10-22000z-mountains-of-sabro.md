@@ -1,7 +1,7 @@
 ---
 {
   "canonical": "https://untappd.com/user/mikestreety/checkin/1500819993",
-  "untappd_link": "https://untappd.com/b/mountains-of-sabro-weekend-project/6245408",
+    "untappd_link": "https://untappd.com/b/mountains-of-sabro-weekend-project/6245408",
   "title": "Mountains of Sabro",
   "serving": "Can",
   "rating": 9,
@@ -15,4 +15,3 @@
   "review": "This was lush. A nicely balanced NEIPA from a new (to me) brewery. Will definitely be keeping an eye out for this in the future."
 }
 ---
-

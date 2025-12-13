@@ -1,7 +1,7 @@
 ---
 {
   "canonical": "https://untappd.com/user/mikestreety/checkin/1533225308",
-  "untappd_link": "https://untappd.com/b/right-beer-right-now-unbarred-brewery/6437886",
+    "untappd_link": "https://untappd.com/b/right-beer-right-now-unbarred-brewery/6437886",
   "title": "Right Beer, Right Now",
   "serving": "Can",
   "rating": 5,
@@ -15,4 +15,3 @@
   "review": "A simple inoffensive lager. I was expecting a bit more flavour and punch from Unbarred. It did the job, but nothing substantial."
 }
 ---
-
