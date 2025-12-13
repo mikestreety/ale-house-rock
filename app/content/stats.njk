@@ -175,31 +175,18 @@ seoTitle: Statistics
 	/**
 	 * ABV Distribution
 	 */
-	let abvRanges = {
-		'0-3%': 0,
-		'3-4%': 0,
-		'4-5%': 0,
-		'5-6%': 0,
-		'6-7%': 0,
-		'7-8%': 0,
-		'8-9%': 0,
-		'9-10%': 0,
-		'10%+': 0
-	};
+	let abvDistribution = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; // 0% through 11%, plus 12+
 
 	for(let b of beers) {
 		if(b.abv) {
 			let abvValue = parseFloat(b.abv);
 			if(!isNaN(abvValue)) {
-				if(abvValue < 3) abvRanges['0-3%']++;
-				else if(abvValue < 4) abvRanges['3-4%']++;
-				else if(abvValue < 5) abvRanges['4-5%']++;
-				else if(abvValue < 6) abvRanges['5-6%']++;
-				else if(abvValue < 7) abvRanges['6-7%']++;
-				else if(abvValue < 8) abvRanges['7-8%']++;
-				else if(abvValue < 9) abvRanges['8-9%']++;
-				else if(abvValue < 10) abvRanges['9-10%']++;
-				else abvRanges['10%+']++;
+				let abvInt = Math.floor(abvValue);
+				if(abvInt >= 12) {
+					abvDistribution[12]++; // 12+ category
+				} else if(abvInt >= 0 && abvInt <= 11) {
+					abvDistribution[abvInt]++;
+				}
 			}
 		}
 	}
@@ -218,14 +205,15 @@ seoTitle: Statistics
 		},
 		series: [{
 			name: 'Number of beers',
-			data: Object.values(abvRanges)
+			data: abvDistribution
 		}],
 		xaxis: {
-			categories: Object.keys(abvRanges)
+			categories: ['0%', '1%', '2%', '3%', '4%', '5%', '6%', '7%', '8%', '9%', '10%', '11%', '12%+']
 		},
 		fill: {
 			type: 'solid'
-		}
+		},
+		colors: ['#f39c12']
 	}).render();
 
 	/**
