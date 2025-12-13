@@ -1,6 +1,7 @@
 ---
 {
   "canonical": "https://untappd.com/user/mikestreety/checkin/1517710835",
+  "untappd_link": "https://untappd.com/b/tama-imperial-salted-caramel-and-chocolate-biscuit-stout-the-garden-brewery/5101742",
   "title": "Tama - Imperial Salted Caramel & Chocolate Biscuit Stout",
   "serving": "Can",
   "rating": 9,

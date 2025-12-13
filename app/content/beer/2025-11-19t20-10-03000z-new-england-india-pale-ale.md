@@ -1,6 +1,7 @@
 ---
 {
   "canonical": "https://untappd.com/user/mikestreety/checkin/1529543206",
+  "untappd_link": "https://untappd.com/b/new-england-india-pale-ale-the-kernel-brewery/6399040",
   "title": "New England India Pale Ale",
   "serving": "Bottle",
   "rating": 9,

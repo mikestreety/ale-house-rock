@@ -1,6 +1,7 @@
 ---
 {
   "canonical": "https://untappd.com/user/mikestreety/checkin/1533016940",
+  "untappd_link": "https://untappd.com/b/burton-ale-marble-beers-ltd/6481578",
   "title": "Burton Ale w/ Sunken Knave",
   "serving": "Can",
   "rating": 6,

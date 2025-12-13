@@ -1,6 +1,7 @@
 ---
 {
   "canonical": "https://untappd.com/user/mikestreety/checkin/1484895070",
+  "untappd_link": "https://untappd.com/b/liminal-messaging-deya-brewing-company/6219916",
   "title": "Liminal Messaging",
   "serving": "Can",
   "rating": 9,

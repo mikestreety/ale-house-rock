@@ -1,6 +1,7 @@
 ---
 {
   "canonical": "https://untappd.com/user/mikestreety/checkin/1534080086",
+  "untappd_link": "https://untappd.com/b/stoutzilla-bourbon-barrel-aged-unbarred-brewery/5587489",
   "title": "Stoutzilla Bourbon Barrel Aged",
   "serving": "Can",
   "rating": 5,

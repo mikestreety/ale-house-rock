@@ -1,6 +1,7 @@
 ---
 {
   "canonical": "https://untappd.com/user/mikestreety/checkin/1505054053",
+  "untappd_link": "https://untappd.com/b/neal-gets-soundwave-siren-craft-brew/6350797",
   "title": "Neal Gets Soundwave",
   "serving": "Can",
   "rating": 8,

@@ -1,6 +1,7 @@
 ---
 {
   "canonical": "https://untappd.com/user/mikestreety/checkin/1515523875",
+  "untappd_link": "https://untappd.com/b/rickey-raspberry-and-lime-sour-the-three-legs-brewing-co/6195281",
   "title": "\"Rickey\" Raspberry and Lime Sour",
   "serving": "Can",
   "rating": 5,

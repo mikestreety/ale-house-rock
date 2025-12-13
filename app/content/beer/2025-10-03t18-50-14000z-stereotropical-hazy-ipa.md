@@ -1,6 +1,7 @@
 ---
 {
   "canonical": "https://untappd.com/user/mikestreety/checkin/1518133005",
+  "untappd_link": "https://untappd.com/b/stereotropical-hazy-ipa-gweilo-beer/5927369",
   "title": "Stereotropical Hazy IPA",
   "serving": "Can",
   "rating": 5,
