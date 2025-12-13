@@ -20,9 +20,19 @@ seoTitle: Statistics
 		<div id="ratingCount"></div>
 	</div>
 
-	<h2>Number of beers per month</h2>
+	<h2>Number of beers per quarter</h2>
 	<div class="chart">
-		<div id="monthCount"></div>
+		<div id="quarterCount"></div>
+	</div>
+
+	<h2>ABV Distribution</h2>
+	<div class="chart">
+		<div id="abvDistribution"></div>
+	</div>
+
+	<h2>Rating Distribution Over Time</h2>
+	<div class="chart">
+		<div id="ratingOverTime"></div>
 	</div>
 
 	<h2>Average scores by serving type</h2>
@@ -46,6 +56,12 @@ seoTitle: Statistics
 		{% endif %}
 		{% if beer.data.purchased %}
 		beer.purchased = "{{ beer.data.purchased }}";
+		{% if beer.data.purchased_from and beer.data.purchased_from[0] %}
+		beer.purchasedName = "{{ beer.data.purchased_from[0].data.title }}";
+		{% endif %}
+		{% endif %}
+		{% if beer.data.abv %}
+		beer.abv = "{{ beer.data.abv }}";
 		{% endif %}
 		beers.push(beer)
 	{%- endfor %}
@@ -98,40 +114,184 @@ seoTitle: Statistics
 	}).render();
 
 	/**
-	* Beers by Month
+	* Beers by Quarter
 	**/
-	let beersByMonth = {};
+	let beersByQuarter = {};
 	for(let b of beers) {
-		let d = b.date.split('-');
+		// Parse the date - it comes as a string in format "YYYY-MM-DD" or could be an ISO string
+		let dateStr = b.date;
+		let date = new Date(dateStr);
 
-		if(beersByMonth[`${d[1]}-${d[0]}`]) {
-			beersByMonth[`${d[1]}-${d[0]}`]++;
+		// Get year and month from the date object
+		let year = date.getFullYear();
+		let month = date.getMonth() + 1; // getMonth() returns 0-11
+
+		// Determine quarter: Q1 (Jan-Mar), Q2 (Apr-Jun), Q3 (Jul-Sep), Q4 (Oct-Dec)
+		let quarter = Math.ceil(month / 3);
+		let key = `Q${quarter} ${year}`;
+
+		if(beersByQuarter[key]) {
+			beersByQuarter[key]++;
 		} else {
-			beersByMonth[`${d[1]}-${d[0]}`] = 1;
+			beersByQuarter[key] = 1;
 		}
 	}
 
-	let xaxis = ['12-2016'];
-	let yaxis = [beersByMonth['12-2016']];
-	for (let y = 2017; y <= new Date().getFullYear(); y += 1) {
-		for (let m = 1; m <= 12; m += 1) {
-			let d = `${(m < 10 ? '0' : '') + m}-${y}`;
-			xaxis.push(d);
-			yaxis.push(beersByMonth[d] ?? 0);
+	// Build xaxis and yaxis for all quarters from Q4 2016 to current quarter
+	let xaxis = [];
+	let yaxis = [];
+
+	let currentDate = new Date();
+	let currentYear = currentDate.getFullYear();
+	let currentQuarter = Math.ceil((currentDate.getMonth() + 1) / 3);
+
+	// Start from Q4 2016
+	xaxis.push('Q4 2016');
+	yaxis.push(beersByQuarter['Q4 2016'] ?? 0);
+
+	// Add all quarters from 2017 to current
+	for (let y = 2017; y <= currentYear; y += 1) {
+		let maxQuarter = (y === currentYear) ? currentQuarter : 4;
+		for (let q = 1; q <= maxQuarter; q += 1) {
+			let key = `Q${q} ${y}`;
+			xaxis.push(key);
+			yaxis.push(beersByQuarter[key] ?? 0);
 		}
 	}
 
-	new ApexCharts(document.querySelector("#monthCount"), {
+	new ApexCharts(document.querySelector("#quarterCount"), {
 		...chartOptions,
 		series: [{
 			name: 'Number of beers',
 			data: yaxis
 		}],
 		xaxis: {
-			tickAmount: 15,
+			tickAmount: 10,
 			categories: xaxis
 		},
 		colors: ['#dd2c41']
+	}).render();
+
+	/**
+	 * ABV Distribution
+	 */
+	let abvRanges = {
+		'0-3%': 0,
+		'3-4%': 0,
+		'4-5%': 0,
+		'5-6%': 0,
+		'6-7%': 0,
+		'7-8%': 0,
+		'8-9%': 0,
+		'9-10%': 0,
+		'10%+': 0
+	};
+
+	for(let b of beers) {
+		if(b.abv) {
+			let abvValue = parseFloat(b.abv);
+			if(!isNaN(abvValue)) {
+				if(abvValue < 3) abvRanges['0-3%']++;
+				else if(abvValue < 4) abvRanges['3-4%']++;
+				else if(abvValue < 5) abvRanges['4-5%']++;
+				else if(abvValue < 6) abvRanges['5-6%']++;
+				else if(abvValue < 7) abvRanges['6-7%']++;
+				else if(abvValue < 8) abvRanges['7-8%']++;
+				else if(abvValue < 9) abvRanges['8-9%']++;
+				else if(abvValue < 10) abvRanges['9-10%']++;
+				else abvRanges['10%+']++;
+			}
+		}
+	}
+
+	new ApexCharts(document.querySelector("#abvDistribution"), {
+		...chartOptions,
+		chart: {
+			type: 'bar',
+			height: 300
+		},
+		plotOptions: {
+			bar: {
+				borderRadius: 4,
+				horizontal: false
+			}
+		},
+		series: [{
+			name: 'Number of beers',
+			data: Object.values(abvRanges)
+		}],
+		xaxis: {
+			categories: Object.keys(abvRanges)
+		},
+		fill: {
+			type: 'solid'
+		}
+	}).render();
+
+	/**
+	 * Rating Distribution Over Time
+	 */
+	let ratingsByQuarter = {};
+	for(let b of beers) {
+		if(b.rating && b.date) {
+			let date = new Date(b.date);
+			let year = date.getFullYear();
+			let month = date.getMonth() + 1;
+			let quarter = Math.ceil(month / 3);
+			let key = `Q${quarter} ${year}`;
+
+			if(!ratingsByQuarter[key]) {
+				ratingsByQuarter[key] = {
+					total: 0,
+					count: 0
+				};
+			}
+			ratingsByQuarter[key].total += parseFloat(b.rating);
+			ratingsByQuarter[key].count++;
+		}
+	}
+
+	// Build arrays for the chart using the same quarters as the quarterly beer count
+	let ratingXAxis = [];
+	let ratingYAxis = [];
+
+	// Start from Q4 2016
+	ratingXAxis.push('Q4 2016');
+	if(ratingsByQuarter['Q4 2016']) {
+		ratingYAxis.push(Math.round((ratingsByQuarter['Q4 2016'].total / ratingsByQuarter['Q4 2016'].count) * 10) / 10);
+	} else {
+		ratingYAxis.push(0);
+	}
+
+	// Add all quarters from 2017 to current
+	for (let y = 2017; y <= currentYear; y += 1) {
+		let maxQuarter = (y === currentYear) ? currentQuarter : 4;
+		for (let q = 1; q <= maxQuarter; q += 1) {
+			let key = `Q${q} ${y}`;
+			ratingXAxis.push(key);
+			if(ratingsByQuarter[key]) {
+				ratingYAxis.push(Math.round((ratingsByQuarter[key].total / ratingsByQuarter[key].count) * 10) / 10);
+			} else {
+				ratingYAxis.push(0);
+			}
+		}
+	}
+
+	new ApexCharts(document.querySelector("#ratingOverTime"), {
+		...chartOptions,
+		series: [{
+			name: 'Average rating',
+			data: ratingYAxis
+		}],
+		xaxis: {
+			tickAmount: 10,
+			categories: ratingXAxis
+		},
+		yaxis: {
+			min: 0,
+			max: 10
+		},
+		colors: ['#7b68ee']
 	}).render();
 
 	/**
@@ -153,12 +313,14 @@ seoTitle: Statistics
 			}
 		}
 		if(b.purchased) {
-			if(purchaseds[b.purchased]) {
-				purchaseds[b.purchased].count++;
-				purchaseds[b.purchased].rating += parseFloat(b.rating);
+			// Use the shop name if available, otherwise fall back to the slug
+			let shopKey = b.purchasedName || b.purchased;
+			if(purchaseds[shopKey]) {
+				purchaseds[shopKey].count++;
+				purchaseds[shopKey].rating += parseFloat(b.rating);
 			} else {
-				purchaseds[b.purchased] = {
-					title: b.purchased,
+				purchaseds[shopKey] = {
+					title: shopKey,
 					count: 1,
 					rating: parseFloat(b.rating),
 				}
@@ -209,14 +371,19 @@ seoTitle: Statistics
 
 		purchasedScore.push({
 			x: purchased.title,
-			y: (Math.round((purchased.rating / purchased.count) * 10) / 10)
+			y: (Math.round((purchased.rating / purchased.count) * 10) / 10),
+			count: purchased.count
 		})
 	}
+
+	// Sort by count (number of beers purchased) in descending order
+	purchasedScore.sort((a, b) => b.count - a.count);
 
 	new ApexCharts(document.querySelector("#purchasedScore"), {
 		...chartOptions,
 		chart: {
-			type: 'bar'
+			type: 'bar',
+			height: 600
 		},
 		plotOptions: {
 			bar: {
