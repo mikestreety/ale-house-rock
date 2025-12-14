@@ -1,0 +1,15 @@
+---
+title: SingleCut Beersmiths
+location: 'Astoria, NY United States'
+style: Regional Brewery
+website: 'http://www.SingleCut.com/'
+instagram: 'http://instagram.com/SingleCutBeer'
+twitter: 'https://twitter.com/SingleCutBeer'
+facebook: 'https://www.facebook.com/SingleCutBeer/'
+untappd: 'https://untappd.com/SingleCutBeersmiths'
+permalink: brewery/singlecut-beersmiths/
+aliases:
+  - singlecut
+---
+
+Cranking out music obsessed award winning Lagers and IPAs since 2012.    To all demanding a steadfast meticulousness towards everything that can fit into a pint glass - Welcome.     Always Drink Loud.
