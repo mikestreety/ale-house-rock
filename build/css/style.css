@@ -217,7 +217,6 @@ header h1 {
 }
 
 footer {
-	border-top: 0.125rem solid var(--neutralLight);
 	padding-top: var(--gutter);
 	font-size: 0.8em;
 }
