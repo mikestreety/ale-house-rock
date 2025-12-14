@@ -78,6 +78,10 @@ exports.handler = async (event, context) => {
 	let shopAliases = await fetch('https://alehouse.rocks/api/shops/aliases.json')
 		.then(data => data.json());
 
+	let styleAliases = await fetch('https://alehouse.rocks/api/styles/aliases.json')
+		.then(data => data.json())
+		.catch(() => ({})); // Return empty object if endpoint doesn't exist yet
+
 	// Start new Gitlab instance
 	const api = new Gitlab({
 		token: process.env.GITLAB_TOKEN,
@@ -124,6 +128,21 @@ exports.handler = async (event, context) => {
 		purchased.slug = purchasedSlug
 
 		review.purchased = purchased.permalink;
+	}
+
+	/**
+	* Styles
+	*/
+	let style = {};
+	if(review.style) {
+		let styleSlug = slugify(review.style);
+		if(styleAliases[styleSlug]) {
+			styleSlug = styleAliases[styleSlug];
+		}
+
+		style.title = review.style;
+		style.permalink = `style/${styleSlug}/`;
+		style.slug = styleSlug;
 	}
 
 	review.breweries = breweryPaths;
@@ -196,6 +215,29 @@ exports.handler = async (event, context) => {
 				action: 'create',
 				filePath: purchasedFilePath,
 				content: matter.stringify("\n", purchased),
+			});
+		}
+	}
+
+	if(review.style) {
+		let styleFileExists = false,
+			styleFilePath = 'app/content/style/' + style.slug + '.md';
+
+		delete style.slug;
+
+		try {
+			// Try getting the original file
+			await api.RepositoryFiles.showRaw(repoId, styleFilePath, {ref: repoBranch});
+			styleFileExists = true;
+		} catch(e) {
+			console.log('Style does not exist');
+		}
+
+		if(!styleFileExists) {
+			commitFiles.push({
+				action: 'create',
+				filePath: styleFilePath,
+				content: matter.stringify("\n", style),
 			});
 		}
 	}

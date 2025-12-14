@@ -22,6 +22,12 @@ layout: default.njk
 	</div>
 	<p>{{ review | safe }}</p>
 
+	{% if style %}
+	<p><strong>Style:</strong>
+		<a href="/style/{{ style | slugify }}/">{{ style }}</a>
+	</p>
+	{% endif %}
+
 	{% if abv %}
 	<p><strong>ABV:</strong>
 		{{ abv }}

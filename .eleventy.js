@@ -1,14 +1,22 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const {breweryAliases} = require('./app/filters/breweries');
 const {shopAliases} = require('./app/filters/shops');
+const {styleAliases} = require('./app/filters/styles');
 
 module.exports = function (config) {
 
 	config.addCollection('breweryAliases', breweryAliases);
 	config.addCollection('shopAliases', shopAliases);
+	config.addCollection('styleAliases', styleAliases);
 
 	config.addCollection('sortedBreweries', function (collections) {
 		return collections.getFilteredByTag('brewery').sort(function (a, b) {
+			return a.data.title.localeCompare(b.data.title);
+		});
+	});
+
+	config.addCollection('sortedStyles', function (collections) {
+		return collections.getFilteredByTag('style').sort(function (a, b) {
 			return a.data.title.localeCompare(b.data.title);
 		});
 	});

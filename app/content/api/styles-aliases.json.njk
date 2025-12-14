@@ -1,0 +1,26 @@
+---js
+{
+	permalink: "api/styles/aliases.json",
+	sitemapIgnore: true,
+	aliases: function() {
+		let output = [];
+
+		// Loop through each of the entries
+		for(let item of this.ctx.collections.styleAliases) {
+			for(let alias of item.data.aliases) {
+				output.push({
+					alias,
+					fileSlug: item.fileSlug
+				})
+			}
+		}
+
+		return output;
+	}
+}
+---
+{
+	{% for alias in aliases() %}
+		"{{ alias.alias }}": "{{ alias.fileSlug }}"{% if not loop.last %},{% endif %}
+	{% endfor %}
+}
