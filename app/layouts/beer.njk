@@ -68,14 +68,16 @@ layout: default.njk
 <nav>
 	<h2>View other beers</h2>
 	<ul class="list listSmall">
-		{% set previousPost = collections.beer | getPreviousCollectionItem(page) %}
-		{% if previousPost %}
-			{% set beer = previousPost %}
+		{% if relatedBeersByStyle %}
+			{% set beer = relatedBeersByStyle %}
 			{% include 'beer.njk' %}
 		{% endif %}
-		{% set nextPost = collections.beer | getNextCollectionItem(page) %}
-		{% if nextPost %}
-			{% set beer = nextPost %}
+		{% if relatedBeersByShop %}
+			{% set beer = relatedBeersByShop %}
+			{% include 'beer.njk' %}
+		{% endif %}
+		{% if relatedBeersByBrewery %}
+			{% set beer = relatedBeersByBrewery %}
 			{% include 'beer.njk' %}
 		{% endif %}
 	</ul>

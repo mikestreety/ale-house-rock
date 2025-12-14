@@ -54,5 +54,40 @@ module.exports = {
 		intro: data => {
 			return (data.review.length > 150) ? data.review.slice(0, 140) + '...' : data.review;
 		},
+		relatedBeersByStyle: data => {
+			if (!data.style) return null;
+
+			// Get all beers with the same style, excluding current beer
+			const beersWithStyle = data.collections.beer
+				.filter(beer => beer.data.style === data.style && beer.data.permalink !== data.permalink)
+				.reverse(); // Most recent first
+
+			return beersWithStyle.length > 0 ? beersWithStyle[0] : null;
+		},
+		relatedBeersByShop: data => {
+			if (!data.purchased) return null;
+
+			// Get all beers purchased from the same shop, excluding current beer
+			const beersFromShop = data.collections.beer
+				.filter(beer => beer.data.purchased === data.purchased && beer.data.permalink !== data.permalink)
+				.reverse(); // Most recent first
+
+			return beersFromShop.length > 0 ? beersFromShop[0] : null;
+		},
+		relatedBeersByBrewery: data => {
+			if (!data.breweries || data.breweries.length === 0) return null;
+
+			// Get all beers from any of the same breweries, excluding current beer
+			const beersFromBrewery = data.collections.beer
+				.filter(beer => {
+					if (beer.data.permalink === data.permalink) return false;
+					if (!beer.data.breweries) return false;
+					// Check if any brewery matches
+					return data.breweries.some(brewery => beer.data.breweries.includes(brewery));
+				})
+				.reverse(); // Most recent first
+
+			return beersFromBrewery.length > 0 ? beersFromBrewery[0] : null;
+		},
 	}
 };
