@@ -37,6 +37,27 @@ layout: default.njk
 	{% for tag in tags %}{% include 'tag.njk' %}{% endfor %}
 
 	<p><small><a href="{{ canonical }}">View original post</a></small></p>
+
+	{% if breweries and breweries.length > 0 %}
+	<h2>{{ "Brewery" if breweries.length === 1 else "Breweries" }}</h2>
+	<ul class="list listSmall">
+		{% for brewery in breweries %}
+		<li>
+			<a href="{{ brewery.url }}" title="{{ brewery.data.title }}">
+				{% if brewery.data.imagePath %}
+				<img src="{{ brewery.data.imagePath }}" width="150" height="150" loading="lazy" alt="{{ brewery.data.title }}">
+				{% endif %}
+			</a>
+			<div class="content">
+				<a href="{{ brewery.url }}" class="title">{{ brewery.data.title }}</a>
+				{% if brewery.data.location %}
+				<div class="location">{{ brewery.data.location }}</div>
+				{% endif %}
+			</div>
+		</li>
+		{% endfor %}
+	</ul>
+	{% endif %}
 </main>
 <nav>
 	<h2>View other beers</h2>
