@@ -2,6 +2,9 @@ const fetch = require('node-fetch');
 const matter = require('gray-matter');
 const sharp = require('sharp');
 const { Gitlab } = require('@gitbeaker/node');
+const fs = require('fs');
+const path = require('path');
+const { execSync } = require('child_process');
 
 const slugify = require('./slugify');
 
@@ -11,6 +14,9 @@ const repoId = 25096202; // real repo
 // const repoId = 38315485; // test repo
 const repoBranch = 'main';
 
+// Detect if we're in dev mode
+const isDev = process.env.NETLIFY_DEV === 'true' || process.env.NODE_ENV === 'development';
+
 exports.handler = async (event, context) => {
 
 	let data = event.queryStringParameters;
@@ -18,17 +24,26 @@ exports.handler = async (event, context) => {
 	/**
 	* Data validation
 	*/
-	if (
-		!data.hasOwnProperty('url') ||
-		!data.hasOwnProperty('token') ||
-		data.token !== process.env.ACCESS_TOKEN
-	) {
+	if (!data || !data.hasOwnProperty('url')) {
 		return {
 			statusCode: 400,
 			body: JSON.stringify({
 				status: 'error',
-				message: 'Missing GET params'
+				message: 'Missing URL parameter'
 			})
+		}
+	}
+
+	// Only check token in production
+	if (!isDev) {
+		if (!data.hasOwnProperty('token') || data.token !== process.env.ACCESS_TOKEN) {
+			return {
+				statusCode: 400,
+				body: JSON.stringify({
+					status: 'error',
+					message: 'Missing or invalid token'
+				})
+			}
 		}
 	}
 
@@ -56,9 +71,13 @@ exports.handler = async (event, context) => {
 		}
 	}
 
+	// Determine base URL for API calls
+	const baseUrl = isDev ? 'http://localhost:8888' : 'https://alehouse.rocks';
+
 	// Get existing posts and make sure we've not done this before
-	let beerCanonicals = await fetch('https://alehouse.rocks/api/beers/canonicals.json')
-		.then(data => data.json());
+	let beerCanonicals = await fetch(`${baseUrl}/api/beers/canonicals.json`)
+		.then(data => data.json())
+		.catch(() => ({}));
 
 	if(beerCanonicals[review.canonical]) {
 		return {
@@ -72,20 +91,25 @@ exports.handler = async (event, context) => {
 	}
 
 	// Get existing posts and make sure we've not done this before
-	let breweryAliases = await fetch('https://alehouse.rocks/api/breweries/aliases.json')
-		.then(data => data.json());
+	let breweryAliases = await fetch(`${baseUrl}/api/breweries/aliases.json`)
+		.then(data => data.json())
+		.catch(() => ({}));
 
-	let shopAliases = await fetch('https://alehouse.rocks/api/shops/aliases.json')
-		.then(data => data.json());
+	let shopAliases = await fetch(`${baseUrl}/api/shops/aliases.json`)
+		.then(data => data.json())
+		.catch(() => ({}));
 
-	let styleAliases = await fetch('https://alehouse.rocks/api/styles/aliases.json')
+	let styleAliases = await fetch(`${baseUrl}/api/styles/aliases.json`)
 		.then(data => data.json())
 		.catch(() => ({})); // Return empty object if endpoint doesn't exist yet
 
-	// Start new Gitlab instance
-	const api = new Gitlab({
-		token: process.env.GITLAB_TOKEN,
-	});
+	// Initialize API for production
+	let api;
+	if (!isDev) {
+		api = new Gitlab({
+			token: process.env.GITLAB_TOKEN,
+		});
+	}
 
 	/**
 	* Data processing
@@ -150,17 +174,26 @@ exports.handler = async (event, context) => {
 		`${review.title} ${brewerySlugs.join(' ')}`
 	)}/`;
 
+	// Get project root directory
+	const projectRoot = isDev ? process.cwd() : '/tmp';
+	const contentRoot = isDev ? path.join(projectRoot, 'app/content') : 'app/content';
 
 	for (const brewery of breweries) {
 		let fileExists = false,
 			filePath = 'app/content/brewery/' + brewery.slug + '.md';
 
-		try {
-			// Try getting the original file
-			await api.RepositoryFiles.showRaw(repoId, filePath, {ref: repoBranch});
-			fileExists = true;
-		} catch(e) {
-			console.log('Brewery does not exist');
+		if (isDev) {
+			// Check if file exists locally
+			const localPath = path.join(projectRoot, filePath);
+			fileExists = fs.existsSync(localPath);
+		} else {
+			// Check GitLab
+			try {
+				await api.RepositoryFiles.showRaw(repoId, filePath, {ref: repoBranch});
+				fileExists = true;
+			} catch(e) {
+				console.log('Brewery does not exist');
+			}
 		}
 
 		if(!fileExists) {
@@ -202,12 +235,18 @@ exports.handler = async (event, context) => {
 
 		delete purchased.slug;
 
-		try {
-			// Try getting the original file
-			await api.RepositoryFiles.showRaw(repoId, purchasedFilePath, {ref: repoBranch});
-			purchasedFileExists = true;
-		} catch(e) {
-			console.log('Shop does not exist');
+		if (isDev) {
+			// Check if file exists locally
+			const localPath = path.join(projectRoot, purchasedFilePath);
+			purchasedFileExists = fs.existsSync(localPath);
+		} else {
+			// Check GitLab
+			try {
+				await api.RepositoryFiles.showRaw(repoId, purchasedFilePath, {ref: repoBranch});
+				purchasedFileExists = true;
+			} catch(e) {
+				console.log('Shop does not exist');
+			}
 		}
 
 		if(!purchasedFileExists) {
@@ -225,12 +264,18 @@ exports.handler = async (event, context) => {
 
 		delete style.slug;
 
-		try {
-			// Try getting the original file
-			await api.RepositoryFiles.showRaw(repoId, styleFilePath, {ref: repoBranch});
-			styleFileExists = true;
-		} catch(e) {
-			console.log('Style does not exist');
+		if (isDev) {
+			// Check if file exists locally
+			const localPath = path.join(projectRoot, styleFilePath);
+			styleFileExists = fs.existsSync(localPath);
+		} else {
+			// Check GitLab
+			try {
+				await api.RepositoryFiles.showRaw(repoId, styleFilePath, {ref: repoBranch});
+				styleFileExists = true;
+			} catch(e) {
+				console.log('Style does not exist');
+			}
 		}
 
 		if(!styleFileExists) {
@@ -290,27 +335,75 @@ exports.handler = async (event, context) => {
 		content: matter.stringify('', review, { language: 'json', spaces: 4 })
 	});
 
-	try {
-		let c = await api.Commits.create(
-			repoId,
-			repoBranch,
-			`API: Add ${review.title}`,
-			commitFiles
-		);
-	} catch(e) {
-		console.log(e);
-		return {
-			statusCode: 500,
-			body: JSON.stringify({
-				status: 'error',
-				message: e.description,
-				commitFiles: commitFiles.map(item => {
-					return {
-						action: item.action,
-						filePath: item.filePath,
-					}
+	if (isDev) {
+		// Dev mode: Write files locally and commit with git
+		try {
+			for (const file of commitFiles) {
+				const fullPath = path.join(projectRoot, file.filePath);
+				const dir = path.dirname(fullPath);
+
+				// Create directory if it doesn't exist
+				if (!fs.existsSync(dir)) {
+					fs.mkdirSync(dir, { recursive: true });
+				}
+
+				// Write file
+				if (file.encoding === 'base64') {
+					fs.writeFileSync(fullPath, Buffer.from(file.content, 'base64'));
+				} else {
+					fs.writeFileSync(fullPath, file.content);
+				}
+
+				console.log(`Created: ${file.filePath}`);
+			}
+
+			// Git add and commit
+			const filePaths = commitFiles.map(f => f.filePath).join(' ');
+			execSync(`git add ${filePaths}`, { cwd: projectRoot });
+			execSync(`git commit -m "API: Add ${review.title}"`, { cwd: projectRoot });
+
+			console.log('Files committed successfully');
+
+		} catch(e) {
+			console.error('Dev mode error:', e);
+			return {
+				statusCode: 500,
+				body: JSON.stringify({
+					status: 'error',
+					message: e.message,
+					commitFiles: commitFiles.map(item => {
+						return {
+							action: item.action,
+							filePath: item.filePath,
+						}
+					})
 				})
-			})
+			}
+		}
+	} else {
+		// Production mode: Use GitLab API
+		try {
+			let c = await api.Commits.create(
+				repoId,
+				repoBranch,
+				`API: Add ${review.title}`,
+				commitFiles
+			);
+		} catch(e) {
+			console.log(e);
+			return {
+				statusCode: 500,
+				body: JSON.stringify({
+					status: 'error',
+					message: e.description,
+					commitFiles: commitFiles.map(item => {
+						return {
+							action: item.action,
+							filePath: item.filePath,
+						}
+					})
+				})
+			}
 		}
 	}
 
