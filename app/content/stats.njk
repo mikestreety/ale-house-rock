@@ -38,8 +38,13 @@ seoTitle: Statistics
 	<h2>Average scores by serving type</h2>
 	<div id="servingScore"></div>
 
-	<h2>Average scores by purchased location</h2>
+	<h2>Number of beers by purchased location</h2>
 	<div id="purchasedScore"></div>
+
+	<h2>Number of beers per style</h2>
+	<div class="chart">
+		<div id="styleCount"></div>
+	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 	<script>
@@ -62,6 +67,9 @@ seoTitle: Statistics
 		{% endif %}
 		{% if beer.data.abv %}
 		beer.abv = "{{ beer.data.abv }}";
+		{% endif %}
+		{% if beer.data.style %}
+		beer.style = "{{ beer.data.style }}";
 		{% endif %}
 		beers.push(beer)
 	{%- endfor %}
@@ -359,13 +367,15 @@ seoTitle: Statistics
 
 		purchasedScore.push({
 			x: purchased.title,
-			y: (Math.round((purchased.rating / purchased.count) * 10) / 10),
-			count: purchased.count
+			y: purchased.count
 		})
 	}
 
 	// Sort by count (number of beers purchased) in descending order
-	purchasedScore.sort((a, b) => b.count - a.count);
+	purchasedScore.sort((a, b) => b.y - a.y);
+
+	// Take only top 15
+	purchasedScore = purchasedScore.slice(0, 15);
 
 	new ApexCharts(document.querySelector("#purchasedScore"), {
 		...chartOptions,
@@ -382,10 +392,61 @@ seoTitle: Statistics
 			type: "solid"
 		},
 		series: [{
+			name: 'Number of beers',
 			data: purchasedScore
 		}]
 	}).render();
 
+	/**
+	 * Beers per Style (grouped by main style)
+	 */
+	let styleCount = {};
+	for(let b of beers) {
+		if(b.style) {
+			// Get the part before the first " - " (e.g., "IPA" from "IPA - New England / Hazy")
+			let mainStyle = b.style.split(' - ')[0].trim();
+
+			if(styleCount[mainStyle]) {
+				styleCount[mainStyle]++;
+			} else {
+				styleCount[mainStyle] = 1;
+			}
+		}
+	}
+
+	// Convert to array and sort by count (descending)
+	let styleData = [];
+	for(let style in styleCount) {
+		styleData.push({
+			x: style,
+			y: styleCount[style]
+		});
+	}
+	styleData.sort((a, b) => b.y - a.y);
+
+	// Take only top 15
+	styleData = styleData.slice(0, 15);
+
+	new ApexCharts(document.querySelector("#styleCount"), {
+		...chartOptions,
+		chart: {
+			type: 'bar',
+			height: 500
+		},
+		plotOptions: {
+			bar: {
+				horizontal: true
+			}
+		},
+		fill: {
+			type: 'solid'
+		},
+		colors: ['#e74c3c'],
+		series: [{
+			name: 'Number of beers',
+			data: styleData
+		}]
+	}).render();
 
 	</script>
 </div>
