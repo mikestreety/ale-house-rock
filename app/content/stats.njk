@@ -145,9 +145,23 @@ seoTitle: Statistics
 		}
 	}
 
+	// Calculate beers per year
+	let beersByYear = {};
+	for(let b of beers) {
+		let date = new Date(b.date);
+		let year = date.getFullYear();
+
+		if(beersByYear[year]) {
+			beersByYear[year]++;
+		} else {
+			beersByYear[year] = 1;
+		}
+	}
+
 	// Build xaxis and yaxis for all quarters from Q4 2016 to current quarter
 	let xaxis = [];
 	let yaxis = [];
+	let yearlyData = []; // Yearly totals aligned with Q4
 
 	let currentDate = new Date();
 	let currentYear = currentDate.getFullYear();
@@ -156,6 +170,7 @@ seoTitle: Statistics
 	// Start from Q4 2016
 	xaxis.push('Q4 2016');
 	yaxis.push(beersByQuarter['Q4 2016'] ?? 0);
+	yearlyData.push(beersByYear[2016] ?? 0); // 2016 total on Q4 2016
 
 	// Add all quarters from 2017 to current
 	for (let y = 2017; y <= currentYear; y += 1) {
@@ -164,20 +179,56 @@ seoTitle: Statistics
 			let key = `Q${q} ${y}`;
 			xaxis.push(key);
 			yaxis.push(beersByQuarter[key] ?? 0);
+
+			// Add yearly total only on Q4, null for other quarters
+			if(q === 4) {
+				yearlyData.push(beersByYear[y] ?? 0);
+			} else {
+				yearlyData.push(null);
+			}
 		}
 	}
 
 	new ApexCharts(document.querySelector("#quarterCount"), {
 		...chartOptions,
 		series: [{
-			name: 'Number of beers',
-			data: yaxis
+			name: 'Number of beers per quarter',
+			data: yaxis,
+			type: 'area'
+		}, {
+			name: 'Number of beers per year',
+			data: yearlyData,
+			type: 'line'
 		}],
 		xaxis: {
 			tickAmount: 10,
 			categories: xaxis
 		},
-		colors: ['#dd2c41']
+		yaxis: [
+			{
+				title: {
+					text: 'Per Quarter'
+				}
+			},
+			{
+				opposite: true,
+				title: {
+					text: 'Per Year'
+				}
+			}
+		],
+		stroke: {
+			curve: 'smooth',
+			width: [2, 3]
+		},
+		markers: {
+			size: [0, 5],
+			strokeWidth: 0,
+			hover: {
+				size: [0, 7]
+			}
+		},
+		colors: ['#dd2c41', '#3498db']
 	}).render();
 
 	/**
