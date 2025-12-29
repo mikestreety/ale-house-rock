@@ -89,5 +89,18 @@ module.exports = {
 
 			return beersFromBrewery.length > 0 ? beersFromBrewery[0] : null;
 		},
+		ratingWord: data => {
+			if (!data.rating) return null;
+
+			const rating = Math.floor(data.rating);
+
+			if (rating >= 9) return 'excellent';
+			if (rating === 8) return 'good';
+			if (rating === 6 || rating === 7) return 'average';
+			if (rating === 4 || rating === 5) return 'below';
+			if (rating <= 3) return 'poor';
+
+			return null;
+		},
 	}
 };
