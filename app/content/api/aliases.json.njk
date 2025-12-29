@@ -1,0 +1,43 @@
+---js
+{
+	permalink: "api/aliases.json",
+	sitemapIgnore: true,
+	aliases: function() {
+		let output = {
+			breweries: {},
+			shops: {},
+			styles: {},
+			beers: {}
+		};
+
+		// Breweries
+		for(let item of this.ctx.collections.breweryAliases) {
+			for(let alias of item.data.aliases) {
+				output.breweries[alias] = item.fileSlug;
+			}
+		}
+
+		// Shops
+		for(let item of this.ctx.collections.shopAliases) {
+			for(let alias of item.data.aliases) {
+				output.shops[alias] = item.fileSlug;
+			}
+		}
+
+		// Styles
+		for(let item of this.ctx.collections.styleAliases) {
+			for(let alias of item.data.aliases) {
+				output.styles[alias] = item.fileSlug;
+			}
+		}
+
+		// Beer canonicals
+		for(let item of this.ctx.collections.beer) {
+			output.beers[item.data.canonical] = item.url;
+		}
+
+		return output;
+	}
+}
+---
+{{ aliases() | dump(2) | safe }}

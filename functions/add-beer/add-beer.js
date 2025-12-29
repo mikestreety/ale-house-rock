@@ -1,14 +1,22 @@
 const fetch = require('node-fetch');
 const matter = require('gray-matter');
-const sharp = require('sharp');
 const { Gitlab } = require('@gitbeaker/node');
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
 const slugify = require('./slugify');
+const { handleBrewery, handleShop, handleStyle, fetchAndProcessImage, createCommitFile } = require('./file-handler');
 
 require('dotenv').config();
+
+// Load aliases data (auto-generated from 11ty build)
+let aliasesData = {};
+try {
+	aliasesData = require('./aliases-data.json');
+} catch(e) {
+	console.warn('Could not load aliases data:', e.message);
+}
 
 const repoId = 25096202; // real repo
 // const repoId = 38315485; // test repo
@@ -71,13 +79,8 @@ exports.handler = async (event, context) => {
 		}
 	}
 
-	// Determine base URL for API calls
-	const baseUrl = isDev ? 'http://localhost:8888' : 'https://alehouse.rocks';
-
 	// Get existing posts and make sure we've not done this before
-	let beerCanonicals = await fetch(`${baseUrl}/api/beers/canonicals.json`)
-		.then(data => data.json())
-		.catch(() => ({}));
+	const beerCanonicals = aliasesData.beers || {};
 
 	if(beerCanonicals[review.canonical]) {
 		return {
@@ -90,18 +93,10 @@ exports.handler = async (event, context) => {
 		}
 	}
 
-	// Get existing posts and make sure we've not done this before
-	let breweryAliases = await fetch(`${baseUrl}/api/breweries/aliases.json`)
-		.then(data => data.json())
-		.catch(() => ({}));
-
-	let shopAliases = await fetch(`${baseUrl}/api/shops/aliases.json`)
-		.then(data => data.json())
-		.catch(() => ({}));
-
-	let styleAliases = await fetch(`${baseUrl}/api/styles/aliases.json`)
-		.then(data => data.json())
-		.catch(() => ({})); // Return empty object if endpoint doesn't exist yet
+	// Use locally bundled aliases data (auto-generated from 11ty build)
+	let breweryAliases = aliasesData.breweries || {};
+	let shopAliases = aliasesData.shops || {};
+	let styleAliases = aliasesData.styles || {};
 
 	// Initialize API for production
 	let api;
@@ -112,208 +107,77 @@ exports.handler = async (event, context) => {
 	}
 
 	/**
-	* Data processing
+	* Data processing - Helper to process entity (brewery, shop, style)
 	*/
-	let body = review.body;
+	const processEntity = (title, type, aliases) => {
+		let slug = slugify(title);
+		if (aliases[slug]) {
+			slug = aliases[slug];
+		}
+		return {
+			title,
+			slug,
+			permalink: `${type}/${slug}/`
+		};
+	};
+
 	let commitFiles = [];
+	const projectRoot = isDev ? process.cwd() : '/tmp';
 
-	/**
-	* Breweries
-	*/
-	let breweries = [],
-		breweryPaths = [],
-		brewerySlugs = [];
+	// Process breweries
+	const breweries = review.breweries.map(brewery => ({
+		...processEntity(brewery.title, 'brewery', breweryAliases),
+		...brewery
+	}));
+	const brewerySlugs = breweries.map(b => b.slug);
+	const breweryPaths = breweries.map(b => b.permalink);
 
-	for (const brewery of review.breweries) {
-		let slug = slugify(brewery.title);
-
-		// If we know this brewery by another name
-		if (breweryAliases[slug]) {
-			slug = breweryAliases[slug];
-		}
-
-		brewery.permalink = `brewery/${slug}/`;
-		brewery.slug = slug;
-
-		breweries.push(brewery);
-		brewerySlugs.push(slug);
-		breweryPaths.push(brewery.permalink);
-	}
-
-	let purchased = {};
-	if(review.purchased) {
-		let purchasedSlug = slugify(review.purchased);
-		if(shopAliases[purchasedSlug]) {
-			purchasedSlug = shopAliases[purchasedSlug];
-		}
-
-		purchased.title = review.purchased,
-		purchased.permalink =`shop/${purchasedSlug}/`,
-		purchased.slug = purchasedSlug
-
+	// Process shop (purchased)
+	const purchased = review.purchased ? processEntity(review.purchased, 'shop', shopAliases) : null;
+	if (purchased) {
 		review.purchased = purchased.permalink;
 	}
 
-	/**
-	* Styles
-	*/
-	let style = {};
-	if(review.style) {
-		let styleSlug = slugify(review.style);
-		if(styleAliases[styleSlug]) {
-			styleSlug = styleAliases[styleSlug];
-		}
+	// Process style
+	const style = review.style ? processEntity(review.style, 'style', styleAliases) : null;
 
-		style.title = review.style;
-		style.permalink = `style/${styleSlug}/`;
-		style.slug = styleSlug;
-	}
-
+	// Set review permalinks
 	review.breweries = breweryPaths;
-	review.permalink = `beer/${slugify(
-		`${review.title} ${brewerySlugs.join(' ')}`
-	)}/`;
+	review.permalink = `beer/${slugify(`${review.title} ${brewerySlugs.join(' ')}`)}/ `;
 
-	// Get project root directory
-	const projectRoot = isDev ? process.cwd() : '/tmp';
-	const contentRoot = isDev ? path.join(projectRoot, 'app/content') : 'app/content';
-
+	// Handle file creation for all entities in a single section
 	for (const brewery of breweries) {
-		let fileExists = false,
-			filePath = 'app/content/brewery/' + brewery.slug + '.md';
-
-		if (isDev) {
-			// Check if file exists locally
-			const localPath = path.join(projectRoot, filePath);
-			fileExists = fs.existsSync(localPath);
-		} else {
-			// Check GitLab
-			try {
-				await api.RepositoryFiles.showRaw(repoId, filePath, {ref: repoBranch});
-				fileExists = true;
-			} catch(e) {
-				console.log('Brewery does not exist');
-			}
-		}
-
-		if(!fileExists) {
-			if (brewery.image) {
-				let image = await fetch(brewery.image);
-				let imageBuffer = await image.buffer()
-
-				let imageLarge = await sharp(imageBuffer)
-					.resize(300, 300, {
-						fit: 'contain', 'background': { r: 255, g: 255, b: 255, alpha: 1 }
-					})
-					.webp({ lossless: true })
-					.toBuffer();
-				commitFiles.push({
-					action: 'create',
-					filePath: `app/content/images/brewery/${brewery.slug}/image.webp`,
-					content: imageLarge.toString('base64'),
-					encoding: 'base64'
-				});
-
-			}
-
-			let description = brewery.description;
-			delete brewery.image;
-			delete brewery.slug;
-			delete brewery.description;
-
-			commitFiles.push({
-				action: 'create',
-				filePath,
-				content: matter.stringify("\n" + description, brewery),
-			});
-		}
+		commitFiles.push(...await handleBrewery(brewery, isDev, projectRoot, api, repoId, repoBranch));
 	}
 
-	if(review.purchased) {
-		let purchasedFileExists = false,
-			purchasedFilePath = 'app/content/shop/' + purchased.slug + '.md';
-
-		delete purchased.slug;
-
-		if (isDev) {
-			// Check if file exists locally
-			const localPath = path.join(projectRoot, purchasedFilePath);
-			purchasedFileExists = fs.existsSync(localPath);
-		} else {
-			// Check GitLab
-			try {
-				await api.RepositoryFiles.showRaw(repoId, purchasedFilePath, {ref: repoBranch});
-				purchasedFileExists = true;
-			} catch(e) {
-				console.log('Shop does not exist');
-			}
-		}
-
-		if(!purchasedFileExists) {
-			commitFiles.push({
-				action: 'create',
-				filePath: purchasedFilePath,
-				content: matter.stringify("\n", purchased),
-			});
-		}
+	if (purchased) {
+		commitFiles.push(...await handleShop(purchased, isDev, projectRoot, api, repoId, repoBranch));
 	}
 
-	if(review.style) {
-		let styleFileExists = false,
-			styleFilePath = 'app/content/style/' + style.slug + '.md';
-
-		delete style.slug;
-
-		if (isDev) {
-			// Check if file exists locally
-			const localPath = path.join(projectRoot, styleFilePath);
-			styleFileExists = fs.existsSync(localPath);
-		} else {
-			// Check GitLab
-			try {
-				await api.RepositoryFiles.showRaw(repoId, styleFilePath, {ref: repoBranch});
-				styleFileExists = true;
-			} catch(e) {
-				console.log('Style does not exist');
-			}
-		}
-
-		if(!styleFileExists) {
-			commitFiles.push({
-				action: 'create',
-				filePath: styleFilePath,
-				content: matter.stringify("\n", style),
-			});
-		}
+	if (style) {
+		commitFiles.push(...await handleStyle(style, isDev, projectRoot, api, repoId, repoBranch));
 	}
 	/**
 	 * Image
 	 */
 
-	let image = await fetch(review.image);
-	let imageBuffer = await image.buffer()
+	const imageLarge = await fetchAndProcessImage(review.image, 1000, 1000);
+	commitFiles.push(
+		createCommitFile(
+			`app/content/images/${review.permalink}image.webp`,
+			imageLarge.base64,
+			'base64'
+		)
+	);
 
-	let imageLarge = await sharp(imageBuffer)
-		.resize(1000, 1000)
-		.webp({ lossless: true })
-		.toBuffer();
-	commitFiles.push({
-		action: 'create',
-		filePath: `app/content/images/${review.permalink}image.webp`,
-		content: imageLarge.toString('base64'),
-		encoding: 'base64'
-	});
-
-	let imageSmall = await sharp(imageBuffer)
-		.resize(200, 200)
-		.webp({ lossless: true })
-		.toBuffer();
-	commitFiles.push({
-		action: 'create',
-		filePath: `app/content/images/${review.permalink}thumbnail.webp`,
-		content: imageSmall.toString('base64'),
-		encoding: 'base64'
-	});
+	const imageSmall = await fetchAndProcessImage(review.image, 200, 200);
+	commitFiles.push(
+		createCommitFile(
+			`app/content/images/${review.permalink}thumbnail.webp`,
+			imageSmall.base64,
+			'base64'
+		)
+	);
 
 	/**
 	* Data cleanup
@@ -329,11 +193,12 @@ exports.handler = async (event, context) => {
 	delete review.image;
 	delete review.date;
 
-	commitFiles.push({
-		action: 'create',
-		filePath: `app/content/beer/${slugify(`${date} ${review.title}`)}.md`,
-		content: matter.stringify('', review, { language: 'json', spaces: 4 })
-	});
+	commitFiles.push(
+		createCommitFile(
+			`app/content/beer/${slugify(`${date} ${review.title}`)}.md`,
+			matter.stringify('', review, { language: 'json', spaces: 4 })
+		)
+	);
 
 	if (isDev) {
 		// Dev mode: Write files locally and commit with git
@@ -383,7 +248,7 @@ exports.handler = async (event, context) => {
 	} else {
 		// Production mode: Use GitLab API
 		try {
-			let c = await api.Commits.create(
+			await api.Commits.create(
 				repoId,
 				repoBranch,
 				`API: Add ${review.title}`,
