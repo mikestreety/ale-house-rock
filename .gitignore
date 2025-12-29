@@ -2,6 +2,7 @@
 node_modules/
 html/
 .cache/
+functions/add-beer/aliases-data.json
 # Local Netlify folder
 .netlify
 .env
