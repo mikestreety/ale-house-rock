@@ -143,7 +143,7 @@ exports.handler = async (event, context) => {
 
 	// Set review permalinks
 	review.breweries = breweryPaths;
-	review.permalink = `beer/${slugify(`${review.title} ${brewerySlugs.join(' ')}`)}/ `;
+	review.permalink = `beer/${slugify(`${review.title} ${brewerySlugs.join(' ')}`)}/`;
 
 	// Handle file creation for all entities in a single section
 	for (const brewery of breweries) {
