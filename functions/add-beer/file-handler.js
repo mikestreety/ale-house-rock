@@ -66,10 +66,10 @@ async function fetchAndProcessImage(imageUrl, width, height, options = {}) {
  * Create a file commit object for GitLab API
  * @param {string} filePath - Path of file in repository
  * @param {string|Buffer} content - File content
- * @param {string} encoding - Content encoding ('utf-8' or 'base64')
+ * @param {string} encoding - Content encoding ('text' or 'base64')
  * @returns {Object} Commit file object
  */
-function createCommitFile(filePath, content, encoding = 'utf-8') {
+function createCommitFile(filePath, content, encoding = 'text') {
   return {
     action: 'create',
     filePath,
