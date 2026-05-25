@@ -60,22 +60,15 @@ exports.handler = async (event, context) => {
 		.then(data => data.json());
 
 	// Make sure the review has all the right data
-	if (
-		!review.hasOwnProperty('title') ||
-		!review.hasOwnProperty('rating') ||
-		!review.hasOwnProperty('date') ||
-		!review.hasOwnProperty('canonical') ||
-		// !review.hasOwnProperty('tags') ||
-		!review.hasOwnProperty('body') ||
-		!review.hasOwnProperty('breweries') ||
-		!review.hasOwnProperty('image') ||
-		!review.image
-	) {
+	const requiredFields = ['title', 'rating', 'date', 'canonical', 'body', 'breweries', 'image'];
+	const missingFields = requiredFields.filter(f => !review.hasOwnProperty(f) || !review[f]);
+
+	if (missingFields.length) {
 		return {
 			statusCode: 400,
 			body: JSON.stringify({
 				status: 'error',
-				message: 'Missing or invalid data from returned JSON (required: title, rating, date, canonical, body, breweries, image)',
+				message: `Missing or invalid data from returned JSON (missing: ${missingFields.join(', ')})`,
 				review
 			})
 		}
