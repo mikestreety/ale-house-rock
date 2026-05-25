@@ -67,13 +67,15 @@ exports.handler = async (event, context) => {
 		!review.hasOwnProperty('canonical') ||
 		// !review.hasOwnProperty('tags') ||
 		!review.hasOwnProperty('body') ||
-		!review.hasOwnProperty('breweries')
+		!review.hasOwnProperty('breweries') ||
+		!review.hasOwnProperty('image') ||
+		!review.image
 	) {
 		return {
 			statusCode: 400,
 			body: JSON.stringify({
 				status: 'error',
-				message: 'Missing data from returned JSON',
+				message: 'Missing or invalid data from returned JSON (required: title, rating, date, canonical, body, breweries, image)',
 				review
 			})
 		}
