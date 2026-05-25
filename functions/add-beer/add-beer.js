@@ -55,8 +55,10 @@ exports.handler = async (event, context) => {
 		}
 	}
 
-	// Get the review from the URL
-	const review = await fetch(data.url, { headers: { 'Cache-Control': 'no-cache' } })
+	// Get the review from the URL (cache-bust to ensure fresh data)
+	const reviewUrl = new URL(data.url);
+	reviewUrl.searchParams.set('_', Date.now());
+	const review = await fetch(reviewUrl.toString())
 		.then(data => data.json());
 
 	// Make sure the review has all the right data
