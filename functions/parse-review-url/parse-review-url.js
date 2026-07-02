@@ -30,7 +30,7 @@ exports.handler = async (event, context) => {
 	}
 
 	if(data.url.includes('untappd.com')) {
-		data.url = data.url.replace('untappd.com', 'untappd.alehouse.rocks');
+		data.url = 'https://alehouse.rocks/.netlify/functions/untappd?url=' + data.url;
 		return {
 			statusCode: 302,
 			headers: {
