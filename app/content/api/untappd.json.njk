@@ -1,0 +1,12 @@
+---
+permalink: api/untappd.json
+sitemapIgnore: true
+---
+{
+	{% for brewery in collections.brewery %}
+		"{{ brewery.data.untappd }}": "{{ brewery.url }}",
+	{% endfor %}
+	{% for shop in collections.shop %}
+		"{{ shop.data.untappd }}": "{{ shop.url }}"{% if not loop.last %},{% endif %}
+	{% endfor %}
+}
