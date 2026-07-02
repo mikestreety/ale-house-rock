@@ -1,46 +1,75 @@
-const fetch = require('node-fetch');
-
-exports.handler = async (event, context) => {
-
-	let data = event.queryStringParameters;
+exports.handler = async (event) => {
+	const data = event.queryStringParameters || {};
 
 	/**
-	* Data validation
-	*/
+	 * Data validation
+	 */
 	if (
-		!data.hasOwnProperty('url') ||
-		!data.hasOwnProperty('token') ||
+		!data.url ||
+		!data.token ||
 		data.token !== process.env.ACCESS_TOKEN
 	) {
-		return {
-			statusCode: 400,
-			body: JSON.stringify({
-				status: 'error',
-				message: 'Missing data'
-			})
+		return jsonResponse(400, { status: 'error', message: 'Missing or invalid data' });
+	}
+
+	let parsedUrl;
+	try {
+		parsedUrl = new URL(data.url);
+	} catch (err) {
+		return jsonResponse(400, { status: 'error', message: 'Invalid URL' });
+	}
+
+	/**
+	 * Resolve untp.beer short links to their real untappd.com URL
+	 */
+	if (parsedUrl.hostname === 'untp.beer') {
+		try {
+			const redirect = await fetch(data.url, { redirect: 'follow' });
+			if (!redirect.ok && redirect.status !== 0) {
+				// status 0 can happen with opaque redirects in some runtimes;
+				// otherwise treat non-OK as a real failure
+				return jsonResponse(502, {
+					status: 'error',
+					message: `Could not resolve short link (status ${redirect.status})`,
+				});
+			}
+			data.url = redirect.url;
+			parsedUrl = new URL(data.url);
+		} catch (err) {
+			return jsonResponse(502, { status: 'error', message: 'Failed to resolve short link' });
 		}
 	}
 
 	/**
-	 * Untappd
+	 * Hand off to the parser once we have a genuine untappd.com URL
 	 */
-	if(data.url.includes('untp.beer')) {
-		let redirect = await fetch(data.url);
-		data.url = redirect.url;
-	}
+	if (parsedUrl.hostname === 'untappd.com' || parsedUrl.hostname.endsWith('.untappd.com')) {
+		const parserUrl =
+			'https://alehouse.rocks/.netlify/functions/untappd?url=' + encodeURIComponent(data.url);
 
-	if(data.url.includes('untappd.com')) {
-		data.url = 'https://alehouse.rocks/.netlify/functions/untappd?url=' + data.url;
+		const redirectParams = new URLSearchParams({
+			url: parserUrl,
+			token: data.token,
+		});
+
 		return {
 			statusCode: 302,
 			headers: {
-				'Location': '/.netlify/functions/add-beer?' + new URLSearchParams(data),
+				Location: '/.netlify/functions/add-beer?' + redirectParams.toString(),
 			},
 		};
 	}
 
-	return {
-		statusCode: 200,
-		body: JSON.stringify(data)
-	};
+	return jsonResponse(400, {
+		status: 'error',
+		message: 'URL was not recognised as an Untappd link',
+	});
 };
+
+function jsonResponse(statusCode, body) {
+	return {
+		statusCode,
+		headers: { 'content-type': 'application/json;charset=UTF-8' },
+		body: JSON.stringify(body),
+	};
+}
