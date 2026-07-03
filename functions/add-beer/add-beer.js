@@ -1,12 +1,12 @@
 const fetch = require('node-fetch');
 const matter = require('gray-matter');
-const { Gitlab } = require('@gitbeaker/node');
+const { Octokit } = require('@octokit/rest');
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
 const slugify = require('./slugify');
-const { handleBrewery, handleShop, handleStyle, fetchAndProcessImage, createCommitFile } = require('./file-handler');
+const { handleBrewery, handleShop, handleStyle, fetchAndProcessImage, createCommitFile, createGithubCommit } = require('./file-handler');
 
 require('dotenv').config();
 
@@ -18,8 +18,8 @@ try {
 	console.warn('Could not load aliases data:', e.message);
 }
 
-const repoId = 25096202; // real repo
-// const repoId = 38315485; // test repo
+const repoOwner = 'mikestreety';
+const repoName = 'ale-house-rock';
 const repoBranch = 'main';
 
 // Detect if we're in dev mode
@@ -98,8 +98,8 @@ exports.handler = async (event, context) => {
 	// Initialize API for production
 	let api;
 	if (!isDev) {
-		api = new Gitlab({
-			token: process.env.GITLAB_TOKEN,
+		api = new Octokit({
+			auth: process.env.GITHUB_TOKEN,
 		});
 	}
 
@@ -144,15 +144,15 @@ exports.handler = async (event, context) => {
 
 	// Handle file creation for all entities in a single section
 	for (const brewery of breweries) {
-		commitFiles.push(...await handleBrewery(brewery, isDev, projectRoot, api, repoId, repoBranch));
+		commitFiles.push(...await handleBrewery(brewery, isDev, projectRoot, api, repoOwner, repoName, repoBranch));
 	}
 
 	if (purchased) {
-		commitFiles.push(...await handleShop(purchased, isDev, projectRoot, api, repoId, repoBranch));
+		commitFiles.push(...await handleShop(purchased, isDev, projectRoot, api, repoOwner, repoName, repoBranch));
 	}
 
 	if (style) {
-		commitFiles.push(...await handleStyle(style, isDev, projectRoot, api, repoId, repoBranch));
+		commitFiles.push(...await handleStyle(style, isDev, projectRoot, api, repoOwner, repoName, repoBranch));
 	}
 	/**
 	 * Image
@@ -243,10 +243,12 @@ exports.handler = async (event, context) => {
 			}
 		}
 	} else {
-		// Production mode: Use GitLab API
+		// Production mode: Use GitHub API
 		try {
-			await api.Commits.create(
-				repoId,
+			await createGithubCommit(
+				api,
+				repoOwner,
+				repoName,
 				repoBranch,
 				`API: Add ${review.title}`,
 				commitFiles
@@ -257,7 +259,7 @@ exports.handler = async (event, context) => {
 				statusCode: 500,
 				body: JSON.stringify({
 					status: 'error',
-					message: e.description,
+					message: e.description || e.message,
 					commitFiles: commitFiles.map(item => {
 						return {
 							action: item.action,

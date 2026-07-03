@@ -6,21 +6,67 @@ const path = require('path');
 
 /**
  * Check if a file exists in the repository
- * Handles both local dev mode and remote GitLab API
+ * Handles both local dev mode and remote GitHub API
  */
-async function fileExists(filePath, isDev, projectRoot, api, repoId, repoBranch) {
+async function fileExists(filePath, isDev, projectRoot, api, owner, repo, repoBranch) {
   if (isDev) {
     const localPath = path.join(projectRoot, filePath);
     return fs.existsSync(localPath);
   } else {
     try {
-      await api.RepositoryFiles.showRaw(repoId, filePath, { ref: repoBranch });
+      await api.repos.getContent({ owner, repo, path: filePath, ref: repoBranch });
       return true;
     } catch(e) {
       console.log(`File does not exist: ${filePath}`);
       return false;
     }
   }
+}
+
+/**
+ * Create a single commit containing multiple file additions using the
+ * GitHub Git Data API (blobs -> tree -> commit -> ref update)
+ */
+async function createGithubCommit(api, owner, repo, branch, message, commitFiles) {
+  const { data: ref } = await api.git.getRef({ owner, repo, ref: `heads/${branch}` });
+  const parentSha = ref.object.sha;
+
+  const { data: parentCommit } = await api.git.getCommit({ owner, repo, commit_sha: parentSha });
+
+  const blobs = await Promise.all(commitFiles.map(async (file) => {
+    const { data: blob } = await api.git.createBlob({
+      owner,
+      repo,
+      content: file.content,
+      encoding: file.encoding === 'base64' ? 'base64' : 'utf-8'
+    });
+
+    return {
+      path: file.filePath,
+      mode: '100644',
+      type: 'blob',
+      sha: blob.sha
+    };
+  }));
+
+  const { data: tree } = await api.git.createTree({
+    owner,
+    repo,
+    base_tree: parentCommit.tree.sha,
+    tree: blobs
+  });
+
+  const { data: commit } = await api.git.createCommit({
+    owner,
+    repo,
+    message,
+    tree: tree.sha,
+    parents: [parentSha]
+  });
+
+  await api.git.updateRef({ owner, repo, ref: `heads/${branch}`, sha: commit.sha });
+
+  return commit;
 }
 
 /**
@@ -63,7 +109,7 @@ async function fetchAndProcessImage(imageUrl, width, height, options = {}) {
 }
 
 /**
- * Create a file commit object for GitLab API
+ * Create a file commit object for the commit process
  * @param {string} filePath - Path of file in repository
  * @param {string|Buffer} content - File content
  * @param {string} encoding - Content encoding ('text' or 'base64')
@@ -81,10 +127,10 @@ function createCommitFile(filePath, content, encoding = 'text') {
 /**
  * Handle brewery file creation
  */
-async function handleBrewery(brewery, isDev, projectRoot, api, repoId, repoBranch) {
+async function handleBrewery(brewery, isDev, projectRoot, api, owner, repo, repoBranch) {
   const filePath = `app/content/brewery/${brewery.slug}.md`;
 
-  const exists = await fileExists(filePath, isDev, projectRoot, api, repoId, repoBranch);
+  const exists = await fileExists(filePath, isDev, projectRoot, api, owner, repo, repoBranch);
   if (exists) {
     return [];
   }
@@ -119,10 +165,10 @@ async function handleBrewery(brewery, isDev, projectRoot, api, repoId, repoBranc
 /**
  * Handle shop file creation
  */
-async function handleShop(purchased, isDev, projectRoot, api, repoId, repoBranch) {
+async function handleShop(purchased, isDev, projectRoot, api, owner, repo, repoBranch) {
   const filePath = `app/content/shop/${purchased.slug}.md`;
 
-  const exists = await fileExists(filePath, isDev, projectRoot, api, repoId, repoBranch);
+  const exists = await fileExists(filePath, isDev, projectRoot, api, owner, repo, repoBranch);
   if (exists) {
     return [];
   }
@@ -138,10 +184,10 @@ async function handleShop(purchased, isDev, projectRoot, api, repoId, repoBranch
 /**
  * Handle style file creation
  */
-async function handleStyle(style, isDev, projectRoot, api, repoId, repoBranch) {
+async function handleStyle(style, isDev, projectRoot, api, owner, repo, repoBranch) {
   const filePath = `app/content/style/${style.slug}.md`;
 
-  const exists = await fileExists(filePath, isDev, projectRoot, api, repoId, repoBranch);
+  const exists = await fileExists(filePath, isDev, projectRoot, api, owner, repo, repoBranch);
   if (exists) {
     return [];
   }
@@ -159,6 +205,7 @@ module.exports = {
   processImage,
   fetchAndProcessImage,
   createCommitFile,
+  createGithubCommit,
   handleBrewery,
   handleShop,
   handleStyle
