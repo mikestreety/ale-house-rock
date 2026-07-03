@@ -6,7 +6,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const slugify = require('./slugify');
-const { handleBrewery, handleShop, handleStyle, fetchAndProcessImage, createCommitFile, createGithubCommit } = require('./file-handler');
+const { handleBrewery, handleShop, handleStyle, fetchImageBuffer, processImage, createCommitFile, createGithubCommit } = require('./file-handler');
 
 require('dotenv').config();
 
@@ -142,36 +142,43 @@ exports.handler = async (event, context) => {
 	review.breweries = breweryPaths;
 	review.permalink = `beer/${slugify(`${review.title} ${brewerySlugs.join(' ')}`)}/`;
 
-	// Handle file creation for all entities in a single section
-	for (const brewery of breweries) {
-		commitFiles.push(...await handleBrewery(brewery, isDev, projectRoot, api, repoOwner, repoName, repoBranch));
-	}
+	// Handle file creation for all entities in parallel - each brewery/shop/style
+	// check is an independent GitHub/filesystem lookup, so there's no need to
+	// serialise them.
+	const [breweryCommitFiles, shopCommitFiles, styleCommitFiles, reviewImageBuffer] = await Promise.all([
+		Promise.all(breweries.map(brewery =>
+			handleBrewery(brewery, isDev, projectRoot, api, repoOwner, repoName, repoBranch)
+		)),
+		purchased ? handleShop(purchased, isDev, projectRoot, api, repoOwner, repoName, repoBranch) : [],
+		style ? handleStyle(style, isDev, projectRoot, api, repoOwner, repoName, repoBranch) : [],
+		fetchImageBuffer(review.image)
+	]);
 
-	if (purchased) {
-		commitFiles.push(...await handleShop(purchased, isDev, projectRoot, api, repoOwner, repoName, repoBranch));
-	}
+	commitFiles.push(...breweryCommitFiles.flat());
+	commitFiles.push(...shopCommitFiles);
+	commitFiles.push(...styleCommitFiles);
 
-	if (style) {
-		commitFiles.push(...await handleStyle(style, isDev, projectRoot, api, repoOwner, repoName, repoBranch));
-	}
 	/**
 	 * Image
 	 */
 
-	const imageLarge = await fetchAndProcessImage(review.image, 1000, 1000);
+	const [imageLargeBuffer, imageSmallBuffer] = await Promise.all([
+		processImage(reviewImageBuffer, 1000, 1000),
+		processImage(reviewImageBuffer, 200, 200)
+	]);
+
 	commitFiles.push(
 		createCommitFile(
 			`app/content/images/${review.permalink}image.webp`,
-			imageLarge.base64,
+			imageLargeBuffer.toString('base64'),
 			'base64'
 		)
 	);
 
-	const imageSmall = await fetchAndProcessImage(review.image, 200, 200);
 	commitFiles.push(
 		createCommitFile(
 			`app/content/images/${review.permalink}thumbnail.webp`,
-			imageSmall.base64,
+			imageSmallBuffer.toString('base64'),
 			'base64'
 		)
 	);

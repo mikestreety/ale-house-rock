@@ -90,6 +90,16 @@ async function processImage(imageBuffer, width, height, options = {}) {
 }
 
 /**
+ * Fetch raw image bytes from a URL
+ * @param {string} imageUrl - URL of the image
+ * @returns {Promise<Buffer>}
+ */
+async function fetchImageBuffer(imageUrl) {
+  const image = await fetch(imageUrl);
+  return image.buffer();
+}
+
+/**
  * Fetch and process an image from a URL
  * @param {string} imageUrl - URL of the image
  * @param {number} width - Target width
@@ -98,8 +108,7 @@ async function processImage(imageBuffer, width, height, options = {}) {
  * @returns {Promise<{buffer: Buffer, base64: string}>}
  */
 async function fetchAndProcessImage(imageUrl, width, height, options = {}) {
-  const image = await fetch(imageUrl);
-  const imageBuffer = await image.buffer();
+  const imageBuffer = await fetchImageBuffer(imageUrl);
   const processedBuffer = await processImage(imageBuffer, width, height, options);
 
   return {
@@ -203,6 +212,7 @@ async function handleStyle(style, isDev, projectRoot, api, owner, repo, repoBran
 module.exports = {
   fileExists,
   processImage,
+  fetchImageBuffer,
   fetchAndProcessImage,
   createCommitFile,
   createGithubCommit,

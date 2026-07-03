@@ -227,8 +227,7 @@ async function resolveBreweries(output) {
 		return output;
 	}
 
-	output.breweries = [];
-	for (let b of output.brewery_links) {
+	output.breweries = await Promise.all(output.brewery_links.map(async (b) => {
 		try {
 			const res = await fetchUntappd(new URL(b).pathname);
 			if (res.status < 400) {
@@ -236,12 +235,13 @@ async function resolveBreweries(output) {
 				const $brewery = cheerio.load(html);
 				const details = getBreweryDetails($brewery, {});
 				details.untappd = b;
-				output.breweries.push(details);
+				return details;
 			}
+			return null;
 		} catch (err) {
-			output.breweries.push({ untappd: b, error: err.message });
+			return { untappd: b, error: err.message };
 		}
-	}
+	})).then(results => results.filter(Boolean));
 
 	delete output.brewery_links;
 	return output;
