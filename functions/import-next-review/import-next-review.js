@@ -6,20 +6,19 @@
 // app/content/beer/*.md), and hands it off to the existing
 // parse-review-url -> untappd -> add-beer pipeline to actually add it.
 //
+// Takes no parameters - the feed URL is fixed via UNTAPPD_RSS_URL, so
+// there's no user-supplied input to authenticate here. The ACCESS_TOKEN
+// used to authorise the downstream add-beer commit is read server-side
+// from the environment rather than passed in by the caller.
+//
 // Usage:
-//   /.netlify/functions/import-next-review?token=XXXX
+//   /.netlify/functions/import-next-review
 
 import * as cheerio from 'cheerio';
 
 const SITE_URL = 'https://alehouse.rocks';
 
 export async function handler(event) {
-	const data = event.queryStringParameters || {};
-
-	if (!data.token || data.token !== process.env.ACCESS_TOKEN) {
-		return jsonResponse(400, { status: 'error', message: 'Missing or invalid token' });
-	}
-
 	const feedUrl = process.env.UNTAPPD_RSS_URL;
 
 	if (!feedUrl) {
@@ -92,7 +91,7 @@ export async function handler(event) {
 
 	const redirectParams = new URLSearchParams({
 		url: next.link,
-		token: data.token,
+		token: process.env.ACCESS_TOKEN,
 	});
 
 	return {
