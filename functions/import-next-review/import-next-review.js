@@ -1,17 +1,16 @@
 // netlify/functions/import-next-review.js
 //
-// Reads the Untappd RSS feed (UNTAPPD_RSS_URL), finds the oldest checkin
-// in the feed that hasn't been added to the site yet (matched by
-// canonical URL against app/content/beer/*.md), and hands it off to the
-// existing parse-review-url -> untappd -> add-beer pipeline to actually
-// add it.
+// Reads the Untappd RSS feed at UNTAPPD_RSS_URL (must be set as an
+// environment variable), finds the oldest checkin in the feed that
+// hasn't been added to the site yet (matched by canonical URL against
+// app/content/beer/*.md), and hands it off to the existing
+// parse-review-url -> untappd -> add-beer pipeline to actually add it.
 //
 // Usage:
 //   /.netlify/functions/import-next-review?token=XXXX
 
 import * as cheerio from 'cheerio';
 
-const DEFAULT_FEED_URL = 'https://untappd.com/rss/mikestreety';
 const SITE_URL = 'https://alehouse.rocks';
 
 export async function handler(event) {
@@ -21,7 +20,11 @@ export async function handler(event) {
 		return jsonResponse(400, { status: 'error', message: 'Missing or invalid token' });
 	}
 
-	const feedUrl = process.env.UNTAPPD_RSS_URL || DEFAULT_FEED_URL;
+	const feedUrl = process.env.UNTAPPD_RSS_URL;
+
+	if (!feedUrl) {
+		return jsonResponse(500, { status: 'error', message: 'UNTAPPD_RSS_URL environment variable is not set' });
+	}
 
 	let feedResponse;
 	try {
