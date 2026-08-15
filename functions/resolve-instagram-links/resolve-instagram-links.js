@@ -28,7 +28,8 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const { createCommitFile, createGithubCommit } = require('../add-beer/file-handler');
-const { getPending, setPending } = require('../shared/pending-instagram-store');
+const { getPending, updatePending } = require('../shared/pending-instagram-store');
+const { jsonResponse } = require('../shared/json-response');
 
 require('dotenv').config();
 
@@ -58,7 +59,7 @@ exports.handler = async () => {
 
 	const projectRoot = isDev ? process.cwd() : '/tmp';
 	const now = Date.now();
-	const remaining = [];
+	const toRemove = new Set();
 	const commitFiles = [];
 	const results = [];
 
@@ -67,6 +68,7 @@ exports.handler = async () => {
 
 		if (ageDays > STALE_AFTER_DAYS) {
 			results.push({ permalink: entry.permalink, status: 'dropped-stale' });
+			toRemove.add(entry.permalink);
 			continue;
 		}
 
@@ -98,7 +100,6 @@ exports.handler = async () => {
 		}
 
 		if (!resolvedUrl) {
-			remaining.push(entry);
 			results.push({ permalink: entry.permalink, status: 'pending' });
 			continue;
 		}
@@ -119,9 +120,9 @@ exports.handler = async () => {
 			);
 
 			results.push({ permalink: entry.permalink, status: 'resolved', instagram: resolvedUrl });
+			toRemove.add(entry.permalink);
 		} catch (e) {
 			console.error(`Failed to read/update ${entry.filePath}:`, e.message);
-			remaining.push(entry);
 			results.push({ permalink: entry.permalink, status: 'error', message: e.message });
 		}
 	}
@@ -151,7 +152,12 @@ exports.handler = async () => {
 		}
 	}
 
-	await setPending(remaining);
+	// Remove resolved/stale entries from whatever the *current* queue looks
+	// like (not the snapshot we started with) - add-beer.js may have added
+	// new entries while this run was in progress.
+	if (toRemove.size) {
+		await updatePending(currentQueue => currentQueue.filter(entry => !toRemove.has(entry.permalink)));
+	}
 
 	return jsonResponse(200, {
 		status: 'ok',
@@ -161,11 +167,3 @@ exports.handler = async () => {
 		results,
 	});
 };
-
-function jsonResponse(statusCode, body) {
-	return {
-		statusCode,
-		headers: { 'content-type': 'application/json;charset=UTF-8' },
-		body: JSON.stringify(body, null, 2),
-	};
-}

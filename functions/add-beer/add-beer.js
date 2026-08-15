@@ -318,7 +318,7 @@ exports.handler = async (event, context) => {
 			commitResult = { success: true, message: `API: Add ${review.title}` };
 		} catch(e) {
 			console.error('Dev mode error:', e);
-			commitResult = { success: false, message: e.message };
+			commitResult = { success: false, message: `${e.message}\n\nAttempted files:\n${commitFiles.map(f => f.filePath).join('\n')}` };
 		}
 	} else {
 		// Production mode: Use GitHub API
@@ -334,7 +334,7 @@ exports.handler = async (event, context) => {
 			commitResult = { success: true, message: `API: Add ${review.title}` };
 		} catch(e) {
 			console.error(e);
-			commitResult = { success: false, message: e.description || e.message };
+			commitResult = { success: false, message: `${e.description || e.message}\n\nAttempted files:\n${commitFiles.map(f => f.filePath).join('\n')}` };
 		}
 	}
 
