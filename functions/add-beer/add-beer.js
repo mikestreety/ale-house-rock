@@ -290,13 +290,13 @@ exports.handler = async (event, context) => {
 	if (process.env.BUFFER_ACCESS_TOKEN && process.env.BUFFER_PROFILE_IDS) {
 		try {
 			const profileIds = process.env.BUFFER_PROFILE_IDS.split(',').map(id => id.trim()).filter(Boolean);
-			const reviewUrl = `https://alehouse.rocks/${review.permalink}`;
 
 			const caption = [
-				`${review.title}${breweryNames.length ? ` by ${breweryNames.join(', ')}` : ''} - ${review.rating}/10`,
-				review.review,
-				reviewUrl
-			].filter(Boolean).join('\n\n');
+				`🍺 ${review.title}`,
+				`🏢 ${breweryNames.join(', ')}`,
+				`📝 ${review.review}`,
+				`🏅 ${review.rating}/10`
+			].join('\n');
 
 			const body = new URLSearchParams();
 			body.append('access_token', process.env.BUFFER_ACCESS_TOKEN);
