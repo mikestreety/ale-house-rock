@@ -15,6 +15,7 @@
 //   /.netlify/functions/import-next-review
 
 import * as cheerio from 'cheerio';
+import { jsonResponse } from '../shared/json-response.js';
 
 const SITE_URL = 'https://alehouse.rocks';
 
@@ -89,16 +90,23 @@ export async function handler(event) {
 	newItems.sort((a, b) => a.pubDate - b.pubDate);
 	const next = newItems[0];
 
-	const redirectParams = new URLSearchParams({
+	// Hand off to parse-review-url -> untappd -> add-beer server-side (fetch
+	// follows the redirect chain internally) rather than returning our own
+	// redirect to the caller - a redirect's Location header would expose
+	// ACCESS_TOKEN in cleartext to whoever hit this endpoint, and this
+	// endpoint deliberately requires no auth of its own.
+	const importParams = new URLSearchParams({
 		url: next.link,
 		token: process.env.ACCESS_TOKEN,
 	});
 
+	const addResponse = await fetch(`${SITE_URL}/.netlify/functions/parse-review-url?${importParams.toString()}`);
+	const body = await addResponse.text();
+
 	return {
-		statusCode: 302,
-		headers: {
-			Location: '/.netlify/functions/parse-review-url?' + redirectParams.toString(),
-		},
+		statusCode: addResponse.status,
+		headers: { 'content-type': addResponse.headers.get('content-type') || 'text/html;charset=UTF-8' },
+		body,
 	};
 }
 
@@ -125,12 +133,4 @@ function normaliseCheckinLink(url) {
 	}
 
 	return `https://untappd.com${pathname}`;
-}
-
-function jsonResponse(statusCode, body) {
-	return {
-		statusCode,
-		headers: { 'content-type': 'application/json;charset=UTF-8' },
-		body: JSON.stringify(body, null, 2),
-	};
 }

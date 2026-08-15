@@ -3,6 +3,9 @@
 	functions = "functions/"
 	command = "npm run prod"
 
+[functions."resolve-instagram-links"]
+	schedule = "@weekly"
+
 [[headers]]
 	for = "/*"
 
