@@ -1,17 +1,17 @@
 // netlify/functions/import-next-review.js
 //
-// Reads the Untappd RSS feed for a user, finds the oldest checkin in the
-// feed that hasn't been added to the site yet (matched by canonical URL
-// against app/content/beer/*.md), and hands it off to the existing
-// parse-review-url -> untappd -> add-beer pipeline to actually add it.
+// Reads the Untappd RSS feed (UNTAPPD_RSS_URL), finds the oldest checkin
+// in the feed that hasn't been added to the site yet (matched by
+// canonical URL against app/content/beer/*.md), and hands it off to the
+// existing parse-review-url -> untappd -> add-beer pipeline to actually
+// add it.
 //
 // Usage:
 //   /.netlify/functions/import-next-review?token=XXXX
-//   /.netlify/functions/import-next-review?token=XXXX&username=someoneelse
 
 import * as cheerio from 'cheerio';
 
-const DEFAULT_USERNAME = 'mikestreety';
+const DEFAULT_FEED_URL = 'https://untappd.com/rss/mikestreety';
 const SITE_URL = 'https://alehouse.rocks';
 
 export async function handler(event) {
@@ -21,8 +21,7 @@ export async function handler(event) {
 		return jsonResponse(400, { status: 'error', message: 'Missing or invalid token' });
 	}
 
-	const username = data.username || process.env.UNTAPPD_USERNAME || DEFAULT_USERNAME;
-	const feedUrl = data.feedUrl || `https://untappd.com/rss/${encodeURIComponent(username)}`;
+	const feedUrl = process.env.UNTAPPD_RSS_URL || DEFAULT_FEED_URL;
 
 	let feedResponse;
 	try {
