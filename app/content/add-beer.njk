@@ -16,3 +16,15 @@ seoTitle: Add a beer
 	</div>
 	<button type="submit" class="button">Add</button>
 </form>
+
+<h2>Import next review from Untappd RSS</h2>
+
+<p>Finds the oldest review in your Untappd RSS feed that isn't on the site yet, and adds it.</p>
+
+<form class="form" method="get" action="/.netlify/functions/import-next-review">
+	<div class="field">
+		<label for="rss-token">Token</label>
+		<input type="text" name="token" id="rss-token">
+	</div>
+	<button type="submit" class="button">Import next review</button>
+</form>
