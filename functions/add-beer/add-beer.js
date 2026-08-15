@@ -128,6 +128,7 @@ exports.handler = async (event, context) => {
 	}));
 	const brewerySlugs = breweries.map(b => b.slug);
 	const breweryPaths = breweries.map(b => b.permalink);
+	const breweryNames = breweries.map(b => b.title);
 
 	// Process shop (purchased)
 	const purchased = review.purchased ? processEntity(review.purchased, 'shop', shopAliases) : null;
@@ -153,6 +154,8 @@ exports.handler = async (event, context) => {
 		style ? handleStyle(style, isDev, projectRoot, api, repoOwner, repoName, repoBranch) : [],
 		fetchImageBuffer(review.image)
 	]);
+
+	const originalImage = review.image;
 
 	commitFiles.push(...breweryCommitFiles.flat());
 	commitFiles.push(...shopCommitFiles);
@@ -275,6 +278,34 @@ exports.handler = async (event, context) => {
 					})
 				})
 			}
+		}
+	}
+
+	/**
+	 * Notify a social posting webhook (e.g. Zapier/Make/IFTTT/Buffer) so
+	 * it can post the new review to Instagram. Optional - only fires if
+	 * SOCIAL_WEBHOOK_URL is configured, and failures here are non-fatal
+	 * since the beer has already been committed successfully.
+	 */
+	if (process.env.SOCIAL_WEBHOOK_URL) {
+		try {
+			await fetch(process.env.SOCIAL_WEBHOOK_URL, {
+				method: 'POST',
+				headers: { 'content-type': 'application/json' },
+				body: JSON.stringify({
+					title: review.title,
+					breweries: breweryNames,
+					style: style ? style.title : null,
+					abv: review.abv,
+					rating: review.rating,
+					review: review.review,
+					image: originalImage,
+					url: `https://alehouse.rocks/${review.permalink}`,
+					untappd_url: review.canonical,
+				}),
+			});
+		} catch (e) {
+			console.error('Failed to notify SOCIAL_WEBHOOK_URL:', e.message);
 		}
 	}
 
