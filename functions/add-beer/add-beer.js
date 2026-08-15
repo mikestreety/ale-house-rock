@@ -7,6 +7,7 @@ const { execSync } = require('child_process');
 
 const slugify = require('./slugify');
 const { handleBrewery, handleShop, handleStyle, fetchImageBuffer, processImage, createCommitFile, createGithubCommit } = require('./file-handler');
+const { addPending } = require('../shared/pending-instagram-store');
 
 require('dotenv').config();
 
@@ -262,9 +263,11 @@ exports.handler = async (event, context) => {
 	delete review.image;
 	delete review.date;
 
+	const reviewFilePath = `app/content/beer/${slugify(`${date} ${review.title}`)}.md`;
+
 	commitFiles.push(
 		createCommitFile(
-			`app/content/beer/${slugify(`${date} ${review.title}`)}.md`,
+			reviewFilePath,
 			matter.stringify('', review, { language: 'json', spaces: 4 })
 		)
 	);
@@ -379,6 +382,24 @@ exports.handler = async (event, context) => {
 			if (bufferResponse.ok) {
 				bufferResult.success = true;
 				bufferResult.message = `Scheduled for ${scheduledAt.toUTCString()}`;
+
+				// Track the created update(s) so resolve-instagram-links can
+				// later look up the live post URL once Buffer sends it, and
+				// link it back onto this beer. Non-fatal if it fails - it
+				// just means this one beer won't get auto-linked.
+				try {
+					const updateIds = (JSON.parse(bufferBody).updates || []).map(u => u.id).filter(Boolean);
+					if (updateIds.length) {
+						await addPending({
+							permalink: review.permalink,
+							filePath: reviewFilePath,
+							buffer_update_ids: updateIds,
+							addedAt: new Date().toISOString(),
+						});
+					}
+				} catch (e) {
+					console.error('Failed to queue pending Instagram link lookup:', e.message);
+				}
 			} else {
 				bufferResult.success = false;
 				bufferResult.message = `${bufferResponse.status}: ${bufferBody}`;
