@@ -7,7 +7,11 @@
 //
 // Runs weekly on its own (see the [functions."resolve-instagram-links"]
 // schedule entry in netlify.toml), and can also be triggered manually:
-//   /.netlify/functions/resolve-instagram-links?token=XXXX
+//   /.netlify/functions/resolve-instagram-links
+// Takes no parameters and needs no token - all it does is check a fixed,
+// internally-populated queue against Buffer and write back a link, so
+// there's no user-supplied input to authenticate and nothing destructive
+// to gate.
 //
 // NOTE: assumes Buffer's GET /1/updates/:id.json response includes a
 // `service_link` field once an update has been sent, pointing at the
@@ -36,14 +40,7 @@ const STALE_AFTER_DAYS = 45;
 
 const isDev = process.env.NETLIFY_DEV === 'true' || process.env.NODE_ENV === 'development';
 
-exports.handler = async (event) => {
-	const isScheduled = event.headers && event.headers['x-netlify-event'] === 'schedule';
-	const data = event.queryStringParameters || {};
-
-	if (!isScheduled && (!data.token || data.token !== process.env.ACCESS_TOKEN)) {
-		return jsonResponse(400, { status: 'error', message: 'Missing or invalid token' });
-	}
-
+exports.handler = async () => {
 	if (!process.env.BUFFER_ACCESS_TOKEN) {
 		return jsonResponse(200, { status: 'ok', message: 'BUFFER_ACCESS_TOKEN not configured, nothing to resolve' });
 	}
