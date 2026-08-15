@@ -282,30 +282,41 @@ exports.handler = async (event, context) => {
 	}
 
 	/**
-	 * Notify a social posting webhook (e.g. Zapier/Make/IFTTT/Buffer) so
-	 * it can post the new review to Instagram. Optional - only fires if
-	 * SOCIAL_WEBHOOK_URL is configured, and failures here are non-fatal
-	 * since the beer has already been committed successfully.
+	 * Queue a post on Buffer (e.g. for Instagram) for the new review.
+	 * Optional - only fires if BUFFER_ACCESS_TOKEN and BUFFER_PROFILE_IDS
+	 * are configured, and failures here are non-fatal since the beer has
+	 * already been committed successfully.
 	 */
-	if (process.env.SOCIAL_WEBHOOK_URL) {
+	if (process.env.BUFFER_ACCESS_TOKEN && process.env.BUFFER_PROFILE_IDS) {
 		try {
-			await fetch(process.env.SOCIAL_WEBHOOK_URL, {
+			const profileIds = process.env.BUFFER_PROFILE_IDS.split(',').map(id => id.trim()).filter(Boolean);
+			const reviewUrl = `https://alehouse.rocks/${review.permalink}`;
+
+			const caption = [
+				`${review.title}${breweryNames.length ? ` by ${breweryNames.join(', ')}` : ''} - ${review.rating}/10`,
+				review.review,
+				reviewUrl
+			].filter(Boolean).join('\n\n');
+
+			const body = new URLSearchParams();
+			body.append('access_token', process.env.BUFFER_ACCESS_TOKEN);
+			body.append('text', caption);
+			body.append('media[photo]', originalImage);
+			for (const profileId of profileIds) {
+				body.append('profile_ids[]', profileId);
+			}
+
+			const bufferResponse = await fetch('https://api.bufferapp.com/1/updates/create.json', {
 				method: 'POST',
-				headers: { 'content-type': 'application/json' },
-				body: JSON.stringify({
-					title: review.title,
-					breweries: breweryNames,
-					style: style ? style.title : null,
-					abv: review.abv,
-					rating: review.rating,
-					review: review.review,
-					image: originalImage,
-					url: `https://alehouse.rocks/${review.permalink}`,
-					untappd_url: review.canonical,
-				}),
+				headers: { 'content-type': 'application/x-www-form-urlencoded' },
+				body: body.toString(),
 			});
+
+			if (!bufferResponse.ok) {
+				console.error('Buffer API error:', bufferResponse.status, await bufferResponse.text());
+			}
 		} catch (e) {
-			console.error('Failed to notify SOCIAL_WEBHOOK_URL:', e.message);
+			console.error('Failed to queue Buffer post:', e.message);
 		}
 	}
 
