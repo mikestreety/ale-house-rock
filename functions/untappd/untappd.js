@@ -167,11 +167,13 @@ async function getCheckin($, output) {
 		}
 	}
 
-	// Extract hashtags from the body
+	// Extract hashtags from the body. Named "hashtags" rather than "tags"
+	// to avoid colliding with Eleventy's own collection-tags field once
+	// this lands in a beer's frontmatter (see beer.11tydata.js).
 	if (output.body) {
 		let hashtags = output.body.match(/#[a-z0-9_]+/g);
 		if (hashtags) {
-			output.tags = hashtags.map(h => h.replace('#', ''));
+			output.hashtags = hashtags.map(h => h.replace('#', ''));
 			for (let h of hashtags) {
 				output.body = output.body.replace(h, ' ');
 			}

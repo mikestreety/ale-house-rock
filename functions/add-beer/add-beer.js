@@ -291,6 +291,8 @@ exports.handler = async (event, context) => {
 			imageUrl: originalImage,
 			permalink: review.permalink,
 			filePath: reviewFilePath,
+			style: review.style,
+			hashtags: review.hashtags,
 		})
 		: { configured: false, success: null, message: null };
 

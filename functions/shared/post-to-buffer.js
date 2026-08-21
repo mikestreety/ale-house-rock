@@ -3,6 +3,7 @@
 // at the time) so both stay in sync with a single implementation.
 const { createBufferPost, getOccupiedDays, pickScheduledTime } = require('./buffer-graphql');
 const { addPending } = require('./pending-instagram-store');
+const { buildHashtags } = require('./hashtags');
 
 /**
  * Schedule a Buffer post for a beer review across every configured
@@ -12,7 +13,7 @@ const { addPending } = require('./pending-instagram-store');
  * Buffer isn't set up at all (not an error, just a no-op); otherwise
  * success/message describe what happened.
  */
-async function postReviewToBuffer({ title, breweryNames, rating, reviewText, imageUrl, permalink, filePath }) {
+async function postReviewToBuffer({ title, breweryNames, rating, reviewText, imageUrl, permalink, filePath, style, hashtags }) {
 	if (!process.env.BUFFER_ACCESS_TOKEN || !process.env.BUFFER_CHANNEL_IDS) {
 		return { configured: false, success: null, message: null };
 	}
@@ -34,11 +35,15 @@ async function postReviewToBuffer({ title, breweryNames, rating, reviewText, ima
 			? `Warning: could not check for already-scheduled posts (${occupiedDaysFailures.join('; ')}) - scheduled anyway without avoiding a busy day. `
 			: '';
 
+		const captionHashtags = buildHashtags({ style, extraHashtags: hashtags });
+
 		const caption = [
 			`🍺 ${title}`,
 			`🏢 ${breweryNames.join(', ')}`,
 			`📝 ${reviewText}`,
-			`🏅 ${rating}/10`
+			`🏅 ${rating}/10`,
+			'',
+			captionHashtags.map(tag => `#${tag}`).join(' ')
 		].join('\n');
 
 		// createPost takes a single channel per call, so post to each

@@ -61,9 +61,11 @@ exports.handler = async (event) => {
 
 	const filePath = beer.filename.replace(/^\.\//, '');
 
-	// beers.json doesn't include the review text - read it from the
-	// actual beer file (same read path resolve-instagram-links.js uses).
+	// beers.json doesn't include the review text or the reviewer's own
+	// hashtags - read those from the actual beer file (same read path
+	// resolve-instagram-links.js uses).
 	let reviewText;
+	let hashtags;
 	try {
 		let fileContent;
 
@@ -75,7 +77,9 @@ exports.handler = async (event) => {
 			fileContent = Buffer.from(res.data.content, 'base64').toString('utf8');
 		}
 
-		reviewText = matter(fileContent, { language: 'json' }).data.review;
+		const frontmatter = matter(fileContent, { language: 'json' }).data;
+		reviewText = frontmatter.review;
+		hashtags = frontmatter.hashtags;
 	} catch (e) {
 		return jsonResponse(500, { status: 'error', message: `Failed to read beer file ${filePath}: ${e.message}` });
 	}
@@ -92,6 +96,8 @@ exports.handler = async (event) => {
 		imageUrl: `${SITE_URL}${beer.image}`,
 		permalink: beer.slug.replace(/^\/+/, ''),
 		filePath,
+		style: beer.style,
+		hashtags,
 	});
 
 	const status = !bufferResult.configured ? 'not-configured' : (bufferResult.success ? 'ok' : 'error');

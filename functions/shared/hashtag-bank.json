@@ -1,0 +1,48 @@
+{
+	"_comment": "Hashtag bank for Buffer/Instagram captions. 'general' is always included. 'styles' maps a category to the hashtags used for it; 'styleKeywords' maps that same category to lowercase substrings matched against the beer's Untappd style (e.g. 'IPA - New England / Hazy'). Add a new category to both objects to extend the bank - no code changes needed.",
+
+	"general": [
+		"craftbeer",
+		"beerstagram",
+		"craftbeerlover",
+		"beergeek",
+		"instabeer",
+		"ukcraftbeer",
+		"craftnotcrap",
+		"beersofinstagram"
+	],
+
+	"styleKeywords": {
+		"ipa": ["ipa"],
+		"hazy": ["hazy", "new england"],
+		"stout": ["stout"],
+		"porter": ["porter"],
+		"sour": ["sour", "lambic", "gueuze", "wild ale", "gose", "berliner"],
+		"lager": ["lager", "pilsner", "helles", "bock", "kölsch", "märzen"],
+		"wheat": ["wheat", "witbier", "hefeweizen"],
+		"saison": ["saison", "farmhouse"],
+		"belgian": ["belgian"],
+		"paleAle": ["pale ale"],
+		"strong": ["barleywine", "strong ale", "old ale"],
+		"fruit": ["fruit"],
+		"pastry": ["pastry"],
+		"session": ["session"]
+	},
+
+	"styles": {
+		"ipa": ["ipa", "hophead", "craftbeerporn"],
+		"hazy": ["hazyipa", "neipa", "hazy"],
+		"stout": ["stout", "stoutbeer", "imperialstout"],
+		"porter": ["porter", "darkbeer"],
+		"sour": ["sourbeer", "sourale", "puckerup"],
+		"lager": ["lager", "craftlager", "pilsner"],
+		"wheat": ["wheatbeer", "witbier"],
+		"saison": ["saison", "farmhouseale"],
+		"belgian": ["belgianbeer", "belgianale"],
+		"paleAle": ["paleale", "sessionbeer"],
+		"strong": ["barleywine", "strongale"],
+		"fruit": ["fruitbeer", "fruitedbeer"],
+		"pastry": ["pastrystout", "dessertbeer"],
+		"session": ["sessionbeer", "sessionipa"]
+	}
+}
