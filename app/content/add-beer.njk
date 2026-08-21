@@ -26,3 +26,19 @@ seoTitle: Add a beer
 	</div>
 	<button type="submit" class="button">Add</button>
 </form>
+
+<h2>Retry a Buffer post</h2>
+
+<p>Re-schedules the Buffer post for a beer that's already on the site (e.g. if the original post failed).</p>
+
+<form class="form" method="get" action="/.netlify/functions/retry-buffer-post">
+	<div class="field">
+		<label for="retry-token">Token</label>
+		<input type="text" name="token" id="retry-token">
+	</div>
+	<div class="field">
+		<label for="permalink">Permalink</label>
+		<input type="text" name="permalink" id="permalink" placeholder="beer/passing-cloud-floc/">
+	</div>
+	<button type="submit" class="button">Retry</button>
+</form>
