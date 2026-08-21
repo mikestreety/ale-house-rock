@@ -26,12 +26,11 @@ async function postReviewToBuffer({ title, breweryNames, rating, reviewText, ima
 		const { occupiedDays, failures: occupiedDaysFailures } = await getOccupiedDays(channelIds, accessToken);
 		const scheduledAt = pickScheduledTime(occupiedDays);
 
-		// If every channel's lookup failed, occupiedDays is empty not because
-		// nothing's scheduled but because we couldn't check - flag that so
-		// it's visible in the report instead of quietly always landing on
-		// "tomorrow" as if the day were free.
-		const occupiedDaysCheckFailed = occupiedDaysFailures.length > 0 && occupiedDaysFailures.length === channelIds.length;
-		const occupiedDaysWarning = occupiedDaysCheckFailed
+		// If the lookup failed, occupiedDays is empty not because nothing's
+		// scheduled but because we couldn't check - flag that so it's visible
+		// in the report instead of quietly always landing on "tomorrow" as if
+		// the day were free.
+		const occupiedDaysWarning = occupiedDaysFailures.length
 			? `Warning: could not check for already-scheduled posts (${occupiedDaysFailures.join('; ')}) - scheduled anyway without avoiding a busy day. `
 			: '';
 

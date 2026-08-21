@@ -55,11 +55,8 @@ async function introspectRelevantTypes(accessToken) {
 			postStatus: __type(name: "PostStatus") {
 				enumValues { name }
 			}
-			channelType: __type(name: "Channel") {
-				fields { name type { name kind ofType { name kind } } }
-			}
-			queryFieldNames: __schema {
-				queryType { fields { name } }
+			queryFields: __schema {
+				queryType { fields { name args { name type { name kind ofType { name kind ofType { name kind } } } } } }
 			}
 		}
 	`;
@@ -128,39 +125,70 @@ async function createBufferPost({ channelId, text, imageUrl, dueAt, accessToken 
 	return result.post;
 }
 
+let cachedOrganizationId = null;
+
 /**
- * Look up each channel's scheduled posts and return the set of days
- * (YYYY-MM-DD, UTC) that already have at least one post due, so a new
- * post can avoid piling up on the same day. Best-effort per channel - one
- * that fails to load just contributes nothing to occupiedDays - but every
- * failure is collected and returned too, so a caller can surface "this
- * check didn't actually run" instead of silently scheduling as if no
- * days were occupied.
+ * PostsInput requires an organizationId, which nothing else in this
+ * integration deals with - a channel carries its own organizationId
+ * directly though, so resolve it from whichever channel is passed in and
+ * cache it (all of BUFFER_CHANNEL_IDS are expected to be on one org).
+ */
+async function getOrganizationId(channelId, accessToken) {
+	if (cachedOrganizationId) {
+		return cachedOrganizationId;
+	}
+
+	const query = `
+		query GetChannelOrganization($channelId: ChannelId!) {
+			channel(input: { id: $channelId }) {
+				organizationId
+			}
+		}
+	`;
+	const data = await bufferRequest(query, { channelId }, accessToken);
+	cachedOrganizationId = data?.channel?.organizationId || null;
+	return cachedOrganizationId;
+}
+
+/**
+ * Look up the configured channels' scheduled posts and return the set of
+ * days (YYYY-MM-DD, UTC) that already have at least one post due, so a
+ * new post can avoid piling up on the same day. Best-effort - if the
+ * lookup fails, occupiedDays comes back empty and the failure is returned
+ * too, so a caller can surface "this check didn't actually run" instead
+ * of silently scheduling as if no days were occupied.
  */
 async function getOccupiedDays(channelIds, accessToken) {
 	const occupiedDays = new Set();
 	const failures = [];
 
-	await Promise.all(channelIds.map(async (channelId) => {
-		try {
-			const query = `
-				query GetScheduledPosts($channelId: ChannelId!) {
-					posts(input: { channelId: $channelId, status: [scheduled], first: 50 }) {
-						edges { node { dueAt } }
-					}
-				}
-			`;
-			const data = await bufferRequest(query, { channelId }, accessToken);
-			for (const edge of data?.posts?.edges || []) {
-				if (edge.node?.dueAt) {
-					occupiedDays.add(new Date(edge.node.dueAt).toISOString().slice(0, 10));
+	try {
+		const organizationId = await getOrganizationId(channelIds[0], accessToken);
+
+		if (!organizationId) {
+			throw new Error(`Could not resolve an organizationId from channel ${channelIds[0]}`);
+		}
+
+		const query = `
+			query GetScheduledPosts($organizationId: OrganizationId!, $channelIds: [ChannelId!]) {
+				posts(input: {
+					organizationId: $organizationId,
+					filter: { channelIds: $channelIds, status: [scheduled] }
+				}) {
+					edges { node { dueAt } }
 				}
 			}
-		} catch (e) {
-			console.error(`Failed to fetch scheduled posts for channel ${channelId}:`, e.message);
-			failures.push(`${channelId}: ${e.message}`);
+		`;
+		const data = await bufferRequest(query, { organizationId, channelIds }, accessToken);
+		for (const edge of data?.posts?.edges || []) {
+			if (edge.node?.dueAt) {
+				occupiedDays.add(new Date(edge.node.dueAt).toISOString().slice(0, 10));
+			}
 		}
-	}));
+	} catch (e) {
+		console.error('Failed to fetch scheduled posts:', e.message);
+		failures.push(e.message);
+	}
 
 	return { occupiedDays, failures };
 }
