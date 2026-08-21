@@ -52,6 +52,12 @@ async function introspectRelevantTypes(accessToken) {
 			postType: __type(name: "Post") {
 				fields { name type { name kind ofType { name kind } } }
 			}
+			postInputMetaData: __type(name: "PostInputMetaData") {
+				inputFields { name type { name kind ofType { name kind } } }
+			}
+			instagramMetadata: __type(name: "InstagramPostMetadataInput") {
+				inputFields { name type { name kind ofType { name kind } } }
+			}
 		}
 	`;
 
@@ -91,6 +97,15 @@ async function createBufferPost({ channelId, text, imageUrl, dueAt, accessToken 
 			mode: 'customScheduled',
 			dueAt: dueAt.toISOString(),
 			assets: [{ image: { url: imageUrl } }],
+			// Instagram requires a post type (post/story/reel) and
+			// shouldShareToFeed via InstagramPostMetadataInput - all our
+			// configured channels are Instagram, so this is unconditional.
+			metadata: {
+				instagram: {
+					type: 'post',
+					shouldShareToFeed: true,
+				},
+			},
 		},
 	};
 
@@ -98,7 +113,9 @@ async function createBufferPost({ channelId, text, imageUrl, dueAt, accessToken 
 	const result = data.createPost;
 
 	if (result?.message && !result?.post) {
-		throw new Error(`Buffer rejected the post: ${result.message}`);
+		const schema = await introspectRelevantTypes(accessToken).catch(() => null);
+		const schemaNote = schema ? `\n\nIntrospected schema for debugging:\n${JSON.stringify(schema, null, 2)}` : '';
+		throw new Error(`Buffer rejected the post: ${result.message}${schemaNote}`);
 	}
 
 	if (!result?.post?.id) {
