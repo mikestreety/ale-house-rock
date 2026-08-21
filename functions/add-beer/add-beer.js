@@ -7,8 +7,7 @@ const { execSync } = require('child_process');
 
 const slugify = require('./slugify');
 const { handleBrewery, handleShop, handleStyle, fetchImageBuffer, processImage, createCommitFile, createGithubCommit } = require('./file-handler');
-const { addPending } = require('../shared/pending-instagram-store');
-const { createBufferPost, getOccupiedDays, pickScheduledTime } = require('../shared/buffer-graphql');
+const { postReviewToBuffer } = require('../shared/post-to-buffer');
 
 require('dotenv').config();
 
@@ -279,80 +278,21 @@ exports.handler = async (event, context) => {
 
 	/**
 	 * Queue a post on Buffer (e.g. for Instagram) for the new review.
-	 * Only attempted if the commit succeeded and BUFFER_ACCESS_TOKEN and
-	 * BUFFER_CHANNEL_IDS are configured. Failures here are non-fatal -
-	 * the beer has already been committed by this point.
+	 * Only attempted if the commit succeeded - Buffer failures here are
+	 * non-fatal, and can be retried later via retry-buffer-post without
+	 * re-adding the beer (see functions/shared/post-to-buffer.js).
 	 */
-	const bufferResult = { configured: false, success: null, message: null };
-
-	if (commitResult.success && process.env.BUFFER_ACCESS_TOKEN && process.env.BUFFER_CHANNEL_IDS) {
-		bufferResult.configured = true;
-
-		try {
-			const channelIds = process.env.BUFFER_CHANNEL_IDS.split(',').map(id => id.trim()).filter(Boolean);
-			const accessToken = process.env.BUFFER_ACCESS_TOKEN;
-
-			const occupiedDays = await getOccupiedDays(channelIds, accessToken);
-			const scheduledAt = pickScheduledTime(occupiedDays);
-
-			const caption = [
-				`🍺 ${review.title}`,
-				`🏢 ${breweryNames.join(', ')}`,
-				`📝 ${review.review}`,
-				`🏅 ${review.rating}/10`
-			].join('\n');
-
-			// createPost takes a single channel per call, so post to each
-			// configured channel separately and collect whatever succeeds.
-			const postIds = [];
-			const channelErrors = [];
-
-			for (const channelId of channelIds) {
-				try {
-					const post = await createBufferPost({
-						channelId,
-						text: caption,
-						imageUrl: originalImage,
-						dueAt: scheduledAt,
-						accessToken,
-					});
-					postIds.push(post.id);
-				} catch (e) {
-					channelErrors.push(`${channelId}: ${e.message}`);
-				}
-			}
-
-			if (postIds.length) {
-				bufferResult.success = channelErrors.length === 0;
-				bufferResult.message = channelErrors.length
-					? `Scheduled for ${scheduledAt.toUTCString()} on ${postIds.length}/${channelIds.length} channel(s). Failures: ${channelErrors.join('; ')}`
-					: `Scheduled for ${scheduledAt.toUTCString()}`;
-
-				// Track the created post(s) so resolve-instagram-links can
-				// later look up the live post URL once Buffer sends it, and
-				// link it back onto this beer. Non-fatal if it fails - it
-				// just means this one beer won't get auto-linked.
-				try {
-					await addPending({
-						permalink: review.permalink,
-						filePath: reviewFilePath,
-						buffer_post_ids: postIds,
-						addedAt: new Date().toISOString(),
-					});
-				} catch (e) {
-					console.error('Failed to queue pending Instagram link lookup:', e.message);
-				}
-			} else {
-				bufferResult.success = false;
-				bufferResult.message = channelErrors.join('; ');
-				console.error('Buffer API error(s):', bufferResult.message);
-			}
-		} catch (e) {
-			bufferResult.success = false;
-			bufferResult.message = e.message;
-			console.error('Failed to queue Buffer post:', e.message);
-		}
-	}
+	const bufferResult = commitResult.success
+		? await postReviewToBuffer({
+			title: review.title,
+			breweryNames,
+			rating: review.rating,
+			reviewText: review.review,
+			imageUrl: originalImage,
+			permalink: review.permalink,
+			filePath: reviewFilePath,
+		})
+		: { configured: false, success: null, message: null };
 
 	return {
 		statusCode: commitResult.success ? 200 : 500,
