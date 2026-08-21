@@ -13,14 +13,13 @@
 // there's no user-supplied input to authenticate and nothing destructive
 // to gate.
 //
-// NOTE: assumes Buffer's GET /1/updates/:id.json response includes a
-// `service_link` field once an update has been sent, pointing at the
-// live post. This is based on documented/observed Buffer API behaviour
-// but hasn't been verified against a real account from this environment
-// - if links aren't resolving, check the function logs (a "sent" update
-// with no recognised link field gets logged in full for inspection).
+// NOTE: the live-post-URL field name is unverified (Buffer's GraphQL
+// Post type isn't documented in detail anywhere this environment could
+// reach) - getPostStatus() introspects the Post type and tries every
+// field whose name looks link-shaped, logging the full post object
+// whenever a post is sent but none of them came back populated, so the
+// real field name can be read from the logs and hardcoded here later.
 
-const fetch = require('node-fetch');
 const matter = require('gray-matter');
 const { Octokit } = require('@octokit/rest');
 const fs = require('fs');
@@ -30,6 +29,7 @@ const { execSync } = require('child_process');
 const { createCommitFile, createGithubCommit } = require('../add-beer/file-handler');
 const { getPending, updatePending } = require('../shared/pending-instagram-store');
 const { jsonResponse } = require('../shared/json-response');
+const { getPostStatus } = require('../shared/buffer-graphql');
 
 require('dotenv').config();
 
@@ -74,28 +74,31 @@ exports.handler = async () => {
 
 		let resolvedUrl = null;
 
-		for (const updateId of entry.buffer_update_ids || []) {
+		for (const postId of entry.buffer_post_ids || []) {
 			try {
-				const res = await fetch(
-					`https://api.bufferapp.com/1/updates/${updateId}.json?access_token=${encodeURIComponent(process.env.BUFFER_ACCESS_TOKEN)}`
-				);
+				const post = await getPostStatus(postId, process.env.BUFFER_ACCESS_TOKEN);
 
-				if (!res.ok) {
+				if (!post) {
 					continue;
 				}
 
-				const update = await res.json();
+				if (post.status && /sent/i.test(post.status)) {
+					const linkValue = (post.__linkFields || [])
+						.map(field => post[field])
+						.find(value => typeof value === 'string' && value.startsWith('http'));
 
-				if (update.service_link) {
-					resolvedUrl = update.service_link;
-					break;
-				}
+					if (linkValue) {
+						resolvedUrl = linkValue;
+						break;
+					}
 
-				if (update.status === 'sent') {
-					console.log(`Buffer update ${updateId} is sent but has no service_link:`, JSON.stringify(update));
+					console.log(
+						`Buffer post ${postId} is sent but none of [${(post.__linkFields || []).join(', ')}] were a populated URL:`,
+						JSON.stringify(post)
+					);
 				}
 			} catch (e) {
-				console.error(`Failed checking Buffer update ${updateId}:`, e.message);
+				console.error(`Failed checking Buffer post ${postId}:`, e.message);
 			}
 		}
 

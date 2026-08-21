@@ -8,6 +8,7 @@ const { execSync } = require('child_process');
 const slugify = require('./slugify');
 const { handleBrewery, handleShop, handleStyle, fetchImageBuffer, processImage, createCommitFile, createGithubCommit } = require('./file-handler');
 const { addPending } = require('../shared/pending-instagram-store');
+const { createBufferPost, getOccupiedDays, pickScheduledTime } = require('../shared/buffer-graphql');
 
 require('dotenv').config();
 
@@ -25,68 +26,6 @@ const repoBranch = 'main';
 
 // Detect if we're in dev mode
 const isDev = process.env.NETLIFY_DEV === 'true' || process.env.NODE_ENV === 'development';
-
-/**
- * Look up each profile's pending (queued/scheduled) Buffer updates and
- * return the set of days (YYYY-MM-DD, UTC) that already have at least
- * one post scheduled, so a new post can avoid piling up on the same day.
- * Best-effort - a profile that fails to load just contributes nothing.
- */
-async function getOccupiedDays(profileIds, accessToken) {
-	const occupiedDays = new Set();
-
-	await Promise.all(profileIds.map(async (profileId) => {
-		try {
-			const res = await fetch(
-				`https://api.bufferapp.com/1/profiles/${profileId}/updates/pending.json?access_token=${encodeURIComponent(accessToken)}&count=100`
-			);
-			if (!res.ok) {
-				return;
-			}
-			const data = await res.json();
-			for (const update of data.updates || []) {
-				if (update.scheduled_at) {
-					occupiedDays.add(new Date(update.scheduled_at * 1000).toISOString().slice(0, 10));
-				}
-			}
-		} catch (e) {
-			// Non-fatal - just means we won't know this profile's schedule
-		}
-	}));
-
-	return occupiedDays;
-}
-
-/**
- * Pick a random time between 6:00pm and 8:59pm on the next day (looking
- * up to two weeks ahead) that doesn't already have a post scheduled. If
- * every day in that window already has one, falls back to tomorrow.
- */
-function pickScheduledTime(occupiedDays) {
-	const MAX_LOOKAHEAD_DAYS = 14;
-	let chosenDate;
-
-	for (let offset = 1; offset <= MAX_LOOKAHEAD_DAYS; offset++) {
-		const candidate = new Date();
-		candidate.setUTCDate(candidate.getUTCDate() + offset);
-
-		if (!occupiedDays.has(candidate.toISOString().slice(0, 10))) {
-			chosenDate = candidate;
-			break;
-		}
-	}
-
-	if (!chosenDate) {
-		chosenDate = new Date();
-		chosenDate.setUTCDate(chosenDate.getUTCDate() + 1);
-	}
-
-	const hour = 18 + Math.floor(Math.random() * 3); // 18, 19 or 20 (6pm-8:59pm)
-	const minute = Math.floor(Math.random() * 60);
-	chosenDate.setUTCHours(hour, minute, 0, 0);
-
-	return chosenDate;
-}
 
 exports.handler = async (event, context) => {
 
@@ -341,18 +280,19 @@ exports.handler = async (event, context) => {
 	/**
 	 * Queue a post on Buffer (e.g. for Instagram) for the new review.
 	 * Only attempted if the commit succeeded and BUFFER_ACCESS_TOKEN and
-	 * BUFFER_PROFILE_IDS are configured. Failures here are non-fatal -
+	 * BUFFER_CHANNEL_IDS are configured. Failures here are non-fatal -
 	 * the beer has already been committed by this point.
 	 */
 	const bufferResult = { configured: false, success: null, message: null };
 
-	if (commitResult.success && process.env.BUFFER_ACCESS_TOKEN && process.env.BUFFER_PROFILE_IDS) {
+	if (commitResult.success && process.env.BUFFER_ACCESS_TOKEN && process.env.BUFFER_CHANNEL_IDS) {
 		bufferResult.configured = true;
 
 		try {
-			const profileIds = process.env.BUFFER_PROFILE_IDS.split(',').map(id => id.trim()).filter(Boolean);
+			const channelIds = process.env.BUFFER_CHANNEL_IDS.split(',').map(id => id.trim()).filter(Boolean);
+			const accessToken = process.env.BUFFER_ACCESS_TOKEN;
 
-			const occupiedDays = await getOccupiedDays(profileIds, process.env.BUFFER_ACCESS_TOKEN);
+			const occupiedDays = await getOccupiedDays(channelIds, accessToken);
 			const scheduledAt = pickScheduledTime(occupiedDays);
 
 			const caption = [
@@ -362,48 +302,50 @@ exports.handler = async (event, context) => {
 				`🏅 ${review.rating}/10`
 			].join('\n');
 
-			const body = new URLSearchParams();
-			body.append('access_token', process.env.BUFFER_ACCESS_TOKEN);
-			body.append('text', caption);
-			body.append('media[photo]', originalImage);
-			body.append('scheduled_at', Math.floor(scheduledAt.getTime() / 1000));
-			for (const profileId of profileIds) {
-				body.append('profile_ids[]', profileId);
+			// createPost takes a single channel per call, so post to each
+			// configured channel separately and collect whatever succeeds.
+			const postIds = [];
+			const channelErrors = [];
+
+			for (const channelId of channelIds) {
+				try {
+					const post = await createBufferPost({
+						channelId,
+						text: caption,
+						imageUrl: originalImage,
+						dueAt: scheduledAt,
+						accessToken,
+					});
+					postIds.push(post.id);
+				} catch (e) {
+					channelErrors.push(`${channelId}: ${e.message}`);
+				}
 			}
 
-			const bufferResponse = await fetch('https://api.bufferapp.com/1/updates/create.json', {
-				method: 'POST',
-				headers: { 'content-type': 'application/x-www-form-urlencoded' },
-				body: body.toString(),
-			});
+			if (postIds.length) {
+				bufferResult.success = channelErrors.length === 0;
+				bufferResult.message = channelErrors.length
+					? `Scheduled for ${scheduledAt.toUTCString()} on ${postIds.length}/${channelIds.length} channel(s). Failures: ${channelErrors.join('; ')}`
+					: `Scheduled for ${scheduledAt.toUTCString()}`;
 
-			const bufferBody = await bufferResponse.text();
-
-			if (bufferResponse.ok) {
-				bufferResult.success = true;
-				bufferResult.message = `Scheduled for ${scheduledAt.toUTCString()}`;
-
-				// Track the created update(s) so resolve-instagram-links can
+				// Track the created post(s) so resolve-instagram-links can
 				// later look up the live post URL once Buffer sends it, and
 				// link it back onto this beer. Non-fatal if it fails - it
 				// just means this one beer won't get auto-linked.
 				try {
-					const updateIds = (JSON.parse(bufferBody).updates || []).map(u => u.id).filter(Boolean);
-					if (updateIds.length) {
-						await addPending({
-							permalink: review.permalink,
-							filePath: reviewFilePath,
-							buffer_update_ids: updateIds,
-							addedAt: new Date().toISOString(),
-						});
-					}
+					await addPending({
+						permalink: review.permalink,
+						filePath: reviewFilePath,
+						buffer_post_ids: postIds,
+						addedAt: new Date().toISOString(),
+					});
 				} catch (e) {
 					console.error('Failed to queue pending Instagram link lookup:', e.message);
 				}
 			} else {
 				bufferResult.success = false;
-				bufferResult.message = `${bufferResponse.status}: ${bufferBody}`;
-				console.error('Buffer API error:', bufferResponse.status, bufferBody);
+				bufferResult.message = channelErrors.join('; ');
+				console.error('Buffer API error(s):', bufferResult.message);
 			}
 		} catch (e) {
 			bufferResult.success = false;
