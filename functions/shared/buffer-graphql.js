@@ -58,6 +58,14 @@ async function introspectRelevantTypes(accessToken) {
 			instagramMetadata: __type(name: "InstagramPostMetadataInput") {
 				inputFields { name type { name kind ofType { name kind } } }
 			}
+			queryFields: __schema {
+				queryType {
+					fields { name args { name type { name kind ofType { name kind ofType { name kind } } } } }
+				}
+			}
+			postStatus: __type(name: "PostStatus") {
+				enumValues { name }
+			}
 		}
 	`;
 
@@ -128,11 +136,15 @@ async function createBufferPost({ channelId, text, imageUrl, dueAt, accessToken 
 /**
  * Look up each channel's scheduled posts and return the set of days
  * (YYYY-MM-DD, UTC) that already have at least one post due, so a new
- * post can avoid piling up on the same day. Best-effort - a channel
- * that fails to load just contributes nothing.
+ * post can avoid piling up on the same day. Best-effort per channel - one
+ * that fails to load just contributes nothing to occupiedDays - but every
+ * failure is collected and returned too, so a caller can surface "this
+ * check didn't actually run" instead of silently scheduling as if no
+ * days were occupied.
  */
 async function getOccupiedDays(channelIds, accessToken) {
 	const occupiedDays = new Set();
+	const failures = [];
 
 	await Promise.all(channelIds.map(async (channelId) => {
 		try {
@@ -151,10 +163,11 @@ async function getOccupiedDays(channelIds, accessToken) {
 			}
 		} catch (e) {
 			console.error(`Failed to fetch scheduled posts for channel ${channelId}:`, e.message);
+			failures.push(`${channelId}: ${e.message}`);
 		}
 	}));
 
-	return occupiedDays;
+	return { occupiedDays, failures };
 }
 
 /**
