@@ -5,11 +5,11 @@ sitemapIgnore: true
 [
 	{% for brewery in collections.brewery %}
 	{
-		"title": "{{ brewery.data.title }}",
+		"title": {{ brewery.data.title | dump | safe }},
 		"beers": [
 			{% for beer in brewery.data.beers %}
 			{
-				"title": "{{ beer.data.title }}",
+				"title": {{ beer.data.title | dump | safe }},
 				"rating": "{{ beer.data.rating }}",
 				"date": "{{ beer.data.date | dateLong }}",
 				"slug": "{{ beer.url }}"
