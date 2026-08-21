@@ -23,8 +23,17 @@ async function postReviewToBuffer({ title, breweryNames, rating, reviewText, ima
 		const channelIds = process.env.BUFFER_CHANNEL_IDS.split(',').map(id => id.trim()).filter(Boolean);
 		const accessToken = process.env.BUFFER_ACCESS_TOKEN;
 
-		const occupiedDays = await getOccupiedDays(channelIds, accessToken);
+		const { occupiedDays, failures: occupiedDaysFailures } = await getOccupiedDays(channelIds, accessToken);
 		const scheduledAt = pickScheduledTime(occupiedDays);
+
+		// If every channel's lookup failed, occupiedDays is empty not because
+		// nothing's scheduled but because we couldn't check - flag that so
+		// it's visible in the report instead of quietly always landing on
+		// "tomorrow" as if the day were free.
+		const occupiedDaysCheckFailed = occupiedDaysFailures.length > 0 && occupiedDaysFailures.length === channelIds.length;
+		const occupiedDaysWarning = occupiedDaysCheckFailed
+			? `Warning: could not check for already-scheduled posts (${occupiedDaysFailures.join('; ')}) - scheduled anyway without avoiding a busy day. `
+			: '';
 
 		const caption = [
 			`🍺 ${title}`,
@@ -55,9 +64,9 @@ async function postReviewToBuffer({ title, breweryNames, rating, reviewText, ima
 
 		if (postIds.length) {
 			result.success = channelErrors.length === 0;
-			result.message = channelErrors.length
+			result.message = occupiedDaysWarning + (channelErrors.length
 				? `Scheduled for ${scheduledAt.toUTCString()} on ${postIds.length}/${channelIds.length} channel(s). Failures: ${channelErrors.join('; ')}`
-				: `Scheduled for ${scheduledAt.toUTCString()}`;
+				: `Scheduled for ${scheduledAt.toUTCString()}`);
 
 			// Track the created post(s) so resolve-instagram-links can later
 			// look up the live post URL once Buffer sends it, and link it
