@@ -49,17 +49,17 @@ async function introspectRelevantTypes(accessToken) {
 			createPostInput: __type(name: "CreatePostInput") {
 				inputFields { name type { name kind ofType { name kind ofType { name kind } } } }
 			}
-			postInputMetaData: __type(name: "PostInputMetaData") {
-				inputFields { name type { name kind ofType { name kind } } }
-			}
-			instagramMetadata: __type(name: "InstagramPostMetadataInput") {
-				inputFields { name type { name kind ofType { name kind } } }
-			}
-			postsInput: __type(name: "PostsInput") {
+			postsFiltersInput: __type(name: "PostsFiltersInput") {
 				inputFields { name type { name kind ofType { name kind ofType { name kind } } } }
 			}
 			postStatus: __type(name: "PostStatus") {
 				enumValues { name }
+			}
+			channelType: __type(name: "Channel") {
+				fields { name type { name kind ofType { name kind } } }
+			}
+			queryFieldNames: __schema {
+				queryType { fields { name } }
 			}
 		}
 	`;
