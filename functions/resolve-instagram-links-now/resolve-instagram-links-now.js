@@ -8,25 +8,19 @@
 // scheduled function - requesting its URL directly is rejected by Netlify
 // itself (403), regardless of anything in this repo. This is a separate,
 // unscheduled function running the identical shared logic, so it stays
-// reachable via its own URL. Gated by ACCESS_TOKEN (same convention as
-// retry-buffer-post.js) since, unlike the scheduled run, this endpoint is
-// open to being hit by anyone who finds it.
+// reachable via its own URL. No token needed (unlike retry-buffer-post.js)
+// - it takes no parameters and only checks the fixed, internally-populated
+// queue against Buffer, writing back a link Buffer has already confirmed;
+// there's no user-supplied input to authenticate and nothing destructive
+// to gate.
 //
 // Usage:
-//   /.netlify/functions/resolve-instagram-links-now?token=XXXX
+//   /.netlify/functions/resolve-instagram-links-now
 
 const { resolvePendingInstagramLinks } = require('../shared/resolve-instagram-links');
 const { jsonResponse } = require('../shared/json-response');
 
-require('dotenv').config();
-
-exports.handler = async (event) => {
-	const data = event.queryStringParameters || {};
-
-	if (!data.token || data.token !== process.env.ACCESS_TOKEN) {
-		return jsonResponse(400, { status: 'error', message: 'Missing or invalid token' });
-	}
-
+exports.handler = async () => {
 	const result = await resolvePendingInstagramLinks();
 	const { statusCode, ...body } = result;
 	return jsonResponse(statusCode || 200, body);
