@@ -1,7 +1,6 @@
 ---
 {
   "canonical": "https://untappd.com/user/mikestreety/checkin/1595564210",
-  "untappd_link": "https://untappd.com/b/parallel-harlequin-and-simcoe-atom/6763197",
   "serving": "Can",
   "rating": 8,
   "purchased": "shop/beer-no-evil/",
@@ -12,7 +11,10 @@
     "brewery/atom/"
   ],
   "permalink": "beer/parallel-harlequin-simcoe-atom/",
-  "review": "A nice-enough DDH pale ale. Dry finish with plenty of flavour swimming around."
+  "review": "A nice-enough DDH pale ale. Dry finish with plenty of flavour swimming around.",
+  "links": {
+    "untappd": "https://untappd.com/b/parallel-harlequin-and-simcoe-atom/6763197"
+  }
 }
 ---
 

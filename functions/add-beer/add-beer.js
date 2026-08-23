@@ -201,6 +201,14 @@ exports.handler = async (event, context) => {
 	delete review.image;
 	delete review.date;
 
+	// untappd.js sets untappd_link flat - nest it under `links` (alongside
+	// `instagram`, added later by resolve-instagram-links.js once the
+	// Buffer post goes live, and any other social links added in future).
+	if (review.untappd_link) {
+		review.links = { untappd: review.untappd_link };
+		delete review.untappd_link;
+	}
+
 	const reviewFilePath = `app/content/beer/${slugify(`${date} ${review.title}`)}.md`;
 
 	commitFiles.push(

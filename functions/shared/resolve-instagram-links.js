@@ -109,7 +109,7 @@ async function resolvePendingInstagramLinks() {
 				).toString('utf8');
 
 			const parsed = matter(fileContent, { language: 'json' });
-			parsed.data.instagram = resolvedUrl;
+			parsed.data.links = { ...parsed.data.links, instagram: resolvedUrl };
 
 			commitFiles.push(
 				createCommitFile(entry.filePath, matter.stringify(parsed.content, parsed.data, { language: 'json', spaces: 4 }))
