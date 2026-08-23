@@ -9,7 +9,6 @@ sitemapIgnore: true
 		"title": "{{ beer.data.title | safe }}",
 		"number": "{{ beer.data.number }}",
 		"rating": "{{ beer.data.rating }}",
-		"canonical": "{{ beer.data.canonical }}",
 		{% if beer.data.serving %}
 		"serving": "{{ beer.data.serving }}",
 		{% endif %}

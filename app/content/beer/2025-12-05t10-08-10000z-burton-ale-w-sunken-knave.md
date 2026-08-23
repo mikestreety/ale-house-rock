@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1533016940",
   "title": "Burton Ale w/ Sunken Knave",
   "serving": "Can",
   "rating": 6,

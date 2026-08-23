@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1550090866",
   "serving": "Bottle",
   "rating": 8,
   "purchased": "shop/brooklands-museum/",

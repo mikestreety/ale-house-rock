@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1505054053",
   "title": "Neal Gets Soundwave",
   "serving": "Can",
   "rating": 8,

@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1529543206",
   "title": "New England India Pale Ale",
   "serving": "Bottle",
   "rating": 9,

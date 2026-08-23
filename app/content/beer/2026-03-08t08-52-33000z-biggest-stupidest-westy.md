@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1554258546",
   "serving": "Can",
   "rating": 9,
   "title": "Biggest Stupidest Westy",

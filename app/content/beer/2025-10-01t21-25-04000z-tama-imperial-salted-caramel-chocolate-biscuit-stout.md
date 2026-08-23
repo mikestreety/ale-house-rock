@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1517710835",
   "title": "Tama - Imperial Salted Caramel & Chocolate Biscuit Stout",
   "serving": "Can",
   "rating": 9,

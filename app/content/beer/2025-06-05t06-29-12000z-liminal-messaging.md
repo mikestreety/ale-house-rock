@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1484895070",
   "title": "Liminal Messaging",
   "serving": "Can",
   "rating": 9,

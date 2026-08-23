@@ -23,6 +23,7 @@ const { execSync } = require('child_process');
 const { createCommitFile, createGithubCommit } = require('../add-beer/file-handler');
 const { getPending, updatePending } = require('./pending-instagram-store');
 const { getPostStatus } = require('./buffer-graphql');
+const { stringifyBeer } = require('./beer-frontmatter');
 
 require('dotenv').config();
 
@@ -112,7 +113,7 @@ async function resolvePendingInstagramLinks() {
 			parsed.data.links = { ...parsed.data.links, instagram: resolvedUrl };
 
 			commitFiles.push(
-				createCommitFile(entry.filePath, matter.stringify(parsed.content, parsed.data, { language: 'json', spaces: 4 }))
+				createCommitFile(entry.filePath, stringifyBeer(parsed.content, parsed.data))
 			);
 
 			results.push({ permalink: entry.permalink, status: 'resolved', instagram: resolvedUrl });

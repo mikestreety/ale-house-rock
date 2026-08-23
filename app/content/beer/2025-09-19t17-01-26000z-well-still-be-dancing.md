@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1514585113",
   "title": "We'll Still Be Dancing",
   "serving": "Can",
   "rating": 6,

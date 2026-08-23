@@ -31,9 +31,11 @@
 			}
 		}
 
-		// Beer canonicals
+		// Beer canonicals - keyed by the review's own link (whichever
+		// platform it's on), since there's no standalone canonical field
 		for(let item of this.ctx.collections.beer) {
-			output.beers[item.data.canonical] = item.url;
+			let links = item.data.links || {};
+			output.beers[links.untappd || links.instagram] = item.url;
 		}
 
 		return output;

@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1515523875",
   "title": "\"Rickey\" Raspberry and Lime Sour",
   "serving": "Can",
   "rating": 5,

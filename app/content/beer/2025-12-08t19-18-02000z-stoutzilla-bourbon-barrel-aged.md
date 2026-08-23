@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1534080086",
   "title": "Stoutzilla Bourbon Barrel Aged",
   "serving": "Can",
   "rating": 5,

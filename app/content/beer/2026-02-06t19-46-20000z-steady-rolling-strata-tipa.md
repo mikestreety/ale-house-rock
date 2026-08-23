@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1547814898",
   "serving": "Can",
   "rating": 9,
   "purchased": "shop/palate-bottle-shop/",

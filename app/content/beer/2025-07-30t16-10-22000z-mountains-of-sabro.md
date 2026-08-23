@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1500819993",
   "title": "Mountains of Sabro",
   "serving": "Can",
   "rating": 9,

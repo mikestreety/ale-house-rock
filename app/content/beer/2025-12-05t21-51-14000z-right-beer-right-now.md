@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1533225308",
   "title": "Right Beer, Right Now",
   "serving": "Can",
   "rating": 5,

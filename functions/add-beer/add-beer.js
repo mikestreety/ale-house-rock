@@ -1,5 +1,4 @@
 const fetch = require('node-fetch');
-const matter = require('gray-matter');
 const { Octokit } = require('@octokit/rest');
 const fs = require('fs');
 const path = require('path');
@@ -8,6 +7,7 @@ const { execSync } = require('child_process');
 const slugify = require('./slugify');
 const { handleBrewery, handleShop, handleStyle, fetchImageBuffer, processImage, createCommitFile, createGithubCommit } = require('./file-handler');
 const { postReviewToBuffer } = require('../shared/post-to-buffer');
+const { stringifyBeer } = require('../shared/beer-frontmatter');
 
 require('dotenv').config();
 
@@ -218,12 +218,18 @@ exports.handler = async (event, context) => {
 		review.links = { ...review.links, instagram: review.canonical };
 	}
 
+	// canonical itself isn't persisted - it's only the raw source URL used
+	// above to populate `links`, and to dedup against on the way in (see
+	// beerCanonicals below, matched against the same URLs via `links` in
+	// aliases.json.njk).
+	delete review.canonical;
+
 	const reviewFilePath = `app/content/beer/${slugify(`${date} ${review.title}`)}.md`;
 
 	commitFiles.push(
 		createCommitFile(
 			reviewFilePath,
-			matter.stringify('', review, { language: 'json', spaces: 4 })
+			stringifyBeer('', review)
 		)
 	);
 

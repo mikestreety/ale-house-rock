@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1541705790",
   "serving": "Can",
   "rating": 9,
   "purchased": "shop/beer-no-evil/",

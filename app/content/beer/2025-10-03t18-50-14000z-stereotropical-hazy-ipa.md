@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1518133005",
   "title": "Stereotropical Hazy IPA",
   "serving": "Can",
   "rating": 5,

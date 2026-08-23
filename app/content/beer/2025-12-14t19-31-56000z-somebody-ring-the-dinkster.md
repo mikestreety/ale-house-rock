@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1535566452",
   "title": "Somebody Ring the Dinkster?",
   "serving": "Can",
   "rating": 9,
