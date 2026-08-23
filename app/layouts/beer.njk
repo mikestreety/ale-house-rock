@@ -42,7 +42,13 @@ layout: default.njk
 
 	{% for tag in tags %}{% include 'tag.njk' %}{% endfor %}
 
-	<p><small><a href="{{ canonical }}">View original post</a></small></p>
+	{% if links.untappd or links.instagram %}
+	<p><small>
+		{% if links.untappd %}<a href="{{ links.untappd }}">Untappd</a>{% endif %}
+		{% if links.untappd and links.instagram %} / {% endif %}
+		{% if links.instagram %}<a href="{{ links.instagram }}">Instagram</a>{% endif %}
+	</small></p>
+	{% endif %}
 
 	{% if breweries and breweries.length > 0 %}
 	<h2>{{ "Brewery" if breweries.length === 1 else "Breweries" }}</h2>

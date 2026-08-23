@@ -12,7 +12,6 @@ sitemapIgnore: true
 		"brewery": {{ beer.data.brewedBy | dump | safe }},
 		"rating": "{{ beer.data.rating }}",
 		"filename": "{{ beer.page.inputPath }}",
-		"canonical": "{{ beer.data.canonical }}",
 		{% if beer.data.abv %}"abv": "{{ beer.data.abv }}",{% endif %}
 		{% if beer.data.style %}"style": {{ beer.data.style | dump | safe }},{% endif %}
 		{% if beer.data.serving %}"serving": "{{ beer.data.serving }}",{% endif %}

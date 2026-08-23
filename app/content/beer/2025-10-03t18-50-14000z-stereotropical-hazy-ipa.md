@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1518133005",
   "title": "Stereotropical Hazy IPA",
   "serving": "Can",
   "rating": 5,
@@ -13,6 +12,9 @@
   "permalink": "beer/stereotropical-hazy-ipa-gweilo-beer/",
   "review": "This had all the hallmarks of a good hazy IPA but it just missed the mark. It tasted a bit too fake and not bitter enough for a beer.",
   "links": {
+    "untappd": "https://untappd.com/user/mikestreety/checkin/1518133005"
+  },
+  "meta": {
     "untappd": "https://untappd.com/b/stereotropical-hazy-ipa-gweilo-beer/5927369"
   }
 }

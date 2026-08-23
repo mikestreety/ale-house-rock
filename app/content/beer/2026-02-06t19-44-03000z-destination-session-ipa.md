@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1547813792",
   "serving": "Can",
   "rating": 7,
   "purchased": "shop/beer-no-evil/",
@@ -13,6 +12,9 @@
   "permalink": "beer/destination-session-ipa-burning-sky/",
   "review": "An easy drinking beer. Light and subtle and aptly named as I could easily session this in the sun",
   "links": {
+    "untappd": "https://untappd.com/user/mikestreety/checkin/1547813792"
+  },
+  "meta": {
     "untappd": "https://untappd.com/b/destination-session-ipa-burning-sky-brewery/6545155"
   }
 }

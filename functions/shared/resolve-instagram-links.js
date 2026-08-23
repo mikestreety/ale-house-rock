@@ -5,7 +5,7 @@
 // Drains the pending-instagram-links queue (populated by add-beer.js
 // whenever it schedules a Buffer post) - for each entry, asks Buffer
 // whether that post has actually gone out yet, and if so, links it back
-// onto the corresponding beer's `instagram` field via a single commit.
+// onto the corresponding beer's `links.instagram` field via a single commit.
 //
 // NOTE: the live-post-URL field name is unverified (Buffer's GraphQL
 // Post type isn't documented in detail anywhere this environment could
@@ -23,6 +23,7 @@ const { execSync } = require('child_process');
 const { createCommitFile, createGithubCommit } = require('../add-beer/file-handler');
 const { getPending, updatePending } = require('./pending-instagram-store');
 const { getPostStatus } = require('./buffer-graphql');
+const { stringifyBeer } = require('./beer-frontmatter');
 
 require('dotenv').config();
 
@@ -112,7 +113,7 @@ async function resolvePendingInstagramLinks() {
 			parsed.data.links = { ...parsed.data.links, instagram: resolvedUrl };
 
 			commitFiles.push(
-				createCommitFile(entry.filePath, matter.stringify(parsed.content, parsed.data, { language: 'json', spaces: 4 }))
+				createCommitFile(entry.filePath, stringifyBeer(parsed.content, parsed.data))
 			);
 
 			results.push({ permalink: entry.permalink, status: 'resolved', instagram: resolvedUrl });

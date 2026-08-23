@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1534080086",
   "title": "Stoutzilla Bourbon Barrel Aged",
   "serving": "Can",
   "rating": 5,
@@ -13,6 +12,9 @@
   "permalink": "beer/stoutzilla-bourbon-barrel-aged-unbarred-brewery/",
   "review": "Beer advent day 7: this was an absolute powerhouse of a stout. Definitely a dessert beer and one I won't be revisiting in a hurry. Full of chocolate and a whole load of sweetness, you couldn't taste the 11% until you stood up. A bit too sticky for me",
   "links": {
+    "untappd": "https://untappd.com/user/mikestreety/checkin/1534080086"
+  },
+  "meta": {
     "untappd": "https://untappd.com/b/stoutzilla-bourbon-barrel-aged-unbarred-brewery/5587489"
   }
 }

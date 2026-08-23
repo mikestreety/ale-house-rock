@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1552845739",
   "serving": "Can",
   "rating": 6,
   "purchased": "shop/beer-no-evil/",
@@ -13,6 +12,9 @@
   "permalink": "beer/sunset-oregon-trail-elusive-brewing/",
   "review": "Didn't enjoy this one as much as the other Oregon trail beers. Felt like the west coast didn't suit the depth expected from a red IPA",
   "links": {
+    "untappd": "https://untappd.com/user/mikestreety/checkin/1552845739"
+  },
+  "meta": {
     "untappd": "https://untappd.com/b/sunset-oregon-trail-elusive-brewing/5479272"
   }
 }

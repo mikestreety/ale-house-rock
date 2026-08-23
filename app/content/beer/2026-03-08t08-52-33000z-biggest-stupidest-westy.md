@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1554258546",
   "serving": "Can",
   "rating": 9,
   "title": "Biggest Stupidest Westy",
@@ -12,6 +11,9 @@
   "permalink": "beer/biggest-stupidest-westy-verdant-brewing-company/",
   "review": "This tasted like a very nice West Coast Pale - it just turned out to be twice the strength. Very refreshing and crisp and not the type of DIPA I was first expecting.",
   "links": {
+    "untappd": "https://untappd.com/user/mikestreety/checkin/1554258546"
+  },
+  "meta": {
     "untappd": "https://untappd.com/b/biggest-stupidest-westy-verdant-brewing-co/6349815"
   }
 }

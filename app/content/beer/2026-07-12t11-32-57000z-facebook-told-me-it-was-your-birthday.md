@@ -1,6 +1,5 @@
----
+---json
 {
-  "canonical": "https://untappd.com/user/mikestreety/checkin/1585170864",
   "serving": "Can",
   "rating": 9,
   "purchased": "shop/beer-no-evil/",
@@ -13,6 +12,9 @@
   "permalink": "beer/facebook-told-me-it-was-your-birthday-pretty-decent-beer-co/",
   "review": "A light and smooth DDH pale which went down well with the first half of the football. Lots of subtle flavours without being too overbearing",
   "links": {
+    "untappd": "https://untappd.com/user/mikestreety/checkin/1585170864"
+  },
+  "meta": {
     "untappd": "https://untappd.com/b/facebook-told-me-it-was-your-birthday-pretty-decent-beer-co/6742594"
   }
 }

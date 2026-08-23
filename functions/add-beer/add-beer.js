@@ -1,5 +1,4 @@
 const fetch = require('node-fetch');
-const matter = require('gray-matter');
 const { Octokit } = require('@octokit/rest');
 const fs = require('fs');
 const path = require('path');
@@ -8,6 +7,7 @@ const { execSync } = require('child_process');
 const slugify = require('./slugify');
 const { handleBrewery, handleShop, handleStyle, fetchImageBuffer, processImage, createCommitFile, createGithubCommit } = require('./file-handler');
 const { postReviewToBuffer } = require('../shared/post-to-buffer');
+const { stringifyBeer } = require('../shared/beer-frontmatter');
 
 require('dotenv').config();
 
@@ -201,20 +201,35 @@ exports.handler = async (event, context) => {
 	delete review.image;
 	delete review.date;
 
-	// untappd.js sets untappd_link flat - nest it under `links` (alongside
-	// `instagram`, added later by resolve-instagram-links.js once the
-	// Buffer post goes live, and any other social links added in future).
+	// untappd.js sets untappd_link flat - it's a link to the beer's
+	// generic Untappd page, not to this review, so it goes under `meta`
+	// rather than `links`. `links` is for the review itself: whichever
+	// platform `canonical` points at (this import flow always produces an
+	// Untappd checkin canonical), plus `instagram` once
+	// resolve-instagram-links.js resolves the Buffer post that went live.
 	if (review.untappd_link) {
-		review.links = { untappd: review.untappd_link };
+		review.meta = { untappd: review.untappd_link };
 		delete review.untappd_link;
 	}
+
+	if (review.canonical && /untappd\.com/i.test(review.canonical)) {
+		review.links = { ...review.links, untappd: review.canonical };
+	} else if (review.canonical && /instagram\.com/i.test(review.canonical)) {
+		review.links = { ...review.links, instagram: review.canonical };
+	}
+
+	// canonical itself isn't persisted - it's only the raw source URL used
+	// above to populate `links`, and to dedup against on the way in (see
+	// beerCanonicals below, matched against the same URLs via `links` in
+	// aliases.json.njk).
+	delete review.canonical;
 
 	const reviewFilePath = `app/content/beer/${slugify(`${date} ${review.title}`)}.md`;
 
 	commitFiles.push(
 		createCommitFile(
 			reviewFilePath,
-			matter.stringify('', review, { language: 'json', spaces: 4 })
+			stringifyBeer('', review)
 		)
 	);
 
