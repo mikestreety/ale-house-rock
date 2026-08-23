@@ -13,6 +13,9 @@
   "permalink": "beer/liminal-messaging-deya-brewing-company/",
   "review": "How do Deya constantly smash it out of the park? Light, fluffy, bang full of fruits - this was a top-notch IPA",
   "links": {
+    "untappd": "https://untappd.com/user/mikestreety/checkin/1484895070"
+  },
+  "meta": {
     "untappd": "https://untappd.com/b/liminal-messaging-deya-brewing-company/6219916"
   }
 }

@@ -13,6 +13,9 @@
   "permalink": "beer/mountains-of-sabro-weekend-project/",
   "review": "This was lush. A nicely balanced NEIPA from a new (to me) brewery. Will definitely be keeping an eye out for this in the future.",
   "links": {
+    "untappd": "https://untappd.com/user/mikestreety/checkin/1500819993"
+  },
+  "meta": {
     "untappd": "https://untappd.com/b/mountains-of-sabro-weekend-project/6245408"
   }
 }

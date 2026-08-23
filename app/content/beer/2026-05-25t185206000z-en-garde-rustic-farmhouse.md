@@ -13,6 +13,9 @@
   "permalink": "beer/en-garde-rustic-farmhouse-iron-pier/",
   "review": "This was pretty crisp and chill as a beer - went well with a warm summer's evening, that's for sure. Belgian style, without the hefty percentage",
   "links": {
+    "untappd": "https://untappd.com/user/mikestreety/checkin/1573137464"
+  },
+  "meta": {
     "untappd": "https://untappd.com/b/en-garde-rustic-farmhouse-iron-pier/6552689"
   }
 }

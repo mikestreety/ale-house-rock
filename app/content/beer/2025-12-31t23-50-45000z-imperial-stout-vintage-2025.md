@@ -13,6 +13,9 @@
   "permalink": "beer/imperial-stout-vintage-2025-indie-rabble/",
   "review": "Beer advent 24: What a way to end the advent with this stonker of a beer. Strong, rich and in your face. Had a bitter aftertaste and whiskey notes, but it was a bit too bitter and raw for full enjoyment",
   "links": {
+    "untappd": "https://untappd.com/user/mikestreety/checkin/1540705881"
+  },
+  "meta": {
     "untappd": "https://untappd.com/b/imperial-stout-vintage-2025-indie-rabble/6496043"
   }
 }

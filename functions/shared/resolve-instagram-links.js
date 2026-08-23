@@ -5,7 +5,7 @@
 // Drains the pending-instagram-links queue (populated by add-beer.js
 // whenever it schedules a Buffer post) - for each entry, asks Buffer
 // whether that post has actually gone out yet, and if so, links it back
-// onto the corresponding beer's `instagram` field via a single commit.
+// onto the corresponding beer's `links.instagram` field via a single commit.
 //
 // NOTE: the live-post-URL field name is unverified (Buffer's GraphQL
 // Post type isn't documented in detail anywhere this environment could

@@ -13,6 +13,9 @@
   "permalink": "beer/tides-will-bring-me-back-to-you-cold-shelter-brew-co/",
   "review": "This was a lovely IPA. Smooth and smashed full of flavour",
   "links": {
+    "untappd": "https://untappd.com/user/mikestreety/checkin/1584983570"
+  },
+  "meta": {
     "untappd": "https://untappd.com/b/tides-will-bring-me-back-to-you-cold-shelter-brew-co/6749882"
   }
 }

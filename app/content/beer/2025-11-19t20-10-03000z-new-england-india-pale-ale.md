@@ -14,6 +14,9 @@
   "permalink": "beer/new-england-india-pale-ale-the-kernel-brewery-stigbergets-bryggeri/",
   "review": "This was one of the nicest \"The Kernel\" beers I've had. It was a crisp IPA with a hint of sweetness. Very much enjoyed this one.",
   "links": {
+    "untappd": "https://untappd.com/user/mikestreety/checkin/1529543206"
+  },
+  "meta": {
     "untappd": "https://untappd.com/b/new-england-india-pale-ale-the-kernel-brewery/6399040"
   }
 }

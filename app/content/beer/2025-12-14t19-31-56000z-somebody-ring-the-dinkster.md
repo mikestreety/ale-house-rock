@@ -14,6 +14,9 @@
   "permalink": "beer/somebody-ring-the-dinkster-sureshot-brewing-silent-brew-co/",
   "review": "Beer advent calendar day 13: Sureshot with the whole shot on this West Coast IPA. Living up to its name and getting this beer bang on, this hoppy number was fresh and crisp",
   "links": {
+    "untappd": "https://untappd.com/user/mikestreety/checkin/1535566452"
+  },
+  "meta": {
     "untappd": "https://untappd.com/b/somebody-ring-the-dinkster-sureshot-brewing/6493796"
   }
 }

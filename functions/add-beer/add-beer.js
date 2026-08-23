@@ -201,12 +201,21 @@ exports.handler = async (event, context) => {
 	delete review.image;
 	delete review.date;
 
-	// untappd.js sets untappd_link flat - nest it under `links` (alongside
-	// `instagram`, added later by resolve-instagram-links.js once the
-	// Buffer post goes live, and any other social links added in future).
+	// untappd.js sets untappd_link flat - it's a link to the beer's
+	// generic Untappd page, not to this review, so it goes under `meta`
+	// rather than `links`. `links` is for the review itself: whichever
+	// platform `canonical` points at (this import flow always produces an
+	// Untappd checkin canonical), plus `instagram` once
+	// resolve-instagram-links.js resolves the Buffer post that went live.
 	if (review.untappd_link) {
-		review.links = { untappd: review.untappd_link };
+		review.meta = { untappd: review.untappd_link };
 		delete review.untappd_link;
+	}
+
+	if (review.canonical && /untappd\.com/i.test(review.canonical)) {
+		review.links = { ...review.links, untappd: review.canonical };
+	} else if (review.canonical && /instagram\.com/i.test(review.canonical)) {
+		review.links = { ...review.links, instagram: review.canonical };
 	}
 
 	const reviewFilePath = `app/content/beer/${slugify(`${date} ${review.title}`)}.md`;

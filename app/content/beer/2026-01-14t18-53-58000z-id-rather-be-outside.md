@@ -13,6 +13,9 @@
   "permalink": "beer/id-rather-be-outside-weekend-project/",
   "review": "The first sip of this tasted pretty good, but it seemed to go a little downhill after that. The aftertaste was a bit fake and it was more alcohol than fruit.",
   "links": {
+    "untappd": "https://untappd.com/user/mikestreety/checkin/1543403378"
+  },
+  "meta": {
     "untappd": "https://untappd.com/b/i-d-rather-be-outside-weekend-project/6359480"
   }
 }
