@@ -224,6 +224,34 @@ function pickScheduledTime(occupiedDays) {
 	return chosenDate;
 }
 
+/**
+ * Fetch posts (any status - scheduled or already sent) across the given
+ * channels, newest first. Used by queue-buffer-post.js to find a post
+ * that made it into Buffer successfully but never made it into the local
+ * pending-links queue (e.g. the queuing call itself failed, as it always
+ * did while functions/shared/pending-instagram-store.js was broken).
+ */
+async function listPosts(channelIds, accessToken) {
+	const organizationId = await getOrganizationId(channelIds[0], accessToken);
+
+	if (!organizationId) {
+		throw new Error(`Could not resolve an organizationId from channel ${channelIds[0]}`);
+	}
+
+	const query = `
+		query ListPosts($organizationId: OrganizationId!, $channelIds: [ChannelId!]) {
+			posts(input: {
+				organizationId: $organizationId,
+				filter: { channelIds: $channelIds }
+			}) {
+				edges { node { id text status dueAt sentAt } }
+			}
+		}
+	`;
+	const data = await bufferRequest(query, { organizationId, channelIds }, accessToken);
+	return (data?.posts?.edges || []).map(edge => edge.node);
+}
+
 let cachedLinkFieldNames = null;
 
 /**
@@ -290,4 +318,5 @@ module.exports = {
 	getOccupiedDays,
 	pickScheduledTime,
 	getPostStatus,
+	listPosts,
 };

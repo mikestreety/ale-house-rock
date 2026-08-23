@@ -42,3 +42,19 @@ seoTitle: Add a beer
 	</div>
 	<button type="submit" class="button">Retry</button>
 </form>
+
+<h2>Queue an existing Buffer post</h2>
+
+<p>Finds a beer's post directly in Buffer (matching by caption text) and adds it to the pending-instagram-links queue, for a beer whose post was scheduled but never got queued for linking.</p>
+
+<form class="form" method="get" action="/.netlify/functions/queue-buffer-post">
+	<div class="field">
+		<label for="queue-token">Token</label>
+		<input type="text" name="token" id="queue-token">
+	</div>
+	<div class="field">
+		<label for="queue-permalink">Permalink</label>
+		<input type="text" name="permalink" id="queue-permalink" placeholder="beer/passing-cloud-floc/">
+	</div>
+	<button type="submit" class="button">Queue</button>
+</form>
