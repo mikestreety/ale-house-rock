@@ -53,11 +53,12 @@ export async function handler(event) {
 	const items = [];
 	$('item').each((i, el) => {
 		const link = normaliseCheckinLink($(el).find('link').first().text().trim());
+		const title = $(el).find('title').first().text().trim();
 		const pubDateText = $(el).find('pubDate').first().text().trim();
 		const pubDate = pubDateText ? new Date(pubDateText) : null;
 
 		if (link && pubDate && !isNaN(pubDate)) {
-			items.push({ link, pubDate });
+			items.push({ link, title, pubDate });
 		}
 	});
 
@@ -80,9 +81,16 @@ export async function handler(event) {
 	const newItems = items.filter(item => !existingCanonicals.has(item.link));
 
 	if (!newItems.length) {
+		const latest = items.reduce((a, b) => (b.pubDate > a.pubDate ? b : a));
+
 		return jsonResponse(200, {
 			status: 'ok',
 			message: 'No new reviews to import - everything in the feed is already on the site',
+			latestFeedItem: {
+				title: latest.title,
+				link: latest.link,
+				pubDate: latest.pubDate.toISOString(),
+			},
 		});
 	}
 
