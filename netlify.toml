@@ -6,12 +6,11 @@
 [functions."resolve-instagram-links"]
 	schedule = "@weekly"
 
-# Runs at 12:00, 16:00, 18:00, 21:00 and 23:00 UK time. Netlify schedules
-# run in UTC with a fixed cron expression (no DST awareness), so these
-# hours are the current BST (UTC+1) offset - shift back by one hour once
-# the UK clocks fall back to GMT in late October.
+# Runs at 12:00, 16:00, 18:00, 21:00 and 23:00 UTC (fixed - not adjusted
+# for UK daylight saving, so during BST this is an hour later in UK local
+# time, e.g. 1pm/5pm/7pm/10pm/midnight).
 [functions."import-next-review"]
-	schedule = "0 11,15,17,20,22 * * *"
+	schedule = "0 12,16,18,21,23 * * *"
 
 [[headers]]
 	for = "/*"
