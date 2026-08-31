@@ -27,11 +27,19 @@ export async function importNextReview() {
 
 	let feedResponse;
 	try {
-		feedResponse = await fetch(feedUrl, {
+		// Cache-bust with a timestamp query param and explicit no-cache
+		// headers - Untappd (or a CDN in front of it) has been seen serving
+		// a stale cached copy of the feed otherwise.
+		const cacheBustedUrl = new URL(feedUrl);
+		cacheBustedUrl.searchParams.set('_', Date.now());
+
+		feedResponse = await fetch(cacheBustedUrl.toString(), {
 			headers: {
 				'User-Agent':
 					'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
 				'Accept': 'application/rss+xml,application/xml;q=0.9,*/*;q=0.8',
+				'Cache-Control': 'no-cache',
+				'Pragma': 'no-cache',
 			},
 		});
 	} catch (err) {
