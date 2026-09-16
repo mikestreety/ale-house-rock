@@ -8,7 +8,8 @@
     "watch": "npm run watch:11ty",
     "dev": "npm run watch",
     "prod": "npm run prod:11ty",
-    "build": "npm run prod:11ty"
+    "build": "npm run prod:11ty",
+    "backfill-tags": "node scripts/backfill-beer-tags.mjs"
   },
   "keywords": [],
   "author": "",

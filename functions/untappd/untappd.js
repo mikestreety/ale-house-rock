@@ -223,6 +223,28 @@ function getBeerDetails($, output = {}) {
 }
 
 /**
+ * Fetch a beer's Untappd page and return just its flavour tags - used
+ * by scripts/backfill-beer-tags.mjs to add tags to beers that were
+ * added before flavour-tag scraping existed, without re-running the
+ * full checkin/brewery scrape for each one.
+ */
+export async function fetchBeerTags(beerUrl) {
+	const pathname = new URL(beerUrl).pathname;
+	const response = await fetchUntappd(pathname);
+
+	if (response.status >= 400) {
+		throw new Error(`Untappd returned status ${response.status}`);
+	}
+
+	const html = await response.text();
+	const $ = cheerio.load(html);
+	const output = {};
+	getFlavourTags($, output);
+
+	return output.tags || [];
+}
+
+/**
  * Untappd's beer page shows a row of flavour-descriptor pills (e.g.
  * "Piney", "Clean", "Crisp") under an "About This Drink" heading. The
  * exact markup couldn't be confirmed against a live page from this
