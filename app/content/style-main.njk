@@ -1,0 +1,38 @@
+---js
+{
+	layout: 'style.njk',
+	tags: ['styleMain'],
+	pagination: {
+		data: 'collections.styleMainNames',
+		size: 1,
+		alias: 'styleMain',
+		addAllPagesToCollections: true
+	},
+	permalink: 'style/{{ styleMain | slugify }}/',
+	eleventyComputed: {
+		title: data => data.styleMain,
+		seoTitle: data => `${data.styleMain} - Beers in this style`,
+		beers: data => data.collections.beer
+			.filter(a => a.data.styleMain == data.styleMain)
+			.sort((a, b) => parseInt(a.data.number) + parseInt(b.data.number)),
+		stats: data => {
+			if(data.beers) {
+				let ratings = data.beers
+					.map(a => Number(a.data.rating))
+					.filter(b => b);
+
+				if(ratings.length) {
+					const meanMedianMode = require(require('path').join(process.cwd(), 'app/filters/meanMedianMode'));
+					return {
+						ratings,
+						titles: data.beers.map(a => `${a.data.number} - ${a.data.title}`),
+						...meanMedianMode(ratings),
+						max: Math.max(...ratings),
+						min: Math.min(...ratings)
+					}
+				}
+			}
+		}
+	}
+}
+---
