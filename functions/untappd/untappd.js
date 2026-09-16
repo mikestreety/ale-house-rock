@@ -217,7 +217,7 @@ function getBeerDetails($, output = {}) {
 		}
 	});
 
-	getFlavours($, output);
+	getFlavourTags($, output);
 
 	return output;
 }
@@ -230,10 +230,15 @@ function getBeerDetails($, output = {}) {
  * loosely - any element whose class contains "flavor"/"flavour" - and
  * pulls the leaf (childless) text nodes out of it, which should survive
  * minor class-name differences. Guards against grabbing unrelated large
- * blocks by capping pill length and dedupes via createOrAddToExisting.
+ * blocks by capping pill length and dedupes.
+ *
+ * Stored under `tags` (slugified, matching older beer entries like
+ * "paleale"/"hazyipa") rather than a separate field, so they flow
+ * straight into Eleventy's tags collection and get the existing
+ * tag.njk pill + /category/<tag>/ archive page treatment for free.
  */
-function getFlavours($, output) {
-	const flavours = [];
+function getFlavourTags($, output) {
+	const tags = [];
 
 	$('[class*="flavor" i], [class*="flavour" i]').each((i, el) => {
 		const $el = $(el);
@@ -242,12 +247,15 @@ function getFlavours($, output) {
 		leaves.each((j, c) => {
 			const text = $(c).text().replace(/[\n\t\r]/g, ' ').trim();
 			if (text && text.length <= 40 && !/^flavou?rs?$/i.test(text)) {
-				flavours.push(text);
+				const slug = text.toLowerCase().replace(/[^a-z0-9]/g, '');
+				if (slug) {
+					tags.push(slug);
+				}
 			}
 		});
 	});
 
-	createOrAddToExisting(output, 'flavours', [...new Set(flavours)]);
+	createOrAddToExisting(output, 'tags', [...new Set(tags)]);
 }
 
 /**

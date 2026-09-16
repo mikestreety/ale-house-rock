@@ -34,12 +34,6 @@ layout: default.njk
 	</p>
 	{% endif %}
 
-	{% if flavours and flavours.length %}
-	<p><strong>Flavours:</strong>
-		{{ flavours | join(", ") }}
-	</p>
-	{% endif %}
-
 	{% if purchased %}
 	<p><strong>Purchased:</strong>
 		{% for shop in purchased_from %}<a href="{{ shop.url }}" class="shop">{{ shop.data.title }}</a>{% endfor %}
