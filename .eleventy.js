@@ -15,6 +15,7 @@ module.exports = function (config) {
 
 	config.addCollection('sortedBreweries', createSortedCollection('brewery'));
 	config.addCollection('sortedStyles', createSortedCollection('style'));
+	config.addCollection('sortedShops', createSortedCollection('shop'));
 
 	config.addFilter('limit', require('./app/filters/limit.js'));
 	config.addFilter('findBySlug', require('./app/filters/findBySlug.js'));

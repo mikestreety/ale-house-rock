@@ -1,0 +1,26 @@
+---
+layout: default.njk
+seoTitle: Purchased Locations
+intro: A list of locations beer has been purchased from
+---
+
+<h1>Purchased Locations <small>({{ collections.sortedShops | length }})</small></h1>
+
+<table>
+	<tr>
+		<th>Location</th>
+		<th>No. of Beers</th>
+		<th>Average score</th>
+		<th>Median score</th>
+	</tr>
+	{% for shop in collections.sortedShops %}
+	<tr>
+		<td><a href="{{ shop.url }}">{{ shop.data.title }}</a></td>
+		<td>{{ shop.data.beers.length }}</td>
+		<td><span class="rating">{{ shop.data.stats.mean }}</span></td>
+		<td><span class="rating">{{ shop.data.stats.median }}</span></td>
+	</tr>
+	{% endfor %}
+</table>
+
+<script src="/assets/js/table-sort.js"></script>
