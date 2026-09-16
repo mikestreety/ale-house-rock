@@ -217,7 +217,37 @@ function getBeerDetails($, output = {}) {
 		}
 	});
 
+	getFlavours($, output);
+
 	return output;
+}
+
+/**
+ * Untappd's beer page shows a row of flavour-descriptor pills (e.g.
+ * "Piney", "Clean", "Crisp") under an "About This Drink" heading. The
+ * exact markup couldn't be confirmed against a live page from this
+ * environment (untappd.com is network-blocked here), so this matches
+ * loosely - any element whose class contains "flavor"/"flavour" - and
+ * pulls the leaf (childless) text nodes out of it, which should survive
+ * minor class-name differences. Guards against grabbing unrelated large
+ * blocks by capping pill length and dedupes via createOrAddToExisting.
+ */
+function getFlavours($, output) {
+	const flavours = [];
+
+	$('[class*="flavor" i], [class*="flavour" i]').each((i, el) => {
+		const $el = $(el);
+		const leaves = $el.find('*').addBack().filter((j, c) => $(c).children().length === 0);
+
+		leaves.each((j, c) => {
+			const text = $(c).text().replace(/[\n\t\r]/g, ' ').trim();
+			if (text && text.length <= 40 && !/^flavou?rs?$/i.test(text)) {
+				flavours.push(text);
+			}
+		});
+	});
+
+	createOrAddToExisting(output, 'flavours', [...new Set(flavours)]);
 }
 
 /**
