@@ -32,6 +32,21 @@ module.exports = {
 			}
 		},
 
+		// Untappd styles are "Main style - Sub category" (e.g. "Pale Ale -
+		// Other"). Split it so each half can link to its own style page,
+		// while `style` itself keeps holding the full compound value used
+		// everywhere else (existing style pages, hashtag matching, etc).
+		styleMain: data => {
+			if (!data.style) return null;
+			const separatorIndex = data.style.indexOf(' - ');
+			return separatorIndex > -1 ? data.style.slice(0, separatorIndex) : null;
+		},
+		styleCategory: data => {
+			if (!data.style) return null;
+			const separatorIndex = data.style.indexOf(' - ');
+			return separatorIndex > -1 ? data.style.slice(separatorIndex + 3) : null;
+		},
+
 		purchased_from: data => findBySlug(data.purchased, data.collections.all),
 		seoTitle: data => {
 			return `${data.title} by ${data.brewedBy}`

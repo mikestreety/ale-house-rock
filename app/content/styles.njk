@@ -6,6 +6,27 @@ intro: A list of styles of beer reviewed
 
 <h1>Styles <small>({{ collections.sortedStyles | length }})</small></h1>
 
+<h2>Main styles <small>({{ collections.sortedStyleMains | length }})</small></h2>
+
+<table>
+	<tr>
+		<th>Style</th>
+		<th>No. of Beers</th>
+		<th>Average score</th>
+		<th>Median score</th>
+	</tr>
+	{% for style in collections.sortedStyleMains %}
+	<tr>
+		<td><a href="{{ style.url }}">{{ style.data.title }}</a></td>
+		<td>{{ style.data.beers.length }}</td>
+		<td><span class="rating">{{ style.data.stats.mean }}</span></td>
+		<td><span class="rating">{{ style.data.stats.median }}</span></td>
+	</tr>
+	{% endfor %}
+</table>
+
+<h2>All styles &amp; categories</h2>
+
 <table>
 	<tr>
 		<th>Style</th>

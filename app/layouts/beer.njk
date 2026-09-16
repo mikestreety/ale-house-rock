@@ -24,7 +24,12 @@ layout: default.njk
 
 	{% if style %}
 	<p><strong>Style:</strong>
+		{% if styleMain %}
+		<a href="/style/{{ styleMain | slugify }}/">{{ styleMain }}</a> -
+		<a href="/style/{{ style | slugify }}/">{{ styleCategory }}</a>
+		{% else %}
 		<a href="/style/{{ style | slugify }}/">{{ style }}</a>
+		{% endif %}
 	</p>
 	{% endif %}
 

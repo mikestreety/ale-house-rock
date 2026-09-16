@@ -16,6 +16,21 @@ module.exports = function (config) {
 	config.addCollection('sortedBreweries', createSortedCollection('brewery'));
 	config.addCollection('sortedStyles', createSortedCollection('style'));
 	config.addCollection('sortedShops', createSortedCollection('shop'));
+	config.addCollection('sortedStyleMains', createSortedCollection('styleMain'));
+
+	// Names of the main style for every beer whose Untappd style splits into
+	// "Main style - Sub category" (e.g. "Pale Ale" from "Pale Ale - Other").
+	// Used purely as the pagination source for generating one page per main
+	// style - see app/content/style-main.njk.
+	config.addCollection('styleMainNames', (collections) => {
+		const names = new Set();
+		for (const beer of collections.getFilteredByTag('beer')) {
+			if (beer.data.styleMain) {
+				names.add(beer.data.styleMain);
+			}
+		}
+		return [...names].sort();
+	});
 
 	config.addFilter('limit', require('./app/filters/limit.js'));
 	config.addFilter('findBySlug', require('./app/filters/findBySlug.js'));
