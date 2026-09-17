@@ -1,39 +1,41 @@
-<button type="button" class="filtersToggle" id="statsToggle" aria-expanded="{% if titleLines %}false{% else %}true{% endif %}" aria-controls="statsPanel" onclick="toggleStats()">Stats</button>
+<div class="statsBox">
+	<button type="button" class="statsToggle" id="statsToggle" aria-expanded="{% if titleLines %}false{% else %}true{% endif %}" aria-controls="statsPanel" onclick="toggleStats()">Stats</button>
 
-<div class="filtersPanel{% if not titleLines %} isOpen{% endif %}" id="statsPanel">
-	<div class="statWrap">
-		<div class="statbox">
-			<div class="stat">{{ beers.length }}</div>
-			<div class="subtitle">beers</div>
+	<div class="statsPanel{% if not titleLines %} isOpen{% endif %}" id="statsPanel">
+		<div class="statWrap">
+			<div class="statbox">
+				<div class="stat">{{ beers.length }}</div>
+				<div class="subtitle">beers</div>
+			</div>
+			<div class="statbox">
+				<div class="stat">{{ stats.mean }}<small>/10</small></div>
+				<div class="subtitle">Average score</div>
+			</div>
+			<div class="statbox">
+				<div class="stat">{{ stats.median }}<small>/10</small></div>
+				<div class="subtitle">Median score</div>
+			</div>
 		</div>
-		<div class="statbox">
-			<div class="stat">{{ stats.mean }}<small>/10</small></div>
-			<div class="subtitle">Average score</div>
+		{% if beers.length > 1 %}
+		<div class="statWrap">
+			<div class="statbox">
+				<div class="stat">{{ stats.max }}<small>/10</small></div>
+				<div class="subtitle">Highest score</div>
+			</div>
+			<div class="statbox">
+				<div class="stat">{{ stats.min }}<small>/10</small></div>
+				<div class="subtitle">Lowest score</div>
+			</div>
 		</div>
-		<div class="statbox">
-			<div class="stat">{{ stats.median }}<small>/10</small></div>
-			<div class="subtitle">Median score</div>
-		</div>
-	</div>
-	{% if beers.length > 1 %}
-	<div class="statWrap">
-		<div class="statbox">
-			<div class="stat">{{ stats.max }}<small>/10</small></div>
-			<div class="subtitle">Highest score</div>
-		</div>
-		<div class="statbox">
-			<div class="stat">{{ stats.min }}<small>/10</small></div>
-			<div class="subtitle">Lowest score</div>
-		</div>
-	</div>
-	{% endif %}
+		{% endif %}
 
-	{% if beers.length > 1 %}
-	<h3>Rating over time</h3>
-	<div class="chart">
-		<div id="ratingCount"></div>
+		{% if beers.length > 1 %}
+		<h3>Rating over time</h3>
+		<div class="chart">
+			<div id="ratingCount"></div>
+		</div>
+		{% endif %}
 	</div>
-	{% endif %}
 </div>
 
 {{ content | safe }}

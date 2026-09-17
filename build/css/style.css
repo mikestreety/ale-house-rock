@@ -297,6 +297,11 @@ aside form .button {
 .filtersToggle[aria-expanded="true"]::after {
 	transform: rotate(180deg);
 }
+.filtersToggle[aria-expanded="true"] {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
 .filtersPanel {
 	display: none;
 	width: 100%;
@@ -304,9 +309,55 @@ aside form .button {
 .filtersPanel.isOpen {
 	display: block;
 	background: var(--neutralLighter);
+	border: 0.125rem solid var(--neutralMid);
+	border-top: 0;
 	border-radius: 0.2rem;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
 	padding: 1rem;
 	margin-bottom: 1rem;
+}
+
+.statsBox {
+	border: 0.125rem solid var(--neutralMid);
+	border-radius: 0.2rem;
+	background: var(--neutralLightest);
+	margin-bottom: 1rem;
+	overflow: hidden;
+}
+.statsToggle {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: left;
+	background: none;
+	border: 0;
+	padding: 0.6rem 1rem;
+	font-size: 1rem;
+	font-weight: bold;
+	color: var(--base);
+	cursor: pointer;
+}
+.statsToggle:hover,
+.statsToggle[aria-expanded="true"] {
+	color: var(--primary);
+}
+.statsToggle::after {
+	content: '▾';
+	display: inline-block;
+	margin-left: 0.5rem;
+	transition: transform 0.3s ease;
+}
+.statsToggle[aria-expanded="true"]::after {
+	transform: rotate(180deg);
+}
+.statsPanel {
+	display: none;
+	padding: 0 1rem 1rem;
+}
+.statsPanel.isOpen {
+	display: block;
 }
 
 .filterField {

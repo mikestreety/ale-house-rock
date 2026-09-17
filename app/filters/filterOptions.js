@@ -78,7 +78,9 @@ function optionsForDimension(dimension, collections, active) {
 	const options = entries ? entries.map(e => projectEntry(dimension, e)) : fullList(dimension, collections);
 	const activeSlug = active[`${dimension}Slug`];
 
-	return options.map(o => ({ title: o.title, url: o.url, active: !!activeSlug && o.slug === activeSlug }));
+	return options
+		.map(o => ({ title: o.title, url: o.url, active: !!activeSlug && o.slug === activeSlug }))
+		.sort((a, b) => a.title.localeCompare(b.title));
 }
 
 module.exports = function buildFilterOptions(collections, active = {}) {
