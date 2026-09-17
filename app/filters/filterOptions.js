@@ -90,6 +90,9 @@ module.exports = function buildFilterOptions(collections, active = {}) {
 		filterShops: optionsForDimension('shop', collections, active),
 		allBreweryUrl: clearedUrl('brewery', active),
 		allStyleUrl: clearedUrl('style', active),
-		allShopUrl: clearedUrl('shop', active)
+		allShopUrl: clearedUrl('shop', active),
+		breweryActive: !!active.brewerySlug,
+		styleActive: !!active.styleSlug,
+		shopActive: !!active.shopSlug
 	};
 };

@@ -150,7 +150,7 @@
 					<div class="filterField">
 						<div class="filterLabelRow">
 							<label for="filterBrewery">Brewery</label>
-							{% if filterOptions %}<a class="filterClear" href="{{ allBreweryUrl }}">Clear</a>{% endif %}
+							{% if breweryActive %}<a class="filterClear" href="{{ allBreweryUrl }}">Clear</a>{% endif %}
 						</div>
 						<select class="brewerySearch" id="filterBrewery" onchange="jumpto(this)">
 							<option value="{{ allBreweryUrl if allBreweryUrl else '' }}">All</option>
@@ -163,7 +163,7 @@
 					<div class="filterField">
 						<div class="filterLabelRow">
 							<label for="filterStyle">Style</label>
-							{% if filterOptions %}<a class="filterClear" href="{{ allStyleUrl }}">Clear</a>{% endif %}
+							{% if styleActive %}<a class="filterClear" href="{{ allStyleUrl }}">Clear</a>{% endif %}
 						</div>
 						<select class="styleSearch" id="filterStyle" onchange="jumpto(this)">
 							<option value="{{ allStyleUrl if allStyleUrl else '' }}">All</option>
@@ -176,7 +176,7 @@
 					<div class="filterField">
 						<div class="filterLabelRow">
 							<label for="filterShop">Shop</label>
-							{% if filterOptions %}<a class="filterClear" href="{{ allShopUrl }}">Clear</a>{% endif %}
+							{% if shopActive %}<a class="filterClear" href="{{ allShopUrl }}">Clear</a>{% endif %}
 						</div>
 						<select class="shopSearch" id="filterShop" onchange="jumpto(this)">
 							<option value="{{ allShopUrl if allShopUrl else '' }}">All</option>
