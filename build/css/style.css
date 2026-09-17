@@ -267,26 +267,29 @@ aside form .button {
 	margin-bottom: 1rem;
 }
 
+.filtersBox {
+	border: 0.125rem solid var(--neutralMid);
+	border-radius: 0.2rem;
+	background: var(--neutralLightest);
+	margin-bottom: 1rem;
+	overflow: hidden;
+}
 .filtersToggle {
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	text-align: left;
-	background: var(--neutralLightest);
+	background: none;
 	color: var(--base);
-	border: 0.125rem solid var(--neutralMid);
-	border-radius: 0.2rem;
+	border: 0;
 	padding: 0.6rem 1rem;
-	margin-bottom: 1rem;
 	font-size: 1rem;
 	font-weight: bold;
 	cursor: pointer;
 }
 .filtersToggle:hover,
 .filtersToggle[aria-expanded="true"] {
-	background: var(--neutralLightest);
-	border-color: var(--primary);
 	color: var(--primary);
 }
 .filtersToggle::after {
@@ -298,11 +301,6 @@ aside form .button {
 .filtersToggle[aria-expanded="true"]::after {
 	transform: rotate(180deg);
 }
-.filtersToggle[aria-expanded="true"] {
-	margin-bottom: 0;
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
-}
 .filtersPanel {
 	display: none;
 	width: 100%;
@@ -310,13 +308,7 @@ aside form .button {
 .filtersPanel.isOpen {
 	display: block;
 	background: var(--neutralLighter);
-	border: 0.125rem solid var(--neutralMid);
-	border-top: 0;
-	border-radius: 0.2rem;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
 	padding: 1rem;
-	margin-bottom: 1rem;
 }
 
 .statsBox {
@@ -453,6 +445,9 @@ h1 {
 	font-size: 1.5rem;
 	line-height: 1.1;
 	font-weight: 700;
+}
+.multiLineHeading {
+	line-height: 1.4;
 }
 header h1 {
 	margin-left: 1rem;

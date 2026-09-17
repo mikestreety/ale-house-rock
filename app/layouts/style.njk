@@ -3,6 +3,6 @@ layout: default.njk
 ---
 
 <main id="beers">
-	<h1>{% if titleLines %}{% for line in titleLines %}{{ line.label }}: {{ line.value }}{% if not loop.last %}<br>{% endif %}{% endfor %}{% else %}{{ title }}{% endif %}</h1>
+	<h1{% if titleLines %} class="multiLineHeading"{% endif %}>{% if titleLines %}{% for line in titleLines %}{{ line.label }}: {{ line.value }}{% if not loop.last %}<br>{% endif %}{% endfor %}{% else %}{{ title }}{% endif %}</h1>
 	{% include 'stats-chart.njk' %}
 </main>
