@@ -12,14 +12,39 @@ function pairCollectionName(a, b) {
 	return PAIR_COLLECTIONS[[a, b].sort().join('_')];
 }
 
+// Builds the URL for the combination described by whichever slugs are
+// present on a combo entry, in the fixed brewery -> style -> shop segment
+// order every permalink in this feature uses.
+function comboUrl(entry) {
+	let url = '';
+	if (entry.brewerySlug) url += `/brewery/${entry.brewerySlug}`;
+	if (entry.styleSlug) url += `/style/${entry.styleSlug}`;
+	if (entry.shopSlug) url += `/shop/${entry.shopSlug}`;
+	return url + '/';
+}
+
+// The URL for whatever's left after dropping `dimension` from the current
+// filters - i.e. what picking "All" for that dimension should navigate to.
+// Always safe without consulting the combo collections: if a fuller
+// combination has a prebuilt page, every smaller combination formed by
+// dropping one of its dimensions is guaranteed to have one too.
+function clearedUrl(dimension, active) {
+	const parts = [];
+	if (dimension !== 'brewery' && active.brewerySlug) parts.push(`brewery/${active.brewerySlug}`);
+	if (dimension !== 'style' && active.styleSlug) parts.push(`style/${active.styleSlug}`);
+	if (dimension !== 'shop' && active.shopSlug) parts.push(`shop/${active.shopSlug}`);
+
+	if (parts.length) return `/${parts.join('/')}/`;
+
+	return { brewery: '/breweries/', style: '/styles/', shop: '/shops/' }[dimension];
+}
+
 function projectEntry(dimension, entry) {
-	if (dimension === 'brewery') {
-		return { title: entry.brewery.data.title, url: entry.brewery.url, slug: entry.brewerySlug };
-	}
-	if (dimension === 'shop') {
-		return { title: entry.shop.data.title, url: entry.shop.url, slug: entry.shopSlug };
-	}
-	return { title: entry.styleMain, url: `/style/${entry.styleSlug}/`, slug: entry.styleSlug };
+	const title = dimension === 'brewery' ? entry.brewery.data.title
+		: dimension === 'shop' ? entry.shop.data.title
+		: entry.styleMain;
+
+	return { title, url: comboUrl(entry), slug: entry[`${dimension}Slug`] };
 }
 
 function fullList(dimension, collections) {
@@ -60,6 +85,9 @@ module.exports = function buildFilterOptions(collections, active = {}) {
 	return {
 		filterBreweries: optionsForDimension('brewery', collections, active),
 		filterStyles: optionsForDimension('style', collections, active),
-		filterShops: optionsForDimension('shop', collections, active)
+		filterShops: optionsForDimension('shop', collections, active),
+		allBreweryUrl: clearedUrl('brewery', active),
+		allStyleUrl: clearedUrl('style', active),
+		allShopUrl: clearedUrl('shop', active)
 	};
 };

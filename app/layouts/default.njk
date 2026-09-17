@@ -148,7 +148,7 @@
 				<div class="filtersPanel" id="filtersPanel">
 					<label for="filterBrewery">Brewery</label>
 					<select class="brewerySearch" id="filterBrewery" onchange="jumpto(this)">
-						<option value="">Select Brewery</option>
+						<option value="{{ allBreweryUrl if allBreweryUrl else '' }}">All</option>
 						{% for brewery in filterBreweries or collections.sortedBreweries %}
 						<option value="{{ brewery.url }}" {% if brewery.active %}selected{% endif %}>{{ brewery.title if brewery.title else brewery.data.title }}{% if brewery.data %} ({{ brewery.data.beers.length }}){% endif %}</option>
 						{% endfor %}
@@ -156,7 +156,7 @@
 
 					<label for="filterStyle">Style</label>
 					<select class="styleSearch" id="filterStyle" onchange="jumpto(this)">
-						<option value="">Select Style</option>
+						<option value="{{ allStyleUrl if allStyleUrl else '' }}">All</option>
 						{% for style in filterStyles or collections.sortedStyleMains %}
 						<option value="{{ style.url }}" {% if style.active %}selected{% endif %}>{{ style.title if style.title else style.data.title }}{% if style.data %} ({{ style.data.beers.length }}){% endif %}</option>
 						{% endfor %}
@@ -164,7 +164,7 @@
 
 					<label for="filterShop">Shop</label>
 					<select class="shopSearch" id="filterShop" onchange="jumpto(this)">
-						<option value="">Select Shop</option>
+						<option value="{{ allShopUrl if allShopUrl else '' }}">All</option>
 						{% for shop in filterShops or collections.sortedShops %}
 						<option value="{{ shop.url }}" {% if shop.active %}selected{% endif %}>{{ shop.title if shop.title else shop.data.title }}{% if shop.data %} ({{ shop.data.beers.length }}){% endif %}</option>
 						{% endfor %}

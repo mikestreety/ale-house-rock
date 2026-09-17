@@ -165,7 +165,10 @@ aside {
 	align-items: center;
 }
 aside label {
-	display: none;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	margin-bottom: 0.35rem;
 }
 aside input {
 	width: 100%;
@@ -266,6 +269,9 @@ aside form .button {
 
 .filtersToggle {
 	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	text-align: left;
 	background: var(--neutralDark);
 	color: var(--neutralLightest);
@@ -280,6 +286,15 @@ aside form .button {
 .filtersToggle:hover,
 .filtersToggle[aria-expanded="true"] {
 	background: var(--primary);
+}
+.filtersToggle::after {
+	content: '▾';
+	display: inline-block;
+	margin-left: 0.5rem;
+	transition: transform 0.3s ease;
+}
+.filtersToggle[aria-expanded="true"]::after {
+	transform: rotate(180deg);
 }
 .filtersPanel {
 	display: none;

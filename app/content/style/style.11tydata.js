@@ -26,6 +26,9 @@ module.exports = {
 		},
 		filterBreweries: data => data.filterOptions.filterBreweries,
 		filterStyles: data => data.filterOptions.filterStyles,
-		filterShops: data => data.filterOptions.filterShops
+		filterShops: data => data.filterOptions.filterShops,
+		allBreweryUrl: data => data.filterOptions.allBreweryUrl,
+		allStyleUrl: data => data.filterOptions.allStyleUrl,
+		allShopUrl: data => data.filterOptions.allShopUrl
 	}
 };
