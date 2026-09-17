@@ -165,7 +165,10 @@ aside {
 	align-items: center;
 }
 aside label {
-	display: none;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	margin-bottom: 0.35rem;
 }
 aside input {
 	width: 100%;
@@ -264,6 +267,160 @@ aside form .button {
 	margin-bottom: 1rem;
 }
 
+.filtersBox {
+	width: 100%;
+	border: 0.125rem solid var(--neutralMid);
+	border-radius: 0.2rem;
+	background: var(--neutralLightest);
+	margin-bottom: 1rem;
+	overflow: hidden;
+}
+.filtersToggle {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: left;
+	background: none;
+	color: var(--base);
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+	padding: 0.6rem 1rem;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+.filtersToggle:hover,
+.filtersToggle[aria-expanded="true"] {
+	background: none;
+	box-shadow: none;
+	color: var(--primary);
+}
+.filtersToggle::after {
+	content: '▾';
+	display: inline-block;
+	margin-left: 0.5rem;
+	transition: transform 0.3s ease;
+}
+.filtersToggle[aria-expanded="true"]::after {
+	transform: rotate(180deg);
+}
+.filtersPanel {
+	display: none;
+	width: 100%;
+}
+.filtersPanel.isOpen {
+	display: block;
+	background: var(--neutralLighter);
+	padding: 1rem;
+}
+
+.statsToggle {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	background: none;
+	border: 0;
+	padding: 0;
+	font-size: 1.5em;
+	font-weight: bold;
+	cursor: pointer;
+}
+.statsToggle:hover {
+	color: var(--primaryDark);
+}
+.statsToggle::after {
+	content: '▾';
+	display: inline-block;
+	margin-left: 0.5rem;
+	font-size: 0.7em;
+	transition: transform 0.3s ease;
+}
+.statsToggle[aria-expanded="true"]::after {
+	transform: rotate(180deg);
+}
+.statsPanel {
+	display: none;
+}
+.statsPanel.isOpen {
+	display: block;
+}
+
+.filterField {
+	width: 100%;
+}
+.filterLabelRow {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 0.35rem;
+}
+.filterLabelRow label {
+	width: auto;
+	margin-bottom: 0;
+}
+.filterClear {
+	font-size: 0.85rem;
+	font-weight: normal;
+	color: var(--primary);
+	background: none;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	box-shadow: none;
+	text-decoration: underline;
+}
+.filterClear:hover {
+	background: none;
+	color: var(--primaryDark);
+	box-shadow: none;
+}
+
+.listSort {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 0.9rem;
+	margin-bottom: 1rem;
+}
+.listSort button {
+	position: relative;
+	border: 0;
+	line-height: 1;
+	padding: 0.3rem 1.5rem 0.3rem 0.75rem;
+	background-color: var(--neutralDark);
+	color: var(--neutralLightest);
+	border-radius: 1.5em;
+	cursor: pointer;
+}
+.listSort button:hover,
+.listSort button.asc,
+.listSort button.desc {
+	background-color: var(--primary);
+}
+.listSort button.asc::after,
+.listSort button.desc::after {
+	content: '';
+	position: absolute;
+	right: 0.65rem;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border-left: 0.3em solid transparent;
+	border-right: 0.3em solid transparent;
+}
+.listSort button.desc::after {
+	border-top: 0.35em solid currentColor;
+	margin-top: -0.1em;
+}
+.listSort button.asc::after {
+	border-bottom: 0.35em solid currentColor;
+	margin-top: -0.25em;
+}
+
 header svg {
 	width: 5rem;
 	height: 5rem;
@@ -283,6 +440,9 @@ h1 {
 	font-size: 1.5rem;
 	line-height: 1.1;
 	font-weight: 700;
+}
+.multiLineHeading {
+	line-height: 1.4;
 }
 header h1 {
 	margin-left: 1rem;

@@ -1,55 +1,66 @@
 <div class="statsCard">
-	<h2 class="statsCard__title">Recent tasting stats</h2>
-	<p class="statsCard__subtitle">Last {{ beers.length }} check-in{{ 's' if beers.length != 1 }}</p>
+	<button type="button" class="statsCard__title statsToggle" id="statsToggle" aria-expanded="{% if titleLines %}false{% else %}true{% endif %}" aria-controls="statsPanel" onclick="toggleStats()">Recent tasting stats</button>
 
-	<div class="statsPrimary">
-		<div class="statsPrimary__item">
-			<div class="statsPrimary__value">{{ beers.length }}</div>
-			<div class="statsPrimary__label">beers logged</div>
+	<div class="statsPanel{% if not titleLines %} isOpen{% endif %}" id="statsPanel">
+		<p class="statsCard__subtitle">Last {{ beers.length }} check-in{{ 's' if beers.length != 1 }}</p>
+
+		<div class="statsPrimary">
+			<div class="statsPrimary__item">
+				<div class="statsPrimary__value">{{ beers.length }}</div>
+				<div class="statsPrimary__label">beers logged</div>
+			</div>
+			<div class="statsPrimary__item">
+				<div class="statsPrimary__value">{{ stats.mean }}</div>
+				<div class="statsPrimary__label">average score</div>
+			</div>
 		</div>
-		<div class="statsPrimary__item">
-			<div class="statsPrimary__value">{{ stats.mean }}</div>
-			<div class="statsPrimary__label">average score</div>
+
+		{% if beers.length > 1 %}
+		<hr class="statsCard__divider">
+
+		<div class="statsSecondary">
+			<div class="statsSecondary__item statsSecondary__item--outline">
+				<div class="statsSecondary__value">{{ stats.median }}</div>
+				<div class="statsSecondary__label">median</div>
+			</div>
+			<div class="statsSecondary__item statsSecondary__item--highlight">
+				<div class="statsSecondary__value">{{ stats.max }}</div>
+				<div class="statsSecondary__label">highest</div>
+			</div>
+			<div class="statsSecondary__item statsSecondary__item--muted">
+				<div class="statsSecondary__value">{{ stats.min }}</div>
+				<div class="statsSecondary__label">lowest</div>
+			</div>
 		</div>
+
+		<hr class="statsCard__divider">
+
+		<div class="statsCard__chartHeader">
+			<h3>Rating over time</h3>
+			<span class="statsCard__chartNote">avg dashed</span>
+		</div>
+		<div class="chart">
+			<div id="ratingCount"></div>
+		</div>
+		{% endif %}
 	</div>
-
-	{% if beers.length > 1 %}
-	<hr class="statsCard__divider">
-
-	<div class="statsSecondary">
-		<div class="statsSecondary__item statsSecondary__item--outline">
-			<div class="statsSecondary__value">{{ stats.median }}</div>
-			<div class="statsSecondary__label">median</div>
-		</div>
-		<div class="statsSecondary__item statsSecondary__item--highlight">
-			<div class="statsSecondary__value">{{ stats.max }}</div>
-			<div class="statsSecondary__label">highest</div>
-		</div>
-		<div class="statsSecondary__item statsSecondary__item--muted">
-			<div class="statsSecondary__value">{{ stats.min }}</div>
-			<div class="statsSecondary__label">lowest</div>
-		</div>
-	</div>
-
-	<hr class="statsCard__divider">
-
-	<div class="statsCard__chartHeader">
-		<h3>Rating over time</h3>
-		<span class="statsCard__chartNote">avg dashed</span>
-	</div>
-	<div class="chart">
-		<div id="ratingCount"></div>
-	</div>
-	{% endif %}
 </div>
 
 {{ content | safe }}
 
 <h2>Beers</h2>
 
-<ul class="list">
+<div class="listSort">
+	<span>Sort by:</span>
+	<button type="button" data-sort="number">Date</button>
+	<button type="button" data-sort="rating">Rating</button>
+</div>
+
+<ul class="list" id="beerList">
 	{% for beer in beers | reverse %}{% include 'beer.njk' %}{% endfor %}
 </ul>
+
+<script src="/assets/js/list-sort.js"></script>
 
 {% if stats.titles.length > 1 %}
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>

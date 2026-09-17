@@ -1,6 +1,8 @@
 const fs = require('fs');
 
-const meanMedianMode = require('../../filters/meanMedianMode');
+const beerListStats = require('../../filters/beerListStats');
+const buildFilterOptions = require('../../filters/filterOptions');
+const slugSegment = require('../../filters/slugSegment');
 
 module.exports = {
 	parent: 'brewery',
@@ -12,8 +14,9 @@ module.exports = {
 		seoTitle: data => {
 			return `${data.title} - Beers from the brewery`
 		},
-		beers: (data) =>  data.collections.beer.filter(a => a.data.breweries.includes(data.permalink))
-			.sort((a, b) => parseInt(a.data.number) + parseInt(b.data.number)),
+		beers: (data) =>  beerListStats.sortBeers(
+			data.collections.beer.filter(a => a.data.breweries.includes(data.permalink))
+		),
 		imagePath: data => {
 			let path = `/images/${data.permalink}image.webp`;
 			if (fs.existsSync(process.cwd() + '/app/content' + path)) {
@@ -27,23 +30,18 @@ module.exports = {
 				return data.meta.site.url + data.imagePath;
 			}
 		},
-		stats: data => {
-			if(data.beers) {
-				let ratings = data.beers
-					.map(a => Number(a.data.rating))
-					.filter(b => b);
-
-				if(ratings.length) {
-					return {
-						ratings,
-						titles: data.beers.map(a => `${a.data.number} - ${a.data.title}`),
-						...meanMedianMode(ratings),
-						max: Math.max(...ratings),
-						min: Math.min(...ratings)
-					}
-				}
-			}
-
-		}
+		stats: data => beerListStats.buildStats(data.beers),
+		filterOptions: data => buildFilterOptions(data.collections, {
+			brewerySlug: slugSegment(data.permalink, 'brewery')
+		}),
+		filterBreweries: data => data.filterOptions.filterBreweries,
+		filterStyles: data => data.filterOptions.filterStyles,
+		filterShops: data => data.filterOptions.filterShops,
+		allBreweryUrl: data => data.filterOptions.allBreweryUrl,
+		allStyleUrl: data => data.filterOptions.allStyleUrl,
+		allShopUrl: data => data.filterOptions.allShopUrl,
+		breweryActive: data => data.filterOptions.breweryActive,
+		styleActive: data => data.filterOptions.styleActive,
+		shopActive: data => data.filterOptions.shopActive
 	}
 };

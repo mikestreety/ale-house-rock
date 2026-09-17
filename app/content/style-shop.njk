@@ -1,22 +1,24 @@
 ---js
 {
 	layout: 'style.njk',
-	tags: ['styleMain'],
+	tags: ['styleShop'],
 	pagination: {
-		data: 'collections.styleMainNames',
+		data: 'collections.styleShopCombos',
 		size: 1,
-		alias: 'styleMain',
+		alias: 'combo',
 		addAllPagesToCollections: true
 	},
-	permalink: 'style/{{ styleMain | slugify }}/',
+	permalink: 'style/{{ combo.styleSlug }}/shop/{{ combo.shopSlug }}/',
 	eleventyComputed: {
-		title: data => data.styleMain,
-		seoTitle: data => `${data.styleMain} - Beers in this style`,
+		title: data => `${data.combo.styleMain} - ${data.combo.shop.data.title}`,
+		seoTitle: data => `${data.combo.styleMain} - ${data.combo.shop.data.title} - Beers`,
+		titleLines: data => ([
+			{ label: 'Style', value: data.combo.styleMain },
+			{ label: 'Shop', value: data.combo.shop.data.title }
+		]),
 		beers: data => {
 			const beerListStats = require(require('path').join(process.cwd(), 'app/filters/beerListStats'));
-			return beerListStats.sortBeers(
-				data.collections.beer.filter(a => a.data.styleMain == data.styleMain)
-			);
+			return beerListStats.sortBeers(data.combo.beers);
 		},
 		stats: data => {
 			const beerListStats = require(require('path').join(process.cwd(), 'app/filters/beerListStats'));
@@ -24,9 +26,9 @@
 		},
 		filterOptions: data => {
 			const buildFilterOptions = require(require('path').join(process.cwd(), 'app/filters/filterOptions'));
-			const slugifyStyle = require(require('path').join(process.cwd(), 'app/filters/slugifyStyle'));
 			return buildFilterOptions(data.collections, {
-				styleSlug: slugifyStyle(data.styleMain)
+				styleSlug: data.combo.styleSlug,
+				shopSlug: data.combo.shopSlug
 			});
 		},
 		filterBreweries: data => data.filterOptions.filterBreweries,

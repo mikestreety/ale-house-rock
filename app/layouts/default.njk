@@ -143,11 +143,51 @@
 					<input type="submit" value="Search" class="button">
 				</form>
 
-				<label for="brewery">Select Brewery</label>
-				<select class="brewerySearch" id="brewery" onchange="jumpto(this)">
-					<option value="">Select Brewery</option>{% for brewery in collections.sortedBreweries %}{% if brewery.data.beers.length > 1 %}
-					<option value="{{ brewery.url }}">{{ brewery.data.title }} ({{ brewery.data.beers.length }})</option>{% endif %}{% endfor %}
-				</select>
+				<div class="filtersBox">
+				<button type="button" class="filtersToggle" id="filtersToggle" aria-expanded="false" aria-controls="filtersPanel" onclick="toggleFilters()">Filters</button>
+
+				<div class="filtersPanel" id="filtersPanel">
+					<div class="filterField">
+						<div class="filterLabelRow">
+							<label for="filterBrewery">Brewery</label>
+							{% if breweryActive %}<a class="filterClear" href="{{ allBreweryUrl }}">Clear</a>{% endif %}
+						</div>
+						<select class="brewerySearch" id="filterBrewery" onchange="jumpto(this)">
+							<option value="{{ allBreweryUrl if allBreweryUrl else '' }}">All</option>
+							{% for brewery in filterBreweries or collections.sortedBreweries %}
+							<option value="{{ brewery.url }}" {% if brewery.active %}selected{% endif %}>{{ brewery.title if brewery.title else brewery.data.title }}{% if brewery.data %} ({{ brewery.data.beers.length }}){% endif %}</option>
+							{% endfor %}
+						</select>
+					</div>
+
+					<div class="filterField">
+						<div class="filterLabelRow">
+							<label for="filterStyle">Style</label>
+							{% if styleActive %}<a class="filterClear" href="{{ allStyleUrl }}">Clear</a>{% endif %}
+						</div>
+						<select class="styleSearch" id="filterStyle" onchange="jumpto(this)">
+							<option value="{{ allStyleUrl if allStyleUrl else '' }}">All</option>
+							{% for style in filterStyles or collections.sortedStyleMains %}
+							<option value="{{ style.url }}" {% if style.active %}selected{% endif %}>{{ style.title if style.title else style.data.title }}{% if style.data %} ({{ style.data.beers.length }}){% endif %}</option>
+							{% endfor %}
+						</select>
+					</div>
+
+					<div class="filterField">
+						<div class="filterLabelRow">
+							<label for="filterShop">Shop</label>
+							{% if shopActive %}<a class="filterClear" href="{{ allShopUrl }}">Clear</a>{% endif %}
+						</div>
+						<select class="shopSearch" id="filterShop" onchange="jumpto(this)">
+							<option value="{{ allShopUrl if allShopUrl else '' }}">All</option>
+							{% for shop in filterShops or collections.sortedShops %}
+							<option value="{{ shop.url }}" {% if shop.active %}selected{% endif %}>{{ shop.title if shop.title else shop.data.title }}{% if shop.data %} ({{ shop.data.beers.length }}){% endif %}</option>
+							{% endfor %}
+						</select>
+					</div>
+				</div>
+				</div>
+
 				<div class="displayType">
 					<button class="displayList" onclick="changeDisplay('list')"><span>≣</span> List</button>
 					<button class="displayGrid" onclick="changeDisplay('grid')"><span>⩩</span> Grid</button>
@@ -175,6 +215,26 @@
 	function jumpto(item) {
 		if (item.value) {
 			document.location.href = item.value;
+		}
+	}
+
+	function toggleSection(panelId, toggleId) {
+		const panel = document.getElementById(panelId);
+		const toggle = document.getElementById(toggleId);
+		const isOpen = panel.classList.toggle('isOpen');
+		toggle.setAttribute('aria-expanded', isOpen);
+		return isOpen;
+	}
+
+	function toggleFilters() {
+		toggleSection('filtersPanel', 'filtersToggle');
+	}
+
+	function toggleStats() {
+		if (toggleSection('statsPanel', 'statsToggle')) {
+			// The rating-over-time chart is rendered while its container may
+			// have been hidden - nudge it to recalculate its size now it's visible.
+			window.dispatchEvent(new Event('resize'));
 		}
 	}
 
