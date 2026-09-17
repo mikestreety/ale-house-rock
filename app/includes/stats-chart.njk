@@ -1,36 +1,47 @@
-<div class="statWrap">
-	<div class="statbox">
-		<div class="stat">{{ beers.length }}</div>
-		<div class="subtitle">beers</div>
-	</div>
-	<div class="statbox">
-		<div class="stat">{{ stats.mean }}<small>/10</small></div>
-		<div class="subtitle">Average score</div>
-	</div>
-	<div class="statbox">
-		<div class="stat">{{ stats.median }}<small>/10</small></div>
-		<div class="subtitle">Median score</div>
-	</div>
-</div>
-{% if beers.length > 1 %}
-<div class="statWrap">
-	<div class="statbox">
-		<div class="stat">{{ stats.max }}<small>/10</small></div>
-		<div class="subtitle">Highest score</div>
-	</div>
-	<div class="statbox">
-		<div class="stat">{{ stats.min }}<small>/10</small></div>
-		<div class="subtitle">Lowest score</div>
-	</div>
-</div>
-{% endif %}
+<div class="statsCard">
+	<h2 class="statsCard__title">Recent tasting stats</h2>
+	<p class="statsCard__subtitle">Last {{ beers.length }} check-in{{ 's' if beers.length != 1 }}</p>
 
-{% if beers.length > 1 %}
-<h3>Rating over time</h3>
-<div class="chart">
-	<div id="ratingCount"></div>
+	<div class="statsPrimary">
+		<div class="statsPrimary__item">
+			<div class="statsPrimary__value">{{ beers.length }}</div>
+			<div class="statsPrimary__label">beers logged</div>
+		</div>
+		<div class="statsPrimary__item">
+			<div class="statsPrimary__value">{{ stats.mean }}</div>
+			<div class="statsPrimary__label">average score</div>
+		</div>
+	</div>
+
+	{% if beers.length > 1 %}
+	<hr class="statsCard__divider">
+
+	<div class="statsSecondary">
+		<div class="statsSecondary__item statsSecondary__item--outline">
+			<div class="statsSecondary__value">{{ stats.median }}</div>
+			<div class="statsSecondary__label">median</div>
+		</div>
+		<div class="statsSecondary__item statsSecondary__item--highlight">
+			<div class="statsSecondary__value">{{ stats.max }}</div>
+			<div class="statsSecondary__label">highest</div>
+		</div>
+		<div class="statsSecondary__item statsSecondary__item--muted">
+			<div class="statsSecondary__value">{{ stats.min }}</div>
+			<div class="statsSecondary__label">lowest</div>
+		</div>
+	</div>
+
+	<hr class="statsCard__divider">
+
+	<div class="statsCard__chartHeader">
+		<h3>Rating over time</h3>
+		<span class="statsCard__chartNote">avg dashed</span>
+	</div>
+	<div class="chart">
+		<div id="ratingCount"></div>
+	</div>
+	{% endif %}
 </div>
-{% endif %}
 
 {{ content | safe }}
 
@@ -43,9 +54,10 @@
 {% if stats.titles.length > 1 %}
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script>
+	let ratingData = [{{ stats.ratings }}];
 	new ApexCharts(document.querySelector("#ratingCount"), {
 	chart: {
-		height: 130,
+		height: 160,
 		type: 'area',
 		toolbar: {
 			show: false
@@ -58,39 +70,60 @@
 		show: true
 	},
 	stroke: {
-		curve: 'smooth'
+		curve: 'smooth',
+		width: 3
 	},
 	dataLabels: {
 		enabled: false
+	},
+	markers: {
+		size: 0,
+		discrete: [{
+			seriesIndex: 0,
+			dataPointIndex: ratingData.length - 1,
+			size: 5,
+			fillColor: '#2b76b9',
+			strokeColor: '#2b76b9'
+		}]
 	},
 	fill: {
 		type: "gradient",
 		gradient: {
 			shadeIntensity: 1,
 			inverseColors: false,
-			opacityFrom: 0.45,
+			opacityFrom: 0.35,
 			opacityTo: 0.05,
 			stops: [20, 100]
 		}
 	},
 	series: [{
 		name: 'Rating',
-		data: [{{ stats.ratings }}]
+		data: ratingData
 	}],
 	yaxis: {
 		show: true,
 		min: 0,
 		max: 10,
-		tickAmount: 4,
+		tickAmount: 2,
 		floating: true
 	},
 	xaxis: {
 		labels: {
 			show: false
 		},
+		axisTicks: {
+			show: false
+		},
 		categories: [{% for item in stats.titles %}'{{ item }}'{% if not loop.last %},{% endif %}{% endfor %}]
 	},
-	colors: ['#35eb93']
+	annotations: {
+		yaxis: [{
+			y: {{ stats.mean }},
+			borderColor: '#2b76b9',
+			strokeDashArray: 4
+		}]
+	},
+	colors: ['#2b76b9']
 	}).render();
 </script>
 {% endif %}
