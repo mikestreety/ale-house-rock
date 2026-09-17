@@ -273,9 +273,9 @@ aside form .button {
 	align-items: center;
 	justify-content: space-between;
 	text-align: left;
-	background: var(--neutralDark);
-	color: var(--neutralLightest);
-	border: 0;
+	background: var(--neutralLightest);
+	color: var(--base);
+	border: 0.125rem solid var(--neutralMid);
 	border-radius: 0.2rem;
 	padding: 0.6rem 1rem;
 	margin-bottom: 1rem;
@@ -285,7 +285,8 @@ aside form .button {
 }
 .filtersToggle:hover,
 .filtersToggle[aria-expanded="true"] {
-	background: var(--primary);
+	border-color: var(--primary);
+	color: var(--primary);
 }
 .filtersToggle::after {
 	content: '▾';
@@ -302,6 +303,43 @@ aside form .button {
 }
 .filtersPanel.isOpen {
 	display: block;
+	background: var(--neutralLighter);
+	border-radius: 0.2rem;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+.filterField {
+	width: 100%;
+}
+.filterRow {
+	display: flex;
+	align-items: stretch;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+.filterRow select {
+	flex-grow: 1;
+	margin-bottom: 0;
+}
+.filterClear {
+	flex-shrink: 0;
+	width: 2.4375rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 0.125rem solid var(--neutralMid);
+	border-radius: 0.2rem;
+	background: var(--neutralLightest);
+	color: var(--neutralDark);
+	font-weight: bold;
+	text-decoration: none;
+	box-shadow: none;
+}
+.filterClear:hover {
+	border-color: var(--quaternary);
+	color: var(--quaternary);
+	box-shadow: none;
 }
 
 .listSort {
@@ -312,9 +350,10 @@ aside form .button {
 	margin-bottom: 1rem;
 }
 .listSort button {
+	position: relative;
 	border: 0;
 	line-height: 1;
-	padding: 0.3rem 0.75rem;
+	padding: 0.3rem 1.5rem 0.3rem 0.75rem;
 	background-color: var(--neutralDark);
 	color: var(--neutralLightest);
 	border-radius: 1.5em;
@@ -324,6 +363,25 @@ aside form .button {
 .listSort button.asc,
 .listSort button.desc {
 	background-color: var(--primary);
+}
+.listSort button.asc::after,
+.listSort button.desc::after {
+	content: '';
+	position: absolute;
+	right: 0.65rem;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border-left: 0.3em solid transparent;
+	border-right: 0.3em solid transparent;
+}
+.listSort button.desc::after {
+	border-top: 0.35em solid currentColor;
+	margin-top: -0.1em;
+}
+.listSort button.asc::after {
+	border-bottom: 0.35em solid currentColor;
+	margin-top: -0.25em;
 }
 
 header svg {

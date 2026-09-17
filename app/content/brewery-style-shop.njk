@@ -12,6 +12,11 @@
 	eleventyComputed: {
 		title: data => `${data.combo.brewery.data.title} - ${data.combo.styleMain} - ${data.combo.shop.data.title}`,
 		seoTitle: data => `${data.combo.brewery.data.title} - ${data.combo.styleMain} - ${data.combo.shop.data.title} - Beers`,
+		titleLines: data => ([
+			{ label: 'Brewery', value: data.combo.brewery.data.title },
+			{ label: 'Style', value: data.combo.styleMain },
+			{ label: 'Shop', value: data.combo.shop.data.title }
+		]),
 		beers: data => {
 			const beerListStats = require(require('path').join(process.cwd(), 'app/filters/beerListStats'));
 			return beerListStats.sortBeers(data.combo.beers);
