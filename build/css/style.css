@@ -568,6 +568,88 @@ a.title:hover {
 	color: var(--neutralDark);
 }
 
+.statsCard {
+	background: var(--neutralLightest);
+	border: 0.0625rem solid var(--neutralLight);
+	border-radius: 0.75rem;
+	padding: var(--gutter);
+	margin-bottom: var(--gutter);
+}
+.statsCard__title {
+	color: var(--primary);
+	margin: 0 0 0.25rem;
+}
+.statsCard__subtitle {
+	color: var(--neutralDark);
+	margin: 0;
+}
+.statsPrimary {
+	display: flex;
+	text-align: center;
+	padding: var(--gutter) 0;
+}
+.statsPrimary__item {
+	flex: 1 1 50%;
+}
+.statsPrimary__value {
+	font-family: 'AleHouseRock', sans-serif;
+	font-size: 2.75rem;
+	line-height: 1.1;
+	font-weight: 700;
+	color: var(--base);
+}
+.statsPrimary__label {
+	color: var(--neutralDark);
+}
+.statsCard__divider {
+	border: none;
+	border-top: 0.0625rem solid var(--neutralLight);
+	margin: 0;
+}
+.statsSecondary {
+	display: flex;
+	text-align: center;
+	padding: var(--gutter) 0;
+	gap: 0.5rem;
+}
+.statsSecondary__item {
+	flex: 1 1 33%;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+}
+.statsSecondary__value {
+	font-family: 'AleHouseRock', sans-serif;
+	font-size: 1.75rem;
+	line-height: 1.1;
+	font-weight: 700;
+	color: var(--base);
+}
+.statsSecondary__label {
+	color: var(--neutralDark);
+	font-size: 0.9rem;
+}
+.statsSecondary__item--outline {
+	border: 0.125rem dashed var(--primary);
+}
+.statsSecondary__item--highlight .statsSecondary__value {
+	color: var(--primary);
+}
+.statsSecondary__item--muted .statsSecondary__value {
+	color: var(--neutralMid);
+}
+.statsCard__chartHeader {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+.statsCard__chartHeader h3 {
+	margin: 0 0 0.5rem;
+}
+.statsCard__chartNote {
+	color: var(--neutralDark);
+	font-size: 0.85rem;
+}
+
 .form {
 	margin-bottom: var(--gutter)
 }
