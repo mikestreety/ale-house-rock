@@ -143,11 +143,34 @@
 					<input type="submit" value="Search" class="button">
 				</form>
 
-				<label for="brewery">Select Brewery</label>
-				<select class="brewerySearch" id="brewery" onchange="jumpto(this)">
-					<option value="">Select Brewery</option>{% for brewery in collections.sortedBreweries %}{% if brewery.data.beers.length > 1 %}
-					<option value="{{ brewery.url }}">{{ brewery.data.title }} ({{ brewery.data.beers.length }})</option>{% endif %}{% endfor %}
-				</select>
+				<button type="button" class="filtersToggle" id="filtersToggle" aria-expanded="false" aria-controls="filtersPanel" onclick="toggleFilters()">Filters</button>
+
+				<div class="filtersPanel" id="filtersPanel">
+					<label for="filterBrewery">Brewery</label>
+					<select class="brewerySearch" id="filterBrewery" onchange="jumpto(this)">
+						<option value="">Select Brewery</option>
+						{% for brewery in filterBreweries or collections.sortedBreweries %}
+						<option value="{{ brewery.url }}" {% if brewery.active %}selected{% endif %}>{{ brewery.title if brewery.title else brewery.data.title }}{% if brewery.data %} ({{ brewery.data.beers.length }}){% endif %}</option>
+						{% endfor %}
+					</select>
+
+					<label for="filterStyle">Style</label>
+					<select class="styleSearch" id="filterStyle" onchange="jumpto(this)">
+						<option value="">Select Style</option>
+						{% for style in filterStyles or collections.sortedStyleMains %}
+						<option value="{{ style.url }}" {% if style.active %}selected{% endif %}>{{ style.title if style.title else style.data.title }}{% if style.data %} ({{ style.data.beers.length }}){% endif %}</option>
+						{% endfor %}
+					</select>
+
+					<label for="filterShop">Shop</label>
+					<select class="shopSearch" id="filterShop" onchange="jumpto(this)">
+						<option value="">Select Shop</option>
+						{% for shop in filterShops or collections.sortedShops %}
+						<option value="{{ shop.url }}" {% if shop.active %}selected{% endif %}>{{ shop.title if shop.title else shop.data.title }}{% if shop.data %} ({{ shop.data.beers.length }}){% endif %}</option>
+						{% endfor %}
+					</select>
+				</div>
+
 				<div class="displayType">
 					<button class="displayList" onclick="changeDisplay('list')"><span>≣</span> List</button>
 					<button class="displayGrid" onclick="changeDisplay('grid')"><span>⩩</span> Grid</button>
@@ -176,6 +199,13 @@
 		if (item.value) {
 			document.location.href = item.value;
 		}
+	}
+
+	function toggleFilters() {
+		const panel = document.getElementById('filtersPanel');
+		const toggle = document.getElementById('filtersToggle');
+		const isOpen = panel.classList.toggle('isOpen');
+		toggle.setAttribute('aria-expanded', isOpen);
 	}
 
 	function changeDisplay(type) {
