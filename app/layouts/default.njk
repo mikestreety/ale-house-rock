@@ -147,42 +147,42 @@
 
 				<div class="filtersPanel" id="filtersPanel">
 					<div class="filterField">
-						<label for="filterBrewery">Brewery</label>
-						<div class="filterRow">
-							<select class="brewerySearch" id="filterBrewery" onchange="jumpto(this)">
-								<option value="{{ allBreweryUrl if allBreweryUrl else '' }}">All</option>
-								{% for brewery in filterBreweries or collections.sortedBreweries %}
-								<option value="{{ brewery.url }}" {% if brewery.active %}selected{% endif %}>{{ brewery.title if brewery.title else brewery.data.title }}{% if brewery.data %} ({{ brewery.data.beers.length }}){% endif %}</option>
-								{% endfor %}
-							</select>
-							{% if filterOptions %}<a class="filterClear" href="{{ allBreweryUrl }}" title="Clear brewery filter">✕</a>{% endif %}
+						<div class="filterLabelRow">
+							<label for="filterBrewery">Brewery</label>
+							{% if filterOptions %}<a class="filterClear" href="{{ allBreweryUrl }}">Clear</a>{% endif %}
 						</div>
+						<select class="brewerySearch" id="filterBrewery" onchange="jumpto(this)">
+							<option value="{{ allBreweryUrl if allBreweryUrl else '' }}">All</option>
+							{% for brewery in filterBreweries or collections.sortedBreweries %}
+							<option value="{{ brewery.url }}" {% if brewery.active %}selected{% endif %}>{{ brewery.title if brewery.title else brewery.data.title }}{% if brewery.data %} ({{ brewery.data.beers.length }}){% endif %}</option>
+							{% endfor %}
+						</select>
 					</div>
 
 					<div class="filterField">
-						<label for="filterStyle">Style</label>
-						<div class="filterRow">
-							<select class="styleSearch" id="filterStyle" onchange="jumpto(this)">
-								<option value="{{ allStyleUrl if allStyleUrl else '' }}">All</option>
-								{% for style in filterStyles or collections.sortedStyleMains %}
-								<option value="{{ style.url }}" {% if style.active %}selected{% endif %}>{{ style.title if style.title else style.data.title }}{% if style.data %} ({{ style.data.beers.length }}){% endif %}</option>
-								{% endfor %}
-							</select>
-							{% if filterOptions %}<a class="filterClear" href="{{ allStyleUrl }}" title="Clear style filter">✕</a>{% endif %}
+						<div class="filterLabelRow">
+							<label for="filterStyle">Style</label>
+							{% if filterOptions %}<a class="filterClear" href="{{ allStyleUrl }}">Clear</a>{% endif %}
 						</div>
+						<select class="styleSearch" id="filterStyle" onchange="jumpto(this)">
+							<option value="{{ allStyleUrl if allStyleUrl else '' }}">All</option>
+							{% for style in filterStyles or collections.sortedStyleMains %}
+							<option value="{{ style.url }}" {% if style.active %}selected{% endif %}>{{ style.title if style.title else style.data.title }}{% if style.data %} ({{ style.data.beers.length }}){% endif %}</option>
+							{% endfor %}
+						</select>
 					</div>
 
 					<div class="filterField">
-						<label for="filterShop">Shop</label>
-						<div class="filterRow">
-							<select class="shopSearch" id="filterShop" onchange="jumpto(this)">
-								<option value="{{ allShopUrl if allShopUrl else '' }}">All</option>
-								{% for shop in filterShops or collections.sortedShops %}
-								<option value="{{ shop.url }}" {% if shop.active %}selected{% endif %}>{{ shop.title if shop.title else shop.data.title }}{% if shop.data %} ({{ shop.data.beers.length }}){% endif %}</option>
-								{% endfor %}
-							</select>
-							{% if filterOptions %}<a class="filterClear" href="{{ allShopUrl }}" title="Clear shop filter">✕</a>{% endif %}
+						<div class="filterLabelRow">
+							<label for="filterShop">Shop</label>
+							{% if filterOptions %}<a class="filterClear" href="{{ allShopUrl }}">Clear</a>{% endif %}
 						</div>
+						<select class="shopSearch" id="filterShop" onchange="jumpto(this)">
+							<option value="{{ allShopUrl if allShopUrl else '' }}">All</option>
+							{% for shop in filterShops or collections.sortedShops %}
+							<option value="{{ shop.url }}" {% if shop.active %}selected{% endif %}>{{ shop.title if shop.title else shop.data.title }}{% if shop.data %} ({{ shop.data.beers.length }}){% endif %}</option>
+							{% endfor %}
+						</select>
 					</div>
 				</div>
 
