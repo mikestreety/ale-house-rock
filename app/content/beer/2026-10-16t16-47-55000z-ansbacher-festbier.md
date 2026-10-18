@@ -15,7 +15,8 @@
     "untappd": "https://untappd.com/b/ansbacher-festbier-anspach-and-hobday/5964105"
   },
   "links": {
-    "untappd": "https://untappd.com/user/mikestreety/checkin/1608722478"
+    "untappd": "https://untappd.com/user/mikestreety/checkin/1608722478",
+    "instagram": "https://www.instagram.com/p/DemxmG9lDch/"
   }
 }
 ---
