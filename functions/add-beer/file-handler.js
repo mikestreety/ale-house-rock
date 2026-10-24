@@ -85,7 +85,8 @@ async function processImage(imageBuffer, width, height, options = {}) {
 
   return await sharp(imageBuffer)
     .resize(width, height, { ...defaultOptions, ...options })
-    .webp({ lossless: true })
+    // Lossy - these are photos and logos; lossless made files ~5x bigger
+    .webp({ quality: 80 })
     .toBuffer();
 }
 

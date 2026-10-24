@@ -21,7 +21,7 @@ sitemapIgnore: true
 let config = {};
 
 const defaults = {
-	version: ':1.5',
+	version: ':1.6',
 	debug: false,
 	offlineAsset: '/offline/',
 	priority: {
@@ -30,7 +30,7 @@ const defaults = {
 
 		pages: [
 			'/search/',
-			'/search.json',
+			'/api/beers.json',
 			'/offline/'
 		]
 	},
@@ -83,9 +83,7 @@ let cacheAssets = (request, response) => {
 // Cache priority pages
 function precache(request) {
 	return caches.open(CACHE)
-		.then(cache => {
-			cache.addAll(config.priority.pages);
-		});
+		.then(cache => cache.addAll(config.priority.pages));
 }
 
 let debug = output => {

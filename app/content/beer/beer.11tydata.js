@@ -12,6 +12,9 @@ const plainText = text => text
 module.exports = {
 	layout: 'beer.njk',
 	parent: 'beer',
+	// The brewery/style/shop dropdowns list every option and were ~70% of a
+	// beer page's HTML - they're only useful on list pages
+	hideFilters: true,
 	tags: [
 		'beer'
 	],
