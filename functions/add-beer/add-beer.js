@@ -247,7 +247,26 @@ exports.handler = async (event, context) => {
 
 	let commitResult;
 
+	// The aliases check above only knows about beers in the last deployed
+	// build, so a review committed moments ago (e.g. the same import
+	// request replayed before Netlify has rebuilt) would sail through it
+	// and be committed - and posted to Buffer - a second time. The review
+	// file path is deterministic, so check the repo itself before writing.
+	const alreadyExistsResponse = {
+		statusCode: 400,
+		body: JSON.stringify({
+			status: 'error',
+			message: 'Beer already exists',
+			canonical: review.links?.untappd || review.links?.instagram,
+			filePath: reviewFilePath
+		})
+	};
+
 	if (isDev) {
+		if (fs.existsSync(path.join(projectRoot, reviewFilePath))) {
+			return alreadyExistsResponse;
+		}
+
 		// Dev mode: Write files locally and commit with git
 		try {
 			for (const file of commitFiles) {
@@ -290,10 +309,14 @@ exports.handler = async (event, context) => {
 				repoName,
 				repoBranch,
 				`API: Add ${review.title}`,
-				commitFiles
+				commitFiles,
+				{ mustNotExist: reviewFilePath }
 			);
 			commitResult = { success: true, message: `API: Add ${review.title}` };
 		} catch(e) {
+			if (e.alreadyExists) {
+				return alreadyExistsResponse;
+			}
 			console.error(e);
 			commitResult = { success: false, message: `${e.description || e.message}\n\nAttempted files:\n${commitFiles.map(f => f.filePath).join('\n')}` };
 		}

@@ -27,9 +27,19 @@ async function fileExists(filePath, isDev, projectRoot, api, owner, repo, repoBr
  * Create a single commit containing multiple file additions using the
  * GitHub Git Data API (blobs -> tree -> commit -> ref update)
  */
-async function createGithubCommit(api, owner, repo, branch, message, commitFiles) {
+async function createGithubCommit(api, owner, repo, branch, message, commitFiles, { mustNotExist } = {}) {
   const { data: ref } = await api.git.getRef({ owner, repo, ref: `heads/${branch}` });
   const parentSha = ref.object.sha;
+
+  // Refuse to commit if `mustNotExist` is already in the commit we're
+  // building on. Checked against parentSha (not the branch name) so that,
+  // with the non-forced updateRef below, nothing can be committed between
+  // this check and the write without the write failing.
+  if (mustNotExist && await fileExists(mustNotExist, false, null, api, owner, repo, parentSha)) {
+    const error = new Error(`${mustNotExist} already exists`);
+    error.alreadyExists = true;
+    throw error;
+  }
 
   const { data: parentCommit } = await api.git.getCommit({ owner, repo, commit_sha: parentSha });
 
