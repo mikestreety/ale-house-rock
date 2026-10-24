@@ -39,9 +39,7 @@
 			<h3>Rating over time</h3>
 			<span class="statsCard__chartNote">avg dashed</span>
 		</div>
-		<div class="chart">
-			<div id="ratingCount"></div>
-		</div>
+		{{ stats | ratingChart | safe }}
 		{% endif %}
 	</div>
 </div>
@@ -61,80 +59,3 @@
 </ul>
 
 <script src="/assets/js/list-sort.js"></script>
-
-{% if stats.titles.length > 1 %}
-<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-<script>
-	let ratingData = [{{ stats.ratings }}];
-	new ApexCharts(document.querySelector("#ratingCount"), {
-	chart: {
-		height: 160,
-		type: 'area',
-		toolbar: {
-			show: false
-		},
-		zoom: {
-			enabled: false,
-		}
-	},
-	grid: {
-		show: true
-	},
-	stroke: {
-		curve: 'smooth',
-		width: 3
-	},
-	dataLabels: {
-		enabled: false
-	},
-	markers: {
-		size: 0,
-		discrete: [{
-			seriesIndex: 0,
-			dataPointIndex: ratingData.length - 1,
-			size: 5,
-			fillColor: '#2b76b9',
-			strokeColor: '#2b76b9'
-		}]
-	},
-	fill: {
-		type: "gradient",
-		gradient: {
-			shadeIntensity: 1,
-			inverseColors: false,
-			opacityFrom: 0.35,
-			opacityTo: 0.05,
-			stops: [20, 100]
-		}
-	},
-	series: [{
-		name: 'Rating',
-		data: ratingData
-	}],
-	yaxis: {
-		show: true,
-		min: 0,
-		max: 10,
-		tickAmount: 2,
-		floating: true
-	},
-	xaxis: {
-		labels: {
-			show: false
-		},
-		axisTicks: {
-			show: false
-		},
-		categories: [{% for item in stats.titles %}'{{ item }}'{% if not loop.last %},{% endif %}{% endfor %}]
-	},
-	annotations: {
-		yaxis: [{
-			y: {{ stats.mean }},
-			borderColor: '#2b76b9',
-			strokeDashArray: 4
-		}]
-	},
-	colors: ['#2b76b9']
-	}).render();
-</script>
-{% endif %}
