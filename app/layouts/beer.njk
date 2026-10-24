@@ -4,7 +4,7 @@ layout: default.njk
 <main class="singlebeer">
 	<div class="wrapper">
 		<a href="{{ imagePath }}">
-			<img src="{{ thumbnailPath }}" width="200" height="200" loading="lazy" alt="{{ brewedBy }} - {{ title }}">
+			<img src="{{ thumbnailPath }}" width="200" height="200" fetchpriority="high" alt="{{ brewedBy }} - {{ title }}">
 		</a>
 		<div class="content">
 			<div>
@@ -12,7 +12,7 @@ layout: default.njk
 				<a href="{{ brewery.url }}" class="brewery">{{ brewery.data.title }}</a>{{ ", " if not loop.last else "" }}
 				{% endfor %}
 			</div>
-			<div class="title">{{ title }}</div>
+			<h1 class="title">{{ title }}</h1>
 			<div class="rating">{{ rating }}</div>
 			<div class="meta">
 				<div>{{ date | dateLong }}</div>
@@ -20,7 +20,7 @@ layout: default.njk
 			</div>
 		</div>
 	</div>
-	<p>{{ review | safe }}</p>
+	{% if review %}<p>{{ review | safe }}</p>{% endif %}
 
 	{% if style %}
 	<p><strong>Style:</strong>

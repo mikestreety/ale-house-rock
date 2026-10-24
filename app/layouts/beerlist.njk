@@ -2,6 +2,7 @@
 layout: default.njk
 ---
 <main id="beers">
+	{% if pagination.pageNumber %}<h1 class="visually-hidden">Beer reviews: page {{ pagination.pageNumber + 1 }}</h1>{% endif %}
 	<ul class="list">
 		{% for beer in pagination.items %}
 			{% include 'beer.njk' %}

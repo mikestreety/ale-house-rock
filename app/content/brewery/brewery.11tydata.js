@@ -3,6 +3,7 @@ const fs = require('fs');
 const beerListStats = require('../../filters/beerListStats');
 const buildFilterOptions = require('../../filters/filterOptions');
 const slugSegment = require('../../filters/slugSegment');
+const hubDescription = require('../../filters/hubDescription');
 
 module.exports = {
 	parent: 'brewery',
@@ -11,9 +12,8 @@ module.exports = {
 		'brewery'
 	],
 	eleventyComputed: {
-		seoTitle: data => {
-			return `${data.title} - Beers from the brewery`
-		},
+		seoTitle: data => `${data.title} beer reviews (${data.beers.length} rated)`,
+		description: data => data.description || hubDescription(data.beers, data.stats, noun => `${data.title} ${noun}`),
 		beers: (data) =>  beerListStats.sortBeers(
 			data.collections.beer.filter(a => a.data.breweries.includes(data.permalink))
 		),

@@ -5,7 +5,7 @@ layout: default.njk
 <main id="beers" class="singlebrewery">
 	<div class="intro">
 		{% if imagePath %}
-			<img src="{{ imagePath }}" width="150" height="150" loading="lazy" alt="{{ title }}">
+			<img src="{{ imagePath }}" width="150" height="150" fetchpriority="high" alt="{{ title }}">
 		{% endif %}
 		<div class="content">
 			<h1>

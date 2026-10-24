@@ -136,7 +136,11 @@ module.exports = function (config) {
 	});
 
 	config.addFilter('limit', require('./app/filters/limit.js'));
+	// JSON for a <script type="application/ld+json"> block - escape "<" so
+	// review text can never close the script tag early
+	config.addFilter('jsonLd', value => JSON.stringify(value).replace(/</g, '\\u003c'));
 	config.addFilter('findBySlug', require('./app/filters/findBySlug.js'));
+	config.addFilter('ratingChart', require('./app/filters/ratingChart.js'));
 
 	config.addPlugin(require('@mikestreety/11ty-utils'));
 

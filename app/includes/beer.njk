@@ -1,6 +1,6 @@
 <li data-number="{{ beer.data.number }}" data-rating="{{ beer.data.rating }}">
 	<a href="{{ beer.url }}" title="{{ beer.data.title }}">
-		<img src="{{ beer.data.thumbnailPath }}" width="150" height="150" loading="lazy" alt="{{ beer.data.brewedBy }} - {{ beer.data.title }}">
+		<img src="{{ beer.data.thumbnailPath }}" width="150" height="150" {% if not (loop and loop.index <= 4) %}loading="lazy"{% endif %} alt="{{ beer.data.brewedBy }} - {{ beer.data.title }}">
 	</a>
 	<div class="content">
 		<div class="breweries">

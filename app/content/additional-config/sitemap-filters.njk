@@ -28,36 +28,4 @@ sitemapIgnore: true
 		<priority>0.5</priority>
 	</url>
 {%- endfor %}
-{%- for item in collections.breweryStyle %}
-	<url>
-		<loc>{{ meta.site.url }}{{ item.url }}</loc>
-		<lastmod>{{ item.date | dateISOShort }}</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.3</priority>
-	</url>
-{%- endfor %}
-{%- for item in collections.breweryShop %}
-	<url>
-		<loc>{{ meta.site.url }}{{ item.url }}</loc>
-		<lastmod>{{ item.date | dateISOShort }}</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.3</priority>
-	</url>
-{%- endfor %}
-{%- for item in collections.styleShop %}
-	<url>
-		<loc>{{ meta.site.url }}{{ item.url }}</loc>
-		<lastmod>{{ item.date | dateISOShort }}</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.3</priority>
-	</url>
-{%- endfor %}
-{%- for item in collections.breweryStyleShop %}
-	<url>
-		<loc>{{ meta.site.url }}{{ item.url }}</loc>
-		<lastmod>{{ item.date | dateISOShort }}</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-{%- endfor %}
 </urlset>
