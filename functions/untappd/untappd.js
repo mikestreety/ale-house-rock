@@ -101,7 +101,7 @@ async function fetchUntappd(pathname) {
 function jsonResponse(statusCode, body) {
 	return {
 		statusCode,
-		headers: { 'content-type': 'application/json;charset=UTF-8' },
+		headers: { 'content-type': 'application/json;charset=UTF-8', 'x-robots-tag': 'noindex' },
 		body: JSON.stringify(body, null, 2),
 	};
 }

@@ -4,7 +4,33 @@ pagination:
   data: collections
   size: 1
   alias: tag
+  # Internal collections, not hashtags - these shouldn't get a page
+  filter:
+    - all
+    - beer
+    - brewery
+    - shop
+    - style
+    - styleMain
+    - styleMainNames
+    - sortedBreweries
+    - sortedStyles
+    - sortedShops
+    - sortedStyleMains
+    - breweryAliases
+    - shopAliases
+    - styleAliases
+    - breweryStyle
+    - breweryShop
+    - styleShop
+    - breweryStyleShop
+    - breweryStyleCombos
+    - breweryShopCombos
+    - styleShopCombos
+    - breweryStyleShopCombos
 permalink: /category/{{ tag }}/
+# Hashtag pages overlap the style pages, so keep them out of search results
+noindex: true
 eleventyComputed:
   seoTitle: "{{ tag }}"
 ---

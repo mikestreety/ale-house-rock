@@ -23,6 +23,16 @@
 		Referrer-Policy = "strict-origin-when-cross-origin"
 
 [[headers]]
+	for = "/api/*"
+	[headers.values]
+		X-Robots-Tag = "noindex"
+
+[[headers]]
+	for = "/add-beer/*"
+	[headers.values]
+		X-Robots-Tag = "noindex"
+
+[[headers]]
 	for = "/rss"
 	[headers.values]
 		Content-Type = "text/xml"

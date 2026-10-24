@@ -11,7 +11,11 @@
 	permalink: 'style/{{ styleMain | slugify }}/',
 	eleventyComputed: {
 		title: data => data.styleMain,
-		seoTitle: data => `${data.styleMain} - Beers in this style`,
+		seoTitle: data => `${data.styleMain} beer reviews (${data.beers.length} rated)`,
+		description: data => {
+			const hubDescription = require(require('path').join(process.cwd(), 'app/filters/hubDescription'));
+			return hubDescription(data.beers, data.stats, noun => `${data.styleMain} ${noun}`);
+		},
 		beers: data => {
 			const beerListStats = require(require('path').join(process.cwd(), 'app/filters/beerListStats'));
 			return beerListStats.sortBeers(

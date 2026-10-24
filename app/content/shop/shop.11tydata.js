@@ -1,15 +1,15 @@
 const beerListStats = require('../../filters/beerListStats');
 const buildFilterOptions = require('../../filters/filterOptions');
 const slugSegment = require('../../filters/slugSegment');
+const hubDescription = require('../../filters/hubDescription');
 
 module.exports = {
 	parent: 'shop',
 	layout: 'shop.njk',
 	tags: ['shop'],
 	eleventyComputed: {
-		seoTitle: data => {
-			return `${data.title} - Beers purchased from`
-		},
+		seoTitle: data => `Beers bought at ${data.title} (${data.beers.length} reviewed)`,
+		description: data => data.description || hubDescription(data.beers, data.stats, noun => `${noun} bought at ${data.title}`),
 		beers: (data) =>  beerListStats.sortBeers(
 			data.collections.beer.filter(a => a.data.purchased == data.permalink)
 		),

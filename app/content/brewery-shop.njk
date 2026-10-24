@@ -8,9 +8,15 @@
 		alias: 'combo',
 		addAllPagesToCollections: true
 	},
+	// Thin filter pages: usable by visitors, kept out of search results
+	noindex: true,
 	permalink: 'brewery/{{ combo.brewerySlug }}/shop/{{ combo.shopSlug }}/',
 	eleventyComputed: {
 		title: data => `${data.combo.brewery.data.title} - ${data.combo.shop.data.title}`,
+		description: data => {
+			const hubDescription = require(require('path').join(process.cwd(), 'app/filters/hubDescription'));
+			return hubDescription(data.beers, data.stats, noun => `${data.title} ${noun}`);
+		},
 		seoTitle: data => `${data.combo.brewery.data.title} - ${data.combo.shop.data.title} - Beers`,
 		titleLines: data => ([
 			{ label: 'Brewery', value: data.combo.brewery.data.title },

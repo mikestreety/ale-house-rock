@@ -1,6 +1,8 @@
 ---
 layout: default.njk
 seoTitle: Search
+intro: Search every beer reviewed on Ale House Rock
+noindex: true
 ---
 
 # Search

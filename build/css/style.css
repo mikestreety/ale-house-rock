@@ -434,7 +434,8 @@ header a {
 }
 
 
-h1 {
+h1,
+.siteName {
 	text-align: left;
 	font-family: 'AleHouseRock', sans-serif;
 	font-size: 1.5rem;
@@ -444,9 +445,13 @@ h1 {
 .multiLineHeading {
 	line-height: 1.4;
 }
-header h1 {
-	margin-left: 1rem;
+header .siteName {
+	display: block;
+	margin: 0.67em 0 0.67em 1rem;
+}
 
+h1.title {
+	margin-top: 0;
 }
 
 footer {

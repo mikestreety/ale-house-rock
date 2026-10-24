@@ -1,6 +1,14 @@
 const findBySlug = require('./../../filters/findBySlug');
 const styleMainName = require('./../../filters/styleMainName');
 
+// Reviews are stored with HTML entities (e.g. &#39;) - decode them for meta
+// tags and JSON-LD, which escape the text themselves
+const plainText = text => text
+	.replace(/<[^>]+>/g, '')
+	.replace(/&#39;/g, "'")
+	.replace(/&quot;/g, '"')
+	.replace(/&amp;/g, '&');
+
 module.exports = {
 	layout: 'beer.njk',
 	parent: 'beer',
@@ -46,7 +54,18 @@ module.exports = {
 
 		purchased_from: data => findBySlug(data.purchased, data.collections.all),
 		seoTitle: data => {
-			return `${data.title} by ${data.brewedBy}`
+			let title = data.brewedBy ? `${data.title} by ${data.brewedBy}` : data.title;
+
+			// The same beer reviewed more than once gets the review number,
+			// so each page has a unique title
+			const isRepeat = data.collections.beer.some(beer =>
+				beer.data.title === data.title && beer.data.permalink !== data.permalink
+			);
+			if (isRepeat) {
+				title += ` (#${data.number})`;
+			}
+
+			return data.rating ? `${title} review: ${data.rating}/10` : `${title} review`;
 		},
 		imagePath: data => {
 			if(data.page) {
@@ -64,7 +83,64 @@ module.exports = {
 			}
 		},
 		intro: data => {
-			return (data.review.length > 150) ? data.review.slice(0, 140) + '...' : data.review;
+			if (!data.review) {
+				// No written review - describe the beer from its details instead
+				const details = [data.style, data.abv].filter(a => a).join(', ');
+				return `${data.title}${data.brewedBy ? ` by ${data.brewedBy}` : ''}${details ? ` (${details})` : ''}, rated ${data.rating}/10 on Ale House Rock.`;
+			}
+
+			const review = plainText(data.review);
+			return (review.length > 150) ? review.slice(0, 140) + '...' : review;
+		},
+		schema: data => {
+			const url = data.meta.site.url + data.page.url;
+			const brewery = (data.breweries || []).find(b => b && b.url);
+
+			const review = {
+				'@type': 'Review',
+				'@id': `${url}#review`,
+				url,
+				name: `${data.title} review`,
+				itemReviewed: {
+					'@type': 'Product',
+					name: data.title,
+					...(data.brewedBy && { brand: { '@type': 'Brand', name: data.brewedBy } }),
+					...(data.socialMediaPhoto && { image: data.socialMediaPhoto }),
+					...(data.style && { category: data.style })
+				},
+				reviewRating: {
+					'@type': 'Rating',
+					ratingValue: Number(data.rating),
+					bestRating: 10,
+					worstRating: 0
+				},
+				author: { '@type': 'Person', name: 'Mike Street', url: 'https://www.mikestreety.co.uk' },
+				publisher: { '@type': 'Organization', name: data.meta.site.title, url: data.meta.site.url },
+				datePublished: data.page.date.toISOString().slice(0, 10),
+				...(data.review && { reviewBody: plainText(data.review) })
+			};
+
+			const crumbs = [
+				{ name: 'Beers', url: `${data.meta.site.url}/beers/` },
+				...(brewery ? [{ name: brewery.data.title, url: data.meta.site.url + brewery.url }] : []),
+				{ name: data.title, url }
+			];
+
+			return {
+				'@context': 'https://schema.org',
+				'@graph': [
+					review,
+					{
+						'@type': 'BreadcrumbList',
+						itemListElement: crumbs.map((crumb, index) => ({
+							'@type': 'ListItem',
+							position: index + 1,
+							name: crumb.name,
+							item: crumb.url
+						}))
+					}
+				]
+			};
 		},
 		relatedBeersByStyle: data => {
 			if (!data.style) return null;
