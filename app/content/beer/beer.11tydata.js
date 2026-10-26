@@ -99,28 +99,31 @@ module.exports = {
 			const url = data.meta.site.url + data.page.url;
 			const brewery = (data.breweries || []).find(b => b && b.url);
 
-			const review = {
-				'@type': 'Review',
-				'@id': `${url}#review`,
-				url,
-				name: `${data.title} review`,
-				itemReviewed: {
-					'@type': 'Product',
-					name: data.title,
-					...(data.brewedBy && { brand: { '@type': 'Brand', name: data.brewedBy } }),
-					...(data.socialMediaPhoto && { image: data.socialMediaPhoto }),
-					...(data.style && { category: data.style })
-				},
-				reviewRating: {
-					'@type': 'Rating',
-					ratingValue: Number(data.rating),
-					bestRating: 10,
-					worstRating: 0
-				},
-				author: { '@type': 'Person', name: 'Mike Street', url: 'https://www.mikestreety.co.uk' },
-				publisher: { '@type': 'Organization', name: data.meta.site.title, url: data.meta.site.url },
-				datePublished: data.page.date.toISOString().slice(0, 10),
-				...(data.review && { reviewBody: plainText(data.review) })
+			// Product is the top-level entity with the review nested inside it, as
+			// Google's product snippets require 'review', 'offers' or 'aggregateRating'
+			const product = {
+				'@type': 'Product',
+				'@id': `${url}#product`,
+				name: data.title,
+				...(data.brewedBy && { brand: { '@type': 'Brand', name: data.brewedBy } }),
+				...(data.socialMediaPhoto && { image: data.socialMediaPhoto }),
+				...(data.style && { category: data.style }),
+				review: {
+					'@type': 'Review',
+					'@id': `${url}#review`,
+					url,
+					name: `${data.title} review`,
+					reviewRating: {
+						'@type': 'Rating',
+						ratingValue: Number(data.rating),
+						bestRating: 10,
+						worstRating: 0
+					},
+					author: { '@type': 'Person', name: 'Mike Street', url: 'https://www.mikestreety.co.uk' },
+					publisher: { '@type': 'Organization', name: data.meta.site.title, url: data.meta.site.url },
+					datePublished: data.page.date.toISOString().slice(0, 10),
+					...(data.review && { reviewBody: plainText(data.review) })
+				}
 			};
 
 			const crumbs = [
@@ -132,7 +135,7 @@ module.exports = {
 			return {
 				'@context': 'https://schema.org',
 				'@graph': [
-					review,
+					product,
 					{
 						'@type': 'BreadcrumbList',
 						itemListElement: crumbs.map((crumb, index) => ({
